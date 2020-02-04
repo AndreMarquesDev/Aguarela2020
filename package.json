@@ -6,14 +6,50 @@
     "scripts": {
         "dev": "next",
         "build": "next build",
-        "start": "next start"
+        "start": "next start",
+        "export": "next export",
+        "deploy": "npm run build && npm run export",
+        "lint": "tsc --noEmit && eslint . --ext .js,.ts,.tsx --fix && stylelint ."
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
+    "browserslist": [
+        ">0.3%",
+        "not ie 11",
+        "not dead",
+        "not op_mini all"
+    ],
     "dependencies": {
+        "imagemin-mozjpeg": "^8.0.0",
+        "imagemin-optipng": "^7.1.0",
+        "imagemin-svgo": "^7.0.0",
         "next": "^9.2.1",
+        "next-compose-plugins": "^2.2.0",
+        "next-fonts": "^1.0.3",
+        "next-optimized-images": "^2.5.4",
+        "postcss-css-variables": "^0.14.0",
+        "postcss-import": "^12.0.1",
         "react": "^16.12.0",
-        "react-dom": "^16.12.0"
+        "react-dom": "^16.12.0",
+        "svg-sprite-loader": "^4.2.1",
+        "webp-loader": "^0.6.0"
+    },
+    "devDependencies": {
+        "@types/node": "^13.7.0",
+        "@types/react": "^16.9.19",
+        "@types/styled-jsx": "^2.2.8",
+        "@typescript-eslint/eslint-plugin": "^2.19.0",
+        "@typescript-eslint/parser": "^2.19.0",
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb": "^18.0.1",
+        "eslint-plugin-babel": "^5.3.0",
+        "eslint-plugin-import": "^2.20.1",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-react": "^7.18.3",
+        "eslint-plugin-react-hooks": "^1.7.0",
+        "stylelint": "^13.0.0",
+        "stylelint-config-standard": "^19.0.0",
+        "typescript": "^3.7.5"
     }
 }
