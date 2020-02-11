@@ -2,14 +2,14 @@ import React, { FC } from 'react';
 import Head from 'next/head';
 import Layout from '../components/Layout';
 
-const Index: FC = () => (
+const contact: FC = () => (
     <Layout>
         <Head>
-            <title>Aguarela Digital</title>
+            <title>Contacto - Aguarela Digital</title>
         </Head>
 
-        <p>This is the homepage</p>
+        <p className="noScroll">This is the contact page</p>
     </Layout>
 );
 
-export default Index;
+export default contact;

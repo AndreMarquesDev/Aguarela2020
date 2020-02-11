@@ -1,42 +1,51 @@
+/* eslint-disable no-console */
 import React, { FC } from 'react';
+import Head from 'next/head';
+import GeneralStyles from '../styles/styles';
 import Header from './Header';
-// import Styles from './Layout.scss';
-// import colors from '../../styles/colors';
-import breakpoints from '../styles/breakpoints';
+import colors from '../styles/colors';
 
 const Layout: FC = props => {
     const { children } = props;
 
     return (
-        <div className="Layout">
+        <main className="Layout">
+            <Head>
+                <link
+                    href="/static/images/logo.png"
+                    rel="shortcut icon"
+                    type="image/x-icon"
+                />
+            </Head>
+            <GeneralStyles />
+
             <Header />
-            <p className="acumin">acumin</p>
-            <p className="acuminBold">acuminBold</p>
-            <p className="acuminItalic">acuminItalic</p>
-            <p className="champagne">champagne</p>
-            <p className="champagneBold">champagneBold</p>
-            <p className="champagneItalic">champagneItalic</p>
+
             {children}
 
             <style jsx>
                 {`
                     .Layout {
-                        margin: 20px;
                         padding: 20px;
-                        border: 1px solid #ddd;
-                    }
-                    .red {
-                        background: red;
                     }
 
-                    @media (max-width: ${breakpoints.mobile}) {
-                        .Layout {
-                            background: green;
-                        }
+                    .Layout:before {
+                        content: '';
+                        background: ${colors.lightGrey};
+                        width: 50%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
                     }
                 `}
             </style>
-        </div>
+
+            {console.log('%c| 🔧 Developed by AndreMarquesDev ✏️ Designed by Aguarela Digital |', 'background: #000; color: #fff;')}
+            {console.log('%c| https://github.com/AndreMarquesDev |', 'background: #000; color: #fff;')}
+            {console.log('%c| https://www.instagram.com/aguareladigital |', 'background: #000; color: #fff;')}
+        </main>
     );
 };
 
