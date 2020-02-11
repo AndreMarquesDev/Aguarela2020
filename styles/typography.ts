@@ -29,7 +29,7 @@ const typography = css.global`
 
     @font-face {
         font-family: 'champagne-limousines';
-        src: url('../public/fonts/Champagne-Limousines.ttf');
+        src: url('../fonts/Champagne-Limousines.ttf');
         font-display: auto;
         font-style: normal;
         font-weight: 400;
@@ -37,7 +37,7 @@ const typography = css.global`
 
     @font-face {
         font-family: 'champagne-limousines-bold';
-        src: url('../public/fonts/Champagne-Limousines-Bold.ttf');
+        src: url('../fonts/Champagne-Limousines-Bold.ttf');
         font-display: auto;
         font-style: normal;
         font-weight: 700;
@@ -45,7 +45,7 @@ const typography = css.global`
 
     @font-face {
         font-family: 'champagne-limousines-Italic';
-        src: url('../public/fonts/Champagne-Limousines-Italic.ttf');
+        src: url('../fonts/Champagne-Limousines-Italic.ttf');
         font-display: auto;
         font-style: italic;
         font-weight: 400;

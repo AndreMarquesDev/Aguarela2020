@@ -1,7 +1,6 @@
 /* eslint-disable no-console */
 import React, { FC } from 'react';
 import { useRouter } from 'next/router';
-import Head from 'next/head';
 import GeneralStyles from '../styles/styles';
 import Header from './Header';
 import colors from '../styles/colors';
@@ -13,13 +12,6 @@ const Layout: FC = props => {
 
     return (
         <main className="Layout">
-            <Head>
-                <link
-                    href="/public/images/logo.png"
-                    rel="shortcut icon"
-                    type="image/x-icon"
-                />
-            </Head>
             <GeneralStyles />
 
             <Header currentRoute={router.route} />

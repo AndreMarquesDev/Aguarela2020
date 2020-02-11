@@ -40,6 +40,8 @@ module.exports = {
                     'id',
                     'css',
                     'Css',
+                    'env',
+                    'Env',
                 ]
             }
         ],
