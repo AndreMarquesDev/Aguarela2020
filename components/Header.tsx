@@ -2,7 +2,7 @@
 import React, { FC } from 'react';
 import Link from 'next/link';
 import classNames from 'classnames';
-import logo from '../static/images/logo.png';
+import logo from '../public/images/logo.png';
 
 interface IHeaderProps {
     currentRoute: string;
@@ -13,19 +13,19 @@ const Header: FC<IHeaderProps> = props => {
         currentRoute,
     } = props;
 
-    const aboutStyles = classNames(
+    const aboutLinkStyles = classNames(
         'link',
         currentRoute === '/about' && 'active',
     );
-    const projectsStyles = classNames(
+    const projectsLinkStyles = classNames(
         'link',
         currentRoute === '/projects' && 'active',
     );
-    const servicesStyles = classNames(
+    const servicesLinkStyles = classNames(
         'link',
         currentRoute === '/services' && 'active',
     );
-    const contactStyles = classNames(
+    const contactLinkStyles = classNames(
         'link',
         currentRoute === '/contact' && 'active',
     );
@@ -40,22 +40,22 @@ const Header: FC<IHeaderProps> = props => {
             <ul>
                 <li>
                     <Link href="/about">
-                        <a className={aboutStyles}>Sobre</a>
+                        <a className={aboutLinkStyles}>Sobre</a>
                     </Link>
                 </li>
                 <li>
                     <Link href="/projects">
-                        <a className={projectsStyles}>Projetos</a>
+                        <a className={projectsLinkStyles}>Projetos</a>
                     </Link>
                 </li>
                 <li>
                     <Link href="/services">
-                        <a className={servicesStyles}>Serviços</a>
+                        <a className={servicesLinkStyles}>Serviços</a>
                     </Link>
                 </li>
                 <li>
                     <Link href="/contact">
-                        <a className={contactStyles}>Contacto</a>
+                        <a className={contactLinkStyles}>Contacto</a>
                     </Link>
                 </li>
             </ul>

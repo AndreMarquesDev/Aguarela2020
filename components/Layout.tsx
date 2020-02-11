@@ -15,7 +15,7 @@ const Layout: FC = props => {
         <main className="Layout">
             <Head>
                 <link
-                    href="/static/images/logo.png"
+                    href="/public/images/logo.png"
                     rel="shortcut icon"
                     type="image/x-icon"
                 />
