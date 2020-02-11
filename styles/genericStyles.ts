@@ -34,6 +34,7 @@ const genericStyles = css.global`
         transition: width 0.3s ease-out;
     }
 
+    .link.active::before,
     .link:hover::before,
     .link:focus::before,
     .link:active::before {
