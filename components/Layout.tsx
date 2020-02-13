@@ -22,18 +22,19 @@ const Layout: FC = props => {
                 {`
                     .Layout {
                         padding: 20px;
+
+                        &:before {
+                            content: '';
+                            background: ${colors.lightGrey};
+                            width: 50%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            z-index: -1;
+                        }
                     }
 
-                    .Layout:before {
-                        content: '';
-                        background: ${colors.lightGrey};
-                        width: 50%;
-                        height: 100%;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        z-index: -1;
-                    }
                 `}
             </style>
 

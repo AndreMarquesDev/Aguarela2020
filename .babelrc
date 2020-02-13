@@ -1,0 +1,20 @@
+{
+    "presets": [
+        [
+            "next/babel",
+            {
+                "styled-jsx": {
+                    "vendorPrefixes": false,
+                    "plugins": [
+                        [
+                            "styled-jsx-plugin-postcss",
+                            {
+                                "path": "./postcss.config.js"
+                            }
+                        ]
+                    ]
+                }
+            }
+        ]
+    ]
+}
