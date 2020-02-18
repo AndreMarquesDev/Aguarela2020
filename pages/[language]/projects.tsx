@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import Head from 'next/head';
-import Layout from '../components/Layout';
+import Layout from '../../components/Layout';
 
 const Projects: FC = () => (
     <Layout>

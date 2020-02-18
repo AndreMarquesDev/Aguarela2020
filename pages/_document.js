@@ -2,6 +2,7 @@ import React from 'react';
 import Document, {
     Html, Head, Main, NextScript,
 } from 'next/document';
+import { defaultLanguage } from '../utils/getLanguage';
 
 class MyDocument extends Document {
     static async getInitialProps(context) {
@@ -12,7 +13,7 @@ class MyDocument extends Document {
 
     render() {
         return (
-            <Html>
+            <Html lang={defaultLanguage}>
                 <Head>
                     <link
                         href="/images/logo.png"

@@ -1,12 +1,13 @@
-// import React, { FC, useState, useEffect } from 'react';
-// import React, { FC } from 'react';
 import React from 'react';
 import Prismic from 'prismic-javascript';
 import { RichText } from 'prismic-reactjs';
 import Head from 'next/head';
 import { NextPage } from 'next';
-import Layout from '../components/Layout';
-import { Client } from '../prismic-configuration';
+import Layout from '../../components/Layout';
+import { Client } from '../../prismic-configuration';
+import NoContentErrorBlock from '../../components/NoContentErrorBlock';
+import Title from '../../components/Title';
+import { getPrismicLocale } from '../../utils/getLanguage';
 
 interface IAboutProps {
     document: any; // eslint-disable-line @typescript-eslint/no-explicit-any
@@ -23,25 +24,25 @@ const About: NextPage<IAboutProps> = props => {
                 <title>Sobre - Aguarela Digital</title>
             </Head>
 
-            <p>This is the about page</p>
-
             {
                 document ? (
                     <div>
-                        <h1>{RichText.asText(document.data.title)}</h1>
+                        <Title text={RichText.asText(document.data.title)} />
                         <RichText render={document.data.textBody} />
                     </div>
-                ) : <div>No content</div>
+                ) : <NoContentErrorBlock />
             }
         </Layout>
     );
 };
 
 About.getInitialProps = async (context): Promise<IAboutProps> => {
+    const prismicLocale = getPrismicLocale(context.query.language);
+
     const { req: request } = context; // eslint-disable-line id-length
     const response = await Client(request).query(
         Prismic.Predicates.at('document.type', 'about'),
-        { lang: 'pt-pt' },
+        { lang: prismicLocale },
     );
 
     return {

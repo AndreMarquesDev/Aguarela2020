@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import genericStyles from './genericStyles';
-import normalizeCSS from './normalize';
+import resetNormalizeCSS from './resetNormalize';
 import typography, {
     acumin, acuminItalic, acuminBold, champagne, champagneItalic, champagneBold,
 } from './typography';
@@ -8,7 +8,7 @@ import typography, {
 const GeneralStyles: FC = () => (
     <>
         <style global jsx>
-            {normalizeCSS}
+            {resetNormalizeCSS}
         </style>
         <style global jsx>
             {genericStyles}

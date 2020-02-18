@@ -76,15 +76,15 @@ export const champagne = css.global`
     }
 `;
 
-export const champagneItalic = css.global`
-    .champagneItalic {
-        font-family: 'champagne-limousines-Italic', sans-serif;
-    }
-`;
-
 export const champagneBold = css.global`
     .champagneBold {
         font-family: 'champagne-limousines-bold', sans-serif;
+    }
+`;
+
+export const champagneItalic = css.global`
+    .champagneItalic {
+        font-family: 'champagne-limousines-Italic', sans-serif;
     }
 `;
 

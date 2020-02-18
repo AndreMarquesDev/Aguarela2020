@@ -1,7 +1,6 @@
 require('dotenv').config();
 const withPlugins = require('next-compose-plugins');
 const optimizedImages = require('next-optimized-images');
-const withFonts = require('next-fonts');
 
 const nextConfig = {
     env: {
@@ -26,5 +25,4 @@ module.exports = withPlugins([
         },
     }],
 
-    [withFonts, {}],
 ], nextConfig);

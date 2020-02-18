@@ -8,20 +8,23 @@ import colors from '../styles/colors';
 const Layout: FC = props => {
     const { children } = props;
 
-    const router = useRouter();
+    const {
+        route,
+        query,
+    } = useRouter();
 
     return (
         <main className="Layout">
             <GeneralStyles />
 
-            <Header currentRoute={router.route} />
+            <Header currentRoute={route} language={query.language} />
 
             {children}
 
             <style jsx>
                 {`
                     .Layout {
-                        padding: 20px;
+                        padding: 20rem;
 
                         &:before {
                             content: '';

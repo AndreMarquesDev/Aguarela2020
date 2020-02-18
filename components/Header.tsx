@@ -6,11 +6,13 @@ import logo from '../public/images/logo.png';
 
 interface IHeaderProps {
     currentRoute: string;
+    language: string | string[];
 }
 
 const Header: FC<IHeaderProps> = props => {
     const {
         currentRoute,
+        language,
     } = props;
 
     const aboutLinkStyles = classNames(
@@ -39,22 +41,22 @@ const Header: FC<IHeaderProps> = props => {
             </Link>
             <ul>
                 <li>
-                    <Link href="/about">
+                    <Link href={`/${language}/about`}>
                         <a className={aboutLinkStyles}>Sobre</a>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/projects">
+                    <Link href={`/${language}/projects`}>
                         <a className={projectsLinkStyles}>Projetos</a>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/services">
+                    <Link href={`/${language}/services`}>
                         <a className={servicesLinkStyles}>Serviços</a>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/contact">
+                    <Link href={`/${language}/contact`}>
                         <a className={contactLinkStyles}>Contacto</a>
                     </Link>
                 </li>
@@ -76,6 +78,7 @@ const Header: FC<IHeaderProps> = props => {
                         display: flex;
                         justify-content: center;
                         list-style: none;
+                        margin: 30rem 0;
                     }
 
                     li a {
