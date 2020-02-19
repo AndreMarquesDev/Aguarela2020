@@ -11,6 +11,8 @@ const Index: FC = () => {
         router.replace('/[lang]', `/${getInitialLocale()}`);
     });
 
+    console.log('Index');
+
     return (
         <Layout>
             <Head>
