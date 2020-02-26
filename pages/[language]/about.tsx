@@ -7,7 +7,7 @@ import Layout from '../../components/Layout';
 import { Client } from '../../prismic-configuration';
 import NoContentErrorBlock from '../../components/NoContentErrorBlock';
 import Title from '../../components/Title';
-import { getPrismicLocale } from '../../utils/getLanguage';
+import { getPrismicLocale } from '../../utils/locales/getLocale';
 
 interface IAboutProps {
     document: any; // eslint-disable-line @typescript-eslint/no-explicit-any

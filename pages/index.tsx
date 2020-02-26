@@ -1,26 +1,33 @@
 import React, { FC, useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import Layout from '../components/Layout';
-import { getInitialLocale } from '../utils/getLanguage';
+import { getInitialLocale } from '../utils/locales/getLocale';
 
 const Index: FC = () => {
     const router = useRouter();
 
     useEffect(() => {
-        router.replace('/[lang]', `/${getInitialLocale()}`);
+        const locale = getInitialLocale();
+        const isRoot = router.route === '/';
+
+        if (isRoot) {
+            router.replace('/[lang]', `/${locale}`);
+        }
+
+        const hasQuery = !!router.query.language;
+        const hasLangParam = hasQuery && (router.query.language === 'en' || router.query.language === 'pt');
+
+        // if user navigates to "/about", replace with "/en/about"
+        if (!isRoot && hasQuery && !hasLangParam) {
+            router.replace(`/${locale}/${router.query.language}`);
+        }
     });
 
-    console.log('Index');
 
     return (
-        <Layout>
-            <Head>
-                <title>Aguarela Digital</title>
-            </Head>
-
-            <p>This is the homepage</p>
-        </Layout>
+        <Head>
+            <meta content="noindex, nofollow" name="robots" />
+        </Head>
     );
 };
 
