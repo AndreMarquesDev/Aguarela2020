@@ -69,6 +69,7 @@ module.exports = {
                 ignore: ['\\.(png|jpg|svg)\\?(lqip)$']
             }
         ],
+        'import/prefer-default-export': 'off',
 
 
         //
@@ -209,6 +210,7 @@ module.exports = {
             }
         ],
         '@typescript-eslint/no-explicit-any': 'error',
+        '@typescript-eslint/indent': 'off',
 
 
         // check overrides below

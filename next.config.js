@@ -7,27 +7,6 @@ const nextConfig = {
         PRISMIC_API_ENDPOINT: process.env.PRISMIC_API_ENDPOINT,
         PRISMIC_TOKEN: process.env.PRISMIC_TOKEN,
     },
-    // async exportPathMap(
-    //     defaultPathMap,
-    //     {
-    //         dev, dir, outDir, distDir, buildId,
-    //     },
-    // ) {
-    //     return {
-    //         '/': {
-    //             page: '/'
-    //         },
-    //         '/about': {
-    //             page: '/about'
-    //         },
-    //         '/p/hello-nextjs': {
-    //             page: '/post',
-    //             query: {
-    //                 title: 'hello-nextjs'
-    //             }
-    //         },
-    //     };
-    // },
 };
 
 module.exports = withPlugins([

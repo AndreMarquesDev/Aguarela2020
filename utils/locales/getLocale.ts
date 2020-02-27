@@ -1,4 +1,4 @@
-import { Locale } from '../../typings/localeTypes';
+import { Locale } from './localesTypes';
 import { defaultLocale, prismicCultures, locales } from './config';
 
 export const isLocale = (tested: string): tested is Locale => locales.some(locale => locale === tested);
