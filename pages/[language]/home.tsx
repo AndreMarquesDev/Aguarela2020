@@ -6,24 +6,24 @@ import Layout from '../../components/Layout';
 import { getInitialLocale } from '../../utils/locales/getLocale';
 import { addLocaleToPageUrl } from '../../utils/routing/addLocaleToPageUrl';
 
-const Projects: NextPage = () => {
+const Index: NextPage = () => {
     const router = useRouter();
 
     useEffect(() => {
         const locale = getInitialLocale();
 
-        addLocaleToPageUrl('projects', locale, router);
+        addLocaleToPageUrl('home', locale, router);
     });
 
     return (
         <Layout>
             <Head>
-                <title>Projetos - Aguarela Digital</title>
+                <title>Aguarela Digital</title>
             </Head>
 
-            <p>This is the projects page</p>
+            <p>This is the homepage</p>
         </Layout>
     );
 };
 
-export default Projects;
+export default Index;

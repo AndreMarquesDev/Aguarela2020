@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Prismic from 'prismic-javascript';
 import { RichText } from 'prismic-reactjs';
 import Head from 'next/head';
 import { NextPage } from 'next';
+import { useRouter } from 'next/router';
 import Layout from '../../components/Layout';
 import { Client } from '../../prismic-configuration';
 import NoContentErrorBlock from '../../components/NoContentErrorBlock';
 import Title from '../../components/Title';
-import { getPrismicLocale } from '../../utils/locales/getLocale';
+import { getPrismicLocale, getInitialLocale } from '../../utils/locales/getLocale';
+import { addLocaleToPageUrl } from '../../utils/routing/addLocaleToPageUrl';
 
 interface IAboutProps {
     document: any; // eslint-disable-line @typescript-eslint/no-explicit-any
@@ -17,6 +19,13 @@ const About: NextPage<IAboutProps> = props => {
     const {
         document,
     } = props;
+    const router = useRouter();
+
+    useEffect(() => {
+        const locale = getInitialLocale();
+
+        addLocaleToPageUrl('about', locale, router);
+    });
 
     return (
         <Layout>

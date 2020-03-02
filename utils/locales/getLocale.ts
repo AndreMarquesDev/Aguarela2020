@@ -1,3 +1,5 @@
+import { filterUrlLocale, urlHasLocale } from '../routing/urlValidation';
+
 import { Locale } from './localesTypes';
 import { defaultLocale, prismicCultures, locales } from './config';
 
@@ -6,6 +8,10 @@ export const isLocale = (tested: string): tested is Locale => locales.some(local
 export const getInitialLocale = (): Locale => {
     if (!navigator) {
         return defaultLocale;
+    }
+
+    if (urlHasLocale) {
+        return filterUrlLocale[0];
     }
 
     const localSetting = localStorage.getItem('locale');

@@ -1,15 +1,29 @@
-import React, { FC } from 'react';
+import React, { useEffect } from 'react';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { NextPage } from 'next';
 import Layout from '../../components/Layout';
+import { getInitialLocale } from '../../utils/locales/getLocale';
+import { addLocaleToPageUrl } from '../../utils/routing/addLocaleToPageUrl';
 
-const contact: FC = () => (
-    <Layout>
-        <Head>
-            <title>Contacto - Aguarela Digital</title>
-        </Head>
+const Contact: NextPage = () => {
+    const router = useRouter();
 
-        <p className="noScroll">This is the contact page</p>
-    </Layout>
-);
+    useEffect(() => {
+        const locale = getInitialLocale();
 
-export default contact;
+        addLocaleToPageUrl('contact', locale, router);
+    });
+
+    return (
+        <Layout>
+            <Head>
+                <title>Contacto - Aguarela Digital</title>
+            </Head>
+
+            <p>This is the contact page</p>
+        </Layout>
+    );
+};
+
+export default Contact;

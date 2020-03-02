@@ -13,16 +13,7 @@ const Index: FC = () => {
         if (isRoot) {
             router.replace('/[lang]', `/${locale}`);
         }
-
-        const hasQuery = !!router.query.language;
-        const hasLangParam = hasQuery && (router.query.language === 'en' || router.query.language === 'pt');
-
-        // if user navigates to "/about", replace with "/en/about"
-        if (!isRoot && hasQuery && !hasLangParam) {
-            router.replace(`/${locale}/${router.query.language}`);
-        }
     });
-
 
     return (
         <Head>

@@ -1,15 +1,29 @@
-import React, { FC } from 'react';
+import React, { useEffect } from 'react';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { NextPage } from 'next';
 import Layout from '../../components/Layout';
+import { getInitialLocale } from '../../utils/locales/getLocale';
+import { addLocaleToPageUrl } from '../../utils/routing/addLocaleToPageUrl';
 
-const Services: FC = () => (
-    <Layout>
-        <Head>
-            <title>Serviços - Aguarela Digital</title>
-        </Head>
+const Services: NextPage = () => {
+    const router = useRouter();
 
-        <p>This is the services page</p>
-    </Layout>
-);
+    useEffect(() => {
+        const locale = getInitialLocale();
+
+        addLocaleToPageUrl('services', locale, router);
+    });
+
+    return (
+        <Layout>
+            <Head>
+                <title>Serviços - Aguarela Digital</title>
+            </Head>
+
+            <p>This is the services page</p>
+        </Layout>
+    );
+};
 
 export default Services;
