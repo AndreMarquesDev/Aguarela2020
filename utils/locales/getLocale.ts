@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import Cookies from 'js-cookie';
-import { filterUrlLocale, urlHasLocale } from '../routing/urlValidation';
+import { getLangFromUrl, urlHasLocale } from '../routing/urlValidation';
 import { Locale } from './localesTypes';
 import { defaultLocale, prismicCultures, locales } from './config';
 import { hasNavigator } from '../routing/config';
@@ -15,7 +15,7 @@ export const getInitialLocale = (): Locale => {
     }
 
     if (urlHasLocale) {
-        const locale = filterUrlLocale[0];
+        const locale = getLangFromUrl[0];
 
         console.log('Read lang from url, will set cookie', locale);
         Cookies.set('lang', locale, { expires: 60 });

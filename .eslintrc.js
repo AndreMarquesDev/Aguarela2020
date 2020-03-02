@@ -127,6 +127,9 @@ module.exports = {
         'capitalized-comments': [
             'error',
             'never',
+            {
+                'ignorePattern': 'TODO:',
+            }
         ],
         'line-comment-position': [
             'error',

@@ -1,14 +1,26 @@
 import css from 'styled-jsx/css';
+import colors from './colors';
 
 const genericStyles = css.global`
     html {
+        width: 100%;
+        height: 100%;
         font-size: 1px;
     }
 
     body {
+        min-height: 100%;
+        height: 100%;
+        width: 100%;
+        position: relative;
         font-size: 20rem;
-        color: #444242;
         font-family: 'champagne-limousines', sans-serif;
+        color: ${colors.black};
+
+        & > * {
+            min-height: 100%;
+            height: 100%;
+        }
     }
 
     a {
@@ -18,9 +30,16 @@ const genericStyles = css.global`
         cursor: pointer;
     }
 
+    button {
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
     .link {
         display: inline-block;
         position: relative;
+        cursor: pointer;
 
         &::before {
             content: '';

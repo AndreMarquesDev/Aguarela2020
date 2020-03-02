@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import GeneralStyles from '../styles/styles';
 import Header from './Header';
 import colors from '../styles/colors';
+import LanguageButton from './LanguageButton';
 
 const Layout: FC = props => {
     const { children } = props;
@@ -17,13 +18,17 @@ const Layout: FC = props => {
         <main className="Layout">
             <GeneralStyles />
 
-            <Header currentRoute={route} language={query.language} />
+            <Header currentRoute={route} language={query.language?.toString()} />
 
             {children}
+
+            <LanguageButton language={query.language?.toString()} />
 
             <style jsx>
                 {`
                     .Layout {
+                        height: 100%;
+                        position: relative;
                         padding: 20rem;
 
                         &:before {
@@ -37,7 +42,6 @@ const Layout: FC = props => {
                             z-index: -1;
                         }
                     }
-
                 `}
             </style>
 

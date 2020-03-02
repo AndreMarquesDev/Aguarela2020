@@ -6,7 +6,7 @@ import logo from '../public/images/logo.png';
 
 interface IHeaderProps {
     currentRoute: string;
-    language: string | string[];
+    language: string;
 }
 
 const Header: FC<IHeaderProps> = props => {
