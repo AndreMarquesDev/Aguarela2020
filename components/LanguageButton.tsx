@@ -15,7 +15,8 @@ const LanguageButton: FC<ILanguageButtonProps> = props => {
 
     const onButtonClick = (): void => {
         // TODO: replace the correct url instead of redirecting to the homepage
-        router.replace(`/${getRemainingLang}`);
+        // move this replace to a function, it is used in index as well
+        router.replace(`/${getRemainingLang}/home`);
     };
 
     return (

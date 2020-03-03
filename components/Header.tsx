@@ -1,8 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { FC } from 'react';
+import React, { FC, useContext } from 'react';
 import Link from 'next/link';
 import classNames from 'classnames';
 import logo from '../public/images/logo.png';
+import NavLinksContext from './context/NavLinksContext';
 
 interface IHeaderProps {
     currentRoute: string;
@@ -15,78 +16,65 @@ const Header: FC<IHeaderProps> = props => {
         language,
     } = props;
 
-    const aboutLinkStyles = classNames(
-        'link',
-        currentRoute === '/about' && 'active',
+    const linkStyles = (link: string): string => (
+        classNames(
+            'link',
+            currentRoute === `/${link}` && 'active',
+        )
     );
-    const projectsLinkStyles = classNames(
-        'link',
-        currentRoute === '/projects' && 'active',
-    );
-    const servicesLinkStyles = classNames(
-        'link',
-        currentRoute === '/services' && 'active',
-    );
-    const contactLinkStyles = classNames(
-        'link',
-        currentRoute === '/contact' && 'active',
-    );
+
+    const navLinksDocument = useContext(NavLinksContext);
+    const navLinks = Object.entries(navLinksDocument?.data);
 
     return (
         <nav>
-            <Link href="/">
+            <Link href={`/${language}/home`}>
                 <a>
                     <img alt="Logo" src={logo} />
                 </a>
             </Link>
             <ul>
-                <li>
-                    <Link href={`/${language}/about`}>
-                        <a className={aboutLinkStyles}>Sobre</a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href={`/${language}/projects`}>
-                        <a className={projectsLinkStyles}>Projetos</a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href={`/${language}/services`}>
-                        <a className={servicesLinkStyles}>Serviços</a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href={`/${language}/contact`}>
-                        <a className={contactLinkStyles}>Contacto</a>
-                    </Link>
-                </li>
+                {navLinks?.map(link => {
+                    const linkType = link[0];
+                    const linkText = link[1][0].text;
+
+                    return (
+                        <li key={linkType}>
+                            <Link href={`/${language}/${linkType}`}>
+                                <a className={linkStyles(linkType)}>
+                                    {linkText}
+                                </a>
+                            </Link>
+                        </li>
+                    );
+                })}
             </ul>
 
             <style jsx>
                 {`
-                    nav {
-                        display: flex;
-                        align-items: center;
-                        flex-direction: column;
-                    }
+                                nav {
+                                    display: flex;
+                                    align-items: center;
+                                    flex-direction: column;
+                                }
 
-                    img {
-                        width: 150rem;
-                    }
+                                img {
+                                    width: 150rem;
+                                }
 
-                    ul {
-                        display: flex;
-                        justify-content: center;
-                        list-style: none;
-                        margin: 30rem 0;
-                    }
+                                ul {
+                                    display: flex;
+                                    justify-content: center;
+                                    list-style: none;
+                                    margin: 30rem 0;
+                                }
 
-                    li a {
-                        font-size: 24rem;
-                        margin: 0 10rem;
-                        text-transform: uppercase;
-                    }
-                `}
+                                li a {
+                                    font-size: 24rem;
+                                    margin: 0 10rem;
+                                    text-transform: uppercase;
+                                }
+                            `}
             </style>
         </nav>
     );

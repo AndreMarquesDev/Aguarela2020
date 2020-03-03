@@ -10,13 +10,17 @@ import NoContentErrorBlock from '../../components/NoContentErrorBlock';
 import Title from '../../components/Title';
 import { getPrismicLocale, getInitialLocale } from '../../utils/locales/getLocale';
 import { addLocaleToPageUrl } from '../../utils/routing/addLocaleToPageUrl';
+import NavLinksContext from '../../components/context/NavLinksContext';
+import { capitalize } from '../../utils/generic';
 
 interface IAboutProps {
+    navLinksDocument: any; // eslint-disable-line @typescript-eslint/no-explicit-any
     document: any; // eslint-disable-line @typescript-eslint/no-explicit-any
 }
 
 const About: NextPage<IAboutProps> = props => {
     const {
+        navLinksDocument,
         document,
     } = props;
     const router = useRouter();
@@ -27,21 +31,29 @@ const About: NextPage<IAboutProps> = props => {
         addLocaleToPageUrl('about', locale, router);
     });
 
-    return (
-        <Layout>
-            <Head>
-                <title>Sobre - Aguarela Digital</title>
-            </Head>
+    const pageTitle = document ? document.data.page_title : 'Sobre';
 
-            {
-                document ? (
-                    <div>
-                        <Title text={RichText.asText(document.data.title)} />
-                        <RichText render={document.data.textBody} />
-                    </div>
-                ) : <NoContentErrorBlock />
-            }
-        </Layout>
+    return (
+        <NavLinksContext.Provider value={navLinksDocument}>
+            <Layout>
+                <Head>
+                    <title>
+                        {capitalize(pageTitle)}
+                        {' '}
+                        - Aguarela Digital
+                    </title>
+                </Head>
+
+                {
+                    document ? (
+                        <div>
+                            <Title text={RichText.asText(document.data.title)} />
+                            <RichText render={document.data.textBody} />
+                        </div>
+                    ) : <NoContentErrorBlock />
+                }
+            </Layout>
+        </NavLinksContext.Provider>
     );
 };
 
@@ -49,13 +61,19 @@ About.getInitialProps = async (context): Promise<IAboutProps> => {
     const prismicLocale = getPrismicLocale(context.query.language);
 
     const { req: request } = context; // eslint-disable-line id-length
-    const response = await Client(request).query(
+
+    const navLinksResponse = await Client(request).query(
+        Prismic.Predicates.at('document.type', 'nav_links'),
+        { lang: prismicLocale },
+    );
+    const aboutResponse = await Client(request).query(
         Prismic.Predicates.at('document.type', 'about'),
         { lang: prismicLocale },
     );
 
     return {
-        document: response.results[0],
+        navLinksDocument: navLinksResponse.results[0],
+        document: aboutResponse.results[0],
     };
 };
 
