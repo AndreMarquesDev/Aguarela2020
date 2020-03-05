@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { getInitialLocale } from '../../utils/locales/getLocale';
 import { urlHasLocale } from '../../utils/routing/urlValidation';
+import { redirectToHomepage } from '../../utils/routing/config';
 
 const Index: FC = () => {
     const router = useRouter();
@@ -16,7 +17,7 @@ const Index: FC = () => {
             return;
         }
 
-        router.replace(`/${locale}/home`);
+        redirectToHomepage(router, locale);
     });
 
     return (

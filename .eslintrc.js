@@ -42,6 +42,8 @@ module.exports = {
                     'Css',
                     'env',
                     'Env',
+                    'url',
+                    'URL',
                 ]
             }
         ],

@@ -34,6 +34,7 @@ const genericStyles = css.global`
         background: none;
         border: none;
         padding: 0;
+        cursor: pointer;
     }
 
     .link {

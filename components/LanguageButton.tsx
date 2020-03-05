@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { useRouter } from 'next/router';
-import { getRemainingLang } from '../utils/routing/urlValidation';
+import ReactCountryFlag from 'react-country-flag';
+import { getRemainingLang, getPageFromUrl } from '../utils/routing/urlValidation';
 
 interface ILanguageButtonProps {
     language: string;
@@ -12,32 +13,45 @@ const LanguageButton: FC<ILanguageButtonProps> = props => {
     } = props;
 
     const router = useRouter();
+    const currentPage = getPageFromUrl[0];
+    const languageToSwitchTo = getRemainingLang[0];
+    const countryCode = language === 'en' ? 'PT' : 'GB';
 
     const onButtonClick = (): void => {
         // TODO: replace the correct url instead of redirecting to the homepage
-        // move this replace to a function, it is used in index as well
-        router.replace(`/${getRemainingLang}/home`);
+        router.replace(`/${languageToSwitchTo}/${currentPage}`);
     };
 
     return (
         <>
             <button
-                className="link"
                 type="button"
-                onClick={() => onButtonClick()} // eslint-disable-line @typescript-eslint/explicit-function-return-type
+                onClick={(): void => onButtonClick()}
             >
-                Change language from
-                {` ${language?.toUpperCase()} to ${getRemainingLang.toString().toUpperCase()}`}
+                <ReactCountryFlag
+                    svg
+                    countryCode={countryCode}
+                    style={{
+                        width: '30rem',
+                        height: '30rem',
+                    }}
+                    title={countryCode}
+                />
             </button>
 
             <style jsx>
                 {`
-                button {
-                    position: absolute;
-                    right: 20rem;
-                    bottom: 20rem;
-                }
-            `}
+                    button {
+                        position: absolute;
+                        right: 20rem;
+                        bottom: 20rem;
+                        transition: transform .2s;
+
+                        &:hover {
+                            transform: scale(.95);
+                        }
+                    }
+                `}
             </style>
         </>
     );
