@@ -28,7 +28,7 @@ const Header: FC<IHeaderProps> = props => {
 
     return (
         <nav>
-            <Link href={`/${language}/home`}>
+            <Link href={`/${language}/home`} prefetch={false}>
                 <a>
                     <img alt="Logo" src={logo} />
                 </a>
@@ -40,7 +40,7 @@ const Header: FC<IHeaderProps> = props => {
 
                     return (
                         <li key={linkType}>
-                            <Link href={`/${language}/${linkType}`}>
+                            <Link href={`/${language}/${linkType}`} prefetch={false}>
                                 <a className={linkStyles(linkType)}>
                                     {linkText}
                                 </a>
