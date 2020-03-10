@@ -1,5 +1,9 @@
+import Prismic from 'prismic-javascript';
+import { Document } from 'prismic-javascript/d.ts/documents';
 import { locales } from '../locales/config';
 import { Locale } from '../locales/localesTypes';
+import { getPrismicLocale } from '../locales/getLocale';
+import { Client } from '../../prismic-configuration';
 
 interface IStaticPaths {
     paths: {
@@ -21,4 +25,26 @@ export const staticPaths = (): IStaticPaths => {
         paths,
         fallback: false,
     };
+};
+
+export const getNavLinks = async (locale: string | string[]): Promise<Document> => {
+    const prismicLocale = getPrismicLocale(locale);
+
+    const navLinksResponse = await Client.query(
+        Prismic.Predicates.at('document.type', 'nav_links'),
+        { lang: prismicLocale },
+    );
+
+    return navLinksResponse.results[0];
+};
+
+export const getPrismicDoc = async (locale: string | string[], prismicDocId: string): Promise<Document> => {
+    const prismicLocale = getPrismicLocale(locale);
+
+    const response = await Client.query(
+        Prismic.Predicates.at('document.type', prismicDocId),
+        { lang: prismicLocale },
+    );
+
+    return response.results[0];
 };

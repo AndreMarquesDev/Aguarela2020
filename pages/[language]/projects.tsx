@@ -2,27 +2,26 @@ import React, { useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next';
-import Prismic from 'prismic-javascript';
 import { RichText } from 'prismic-reactjs';
+import { Document } from 'prismic-javascript/d.ts/documents';
 import Layout from '../../components/Layout';
-import { getInitialLocale, getPrismicLocale } from '../../utils/locales/getLocale';
+import { getInitialLocale } from '../../utils/locales/getLocale';
 import { addLocaleToPageUrl } from '../../utils/routing/addLocaleToPageUrl';
-import { Client } from '../../prismic-configuration';
 import NavLinksContext from '../../components/context/NavLinksContext';
 import Title from '../../components/Title';
 import NoContentErrorBlock from '../../components/NoContentErrorBlock';
 import { capitalize } from '../../utils/generic';
-import { staticPaths } from '../../utils/routing/getInitialProps';
+import { staticPaths, getNavLinks, getPrismicDoc } from '../../utils/routing/getInitialProps';
 
 interface IProjectsProps {
-    navLinksDocument: any; // eslint-disable-line @typescript-eslint/no-explicit-any
-    document: any; // eslint-disable-line @typescript-eslint/no-explicit-any
+    navLinksPrismicDoc: Document;
+    projectsPrismicDoc: Document;
 }
 
 const Projects: NextPage<IProjectsProps> = props => {
     const {
-        navLinksDocument,
-        document,
+        navLinksPrismicDoc,
+        projectsPrismicDoc,
     } = props;
     const router = useRouter();
 
@@ -32,10 +31,10 @@ const Projects: NextPage<IProjectsProps> = props => {
         addLocaleToPageUrl('projects', locale, router);
     });
 
-    const pageTitle = document ? document.data.page_title : 'Projetos';
+    const pageTitle = projectsPrismicDoc ? projectsPrismicDoc.data.page_title : 'Projetos';
 
     return (
-        <NavLinksContext.Provider value={navLinksDocument}>
+        <NavLinksContext.Provider value={navLinksPrismicDoc}>
             <Layout>
                 <Head>
                     <title>
@@ -46,13 +45,13 @@ const Projects: NextPage<IProjectsProps> = props => {
                 </Head>
 
                 {
-                    document ? (
+                    projectsPrismicDoc ? (
                         <div>
-                            <Title text={RichText.asText(document.data.title)} />
-                            <RichText render={document.data.textBody} />
+                            <Title text={RichText.asText(projectsPrismicDoc.data.title)} />
+                            <RichText render={projectsPrismicDoc.data.textBody} />
                             <ul className="thumbnailList">
                                 {
-                                    document.data.thumbnails_list.map(({ thumbnail }) => (
+                                    projectsPrismicDoc.data.thumbnails_list.map(({ thumbnail }) => (
                                         <li key={thumbnail.alt}>
                                             <img
                                                 alt={thumbnail.alt}
@@ -93,21 +92,15 @@ const Projects: NextPage<IProjectsProps> = props => {
 };
 
 export const getStaticProps: GetStaticProps = async context => {
-    const prismicLocale = getPrismicLocale(context.params.language);
+    const { language } = context.params;
 
-    const navLinksResponse = await Client.query(
-        Prismic.Predicates.at('document.type', 'nav_links'),
-        { lang: prismicLocale },
-    );
-    const projectsResponse = await Client.query(
-        Prismic.Predicates.at('document.type', 'projects_page'),
-        { lang: prismicLocale },
-    );
+    const navLinks = await getNavLinks(language);
+    const projectsPrismicDoc = await getPrismicDoc(language, 'projects_page');
 
     return {
         props: {
-            navLinksDocument: navLinksResponse.results[0],
-            document: projectsResponse.results[0],
+            navLinksPrismicDoc: navLinks,
+            projectsPrismicDoc,
         },
     };
 };

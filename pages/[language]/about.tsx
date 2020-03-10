@@ -1,28 +1,27 @@
 import React, { useEffect } from 'react';
-import Prismic from 'prismic-javascript';
 import { RichText } from 'prismic-reactjs';
 import Head from 'next/head';
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next';
 import { useRouter } from 'next/router';
+import { Document } from 'prismic-javascript/d.ts/documents';
 import Layout from '../../components/Layout';
-import { Client } from '../../prismic-configuration';
 import NoContentErrorBlock from '../../components/NoContentErrorBlock';
 import Title from '../../components/Title';
-import { getInitialLocale, getPrismicLocale } from '../../utils/locales/getLocale';
+import { getInitialLocale } from '../../utils/locales/getLocale';
 import { addLocaleToPageUrl } from '../../utils/routing/addLocaleToPageUrl';
 import NavLinksContext from '../../components/context/NavLinksContext';
 import { capitalize } from '../../utils/generic';
-import { staticPaths } from '../../utils/routing/getInitialProps';
+import { staticPaths, getNavLinks, getPrismicDoc } from '../../utils/routing/getInitialProps';
 
 interface IAboutProps {
-    navLinksDocument: any; // eslint-disable-line @typescript-eslint/no-explicit-any
-    document: any; // eslint-disable-line @typescript-eslint/no-explicit-any
+    navLinksPrismicDoc: Document;
+    aboutPrismicDoc: Document;
 }
 
 const About: NextPage<IAboutProps> = props => {
     const {
-        navLinksDocument,
-        document,
+        navLinksPrismicDoc,
+        aboutPrismicDoc,
     } = props;
     const router = useRouter();
 
@@ -32,10 +31,10 @@ const About: NextPage<IAboutProps> = props => {
         addLocaleToPageUrl('about', locale, router);
     });
 
-    const pageTitle = document ? document.data.page_title : 'Sobre';
+    const pageTitle = aboutPrismicDoc ? aboutPrismicDoc.data.page_title : 'Sobre';
 
     return (
-        <NavLinksContext.Provider value={navLinksDocument}>
+        <NavLinksContext.Provider value={navLinksPrismicDoc}>
             <Layout>
                 <Head>
                     <title>
@@ -46,10 +45,10 @@ const About: NextPage<IAboutProps> = props => {
                 </Head>
 
                 {
-                    document ? (
+                    aboutPrismicDoc ? (
                         <div>
-                            <Title text={RichText.asText(document.data.title)} />
-                            <RichText render={document.data.textBody} />
+                            <Title text={RichText.asText(aboutPrismicDoc.data.title)} />
+                            <RichText render={aboutPrismicDoc.data.textBody} />
                         </div>
                     ) : <NoContentErrorBlock />
                 }
@@ -59,21 +58,15 @@ const About: NextPage<IAboutProps> = props => {
 };
 
 export const getStaticProps: GetStaticProps = async context => {
-    const prismicLocale = getPrismicLocale(context.params.language);
+    const { language } = context.params;
 
-    const navLinksResponse = await Client.query(
-        Prismic.Predicates.at('document.type', 'nav_links'),
-        { lang: prismicLocale },
-    );
-    const aboutResponse = await Client.query(
-        Prismic.Predicates.at('document.type', 'about'),
-        { lang: prismicLocale },
-    );
+    const navLinks = await getNavLinks(language);
+    const aboutPrismicDoc = await getPrismicDoc(language, 'about');
 
     return {
         props: {
-            navLinksDocument: navLinksResponse.results[0],
-            document: aboutResponse.results[0],
+            navLinksPrismicDoc: navLinks,
+            aboutPrismicDoc,
         },
     };
 };

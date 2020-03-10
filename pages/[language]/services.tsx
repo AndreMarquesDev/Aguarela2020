@@ -2,21 +2,21 @@ import React, { useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next';
-import Prismic from 'prismic-javascript';
+import { Document } from 'prismic-javascript/d.ts/documents';
 import Layout from '../../components/Layout';
-import { getInitialLocale, getPrismicLocale } from '../../utils/locales/getLocale';
+import { getInitialLocale } from '../../utils/locales/getLocale';
 import { addLocaleToPageUrl } from '../../utils/routing/addLocaleToPageUrl';
 import NavLinksContext from '../../components/context/NavLinksContext';
-import { Client } from '../../prismic-configuration';
-import { staticPaths } from '../../utils/routing/getInitialProps';
+import { staticPaths, getNavLinks } from '../../utils/routing/getInitialProps';
+
 
 interface IServicesProps {
-    navLinksDocument: any; // eslint-disable-line @typescript-eslint/no-explicit-any
+    navLinksPrismicDoc: Document;
 }
 
 const Services: NextPage<IServicesProps> = props => {
     const {
-        navLinksDocument,
+        navLinksPrismicDoc,
     } = props;
     const router = useRouter();
 
@@ -27,7 +27,7 @@ const Services: NextPage<IServicesProps> = props => {
     });
 
     return (
-        <NavLinksContext.Provider value={navLinksDocument}>
+        <NavLinksContext.Provider value={navLinksPrismicDoc}>
             <Layout>
                 <Head>
                     <title>Serviços - Aguarela Digital</title>
@@ -40,16 +40,11 @@ const Services: NextPage<IServicesProps> = props => {
 };
 
 export const getStaticProps: GetStaticProps = async context => {
-    const prismicLocale = getPrismicLocale(context.params.language);
-
-    const navLinksResponse = await Client.query(
-        Prismic.Predicates.at('document.type', 'nav_links'),
-        { lang: prismicLocale },
-    );
+    const navLinks = await getNavLinks(context.params.language);
 
     return {
         props: {
-            navLinksDocument: navLinksResponse.results[0],
+            navLinksPrismicDoc: navLinks,
         },
     };
 };

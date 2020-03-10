@@ -23,8 +23,8 @@ const Header: FC<IHeaderProps> = props => {
         )
     );
 
-    const navLinksDocument = useContext(NavLinksContext);
-    const navLinks = navLinksDocument && Object.entries(navLinksDocument.data);
+    const navLinksPrismicDoc = useContext(NavLinksContext);
+    const navLinks = navLinksPrismicDoc && Object.entries(navLinksPrismicDoc.data);
 
     return (
         <nav>
