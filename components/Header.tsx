@@ -24,7 +24,7 @@ const Header: FC<IHeaderProps> = props => {
     );
 
     const navLinksDocument = useContext(NavLinksContext);
-    const navLinks = Object.entries(navLinksDocument?.data);
+    const navLinks = navLinksDocument && Object.entries(navLinksDocument.data);
 
     return (
         <nav>

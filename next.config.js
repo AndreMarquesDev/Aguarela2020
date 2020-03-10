@@ -11,7 +11,7 @@ const nextConfig = {
 
 module.exports = withPlugins([
     [optimizedImages, {
-        inlineImageLimit: 819200,
+        inlineImageLimit: 81920,
         optimizeImagesInDev: true,
         mozjpeg: {
             quality: 60,
