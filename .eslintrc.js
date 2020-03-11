@@ -44,6 +44,8 @@ module.exports = {
                     'Env',
                     'url',
                     'URL',
+                    'top',
+                    'Top',
                 ]
             }
         ],

@@ -42,7 +42,7 @@ const LanguageButton: FC<ILanguageButtonProps> = props => {
             <style jsx>
                 {`
                     button {
-                        position: absolute;
+                        position: fixed;
                         right: 20rem;
                         bottom: 20rem;
                         transition: transform .2s;

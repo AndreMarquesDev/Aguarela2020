@@ -27,9 +27,8 @@ const Layout: FC = props => {
             <style jsx>
                 {`
                     .Layout {
-                        height: 100%;
                         position: relative;
-                        padding: 20rem;
+                        padding: 20rem 0;
 
                         &:before {
                             content: '';

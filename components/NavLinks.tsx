@@ -56,8 +56,8 @@ const NavLinks: FC<INavLinksProps> = props => {
                     }
 
                     li a {
-                        font-size: 24rem;
-                        letter-spacing: 2px;
+                        font-size: 20rem;
+                        letter-spacing: 4px;
                         text-transform: uppercase;
                         margin: 0 10rem;
                     }
