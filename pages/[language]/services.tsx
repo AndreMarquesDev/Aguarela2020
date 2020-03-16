@@ -27,7 +27,7 @@ const Services: NextPage<IServicesProps> = props => {
     });
 
     return (
-        <NavLinksContext.Provider value={navLinksPrismicDoc}>
+        <NavLinksContext.Provider value={{ navLinksPrismicDoc }}>
             <Layout>
                 <Head>
                     <title>Serviços - Aguarela Digital</title>

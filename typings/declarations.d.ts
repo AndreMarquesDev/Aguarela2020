@@ -5,5 +5,6 @@ declare module '*.scss' {
 
 declare module '*.jpg';
 declare module '*.png';
+declare module '*.svg';
 declare module 'prismic-reactjs';
 declare module 'js-cookie';

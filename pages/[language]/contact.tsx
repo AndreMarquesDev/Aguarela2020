@@ -26,7 +26,7 @@ const Contact: NextPage<IContactProps> = props => {
     });
 
     return (
-        <NavLinksContext.Provider value={navLinksPrismicDoc}>
+        <NavLinksContext.Provider value={{ navLinksPrismicDoc }}>
             <Layout>
                 <Head>
                     <title>Contacto - Aguarela Digital</title>

@@ -34,7 +34,7 @@ const Projects: NextPage<IProjectsProps> = props => {
     const pageTitle = projectsPrismicDoc ? projectsPrismicDoc.data.page_title : 'Projetos';
 
     return (
-        <NavLinksContext.Provider value={navLinksPrismicDoc}>
+        <NavLinksContext.Provider value={{ navLinksPrismicDoc }}>
             <Layout>
                 <Head>
                     <title>

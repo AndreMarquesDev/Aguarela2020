@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next';
@@ -6,9 +6,8 @@ import { Document } from 'prismic-javascript/d.ts/documents';
 import Layout from '../../components/Layout';
 import { getInitialLocale } from '../../utils/locales/getLocale';
 import { addLocaleToPageUrl } from '../../utils/routing/addLocaleToPageUrl';
-import NavLinksContext from '../../components/context/NavLinksContext';
+import NavLinksContext, { INavLinksContext } from '../../components/context/NavLinksContext';
 import { staticPaths, getNavLinks } from '../../utils/routing/getInitialProps';
-import { heroHeight } from '../../styles/variables';
 
 interface IHomeProps {
     navLinksPrismicDoc: Document;
@@ -18,7 +17,9 @@ const Home: NextPage<IHomeProps> = props => {
     const {
         navLinksPrismicDoc,
     } = props;
+
     const router = useRouter();
+    const [navHeight, setNavHeight] = useState(0);
 
     useEffect(() => {
         const locale = getInitialLocale();
@@ -26,8 +27,13 @@ const Home: NextPage<IHomeProps> = props => {
         addLocaleToPageUrl('home', locale, router);
     });
 
+    const context: INavLinksContext = {
+        navLinksPrismicDoc,
+        setNavHeight,
+    };
+
     return (
-        <NavLinksContext.Provider value={navLinksPrismicDoc}>
+        <NavLinksContext.Provider value={context}>
             <Layout>
                 <Head>
                     <title>Aguarela Digital</title>
@@ -44,7 +50,7 @@ const Home: NextPage<IHomeProps> = props => {
                     {`
                         img {
                             width: 100%;
-                            height: ${heroHeight};
+                            height: calc(90vh - ${navHeight}rem);
                             position: relative;
                             top: 0;
                             left: 0;

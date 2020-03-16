@@ -1,5 +1,11 @@
-import { createContext } from 'react';
+import { createContext, Context } from 'react';
+import { Document } from 'prismic-javascript/d.ts/documents';
 
-const NavLinksContext = createContext(null);
+export interface INavLinksContext {
+    navLinksPrismicDoc?: Document;
+    setNavHeight?: React.Dispatch<React.SetStateAction<number>>;
+}
+
+const NavLinksContext: Context<INavLinksContext> = createContext(null);
 
 export default NavLinksContext;

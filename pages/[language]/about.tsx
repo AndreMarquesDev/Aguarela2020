@@ -34,7 +34,7 @@ const About: NextPage<IAboutProps> = props => {
     const pageTitle = aboutPrismicDoc ? aboutPrismicDoc.data.page_title : 'Sobre';
 
     return (
-        <NavLinksContext.Provider value={navLinksPrismicDoc}>
+        <NavLinksContext.Provider value={{ navLinksPrismicDoc }}>
             <Layout>
                 <Head>
                     <title>

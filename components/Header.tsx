@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { FC, useContext } from 'react';
+import React, {
+    FC, useContext, useRef, useEffect,
+} from 'react';
 import Link from 'next/link';
-import { Document } from 'prismic-javascript/d.ts/documents';
 import logo from '../public/images/logo.png';
 import NavLinksContext from './context/NavLinksContext';
 import NavLinks, { INavLink } from './NavLinks';
@@ -17,11 +18,21 @@ const Header: FC<IHeaderProps> = props => {
         language,
     } = props;
 
-    const navLinksPrismicDoc: Document = useContext(NavLinksContext);
+    const {
+        navLinksPrismicDoc,
+        setNavHeight,
+    } = useContext(NavLinksContext);
+
+    const navRef = useRef(null);
+
+    useEffect(() => {
+        setNavHeight(navRef.current.clientHeight);
+    });
+
     const navLinks: Array<[string, INavLink[]]> = navLinksPrismicDoc && Object.entries(navLinksPrismicDoc.data);
 
     return (
-        <nav>
+        <nav ref={navRef}>
             <Link href={`/${language}/home`} prefetch={false}>
                 <a>
                     <img alt="Logo" src={logo} />
@@ -43,10 +54,11 @@ const Header: FC<IHeaderProps> = props => {
                         display: flex;
                         align-items: center;
                         flex-direction: column;
+                        padding-top: 70rem;
                     }
 
                     img {
-                        width: 150rem;
+                        width: 415rem;
                     }
                 `}
             </style>
