@@ -5,6 +5,7 @@ import GeneralStyles from '../styles/styles';
 import Header from './Header';
 import colors from '../styles/colors';
 import LanguageButton from './LanguageButton';
+import { bodyPadding } from '../styles/variables';
 
 const Layout: FC = props => {
     const { children } = props;
@@ -28,7 +29,7 @@ const Layout: FC = props => {
                 {`
                     .Layout {
                         position: relative;
-                        padding: 20rem 0;
+                        padding: ${bodyPadding} 0;
 
                         &:before {
                             content: '';
