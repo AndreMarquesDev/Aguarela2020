@@ -3,7 +3,6 @@ import React, { FC } from 'react';
 import { useRouter } from 'next/router';
 import GeneralStyles from '../styles/styles';
 import Header from './Header';
-import colors from '../styles/colors';
 import LanguageButton from './LanguageButton';
 
 const Layout: FC = props => {
@@ -28,17 +27,6 @@ const Layout: FC = props => {
                 {`
                     .Layout {
                         position: relative;
-
-                        &:before {
-                            content: '';
-                            background: ${colors.lightGrey};
-                            width: 50%;
-                            height: 100%;
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            z-index: -1;
-                        }
                     }
                 `}
             </style>

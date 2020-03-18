@@ -6,6 +6,7 @@ import Link from 'next/link';
 import logo from '../public/images/logo.png';
 import NavLinksContext from './context/NavLinksContext';
 import NavLinks, { INavLink } from './NavLinks';
+import breakpoints from '../styles/breakpoints';
 
 interface IHeaderProps {
     currentRoute: string;
@@ -54,7 +55,11 @@ const Header: FC<IHeaderProps> = props => {
                         display: flex;
                         align-items: center;
                         flex-direction: column;
-                        padding-top: 70rem;
+                        padding-top: 100rem;
+
+                        @media (max-width: ${breakpoints.tablet}) {
+                            padding-top: 50rem;
+                        }
                     }
 
                     img {

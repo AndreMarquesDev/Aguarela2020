@@ -30,7 +30,7 @@ const NavLinks: FC<INavLinksProps> = props => {
     );
 
     return (
-        <ul>
+        <ul className="genericMargins">
             {navLinks.map(link => {
                 const linkType = link[0];
                 const linkText = link[1][0].text;
@@ -52,12 +52,11 @@ const NavLinks: FC<INavLinksProps> = props => {
                         display: flex;
                         justify-content: center;
                         list-style: none;
-                        margin: 30rem 0;
                     }
 
                     li a {
-                        font-size: 20rem;
-                        letter-spacing: 4px;
+                        font-size: 24rem;
+                        letter-spacing: 3rem;
                         text-transform: uppercase;
                         margin: 0 10rem;
                     }

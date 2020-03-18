@@ -7,15 +7,19 @@ import Layout from '../../components/Layout';
 import { getInitialLocale } from '../../utils/locales/getLocale';
 import { addLocaleToPageUrl } from '../../utils/routing/addLocaleToPageUrl';
 import NavLinksContext, { INavLinksContext } from '../../components/context/NavLinksContext';
-import { staticPaths, getNavLinks } from '../../utils/routing/getInitialProps';
+import { staticPaths, getNavLinks, getPrismicDoc } from '../../utils/routing/getInitialProps';
+import NoContentErrorBlock from '../../components/NoContentErrorBlock';
+import WelcomeSection from '../../components/WelcomeSection';
 
 interface IHomeProps {
     navLinksPrismicDoc: Document;
+    homePrismicDoc: Document;
 }
 
 const Home: NextPage<IHomeProps> = props => {
     const {
         navLinksPrismicDoc,
+        homePrismicDoc,
     } = props;
 
     const router = useRouter();
@@ -32,6 +36,8 @@ const Home: NextPage<IHomeProps> = props => {
         setNavHeight,
     };
 
+    console.log('Prismic', homePrismicDoc.data);
+
     return (
         <NavLinksContext.Provider value={context}>
             <Layout>
@@ -40,11 +46,15 @@ const Home: NextPage<IHomeProps> = props => {
                 </Head>
 
                 <img alt="" src="https://via.placeholder.com/2560x700/8416ef/FFFFFF?text=Banner" />
-                <p>This is the homepage</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate culpa expedita sint consectetur dignissimos enim iste, ex odio recusandae, reprehenderit distinctio nesciunt? Facilis voluptatibus dolorum vitae sed molestias assumenda quas?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate culpa expedita sint consectetur dignissimos enim iste, ex odio recusandae, reprehenderit distinctio nesciunt? Facilis voluptatibus dolorum vitae sed molestias assumenda quas?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate culpa expedita sint consectetur dignissimos enim iste, ex odio recusandae, reprehenderit distinctio nesciunt? Facilis voluptatibus dolorum vitae sed molestias assumenda quas?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate culpa expedita sint consectetur dignissimos enim iste, ex odio recusandae, reprehenderit distinctio nesciunt? Facilis voluptatibus dolorum vitae sed molestias assumenda quas?</p>
+
+                {
+                    homePrismicDoc ? (
+                        <WelcomeSection
+                            bodyContent={homePrismicDoc.data.welcome_body_text}
+                            title={homePrismicDoc.data.welcome_title}
+                        />
+                    ) : <NoContentErrorBlock />
+                }
 
                 <style jsx>
                     {`
@@ -56,9 +66,6 @@ const Home: NextPage<IHomeProps> = props => {
                             left: 0;
                             overflow: hidden;
                         }
-                        p {
-                            margin-bottom: 20rem;
-                        }
                     `}
                 </style>
             </Layout>
@@ -67,11 +74,15 @@ const Home: NextPage<IHomeProps> = props => {
 };
 
 export const getStaticProps: GetStaticProps = async context => {
+    const { language } = context.params;
+
     const navLinks = await getNavLinks(context.params.language);
+    const homePrismicDoc = await getPrismicDoc(language, 'home_page');
 
     return {
         props: {
             navLinksPrismicDoc: navLinks,
+            homePrismicDoc,
         },
     };
 };

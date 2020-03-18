@@ -1,5 +1,6 @@
 import css from 'styled-jsx/css';
 import colors from './colors';
+import breakpoints from './breakpoints';
 
 const genericStyles = css.global`
     html {
@@ -14,8 +15,8 @@ const genericStyles = css.global`
         height: 100%;
         width: 100%;
         position: relative;
-        font-size: 20rem;
         font-family: 'champagne-limousines', sans-serif;
+        font-size: 20rem;
         color: ${colors.black};
 
         & > * {
@@ -46,10 +47,10 @@ const genericStyles = css.global`
         &::before {
             content: '';
             width: 0;
-            height: 2.5rem;
+            height: 2rem;
             position: absolute;
             right: 0;
-            bottom: 0;
+            bottom: -1rem;
             background: rgba(0, 0, 0, 0.7);
             transition: width 0.3s ease-out;
         }
@@ -61,6 +62,25 @@ const genericStyles = css.global`
             width: 100%;
             left: 0;
             right: auto;
+        }
+    }
+
+    .bodyText {
+        font-family: 'champagne-limousines', sans-serif;
+        font-size: 20rem;
+        letter-spacing: 3rem;
+        margin-bottom: 30rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .genericMargins {
+        margin: 70rem 0;
+
+        @media (max-width: ${breakpoints.tablet}) {
+            margin: 35rem 0;
         }
     }
 
