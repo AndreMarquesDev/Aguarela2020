@@ -2,6 +2,8 @@
 import React, { FC } from 'react';
 import Link from 'next/link';
 import classNames from 'classnames';
+import { getPrismicText } from '../utils/generic';
+import breakpoints from '../styles/breakpoints';
 
 export interface INavLink {
     spans: string[];
@@ -33,7 +35,7 @@ const NavLinks: FC<INavLinksProps> = props => {
         <ul className="genericMargins">
             {navLinks.map(link => {
                 const linkType = link[0];
-                const linkText = link[1][0].text;
+                const linkText = getPrismicText(link[1]);
 
                 return (
                     <li key={linkType}>
@@ -50,15 +52,36 @@ const NavLinks: FC<INavLinksProps> = props => {
                 {`
                     ul {
                         display: flex;
+                        flex-wrap: wrap;
                         justify-content: center;
                         list-style: none;
+                        margin-bottom: 0;
                     }
 
-                    li a {
-                        font-size: 24rem;
-                        letter-spacing: 3rem;
-                        text-transform: uppercase;
-                        margin: 0 10rem;
+                    li {
+                        margin: 0 10rem 15rem;
+
+                        &:last-child {
+                            margin-bottom: 30rem;
+
+                        }
+
+                        a {
+                            font-size: 24rem;
+                            text-transform: uppercase;
+                        }
+
+                    }
+
+                    @media (max-width: ${breakpoints.mobile}) {
+                        li {
+                            margin: 0 5rem 10rem;
+
+                            &:last-child {
+                                margin-bottom: 15rem;
+
+                            }
+                        }
                     }
                 `}
             </style>

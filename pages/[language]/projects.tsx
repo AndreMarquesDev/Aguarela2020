@@ -46,7 +46,7 @@ const Projects: NextPage<IProjectsProps> = props => {
 
                 {
                     projectsPrismicDoc ? (
-                        <div>
+                        <div className="wrapper genericMargins">
                             <Title text={RichText.asText(projectsPrismicDoc.data.title)} />
                             <RichText render={projectsPrismicDoc.data.textBody} />
                             <ul className="thumbnailList">

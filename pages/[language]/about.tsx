@@ -46,7 +46,7 @@ const About: NextPage<IAboutProps> = props => {
 
                 {
                     aboutPrismicDoc ? (
-                        <div>
+                        <div className="wrapper genericMargins">
                             <Title text={RichText.asText(aboutPrismicDoc.data.title)} />
                             <RichText render={aboutPrismicDoc.data.textBody} />
                         </div>

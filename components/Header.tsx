@@ -27,13 +27,15 @@ const Header: FC<IHeaderProps> = props => {
     const navRef = useRef(null);
 
     useEffect(() => {
-        setNavHeight(navRef.current.clientHeight);
+        if (setNavHeight) {
+            setNavHeight(navRef.current.clientHeight);
+        }
     });
 
     const navLinks: Array<[string, INavLink[]]> = navLinksPrismicDoc && Object.entries(navLinksPrismicDoc.data);
 
     return (
-        <nav ref={navRef}>
+        <nav ref={navRef} className="wrapper">
             <Link href={`/${language}/home`} prefetch={false}>
                 <a>
                     <img alt="Logo" src={logo} />
@@ -56,14 +58,17 @@ const Header: FC<IHeaderProps> = props => {
                         align-items: center;
                         flex-direction: column;
                         padding-top: 100rem;
-
-                        @media (max-width: ${breakpoints.tablet}) {
-                            padding-top: 50rem;
-                        }
                     }
 
                     img {
-                        width: 415rem;
+                        max-width: 415rem;
+                        width: 100%;
+                    }
+
+                    @media (max-width: ${breakpoints.tablet}) {
+                        nav {
+                            padding-top: 50rem;
+                        }
                     }
                 `}
             </style>

@@ -17,6 +17,7 @@ const genericStyles = css.global`
         position: relative;
         font-family: 'champagne-limousines', sans-serif;
         font-size: 20rem;
+        letter-spacing: 3rem;
         color: ${colors.black};
 
         & > * {
@@ -68,7 +69,6 @@ const genericStyles = css.global`
     .bodyText {
         font-family: 'champagne-limousines', sans-serif;
         font-size: 20rem;
-        letter-spacing: 3rem;
         margin-bottom: 30rem;
 
         &:last-child {
@@ -76,14 +76,23 @@ const genericStyles = css.global`
         }
     }
 
-    .genericMargins {
-        margin: 70rem 0;
+    .wrapper {
+        max-width: 1920rem;
+        padding: 0 40rem;
+        margin: 0 auto;
 
         @media (max-width: ${breakpoints.tablet}) {
-            margin: 35rem 0;
+            padding: 0 20rem;
         }
     }
 
+    .genericMargins {
+        padding: 70rem 0;
+
+        @media (max-width: ${breakpoints.tablet}) {
+            padding: 35rem 0;
+        }
+    }
 `;
 
 export default genericStyles;

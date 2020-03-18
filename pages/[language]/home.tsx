@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/camelcase */
 import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
@@ -8,8 +9,9 @@ import { getInitialLocale } from '../../utils/locales/getLocale';
 import { addLocaleToPageUrl } from '../../utils/routing/addLocaleToPageUrl';
 import NavLinksContext, { INavLinksContext } from '../../components/context/NavLinksContext';
 import { staticPaths, getNavLinks, getPrismicDoc } from '../../utils/routing/getInitialProps';
-import NoContentErrorBlock from '../../components/NoContentErrorBlock';
 import WelcomeSection from '../../components/WelcomeSection';
+import Highlights from '../../components/Highlights';
+import Separator from '../../components/Separator';
 
 interface IHomeProps {
     navLinksPrismicDoc: Document;
@@ -36,7 +38,12 @@ const Home: NextPage<IHomeProps> = props => {
         setNavHeight,
     };
 
-    console.log('Prismic', homePrismicDoc.data);
+    const {
+        welcome_body_text,
+        welcome_title,
+        highlights_thumbnails,
+        highlights_title,
+    } = homePrismicDoc.data;
 
     return (
         <NavLinksContext.Provider value={context}>
@@ -45,16 +52,25 @@ const Home: NextPage<IHomeProps> = props => {
                     <title>Aguarela Digital</title>
                 </Head>
 
-                <img alt="" src="https://via.placeholder.com/2560x700/8416ef/FFFFFF?text=Banner" />
+                <img alt="" src="https://via.placeholder.com/2560x1290/5865A2/FFFFFF?text=Banner" />
 
                 {
-                    homePrismicDoc ? (
-                        <WelcomeSection
-                            bodyContent={homePrismicDoc.data.welcome_body_text}
-                            title={homePrismicDoc.data.welcome_title}
-                        />
-                    ) : <NoContentErrorBlock />
+                    homePrismicDoc && (
+                        <>
+                            <WelcomeSection
+                                bodyContent={welcome_body_text}
+                                title={welcome_title}
+                            />
+                            <Separator />
+                            <Highlights
+                                thumbnails={highlights_thumbnails}
+                                title={highlights_title}
+                            />
+                        </>
+                    )
                 }
+
+                <div style={{ height: '200rem' }} />
 
                 <style jsx>
                     {`

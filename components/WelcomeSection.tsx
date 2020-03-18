@@ -15,13 +15,13 @@ const WelcomeSection: FC<IWelcomeSectionProps> = props => {
 
     return (
         <>
-            <section className="genericMargins">
+            <section className="wrapper genericMargins">
                 <Title text={RichText.asText(title)} />
 
                 <div>
-                    {bodyContent.map(paragraph => (
-                        <p className="bodyText">
-                            {paragraph.text}
+                    {bodyContent.map(({ text }) => (
+                        <p key={text} className="bodyText">
+                            {text}
                         </p>
                     ))}
                 </div>

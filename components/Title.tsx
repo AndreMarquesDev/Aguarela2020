@@ -17,11 +17,12 @@ const Title: FC<ITitleProps> = props => {
 
             <style jsx>
                 {`
-                h1 {
-                    font-size: 30rem;
-                    margin-bottom: 20rem;
-                }
-            `}
+                    h1 {
+                        font-size: 30rem;
+                        text-transform: uppercase;
+                        margin-bottom: 30rem;
+                    }
+                `}
             </style>
         </>
     );
