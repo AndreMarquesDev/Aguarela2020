@@ -7,6 +7,7 @@ import logo from '../public/images/logo.png';
 import NavLinksContext from './context/NavLinksContext';
 import NavLinks, { INavLink } from './NavLinks';
 import breakpoints from '../styles/breakpoints';
+import { Page } from '../utils/pages';
 
 interface IHeaderProps {
     currentRoute: string;
@@ -36,7 +37,7 @@ const Header: FC<IHeaderProps> = props => {
 
     return (
         <nav ref={navRef} className="wrapper">
-            <Link href={`/${language}/home`} prefetch={false}>
+            <Link href={`/${language}/${'homepage' as Page}`} prefetch={false}>
                 <a>
                     <img alt="Logo" src={logo} />
                 </a>

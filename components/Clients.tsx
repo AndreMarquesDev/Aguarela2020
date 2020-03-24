@@ -1,25 +1,20 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { FC } from 'react';
 import { RichText } from 'prismic-reactjs';
-import Link from 'next/link';
 import Title from './Title';
 import colors from '../styles/colors';
-import { getPrismicText } from '../utils/generic';
 import breakpoints from '../styles/breakpoints';
 import { IPrismicImage, IPrismicText } from '../typings/prismicTypes';
 
-export interface IHighlightsThumbnail {
+export interface IClientsThumbnail {
     thumbnail: IPrismicImage;
-    thumbnailCaption: IPrismicText;
-    seeMore: IPrismicText;
 }
 
-interface IHighlightsProps {
+interface IClientsProps {
     title: IPrismicText;
-    thumbnails: IHighlightsThumbnail[];
+    thumbnails: IClientsThumbnail[];
 }
 
-const Highlights: FC<IHighlightsProps> = props => {
+const Clients: FC<IClientsProps> = props => {
     const {
         title,
         thumbnails,
@@ -32,19 +27,13 @@ const Highlights: FC<IHighlightsProps> = props => {
 
                 <ul>
                     {
-                        thumbnails.map(({ thumbnail, thumbnailCaption, seeMore }) => (
+                        thumbnails.map(({ thumbnail }) => (
                             <li key={thumbnail.alt}>
                                 <img
                                     alt={thumbnail.alt}
                                     className="thumbnails"
                                     src={thumbnail.url}
                                 />
-                                <p>{getPrismicText(thumbnailCaption)}</p>
-                                <Link href="#" prefetch={false}>
-                                    <a className="link champagneItalic">
-                                        {getPrismicText(seeMore)}
-                                    </a>
-                                </Link>
                             </li>
                         ))
                     }
@@ -59,8 +48,8 @@ const Highlights: FC<IHighlightsProps> = props => {
 
                     ul {
                         display: grid;
-                        grid-template-columns: repeat(4, 1fr);
-                        grid-gap: 4%;
+                        grid-template-columns: repeat(7, 1fr);
+                        grid-gap: 2%;
                     }
 
                     li {
@@ -69,7 +58,7 @@ const Highlights: FC<IHighlightsProps> = props => {
 
                     img {
                         width: 100%;
-                        height: 500rem;
+                        height: 100rem;
                         margin-bottom: 15rem;
                         transition: transform .2s ease;
 
@@ -90,17 +79,13 @@ const Highlights: FC<IHighlightsProps> = props => {
 
                     @media (max-width: ${breakpoints.phablet}) {
                         ul {
-                            grid-template-columns: repeat(2, 1fr);
-                        }
-
-                        img {
-                            height: 400rem;
+                            grid-template-columns: repeat(4, 1fr);
                         }
                     }
 
                     @media (max-width: ${breakpoints.mobile}) {
                         ul {
-                            grid-template-columns: 1fr;
+                            grid-template-columns: repeat(2, 1fr);
                             grid-gap: 1%;
                         }
                     }
@@ -110,4 +95,4 @@ const Highlights: FC<IHighlightsProps> = props => {
     );
 };
 
-export default Highlights;
+export default Clients;

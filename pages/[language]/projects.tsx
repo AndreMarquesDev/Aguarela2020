@@ -12,26 +12,27 @@ import Title from '../../components/Title';
 import NoContentErrorBlock from '../../components/NoContentErrorBlock';
 import { capitalize } from '../../utils/generic';
 import { staticPaths, getNavLinks, getPrismicDoc } from '../../utils/routing/getInitialProps';
+import { Page } from '../../utils/pages';
 
-interface IProjectsProps {
+interface IProjectsPageProps {
     navLinksPrismicDoc: Document;
-    projectsPrismicDoc: Document;
+    projectsPagePrismicDoc: Document;
 }
 
-const Projects: NextPage<IProjectsProps> = props => {
+const ProjectsPage: NextPage<IProjectsPageProps> = props => {
     const {
         navLinksPrismicDoc,
-        projectsPrismicDoc,
+        projectsPagePrismicDoc,
     } = props;
     const router = useRouter();
 
     useEffect(() => {
         const locale = getInitialLocale();
 
-        addLocaleToPageUrl('projects', locale, router);
+        addLocaleToPageUrl('projects' as Page, locale, router);
     });
 
-    const pageTitle = projectsPrismicDoc ? projectsPrismicDoc.data.page_title : 'Projetos';
+    const pageTitle = projectsPagePrismicDoc ? projectsPagePrismicDoc.data.page_title : 'Projetos';
 
     return (
         <NavLinksContext.Provider value={{ navLinksPrismicDoc }}>
@@ -45,13 +46,13 @@ const Projects: NextPage<IProjectsProps> = props => {
                 </Head>
 
                 {
-                    projectsPrismicDoc ? (
+                    projectsPagePrismicDoc ? (
                         <div className="wrapper genericMargins">
-                            <Title text={RichText.asText(projectsPrismicDoc.data.title)} />
-                            <RichText render={projectsPrismicDoc.data.textBody} />
+                            <Title text={RichText.asText(projectsPagePrismicDoc.data.title)} />
+                            <RichText render={projectsPagePrismicDoc.data.textBody} />
                             <ul className="thumbnailList">
                                 {
-                                    projectsPrismicDoc.data.thumbnails_list.map(({ thumbnail }) => (
+                                    projectsPagePrismicDoc.data.thumbnails_list.map(({ thumbnail }) => (
                                         <li key={thumbnail.alt}>
                                             <img
                                                 alt={thumbnail.alt}
@@ -95,16 +96,16 @@ export const getStaticProps: GetStaticProps = async context => {
     const { language } = context.params;
 
     const navLinks = await getNavLinks(language);
-    const projectsPrismicDoc = await getPrismicDoc(language, 'projects_page');
+    const projectsPagePrismicDoc = await getPrismicDoc(language, 'projects_page');
 
     return {
         props: {
             navLinksPrismicDoc: navLinks,
-            projectsPrismicDoc,
+            projectsPagePrismicDoc,
         },
     };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => staticPaths();
 
-export default Projects;
+export default ProjectsPage;

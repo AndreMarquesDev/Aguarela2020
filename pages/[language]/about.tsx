@@ -12,26 +12,27 @@ import { addLocaleToPageUrl } from '../../utils/routing/addLocaleToPageUrl';
 import NavLinksContext from '../../components/context/NavLinksContext';
 import { capitalize } from '../../utils/generic';
 import { staticPaths, getNavLinks, getPrismicDoc } from '../../utils/routing/getInitialProps';
+import { Page } from '../../utils/pages';
 
-interface IAboutProps {
+interface IAboutPageProps {
     navLinksPrismicDoc: Document;
-    aboutPrismicDoc: Document;
+    aboutPagePrismicDoc: Document;
 }
 
-const About: NextPage<IAboutProps> = props => {
+const AboutPage: NextPage<IAboutPageProps> = props => {
     const {
         navLinksPrismicDoc,
-        aboutPrismicDoc,
+        aboutPagePrismicDoc,
     } = props;
     const router = useRouter();
 
     useEffect(() => {
         const locale = getInitialLocale();
 
-        addLocaleToPageUrl('about', locale, router);
+        addLocaleToPageUrl('about' as Page, locale, router);
     });
 
-    const pageTitle = aboutPrismicDoc ? aboutPrismicDoc.data.page_title : 'Sobre';
+    const pageTitle = aboutPagePrismicDoc ? aboutPagePrismicDoc.data.page_title : 'Sobre';
 
     return (
         <NavLinksContext.Provider value={{ navLinksPrismicDoc }}>
@@ -45,10 +46,10 @@ const About: NextPage<IAboutProps> = props => {
                 </Head>
 
                 {
-                    aboutPrismicDoc ? (
+                    aboutPagePrismicDoc ? (
                         <div className="wrapper genericMargins">
-                            <Title text={RichText.asText(aboutPrismicDoc.data.title)} />
-                            <RichText render={aboutPrismicDoc.data.textBody} />
+                            <Title text={RichText.asText(aboutPagePrismicDoc.data.title)} />
+                            <RichText render={aboutPagePrismicDoc.data.textBody} />
                         </div>
                     ) : <NoContentErrorBlock />
                 }
@@ -61,16 +62,16 @@ export const getStaticProps: GetStaticProps = async context => {
     const { language } = context.params;
 
     const navLinks = await getNavLinks(language);
-    const aboutPrismicDoc = await getPrismicDoc(language, 'about');
+    const aboutPagePrismicDoc = await getPrismicDoc(language, 'about');
 
     return {
         props: {
             navLinksPrismicDoc: navLinks,
-            aboutPrismicDoc,
+            aboutPagePrismicDoc,
         },
     };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => staticPaths();
 
-export default About;
+export default AboutPage;

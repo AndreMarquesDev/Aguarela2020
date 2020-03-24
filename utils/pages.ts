@@ -1,7 +1,7 @@
-export type Page = 'home' | 'about' | 'contact' | 'projects' | 'services';
+export type Page = 'homepage' | 'about' | 'contact' | 'projects' | 'services';
 
 export const pagesMap: Page[] = [
-    'home',
+    'homepage',
     'about',
     'contact',
     'projects',

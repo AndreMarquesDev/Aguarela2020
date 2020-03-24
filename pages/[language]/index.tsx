@@ -5,7 +5,7 @@ import { getInitialLocale } from '../../utils/locales/getLocale';
 import { urlHasLocale } from '../../utils/routing/urlValidation';
 import { redirectToHomepage } from '../../utils/routing/config';
 
-const Index: FC = () => {
+const IndexPage: FC = () => {
     const router = useRouter();
 
     useEffect(() => {
@@ -27,4 +27,4 @@ const Index: FC = () => {
     );
 };
 
-export default Index;
+export default IndexPage;

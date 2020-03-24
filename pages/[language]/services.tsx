@@ -8,13 +8,13 @@ import { getInitialLocale } from '../../utils/locales/getLocale';
 import { addLocaleToPageUrl } from '../../utils/routing/addLocaleToPageUrl';
 import NavLinksContext from '../../components/context/NavLinksContext';
 import { staticPaths, getNavLinks } from '../../utils/routing/getInitialProps';
+import { Page } from '../../utils/pages';
 
-
-interface IServicesProps {
+interface IServicesPageProps {
     navLinksPrismicDoc: Document;
 }
 
-const Services: NextPage<IServicesProps> = props => {
+const ServicesPage: NextPage<IServicesPageProps> = props => {
     const {
         navLinksPrismicDoc,
     } = props;
@@ -23,7 +23,7 @@ const Services: NextPage<IServicesProps> = props => {
     useEffect(() => {
         const locale = getInitialLocale();
 
-        addLocaleToPageUrl('services', locale, router);
+        addLocaleToPageUrl('services' as Page, locale, router);
     });
 
     return (
@@ -51,4 +51,4 @@ export const getStaticProps: GetStaticProps = async context => {
 
 export const getStaticPaths: GetStaticPaths = async () => staticPaths();
 
-export default Services;
+export default ServicesPage;

@@ -1,16 +1,17 @@
 import React, { FC } from 'react';
 import { RichText } from 'prismic-reactjs';
 import Title from './Title';
+import { IPrismicText } from '../typings/prismicTypes';
 
 interface IWelcomeSectionProps {
-    title: any; // eslint-disable-line @typescript-eslint/no-explicit-any
-    bodyContent: any; // eslint-disable-line @typescript-eslint/no-explicit-any
+    title: IPrismicText;
+    bodyText: IPrismicText[];
 }
 
 const WelcomeSection: FC<IWelcomeSectionProps> = props => {
     const {
         title,
-        bodyContent,
+        bodyText,
     } = props;
 
     return (
@@ -19,7 +20,7 @@ const WelcomeSection: FC<IWelcomeSectionProps> = props => {
                 <Title text={RichText.asText(title)} />
 
                 <div>
-                    {bodyContent.map(({ text }) => (
+                    {bodyText.map(({ text }) => (
                         <p key={text} className="bodyText">
                             {text}
                         </p>
