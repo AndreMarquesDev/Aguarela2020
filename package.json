@@ -10,7 +10,8 @@
         "export": "next export",
         "deploy": "npm run build && npm run export",
         "deploy:dev": "npm run build && npm run export && npx serve out",
-        "lint": "tsc --noEmit && eslint . --ext .js,.ts,.tsx --fix && stylelint ."
+        "lint": "tsc --noEmit && eslint . --ext .js,.ts,.tsx --fix && stylelint .",
+        "clean": "npm run clean && next build"
     },
     "keywords": [],
     "author": "",

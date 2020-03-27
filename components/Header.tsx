@@ -3,7 +3,7 @@ import React, {
     FC, useContext, useRef, useEffect,
 } from 'react';
 import Link from 'next/link';
-import logo from '../public/images/logo.png';
+import logo from '../public/images/logo.svg';
 import NavLinksContext from './context/NavLinksContext';
 import NavLinks, { INavLink } from './NavLinks';
 import breakpoints from '../styles/breakpoints';

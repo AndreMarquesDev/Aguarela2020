@@ -16,7 +16,7 @@ class MyDocument extends Document {
             <Html lang={defaultLocale}>
                 <Head>
                     <link
-                        href="/images/logo.png"
+                        href="/images/logo.svg"
                         rel="shortcut icon"
                         type="image/x-icon"
                     />
