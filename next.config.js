@@ -1,6 +1,6 @@
 require('dotenv').config();
 const withPlugins = require('next-compose-plugins');
-const optimizedImages = require('next-optimized-images');
+const withImages = require('next-images');
 
 const nextConfig = {
     env: {
@@ -10,17 +10,5 @@ const nextConfig = {
 };
 
 module.exports = withPlugins([
-    [optimizedImages, {
-        optimizeImagesInDev: true,
-        mozjpeg: {
-            quality: 60,
-        },
-        optipng: {
-            optimizationLevel: 5,
-        },
-        webp: {
-            preset: 'default',
-            quality: 60,
-        },
-    }],
+    withImages,
 ], nextConfig);
