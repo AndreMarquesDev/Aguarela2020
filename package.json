@@ -27,6 +27,7 @@
         "next": "^9.3.4",
         "next-compose-plugins": "^2.2.0",
         "next-images": "^1.4.0",
+        "nuka-carousel": "^4.6.6",
         "postcss-flexbugs-fixes": "^4.2.0",
         "precss": "^4.0.0",
         "prismic-javascript": "^2.7.0",

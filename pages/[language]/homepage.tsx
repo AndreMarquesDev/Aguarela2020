@@ -16,10 +16,13 @@ import Clients, { IClientsThumbnail } from '../../components/Clients';
 import ContactTextBlock from '../../components/ContactTextBlock';
 import FollowUs from '../../components/FollowUs';
 import { IPrismicText, IPrismicLink } from '../../typings/prismicTypes';
+import { getInstagramPosts, IInstagramPost } from '../../utils/generic';
+import InstagramPostsContext, { IInstagramPostsContext } from '../../components/context/InstagramPostsContext';
 
 interface IHomePageProps {
     navLinksPrismicDoc: Document;
     homePagePrismicDoc: Document;
+    instagramPosts: IInstagramPost[];
 }
 
 interface IHomePagePrismicDoc {
@@ -41,6 +44,7 @@ const HomePage: NextPage<IHomePageProps> = props => {
     const {
         navLinksPrismicDoc,
         homePagePrismicDoc,
+        instagramPosts,
     } = props;
 
     const router = useRouter();
@@ -52,9 +56,13 @@ const HomePage: NextPage<IHomePageProps> = props => {
         addLocaleToPageUrl('homepage' as Page, locale, router);
     });
 
-    const context: INavLinksContext = {
+    const navLinksContext: INavLinksContext = {
         navLinksPrismicDoc,
         setNavHeight,
+    };
+
+    const instagramPostsContext: IInstagramPostsContext = {
+        posts: instagramPosts,
     };
 
     const {
@@ -73,7 +81,7 @@ const HomePage: NextPage<IHomePageProps> = props => {
     }: IHomePagePrismicDoc = homePagePrismicDoc.data;
 
     return (
-        <NavLinksContext.Provider value={context}>
+        <NavLinksContext.Provider value={navLinksContext}>
             <Layout>
                 <Head>
                     <title>Aguarela Digital</title>
@@ -102,11 +110,14 @@ const HomePage: NextPage<IHomePageProps> = props => {
                             title={contactUsTitle}
                         />
                         <Separator />
-                        <FollowUs
-                            link={followUsLink}
-                            linkText={followUsLinkText}
-                            title={followUsTitle}
-                        />
+
+                        <InstagramPostsContext.Provider value={instagramPostsContext}>
+                            <FollowUs
+                                link={followUsLink}
+                                linkText={followUsLinkText}
+                                title={followUsTitle}
+                            />
+                        </InstagramPostsContext.Provider>
                     </>
                 )}
 
@@ -132,11 +143,13 @@ export const getStaticProps: GetStaticProps = async context => {
 
     const navLinks = await getNavLinks(context.params.language);
     const homePagePrismicDoc = await getPrismicDoc(language, 'homepage');
+    const instagramPosts = await getInstagramPosts(10);
 
     return {
         props: {
             navLinksPrismicDoc: navLinks,
             homePagePrismicDoc,
+            instagramPosts,
         },
     };
 };

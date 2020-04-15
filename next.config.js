@@ -6,6 +6,7 @@ const nextConfig = {
     env: {
         PRISMIC_API_ENDPOINT: process.env.PRISMIC_API_ENDPOINT,
         PRISMIC_TOKEN: process.env.PRISMIC_TOKEN,
+        INSTAGRAM_URL: process.env.INSTAGRAM_URL,
     },
 };
 

@@ -1,8 +1,10 @@
-import React, { FC } from 'react';
+import React, { FC, useContext } from 'react';
 import { RichText } from 'prismic-reactjs';
 import Title from './Title';
 import { getPrismicText } from '../utils/generic';
 import { IPrismicLink, IPrismicText } from '../typings/prismicTypes';
+import InstagramPosts from './InstagramPosts';
+import InstagramPostsContext from './context/InstagramPostsContext';
 
 interface IFollowUsProps {
     title: IPrismicText;
@@ -17,10 +19,16 @@ const FollowUs: FC<IFollowUsProps> = props => {
         linkText,
     } = props;
 
+    const {
+        posts: instagramPosts,
+    } = useContext(InstagramPostsContext);
+
     return (
         <>
             <section className="wrapper genericMargins">
                 <Title text={RichText.asText(title)} />
+
+                <InstagramPosts posts={instagramPosts} />
 
                 <a
                     className="link champagneItalic"
