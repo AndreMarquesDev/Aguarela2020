@@ -23,7 +23,6 @@ const InstagramPosts: FC<IInstagramPostsProps> = props => {
                     }) => (
                         <a
                             key={id}
-                            className="classe"
                             href={url}
                             rel="noopener noreferrer"
                             target="_blank"
