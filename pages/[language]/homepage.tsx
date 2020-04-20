@@ -3,8 +3,6 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next';
 import { Document } from 'prismic-javascript/d.ts/documents';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
 import Layout from '../../components/Layout';
 import { getInitialLocale } from '../../utils/locales/getLocale';
 import { addLocaleToPageUrl } from '../../utils/routing/addLocaleToPageUrl';
@@ -82,19 +80,6 @@ const HomePage: NextPage<IHomePageProps> = props => {
         followUsLinkText,
     }: IHomePagePrismicDoc = homePagePrismicDoc.data;
 
-    const [ref, inView] = useInView({
-        rootMargin: '-100px 0px',
-        triggerOnce: true,
-    });
-    const variants = {
-        hidden: {
-            opacity: 0,
-        },
-        show: {
-            opacity: 1,
-        },
-    };
-
     return (
         <NavLinksContext.Provider value={navLinksContext}>
             <Layout>
@@ -111,18 +96,10 @@ const HomePage: NextPage<IHomePageProps> = props => {
                             title={welcomeTitle}
                         />
                         <Separator />
-                        <motion.div
-                            ref={ref}
-                            animate={inView ? 'show' : 'hidden'}
-                            exit="hidden"
-                            initial="hidden"
-                            variants={variants}
-                        >
-                            <Highlights
-                                thumbnails={highlightsThumbnails}
-                                title={highlightsTitle}
-                            />
-                        </motion.div>
+                        <Highlights
+                            thumbnails={highlightsThumbnails}
+                            title={highlightsTitle}
+                        />
                         <Clients
                             thumbnails={clientsThumbnails}
                             title={clientsTitle}
@@ -133,7 +110,6 @@ const HomePage: NextPage<IHomePageProps> = props => {
                             title={contactUsTitle}
                         />
                         <Separator />
-
                         <InstagramPostsContext.Provider value={instagramPostsContext}>
                             <FollowUs
                                 link={followUsLink}

@@ -2,6 +2,7 @@
 import React, { FC } from 'react';
 import { RichText } from 'prismic-reactjs';
 import Link from 'next/link';
+import Slide from 'react-reveal/Slide';
 import Title from './Title';
 import { getPrismicText } from '../utils/generic';
 import colors from '../styles/colors';
@@ -23,23 +24,25 @@ const ContactTextBlock: FC<IContactTextBlockProps> = props => {
 
     return (
         <>
-            <section className="wrapper genericMargins">
-                <Title text={RichText.asText(title)} />
+            <Slide bottom>
+                <section className="wrapper genericMargins">
+                    <Title text={RichText.asText(title)} />
 
-                <div>
-                    {bodyText.map(({ text }) => (
-                        <p key={text} className="bodyText">
-                            {text}
-                        </p>
-                    ))}
-                </div>
+                    <div>
+                        {bodyText.map(({ text }) => (
+                            <p key={text} className="bodyText">
+                                {text}
+                            </p>
+                        ))}
+                    </div>
 
-                <Link href={`/${'contact' as Page}`} prefetch={false}>
-                    <a className="champagneItalic contactCta">
-                        {getPrismicText(ctaText)}
-                    </a>
-                </Link>
-            </section>
+                    <Link href={`/${'contact' as Page}`} prefetch={false}>
+                        <a className="champagneItalic contactCta">
+                            {getPrismicText(ctaText)}
+                        </a>
+                    </Link>
+                </section>
+            </Slide>
 
             <style jsx>
                 {`

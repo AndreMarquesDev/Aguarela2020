@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import { RichText } from 'prismic-reactjs';
+import Slide from 'react-reveal/Slide';
 import Title from './Title';
 import colors from '../styles/colors';
 import breakpoints from '../styles/breakpoints';
@@ -22,23 +23,25 @@ const Clients: FC<IClientsProps> = props => {
 
     return (
         <>
-            <section className="wrapper genericMargins">
-                <Title text={RichText.asText(title)} />
+            <Slide bottom>
+                <section className="wrapper genericMargins">
+                    <Title text={RichText.asText(title)} />
 
-                <ul>
-                    {
-                        thumbnails.map(({ thumbnail }) => (
-                            <li key={thumbnail.alt}>
-                                <img
-                                    alt={thumbnail.alt}
-                                    className="thumbnails"
-                                    src={thumbnail.url}
-                                />
-                            </li>
-                        ))
-                    }
-                </ul>
-            </section>
+                    <ul>
+                        {
+                            thumbnails.map(({ thumbnail }) => (
+                                <li key={thumbnail.alt}>
+                                    <img
+                                        alt={thumbnail.alt}
+                                        className="thumbnails"
+                                        src={thumbnail.url}
+                                    />
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </section>
+            </Slide>
 
             <style jsx>
                 {`

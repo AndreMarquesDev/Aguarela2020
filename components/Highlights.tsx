@@ -2,6 +2,7 @@
 import React, { FC } from 'react';
 import { RichText } from 'prismic-reactjs';
 import Link from 'next/link';
+import Slide from 'react-reveal/Slide';
 import Title from './Title';
 import colors from '../styles/colors';
 import { getPrismicText } from '../utils/generic';
@@ -27,29 +28,31 @@ const Highlights: FC<IHighlightsProps> = props => {
 
     return (
         <>
-            <section className="wrapper genericMargins">
-                <Title text={RichText.asText(title)} />
+            <Slide bottom>
+                <section className="wrapper genericMargins">
+                    <Title text={RichText.asText(title)} />
 
-                <ul>
-                    {
-                        thumbnails.map(({ thumbnail, thumbnailCaption, seeMore }) => (
-                            <li key={thumbnail.alt}>
-                                <img
-                                    alt={thumbnail.alt}
-                                    className="thumbnails"
-                                    src={thumbnail.url}
-                                />
-                                <p>{getPrismicText(thumbnailCaption)}</p>
-                                <Link href="#" prefetch={false}>
-                                    <a className="link champagneItalic">
-                                        {getPrismicText(seeMore)}
-                                    </a>
-                                </Link>
-                            </li>
-                        ))
-                    }
-                </ul>
-            </section>
+                    <ul>
+                        {
+                            thumbnails.map(({ thumbnail, thumbnailCaption, seeMore }) => (
+                                <li key={thumbnail.alt}>
+                                    <img
+                                        alt={thumbnail.alt}
+                                        className="thumbnails"
+                                        src={thumbnail.url}
+                                    />
+                                    <p>{getPrismicText(thumbnailCaption)}</p>
+                                    <Link href="#" prefetch={false}>
+                                        <a className="link champagneItalic">
+                                            {getPrismicText(seeMore)}
+                                        </a>
+                                    </Link>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </section>
+            </Slide>
 
             <style jsx>
                 {`

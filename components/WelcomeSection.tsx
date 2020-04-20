@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import { RichText } from 'prismic-reactjs';
+import Slide from 'react-reveal/Slide';
 import Title from './Title';
 import { IPrismicText } from '../typings/prismicTypes';
 
@@ -16,17 +17,19 @@ const WelcomeSection: FC<IWelcomeSectionProps> = props => {
 
     return (
         <>
-            <section className="wrapper genericMargins">
-                <Title text={RichText.asText(title)} />
+            <Slide bottom>
+                <section className="wrapper genericMargins">
+                    <Title text={RichText.asText(title)} />
 
-                <div>
-                    {bodyText.map(({ text }) => (
-                        <p key={text} className="bodyText">
-                            {text}
-                        </p>
-                    ))}
-                </div>
-            </section>
+                    <div>
+                        {bodyText.map(({ text }) => (
+                            <p key={text} className="bodyText">
+                                {text}
+                            </p>
+                        ))}
+                    </div>
+                </section>
+            </Slide>
 
             <style jsx>
                 {`

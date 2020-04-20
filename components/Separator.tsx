@@ -1,9 +1,13 @@
 import React, { FC } from 'react';
+import Bounce from 'react-reveal/Bounce';
 import colors from '../styles/colors';
 
 const Separator: FC = () => (
     <>
-        <hr />
+
+        <Bounce left>
+            <hr />
+        </Bounce>
 
         <style jsx>
             {`
