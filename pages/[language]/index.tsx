@@ -1,8 +1,7 @@
 import React, { FC, useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { getInitialLocale } from '../../utils/locales/getLocale';
-import { urlHasLocale } from '../../utils/routing/urlValidation';
+import { getInitialLocale, urlHasLocale } from 'multilingual-url/lib';
 import { redirectToHomepage } from '../../utils/routing/config';
 
 const IndexPage: FC = () => {

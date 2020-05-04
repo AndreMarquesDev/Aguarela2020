@@ -1,7 +1,7 @@
 import React, { FC, useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { getInitialLocale } from '../utils/locales/getLocale';
+import { getInitialLocale } from 'multilingual-url/lib';
 
 const Index: FC = () => {
     const router = useRouter();

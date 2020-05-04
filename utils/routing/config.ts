@@ -1,6 +1,6 @@
 import { NextRouter } from 'next/router';
+import { Locale } from 'multilingual-url/lib';
 import { Page } from '../pages';
-import { Locale } from '../locales/localesTypes';
 
 export const isClientSide = typeof window !== 'undefined';
 export const hasNavigator = typeof navigator !== 'undefined';

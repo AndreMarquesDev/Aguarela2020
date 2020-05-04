@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
 import Cookies from 'js-cookie';
-import { getInitialLocale } from '../utils/locales/getLocale';
+import { getInitialLocale } from 'multilingual-url/lib';
 import { hasDocument } from '../utils/routing/config';
 
 function MyApp({ Component, pageProps }) {

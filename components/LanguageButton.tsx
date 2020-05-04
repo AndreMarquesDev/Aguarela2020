@@ -1,7 +1,8 @@
 import React, { FC } from 'react';
 import { useRouter } from 'next/router';
 import ReactCountryFlag from 'react-country-flag';
-import { getRemainingLang, getPageFromUrl } from '../utils/routing/urlValidation';
+import { getRemainingLang } from 'multilingual-url/lib';
+import { getPageFromUrl } from '../utils/routing/urlValidation';
 
 interface ILanguageButtonProps {
     language: string;

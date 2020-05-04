@@ -1,6 +1,6 @@
 {
     "name": "Aguarela2020",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "Aguarela Digital website",
     "main": "index.js",
     "scripts": {
@@ -11,7 +11,6 @@
     },
     "keywords": [],
     "author": "André Marques andremarquesdev.com",
-    "license": "ISC",
     "engines": {
         "node": "12",
         "yarn": "1"
@@ -27,6 +26,7 @@
         "css-reset-and-normalize": "^2.1.0",
         "dotenv": "^8.2.0",
         "js-cookie": "^2.2.1",
+        "multilingual-url": "AndreMarquesDev/multilingual-url",
         "next": "^9.3.4",
         "next-compose-plugins": "^2.2.0",
         "next-images": "^1.4.0",
