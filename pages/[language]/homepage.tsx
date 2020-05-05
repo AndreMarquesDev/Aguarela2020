@@ -18,6 +18,7 @@ import FollowUs from '../../components/FollowUs';
 import { IPrismicText, IPrismicLink } from '../../typings/prismicTypes';
 import { getInstagramPosts, IInstagramPost } from '../../utils/generic';
 import InstagramPostsContext, { IInstagramPostsContext } from '../../components/context/InstagramPostsContext';
+import { defaultLocale, locales } from '../../utils/locales';
 
 interface IHomePageProps {
     navLinksPrismicDoc: Document;
@@ -51,7 +52,7 @@ const HomePage: NextPage<IHomePageProps> = props => {
     const [navHeight, setNavHeight] = useState(0);
 
     useEffect(() => {
-        const locale = getInitialLocale();
+        const locale = getInitialLocale(defaultLocale, locales);
 
         addLocaleToPageUrl('homepage' as Page, locale, router);
     });

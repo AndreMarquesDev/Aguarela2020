@@ -13,6 +13,7 @@ import NavLinksContext from '../../components/context/NavLinksContext';
 import { capitalize } from '../../utils/generic';
 import { staticPaths, getNavLinks, getPrismicDoc } from '../../utils/routing/getInitialProps';
 import { Page } from '../../utils/pages';
+import { defaultLocale, locales } from '../../utils/locales';
 
 interface IAboutPageProps {
     navLinksPrismicDoc: Document;
@@ -27,7 +28,7 @@ const AboutPage: NextPage<IAboutPageProps> = props => {
     const router = useRouter();
 
     useEffect(() => {
-        const locale = getInitialLocale();
+        const locale = getInitialLocale(defaultLocale, locales);
 
         addLocaleToPageUrl('about' as Page, locale, router);
     });

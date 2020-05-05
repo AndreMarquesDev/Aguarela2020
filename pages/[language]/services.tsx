@@ -9,6 +9,7 @@ import { addLocaleToPageUrl } from '../../utils/routing/addLocaleToPageUrl';
 import NavLinksContext from '../../components/context/NavLinksContext';
 import { staticPaths, getNavLinks } from '../../utils/routing/getInitialProps';
 import { Page } from '../../utils/pages';
+import { defaultLocale, locales } from '../../utils/locales';
 
 interface IServicesPageProps {
     navLinksPrismicDoc: Document;
@@ -21,7 +22,7 @@ const ServicesPage: NextPage<IServicesPageProps> = props => {
     const router = useRouter();
 
     useEffect(() => {
-        const locale = getInitialLocale();
+        const locale = getInitialLocale(defaultLocale, locales);
 
         addLocaleToPageUrl('services' as Page, locale, router);
     });

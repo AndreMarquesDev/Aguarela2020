@@ -1,6 +1,7 @@
 import Prismic from 'prismic-javascript';
 import { Document } from 'prismic-javascript/d.ts/documents';
-import { locales, getPrismicLocale, Locale } from 'multilingual-url/lib';
+import { getPrismicLocale } from 'multilingual-url/lib';
+import { prismicCultures, Locale, locales } from '../locales';
 import { Client } from '../../prismic-configuration';
 
 interface IStaticPaths {
@@ -26,7 +27,7 @@ export const staticPaths = (): IStaticPaths => {
 };
 
 export const getNavLinks = async (locale: string | string[]): Promise<Document> => {
-    const prismicLocale = getPrismicLocale(locale);
+    const prismicLocale = getPrismicLocale(locale, prismicCultures);
 
     const navLinksResponse = await Client.query(
         Prismic.Predicates.at('document.type', 'nav_links'),
@@ -37,7 +38,7 @@ export const getNavLinks = async (locale: string | string[]): Promise<Document> 
 };
 
 export const getPrismicDoc = async (locale: string | string[], prismicDocId: string): Promise<Document> => {
-    const prismicLocale = getPrismicLocale(locale);
+    const prismicLocale = getPrismicLocale(locale, prismicCultures);
 
     const response = await Client.query(
         Prismic.Predicates.at('document.type', prismicDocId),

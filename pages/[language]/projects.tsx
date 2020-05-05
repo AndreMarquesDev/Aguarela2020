@@ -13,6 +13,7 @@ import NoContentErrorBlock from '../../components/NoContentErrorBlock';
 import { capitalize } from '../../utils/generic';
 import { staticPaths, getNavLinks, getPrismicDoc } from '../../utils/routing/getInitialProps';
 import { Page } from '../../utils/pages';
+import { defaultLocale, locales } from '../../utils/locales';
 
 interface IProjectsPageProps {
     navLinksPrismicDoc: Document;
@@ -27,7 +28,7 @@ const ProjectsPage: NextPage<IProjectsPageProps> = props => {
     const router = useRouter();
 
     useEffect(() => {
-        const locale = getInitialLocale();
+        const locale = getInitialLocale(defaultLocale, locales);
 
         addLocaleToPageUrl('projects' as Page, locale, router);
     });

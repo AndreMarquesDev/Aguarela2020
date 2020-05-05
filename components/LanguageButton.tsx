@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import ReactCountryFlag from 'react-country-flag';
 import { getRemainingLang } from 'multilingual-url/lib';
 import { getPageFromUrl } from '../utils/routing/urlValidation';
+import { locales } from '../utils/locales';
 
 interface ILanguageButtonProps {
     language: string;
@@ -15,11 +16,10 @@ const LanguageButton: FC<ILanguageButtonProps> = props => {
 
     const router = useRouter();
     const currentPage = getPageFromUrl[0];
-    const languageToSwitchTo = getRemainingLang[0];
+    const languageToSwitchTo = getRemainingLang(locales)[0];
     const countryCode = language === 'en' ? 'PT' : 'GB';
 
     const onButtonClick = (): void => {
-        // TODO: replace the correct url instead of redirecting to the homepage
         router.replace(`/${languageToSwitchTo}/${currentPage}`);
     };
 
