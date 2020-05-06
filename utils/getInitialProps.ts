@@ -1,8 +1,8 @@
 import Prismic from 'prismic-javascript';
 import { Document } from 'prismic-javascript/d.ts/documents';
 import { getPrismicLocale } from 'multilingual-url/lib';
-import { prismicCultures, Locale, locales } from '../locales';
-import { Client } from '../../prismic-configuration';
+import { prismicCultures, Locale, locales } from './locales';
+import { Client } from '../prismic-configuration';
 
 interface IStaticPaths {
     paths: {

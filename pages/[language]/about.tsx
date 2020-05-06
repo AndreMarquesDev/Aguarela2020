@@ -1,19 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { RichText } from 'prismic-reactjs';
 import Head from 'next/head';
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next';
-import { useRouter } from 'next/router';
 import { Document } from 'prismic-javascript/d.ts/documents';
-import { getInitialLocale } from 'multilingual-url/lib';
 import Layout from '../../components/Layout';
 import NoContentErrorBlock from '../../components/NoContentErrorBlock';
 import Title from '../../components/Title';
-import { addLocaleToPageUrl } from '../../utils/routing/addLocaleToPageUrl';
 import NavLinksContext from '../../components/context/NavLinksContext';
 import { capitalize } from '../../utils/generic';
-import { staticPaths, getNavLinks, getPrismicDoc } from '../../utils/routing/getInitialProps';
-import { Page } from '../../utils/pages';
-import { defaultLocale, locales } from '../../utils/locales';
+import { staticPaths, getNavLinks, getPrismicDoc } from '../../utils/getInitialProps';
 
 interface IAboutPageProps {
     navLinksPrismicDoc: Document;
@@ -25,13 +20,6 @@ const AboutPage: NextPage<IAboutPageProps> = props => {
         navLinksPrismicDoc,
         aboutPagePrismicDoc,
     } = props;
-    const router = useRouter();
-
-    useEffect(() => {
-        const locale = getInitialLocale(defaultLocale, locales);
-
-        addLocaleToPageUrl('about' as Page, locale, router);
-    });
 
     const pageTitle = aboutPagePrismicDoc ? aboutPagePrismicDoc.data.page_title : 'Sobre';
 

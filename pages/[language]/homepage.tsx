@@ -1,24 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next';
 import { Document } from 'prismic-javascript/d.ts/documents';
-import { getInitialLocale } from 'multilingual-url/lib';
 import Layout from '../../components/Layout';
-import { addLocaleToPageUrl } from '../../utils/routing/addLocaleToPageUrl';
 import NavLinksContext, { INavLinksContext } from '../../components/context/NavLinksContext';
-import { staticPaths, getNavLinks, getPrismicDoc } from '../../utils/routing/getInitialProps';
+import { staticPaths, getNavLinks, getPrismicDoc } from '../../utils/getInitialProps';
 import WelcomeSection from '../../components/WelcomeSection';
 import Highlights, { IHighlightsThumbnail } from '../../components/Highlights';
 import Separator from '../../components/Separator';
-import { Page } from '../../utils/pages';
 import Clients, { IClientsThumbnail } from '../../components/Clients';
 import ContactTextBlock from '../../components/ContactTextBlock';
 import FollowUs from '../../components/FollowUs';
 import { IPrismicText, IPrismicLink } from '../../typings/prismicTypes';
 import { getInstagramPosts, IInstagramPost } from '../../utils/generic';
 import InstagramPostsContext, { IInstagramPostsContext } from '../../components/context/InstagramPostsContext';
-import { defaultLocale, locales } from '../../utils/locales';
 
 interface IHomePageProps {
     navLinksPrismicDoc: Document;
@@ -48,14 +43,7 @@ const HomePage: NextPage<IHomePageProps> = props => {
         instagramPosts,
     } = props;
 
-    const router = useRouter();
     const [navHeight, setNavHeight] = useState(0);
-
-    useEffect(() => {
-        const locale = getInitialLocale(defaultLocale, locales);
-
-        addLocaleToPageUrl('homepage' as Page, locale, router);
-    });
 
     const navLinksContext: INavLinksContext = {
         navLinksPrismicDoc,

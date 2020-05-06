@@ -2,7 +2,6 @@
 import React from 'react';
 import Cookies from 'js-cookie';
 import { getInitialLocale } from 'multilingual-url/lib';
-import { hasDocument } from '../utils/routing/config';
 import { defaultLocale, locales } from '../utils/locales';
 
 function MyApp({ Component, pageProps }) {
@@ -12,6 +11,8 @@ function MyApp({ Component, pageProps }) {
     if (!hasLangCookie) {
         Cookies.set('lang', locale, { expires: 60 });
     }
+
+    const hasDocument = typeof document !== 'undefined';
 
     if (hasDocument) {
         document.querySelector('html').lang = locale; // eslint-disable-line no-undef

@@ -1,3 +1,5 @@
+import { isClientSide } from 'multilingual-url/lib';
+
 export type Page = 'homepage' | 'about' | 'contact' | 'projects' | 'services';
 
 export const pagesMap: Page[] = [
@@ -9,3 +11,5 @@ export const pagesMap: Page[] = [
 ];
 
 export const pagePathRegex = (page: Page): RegExp => RegExp(`${page}$`);
+
+export const getPageFromUrl = isClientSide ? pagesMap.filter(page => pagePathRegex(page).test(window.location.pathname)) : [];
