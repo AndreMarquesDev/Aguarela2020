@@ -34,6 +34,7 @@ const Clients: FC<IClientsProps> = props => {
                                     <img
                                         alt={thumbnail.alt}
                                         className="thumbnails"
+                                        loading="lazy"
                                         src={thumbnail.url}
                                     />
                                 </li>

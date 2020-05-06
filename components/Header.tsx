@@ -39,7 +39,11 @@ const Header: FC<IHeaderProps> = props => {
         <nav ref={navRef} className="wrapper">
             <Link href={`/${language}/${'homepage' as Page}`} prefetch={false}>
                 <a>
-                    <img alt="Logo" src={logo} />
+                    <img
+                        alt="Logo"
+                        loading="lazy"
+                        src={logo}
+                    />
                 </a>
             </Link>
 

@@ -46,6 +46,7 @@ const ProjectsPage: NextPage<IProjectsPageProps> = props => {
                                             <img
                                                 alt={thumbnail.alt}
                                                 className="thumbnails"
+                                                loading="lazy"
                                                 src={thumbnail.url}
                                             />
                                         </li>

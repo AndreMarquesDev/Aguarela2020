@@ -67,7 +67,11 @@ const HomePage: NextPage<IHomePageProps> = props => {
                 <Head>
                     <title>Aguarela Digital</title>
                 </Head>
-                <img alt="" src="https://via.placeholder.com/2560x1290/5865A2/FFFFFF?text=Banner" />
+                <img
+                    alt=""
+                    loading="lazy"
+                    src="https://via.placeholder.com/2560x1290/5865A2/FFFFFF?text=Banner"
+                />
 
                 {homePagePrismicDoc && (
                     <>

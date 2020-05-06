@@ -27,7 +27,11 @@ const InstagramPosts: FC<IInstagramPostsProps> = props => {
                             rel="noopener noreferrer"
                             target="_blank"
                         >
-                            <img alt={caption} src={thumbnail} />
+                            <img
+                                alt={caption}
+                                loading="lazy"
+                                src={`https://images.weserv.nl/?url=${encodeURIComponent(thumbnail)}`}
+                            />
                         </a>
                     ))}
                 </Carousel>
