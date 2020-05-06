@@ -74,6 +74,7 @@ module.exports = {
             }
         ],
         'import/prefer-default-export': 'off',
+        radix: 'off',
 
 
         //
@@ -97,7 +98,9 @@ module.exports = {
         indent: [
             'error',
             4,
-            { 'SwitchCase': 1 },
+            {
+                'SwitchCase': 1
+            },
         ],
         // spacing before and after semicolons
         'semi-spacing': [
@@ -118,9 +121,21 @@ module.exports = {
         'rest-spread-spacing': ['error'],
         'padding-line-between-statements': [
             'error',
-            { blankLine: 'always', prev: '*', next: 'return' },
-            { blankLine: 'always', prev: ['const', 'let', 'var'], next: '*' },
-            { blankLine: 'any', prev: ['const', 'let', 'var'], next: ['const', 'let', 'var'] },
+            {
+                blankLine: 'always',
+                prev: '*',
+                next: 'return'
+            },
+            {
+                blankLine: 'always',
+                prev: ['const', 'let', 'var'],
+                next: '*'
+            },
+            {
+                blankLine: 'any',
+                prev: ['const', 'let', 'var'],
+                next: ['const', 'let', 'var']
+            },
         ],
 
 
@@ -224,17 +239,15 @@ module.exports = {
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/no-var-requires': 'off',
     },
-    overrides: [
-        {
-            // enable the rule specifically for TypeScript files
-            files: [
-                '*.ts',
-                '*.tsx',
-            ],
-            rules: {
-                '@typescript-eslint/explicit-function-return-type': 'error',
-                '@typescript-eslint/no-var-requires': 'error',
-            }
+    overrides: [{
+        // enable the rule specifically for TypeScript files
+        files: [
+            '*.ts',
+            '*.tsx',
+        ],
+        rules: {
+            '@typescript-eslint/explicit-function-return-type': 'error',
+            '@typescript-eslint/no-var-requires': 'error',
         }
-    ],
+    }],
 }

@@ -1,11 +1,11 @@
-import React, { FC, useContext } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import { RichText } from 'prismic-reactjs';
 import Slide from 'react-reveal/Slide';
 import Title from './Title';
 import { getPrismicText } from '../utils/generic';
 import { IPrismicLink, IPrismicText } from '../typings/prismicTypes';
 import InstagramPosts from './InstagramPosts';
-import InstagramPostsContext from './context/InstagramPostsContext';
+import { IInstagramPost } from '../pages/api/instagramPosts';
 
 interface IFollowUsProps {
     title: IPrismicText;
@@ -20,9 +20,21 @@ const FollowUs: FC<IFollowUsProps> = props => {
         linkText,
     } = props;
 
-    const {
-        posts: instagramPosts,
-    } = useContext(InstagramPostsContext);
+    function useInstagram(numberOfPosts: number): IInstagramPost[] {
+        const [posts, setPosts] = useState([]);
+
+        useEffect(() => {
+            fetch(`/api/instagramPosts?first=${numberOfPosts}`)
+                .then(response => response.json())
+                .then(data => {
+                    setPosts(data);
+                });
+        }, [numberOfPosts]);
+
+        return posts;
+    }
+
+    const instagramPosts = useInstagram(10);
 
     return (
         <>

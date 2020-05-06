@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import Carousel from 'nuka-carousel';
-import { IInstagramPost } from '../utils/generic';
+import { IInstagramPost } from '../pages/api/instagramPosts';
 
 interface IInstagramPostsProps {
     posts: IInstagramPost[];
