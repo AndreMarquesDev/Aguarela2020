@@ -15,7 +15,7 @@ export interface IPrismicImage {
 }
 
 export interface IPrismicLink {
-    link_type: string;
+    link_type: string; // eslint-disable-line
     target: string;
     url: string;
 }
