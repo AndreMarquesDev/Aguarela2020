@@ -1,10 +1,10 @@
-export interface IPrismicText {
+export interface PrismicText {
     type: string;
     text: string;
     spans: any; // eslint-disable-line @typescript-eslint/no-explicit-any
 }
 
-export interface IPrismicImage {
+export interface PrismicImage {
     alt: string;
     copyright: string;
     dimensions: {
@@ -14,8 +14,8 @@ export interface IPrismicImage {
     url: string;
 }
 
-export interface IPrismicLink {
-    link_type: string; // eslint-disable-line
+export interface PrismicLink {
+    link_type: string; // eslint-disable-line camelcase
     target: string;
     url: string;
 }

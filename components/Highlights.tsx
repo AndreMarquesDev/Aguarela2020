@@ -7,20 +7,20 @@ import Title from './Title';
 import colors from '../styles/colors';
 import { getPrismicText } from '../utils/generic';
 import breakpoints from '../styles/breakpoints';
-import { IPrismicImage, IPrismicText } from '../typings/prismicTypes';
+import { PrismicImage, PrismicText } from '../typings/prismicTypes';
 
-export interface IHighlightsThumbnail {
-    thumbnail: IPrismicImage;
-    thumbnailCaption: IPrismicText;
-    seeMore: IPrismicText;
+export interface HighlightsThumbnail {
+    thumbnail: PrismicImage;
+    thumbnailCaption: PrismicText;
+    seeMore: PrismicText;
 }
 
-interface IHighlightsProps {
-    title: IPrismicText;
-    thumbnails: IHighlightsThumbnail[];
+interface HighlightsProps {
+    title: PrismicText;
+    thumbnails: HighlightsThumbnail[];
 }
 
-const Highlights: FC<IHighlightsProps> = props => {
+const Highlights: FC<HighlightsProps> = props => {
     const {
         title,
         thumbnails,

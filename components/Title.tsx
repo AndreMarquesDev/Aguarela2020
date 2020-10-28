@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
 
-interface ITitleProps {
+interface TitleProps {
     text: string;
 }
 
-const Title: FC<ITitleProps> = props => {
+const Title: FC<TitleProps> = props => {
     const {
         text,
     } = props;

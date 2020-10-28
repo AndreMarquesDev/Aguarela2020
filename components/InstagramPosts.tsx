@@ -1,12 +1,12 @@
 import React, { FC } from 'react';
 import Carousel from 'nuka-carousel';
-import { IInstagramPost } from '../pages/api/instagramPosts';
+import { InstagramPost } from '../pages/api/instagramPosts';
 
-interface IInstagramPostsProps {
-    posts: IInstagramPost[];
+interface InstagramPostsProps {
+    posts: InstagramPost[];
 }
 
-const InstagramPosts: FC<IInstagramPostsProps> = props => {
+const InstagramPosts: FC<InstagramPostsProps> = props => {
     const {
         posts,
     } = props;

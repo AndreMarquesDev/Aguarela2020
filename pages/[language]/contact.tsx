@@ -6,17 +6,20 @@ import Layout from '../../components/Layout';
 import { staticPaths, getNavLinks } from '../../utils/getInitialProps';
 import NavLinksContext from '../../components/context/NavLinksContext';
 
-interface IContactPageProps {
+interface ContactPageProps {
     navLinksPrismicDoc: Document;
 }
 
-const ContactPage: NextPage<IContactPageProps> = props => {
+const ContactPage: NextPage<ContactPageProps> = props => {
     const {
         navLinksPrismicDoc,
     } = props;
 
     return (
-        <NavLinksContext.Provider value={{ navLinksPrismicDoc }}>
+        <NavLinksContext.Provider value={{
+            navLinksPrismicDoc,
+        }}
+        >
             <Layout>
                 <Head>
                     <title>Contacto - Aguarela Digital</title>
@@ -37,7 +40,6 @@ export const getStaticProps: GetStaticProps = async context => {
         },
     };
 };
-
 
 export const getStaticPaths: GetStaticPaths = async () => staticPaths();
 

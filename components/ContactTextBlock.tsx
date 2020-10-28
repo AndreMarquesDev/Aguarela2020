@@ -7,15 +7,15 @@ import Title from './Title';
 import { getPrismicText } from '../utils/generic';
 import colors from '../styles/colors';
 import { Page } from '../utils/pages';
-import { IPrismicText } from '../typings/prismicTypes';
+import { PrismicText } from '../typings/prismicTypes';
 
-interface IContactTextBlockProps {
-    title: IPrismicText;
-    bodyText: IPrismicText[];
-    ctaText: IPrismicText;
+interface ContactTextBlockProps {
+    title: PrismicText;
+    bodyText: PrismicText[];
+    ctaText: PrismicText;
 }
 
-const ContactTextBlock: FC<IContactTextBlockProps> = props => {
+const ContactTextBlock: FC<ContactTextBlockProps> = props => {
     const {
         title,
         bodyText,

@@ -10,12 +10,12 @@ import NavLinksContext from '../../components/context/NavLinksContext';
 import { capitalize } from '../../utils/generic';
 import { staticPaths, getNavLinks, getPrismicDoc } from '../../utils/getInitialProps';
 
-interface IAboutPageProps {
+interface AboutPageProps {
     navLinksPrismicDoc: Document;
     aboutPagePrismicDoc: Document;
 }
 
-const AboutPage: NextPage<IAboutPageProps> = props => {
+const AboutPage: NextPage<AboutPageProps> = props => {
     const {
         navLinksPrismicDoc,
         aboutPagePrismicDoc,
@@ -24,7 +24,10 @@ const AboutPage: NextPage<IAboutPageProps> = props => {
     const pageTitle = aboutPagePrismicDoc ? aboutPagePrismicDoc.data.page_title : 'Sobre';
 
     return (
-        <NavLinksContext.Provider value={{ navLinksPrismicDoc }}>
+        <NavLinksContext.Provider value={{
+            navLinksPrismicDoc,
+        }}
+        >
             <Layout>
                 <Head>
                     <title>

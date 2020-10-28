@@ -9,7 +9,9 @@ function MyApp({ Component, pageProps }) {
     const locale = getInitialLocale(defaultLocale, locales);
 
     if (!hasLangCookie) {
-        Cookies.set('lang', locale, { expires: 60 });
+        Cookies.set('lang', locale, {
+            expires: 60,
+        });
     }
 
     const hasDocument = typeof document !== 'undefined';

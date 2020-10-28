@@ -3,37 +3,37 @@ import Head from 'next/head';
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next';
 import { Document } from 'prismic-javascript/d.ts/documents';
 import Layout from '../../components/Layout';
-import NavLinksContext, { INavLinksContext } from '../../components/context/NavLinksContext';
+import NavLinksContext, { NavLinksContextProps } from '../../components/context/NavLinksContext';
 import { staticPaths, getNavLinks, getPrismicDoc } from '../../utils/getInitialProps';
 import WelcomeSection from '../../components/WelcomeSection';
-import Highlights, { IHighlightsThumbnail } from '../../components/Highlights';
+import Highlights, { HighlightsThumbnail } from '../../components/Highlights';
 import Separator from '../../components/Separator';
-import Clients, { IClientsThumbnail } from '../../components/Clients';
+import Clients, { ClientsThumbnail } from '../../components/Clients';
 import ContactTextBlock from '../../components/ContactTextBlock';
 import FollowUs from '../../components/FollowUs';
-import { IPrismicText, IPrismicLink } from '../../typings/prismicTypes';
+import { PrismicText, PrismicLink } from '../../typings/prismicTypes';
 
-interface IHomePageProps {
+interface HomePageProps {
     navLinksPrismicDoc: Document;
     homePagePrismicDoc: Document;
 }
 
-interface IHomePagePrismicDoc {
-    welcomeTitle: IPrismicText;
-    welcomeBodyText: IPrismicText[];
-    highlightsTitle: IPrismicText;
-    highlightsThumbnails: IHighlightsThumbnail[];
-    clientsTitle: IPrismicText;
-    clientsThumbnails: IClientsThumbnail[];
-    contactUsTitle: IPrismicText;
-    contactUsBodyText: IPrismicText[];
-    contactUsCta: IPrismicText;
-    followUsTitle: IPrismicText;
-    followUsLink: IPrismicLink;
-    followUsLinkText: IPrismicText;
+interface HomePagePrismicDoc {
+    welcomeTitle: PrismicText;
+    welcomeBodyText: PrismicText[];
+    highlightsTitle: PrismicText;
+    highlightsThumbnails: HighlightsThumbnail[];
+    clientsTitle: PrismicText;
+    clientsThumbnails: ClientsThumbnail[];
+    contactUsTitle: PrismicText;
+    contactUsBodyText: PrismicText[];
+    contactUsCta: PrismicText;
+    followUsTitle: PrismicText;
+    followUsLink: PrismicLink;
+    followUsLinkText: PrismicText;
 }
 
-const HomePage: NextPage<IHomePageProps> = props => {
+const HomePage: NextPage<HomePageProps> = props => {
     const {
         navLinksPrismicDoc,
         homePagePrismicDoc,
@@ -41,7 +41,7 @@ const HomePage: NextPage<IHomePageProps> = props => {
 
     const [navHeight, setNavHeight] = useState(0);
 
-    const navLinksContext: INavLinksContext = {
+    const navLinksContext: NavLinksContextProps = {
         navLinksPrismicDoc,
         setNavHeight,
     };
@@ -59,7 +59,7 @@ const HomePage: NextPage<IHomePageProps> = props => {
         followUsTitle,
         followUsLink,
         followUsLinkText,
-    }: IHomePagePrismicDoc = homePagePrismicDoc.data;
+    }: HomePagePrismicDoc = homePagePrismicDoc.data;
 
     return (
         <NavLinksContext.Provider value={navLinksContext}>

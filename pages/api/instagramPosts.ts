@@ -1,24 +1,24 @@
 import 'isomorphic-fetch';
 import { NextApiRequest, NextApiResponse } from 'next';
 
-export interface IInstagramPost {
+export interface InstagramPost {
     id: string;
     thumbnail: string;
     caption: string;
     url: string;
 }
 
-interface IPostsCache {
+interface PostsCache {
     lastFetch: number;
-    posts: IInstagramPost[];
+    posts: InstagramPost[];
 }
 
-const cache: IPostsCache = {
+const cache: PostsCache = {
     lastFetch: 0,
     posts: [],
 };
 
-const slimUpPosts = (response): IInstagramPost[] => (
+const slimUpPosts = (response): InstagramPost[] => (
     response.data.user.edge_owner_to_timeline_media.edges.map(edge => ({
         id: edge.node.id,
         thumbnail: edge.node.thumbnail_resources[2].src,
@@ -27,7 +27,7 @@ const slimUpPosts = (response): IInstagramPost[] => (
     }))
 );
 
-const getInstagramPosts = async (numberOfPosts: number): Promise<IInstagramPost[]> => {
+const getInstagramPosts = async (numberOfPosts: number): Promise<InstagramPost[]> => {
     const instagramUrl = `${process.env.INSTAGRAM_URL}${numberOfPosts}}`;
     const timeSinceLastFetch = Date.now() - cache.lastFetch;
     const dayInMilliseconds = 86400000;
@@ -45,7 +45,7 @@ const getInstagramPosts = async (numberOfPosts: number): Promise<IInstagramPost[
     return posts;
 };
 
-export default async (request: NextApiRequest, response: NextApiResponse<IInstagramPost[]>): Promise<void> => {
+export default async (request: NextApiRequest, response: NextApiResponse<InstagramPost[]>): Promise<void> => {
     const numberOfPosts = parseInt(request.query.first as string) || 10;
     const posts = await getInstagramPosts(numberOfPosts);
 

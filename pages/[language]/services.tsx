@@ -6,17 +6,20 @@ import Layout from '../../components/Layout';
 import NavLinksContext from '../../components/context/NavLinksContext';
 import { staticPaths, getNavLinks } from '../../utils/getInitialProps';
 
-interface IServicesPageProps {
+interface ServicesPageProps {
     navLinksPrismicDoc: Document;
 }
 
-const ServicesPage: NextPage<IServicesPageProps> = props => {
+const ServicesPage: NextPage<ServicesPageProps> = props => {
     const {
         navLinksPrismicDoc,
     } = props;
 
     return (
-        <NavLinksContext.Provider value={{ navLinksPrismicDoc }}>
+        <NavLinksContext.Provider value={{
+            navLinksPrismicDoc,
+        }}
+        >
             <Layout>
                 <Head>
                     <title>Serviços - Aguarela Digital</title>

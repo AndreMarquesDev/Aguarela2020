@@ -4,18 +4,18 @@ import Slide from 'react-reveal/Slide';
 import Title from './Title';
 import colors from '../styles/colors';
 import breakpoints from '../styles/breakpoints';
-import { IPrismicImage, IPrismicText } from '../typings/prismicTypes';
+import { PrismicImage, PrismicText } from '../typings/prismicTypes';
 
-export interface IClientsThumbnail {
-    thumbnail: IPrismicImage;
+export interface ClientsThumbnail {
+    thumbnail: PrismicImage;
 }
 
-interface IClientsProps {
-    title: IPrismicText;
-    thumbnails: IClientsThumbnail[];
+interface ClientsProps {
+    title: PrismicText;
+    thumbnails: ClientsThumbnail[];
 }
 
-const Clients: FC<IClientsProps> = props => {
+const Clients: FC<ClientsProps> = props => {
     const {
         title,
         thumbnails,

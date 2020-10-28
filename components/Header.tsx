@@ -1,20 +1,18 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, {
-    FC, useContext, useRef, useEffect,
-} from 'react';
+import React, { FC, useContext, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import logo from '../public/images/logo.svg';
 import NavLinksContext from './context/NavLinksContext';
-import NavLinks, { INavLink } from './NavLinks';
+import NavLinks, { NavLink } from './NavLinks';
 import breakpoints from '../styles/breakpoints';
 import { Page } from '../utils/pages';
 
-interface IHeaderProps {
+interface HeaderProps {
     currentRoute: string;
     language: string;
 }
 
-const Header: FC<IHeaderProps> = props => {
+const Header: FC<HeaderProps> = props => {
     const {
         currentRoute,
         language,
@@ -33,7 +31,7 @@ const Header: FC<IHeaderProps> = props => {
         }
     });
 
-    const navLinks: Array<[string, INavLink[]]> = navLinksPrismicDoc && Object.entries(navLinksPrismicDoc.data);
+    const navLinks: Array<[string, NavLink[]]> = navLinksPrismicDoc && Object.entries(navLinksPrismicDoc.data);
 
     return (
         <nav ref={navRef} className="wrapper">

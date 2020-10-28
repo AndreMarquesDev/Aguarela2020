@@ -7,10 +7,11 @@
         "dev": "next",
         "build": "next build",
         "start": "next start",
-        "lint": "tsc --noEmit && eslint . --ext .js,.ts,.tsx --fix && stylelint ."
+        "lint": "tsc --noEmit && eslint . --ext .js,.ts,.tsx --fix && stylelint .",
+        "lint:fix": "yarn lint --fix && stylelint ."
     },
     "keywords": [],
-    "author": "André Marques <andremarquesdev.com>",
+    "author": "André Marques <andregm_7@hotmail.com> (andremarquesdev.com)",
     "engines": {
         "node": "12",
         "yarn": "1"
@@ -28,12 +29,12 @@
         "isomorphic-fetch": "^2.2.1",
         "js-cookie": "^2.2.1",
         "multilingual-url": "AndreMarquesDev/multilingual-url",
-        "eslint-config-andremarquesdev": "AndreMarquesDev/eslint-config-andremarquesdev",
         "next": "^9.3.4",
         "next-compose-plugins": "^2.2.0",
         "next-images": "^1.4.0",
         "nuka-carousel": "^4.6.6",
         "postcss-flexbugs-fixes": "^4.2.0",
+        "postcss-preset-env": "^6.7.0",
         "precss": "^4.0.0",
         "prismic-javascript": "^2.7.0",
         "prismic-reactjs": "^1.3.0",
@@ -49,6 +50,7 @@
         "@types/node": "^13.11.0",
         "@types/react": "^16.9.32",
         "@types/styled-jsx": "^2.2.8",
+        "eslint-config-andremarquesdev": "^1.1.0",
         "stylelint": "^13.2.1",
         "stylelint-config-standard": "^20.0.0",
         "typescript": "^3.8.3"

@@ -1,14 +1,14 @@
 import React from 'react';
-import Document, {
-    Html, Head, Main, NextScript,
-} from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { defaultLocale } from 'multilingual-url/lib';
 
 class MyDocument extends Document {
     static async getInitialProps(context) {
         const initialProps = await Document.getInitialProps(context);
 
-        return { ...initialProps };
+        return {
+            ...initialProps,
+        };
     }
 
     render() {

@@ -2,14 +2,14 @@ import React, { FC } from 'react';
 import { RichText } from 'prismic-reactjs';
 import Slide from 'react-reveal/Slide';
 import Title from './Title';
-import { IPrismicText } from '../typings/prismicTypes';
+import { PrismicText } from '../typings/prismicTypes';
 
-interface IWelcomeSectionProps {
-    title: IPrismicText;
-    bodyText: IPrismicText[];
+interface WelcomeSectionProps {
+    title: PrismicText;
+    bodyText: PrismicText[];
 }
 
-const WelcomeSection: FC<IWelcomeSectionProps> = props => {
+const WelcomeSection: FC<WelcomeSectionProps> = props => {
     const {
         title,
         bodyText,

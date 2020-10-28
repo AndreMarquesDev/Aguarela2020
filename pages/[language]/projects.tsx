@@ -10,12 +10,12 @@ import NoContentErrorBlock from '../../components/NoContentErrorBlock';
 import { capitalize } from '../../utils/generic';
 import { staticPaths, getNavLinks, getPrismicDoc } from '../../utils/getInitialProps';
 
-interface IProjectsPageProps {
+interface ProjectsPageProps {
     navLinksPrismicDoc: Document;
     projectsPagePrismicDoc: Document;
 }
 
-const ProjectsPage: NextPage<IProjectsPageProps> = props => {
+const ProjectsPage: NextPage<ProjectsPageProps> = props => {
     const {
         navLinksPrismicDoc,
         projectsPagePrismicDoc,
@@ -24,7 +24,10 @@ const ProjectsPage: NextPage<IProjectsPageProps> = props => {
     const pageTitle = projectsPagePrismicDoc ? projectsPagePrismicDoc.data.page_title : 'Projetos';
 
     return (
-        <NavLinksContext.Provider value={{ navLinksPrismicDoc }}>
+        <NavLinksContext.Provider value={{
+            navLinksPrismicDoc,
+        }}
+        >
             <Layout>
                 <Head>
                     <title>

@@ -5,11 +5,11 @@ import { getRemainingLang } from 'multilingual-url/lib';
 import { locales } from '../utils/locales';
 import { getPageFromUrl } from '../utils/pages';
 
-interface ILanguageButtonProps {
+interface LanguageButtonProps {
     language: string;
 }
 
-const LanguageButton: FC<ILanguageButtonProps> = props => {
+const LanguageButton: FC<LanguageButtonProps> = props => {
     const {
         language,
     } = props;

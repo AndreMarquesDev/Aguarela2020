@@ -3,24 +3,24 @@ import { RichText } from 'prismic-reactjs';
 import Slide from 'react-reveal/Slide';
 import Title from './Title';
 import { getPrismicText } from '../utils/generic';
-import { IPrismicLink, IPrismicText } from '../typings/prismicTypes';
+import { PrismicLink, PrismicText } from '../typings/prismicTypes';
 import InstagramPosts from './InstagramPosts';
-import { IInstagramPost } from '../pages/api/instagramPosts';
+import { InstagramPost } from '../pages/api/instagramPosts';
 
-interface IFollowUsProps {
-    title: IPrismicText;
-    link: IPrismicLink;
-    linkText: IPrismicText;
+interface FollowUsProps {
+    title: PrismicText;
+    link: PrismicLink;
+    linkText: PrismicText;
 }
 
-const FollowUs: FC<IFollowUsProps> = props => {
+const FollowUs: FC<FollowUsProps> = props => {
     const {
         title,
         link,
         linkText,
     } = props;
 
-    function useInstagram(numberOfPosts: number): IInstagramPost[] {
+    function useInstagram(numberOfPosts: number): InstagramPost[] {
         const [posts, setPosts] = useState([]);
 
         useEffect(() => {

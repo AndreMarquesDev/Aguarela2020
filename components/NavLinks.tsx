@@ -5,19 +5,19 @@ import classNames from 'classnames';
 import { getPrismicText } from '../utils/generic';
 import breakpoints from '../styles/breakpoints';
 
-export interface INavLink {
+export interface NavLink {
     spans: string[];
     text: string;
     type: string;
 }
 
-interface INavLinksProps {
-    navLinks: Array<[string, INavLink[]]>;
+interface NavLinksProps {
+    navLinks: Array<[string, NavLink[]]>;
     currentRoute: string;
     language: string;
 }
 
-const NavLinks: FC<INavLinksProps> = props => {
+const NavLinks: FC<NavLinksProps> = props => {
     const {
         navLinks,
         currentRoute,
@@ -25,10 +25,8 @@ const NavLinks: FC<INavLinksProps> = props => {
     } = props;
 
     const linkStyles = (link: string): string => (
-        classNames(
-            'link',
-            currentRoute === `/${link}` && 'active',
-        )
+        classNames('link',
+            currentRoute === `/${link}` && 'active')
     );
 
     return (
