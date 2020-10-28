@@ -30,8 +30,6 @@
         "js-cookie": "^2.2.1",
         "multilingual-url": "AndreMarquesDev/multilingual-url",
         "next": "^9.3.4",
-        "next-compose-plugins": "^2.2.0",
-        "next-images": "^1.4.0",
         "nuka-carousel": "^4.6.6",
         "postcss-flexbugs-fixes": "^4.2.0",
         "postcss-preset-env": "^6.7.0",
@@ -51,8 +49,14 @@
         "@types/react": "^16.9.32",
         "@types/styled-jsx": "^2.2.8",
         "eslint-config-andremarquesdev": "^1.1.0",
+        "imagemin-mozjpeg": "^9.0.0",
+        "imagemin-optipng": "^8.0.0",
+        "imagemin-svgo": "^8.0.0",
+        "next-compose-plugins": "^2.2.0",
+        "next-optimized-images": "^2.6.2",
         "stylelint": "^13.2.1",
         "stylelint-config-standard": "^20.0.0",
-        "typescript": "^3.8.3"
+        "typescript": "^3.8.3",
+        "webp-loader": "^0.6.0"
     }
 }

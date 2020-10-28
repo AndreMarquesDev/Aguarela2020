@@ -1,6 +1,6 @@
 require('dotenv').config();
-const withPlugins = require('next-compose-plugins');
-const withImages = require('next-images');
+const withPlugins = require('next-compose-plugins'); // eslint-disable-line import/no-extraneous-dependencies
+const withOptimizedImages = require('next-optimized-images'); // eslint-disable-line import/no-extraneous-dependencies
 
 const nextConfig = {
     env: {
@@ -11,5 +11,7 @@ const nextConfig = {
 };
 
 module.exports = withPlugins([
-    withImages,
+    [withOptimizedImages, {
+        optimizeImagesInDev: false,
+    }],
 ], nextConfig);
