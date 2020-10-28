@@ -1,8 +1,0 @@
-{
-    "build": {
-        "env": {
-            "PRISMIC_API_ENDPOINT": "@prismic_api_endpoint",
-            "PRISMIC_TOKEN": "@prismic_token"
-        }
-    }
-}

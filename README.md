@@ -9,7 +9,6 @@ Aguarela Digital website
 
 React  
 Next.js  
-Prismic  
 
 ### Author
 

@@ -1,74 +1,26 @@
 import React from 'react';
 import Head from 'next/head';
-import { NextPage, GetStaticProps, GetStaticPaths } from 'next';
-import { RichText } from 'prismic-reactjs';
-import { Document } from 'prismic-javascript/d.ts/documents';
+import { NextPage } from 'next';
 import Layout from '../../components/Layout';
 import NavLinksContext from '../../components/context/NavLinksContext';
-import Title from '../../components/Title';
-import NoContentErrorBlock from '../../components/NoContentErrorBlock';
 import { capitalize } from '../../utils/generic';
-import { staticPaths, getNavLinks, getPrismicDoc } from '../../utils/getInitialProps';
 
-interface ProjectsPageProps {
-    navLinksPrismicDoc: Document;
-    projectsPagePrismicDoc: Document;
-}
+const ProjectsPage: NextPage<any> = () => (
+    <NavLinksContext.Provider value={{}}>
+        <Layout>
+            <Head>
+                <title>
+                    {capitalize('Projetos')}
+                    {' '}
+                    - Aguarela Digital
+                </title>
+            </Head>
 
-const ProjectsPage: NextPage<ProjectsPageProps> = props => {
-    const {
-        navLinksPrismicDoc,
-        projectsPagePrismicDoc,
-    } = props;
+            <div className="wrapper genericMargins" />
+        </Layout>
 
-    const pageTitle = projectsPagePrismicDoc ? projectsPagePrismicDoc.data.page_title : 'Projetos';
-
-    return (
-        <NavLinksContext.Provider value={{
-            navLinksPrismicDoc,
-        }}
-        >
-            <Layout>
-                <Head>
-                    <title>
-                        {capitalize(pageTitle)}
-                        {' '}
-                        - Aguarela Digital
-                    </title>
-                </Head>
-
-                {
-                    projectsPagePrismicDoc ? (
-                        <div className="wrapper genericMargins">
-                            <Title text={RichText.asText(projectsPagePrismicDoc.data.title)} />
-                            <RichText render={projectsPagePrismicDoc.data.textBody} />
-                            <ul className="thumbnailList">
-                                {
-                                    projectsPagePrismicDoc.data.thumbnails_list.map(({ thumbnail }) => (
-                                        <li key={thumbnail.alt}>
-                                            <img
-                                                alt={thumbnail.alt}
-                                                className="thumbnails"
-                                                loading="lazy"
-                                                src={thumbnail.url}
-                                            />
-                                        </li>
-                                    ))
-                                }
-                            </ul>
-                        </div>
-                    ) : <NoContentErrorBlock />
-                }
-            </Layout>
-
-            <style jsx>
-                {`
-                    .thumbnailList {
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                    }
-
+        <style jsx>
+            {`
                     li {
                         width: 20%;
                         height: auto;
@@ -80,25 +32,8 @@ const ProjectsPage: NextPage<ProjectsPageProps> = props => {
                         height: 100%;
                     }
                 `}
-            </style>
-        </NavLinksContext.Provider>
-    );
-};
-
-export const getStaticProps: GetStaticProps = async context => {
-    const { language } = context.params;
-
-    const navLinks = await getNavLinks(language);
-    const projectsPagePrismicDoc = await getPrismicDoc(language, 'projects_page');
-
-    return {
-        props: {
-            navLinksPrismicDoc: navLinks,
-            projectsPagePrismicDoc,
-        },
-    };
-};
-
-export const getStaticPaths: GetStaticPaths = async () => staticPaths();
+        </style>
+    </NavLinksContext.Provider>
+);
 
 export default ProjectsPage;

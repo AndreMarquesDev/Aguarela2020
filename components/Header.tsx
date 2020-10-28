@@ -3,7 +3,7 @@ import React, { FC, useContext, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import logo from '../public/images/logo.svg';
 import NavLinksContext from './context/NavLinksContext';
-import NavLinks, { NavLink } from './NavLinks';
+import NavLinks from './NavLinks';
 import breakpoints from '../styles/breakpoints';
 import { Page } from '../utils/pages';
 
@@ -19,7 +19,6 @@ const Header: FC<HeaderProps> = props => {
     } = props;
 
     const {
-        navLinksPrismicDoc,
         setNavHeight,
     } = useContext(NavLinksContext);
 
@@ -30,8 +29,6 @@ const Header: FC<HeaderProps> = props => {
             setNavHeight(navRef.current.clientHeight);
         }
     });
-
-    const navLinks: Array<[string, NavLink[]]> = navLinksPrismicDoc && Object.entries(navLinksPrismicDoc.data);
 
     return (
         <nav ref={navRef} className="wrapper">
@@ -45,14 +42,10 @@ const Header: FC<HeaderProps> = props => {
                 </a>
             </Link>
 
-            {navLinks
-            && (
-                <NavLinks
-                    currentRoute={currentRoute}
-                    language={language}
-                    navLinks={navLinks}
-                />
-            )}
+            <NavLinks
+                currentRoute={currentRoute}
+                language={language}
+            />
 
             <style jsx>
                 {`
