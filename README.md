@@ -1,14 +1,16 @@
 # Aguarela2020  
-Aguarela Digital website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ffee3a9e-d328-4f79-bcda-bf79342ff3b6/deploy-status)](https://app.netlify.com/sites/aguareladigital/deploys)
+Aguarela Digital website
 
 ## About
 
 ### Features / Contents
 
-React  
-Next.js  
+React v17  
+Next.js v10  
+Typescript  
+Styled JSX  
+SASS  
 
 ### Author
 
@@ -16,11 +18,11 @@ André Marques
 [Website](https://andremarquesdev.com)  
 [GitHub](https://github.com/AndreMarquesDev)  
 [CodePen](https://codepen.io/AndreMarquesDev)  
-[Twitter](https://twitter.com/BazingaCS)  
+[Twitter](https://twitter.com/axxyJS)  
 
 Aguarela Digital  
 [Instagram](https://www.instagram.com/aguareladigital)  
 
 ### License
 
-No license = you can only view the code. 
+No license = you can only view the code.
