@@ -1,7 +1,6 @@
 /* eslint-disable no-console */
 import React, { FC } from 'react';
 import { useRouter } from 'next/router';
-import GeneralStyles from '../styles/styles';
 import Header from './Header';
 import LanguageButton from './LanguageButton';
 
@@ -15,8 +14,6 @@ const Layout: FC = props => {
 
     return (
         <main className="Layout">
-            <GeneralStyles />
-
             <Header currentRoute={route} language={query.language?.toString()} />
 
             {children}

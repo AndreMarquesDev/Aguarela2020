@@ -2,7 +2,6 @@
 import React, { FC } from 'react';
 import Link from 'next/link';
 import classNames from 'classnames';
-import breakpoints from '../styles/breakpoints';
 import { pagesMap } from '../utils/pages';
 
 interface NavLinksProps {
@@ -37,6 +36,8 @@ const NavLinks: FC<NavLinksProps> = props => {
 
             <style jsx>
                 {`
+                    @import './styles/_vars.scss';
+
                     ul {
                         display: flex;
                         flex-wrap: wrap;
@@ -60,7 +61,7 @@ const NavLinks: FC<NavLinksProps> = props => {
 
                     }
 
-                    @media (max-width: ${breakpoints.mobile}) {
+                    @include mobile {
                         li {
                             margin: 0 5rem 10rem;
 

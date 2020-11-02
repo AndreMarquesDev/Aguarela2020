@@ -27,7 +27,7 @@ const HomePage: NextPage<any> = () => {
                     {`
                         img {
                             width: 100%;
-                            height: calc(90vh - ${navHeight}rem);
+                            height: calc(90vh - ${navHeight}px);
                             position: relative;
                             top: 0;
                             left: 0;

@@ -3,3 +3,4 @@
 /out
 /public
 /*.json
+/styles/_reset.scss

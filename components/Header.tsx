@@ -4,7 +4,6 @@ import Link from 'next/link';
 import logo from '../public/images/logo.svg';
 import NavLinksContext from './context/NavLinksContext';
 import NavLinks from './NavLinks';
-import breakpoints from '../styles/breakpoints';
 import { Page } from '../utils/pages';
 
 interface HeaderProps {
@@ -49,6 +48,8 @@ const Header: FC<HeaderProps> = props => {
 
             <style jsx>
                 {`
+                    @import './styles/_vars.scss';
+
                     nav {
                         display: flex;
                         align-items: center;
@@ -61,7 +62,7 @@ const Header: FC<HeaderProps> = props => {
                         width: 100%;
                     }
 
-                    @media (max-width: ${breakpoints.tablet}) {
+                    @include tablet {
                         nav {
                             padding-top: 50rem;
                         }

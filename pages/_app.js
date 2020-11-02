@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
+import '../styles/main.scss';
 import Cookies from 'js-cookie';
 import { getInitialLocale } from 'multilingual-url/lib';
 import { defaultLocale, locales } from '../utils/locales';
