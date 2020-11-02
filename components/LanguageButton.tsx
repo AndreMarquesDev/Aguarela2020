@@ -15,12 +15,12 @@ const LanguageButton: FC<LanguageButtonProps> = props => {
     } = props;
 
     const router = useRouter();
-    const currentPage = getPageFromUrl[0];
+    const currentPage = getPageFromUrl();
     const languageToSwitchTo = getRemainingLang(locales)[0];
     const countryCode = language === 'en' ? 'PT' : 'GB';
 
     const onButtonClick = (): void => {
-        router.replace(`/${languageToSwitchTo}/${currentPage}`);
+        router.replace(`/${languageToSwitchTo}/${currentPage[0]}`);
     };
 
     return (

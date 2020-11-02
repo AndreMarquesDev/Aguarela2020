@@ -12,4 +12,11 @@ export const pagesMap: Page[] = [
 
 export const pagePathRegex = (page: Page): RegExp => RegExp(`${page}$`);
 
-export const getPageFromUrl = isClientSide ? pagesMap.filter(page => pagePathRegex(page).test(window.location.pathname)) : [];
+// export const getPageFromUrl = isClientSide ? pagesMap.filter(page => pagePathRegex(page).test(window.location.pathname)) : [];
+export const getPageFromUrl = (): Page[] => {
+    if (!isClientSide) {
+        return [];
+    }
+
+    return pagesMap.filter(page => pagePathRegex(page).test(window.location.pathname));
+};
