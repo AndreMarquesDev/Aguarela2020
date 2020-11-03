@@ -1,8 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { FC } from 'react';
+import React, { FC, useContext } from 'react';
 import Link from 'next/link';
 import classNames from 'classnames';
 import { pagesMap } from '../utils/pages';
+import TextsContext from './context/TextsContext';
 
 interface NavLinksProps {
     currentRoute: string;
@@ -21,6 +22,7 @@ const NavLinks: FC<NavLinksProps> = props => {
     );
 
     const navLinks = pagesMap.filter(page => page !== 'homepage');
+    const { texts: navTexts } = useContext(TextsContext);
 
     return (
         <ul className="genericMargins">
@@ -28,7 +30,7 @@ const NavLinks: FC<NavLinksProps> = props => {
                 <li key={language + link}>
                     <Link href={`/${language}/${link}`} prefetch={false}>
                         <a className={linkStyles(link)}>
-                            {link}
+                            {navTexts[`${link}`]}
                         </a>
                     </Link>
                 </li>
