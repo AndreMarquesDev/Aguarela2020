@@ -4,7 +4,7 @@ import { NextPage } from 'next';
 import Layout from '../../components/Layout';
 import NavLinksContext from '../../components/context/NavLinksContext';
 
-const ContactPage: NextPage<any> = () => (
+const ContactPage: NextPage = () => (
     <NavLinksContext.Provider value={{}}>
         <Layout>
             <Head>

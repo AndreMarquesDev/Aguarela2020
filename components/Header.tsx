@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { FC, useContext, useRef, useEffect } from 'react';
 import Link from 'next/link';
-import logo from '../public/images/logo.svg';
+import Image from 'next/image';
+// import logo from '../public/images/logo.svg';
 import NavLinksContext from './context/NavLinksContext';
 import NavLinks from './NavLinks';
 import { Page } from '../utils/pages';
@@ -11,12 +12,7 @@ interface HeaderProps {
     language: string;
 }
 
-const Header: FC<HeaderProps> = props => {
-    const {
-        currentRoute,
-        language,
-    } = props;
-
+const Header: FC<HeaderProps> = ({ currentRoute, language }) => {
     const {
         setNavHeight,
     } = useContext(NavLinksContext);
@@ -33,10 +29,11 @@ const Header: FC<HeaderProps> = props => {
         <nav ref={navRef} className="wrapper">
             <Link href={`/${language}/${'homepage' as Page}`} prefetch={false}>
                 <a>
-                    <img
+                    <Image
                         alt="Logo"
-                        loading="lazy"
-                        src={logo}
+                        height={60}
+                        src="/images/logo.svg"
+                        width={300}
                     />
                 </a>
             </Link>
@@ -55,11 +52,6 @@ const Header: FC<HeaderProps> = props => {
                         align-items: center;
                         flex-direction: column;
                         padding-top: 100rem;
-                    }
-
-                    img {
-                        max-width: 415rem;
-                        width: 100%;
                     }
 
                     @include tablet {

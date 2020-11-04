@@ -4,7 +4,7 @@ import { NextPage } from 'next';
 import Layout from '../../components/Layout';
 import NavLinksContext, { NavLinksContextProps } from '../../components/context/NavLinksContext';
 
-const HomePage: NextPage<any> = () => {
+const Homepage: NextPage = () => {
     const [navHeight, setNavHeight] = useState(0);
 
     const navLinksContext: NavLinksContextProps = {
@@ -40,4 +40,4 @@ const HomePage: NextPage<any> = () => {
     );
 };
 
-export default HomePage;
+export default Homepage;

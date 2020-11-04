@@ -6,7 +6,7 @@ import Title from '../../components/Title';
 import NavLinksContext from '../../components/context/NavLinksContext';
 import { capitalize } from '../../utils/generic';
 
-const AboutPage: NextPage<any> = () => (
+const AboutPage: NextPage = () => (
     <NavLinksContext.Provider value={{}}>
         <Layout>
             <Head>

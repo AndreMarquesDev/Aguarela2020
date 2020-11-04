@@ -1,5 +1,4 @@
-const withPlugins = require('next-compose-plugins'); // eslint-disable-line import/no-extraneous-dependencies
-const withOptimizedImages = require('next-optimized-images'); // eslint-disable-line import/no-extraneous-dependencies
+// const withPlugins = require('next-compose-plugins'); // eslint-disable-line import/no-extraneous-dependencies
 
 // const nextConfig = {
 //     i18n: {
@@ -8,8 +7,8 @@ const withOptimizedImages = require('next-optimized-images'); // eslint-disable-
 //     },
 // };
 
-module.exports = withPlugins([
-    [withOptimizedImages, {
-        optimizeImagesInDev: false,
-    }],
-]);
+// module.exports = withPlugins([
+//     [withOptimizedImages, {
+//         optimizeImagesInDev: false,
+//     }],
+// ], nextConfig);
