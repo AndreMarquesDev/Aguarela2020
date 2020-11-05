@@ -5,6 +5,7 @@ import Header from './Header';
 import LanguageButton from './LanguageButton';
 import TextsContext from './context/TextsContext';
 import { textsEn, textsPt } from '../utils/texts';
+import Footer from './Footer';
 
 const Layout: FC = props => {
     const { children } = props;
@@ -28,6 +29,8 @@ const Layout: FC = props => {
                 {children}
 
                 <LanguageButton language={currentLanguage} />
+
+                <Footer language={currentLanguage} />
 
                 <style jsx>
                     {`

@@ -7,7 +7,7 @@ const WelcomeBlock: FC = () => {
 
     return (
         <>
-            <div>
+            <div className="wrapper">
                 <Title text={texts.welcome} />
                 <p>{texts.managingSocialNetworks}</p>
                 <p>{texts.monitorAndOptimizeProcessAndStrategy}</p>
