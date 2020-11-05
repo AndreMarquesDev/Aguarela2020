@@ -29,11 +29,6 @@ const Layout: FC = props => {
 
                 <LanguageButton language={currentLanguage} />
 
-                <p>{texts.about}</p>
-                <p>{texts.projects}</p>
-                <p>{texts.services}</p>
-                <p>{texts.contact}</p>
-
                 <style jsx>
                     {`
                     .Layout {
