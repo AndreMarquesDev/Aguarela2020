@@ -15,46 +15,53 @@ const Footer: FC<FooterProps> = ({ language }) => {
 
     return (
         <>
-            <div className="wrapper">
-                <p>
-                    {texts.footerInfo}
-                    {' '}
-                    <a className="link" href="https://www.andremarquesdev.com" rel="noreferrer" target="_blank">André Marques</a>
-                </p>
+            <footer>
+                <div className="wrapper">
 
-                <ul>
-                    <LanguageButton language={language} />
-                    <li>
-                        <a href="https://www.instagram.com/aguareladigital" rel="noreferrer" target="_blank">
-                            <FaInstagram />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/aguareladigitalagency" rel="noreferrer" target="_blank">
-                            <FaFacebookF />
-                        </a>
-                    </li>
-                    <li>
-                        <Link href={`/${language}/${'contact' as Page}`} prefetch={false}>
-                            <a>
-                                <FaEnvelope />
+                    <p>
+                        {texts.footerInfo}
+                        {' '}
+                        <a className="link" href="https://www.andremarquesdev.com" rel="noreferrer" target="_blank">André Marques</a>
+                    </p>
+
+                    <ul>
+                        <LanguageButton language={language} />
+                        <li>
+                            <a href="https://www.instagram.com/aguareladigital" rel="noreferrer" target="_blank">
+                                <FaInstagram />
                             </a>
-                        </Link>
-                    </li>
-                </ul>
-            </div>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/aguareladigitalagency" rel="noreferrer" target="_blank">
+                                <FaFacebookF />
+                            </a>
+                        </li>
+                        <li>
+                            <Link href={`/${language}/${'contact' as Page}`} prefetch={false}>
+                                <a>
+                                    <FaEnvelope />
+                                </a>
+                            </Link>
+                        </li>
+                    </ul>
+
+                </div>
+            </footer>
 
             <style jsx>
                 {`
                     @import './styles/_vars.scss';
 
-                    div {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
+                    footer {
                         background: $grey;
                         padding-top: 12.5rem;
                         padding-bottom: 12.5rem;
+                    }
+
+                    .wrapper {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
                     }
 
                     p {
@@ -71,7 +78,7 @@ const Footer: FC<FooterProps> = ({ language }) => {
                             height: 35rem;
                             position: relative;
                             text-align: center;
-                            margin: 0 25rem;
+                            margin: 0 calc(25rem / 2);
                             color: $white;
 
                             &:before {
