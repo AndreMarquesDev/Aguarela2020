@@ -50,13 +50,15 @@ const Header: FC<HeaderProps> = ({ currentRoute, language }) => {
                     nav {
                         display: flex;
                         align-items: center;
-                        flex-direction: column;
-                        padding-top: 100rem;
+                        justify-content: space-between;
+                        padding-top: 80rem;
+                        padding-bottom: 80rem;
                     }
 
                     @include tablet {
                         nav {
-                            padding-top: 50rem;
+                            padding-top: 40rem;
+                            padding-bottom: 40rem;
                         }
                     }
                 `}

@@ -25,7 +25,7 @@ const NavLinks: FC<NavLinksProps> = props => {
     const { texts: navTexts } = useContext(TextsContext);
 
     return (
-        <ul className="genericMargins">
+        <ul>
             {navLinks.map(link => (
                 <li key={language + link}>
                     <Link href={`/${language}/${link}`} prefetch={false}>
@@ -42,36 +42,19 @@ const NavLinks: FC<NavLinksProps> = props => {
 
                     ul {
                         display: flex;
-                        flex-wrap: wrap;
-                        justify-content: center;
-                        list-style: none;
-                        margin-bottom: 0;
                     }
 
                     li {
-                        margin: 0 10rem 15rem;
+                        margin: 0 25rem;
 
-                        &:last-child {
-                            margin-bottom: 30rem;
-
+                        @include desktop {
+                            margin: 0 calc(25rem / 2);
                         }
 
                         a {
-                            font-size: 24rem;
-                            text-transform: uppercase;
+                            @include fontM(uppercase);
                         }
 
-                    }
-
-                    @include mobile {
-                        li {
-                            margin: 0 5rem 10rem;
-
-                            &:last-child {
-                                margin-bottom: 15rem;
-
-                            }
-                        }
                     }
                 `}
             </style>

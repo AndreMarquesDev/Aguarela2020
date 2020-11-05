@@ -1,3 +1,4 @@
+$desktopWidth: 1280px;
 $phabletWidth: 1023px;
 $tabletWidth: 767px;
 $mobileWidth: 511px;
@@ -10,6 +11,12 @@ $mobileWidth: 511px;
 
 @mixin mqHeight ($smallerValue, $biggerValue) {
     @media (min-height: #{$smallerValue}) and (max-height: $biggerValue) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 0) and (max-width: #{$desktopWidth}) {
         @content;
     }
 }

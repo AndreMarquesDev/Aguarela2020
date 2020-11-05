@@ -17,9 +17,10 @@ const Title: FC<TitleProps> = props => {
 
             <style jsx>
                 {`
+                    @import './styles/_vars.scss';
+
                     h1 {
-                        font-size: 30rem;
-                        text-transform: uppercase;
+                        @include fontL(uppercase)
                         margin-bottom: 30rem;
                     }
                 `}

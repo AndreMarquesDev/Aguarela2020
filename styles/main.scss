@@ -20,6 +20,12 @@ body {
     }
 }
 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -70,7 +76,7 @@ button {
 }
 
 .wrapper {
-    max-width: 1920rem;
+    max-width: 1440rem;
     padding: 0 40rem;
     margin: 0 auto;
 

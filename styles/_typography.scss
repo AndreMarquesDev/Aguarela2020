@@ -7,3 +7,18 @@ html {
 body {
     font-size: 20rem;
 }
+
+@mixin fontL($textTransform: none) {
+    font-size: 40rem;
+    text-transform: $textTransform;
+}
+
+@mixin fontM($textTransform: none) {
+    font-size: 24rem;
+    text-transform: $textTransform;
+}
+
+@mixin fontS($textTransform: none) {
+    font-size: 20rem;
+    text-transform: $textTransform;
+}
