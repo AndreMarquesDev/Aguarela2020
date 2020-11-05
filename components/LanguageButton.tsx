@@ -43,9 +43,6 @@ const LanguageButton: FC<LanguageButtonProps> = props => {
             <style jsx>
                 {`
                     button {
-                        position: fixed;
-                        right: 20rem;
-                        bottom: 20rem;
                         transition: transform .2s;
 
                         &:hover {

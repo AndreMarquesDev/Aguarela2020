@@ -2,7 +2,6 @@
 import React, { FC } from 'react';
 import { useRouter } from 'next/router';
 import Header from './Header';
-import LanguageButton from './LanguageButton';
 import TextsContext from './context/TextsContext';
 import { textsEn, textsPt } from '../utils/texts';
 import Footer from './Footer';
@@ -27,8 +26,6 @@ const Layout: FC = props => {
                 <Header currentRoute={route} language={currentLanguage} />
 
                 {children}
-
-                <LanguageButton language={currentLanguage} />
 
                 <Footer language={currentLanguage} />
 
