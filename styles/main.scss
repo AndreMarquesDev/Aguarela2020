@@ -13,16 +13,17 @@
 }
 
 .genericMargins {
-    padding: 70rem 0;
+    padding-top: 100rem;
+    padding-bottom: 100rem;
 
     @include tablet {
-        padding: 35rem 0;
+        padding-top: 50rem;
+        padding-bottom: 50rem;
     }
 }
 
 .bodyText {
-    font-family: 'champagne-limousines', sans-serif;
-    font-size: 20rem;
+    @include fontS;
     margin-bottom: 30rem;
 
     &:last-child {
