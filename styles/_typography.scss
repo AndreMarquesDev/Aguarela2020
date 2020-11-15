@@ -1,33 +1,37 @@
 html {
-    font-family: 'Lato', 'system-ui', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Montserrat', 'system-ui', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
     letter-spacing: 2rem;
     color: $black;
 }
 
-body {
-    font-size: 20rem;
-}
-
-@mixin fontL($textTransform: none, $fontWeight: normal) {
+@mixin fontL($color: $black, $textTransform: none, $fontWeight: normal) {
     font-size: 40rem;
+    color: $color;
     text-transform: $textTransform;
     font-weight: $fontWeight;
 }
 
-@mixin fontM($textTransform: none, $fontWeight: normal) {
+@mixin fontM($color: $black, $textTransform: none, $fontWeight: normal) {
     font-size: 24rem;
+    color: $color;
     text-transform: $textTransform;
     font-weight: $fontWeight;
 }
 
-@mixin fontS($textTransform: none, $fontWeight: normal) {
+@mixin fontS($color: $black, $textTransform: none, $fontWeight: normal) {
     font-size: 20rem;
+    color: $color;
     text-transform: $textTransform;
     font-weight: $fontWeight;
 }
 
-@mixin fontXS($textTransform: none, $fontWeight: normal) {
+@mixin fontXS($color: $black, $textTransform: none, $fontWeight: normal) {
     font-size: 14rem;
+    color: $color;
     text-transform: $textTransform;
     font-weight: $fontWeight;
+}
+
+body {
+    @include fontS;
 }

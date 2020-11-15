@@ -20,7 +20,7 @@ const Title: FC<TitleProps> = props => {
                     @import './styles/_vars.scss';
 
                     h1 {
-                        @include fontL(uppercase)
+                        @include fontL($textTransform: uppercase)
                         margin-bottom: 30rem;
                     }
                 `}

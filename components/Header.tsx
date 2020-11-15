@@ -25,22 +25,24 @@ const Header: FC<HeaderProps> = ({ currentRoute, language }) => {
     });
 
     return (
-        <nav ref={navRef} className="wrapper">
-            <Link href={`/${language}/${'homepage' as Page}`} prefetch={false}>
-                <a>
-                    <Image
-                        alt="Logo"
-                        height={60}
-                        src="/images/logo.svg"
-                        width={300}
-                    />
-                </a>
-            </Link>
+        <header>
+            <nav ref={navRef} className="wrapper">
+                <Link href={`/${language}/${'homepage' as Page}`} prefetch={false}>
+                    <a>
+                        <Image
+                            alt="Logo"
+                            height={35}
+                            src="/images/logo.svg"
+                            width={250}
+                        />
+                    </a>
+                </Link>
 
-            <NavLinks
-                currentRoute={currentRoute}
-                language={language}
-            />
+                <NavLinks
+                    currentRoute={currentRoute}
+                    language={language}
+                />
+            </nav>
 
             <style jsx>
                 {`
@@ -50,19 +52,19 @@ const Header: FC<HeaderProps> = ({ currentRoute, language }) => {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        padding-top: 80rem;
-                        padding-bottom: 80rem;
+                        padding-top: 60rem;
+                        padding-bottom: 60rem;
                     }
 
                     @include tablet {
                         nav {
-                            padding-top: 40rem;
-                            padding-bottom: 40rem;
+                            padding-top: 30rem;
+                            padding-bottom: 30rem;
                         }
                     }
                 `}
             </style>
-        </nav>
+        </header>
     );
 };
 

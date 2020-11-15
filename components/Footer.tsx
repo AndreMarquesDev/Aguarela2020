@@ -53,7 +53,7 @@ const Footer: FC<FooterProps> = ({ language }) => {
                     @import './styles/_vars.scss';
 
                     footer {
-                        background: $grey;
+                        background: $blue;
                         padding-top: 12.5rem;
                         padding-bottom: 12.5rem;
                     }
@@ -65,7 +65,7 @@ const Footer: FC<FooterProps> = ({ language }) => {
                     }
 
                     p {
-                        @include fontXS(uppercase);
+                        @include fontXS($white, uppercase);
                     }
 
                     ul {
@@ -79,7 +79,7 @@ const Footer: FC<FooterProps> = ({ language }) => {
                             position: relative;
                             text-align: center;
                             margin: 0 calc(25rem / 2);
-                            color: $white;
+                            color: $blue;
 
                             &:before {
                                 content: '';
@@ -88,7 +88,7 @@ const Footer: FC<FooterProps> = ({ language }) => {
                                 position: absolute;
                                 top: 0;
                                 left: 0;
-                                background: $black;
+                                background: $white;
                                 border-radius: 50%;
                             }
 

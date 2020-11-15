@@ -47,12 +47,12 @@ const NavLinks: FC<NavLinksProps> = props => {
                     li {
                         margin: 0 25rem;
 
-                        @include desktop {
+                        @include phablet {
                             margin: 0 calc(25rem / 2);
                         }
 
                         a {
-                            @include fontM(uppercase);
+                            @include fontS($textTransform: uppercase);
                         }
 
                     }
