@@ -4,6 +4,7 @@ import { NextPage } from 'next';
 import Layout from '../../components/Layout';
 import NavLinksContext, { NavLinksContextProps } from '../../components/context/NavLinksContext';
 import WelcomeBlock from '../../components/WelcomeBlock';
+import SkillsBlock from '../../components/SkillsBlock';
 
 const Homepage: NextPage = () => {
     const [navHeight, setNavHeight] = useState(0);
@@ -25,6 +26,7 @@ const Homepage: NextPage = () => {
                 />
 
                 <WelcomeBlock />
+                <SkillsBlock />
 
                 <style jsx>
                     {`

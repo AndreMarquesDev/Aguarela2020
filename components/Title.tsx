@@ -2,31 +2,32 @@ import React, { FC } from 'react';
 
 interface TitleProps {
     text: string;
+    colored: boolean;
+    marginBottom?: number;
 }
 
-const Title: FC<TitleProps> = props => {
-    const {
-        text,
-    } = props;
+const Title: FC<TitleProps> = ({ text, colored, marginBottom }) => (
+    <>
+        <h1 className={colored && 'colored'}>
+            {text}
+        </h1>
 
-    return (
-        <>
-            <h1 className="champagneBold">
-                {text}
-            </h1>
-
-            <style jsx>
-                {`
+        <style jsx>
+            {`
                     @import './styles/_vars.scss';
 
                     h1 {
-                        @include fontL($textTransform: uppercase)
-                        margin-bottom: 30rem;
+                        @include fontL($white, uppercase, bold);
+                        text-align: center;
+                        margin-bottom: ${marginBottom || 50}rem;
+                    }
+
+                    .colored {
+                        color: $pink;
                     }
                 `}
-            </style>
-        </>
-    );
-};
+        </style>
+    </>
+);
 
 export default Title;
