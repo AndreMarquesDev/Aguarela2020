@@ -28,6 +28,7 @@
         "multilingual-url": "AndreMarquesDev/multilingual-url",
         "next": "^10.0.1",
         "node-sass": "^4.14.1",
+        "nuka-carousel": "^4.7.2",
         "react": "^17.0.1",
         "react-country-flag": "^2.3.0",
         "react-dom": "^17.0.1",

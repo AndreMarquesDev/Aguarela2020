@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 
 interface TitleProps {
     text: string;
-    colored: boolean;
+    colored?: boolean;
     marginBottom?: number;
 }
 
