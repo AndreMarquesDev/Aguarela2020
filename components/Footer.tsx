@@ -21,7 +21,7 @@ const Footer: FC<FooterProps> = ({ language }) => {
                     <p>
                         {texts.footerInfo}
                         {' '}
-                        <a className="link" href="https://www.andremarquesdev.com" rel="noreferrer" target="_blank">André Marques</a>
+                        <a className="animatedLink animatedLinkWhite" href="https://www.andremarquesdev.com" rel="noreferrer" target="_blank">André Marques</a>
                     </p>
 
                     <ul>

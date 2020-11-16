@@ -17,7 +17,7 @@ const NavLinks: FC<NavLinksProps> = props => {
     } = props;
 
     const linkStyles = (link: string): string => (
-        classNames('link',
+        classNames('animatedLink',
             currentRoute.includes(link) && 'active')
     );
 

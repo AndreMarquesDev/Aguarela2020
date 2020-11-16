@@ -21,7 +21,7 @@ const Homepage: NextPage = () => {
                 <img
                     alt=""
                     loading="lazy"
-                    src="https://via.placeholder.com/2560x1290/5865A2/FFFFFF?text=Banner"
+                    src="https://via.placeholder.com/2560x1290/969696"
                 />
 
                 <WelcomeBlock />

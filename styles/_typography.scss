@@ -4,6 +4,13 @@ html {
     color: $black;
 }
 
+@mixin fontXL($color: $black, $textTransform: none, $fontWeight: normal) {
+    font-size: 150rem;
+    color: $color;
+    text-transform: $textTransform;
+    font-weight: $fontWeight;
+}
+
 @mixin fontL($color: $black, $textTransform: none, $fontWeight: normal) {
     font-size: 40rem;
     color: $color;

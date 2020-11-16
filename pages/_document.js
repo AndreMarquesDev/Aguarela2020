@@ -15,7 +15,7 @@ class MyDocument extends Document {
         return (
             <Html lang={defaultLocale}>
                 <Head>
-                    <link as="font" crossOrigin="true" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="preload" type="font/ttf" />
+                    <link as="font" crossOrigin="true" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="preload" type="font/ttf" />
                     <link
                         href="/images/logo.svg"
                         rel="shortcut icon"
