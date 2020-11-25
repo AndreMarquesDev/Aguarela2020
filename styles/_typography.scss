@@ -1,7 +1,6 @@
 html {
     font-family: 'Montserrat', 'system-ui', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
     letter-spacing: 2rem;
-    color: $black;
 }
 
 @mixin fontXL($color: $black, $textTransform: none, $fontWeight: normal) {
@@ -34,6 +33,13 @@ html {
 
 @mixin fontXS($color: $black, $textTransform: none, $fontWeight: normal) {
     font-size: 14rem;
+    color: $color;
+    text-transform: $textTransform;
+    font-weight: $fontWeight;
+}
+
+@mixin fontXXS($color: $black, $textTransform: none, $fontWeight: normal) {
+    font-size: 10rem;
     color: $color;
     text-transform: $textTransform;
     font-weight: $fontWeight;
