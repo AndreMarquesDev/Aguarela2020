@@ -62,10 +62,19 @@ const Footer: FC<FooterProps> = ({ language }) => {
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+
+                        @include tablet {
+                            flex-direction: column-reverse;
+                        }
                     }
 
                     p {
                         @include fontXS($white, uppercase);
+
+                        @include tablet {
+                            margin-top: 25rem;
+                            text-align: center;
+                        }
                     }
 
                     ul {

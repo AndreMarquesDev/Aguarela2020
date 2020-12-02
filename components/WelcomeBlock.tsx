@@ -34,6 +34,8 @@ const WelcomeBlock: FC = () => {
                     .container {
                         background: $purple;
 
+                        overflow: hidden;
+
                         .wrapper {
                             display: flex;
                             justify-content: space-between;
