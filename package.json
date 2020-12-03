@@ -26,7 +26,7 @@
         "classnames": "^2.2.6",
         "js-cookie": "^2.2.1",
         "multilingual-url": "AndreMarquesDev/multilingual-url",
-        "next": "^10.0.1",
+        "next": "^10.0.3",
         "node-sass": "^4.14.1",
         "nuka-carousel": "^4.7.2",
         "react": "^17.0.1",

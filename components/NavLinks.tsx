@@ -51,7 +51,7 @@ const NavLinks: FC<NavLinksProps> = ({ currentRoute, language }) => {
 
                         &.mobileLayout {
                             li {
-                                display: none
+                                display: none;
                             }
                         }
 

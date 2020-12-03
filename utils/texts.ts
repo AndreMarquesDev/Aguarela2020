@@ -32,6 +32,10 @@ export interface TextsInterface {
     paidSocialAndInfluencers: string;
     insightsAndReports: string;
     optimization: string;
+    socialNetworkManagementAndContentCreation: string;
+    since: string;
+    inPartnershipWith: string;
+    seeMore: string;
 }
 
 export const textsPt: TextsInterface = {
@@ -66,6 +70,10 @@ export const textsPt: TextsInterface = {
     paidSocialAndInfluencers: 'Paid social & influencers',
     insightsAndReports: 'Insights e reports',
     optimization: 'Otimização',
+    socialNetworkManagementAndContentCreation: 'Gestão de Redes Sociais e Criação de Conteúdo',
+    since: 'Desde',
+    inPartnershipWith: 'em dupla com Sofia Ferreirinho',
+    seeMore: 'Ver mais',
 };
 
 export const textsEn: TextsInterface = {
@@ -100,4 +108,8 @@ export const textsEn: TextsInterface = {
     paidSocialAndInfluencers: 'Paid social & influencers',
     insightsAndReports: 'Insights and reports',
     optimization: 'Optimization',
+    socialNetworkManagementAndContentCreation: 'Social Network Management and Content Creation',
+    since: 'Since',
+    inPartnershipWith: 'in partnership with',
+    seeMore: 'See more',
 };
