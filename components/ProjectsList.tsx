@@ -2,6 +2,7 @@ import React, { FC, useContext } from 'react';
 import Image from 'next/image';
 import TextsContext from './context/TextsContext';
 import Title from './Title';
+import Button from './Button';
 
 const ProjectsList: FC = () => {
     const { texts } = useContext(TextsContext);
@@ -74,6 +75,7 @@ const ProjectsList: FC = () => {
                             </div>
                         </li>
                     </ul>
+                    <Button page="projects" />
                 </div>
             </section>
 
