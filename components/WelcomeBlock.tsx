@@ -9,9 +9,9 @@ const WelcomeBlock: FC = () => {
             <section className="container">
                 <div className="wrapper genericMargins">
                     <div className="titleBlock">
-                        <strong>Bem</strong>
-                        <strong>Vin</strong>
-                        <strong>Dos</strong>
+                        <strong>{texts.welcome1}</strong>
+                        <strong>{texts.welcome2}</strong>
+                        <strong>{texts.welcome3}</strong>
                     </div>
                     <div className="textBlock">
                         <p
@@ -34,22 +34,29 @@ const WelcomeBlock: FC = () => {
                     .container {
                         background: $purple;
 
-                        overflow: hidden;
-
                         .wrapper {
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
+
+                            @include desktop {
+                                flex-direction: column;
+                                justify-content: center;
+                            }
                         }
 
                         .titleBlock {
                             width: 35%;
 
+                            @include desktop {
+                                width: 100%;
+                                margin-bottom: 50rem;
+                            }
+
                             strong {
                                 display: block;
-                                @include fontXL($textTransform: uppercase, $fontWeight: 900);
+                                @include fontXXL($textTransform: uppercase, $fontWeight: 900);
                                 letter-spacing: 30rem;
-                                line-height: 140rem;
                                 text-align: right;
                                 -webkit-filter: drop-shadow(20rem -10rem 0 $pink);
                                 filter: drop-shadow(20rem -10rem 0 $pink);
@@ -57,11 +64,29 @@ const WelcomeBlock: FC = () => {
                                 background: $blue;
                                 -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent;
+
+                                @include desktop {
+                                    text-align: center;
+                                }
+
+                                @include mobile {
+                                    @include fontXL($textTransform: uppercase, $fontWeight: 900);
+                                    -webkit-filter: drop-shadow(10rem -5rem 0 $pink);
+                                    filter: drop-shadow(10rem -5rem 0 $pink);
+                                }
                             }
                         }
 
                         .textBlock {
                             width: 60%;
+
+                            @include desktop {
+                                width: 80%;
+                            }
+
+                            @include tablet {
+                                width: 100%;
+                            }
 
                             p {
                                 @include fontM($white);
@@ -69,6 +94,10 @@ const WelcomeBlock: FC = () => {
 
                                 &:last-child {
                                     margin-bottom: 0;
+                                }
+
+                                @include mobile {
+                                    @include fontS($white);
                                 }
                             }
                         }

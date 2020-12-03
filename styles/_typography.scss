@@ -3,8 +3,17 @@ html {
     letter-spacing: 2rem;
 }
 
-@mixin fontXL($color: $black, $textTransform: none, $fontWeight: normal) {
+@mixin fontXXL($color: $black, $textTransform: none, $fontWeight: normal) {
     font-size: 150rem;
+    line-height: 140rem;
+    color: $color;
+    text-transform: $textTransform;
+    font-weight: $fontWeight;
+}
+
+@mixin fontXL($color: $black, $textTransform: none, $fontWeight: normal) {
+    font-size: 80rem;
+    line-height: 70rem;
     color: $color;
     text-transform: $textTransform;
     font-weight: $fontWeight;

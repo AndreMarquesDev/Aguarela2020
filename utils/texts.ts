@@ -5,7 +5,9 @@ export interface TextsInterface {
     projects: string;
     services: string;
     contact: string;
-    welcome: string;
+    welcome1: string;
+    welcome2: string;
+    welcome3: string;
     footerInfo: string;
     managingSocialNetworks: string;
     throughStrategicPlanning: string;
@@ -37,7 +39,9 @@ export const textsPt: TextsInterface = {
     projects: 'Projetos',
     services: 'Serviços',
     contact: 'Contacto',
-    welcome: 'Bem-vindos',
+    welcome1: 'Bem',
+    welcome2: 'Vin',
+    welcome3: 'Dos',
     footerInfo: 'Aguarela Digital - Developed by',
     managingSocialNetworks: 'Gestão de redes sociais está no meu ADN. Sou uma freelancer, baseada em Lisboa, com experiência em gestão de redes sociais e criação de conteúdo. A <a href="https://www.instagram.com/aguareladigital" target="_blank" rel="noreferrer" class="link">@Aguarela</a> surgiu com o objetivo de ajudar negócios locais e pequenas empresas a posicionarem-se no digital, gerar awareness, criar uma relação com o target e impulsionar vendas.',
     throughStrategicPlanning: 'Através do planeamento estratégico, criação de conteúdo e implementação estou disponível para ser o vosso braço direito.',
@@ -69,7 +73,9 @@ export const textsEn: TextsInterface = {
     projects: 'Projects',
     services: 'Services',
     contact: 'Contact',
-    welcome: 'Welcome',
+    welcome1: 'Wel',
+    welcome2: 'Co',
+    welcome3: 'Me',
     footerInfo: 'Aguarela Digital - Developed by',
     managingSocialNetworks: 'Gestão de redes sociais está no meu ADN. Sou uma freelancer, baseada em Lisboa, com experiência em gestão de redes sociais e criação de conteúdo. A <a href="https://www.instagram.com/aguareladigital" target="_blank" rel="noreferrer" class="link">@Aguarela</a> surgiu com o objetivo de ajudar negócios locais e pequenas empresas a posicionarem-se no digital, gerar awareness, criar uma relação com o target e impulsionar vendas.', // todo translate
     throughStrategicPlanning: 'Através do planeamento estratégico, criação de conteúdo e implementação estou disponível para ser o vosso braço direito.', // todo translate
