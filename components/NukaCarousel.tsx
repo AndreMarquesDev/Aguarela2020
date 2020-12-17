@@ -27,18 +27,18 @@ const NukaCarousel: FC<NukaCarouselProps> = ({ children, width }) => (
 
         <style jsx>
             {`
-                    @import './styles/_vars.scss';
+                @import './styles/_vars.scss';
 
-                    button {
-                        display: flex;
-                        transition: transform 0.15s linear;
+                button {
+                    display: flex;
+                    transition: transform 0.15s linear;
 
-                        &:hover {
-                            transform: scale(1.1);
-                        }
+                    &:hover {
+                        transform: scale(1.1);
                     }
+                }
 
-                `}
+            `}
         </style>
     </>
 );

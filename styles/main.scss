@@ -24,6 +24,7 @@
 
 .bodyText {
     @include fontS;
+
     margin-bottom: 30rem;
 
     &:last-child {
@@ -35,7 +36,7 @@
     position: relative;
     color: inherit;
     cursor: pointer;
-    transition: color .15s linear;
+    transition: color 0.15s linear;
 
     &:hover {
         color: $pink;
