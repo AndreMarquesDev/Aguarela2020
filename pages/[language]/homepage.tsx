@@ -7,6 +7,7 @@ import WelcomeBlock from '../../components/WelcomeBlock';
 import SkillsBlock from '../../components/SkillsBlock';
 import Workflow from '../../components/Workflow';
 import ProjectsList from '../../components/ProjectsList';
+import LetsWork from '../../components/LetsWork';
 
 const Homepage: NextPage = () => {
     const [navHeight, setNavHeight] = useState(0);
@@ -31,6 +32,7 @@ const Homepage: NextPage = () => {
                 <SkillsBlock />
                 <Workflow />
                 <ProjectsList />
+                <LetsWork />
 
                 <style jsx>
                     {`

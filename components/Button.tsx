@@ -1,40 +1,48 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { FC, useContext } from 'react';
+import React, { FC } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import TextsContext from './context/TextsContext';
 import { Page } from '../utils/pages';
 
 interface ButtonProps {
     page: Page;
+    text: string;
 }
 
-const Button: FC<ButtonProps> = ({ page }) => {
+const Button: FC<ButtonProps> = ({ page, text }) => {
     const {
         query,
     } = useRouter();
 
     const language = query.language?.toString();
 
-    const { texts } = useContext(TextsContext);
-
     return (
         <>
-            <div className="buttonContainer">
-                <Link href={`/${language}/${page}`} prefetch={false}>
-                    <a className="button">
-                        {texts.seeMore}
-                    </a>
-                </Link>
+            <div className="buttonWrapper">
+                <div className="buttonBackground">
+                    <Link href={`/${language}/${page}`} prefetch={false}>
+                        <a className="button">
+                            {text}
+                        </a>
+                    </Link>
+                </div>
             </div>
 
             <style jsx>
                 {`
                     @import './styles/_vars.scss';
 
-                    .buttonContainer {
+                    .buttonWrapper {
+                        width: 100%;
+                        display: block;
+                    }
+
+                    .buttonBackground {
                         min-width: 180rem;
+                        display: inline-block;
                         position: relative;
+                        left: 50%;
+                        transform: translateX(-50%);
                         text-align: center;
                         padding: 10rem;
                         margin-top: 50rem;

@@ -33,7 +33,7 @@ const ProjectsList: FC = () => {
                         </NukaCarousel>
                     )}
 
-                    <Button page="projects" />
+                    <Button page="projects" text={texts.seeMore} />
                 </div>
             </section>
 
