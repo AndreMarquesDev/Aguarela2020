@@ -38,6 +38,7 @@ export interface TextsInterface {
     seeMore: string;
     letsWork: string;
     letsWorkDescription: string;
+    myNetwork: string;
 }
 
 export const textsPt: TextsInterface = {
@@ -78,6 +79,7 @@ export const textsPt: TextsInterface = {
     seeMore: 'Ver mais',
     letsWork: 'Vamos trabalhar juntos!',
     letsWorkDescription: 'Precisa de ajuda com as redes sociais e marketing digital da sua marca ou negócio? Envie-me um email e vamos conversar. Tenho todo o gosto em aumentar a visibilidade e faturação do seu negócio.',
+    myNetwork: 'A minha rede',
 };
 
 export const textsEn: TextsInterface = {
@@ -118,4 +120,5 @@ export const textsEn: TextsInterface = {
     seeMore: 'See more',
     letsWork: 'Let\'s work together!',
     letsWorkDescription: 'Need help with digital marketing and the social networks of your brand or business? Send me an email and let\'s talk. It will be my pleasure to increase the visibility of your business',
+    myNetwork: 'My network',
 };
