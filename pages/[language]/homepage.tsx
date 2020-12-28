@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import { NextPage } from 'next';
+import Image from 'next/image';
 import Layout from '../../components/Layout';
 import NavLinksContext, { NavLinksContextProps } from '../../components/context/NavLinksContext';
 import WelcomeBlock from '../../components/WelcomeBlock';
@@ -23,11 +24,16 @@ const Homepage: NextPage = () => {
                 <Head>
                     <title>Aguarela Digital</title>
                 </Head>
-                <img
-                    alt=""
-                    loading="lazy"
-                    src="https://via.placeholder.com/2560x1290/969696"
-                />
+
+                <div className="homepageBanner">
+                    <Image
+                        priority
+                        alt="homepage banner"
+                        layout="fill"
+                        objectFit="cover"
+                        src="/images/homepage-banner.png"
+                    />
+                </div>
 
                 <WelcomeBlock />
                 <SkillsBlock />
@@ -38,13 +44,10 @@ const Homepage: NextPage = () => {
 
                 <style jsx>
                     {`
-                        img {
+                        .homepageBanner {
                             width: 100%;
                             height: calc(90vh - ${navHeight}px);
                             position: relative;
-                            top: 0;
-                            left: 0;
-                            overflow: hidden;
                         }
                     `}
                 </style>
