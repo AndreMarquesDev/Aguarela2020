@@ -14,7 +14,7 @@ const LetsWork: FC = () => {
 
                     <p>{texts.letsWorkDescription}</p>
 
-                    <Button page="contact" text={texts.contact} />
+                    <Button page="contact">{texts.contact}</Button>
                 </div>
             </section>
 

@@ -9,13 +9,13 @@ export interface TextsInterface {
     welcome2: string;
     welcome3: string;
     footerInfo: string;
-    managingSocialNetworks: string;
+    managingsocialMedia: string;
     throughStrategicPlanning: string;
     monitorAndOptimizeProcessAndStrategy: string;
     skills: string;
-    socialNetworkStrategy: string;
+    socialMediatrategy: string;
     makingAuditsAndAnalysis: string;
-    socialNetworkConsulting: string;
+    socialMediaConsulting: string;
     weCanHelpYourTeam: string;
     communityManagement: string;
     whenWeSendAMessage: string;
@@ -32,7 +32,7 @@ export interface TextsInterface {
     paidSocialAndInfluencers: string;
     insightsAndReports: string;
     optimization: string;
-    socialNetworkManagementAndContentCreation: string;
+    socialMediaManagementAndContentCreation: string;
     since: string;
     inPartnershipWith: string;
     seeMore: string;
@@ -50,13 +50,13 @@ export const textsPt: TextsInterface = {
     welcome2: 'Vin',
     welcome3: 'Dos',
     footerInfo: 'Aguarela Digital - Developed by',
-    managingSocialNetworks: 'Gestão de redes sociais está no meu ADN. Sou uma freelancer, baseada em Lisboa, com experiência em gestão de redes sociais e criação de conteúdo. A <a href="https://www.instagram.com/aguareladigital" target="_blank" rel="noreferrer" class="link">@Aguarela</a> surgiu com o objetivo de ajudar negócios locais e pequenas empresas a posicionarem-se no digital, gerar awareness, criar uma relação com o target e impulsionar vendas.',
+    managingsocialMedia: 'Gestão de redes sociais está no meu ADN. Sou uma freelancer, baseada em Lisboa, com experiência em gestão de redes sociais e criação de conteúdo. A <a href="https://www.instagram.com/aguareladigital" target="_blank" rel="noreferrer" class="link">@Aguarela</a> surgiu com o objetivo de ajudar negócios locais e pequenas empresas a posicionarem-se no digital, gerar awareness, criar uma relação com o target e impulsionar vendas.',
     throughStrategicPlanning: 'Através do planeamento estratégico, criação de conteúdo e implementação estou disponível para ser o vosso braço direito.',
     monitorAndOptimizeProcessAndStrategy: 'Do ínicio ao fim, acompanho, monitorizo e otimizo todo o processo e estratégia de gestão de redes sociais.',
     skills: 'Skills',
-    socialNetworkStrategy: 'Estratégia de Redes Sociais',
+    socialMediatrategy: 'Estratégia de Redes Sociais',
     makingAuditsAndAnalysis: 'Realizar uma auditoria e análise detalhada, com base nos insights e objetivos da marca, definindo em que redes sociais a marca deve estar presente e quais as oportunidades disponíveis.',
-    socialNetworkConsulting: 'Consultoria de Redes Sociais',
+    socialMediaConsulting: 'Consultoria de Redes Sociais',
     weCanHelpYourTeam: 'Podemos ajudar a sua equipa na forma como a marca está presente nas redes sociais, como comunica, como alcançar os objetivos pretendidos e como aproveitar as oportunidades disponíveis no mercado digital do seu negócio',
     communityManagement: 'Gestão de Comunidade',
     whenWeSendAMessage: 'Quando enviamos uma mensagem aos nossos amigos e eles demoram dias a responder-nos não é muito agradável e o mesmo acontece com as marcas. Fazemos gestão de comunidade, respondendo a mensagens e comentários da sua audiência em prazos toleráveis e ideais.',
@@ -73,7 +73,7 @@ export const textsPt: TextsInterface = {
     paidSocialAndInfluencers: 'Paid social & influencers',
     insightsAndReports: 'Insights e reports',
     optimization: 'Otimização',
-    socialNetworkManagementAndContentCreation: 'Gestão de Redes Sociais e Criação de Conteúdo',
+    socialMediaManagementAndContentCreation: 'Gestão de Redes Sociais e Criação de Conteúdo',
     since: 'Desde',
     inPartnershipWith: 'em dupla com Sofia Ferreirinho',
     seeMore: 'Ver mais',
@@ -91,13 +91,13 @@ export const textsEn: TextsInterface = {
     welcome2: 'Co',
     welcome3: 'Me',
     footerInfo: 'Aguarela Digital - Developed by',
-    managingSocialNetworks: 'Gestão de redes sociais está no meu ADN. Sou uma freelancer, baseada em Lisboa, com experiência em gestão de redes sociais e criação de conteúdo. A <a href="https://www.instagram.com/aguareladigital" target="_blank" rel="noreferrer" class="link">@Aguarela</a> surgiu com o objetivo de ajudar negócios locais e pequenas empresas a posicionarem-se no digital, gerar awareness, criar uma relação com o target e impulsionar vendas.', // todo translate
+    managingsocialMedia: 'Gestão de redes sociais está no meu ADN. Sou uma freelancer, baseada em Lisboa, com experiência em gestão de redes sociais e criação de conteúdo. A <a href="https://www.instagram.com/aguareladigital" target="_blank" rel="noreferrer" class="link">@Aguarela</a> surgiu com o objetivo de ajudar negócios locais e pequenas empresas a posicionarem-se no digital, gerar awareness, criar uma relação com o target e impulsionar vendas.', // todo translate
     throughStrategicPlanning: 'Através do planeamento estratégico, criação de conteúdo e implementação estou disponível para ser o vosso braço direito.', // todo translate
     monitorAndOptimizeProcessAndStrategy: 'Do ínicio ao fim, acompanho, monitorizo e otimizo todo o processo e estratégia de gestão de redes sociais.', // todo translate
     skills: 'Skills',
-    socialNetworkStrategy: 'Social Networks strategy',
+    socialMediatrategy: 'Social Media strategy',
     makingAuditsAndAnalysis: 'Realizar uma auditoria e análise detalhada, com base nos insights e objetivos da marca, definindo em que redes sociais a marca deve estar presente e quais as oportunidades disponíveis.', // todo translate
-    socialNetworkConsulting: 'Social Networks consulting',
+    socialMediaConsulting: 'Social Media consulting',
     weCanHelpYourTeam: 'Podemos ajudar a sua equipa na forma como a marca está presente nas redes sociais, como comunica, como alcançar os objetivos pretendidos e como aproveitar as oportunidades disponíveis no mercado digital do seu negócio', // todo translate
     communityManagement: 'Community Management',
     whenWeSendAMessage: 'Quando enviamos uma mensagem aos nossos amigos e eles demoram dias a responder-nos não é muito agradável e o mesmo acontece com as marcas. Fazemos gestão de comunidade, respondendo a mensagens e comentários da sua audiência em prazos toleráveis e ideais.', // todo translate
@@ -114,7 +114,7 @@ export const textsEn: TextsInterface = {
     paidSocialAndInfluencers: 'Paid social & influencers',
     insightsAndReports: 'Insights and reports',
     optimization: 'Optimization',
-    socialNetworkManagementAndContentCreation: 'Social Network Management and Content Creation',
+    socialMediaManagementAndContentCreation: 'Social Media Management and Content Creation',
     since: 'Since',
     inPartnershipWith: 'in partnership with',
     seeMore: 'See more',

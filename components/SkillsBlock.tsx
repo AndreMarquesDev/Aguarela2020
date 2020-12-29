@@ -19,10 +19,10 @@ const SkillsBlock: FC = () => {
                     {isDesktop ? (
                         <ul>
                             <li>
-                                <SkillItem description={texts.makingAuditsAndAnalysis} icon="strategy" title={texts.socialNetworkStrategy} />
+                                <SkillItem description={texts.makingAuditsAndAnalysis} icon="strategy" title={texts.socialMediatrategy} />
                             </li>
                             <li>
-                                <SkillItem description={texts.weCanHelpYourTeam} icon="phone" title={texts.socialNetworkConsulting} />
+                                <SkillItem description={texts.weCanHelpYourTeam} icon="phone" title={texts.socialMediaConsulting} />
                             </li>
                             <li>
                                 <SkillItem description={texts.whenWeSendAMessage} icon="chat" title={texts.communityManagement} />
@@ -40,10 +40,10 @@ const SkillsBlock: FC = () => {
                     ) : (
                         <NukaCarousel width={isMobile ? '100%' : '90%'}>
                             <div className="carouselItem">
-                                <SkillItem description={texts.makingAuditsAndAnalysis} icon="strategy" title={texts.socialNetworkStrategy} />
+                                <SkillItem description={texts.makingAuditsAndAnalysis} icon="strategy" title={texts.socialMediatrategy} />
                             </div>
                             <div className="carouselItem">
-                                <SkillItem description={texts.weCanHelpYourTeam} icon="phone" title={texts.socialNetworkConsulting} />
+                                <SkillItem description={texts.weCanHelpYourTeam} icon="phone" title={texts.socialMediaConsulting} />
                             </div>
                             <div className="carouselItem">
                                 <SkillItem description={texts.whenWeSendAMessage} icon="chat" title={texts.communityManagement} />

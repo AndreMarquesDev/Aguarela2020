@@ -27,7 +27,7 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                     />
                     <div className="backface">
                         <a className="brand link" href={brandLink} rel="noreferrer" target="_blank">{brandTag}</a>
-                        <p className="description">{texts.socialNetworkManagementAndContentCreation}</p>
+                        <p className="description">{texts.socialMediaManagementAndContentCreation}</p>
                         <p className="date">
                             {texts.since}
                             {' '}
@@ -52,7 +52,7 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                     />
                     <div className="backface">
                         <a className="brand link" href={brandLink} rel="noreferrer" target="_blank">{brandTag}</a>
-                        <p className="description">{texts.socialNetworkManagementAndContentCreation}</p>
+                        <p className="description">{texts.socialMediaManagementAndContentCreation}</p>
                         <p className="date">
                             {texts.since}
                             {' '}

@@ -5,11 +5,12 @@ import { useRouter } from 'next/router';
 import { Page } from '../utils/pages';
 
 interface ButtonProps {
-    page: Page;
-    text: string;
+    children: string;
+    page?: Page;
+    externalLink?: string;
 }
 
-const Button: FC<ButtonProps> = ({ page, text }) => {
+const Button: FC<ButtonProps> = ({ children, page, externalLink }) => {
     const {
         query,
     } = useRouter();
@@ -20,11 +21,18 @@ const Button: FC<ButtonProps> = ({ page, text }) => {
         <>
             <div className="buttonWrapper">
                 <div className="buttonBackground">
-                    <Link href={`/${language}/${page}`} prefetch={false}>
-                        <a className="button">
-                            {text}
+                    {externalLink ? (
+                        <a className="button" href={externalLink} rel="noreferrer" target="_blank">
+                            {children}
                         </a>
-                    </Link>
+                    ) : (
+                        <Link href={`/${language}/${page}`} prefetch={false}>
+                            <a className="button">
+                                {children}
+                            </a>
+                        </Link>
+
+                    )}
                 </div>
             </div>
 

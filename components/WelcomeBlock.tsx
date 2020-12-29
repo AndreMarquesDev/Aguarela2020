@@ -17,7 +17,7 @@ const WelcomeBlock: FC = () => {
                         <p
                             // eslint-disable-next-line react/no-danger
                             dangerouslySetInnerHTML={{
-                                __html: texts.managingSocialNetworks,
+                                __html: texts.managingsocialMedia,
                             }}
                             className="bodyText"
                         />
