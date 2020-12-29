@@ -2,11 +2,12 @@ import React, { FC } from 'react';
 import { useRouter } from 'next/router';
 import ReactCountryFlag from 'react-country-flag';
 import { getRemainingLang } from 'multilingual-url/lib';
-import { locales } from '../utils/locales';
+import { Locale, locales } from '../utils/locales';
 import { getPageFromUrl } from '../utils/pages';
+import { getCurrentLanguagetexts } from '../utils/generic';
 
 interface LanguageButtonProps {
-    language: string;
+    language: Locale;
 }
 
 const LanguageButton: FC<LanguageButtonProps> = props => {
@@ -15,12 +16,14 @@ const LanguageButton: FC<LanguageButtonProps> = props => {
     } = props;
 
     const router = useRouter();
-    const currentPage = getPageFromUrl();
-    const languageToSwitchTo = getRemainingLang(locales)[0];
+    const currentPage = getPageFromUrl()[0];
+    const languageToSwitchTo = getRemainingLang(locales)[0] as Locale;
     const countryCode = language === 'en' ? 'PT' : 'GB';
+    const translatedPageTitle: string = getCurrentLanguagetexts(languageToSwitchTo)[currentPage];
 
     const onButtonClick = (): void => {
-        router.replace(`/${languageToSwitchTo}/${currentPage[0]}`);
+        router.replace(`/${languageToSwitchTo}/${currentPage}`);
+        document.title = `${translatedPageTitle} - Aguarela Digital`;
     };
 
     return (

@@ -5,6 +5,7 @@ import Header from './Header';
 import TextsContext from './context/TextsContext';
 import { textsEn, textsPt } from '../utils/texts';
 import Footer from './Footer';
+import { Locale } from '../utils/locales';
 
 const Layout: FC = props => {
     const { children } = props;
@@ -14,7 +15,7 @@ const Layout: FC = props => {
         query,
     } = useRouter();
 
-    const currentLanguage = query.language?.toString();
+    const currentLanguage = query.language?.toString() as Locale;
     const texts = currentLanguage === 'pt' ? textsPt : textsEn;
 
     return (

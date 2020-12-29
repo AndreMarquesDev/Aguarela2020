@@ -5,9 +5,10 @@ import { FaInstagram, FaFacebookF, FaEnvelope } from 'react-icons/fa';
 import TextsContext from './context/TextsContext';
 import { Page } from '../utils/pages';
 import LanguageButton from './LanguageButton';
+import { Locale } from '../utils/locales';
 
 interface FooterProps {
-    language: string;
+    language: Locale;
 }
 
 const Footer: FC<FooterProps> = ({ language }) => {
