@@ -8,6 +8,7 @@ import NavLinksContext from '../../components/context/NavLinksContext';
 import BrandsList from '../../components/BrandsList';
 import LetsWork from '../../components/LetsWork';
 import { Locale } from '../../utils/locales';
+import AboutMe from '../../components/AboutMe';
 
 const AboutPage: NextPage = () => {
     const {
@@ -28,6 +29,7 @@ const AboutPage: NextPage = () => {
                     </title>
                 </Head>
 
+                <AboutMe />
                 <BrandsList />
                 <LetsWork />
             </Layout>

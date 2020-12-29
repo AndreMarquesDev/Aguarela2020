@@ -19,10 +19,10 @@ const WelcomeBlock: FC = () => {
                             dangerouslySetInnerHTML={{
                                 __html: texts.managingsocialMedia,
                             }}
-                            className="bodyText"
+                            className="bodyText bodyText--white"
                         />
-                        <p className="bodyText">{texts.monitorAndOptimizeProcessAndStrategy}</p>
-                        <p className="bodyText">{texts.throughStrategicPlanning}</p>
+                        <p className="bodyText bodyText--white">{texts.monitorAndOptimizeProcessAndStrategy}</p>
+                        <p className="bodyText bodyText--white">{texts.throughStrategicPlanning}</p>
                     </div>
                 </div>
             </section>
@@ -89,13 +89,6 @@ const WelcomeBlock: FC = () => {
                             }
 
                             p {
-                                @include fontM($white);
-                                margin-bottom: 50rem;
-
-                                &:last-child {
-                                    margin-bottom: 0;
-                                }
-
                                 @include mobile {
                                     @include fontS($white);
                                 }

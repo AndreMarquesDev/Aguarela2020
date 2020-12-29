@@ -2,25 +2,28 @@
 import React, { FC } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import classNames from 'classnames';
 import { Page } from '../utils/pages';
 
 interface ButtonProps {
     children: string;
     page?: Page;
     externalLink?: string;
+    alignLeft?: boolean;
 }
 
-const Button: FC<ButtonProps> = ({ children, page, externalLink }) => {
+const Button: FC<ButtonProps> = ({ children, page, externalLink, alignLeft }) => {
     const {
         query,
     } = useRouter();
 
     const language = query.language?.toString();
+    const buttonBackgroundContainerStyles = classNames('buttonBackground', !alignLeft && 'alignCenter');
 
     return (
         <>
             <div className="buttonWrapper">
-                <div className="buttonBackground">
+                <div className={buttonBackgroundContainerStyles}>
                     {externalLink ? (
                         <a className="button" href={externalLink} rel="noreferrer" target="_blank">
                             {children}
@@ -49,8 +52,6 @@ const Button: FC<ButtonProps> = ({ children, page, externalLink }) => {
                         min-width: 180rem;
                         display: inline-block;
                         position: relative;
-                        left: 50%;
-                        transform: translateX(-50%);
                         text-align: center;
                         padding: 10rem;
                         margin-top: 50rem;
@@ -93,6 +94,11 @@ const Button: FC<ButtonProps> = ({ children, page, externalLink }) => {
                             position: relative;
                             z-index: 0;
                         }
+                    }
+
+                    .alignCenter {
+                        left: 50%;
+                        transform: translateX(-50%);
                     }
                 `}
             </style>

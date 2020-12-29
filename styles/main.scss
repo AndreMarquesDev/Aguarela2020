@@ -23,11 +23,15 @@
 }
 
 .bodyText {
-    @include fontS;
+    @include fontM;
 
-    margin-bottom: 30rem;
+    margin-bottom: 50rem;
 
-    &:last-child {
+    &--white {
+        color: $white;
+    }
+
+    &:last-of-type {
         margin-bottom: 0;
     }
 }
