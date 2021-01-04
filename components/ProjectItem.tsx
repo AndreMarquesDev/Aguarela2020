@@ -116,7 +116,7 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                         justify-content: center;
                         align-items: center;
                         text-align: center;
-                        background: $pink;
+                        background: $blue;
                         padding: 10rem;
 
                         .brand, .date {

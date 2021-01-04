@@ -3,9 +3,12 @@ import Image from 'next/image';
 import Button from './Button';
 import TextsContext from './context/TextsContext';
 import Title from './Title';
+import { useWindowSize, desktopBreakpoint } from '../utils/useWindowSize';
 
 const AboutMe: FC = () => {
     const { texts } = useContext(TextsContext);
+    const windowSize = useWindowSize();
+    const isDesktop = windowSize.width > desktopBreakpoint;
 
     return (
         <>
@@ -26,7 +29,7 @@ const AboutMe: FC = () => {
                             <p className="bodyText">{texts.hiMyNameIs}</p>
                             <p className="bodyText">{texts.withMoreThan}</p>
                             <p className="bodyText">{texts.thesocialMediaCommunicationStrategy}</p>
-                            <Button alignLeft externalLink="https://www.instagram.com/catarinasantiago">{texts.getToKnowMeBetter}</Button>
+                            <Button alignLeft={isDesktop} externalLink="https://www.instagram.com/catarinasantiago">{texts.getToKnowMeBetter}</Button>
                         </div>
                     </div>
                 </div>

@@ -1,17 +1,34 @@
+import { useRouter } from 'next/router';
 import React, { FC, useContext } from 'react';
+import { Locale } from '../utils/locales';
+import { useWindowSize, mobileBreakpoint } from '../utils/useWindowSize';
 import TextsContext from './context/TextsContext';
 
 const WelcomeBlock: FC = () => {
     const { texts } = useContext(TextsContext);
+    const windowSize = useWindowSize();
+    const isMobile = windowSize.width < mobileBreakpoint;
+
+    const {
+        query,
+    } = useRouter();
+    const currentLanguage = query.language?.toString() as Locale;
+    const titleMobile = currentLanguage === 'pt' ? `${texts.welcome1}-${texts.welcome2}${texts.welcome3}` : `${texts.welcome1}${texts.welcome2}${texts.welcome3}`;
 
     return (
         <>
             <section className="container">
                 <div className="wrapper genericMargins">
                     <div className="titleBlock">
-                        <strong>{texts.welcome1}</strong>
-                        <strong>{texts.welcome2}</strong>
-                        <strong>{texts.welcome3}</strong>
+                        {isMobile ? (
+                            <p>{titleMobile}</p>
+                        ) : (
+                            <>
+                                <strong>{texts.welcome1}</strong>
+                                <strong>{texts.welcome2}</strong>
+                                <strong>{texts.welcome3}</strong>
+                            </>
+                        )}
                     </div>
                     <div className="textBlock">
                         <p
@@ -55,12 +72,11 @@ const WelcomeBlock: FC = () => {
 
                             strong {
                                 display: block;
-                                @include fontXXL($textTransform: uppercase, $fontWeight: 900);
+                                @include fontXXL($blue, uppercase, 900);
                                 letter-spacing: 30rem;
                                 text-align: right;
                                 -webkit-filter: drop-shadow(20rem -10rem 0 $pink);
                                 filter: drop-shadow(20rem -10rem 0 $pink);
-                                color: $blue;
                                 background: $blue;
                                 -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent;
@@ -68,12 +84,14 @@ const WelcomeBlock: FC = () => {
                                 @include desktop {
                                     text-align: center;
                                 }
+                            }
 
-                                @include mobile {
-                                    @include fontXL($textTransform: uppercase, $fontWeight: 900);
-                                    -webkit-filter: drop-shadow(10rem -5rem 0 $pink);
-                                    filter: drop-shadow(10rem -5rem 0 $pink);
-                                }
+                            p {
+                                @include fontL($blue, uppercase, 900);
+                                letter-spacing: 5rem;
+                                text-align: center;
+                                -webkit-filter: drop-shadow(5rem -2.5rem 0 $pink);
+                                filter: drop-shadow(5rem -2.5rem 0 $pink);
                             }
                         }
 
