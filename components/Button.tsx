@@ -10,27 +10,29 @@ interface ButtonProps {
     page?: Page;
     externalLink?: string;
     alignLeft?: boolean;
+    isUppercased?: boolean;
 }
 
-const Button: FC<ButtonProps> = ({ children, page, externalLink, alignLeft }) => {
+const Button: FC<ButtonProps> = ({ children, page, externalLink, alignLeft, isUppercased }) => {
     const {
         query,
     } = useRouter();
 
     const language = query.language?.toString();
     const buttonBackgroundContainerStyles = classNames('buttonBackground', !alignLeft && 'alignCenter');
+    const buttonStyles = classNames('button', isUppercased && 'uppercase');
 
     return (
         <>
             <div className="buttonWrapper">
                 <div className={buttonBackgroundContainerStyles}>
                     {externalLink ? (
-                        <a className="button" href={externalLink} rel="noreferrer" target="_blank">
+                        <a className={buttonStyles} href={externalLink} rel="noreferrer" target="_blank">
                             {children}
                         </a>
                     ) : (
                         <Link href={`/${language}/${page}`} prefetch={false}>
-                            <a className="button">
+                            <a className={buttonStyles}>
                                 {children}
                             </a>
                         </Link>
@@ -93,6 +95,14 @@ const Button: FC<ButtonProps> = ({ children, page, externalLink, alignLeft }) =>
                             @include fontS($yellow, uppercase, bold);
                             position: relative;
                             z-index: 0;
+                        }
+
+                        .uppercase {
+                            @include fontS($yellow, none, bold);
+
+                            @include mobile {
+                                @include fontXS($yellow, none, bold);
+                            }
                         }
                     }
 

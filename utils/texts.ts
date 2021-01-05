@@ -43,6 +43,12 @@ export interface TextsInterface {
     withMoreThan: string;
     thesocialMediaCommunicationStrategy: string;
     getToKnowMeBetter: string;
+    contactMe1: string;
+    contactMe2: string;
+    contactMe3: string;
+    needHelpWithYOurBusiness: string;
+    sendMeAnEmail: string;
+    iAmAvailableToAdvise: string;
 }
 
 export const textsPt: TextsInterface = {
@@ -88,6 +94,12 @@ export const textsPt: TextsInterface = {
     withMoreThan: 'Com mais de 3 anos e 18 clientes de experiência, a Aguarela surgiu com a missão de providenciar um serviço premium de gestão de redes sociais e criação de conteúdo a negócios locais e pequenas empresas.',
     thesocialMediaCommunicationStrategy: 'A estratégia de comunicação em redes sociais é sempre desenvolvida com base nos objetivos do cliente. Embora seja importante ser flexível e compreensiva, o meu papel é pensar fora da caixa, criar conteúdo inovador para redes sociais e otimizar a estratégia com base nos resultados. Acredito que uma boa estratégia de comunicação aliada a um planeamento visual de conteúdo é o segredo para o aumento da visibilidade e faturação do negócio.',
     getToKnowMeBetter: 'Conhece-me melhor',
+    contactMe1: 'Con',
+    contactMe2: 'Ver',
+    contactMe3: 'Sar',
+    needHelpWithYOurBusiness: 'Precisa de ajuda com o seu negócio, projeto ou marca?',
+    sendMeAnEmail: 'Envie-me um email e vamos conversar. Podemos começar o quanto antes a definir uma estratégia para social media de acordo com os seus objetivos.',
+    iAmAvailableToAdvise: 'Estou ainda disponível para dar consultoria em social media e partilhar as melhores dicas para uma gestão de sucesso.',
 };
 
 export const textsEn: TextsInterface = {
@@ -133,4 +145,10 @@ export const textsEn: TextsInterface = {
     withMoreThan: 'With more than 3 years of experience and 18 clients, Aguarela was created with the mission to provide a premium service of social media management and content creation to local businesses and small companies.',
     thesocialMediaCommunicationStrategy: 'The social media communication strategy is always developed based on the client\'s goals. Even though it is important to be flexible and comprehensive, my role is to think outside the box, create inovative content and optimize the strategy based on results. I believe that a good communication strategy together with a visual planning of the content is the secret to increase the visibility of the business.',
     getToKnowMeBetter: 'Get to know me better',
+    contactMe1: 'Con',
+    contactMe2: 'Tac',
+    contactMe3: 'Tme',
+    needHelpWithYOurBusiness: 'Need help with your business, project or brand?',
+    sendMeAnEmail: 'Send me an email and let\'s talk. We can start as soon as possible defining a social media strategy that meets your objectives.',
+    iAmAvailableToAdvise: 'I am also available to provide social media consulting and share the best tips for a successful management.',
 };
