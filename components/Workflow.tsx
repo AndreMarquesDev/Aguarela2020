@@ -15,30 +15,51 @@ const Workflow: FC = () => {
                         <li>
                             <p>1.</p>
                             <p>{texts.defineTarget}</p>
+                            <div className="backface">
+                                <p>{texts.whatIsTheTarget}</p>
+                            </div>
                         </li>
                         <li>
                             <p>2.</p>
                             <p>{texts.defineGoals}</p>
+                            <div className="backface">
+                                <p>{texts.whatAreYourGoals}</p>
+                            </div>
                         </li>
                         <li>
                             <p>3.</p>
                             <p>{texts.platformStrategy}</p>
+                            <div className="backface">
+                                <p>{texts.whatPlatforms}</p>
+                            </div>
                         </li>
                         <li>
                             <p>4.</p>
                             <p>{texts.contentCreation}</p>
+                            <div className="backface">
+                                <p>{texts.relevantContentCreation}</p>
+                            </div>
                         </li>
                         <li>
                             <p>5.</p>
                             <p>{texts.paidSocialAndInfluencers}</p>
+                            <div className="backface">
+                                <p>{texts.promotePostsAndCollaborate}</p>
+                            </div>
                         </li>
                         <li>
                             <p>6.</p>
                             <p>{texts.insightsAndReports}</p>
+                            <div className="backface">
+                                <p>{texts.detailedAnalysis}</p>
+                            </div>
                         </li>
                         <li>
                             <p>7.</p>
                             <p>{texts.optimization}</p>
+                            <div className="backface">
+                                <p>{texts.improvementsAndUpdatesToTheStrategy}</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -141,6 +162,16 @@ const Workflow: FC = () => {
                                     z-index: -1;
                                 }
 
+                                &:hover {
+                                    .backface {
+                                        display: flex;
+                                    }
+
+                                    &:after {
+                                        background-color: $blue;
+                                    }
+                                }
+
                                 p {
                                     @include fontXS($yellow, uppercase, bold);
                                     position: relative;
@@ -149,6 +180,23 @@ const Workflow: FC = () => {
 
                                     @include mobile {
                                         @include fontXXS($yellow, uppercase, bold);
+                                    }
+                                }
+
+                                .backface {
+                                    display: none;
+                                    width: 100%;
+                                    height: 100%;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    align-items: center;
+                                    background: $pink;
+                                    padding: 10rem;
+
+                                    p {
+                                        @include fontXS($yellow);
                                     }
                                 }
                             }

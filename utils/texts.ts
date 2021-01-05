@@ -32,6 +32,13 @@ export interface TextsInterface {
     paidSocialAndInfluencers: string;
     insightsAndReports: string;
     optimization: string;
+    whatIsTheTarget: string;
+    whatAreYourGoals: string;
+    whatPlatforms: string;
+    relevantContentCreation: string;
+    promotePostsAndCollaborate: string;
+    detailedAnalysis: string;
+    improvementsAndUpdatesToTheStrategy: string;
     socialMediaManagementAndContentCreation: string;
     since: string;
     inPartnershipWith: string;
@@ -83,6 +90,13 @@ export const textsPt: TextsInterface = {
     paidSocialAndInfluencers: 'Paid social & influencers',
     insightsAndReports: 'Insights e reports',
     optimization: 'Otimização',
+    whatIsTheTarget: 'Quem é o público-alvo da marca',
+    whatAreYourGoals: 'Quais são os objetivos de negócio e comunicação',
+    whatPlatforms: 'Quais as plataformas onde a marca deve estar presente',
+    relevantContentCreation: 'Criação de conteúdo relevante e de qualidade para o target',
+    promotePostsAndCollaborate: 'Promoção de posts e colaborações com influencers',
+    detailedAnalysis: 'Análises detalhadas e identificação de insights',
+    improvementsAndUpdatesToTheStrategy: 'Melhorias e updates à estratégia',
     socialMediaManagementAndContentCreation: 'Gestão de Redes Sociais e Criação de Conteúdo',
     since: 'Desde',
     inPartnershipWith: 'em dupla com Sofia Ferreirinho',
@@ -134,6 +148,13 @@ export const textsEn: TextsInterface = {
     paidSocialAndInfluencers: 'Paid social & influencers',
     insightsAndReports: 'Insights and reports',
     optimization: 'Optimization',
+    whatIsTheTarget: 'What\'s the target',
+    whatAreYourGoals: 'What are the business and communication goals',
+    whatPlatforms: 'In what platforms should the brand be present',
+    relevantContentCreation: 'Relevant and quality content created for the target',
+    promotePostsAndCollaborate: 'Promoted posts and collaborations with influencers',
+    detailedAnalysis: 'Detailed analysis and insights\' finding',
+    improvementsAndUpdatesToTheStrategy: 'Strategy updates and improvements',
     socialMediaManagementAndContentCreation: 'Social Media Management and Content Creation',
     since: 'Since',
     inPartnershipWith: 'in partnership with',
