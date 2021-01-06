@@ -1,5 +1,7 @@
-import React, { FC, useContext } from 'react';
+import React, { FC, useContext, TouchEvent } from 'react';
 import Image from 'next/image';
+import { isClientSide } from 'multilingual-url/lib';
+import classNames from 'classnames';
 import TextsContext from './context/TextsContext';
 
 interface ProjectItemProps {
@@ -15,10 +17,25 @@ interface ProjectItemProps {
 const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, brandTag, year, isDesktop, isInPartnership }) => {
     const { texts } = useContext(TextsContext);
 
+    const isTouch = isClientSide && window?.matchMedia('(hover: none), (pointer: coarse)').matches;
+    const carouselItemStyles = classNames('carouselItem', isTouch && 'touch');
+
+    const handleTouch = (event: TouchEvent<HTMLElement>): void => {
+        const target = event.currentTarget;
+        const timesTouched = parseInt(target.dataset.timesTouched);
+
+        if (timesTouched === 0) {
+            target.dataset.timesTouched = '1';
+        } else {
+            target.dataset.timesTouched = '0';
+            (target.querySelector('a.brand.link') as HTMLAnchorElement).click();
+        }
+    };
+
     return (
         <>
             {isDesktop ? (
-                <li>
+                <li className={isTouch && 'touch'} data-times-touched={0} onTouchStart={handleTouch}>
                     <Image
                         alt={imageAlt}
                         height={400}
@@ -43,7 +60,7 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                     </div>
                 </li>
             ) : (
-                <div className="carouselItem">
+                <div className={carouselItemStyles} data-times-touched={0} onTouchStart={handleTouch}>
                     <Image
                         alt={imageAlt}
                         height={400}
