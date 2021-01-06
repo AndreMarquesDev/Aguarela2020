@@ -197,6 +197,10 @@ const Workflow: FC = () => {
 
                                     p {
                                         @include fontXS($yellow);
+
+                                        @include mobile {
+                                            @include fontXXS($yellow);
+                                        }
                                     }
                                 }
                             }
