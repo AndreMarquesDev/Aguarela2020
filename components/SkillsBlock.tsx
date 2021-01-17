@@ -28,7 +28,7 @@ const SkillsBlock: FC = () => {
                                 <SkillItem description={texts.whenWeSendAMessage} icon="chat" title={texts.communityManagement} />
                             </li>
                             <li>
-                                <SkillItem description={texts.planningAndImplementing} icon="money" title={texts.paidSocial} />
+                                <SkillItem description={texts.planningAndImplementing} icon="money" title={texts.paidSocialAndSearch} />
                             </li>
                             <li>
                                 <SkillItem description={texts.measuringResults} icon="graph" title={texts.optimizationAndAnalysis} />
@@ -49,7 +49,7 @@ const SkillsBlock: FC = () => {
                                 <SkillItem description={texts.whenWeSendAMessage} icon="chat" title={texts.communityManagement} />
                             </div>
                             <div className="carouselItem">
-                                <SkillItem description={texts.planningAndImplementing} icon="money" title={texts.paidSocial} />
+                                <SkillItem description={texts.planningAndImplementing} icon="money" title={texts.paidSocialAndSearch} />
                             </div>
                             <div className="carouselItem">
                                 <SkillItem description={texts.measuringResults} icon="graph" title={texts.optimizationAndAnalysis} />

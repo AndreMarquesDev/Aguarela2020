@@ -13,13 +13,13 @@ export interface TextsInterface {
     throughStrategicPlanning: string;
     monitorAndOptimizeProcessAndStrategy: string;
     skills: string;
-    socialMediatrategy: string;
+    socialMediaStrategy: string;
     makingAuditsAndAnalysis: string;
     socialMediaConsulting: string;
     weCanHelpYourTeam: string;
     communityManagement: string;
     whenWeSendAMessage: string;
-    paidSocial: string;
+    paidSocialAndSearch: string;
     planningAndImplementing: string;
     optimizationAndAnalysis: string;
     measuringResults: string;
@@ -56,6 +56,20 @@ export interface TextsInterface {
     needHelpWithYOurBusiness: string;
     sendMeAnEmail: string;
     iAmAvailableToAdvise: string;
+    design: string;
+    socialMedia: string;
+    digital: string;
+    webDesign: string;
+    outdoorsAndFlyers: string;
+    contactCard: string;
+    socialMediaTemplates: string;
+    menus: string;
+    marketAnalysis: string;
+    socialMediaStrategyAndManagement: string;
+    paidSocial: string;
+    consulting: string;
+    paidSearchCampaigns: string;
+    opinionPlatformsManagement: string;
 }
 
 export const textsPt: TextsInterface = {
@@ -71,13 +85,13 @@ export const textsPt: TextsInterface = {
     throughStrategicPlanning: 'Através do planeamento estratégico, criação de conteúdo e implementação estou disponível para ser o vosso braço direito.',
     monitorAndOptimizeProcessAndStrategy: 'Do ínicio ao fim, acompanho, monitorizo e otimizo todo o processo e estratégia de gestão de redes sociais.',
     skills: 'Skills',
-    socialMediatrategy: 'Estratégia de Redes Sociais',
+    socialMediaStrategy: 'Estratégia de Redes Sociais',
     makingAuditsAndAnalysis: 'Realizar uma auditoria e análise detalhada, com base nos insights e objetivos da marca, definindo em que redes sociais a marca deve estar presente e quais as oportunidades disponíveis.',
     socialMediaConsulting: 'Consultoria de Redes Sociais',
     weCanHelpYourTeam: 'Podemos ajudar a sua equipa na forma como a marca está presente nas redes sociais, como comunica, como alcançar os objetivos pretendidos e como aproveitar as oportunidades disponíveis no mercado digital do seu negócio',
     communityManagement: 'Gestão de Comunidade',
     whenWeSendAMessage: 'Quando enviamos uma mensagem aos nossos amigos e eles demoram dias a responder-nos não é muito agradável e o mesmo acontece com as marcas. Fazemos gestão de comunidade, respondendo a mensagens e comentários da sua audiência em prazos toleráveis e ideais.',
-    paidSocial: 'Paid Social e Search',
+    paidSocialAndSearch: 'Paid Social e Search',
     planningAndImplementing: 'Planeamos, implementamos e acompanhamos campanhas paid social (redes sociais) e campanhas paid search (anúncios no Google), otimizando os objetivos de marketing da sua marca ou negócio.',
     optimizationAndAnalysis: 'Análise e Otimização ',
     measuringResults: 'Medir resultados de forma a otimizar a estratégia é a chave para uma presença de sucesso nas redes sociais. Em todos os nossos projetos fazemos uma análise mensal detalhada de forma a existir uma adaptação contínua ao mercado e às exigências dos consumidores.',
@@ -114,6 +128,20 @@ export const textsPt: TextsInterface = {
     needHelpWithYOurBusiness: 'Precisa de ajuda com o seu negócio, projeto ou marca?',
     sendMeAnEmail: 'Envie-me um email e vamos conversar. Podemos começar o quanto antes a definir uma estratégia para social media de acordo com os seus objetivos.',
     iAmAvailableToAdvise: 'Estou ainda disponível para dar consultoria em social media e partilhar as melhores dicas para uma gestão de sucesso.',
+    design: 'Design',
+    socialMedia: 'Social Media',
+    digital: 'Digital',
+    webDesign: 'Web design',
+    outdoorsAndFlyers: 'Cartazes & flyers',
+    contactCard: 'Cartão de contacto',
+    socialMediaTemplates: 'Templates para Social Media',
+    menus: 'Menus',
+    marketAnalysis: 'Análises de mercado',
+    socialMediaStrategyAndManagement: 'Estratégia e gestão de redes sociais',
+    paidSocial: 'Paid social',
+    consulting: 'Consultoria',
+    paidSearchCampaigns: 'Campanhas paid search (google ads)',
+    opinionPlatformsManagement: 'Gestão de plataformas de opinião',
 };
 
 export const textsEn: TextsInterface = {
@@ -129,13 +157,13 @@ export const textsEn: TextsInterface = {
     throughStrategicPlanning: 'Através do planeamento estratégico, criação de conteúdo e implementação estou disponível para ser o vosso braço direito.', // todo translate
     monitorAndOptimizeProcessAndStrategy: 'Do ínicio ao fim, acompanho, monitorizo e otimizo todo o processo e estratégia de gestão de redes sociais.', // todo translate
     skills: 'Skills',
-    socialMediatrategy: 'Social Media strategy',
+    socialMediaStrategy: 'Social Media strategy',
     makingAuditsAndAnalysis: 'Realizar uma auditoria e análise detalhada, com base nos insights e objetivos da marca, definindo em que redes sociais a marca deve estar presente e quais as oportunidades disponíveis.', // todo translate
     socialMediaConsulting: 'Social Media consulting',
     weCanHelpYourTeam: 'Podemos ajudar a sua equipa na forma como a marca está presente nas redes sociais, como comunica, como alcançar os objetivos pretendidos e como aproveitar as oportunidades disponíveis no mercado digital do seu negócio', // todo translate
     communityManagement: 'Community Management',
     whenWeSendAMessage: 'Quando enviamos uma mensagem aos nossos amigos e eles demoram dias a responder-nos não é muito agradável e o mesmo acontece com as marcas. Fazemos gestão de comunidade, respondendo a mensagens e comentários da sua audiência em prazos toleráveis e ideais.', // todo translate
-    paidSocial: 'Paid Social and Search',
+    paidSocialAndSearch: 'Paid Social and Search',
     planningAndImplementing: 'Planeamos, implementamos e acompanhamos campanhas paid social (redes sociais) e campanhas paid search (anúncios no Google), otimizando os objetivos de marketing da sua marca ou negócio.', // todo translate
     optimizationAndAnalysis: 'Análise e Otimização ', // todo translate
     measuringResults: 'Medir resultados de forma a otimizar a estratégia é a chave para uma presença de sucesso nas redes sociais. Em todos os nossos projetos fazemos uma análise mensal detalhada de forma a existir uma adaptação contínua ao mercado e às exigências dos consumidores.', // todo translate
@@ -172,4 +200,18 @@ export const textsEn: TextsInterface = {
     needHelpWithYOurBusiness: 'Need help with your business, project or brand?',
     sendMeAnEmail: 'Send me an email and let\'s talk. We can start as soon as possible defining a social media strategy that meets your objectives.',
     iAmAvailableToAdvise: 'I am also available to provide social media consulting and share the best tips for a successful management.',
+    design: 'Design',
+    socialMedia: 'Social Media',
+    digital: 'Digital',
+    webDesign: 'Web design',
+    outdoorsAndFlyers: 'Outdoors & flyers',
+    contactCard: 'Contact card',
+    socialMediaTemplates: 'Social Media templates',
+    menus: 'Menus',
+    marketAnalysis: 'Market analysis',
+    socialMediaStrategyAndManagement: 'Social Media Strategy',
+    paidSocial: 'Paid social',
+    consulting: 'Consulting',
+    paidSearchCampaigns: 'Paid search campaigns (google ads)',
+    opinionPlatformsManagement: 'Opinion platforms management',
 };
