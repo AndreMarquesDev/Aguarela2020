@@ -23,7 +23,6 @@ const ProjectsList: FC = () => {
                             <ProjectItem isInPartnership brandLink="https://www.instagram.com/tudonatjela" brandTag="@tudonatjela" imageAlt="tjela logo" imageSrc="/images/tjela.jpg" isDesktop={isDesktop} year={2020} />
                             <ProjectItem brandLink="https://www.instagram.com/kaffeehaus_lisboa" brandTag="@kaffeehaus_lisboa" imageAlt="kaffeehaus logo" imageSrc="/images/kaffeehaus.jpg" isDesktop={isDesktop} year={2018} />
                             <ProjectItem isInPartnership brandLink="https://www.instagram.com/guacamolegmg" brandTag="@guacamolegmg" imageAlt="guacamole logo" imageSrc="/images/guacamole.jpg" isDesktop={isDesktop} year={2019} />
-
                         </ul>
                     ) : (
                         <NukaCarousel width={isMobile ? '100%' : '90%'}>

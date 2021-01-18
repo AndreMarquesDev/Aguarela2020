@@ -8,6 +8,7 @@ import { getCurrentLanguagetexts } from '../../utils/generic';
 import BrandsList from '../../components/BrandsList';
 import LetsWork from '../../components/LetsWork';
 import { Locale } from '../../utils/locales';
+import ServicesBlock from '../../components/ServicesBlock';
 
 const ServicesPage: NextPage = () => {
     const {
@@ -28,6 +29,7 @@ const ServicesPage: NextPage = () => {
                     </title>
                 </Head>
 
+                <ServicesBlock />
                 <BrandsList />
                 <LetsWork />
             </Layout>

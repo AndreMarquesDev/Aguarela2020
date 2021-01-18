@@ -19,7 +19,7 @@ const SkillsBlock: FC = () => {
                     {isDesktop ? (
                         <ul>
                             <li>
-                                <SkillItem description={texts.makingAuditsAndAnalysis} icon="strategy" title={texts.socialMediatrategy} />
+                                <SkillItem description={texts.makingAuditsAndAnalysis} icon="strategy" title={texts.socialMediaStrategy} />
                             </li>
                             <li>
                                 <SkillItem description={texts.weCanHelpYourTeam} icon="phone" title={texts.socialMediaConsulting} />
@@ -40,7 +40,7 @@ const SkillsBlock: FC = () => {
                     ) : (
                         <NukaCarousel width={isMobile ? '100%' : '90%'}>
                             <div className="carouselItem">
-                                <SkillItem description={texts.makingAuditsAndAnalysis} icon="strategy" title={texts.socialMediatrategy} />
+                                <SkillItem description={texts.makingAuditsAndAnalysis} icon="strategy" title={texts.socialMediaStrategy} />
                             </div>
                             <div className="carouselItem">
                                 <SkillItem description={texts.weCanHelpYourTeam} icon="phone" title={texts.socialMediaConsulting} />
