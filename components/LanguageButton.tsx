@@ -1,16 +1,11 @@
 import React, { FC } from 'react';
 import { useRouter } from 'next/router';
 import { getRemainingLang } from 'multilingual-url/lib';
-import classNames from 'classnames';
 import { Locale, locales } from '../utils/locales';
 import { getPageFromUrl } from '../utils/pages';
 import { getCurrentLanguagetexts } from '../utils/generic';
 
-interface LanguageButtonProps {
-    isMobile: boolean;
-}
-
-const LanguageButton: FC<LanguageButtonProps> = isMobile => {
+const LanguageButton: FC = () => {
     const router = useRouter();
     const currentPage = getPageFromUrl()[0];
     const languageToSwitchTo = getRemainingLang(locales)[0] as Locale;
@@ -25,7 +20,7 @@ const LanguageButton: FC<LanguageButtonProps> = isMobile => {
         <>
             {languageToSwitchTo && (
                 <button
-                    className={classNames('animatedLink', isMobile && 'white')}
+                    className="animatedLink"
                     type="button"
                     onClick={(): void => onButtonClick()}
                 >
@@ -38,7 +33,8 @@ const LanguageButton: FC<LanguageButtonProps> = isMobile => {
                     @import './styles/_vars.scss';
 
                     button {
-                        @include fontXXS($textTransform: uppercase);
+                        color: inherit;
+                        text-transform: inherit;
                         opacity: 0.5;
                         outline: none;
 

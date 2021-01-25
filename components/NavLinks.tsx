@@ -18,7 +18,7 @@ const NavLinks: FC<NavLinksProps> = ({ currentRoute, language, isMobile, isMenuO
     const navLinks = pagesMap.filter(page => page !== 'homepage');
     const { texts: navTexts } = useContext(TextsContext);
 
-    const linksContainerStyles = classNames(isMobile && 'mobileLayout', isMenuOpen && 'menuOpen');
+    const linksContainerStyles = classNames(isMobile && 'mobileLayout', isMenuOpen && isMobile && 'menuOpen');
     const linkStyles = (link: string): string => (
         classNames('animatedLink',
             currentRoute.includes(link) && 'active')
@@ -36,8 +36,10 @@ const NavLinks: FC<NavLinksProps> = ({ currentRoute, language, isMobile, isMenuO
                 </li>
             ))}
 
-            <li>
-                <LanguageButton isMobile={isMobile} />
+            <li
+                className={classNames('languageButton', isMobile && 'white')}
+            >
+                <LanguageButton />
             </li>
 
             <style jsx>
@@ -85,6 +87,17 @@ const NavLinks: FC<NavLinksProps> = ({ currentRoute, language, isMobile, isMenuO
 
                             @include phablet {
                                 @include fontXS($textTransform: uppercase);
+                            }
+                        }
+
+                        &.languageButton {
+                            @include fontXXS($textTransform: uppercase);
+                            align-self: center;
+                            margin-top: 5rem;
+
+                            &.white {
+                                @include fontXS($white, uppercase);
+                                margin-top: 0;
                             }
                         }
                     }
