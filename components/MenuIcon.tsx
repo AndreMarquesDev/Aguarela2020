@@ -29,6 +29,12 @@ const MenuIcon: FC<MenuIconProps> = ({ isOpen, isVisible, onClick }) => {
                         }
 
                         &.open, &.open:hover {
+                            z-index: 1;
+
+                            &:before, span, &:after {
+                                background: $white;
+                            }
+
                             &:before {
                                 animation: topToCross .7s ease forwards;
                             }

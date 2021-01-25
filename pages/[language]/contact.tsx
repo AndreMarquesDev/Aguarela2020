@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
 import Layout from '../../components/Layout';
-import NavLinksContext from '../../components/context/NavLinksContext';
+import NavLinksContext, { NavLinksContextProps } from '../../components/context/NavLinksContext';
 import { getCurrentLanguagetexts } from '../../utils/generic';
 import { Locale } from '../../utils/locales';
 import ContactBlock from '../../components/ContactBlock';
@@ -16,8 +16,15 @@ const ContactPage: NextPage = () => {
     const currentLanguage = query.language?.toString() as Locale;
     const translatedPageTitle = getCurrentLanguagetexts(currentLanguage).contact;
 
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const toggleMenu = (): void => setIsMenuOpen(!isMenuOpen);
+    const navLinksContext: NavLinksContextProps = {
+        isMenuOpen,
+        toggleMenu,
+    };
+
     return (
-        <NavLinksContext.Provider value={{}}>
+        <NavLinksContext.Provider value={navLinksContext}>
             <Layout>
                 <Head>
                     <title>

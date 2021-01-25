@@ -5,6 +5,8 @@ import Image from 'next/image';
 import NavLinksContext from './context/NavLinksContext';
 import NavLinks from './NavLinks';
 import { Page } from '../utils/pages';
+import { useWindowSize, tabletBreakpoint } from '../utils/useWindowSize';
+import MenuIcon from './MenuIcon';
 
 interface HeaderProps {
     currentRoute: string;
@@ -24,6 +26,12 @@ const Header: FC<HeaderProps> = ({ currentRoute, language }) => {
         }
     });
 
+    const { isMenuOpen, toggleMenu } = useContext(NavLinksContext);
+    const handleMenuClick = (): void => toggleMenu(!isMenuOpen);
+
+    const windowSize = useWindowSize();
+    const isDesktop = windowSize.width > tabletBreakpoint;
+
     return (
         <header>
             <nav ref={navRef} className="wrapper">
@@ -40,8 +48,11 @@ const Header: FC<HeaderProps> = ({ currentRoute, language }) => {
 
                 <NavLinks
                     currentRoute={currentRoute}
+                    isMenuOpen={isMenuOpen}
+                    isMobile={!isDesktop}
                     language={language}
                 />
+                <MenuIcon isOpen={isMenuOpen} isVisible={!isDesktop} onClick={handleMenuClick} />
             </nav>
 
             <style jsx>

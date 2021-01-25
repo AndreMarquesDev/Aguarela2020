@@ -13,8 +13,13 @@ import BrandsList from '../../components/BrandsList';
 
 const Homepage: NextPage = () => {
     const [navHeight, setNavHeight] = useState(0);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = (): void => setIsMenuOpen(!isMenuOpen);
 
     const navLinksContext: NavLinksContextProps = {
+        isMenuOpen,
+        toggleMenu,
         setNavHeight,
     };
 

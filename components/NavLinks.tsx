@@ -1,29 +1,22 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { FC, useContext, useState } from 'react';
+import React, { FC, useContext } from 'react';
 import Link from 'next/link';
 import classNames from 'classnames';
 import { pagesMap } from '../utils/pages';
 import TextsContext from './context/TextsContext';
-import MenuIcon from './MenuIcon';
-import { tabletBreakpoint, useWindowSize } from '../utils/useWindowSize';
 
 interface NavLinksProps {
     currentRoute: string;
     language: string;
+    isMobile: boolean;
+    isMenuOpen: boolean;
 }
 
-const NavLinks: FC<NavLinksProps> = ({ currentRoute, language }) => {
+const NavLinks: FC<NavLinksProps> = ({ currentRoute, language, isMobile, isMenuOpen }) => {
     const navLinks = pagesMap.filter(page => page !== 'homepage');
     const { texts: navTexts } = useContext(TextsContext);
 
-    const windowSize = useWindowSize();
-    const isDesktop = windowSize.width > tabletBreakpoint;
-
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const handleMenuClick = (): void => setIsMenuOpen(!isMenuOpen);
-
-    const linksContainerStyles = classNames(!isDesktop && 'mobileLayout', isMenuOpen && 'mobileMenuOpen');
+    const linksContainerStyles = classNames(isMobile && 'mobileLayout', isMenuOpen && 'menuOpen');
     const linkStyles = (link: string): string => (
         classNames('animatedLink',
             currentRoute.includes(link) && 'active')
@@ -40,7 +33,6 @@ const NavLinks: FC<NavLinksProps> = ({ currentRoute, language }) => {
                     </Link>
                 </li>
             ))}
-            <MenuIcon isOpen={isMenuOpen} isVisible={!isDesktop} onClick={handleMenuClick} />
 
             <style jsx>
                 {`
@@ -50,15 +42,28 @@ const NavLinks: FC<NavLinksProps> = ({ currentRoute, language }) => {
                         display: flex;
 
                         &.mobileLayout {
+                            display: none;
+
                             li {
-                                display: none;
+                                a {
+                                    @include fontS($white, uppercase);
+                                    margin-bottom: 25rem;
+                                }
                             }
                         }
 
-                        &.mobileMenuOpen {
-                            li {
-                                display: block;
-                            }
+                        &.menuOpen {
+                            width: 100%;
+                            height: 100vh;
+                            position: fixed;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            top: 0;
+                            left: 0;
+                            z-index: 1;
+                            background: $purple;
                         }
                     }
 
