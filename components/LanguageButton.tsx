@@ -20,7 +20,6 @@ const LanguageButton: FC = () => {
         <>
             {languageToSwitchTo && (
                 <button
-                    className="animatedLink"
                     type="button"
                     onClick={(): void => onButtonClick()}
                 >
@@ -37,16 +36,7 @@ const LanguageButton: FC = () => {
                         text-transform: inherit;
                         opacity: 0.5;
                         outline: none;
-
-                        &.active::before,
-                        &:focus::before,
-                        &:active::before {
-                            width: 0;
-                        }
-
-                        &.white {
-                            @include fontXS($white, uppercase);
-                        }
+                        transition: color 0.15s linear;
                     }
                 `}
             </style>

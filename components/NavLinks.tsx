@@ -20,8 +20,7 @@ const NavLinks: FC<NavLinksProps> = ({ currentRoute, language, isMobile, isMenuO
 
     const linksContainerStyles = classNames(isMobile && 'mobileLayout', isMenuOpen && isMobile && 'menuOpen');
     const linkStyles = (link: string): string => (
-        classNames('animatedLink',
-            currentRoute.includes(link) && 'active')
+        classNames(currentRoute.includes(link) && 'active')
     );
 
     return (
@@ -78,12 +77,18 @@ const NavLinks: FC<NavLinksProps> = ({ currentRoute, language, isMobile, isMenuO
                     li {
                         margin: 0 25rem;
 
+                        &:hover a, .active {
+                            color: $purple;
+                        }
+
                         @include phablet {
                             margin: 0 calc(12.5rem / 2);
                         }
 
                         a {
+                            display: inline-block;
                             @include fontS($textTransform: uppercase);
+                            transition: color 0.15s linear;
 
                             @include phablet {
                                 @include fontXS($textTransform: uppercase);
@@ -94,10 +99,19 @@ const NavLinks: FC<NavLinksProps> = ({ currentRoute, language, isMobile, isMenuO
                             @include fontXXS($textTransform: uppercase);
                             align-self: center;
                             margin-top: 5rem;
+                            margin-left: 0;
+
+                            &:hover {
+                                color: $purple;
+                            }
 
                             &.white {
                                 @include fontXS($white, uppercase);
                                 margin-top: 0;
+                            }
+
+                            @include phablet {
+                                margin: 5rem calc(12.5rem / 2) 0;
                             }
                         }
                     }
