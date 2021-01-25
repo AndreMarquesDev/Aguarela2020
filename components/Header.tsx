@@ -7,10 +7,11 @@ import NavLinks from './NavLinks';
 import { Page } from '../utils/pages';
 import { useWindowSize, tabletBreakpoint } from '../utils/useWindowSize';
 import MenuIcon from './MenuIcon';
+import { Locale } from '../utils/locales';
 
 interface HeaderProps {
     currentRoute: string;
-    language: string;
+    language: Locale;
 }
 
 const Header: FC<HeaderProps> = ({ currentRoute, language }) => {

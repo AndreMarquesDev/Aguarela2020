@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { FaInstagram, FaFacebookF, FaEnvelope } from 'react-icons/fa';
 import TextsContext from './context/TextsContext';
 import { Page } from '../utils/pages';
-import LanguageButton from './LanguageButton';
 import { Locale } from '../utils/locales';
 
 interface FooterProps {
@@ -26,7 +25,6 @@ const Footer: FC<FooterProps> = ({ language }) => {
                     </p>
 
                     <ul>
-                        <LanguageButton language={language} />
                         <li>
                             <a href="https://www.instagram.com/aguareladigital" rel="noreferrer" target="_blank">
                                 <FaInstagram />

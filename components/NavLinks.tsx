@@ -4,10 +4,12 @@ import Link from 'next/link';
 import classNames from 'classnames';
 import { pagesMap } from '../utils/pages';
 import TextsContext from './context/TextsContext';
+import LanguageButton from './LanguageButton';
+import { Locale } from '../utils/locales';
 
 interface NavLinksProps {
     currentRoute: string;
-    language: string;
+    language: Locale;
     isMobile: boolean;
     isMenuOpen: boolean;
 }
@@ -33,6 +35,10 @@ const NavLinks: FC<NavLinksProps> = ({ currentRoute, language, isMobile, isMenuO
                     </Link>
                 </li>
             ))}
+
+            <li>
+                <LanguageButton isMobile={isMobile} />
+            </li>
 
             <style jsx>
                 {`

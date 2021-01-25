@@ -1,24 +1,19 @@
 import React, { FC } from 'react';
 import { useRouter } from 'next/router';
-import ReactCountryFlag from 'react-country-flag';
 import { getRemainingLang } from 'multilingual-url/lib';
+import classNames from 'classnames';
 import { Locale, locales } from '../utils/locales';
 import { getPageFromUrl } from '../utils/pages';
 import { getCurrentLanguagetexts } from '../utils/generic';
 
 interface LanguageButtonProps {
-    language: Locale;
+    isMobile: boolean;
 }
 
-const LanguageButton: FC<LanguageButtonProps> = props => {
-    const {
-        language,
-    } = props;
-
+const LanguageButton: FC<LanguageButtonProps> = isMobile => {
     const router = useRouter();
     const currentPage = getPageFromUrl()[0];
     const languageToSwitchTo = getRemainingLang(locales)[0] as Locale;
-    const countryCode = language === 'en' ? 'PT' : 'GB';
     const translatedPageTitle: string = getCurrentLanguagetexts(languageToSwitchTo)[currentPage];
 
     const onButtonClick = (): void => {
@@ -28,28 +23,33 @@ const LanguageButton: FC<LanguageButtonProps> = props => {
 
     return (
         <>
-            <button
-                type="button"
-                onClick={(): void => onButtonClick()}
-            >
-                <ReactCountryFlag
-                    svg
-                    countryCode={countryCode}
-                    style={{
-                        width: '30rem',
-                        height: '30rem',
-                    }}
-                    title={countryCode}
-                />
-            </button>
+            {languageToSwitchTo && (
+                <button
+                    className={classNames('animatedLink', isMobile && 'white')}
+                    type="button"
+                    onClick={(): void => onButtonClick()}
+                >
+                    {languageToSwitchTo}
+                </button>
+            )}
 
             <style jsx>
                 {`
-                    button {
-                        transition: transform .2s;
+                    @import './styles/_vars.scss';
 
-                        &:hover {
-                            transform: scale(.95);
+                    button {
+                        @include fontXXS($textTransform: uppercase);
+                        opacity: 0.5;
+                        outline: none;
+
+                        &.active::before,
+                        &:focus::before,
+                        &:active::before {
+                            width: 0;
+                        }
+
+                        &.white {
+                            @include fontXS($white, uppercase);
                         }
                     }
                 `}
