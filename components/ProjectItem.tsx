@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { isClientSide } from 'multilingual-url/lib';
 import classNames from 'classnames';
 import TextsContext from './context/TextsContext';
+import { resetTimesTouchedAttribute } from '../utils/generic';
 
 interface ProjectItemProps {
     imageSrc: string;
@@ -10,8 +11,8 @@ interface ProjectItemProps {
     brandLink: string;
     brandTag: string;
     description: string;
-    year: number | string;
     isDesktop: boolean;
+    year?: number | string;
     isInPartnership?: boolean;
     isActive?: boolean;
     isGrid?: boolean;
@@ -28,9 +29,9 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
         const timesTouched = parseInt(target.dataset.timesTouched);
 
         if (timesTouched === 0) {
+            resetTimesTouchedAttribute();
             target.dataset.timesTouched = '1';
         } else {
-            target.dataset.timesTouched = '0';
             (target.querySelector('a.brand.link') as HTMLAnchorElement).click();
         }
     };
@@ -48,10 +49,12 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                     <div className="backface">
                         <a className="brand link" href={brandLink} rel="noreferrer" target="_blank">{brandTag}</a>
                         <p className="description">{description}</p>
-                        <p className="date">
-                            {isActive && `${texts.since} `}
-                            {year}
-                        </p>
+                        {year && (
+                            <p className="date">
+                                {isActive && `${texts.since} `}
+                                {year}
+                            </p>
+                        )}
                         {isInPartnership && (
                             <small>
                                 *
@@ -74,16 +77,18 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                     <div className="backface">
                         <a className="brand link" href={brandLink} rel="noreferrer" target="_blank">{brandTag}</a>
                         <p className="description">{description}</p>
-                        <p className="date">
-                            {texts.since}
-                            {' '}
-                            {year}
-                        </p>
+                        {year && (
+                            <p className="date">
+                                {isActive && `${texts.since} `}
+                                {year}
+                            </p>
+                        )}
                         {isInPartnership && (
                             <small>
                                 *
                                 {' '}
                                 {texts.inPartnershipWith}
+                                {' '}
                             </small>
                         )}
                     </div>
