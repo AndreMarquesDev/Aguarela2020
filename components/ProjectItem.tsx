@@ -9,12 +9,15 @@ interface ProjectItemProps {
     imageAlt: string;
     brandLink: string;
     brandTag: string;
-    year: number;
+    description: string;
+    year: number | string;
     isDesktop: boolean;
     isInPartnership?: boolean;
+    isActive?: boolean;
+    isGrid?: boolean;
 }
 
-const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, brandTag, year, isDesktop, isInPartnership }) => {
+const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, brandTag, description, year, isDesktop, isInPartnership, isActive, isGrid }) => {
     const { texts } = useContext(TextsContext);
 
     const isTouch = isClientSide && window?.matchMedia('(hover: none), (pointer: coarse)').matches;
@@ -35,7 +38,7 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
     return (
         <>
             {isDesktop ? (
-                <li className={isTouch && 'touch'} data-times-touched={0} onTouchStart={handleTouch}>
+                <li className={classNames(isTouch && 'touch', isGrid && 'grid')} data-times-touched={0} onTouchStart={handleTouch}>
                     <Image
                         alt={imageAlt}
                         height={400}
@@ -44,10 +47,9 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                     />
                     <div className="backface">
                         <a className="brand link" href={brandLink} rel="noreferrer" target="_blank">{brandTag}</a>
-                        <p className="description">{texts.socialMediaManagementAndContentCreation}</p>
+                        <p className="description">{description}</p>
                         <p className="date">
-                            {texts.since}
-                            {' '}
+                            {isActive && `${texts.since} `}
                             {year}
                         </p>
                         {isInPartnership && (
@@ -55,6 +57,8 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                                 *
                                 {' '}
                                 {texts.inPartnershipWith}
+                                {' '}
+                                Sofia Ferreirinho
                             </small>
                         )}
                     </div>
@@ -69,7 +73,7 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                     />
                     <div className="backface">
                         <a className="brand link" href={brandLink} rel="noreferrer" target="_blank">{brandTag}</a>
-                        <p className="description">{texts.socialMediaManagementAndContentCreation}</p>
+                        <p className="description">{description}</p>
                         <p className="date">
                             {texts.since}
                             {' '}
@@ -102,6 +106,46 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                         &:hover {
                             .backface {
                                 display: flex;
+                            }
+                        }
+
+                        &.grid {
+                            margin: 0 4% 25rem;
+
+                            @include tablet {
+                                margin: 0 2% 25rem;
+                            }
+
+                            .backface {
+                                .brand, .date {
+                                    @include fontS($yellow, uppercase);
+
+                                    @include desktop {
+                                        @include fontXS($yellow, uppercase);
+                                    }
+
+                                    @include tablet {
+                                        @include fontXXS($yellow, uppercase);
+                                    }
+                                }
+
+                                .description {
+                                    @include fontS($yellow);
+
+                                    @include desktop {
+                                        @include fontXS($yellow);
+                                    }
+
+                                    @include tablet {
+                                        @include fontXXS($yellow);
+                                    }
+                                }
+
+                                small {
+                                    @include tablet {
+                                        @include fontXXS($yellow);
+                                    }
+                                }
                             }
                         }
                     }

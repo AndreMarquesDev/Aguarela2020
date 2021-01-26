@@ -57,7 +57,7 @@ export interface TextsInterface {
     sendMeAnEmail: string;
     iAmAvailableToAdvise: string;
     design: string;
-    socialMedia: string;
+    socialMediaEn: string;
     digital: string;
     webDesign: string;
     outdoorsAndFlyers: string;
@@ -70,6 +70,10 @@ export interface TextsInterface {
     consulting: string;
     paidSearchCampaigns: string;
     opinionPlatformsManagement: string;
+    socialMedia: string;
+    consultingAndContentCreation: string;
+    socialMediaAndContentCreation: string;
+    socialMediaAndPaidSocial: string;
 }
 
 export const textsPt: TextsInterface = {
@@ -129,7 +133,7 @@ export const textsPt: TextsInterface = {
     sendMeAnEmail: 'Envie-me um email e vamos conversar. Podemos começar o quanto antes a definir uma estratégia para social media de acordo com os seus objetivos.',
     iAmAvailableToAdvise: 'Estou ainda disponível para dar consultoria em social media e partilhar as melhores dicas para uma gestão de sucesso.',
     design: 'Design',
-    socialMedia: 'Social Media',
+    socialMediaEn: 'Social Media',
     digital: 'Digital',
     webDesign: 'Web design',
     outdoorsAndFlyers: 'Cartazes & flyers',
@@ -142,6 +146,10 @@ export const textsPt: TextsInterface = {
     consulting: 'Consultoria',
     paidSearchCampaigns: 'Campanhas paid search (google ads)',
     opinionPlatformsManagement: 'Gestão de plataformas de opinião',
+    socialMedia: 'Redes Sociais',
+    consultingAndContentCreation: 'Consultoria e Criação de Conteúdo',
+    socialMediaAndContentCreation: 'Redes Sociais e Criação de Conteúdo',
+    socialMediaAndPaidSocial: 'Redes Sociais e Paid Social',
 };
 
 export const textsEn: TextsInterface = {
@@ -201,7 +209,7 @@ export const textsEn: TextsInterface = {
     sendMeAnEmail: 'Send me an email and let\'s talk. We can start as soon as possible defining a social media strategy that meets your objectives.',
     iAmAvailableToAdvise: 'I am also available to provide social media consulting and share the best tips for a successful management.',
     design: 'Design',
-    socialMedia: 'Social Media',
+    socialMediaEn: 'Social Media',
     digital: 'Digital',
     webDesign: 'Web design',
     outdoorsAndFlyers: 'Outdoors & flyers',
@@ -214,4 +222,8 @@ export const textsEn: TextsInterface = {
     consulting: 'Consulting',
     paidSearchCampaigns: 'Paid search campaigns (google ads)',
     opinionPlatformsManagement: 'Opinion platforms management',
+    socialMedia: 'Social Media',
+    consultingAndContentCreation: 'Consulting and Content Creation',
+    socialMediaAndContentCreation: 'Social Media and Content Creation',
+    socialMediaAndPaidSocial: 'Social Media and Paid Social',
 };

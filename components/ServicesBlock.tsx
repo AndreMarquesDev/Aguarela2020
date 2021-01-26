@@ -29,7 +29,7 @@ const ServicesBlock: FC = () => {
                                 </div>
                             </li>
                             <li>
-                                <p>{texts.socialMedia}</p>
+                                <p>{texts.socialMediaEn}</p>
                                 <div className="backface">
                                     <p>{`- ${texts.contentCreation}`}</p>
                                     <p>{`- ${texts.marketAnalysis}`}</p>
@@ -59,7 +59,7 @@ const ServicesBlock: FC = () => {
                                 </div>
                             </div>
                             <div className="carouselItem">
-                                <p>{texts.socialMedia}</p>
+                                <p>{texts.socialMediaEn}</p>
                                 <div className="backface">
                                     <p>{`- ${texts.contentCreation}`}</p>
                                     <p>{`- ${texts.marketAnalysis}`}</p>

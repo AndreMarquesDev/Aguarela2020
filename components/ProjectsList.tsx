@@ -20,15 +20,15 @@ const ProjectsList: FC = () => {
 
                     {isDesktop ? (
                         <ul>
-                            <ProjectItem isInPartnership brandLink="https://www.instagram.com/tudonatjela" brandTag="@tudonatjela" imageAlt="tjela logo" imageSrc="/images/tjela.jpg" isDesktop={isDesktop} year={2020} />
-                            <ProjectItem brandLink="https://www.instagram.com/kaffeehaus_lisboa" brandTag="@kaffeehaus_lisboa" imageAlt="kaffeehaus logo" imageSrc="/images/kaffeehaus.jpg" isDesktop={isDesktop} year={2018} />
-                            <ProjectItem isInPartnership brandLink="https://www.instagram.com/guacamolegmg" brandTag="@guacamolegmg" imageAlt="guacamole logo" imageSrc="/images/guacamole.jpg" isDesktop={isDesktop} year={2019} />
+                            <ProjectItem isActive isInPartnership brandLink="https://www.instagram.com/tudonatjela" brandTag="@tudonatjela" description={texts.socialMediaManagementAndContentCreation} imageAlt="tjela logo" imageSrc="/images/tjela.jpg" isDesktop={isDesktop} year={2020} />
+                            <ProjectItem isActive brandLink="https://www.instagram.com/kaffeehaus_lisboa" brandTag="@kaffeehaus_lisboa" description={texts.socialMediaManagementAndContentCreation} imageAlt="kaffeehaus logo" imageSrc="/images/kaffeehaus.jpg" isDesktop={isDesktop} year={2018} />
+                            <ProjectItem isActive isInPartnership brandLink="https://www.instagram.com/guacamolegmg" brandTag="@guacamolegmg" description={texts.socialMediaManagementAndContentCreation} imageAlt="guacamole logo" imageSrc="/images/guacamole.jpg" isDesktop={isDesktop} year={2019} />
                         </ul>
                     ) : (
                         <NukaCarousel width={isMobile ? '100%' : '90%'}>
-                            <ProjectItem isInPartnership brandLink="https://www.instagram.com/tudonatjela" brandTag="@tudonatjela" imageAlt="tjela logo" imageSrc="/images/tjela.jpg" isDesktop={isDesktop} year={2020} />
-                            <ProjectItem brandLink="https://www.instagram.com/kaffeehaus_lisboa" brandTag="@kaffeehaus_lisboa" imageAlt="kaffeehaus logo" imageSrc="/images/kaffeehaus.jpg" isDesktop={isDesktop} year={2018} />
-                            <ProjectItem isInPartnership brandLink="https://www.instagram.com/guacamolegmg" brandTag="@guacamolegmg" imageAlt="guacamole logo" imageSrc="/images/guacamole.jpg" isDesktop={isDesktop} year={2019} />
+                            <ProjectItem isActive isInPartnership brandLink="https://www.instagram.com/tudonatjela" brandTag="@tudonatjela" description={texts.socialMediaManagementAndContentCreation} imageAlt="tjela logo" imageSrc="/images/tjela.jpg" isDesktop={isDesktop} year={2020} />
+                            <ProjectItem isActive brandLink="https://www.instagram.com/kaffeehaus_lisboa" brandTag="@kaffeehaus_lisboa" description={texts.socialMediaManagementAndContentCreation} imageAlt="kaffeehaus logo" imageSrc="/images/kaffeehaus.jpg" isDesktop={isDesktop} year={2018} />
+                            <ProjectItem isActive isInPartnership brandLink="https://www.instagram.com/guacamolegmg" brandTag="@guacamolegmg" description={texts.socialMediaManagementAndContentCreation} imageAlt="guacamole logo" imageSrc="/images/guacamole.jpg" isDesktop={isDesktop} year={2019} />
                         </NukaCarousel>
                     )}
 

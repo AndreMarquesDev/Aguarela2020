@@ -8,6 +8,7 @@ import { getCurrentLanguagetexts } from '../../utils/generic';
 import BrandsList from '../../components/BrandsList';
 import LetsWork from '../../components/LetsWork';
 import { Locale } from '../../utils/locales';
+import ProjectsListDouble from '../../components/ProjectsListDouble';
 
 const ProjectsPage: NextPage = () => {
     const {
@@ -35,6 +36,7 @@ const ProjectsPage: NextPage = () => {
                     </title>
                 </Head>
 
+                <ProjectsListDouble />
                 <BrandsList />
                 <LetsWork />
             </Layout>
