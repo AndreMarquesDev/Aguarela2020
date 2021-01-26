@@ -134,7 +134,7 @@ const BrandsList: FC = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/4patasde5estrelas" rel="noreferrer" target="_blank">
+                            <a href="https://instagram.com/4patasde5estrelas" rel="noreferrer" target="_blank">
                                 <Image
                                     alt="4 patas de 5 estrelas logo"
                                     height={150}

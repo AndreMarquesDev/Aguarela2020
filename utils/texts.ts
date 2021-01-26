@@ -74,6 +74,7 @@ export interface TextsInterface {
     consultingAndContentCreation: string;
     socialMediaAndContentCreation: string;
     socialMediaAndPaidSocial: string;
+    socialMediaManagement: string;
 }
 
 export const textsPt: TextsInterface = {
@@ -150,6 +151,7 @@ export const textsPt: TextsInterface = {
     consultingAndContentCreation: 'Consultoria e Criação de Conteúdo',
     socialMediaAndContentCreation: 'Redes Sociais e Criação de Conteúdo',
     socialMediaAndPaidSocial: 'Redes Sociais e Paid Social',
+    socialMediaManagement: 'Gestão de Redes Sociais',
 };
 
 export const textsEn: TextsInterface = {
@@ -226,4 +228,5 @@ export const textsEn: TextsInterface = {
     consultingAndContentCreation: 'Consulting and Content Creation',
     socialMediaAndContentCreation: 'Social Media and Content Creation',
     socialMediaAndPaidSocial: 'Social Media and Paid Social',
+    socialMediaManagement: 'Social Media Management',
 };
