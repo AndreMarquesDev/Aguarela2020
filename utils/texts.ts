@@ -84,6 +84,10 @@ export interface TextsInterface {
     subject: string;
     message: string;
     send: string;
+    messageSentSuccessfully: string;
+    pleaseEnterfirstAndLastName: string;
+    pleaseEntervalidEmailAddress: string;
+    pleaseEnterAMessage: string;
 }
 
 export const textsPt: TextsInterface = {
@@ -170,6 +174,10 @@ export const textsPt: TextsInterface = {
     subject: 'Assunto',
     message: 'Mensagem',
     send: 'Enviar',
+    messageSentSuccessfully: 'Mensagem enviada com sucesso.',
+    pleaseEnterfirstAndLastName: 'Este campo é obrigatório. Por favor insira o seu primeiro e último nome',
+    pleaseEntervalidEmailAddress: 'Este campo é obrigatório. Por favor insira um endereço de email válido',
+    pleaseEnterAMessage: 'Este campo é obrigatório. Por favor insira uma mensagem',
 };
 
 export const textsEn: TextsInterface = {
@@ -256,4 +264,8 @@ export const textsEn: TextsInterface = {
     subject: 'Subject',
     message: 'Message',
     send: 'Send',
+    messageSentSuccessfully: 'Message sent successfully.',
+    pleaseEnterfirstAndLastName: 'This field is required. Please enter your first and last name',
+    pleaseEntervalidEmailAddress: 'This field is required. Please enter a valid email address',
+    pleaseEnterAMessage: 'This field is required. Please enter a message',
 };
