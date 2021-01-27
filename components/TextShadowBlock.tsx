@@ -59,6 +59,7 @@ const TextShadowBlock: FC<TextShadowBlockProps> = ({ title1, title2, title3, tit
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
+                            overflow: hidden;
 
                             @include desktop {
                                 flex-direction: column;

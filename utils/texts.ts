@@ -75,6 +75,12 @@ export interface TextsInterface {
     socialMediaAndContentCreation: string;
     socialMediaAndPaidSocial: string;
     socialMediaManagement: string;
+    name: string;
+    brandBusiness: string;
+    email: string;
+    subject: string;
+    message: string;
+    send: string;
 }
 
 export const textsPt: TextsInterface = {
@@ -152,6 +158,12 @@ export const textsPt: TextsInterface = {
     socialMediaAndContentCreation: 'Redes Sociais e Criação de Conteúdo',
     socialMediaAndPaidSocial: 'Redes Sociais e Paid Social',
     socialMediaManagement: 'Gestão de Redes Sociais',
+    name: 'Nome',
+    brandBusiness: 'Marca/Negócio',
+    email: 'Email',
+    subject: 'Assunto',
+    message: 'Mensagem',
+    send: 'Enviar',
 };
 
 export const textsEn: TextsInterface = {
@@ -229,4 +241,10 @@ export const textsEn: TextsInterface = {
     socialMediaAndContentCreation: 'Social Media and Content Creation',
     socialMediaAndPaidSocial: 'Social Media and Paid Social',
     socialMediaManagement: 'Social Media Management',
+    name: 'Name',
+    brandBusiness: 'Brand/Business',
+    email: 'Email',
+    subject: 'Subject',
+    message: 'Message',
+    send: 'Send',
 };

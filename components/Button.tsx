@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable no-nested-ternary, jsx-a11y/anchor-is-valid */
 import React, { FC } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -11,9 +11,11 @@ interface ButtonProps {
     externalLink?: string;
     alignLeft?: boolean;
     isUppercased?: boolean;
+    isSubmit?: boolean;
+    onClick?: (event) => void;
 }
 
-const Button: FC<ButtonProps> = ({ children, page, externalLink, alignLeft, isUppercased }) => {
+const Button: FC<ButtonProps> = ({ children, page, externalLink, alignLeft, isUppercased, isSubmit, onClick }) => {
     const {
         query,
     } = useRouter();
@@ -26,7 +28,11 @@ const Button: FC<ButtonProps> = ({ children, page, externalLink, alignLeft, isUp
         <>
             <div className="buttonWrapper">
                 <div className={buttonBackgroundContainerStyles}>
-                    {externalLink ? (
+                    {isSubmit ? (
+                        <button className={buttonStyles} type="submit" onClick={onClick}>
+                            {children}
+                        </button>
+                    ) : externalLink ? (
                         <a className={buttonStyles} href={externalLink} rel="noreferrer" target="_blank">
                             {children}
                         </a>
@@ -55,7 +61,6 @@ const Button: FC<ButtonProps> = ({ children, page, externalLink, alignLeft, isUp
                         display: inline-block;
                         position: relative;
                         text-align: center;
-                        padding: 10rem;
                         margin-top: 50rem;
                         z-index: 0;
                         cursor: pointer;
@@ -92,9 +97,14 @@ const Button: FC<ButtonProps> = ({ children, page, externalLink, alignLeft, isUp
                         }
 
                         .button {
-                            @include fontS($yellow, uppercase, bold);
+                            width: 100%;
                             position: relative;
-                            z-index: 0;
+                            display: block;
+                            padding: 10rem;
+                            @include fontS($yellow, uppercase, bold);
+                            text-align: center;
+                            outline: none;
+                            z-index: 1;
                         }
 
                         .uppercase {

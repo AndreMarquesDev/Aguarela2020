@@ -7,6 +7,7 @@ import NavLinksContext, { NavLinksContextProps } from '../../components/context/
 import { getCurrentLanguagetexts } from '../../utils/generic';
 import { Locale } from '../../utils/locales';
 import ContactBlock from '../../components/ContactBlock';
+import ContactForm from '../../components/ContactForm';
 
 const ContactPage: NextPage = () => {
     const {
@@ -35,6 +36,7 @@ const ContactPage: NextPage = () => {
                 </Head>
 
                 <ContactBlock />
+                <ContactForm />
             </Layout>
         </NavLinksContext.Provider>
     );
