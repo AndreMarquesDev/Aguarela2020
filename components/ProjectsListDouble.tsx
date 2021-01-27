@@ -23,7 +23,6 @@ const ProjectsListDouble: FC = () => {
                         <div>
                             <ProjectItem
                                 isActive
-                                isDesktop
                                 isGrid
                                 isInPartnership
                                 brandLink="https://www.instagram.com/tudonatjela"
@@ -35,7 +34,6 @@ const ProjectsListDouble: FC = () => {
                             />
                             <ProjectItem
                                 isActive
-                                isDesktop
                                 isGrid
                                 isInPartnership
                                 brandLink="https://www.instagram.com/tasteofindiapt"
@@ -49,7 +47,6 @@ const ProjectsListDouble: FC = () => {
                         <div>
                             <ProjectItem
                                 isActive
-                                isDesktop
                                 isGrid
                                 brandLink="https://www.instagram.com/kaffeehaus_lisboa"
                                 brandTag="@kaffeehaus_lisboa"
@@ -60,7 +57,6 @@ const ProjectsListDouble: FC = () => {
                             />
                             <ProjectItem
                                 isActive
-                                isDesktop
                                 isGrid
                                 isInPartnership
                                 brandLink="https://www.instagram.com/avocadohouselisbon"
@@ -74,7 +70,6 @@ const ProjectsListDouble: FC = () => {
                         <div>
                             <ProjectItem
                                 isActive
-                                isDesktop
                                 isGrid
                                 isInPartnership
                                 brandLink="https://www.instagram.com/guacamolegmg"
@@ -85,7 +80,6 @@ const ProjectsListDouble: FC = () => {
                                 year={2019}
                             />
                             <ProjectItem
-                                isDesktop
                                 isGrid
                                 brandLink="https://industriacriativa.pt/projeto/45759/maria-limao-gestao-de-redes-sociais"
                                 brandTag="@bebemarialimao"
@@ -97,7 +91,6 @@ const ProjectsListDouble: FC = () => {
                         </div>
                         <div>
                             <ProjectItem
-                                isDesktop
                                 isGrid
                                 brandLink="https://www.instagram.com/biergarten.jardimdacerveja"
                                 brandTag="@biergarten"
@@ -108,7 +101,6 @@ const ProjectsListDouble: FC = () => {
                             />
                             <ProjectItem
                                 isActive
-                                isDesktop
                                 isGrid
                                 brandLink="https://industriacriativa.pt/projeto/14473/a-amiga-esteticista"
                                 brandTag="@aamigaesteticista"
@@ -121,7 +113,6 @@ const ProjectsListDouble: FC = () => {
                         <div>
                             <ProjectItem
                                 isActive
-                                isDesktop
                                 isGrid
                                 brandLink="https://www.linkedin.com/company/harpoon-lda"
                                 brandTag="@harpoonjobs"
@@ -131,7 +122,6 @@ const ProjectsListDouble: FC = () => {
                                 year={2020}
                             />
                             <ProjectItem
-                                isDesktop
                                 isGrid
                                 brandLink="https://www.instagram.com/icecreamroll.pt"
                                 brandTag="@icecreamroll.pt"
@@ -141,10 +131,8 @@ const ProjectsListDouble: FC = () => {
                                 year={2018}
                             />
                         </div>
-
                         <div>
                             <ProjectItem
-                                isDesktop
                                 isGrid
                                 isInPartnership
                                 brandLink="https://www.instagram.com/becomeluminouscoaching"
@@ -155,7 +143,6 @@ const ProjectsListDouble: FC = () => {
                                 year={2020}
                             />
                             <ProjectItem
-                                isDesktop
                                 isGrid
                                 brandLink="https://www.instagram.com/madmarycuisine"
                                 brandTag="@madmarycuisine"
@@ -167,7 +154,6 @@ const ProjectsListDouble: FC = () => {
                         </div>
                         <div>
                             <ProjectItem
-                                isDesktop
                                 isGrid
                                 brandLink="https://www.instagram.com/bovinelisboa"
                                 brandTag="@bovinelisboa"
@@ -177,7 +163,6 @@ const ProjectsListDouble: FC = () => {
                                 year={2020}
                             />
                             <ProjectItem
-                                isDesktop
                                 isGrid
                                 brandLink="https://www.instagram.com/catarinasantiago"
                                 brandTag="@catarinasantiago"
@@ -189,7 +174,6 @@ const ProjectsListDouble: FC = () => {
                         <div>
                             <ProjectItem
                                 isActive
-                                isDesktop
                                 isGrid
                                 brandLink="https://instagram.com/4patasde5estrelas"
                                 brandTag="@4patasde5estrelas"
@@ -199,7 +183,6 @@ const ProjectsListDouble: FC = () => {
                                 year={2020}
                             />
                             <ProjectItem
-                                isDesktop
                                 isGrid
                                 brandLink="https://www.instagram.com/ricemerestaurante"
                                 brandTag="@ricemerestaurante"
@@ -211,7 +194,6 @@ const ProjectsListDouble: FC = () => {
                         </div>
                         <div>
                             <ProjectItem
-                                isDesktop
                                 isGrid
                                 brandLink="https://www.instagram.com/ricemedeli"
                                 brandTag="@ricemedeli"
@@ -221,7 +203,6 @@ const ProjectsListDouble: FC = () => {
                                 year={2020}
                             />
                             <ProjectItem
-                                isDesktop
                                 isGrid
                                 brandLink="https://industriacriativa.pt/projeto/45758/anaro-artist-content-creation"
                                 brandTag="@anaro.artistpage"

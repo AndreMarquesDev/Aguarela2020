@@ -11,7 +11,7 @@ interface ProjectItemProps {
     brandLink: string;
     brandTag: string;
     description: string;
-    isDesktop: boolean;
+    isDesktop?: boolean;
     year?: number | string;
     isInPartnership?: boolean;
     isActive?: boolean;
@@ -22,7 +22,6 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
     const { texts } = useContext(TextsContext);
 
     const isTouch = isClientSide && window?.matchMedia('(hover: none), (pointer: coarse)').matches;
-    const carouselItemStyles = classNames('carouselItem', isTouch && 'touch');
 
     const handleTouch = (event: TouchEvent<HTMLElement>): void => {
         const target = event.currentTarget;
@@ -39,8 +38,9 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
     return (
         <>
             {isDesktop ? (
-                <li className={classNames(isTouch && 'touch', isGrid && 'grid')} data-times-touched={0} onTouchStart={handleTouch}>
+                <li>
                     <Image
+                        priority
                         alt={imageAlt}
                         height={400}
                         src={imageSrc}
@@ -65,8 +65,9 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                     </div>
                 </li>
             ) : (
-                <div className={carouselItemStyles} data-times-touched={0} onTouchStart={handleTouch}>
+                <div className={classNames('carouselItem', isTouch && 'touch', isGrid && 'grid')} data-times-touched={0} onTouchStart={handleTouch}>
                     <Image
+                        priority
                         alt={imageAlt}
                         height={400}
                         src={imageSrc}
@@ -104,6 +105,20 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                         &:last-child {
                             margin-right: 0;
                         }
+
+                        &:hover {
+                            .backface {
+                                display: flex;
+                            }
+                        }
+                    }
+
+                    .carouselItem {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        position: relative;
 
                         &:hover {
                             .backface {
@@ -160,19 +175,6 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                                         @include fontXXS($yellow);
                                     }
                                 }
-                            }
-                        }
-                    }
-
-                    .carouselItem {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        text-align: center;
-
-                        &:hover {
-                            .backface {
-                                display: flex;
                             }
                         }
                     }
