@@ -85,10 +85,7 @@ const TextShadowBlock: FC<TextShadowBlockProps> = ({ title1, title2, title3, tit
                                 background: $blue;
                                 -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent;
-
-                                @include desktop {
-                                    text-align: center;
-                                }
+                                text-align: center;
                             }
 
                             p {
@@ -103,8 +100,16 @@ const TextShadowBlock: FC<TextShadowBlockProps> = ({ title1, title2, title3, tit
                         .textBlock {
                             width: 60%;
 
+                            p {
+                                text-align: left;
+                            }
+
                             @include desktop {
                                 width: 80%;
+
+                                p {
+                                    text-align: center;
+                                }
                             }
 
                             @include tablet {

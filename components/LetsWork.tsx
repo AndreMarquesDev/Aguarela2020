@@ -24,6 +24,10 @@ const LetsWork: FC = () => {
 
                     .container {
                         background: $purple;
+
+                        .wrapper {
+                            max-width: 1060rem;
+                        }
                     }
                 `}
             </style>

@@ -16,7 +16,7 @@ const ContactBlock: FC = () => {
     return (
         <TextShadowBlock
             hasButton
-            textBlock1={texts.needHelpWithYOurBusiness}
+            textBlock1={texts.needHelpWithYourBusiness}
             textBlock2={texts.sendMeAnEmail}
             textBlock3={texts.iAmAvailableToAdvise}
             title1={texts.contactMe1}

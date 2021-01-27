@@ -84,8 +84,16 @@ const AboutMe: FC = () => {
                         .textBlock {
                             width: 60%;
 
+                            p {
+                                text-align: left;
+                            }
+
                             @include desktop {
                                 width: 80%;
+
+                                p {
+                                    text-align: center;
+                                }
                             }
 
                             @include tablet {

@@ -53,7 +53,7 @@ export interface TextsInterface {
     contactMe1: string;
     contactMe2: string;
     contactMe3: string;
-    needHelpWithYOurBusiness: string;
+    needHelpWithYourBusiness: string;
     sendMeAnEmail: string;
     iAmAvailableToAdvise: string;
     design: string;
@@ -68,8 +68,11 @@ export interface TextsInterface {
     socialMediaStrategyAndManagement: string;
     paidSocial: string;
     consulting: string;
+    photographyAndVideo: string;
     paidSearchCampaigns: string;
     opinionPlatformsManagement: string;
+    seoOptimization: string;
+    sponsoredAds: string;
     socialMedia: string;
     consultingAndContentCreation: string;
     socialMediaAndContentCreation: string;
@@ -99,15 +102,15 @@ export const textsPt: TextsInterface = {
     socialMediaStrategy: 'Estratégia de Redes Sociais',
     makingAuditsAndAnalysis: 'Realizar uma auditoria e análise detalhada, com base nos insights e objetivos da marca, definindo em que redes sociais a marca deve estar presente e quais as oportunidades disponíveis.',
     socialMediaConsulting: 'Consultoria de Redes Sociais',
-    weCanHelpYourTeam: 'Podemos ajudar a sua equipa na forma como a marca está presente nas redes sociais, como comunica, como alcançar os objetivos pretendidos e como aproveitar as oportunidades disponíveis no mercado digital do seu negócio',
+    weCanHelpYourTeam: 'Posso ajudar a sua equipa na forma como a marca está presente nas redes sociais, como comunica, como alcançar os objetivos pretendidos e como aproveitar as oportunidades disponíveis no mercado digital do seu negócio.',
     communityManagement: 'Gestão de Comunidade',
-    whenWeSendAMessage: 'Quando enviamos uma mensagem aos nossos amigos e eles demoram dias a responder-nos não é muito agradável e o mesmo acontece com as marcas. Fazemos gestão de comunidade, respondendo a mensagens e comentários da sua audiência em prazos toleráveis e ideais.',
+    whenWeSendAMessage: 'Quando enviamos uma mensagem aos nossos amigos e eles demoram dias a responder-nos não é muito agradável e o mesmo acontece com as marcas. Faço gestão de comunidade, respondendo a mensagens e comentários da sua audiência em prazos toleráveis e ideais.',
     paidSocialAndSearch: 'Paid Social e Search',
-    planningAndImplementing: 'Planeamos, implementamos e acompanhamos campanhas paid social (redes sociais) e campanhas paid search (anúncios no Google), otimizando os objetivos de marketing da sua marca ou negócio.',
-    optimizationAndAnalysis: 'Análise e Otimização ',
-    measuringResults: 'Medir resultados de forma a otimizar a estratégia é a chave para uma presença de sucesso nas redes sociais. Em todos os nossos projetos fazemos uma análise mensal detalhada de forma a existir uma adaptação contínua ao mercado e às exigências dos consumidores.',
+    planningAndImplementing: 'Planeio, implemento e acompanho campanhas paid social (redes sociais) e campanhas paid search (anúncios no Google), otimizando os objetivos de marketing da sua marca ou negócio.',
+    optimizationAndAnalysis: 'Análise e Otimização',
+    measuringResults: 'Medir resultados de forma a otimizar a estratégia é a chave para uma presença de sucesso nas redes sociais. Em todos os meus projetos faço uma análise mensal detalhada de forma a existir uma adaptação contínua ao mercado e às exigências dos consumidores.',
     contentCreation: 'Criação de Conteúdo',
-    createAttractiveContent: 'Criamos conteúdo (fotográfico, animado, design e vídeo) atrativo e relevante para os consumidores. Ao reunirmos insights de consumidores e know-how sabemos o tipo de conteúdo que melhor funciona para cada negócio.',
+    createAttractiveContent: 'Crio conteúdo (fotográfico, animado, design e vídeo) atrativo e relevante para os consumidores. Ao reunir insights de consumidores e know-how consigo saber o tipo de conteúdo que melhor funciona para cada negócio.',
     workflow: 'Workflow',
     defineTarget: 'Definir target',
     defineGoals: 'Definir objetivos',
@@ -127,7 +130,7 @@ export const textsPt: TextsInterface = {
     inPartnershipWith: 'em dupla com Sofia Ferreirinho',
     seeMore: 'Ver mais',
     letsWork: 'Vamos trabalhar juntos!',
-    letsWorkDescription: 'Precisa de ajuda com as redes sociais e marketing digital da sua marca ou negócio? Envie-me um email e vamos conversar. Tenho todo o gosto em aumentar a visibilidade e faturação do seu negócio.',
+    letsWorkDescription: 'Precisa de ajuda com as redes sociais e marketing digital da sua marca ou negócio? Envie-me um email e vamos conversar. Estou disponível para ajudar a posicionar a sua marca no mundo digital.',
     myNetwork: 'A minha rede',
     hiMyNameIs: 'Olá! O meu nome é Catarina Santiago e sou gestora de redes sociais e criadora de conteúdo baseada em Lisboa.',
     withMoreThan: 'Com mais de 3 anos e 18 clientes de experiência, a Aguarela surgiu com a missão de providenciar um serviço premium de gestão de redes sociais e criação de conteúdo a negócios locais e pequenas empresas.',
@@ -136,9 +139,9 @@ export const textsPt: TextsInterface = {
     contactMe1: 'Con',
     contactMe2: 'Ver',
     contactMe3: 'Sar',
-    needHelpWithYOurBusiness: 'Precisa de ajuda com o seu negócio, projeto ou marca?',
+    needHelpWithYourBusiness: 'Precisa de ajuda com o seu negócio, projeto ou marca?',
     sendMeAnEmail: 'Envie-me um email e vamos conversar. Podemos começar o quanto antes a definir uma estratégia para social media de acordo com os seus objetivos.',
-    iAmAvailableToAdvise: 'Estou ainda disponível para dar consultoria em social media e partilhar as melhores dicas para uma gestão de sucesso.',
+    iAmAvailableToAdvise: 'Estou ainda disponível para dar consultoria em social media e partilhar todos os passos e dicas de que precisa para cumprir os seus objetivos.',
     design: 'Design',
     socialMediaEn: 'Social Media',
     digital: 'Digital',
@@ -149,10 +152,13 @@ export const textsPt: TextsInterface = {
     menus: 'Menus',
     marketAnalysis: 'Análises de mercado',
     socialMediaStrategyAndManagement: 'Estratégia e gestão de redes sociais',
-    paidSocial: 'Paid social',
+    paidSocial: 'Promoção de posts',
     consulting: 'Consultoria',
+    photographyAndVideo: 'Fotografia e vídeo',
     paidSearchCampaigns: 'Campanhas paid search (google ads)',
     opinionPlatformsManagement: 'Gestão de plataformas de opinião',
+    seoOptimization: 'Otimização (SEO)',
+    sponsoredAds: 'Anúncios patrocinados (LinkedIn Ads, Google Ads e Facebook Ads)',
     socialMedia: 'Redes sociais',
     consultingAndContentCreation: 'Consultoria e criação de conteúdo',
     socialMediaAndContentCreation: 'Redes sociais e criação de conteúdo',
@@ -175,22 +181,22 @@ export const textsEn: TextsInterface = {
     welcome2: 'Co',
     welcome3: 'Me',
     footerInfo: 'Aguarela Digital - Developed by',
-    managingsocialMedia: 'Gestão de redes sociais está no meu ADN. Sou uma freelancer, baseada em Lisboa, com experiência em gestão de redes sociais e criação de conteúdo. A <a href="https://www.instagram.com/aguareladigital" target="_blank" rel="noreferrer" class="link">@Aguarela</a> surgiu com o objetivo de ajudar negócios locais e pequenas empresas a posicionarem-se no digital, gerar awareness, criar uma relação com o target e impulsionar vendas.', // todo translate
-    throughStrategicPlanning: 'Através do planeamento estratégico, criação de conteúdo e implementação estou disponível para ser o vosso braço direito.', // todo translate
-    monitorAndOptimizeProcessAndStrategy: 'Do ínicio ao fim, acompanho, monitorizo e otimizo todo o processo e estratégia de gestão de redes sociais.', // todo translate
+    managingsocialMedia: 'Social media management is in my DNA. I\'m a freelancer, based in Lisbon, with experience in social media management and content creation. <a href="https://www.instagram.com/aguareladigital" target="_blank" rel="noreferrer" class="link">@Aguarela</a>\'s goal is to help local businesses and small companies position themselves digitally, create awareness, create a realtionship with the target and boost sales.',
+    throughStrategicPlanning: 'Through strategic planning, content creation and implementation I can be your right hand.',
+    monitorAndOptimizeProcessAndStrategy: 'From start to finish I keep up with, monitor and optimize the whole social media management process and strategy.',
     skills: 'Skills',
     socialMediaStrategy: 'Social Media strategy',
-    makingAuditsAndAnalysis: 'Realizar uma auditoria e análise detalhada, com base nos insights e objetivos da marca, definindo em que redes sociais a marca deve estar presente e quais as oportunidades disponíveis.', // todo translate
+    makingAuditsAndAnalysis: 'Making audits and detailed analysis, based on the brand\'s insights and goals, deciding in what social networks the brand should be present in and what are the available opportunities.',
     socialMediaConsulting: 'Social Media consulting',
-    weCanHelpYourTeam: 'Podemos ajudar a sua equipa na forma como a marca está presente nas redes sociais, como comunica, como alcançar os objetivos pretendidos e como aproveitar as oportunidades disponíveis no mercado digital do seu negócio', // todo translate
+    weCanHelpYourTeam: 'I can help your team in the way your brand is present on social media, how it communicates, how to achieve the intended goals and how to take advantage of the opportunities available in the digital market of your business.',
     communityManagement: 'Community Management',
-    whenWeSendAMessage: 'Quando enviamos uma mensagem aos nossos amigos e eles demoram dias a responder-nos não é muito agradável e o mesmo acontece com as marcas. Fazemos gestão de comunidade, respondendo a mensagens e comentários da sua audiência em prazos toleráveis e ideais.', // todo translate
+    whenWeSendAMessage: 'When we send a message to our friends and they take days to answer us it is not very pleasant and the same is true with brands. I do community management, responding to messages and comments from your audience within tolerable and ideal deadlines.',
     paidSocialAndSearch: 'Paid Social and Search',
-    planningAndImplementing: 'Planeamos, implementamos e acompanhamos campanhas paid social (redes sociais) e campanhas paid search (anúncios no Google), otimizando os objetivos de marketing da sua marca ou negócio.', // todo translate
-    optimizationAndAnalysis: 'Análise e Otimização ', // todo translate
-    measuringResults: 'Medir resultados de forma a otimizar a estratégia é a chave para uma presença de sucesso nas redes sociais. Em todos os nossos projetos fazemos uma análise mensal detalhada de forma a existir uma adaptação contínua ao mercado e às exigências dos consumidores.', // todo translate
+    planningAndImplementing: 'I plan, implement and monitor paid social campaigns (social media) and paid search campaigns (ads on Google), optimizing the marketing objectives of your brand or business.',
+    optimizationAndAnalysis: 'Optimization and Analysis',
+    measuringResults: 'Measuring results in order to optimize the strategy is the key to a successful presence on social media. In all my projects I do a detailed monthly analysis so that there is a continuous adaptation to the market and to the demands of consumers.',
     contentCreation: 'Content creation',
-    createAttractiveContent: 'Criamos conteúdo (fotográfico, animado, design e vídeo) atrativo e relevante para os consumidores. Ao reunirmos insights de consumidores e know-how sabemos o tipo de conteúdo que melhor funciona para cada negócio.', // todo translate
+    createAttractiveContent: 'I create attractive and relevant content to consumers (photographic, animated, design and video). By gathering consumer insights and know-how, I know the type of content that works best for each business.',
     workflow: 'Workflow',
     defineTarget: 'Set the target',
     defineGoals: 'Set goals',
@@ -210,7 +216,7 @@ export const textsEn: TextsInterface = {
     inPartnershipWith: 'in partnership with Sofia Ferreirinho',
     seeMore: 'See more',
     letsWork: 'Let\'s work together!',
-    letsWorkDescription: 'Need help with digital marketing and the social media of your brand or business? Send me an email and let\'s talk. It will be my pleasure to increase the visibility of your business',
+    letsWorkDescription: 'Need help with digital marketing and the social media of your brand or business? Send me an email and let\'s talk. I\'m available to help position your brand in the digital world.',
     myNetwork: 'My network',
     hiMyNameIs: 'Hi! My name is Catarina Santiago and I\'m a social media manager and content creator based in Lisbon.',
     withMoreThan: 'With more than 3 years of experience and 18 clients, Aguarela was created with the mission to provide a premium service of social media management and content creation to local businesses and small companies.',
@@ -219,9 +225,9 @@ export const textsEn: TextsInterface = {
     contactMe1: 'Con',
     contactMe2: 'Tac',
     contactMe3: 'Tme',
-    needHelpWithYOurBusiness: 'Need help with your business, project or brand?',
+    needHelpWithYourBusiness: 'Need help with your business, project or brand?',
     sendMeAnEmail: 'Send me an email and let\'s talk. We can start as soon as possible defining a social media strategy that meets your objectives.',
-    iAmAvailableToAdvise: 'I am also available to provide social media consulting and share the best tips for a successful management.',
+    iAmAvailableToAdvise: 'I am also available to provide social media consulting and share all the tips you need to fulfill your goals.',
     design: 'Design',
     socialMediaEn: 'Social Media',
     digital: 'Digital',
@@ -234,8 +240,11 @@ export const textsEn: TextsInterface = {
     socialMediaStrategyAndManagement: 'Social Media Strategy',
     paidSocial: 'Paid social',
     consulting: 'Consulting',
+    photographyAndVideo: 'Photography and video',
     paidSearchCampaigns: 'Paid search campaigns (google ads)',
     opinionPlatformsManagement: 'Opinion platforms management',
+    seoOptimization: 'SEO optimization',
+    sponsoredAds: 'Sponsored ads (LinkedIn Ads, Google Ads e Facebook Ads)',
     socialMedia: 'Social media',
     consultingAndContentCreation: 'Consulting and content creation',
     socialMediaAndContentCreation: 'Social media and content creation',
