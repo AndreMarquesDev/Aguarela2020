@@ -90,8 +90,8 @@ const Button: FC<ButtonProps> = ({ children, page, externalLink, alignLeft, isUp
                         }
 
                         &:after {
-                            top: 12rem;
-                            left: 12rem;
+                            top: 8rem;
+                            left: 8rem;
                             background-color: $pink;
                             z-index: -1;
                         }

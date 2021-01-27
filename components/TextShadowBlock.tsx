@@ -110,12 +110,6 @@ const TextShadowBlock: FC<TextShadowBlockProps> = ({ title1, title2, title3, tit
                             @include tablet {
                                 width: 100%;
                             }
-
-                            p {
-                                @include mobile {
-                                    @include fontS($white);
-                                }
-                            }
                         }
                     }
                 `}

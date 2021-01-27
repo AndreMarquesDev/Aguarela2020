@@ -91,12 +91,6 @@ const AboutMe: FC = () => {
                             @include tablet {
                                 width: 100%;
                             }
-
-                            p {
-                                @include mobile {
-                                    @include fontS;
-                                }
-                            }
                         }
                     }
                 `}

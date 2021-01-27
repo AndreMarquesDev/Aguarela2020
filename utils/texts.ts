@@ -40,7 +40,7 @@ export interface TextsInterface {
     detailedAnalysis: string;
     improvementsAndUpdatesToTheStrategy: string;
     socialMediaManagementAndContentCreation: string;
-    since: string;
+    present: string;
     inPartnershipWith: string;
     seeMore: string;
     letsWork: string;
@@ -123,7 +123,7 @@ export const textsPt: TextsInterface = {
     detailedAnalysis: 'Análises detalhadas e identificação de insights',
     improvementsAndUpdatesToTheStrategy: 'Melhorias e updates à estratégia',
     socialMediaManagementAndContentCreation: 'Gestão de Redes Sociais e Criação de Conteúdo',
-    since: 'Desde',
+    present: 'Presente',
     inPartnershipWith: 'em dupla com Sofia Ferreirinho',
     seeMore: 'Ver mais',
     letsWork: 'Vamos trabalhar juntos!',
@@ -153,11 +153,11 @@ export const textsPt: TextsInterface = {
     consulting: 'Consultoria',
     paidSearchCampaigns: 'Campanhas paid search (google ads)',
     opinionPlatformsManagement: 'Gestão de plataformas de opinião',
-    socialMedia: 'Redes Sociais',
-    consultingAndContentCreation: 'Consultoria e Criação de Conteúdo',
-    socialMediaAndContentCreation: 'Redes Sociais e Criação de Conteúdo',
-    socialMediaAndPaidSocial: 'Redes Sociais e Paid Social',
-    socialMediaManagement: 'Gestão de Redes Sociais',
+    socialMedia: 'Redes sociais',
+    consultingAndContentCreation: 'Consultoria e criação de conteúdo',
+    socialMediaAndContentCreation: 'Redes sociais e criação de conteúdo',
+    socialMediaAndPaidSocial: 'Redes sociais e paid social',
+    socialMediaManagement: 'Gestão de redes sociais',
     name: 'Nome',
     brandBusiness: 'Marca/Negócio',
     email: 'Email',
@@ -206,8 +206,8 @@ export const textsEn: TextsInterface = {
     detailedAnalysis: 'Detailed analysis and insights\' finding',
     improvementsAndUpdatesToTheStrategy: 'Strategy updates and improvements',
     socialMediaManagementAndContentCreation: 'Social Media Management and Content Creation',
-    since: 'Since',
-    inPartnershipWith: 'in partnership with',
+    present: 'Present',
+    inPartnershipWith: 'in partnership with Sofia Ferreirinho',
     seeMore: 'See more',
     letsWork: 'Let\'s work together!',
     letsWorkDescription: 'Need help with digital marketing and the social media of your brand or business? Send me an email and let\'s talk. It will be my pleasure to increase the visibility of your business',
@@ -236,11 +236,11 @@ export const textsEn: TextsInterface = {
     consulting: 'Consulting',
     paidSearchCampaigns: 'Paid search campaigns (google ads)',
     opinionPlatformsManagement: 'Opinion platforms management',
-    socialMedia: 'Social Media',
-    consultingAndContentCreation: 'Consulting and Content Creation',
-    socialMediaAndContentCreation: 'Social Media and Content Creation',
-    socialMediaAndPaidSocial: 'Social Media and Paid Social',
-    socialMediaManagement: 'Social Media Management',
+    socialMedia: 'Social media',
+    consultingAndContentCreation: 'Consulting and content creation',
+    socialMediaAndContentCreation: 'Social media and content creation',
+    socialMediaAndPaidSocial: 'Social media and paid social',
+    socialMediaManagement: 'Social media management',
     name: 'Name',
     brandBusiness: 'Brand/Business',
     email: 'Email',

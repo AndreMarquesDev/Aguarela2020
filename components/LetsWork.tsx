@@ -12,7 +12,7 @@ const LetsWork: FC = () => {
                 <div className="wrapper genericMargins">
                     <Title text={texts.letsWork} />
 
-                    <p>{texts.letsWorkDescription}</p>
+                    <p className="bodyText bodyText--white">{texts.letsWorkDescription}</p>
 
                     <Button page="contact">{texts.contact}</Button>
                 </div>
@@ -24,11 +24,6 @@ const LetsWork: FC = () => {
 
                     .container {
                         background: $purple;
-
-                        p {
-                            @include fontS($white);
-                            text-align: center;
-                        }
                     }
                 `}
             </style>

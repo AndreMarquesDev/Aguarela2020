@@ -51,8 +51,8 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                         <p className="description">{description}</p>
                         {year && (
                             <p className="date">
-                                {isActive && `${texts.since} `}
                                 {year}
+                                {isActive && ` - ${texts.present}`}
                             </p>
                         )}
                         {isInPartnership && (
@@ -60,8 +60,6 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                                 *
                                 {' '}
                                 {texts.inPartnershipWith}
-                                {' '}
-                                Sofia Ferreirinho
                             </small>
                         )}
                     </div>
@@ -79,8 +77,8 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                         <p className="description">{description}</p>
                         {year && (
                             <p className="date">
-                                {isActive && `${texts.since} `}
                                 {year}
+                                {isActive && ` - ${texts.present}`}
                             </p>
                         )}
                         {isInPartnership && (
@@ -88,7 +86,6 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                                 *
                                 {' '}
                                 {texts.inPartnershipWith}
-                                {' '}
                             </small>
                         )}
                     </div>
@@ -122,7 +119,7 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                             }
 
                             .backface {
-                                .brand, .date {
+                                .brand {
                                     @include fontS($yellow, uppercase);
 
                                     @include desktop {
@@ -131,6 +128,18 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
 
                                     @include tablet {
                                         @include fontXXS($yellow, uppercase);
+                                    }
+                                }
+
+                                .date {
+                                    @include fontS($yellow);
+
+                                    @include desktop {
+                                        @include fontXS($yellow);
+                                    }
+
+                                    @include tablet {
+                                        @include fontXXS($yellow);
                                     }
                                 }
 
@@ -185,7 +194,7 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                         background: $blue;
                         padding: 10rem;
 
-                        .brand, .date {
+                        .brand {
                             @include fontM($yellow, uppercase);
                             margin-bottom: 20rem;
 
@@ -195,6 +204,19 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
 
                             @include phablet {
                                 @include fontXS($yellow, uppercase);
+                            }
+                        }
+
+                        .date {
+                            @include fontM($yellow);
+                            margin-bottom: 20rem;
+
+                            @include desktop {
+                                @include fontS($yellow);
+                            }
+
+                            @include phablet {
+                                @include fontXS($yellow);
                             }
                         }
 

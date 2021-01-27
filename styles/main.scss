@@ -23,9 +23,10 @@
 }
 
 .bodyText {
-    @include fontM;
+    @include fontS;
 
     margin-bottom: 50rem;
+    text-align: center;
 
     &--white {
         color: $white;
@@ -33,6 +34,15 @@
 
     &:last-of-type {
         margin-bottom: 0;
+    }
+
+    @include mobile {
+        @include fontXS;
+        line-height: 1.4;
+
+        &--white {
+            color: $white;
+        }
     }
 }
 

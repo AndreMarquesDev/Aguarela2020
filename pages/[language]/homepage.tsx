@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import { NextPage } from 'next';
 import Image from 'next/image';
+import classNames from 'classnames';
 import Layout from '../../components/Layout';
 import NavLinksContext, { NavLinksContextProps } from '../../components/context/NavLinksContext';
 import WelcomeBlock from '../../components/WelcomeBlock';
@@ -10,6 +11,7 @@ import Workflow from '../../components/Workflow';
 import ProjectsList from '../../components/ProjectsList';
 import LetsWork from '../../components/LetsWork';
 import BrandsList from '../../components/BrandsList';
+import { useWindowSize, mobileBreakpoint } from '../../utils/useWindowSize';
 
 const Homepage: NextPage = () => {
     const [navHeight, setNavHeight] = useState(0);
@@ -23,6 +25,9 @@ const Homepage: NextPage = () => {
         setNavHeight,
     };
 
+    const windowSize = useWindowSize();
+    const isMobile = windowSize.width < mobileBreakpoint;
+
     return (
         <NavLinksContext.Provider value={navLinksContext}>
             <Layout>
@@ -30,7 +35,7 @@ const Homepage: NextPage = () => {
                     <title>Aguarela Digital</title>
                 </Head>
 
-                <div className="homepageBanner">
+                <div className={classNames('homepageBanner', isMobile && 'mobileNavHeight')}>
                     <Image
                         priority
                         alt="homepage banner"
@@ -53,6 +58,10 @@ const Homepage: NextPage = () => {
                             width: 100%;
                             height: calc(90vh - ${navHeight}px);
                             position: relative;
+
+                            &.mobileNavHeight {
+                                height: calc(50vh - ${navHeight}px);
+                            }
                         }
                     `}
                 </style>
