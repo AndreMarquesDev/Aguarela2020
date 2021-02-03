@@ -41,7 +41,7 @@ const Homepage: NextPage = () => {
                         alt="homepage banner"
                         layout="fill"
                         objectFit="cover"
-                        src="/images/homepage-banner.png"
+                        src="/images/homepage-banner.jpg"
                     />
                 </div>
 
