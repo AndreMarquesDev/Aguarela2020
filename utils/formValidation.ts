@@ -1,3 +1,19 @@
+export enum FieldTypes {
+    Name = 'name',
+    Email = 'email',
+    Textarea = 'message',
+    Brand = 'brand',
+    Subject = 'subject',
+}
+
+export interface FormState {
+    name: string;
+    email: string;
+    message: string;
+    brand: string;
+    subject: string;
+}
+
 export const validateName = (value: string): boolean => {
     const nameRegex = /s*([a-zA-ZáâàãéêèíîìóôòõúûùñçäöüßÁÂÀÃÉÊÈÍÎÌÓÔÒÕÚÛÙÑÇÄÖÜẞ]{1,}([\.,] |[-']| ))+[a-zA-ZáâàãéêèíîìóôòõúûùñçäöüßÁÂÀÃÉÊÈÍÎÌÓÔÒÕÚÛÙÑÇÄÖÜẞ]+\.?\s*$/;
 
@@ -9,5 +25,3 @@ export const validateEmail = (value: string): boolean => {
 
     return emailRegex.test(value);
 };
-
-export const validateTextarea = (value: string): boolean => !!value;

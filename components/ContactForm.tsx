@@ -1,117 +1,103 @@
-import React, { FC, useContext, FocusEvent } from 'react';
-import { validateEmail, validateName, validateTextarea } from '../utils/formValidation';
+import { useFormik } from 'formik';
+import React, { FC, useContext } from 'react';
+import { FieldTypes, FormState, validateEmail, validateName } from '../utils/formValidation';
 import Button from './Button';
 import TextsContext from './context/TextsContext';
+import FormField from './FormField';
 
-enum fieldTypes {
-    Name = 'name',
-    Email = 'email',
-    Textarea = 'messsage',
-}
+const formSchema = [{
+    id: FieldTypes.Name,
+    type: 'text',
+    isRequired: true,
+    isInput: true,
+    ariaError: 'nameErrorMessage',
+}, {
+    id: FieldTypes.Brand,
+    type: 'text',
+    isRequired: false,
+    isInput: true,
+    ariaError: null,
+}, {
+    id: FieldTypes.Email,
+    type: 'email',
+    isRequired: true,
+    isInput: true,
+    ariaError: 'emailErrorMessage',
+}, {
+    id: FieldTypes.Subject,
+    type: 'text',
+    isRequired: false,
+    isInput: true,
+    ariaError: null,
+}, {
+    id: FieldTypes.Textarea,
+    type: null,
+    isRequired: true,
+    isInput: false,
+    ariaError: 'messageErrorMessage',
+}];
 
 const ContactForm: FC = () => {
     const { texts } = useContext(TextsContext);
 
-    const toggleErrorMessage = (element: HTMLElement, behavior: 'add' | 'remove'): void => {
-        if (behavior === 'add') {
-            element.classList.add('hidden');
-        } else if (behavior === 'remove') {
-            element.classList.remove('hidden');
+    const validate = (values: FormState): FormState => {
+        const errors = {} as FormState;
+
+        if (!values.name || !validateName(values.name)) {
+            errors.name = texts.pleaseEnterfirstAndLastName;
         }
-    };
 
-    const validateField = (event: FocusEvent<HTMLInputElement> | FocusEvent<HTMLTextAreaElement>, fieldType: fieldTypes): void => {
-        const { target } = event;
-        const { value } = target;
-        const errorMessageElement = (target.nextElementSibling as HTMLSpanElement);
-
-        if (fieldType === fieldTypes.Name) {
-            // eslint-disable-next-line no-unused-expressions
-            validateName(value)
-                ? toggleErrorMessage(errorMessageElement, 'add')
-                : toggleErrorMessage(errorMessageElement, 'remove');
-        } else if (fieldType === fieldTypes.Email) {
-            // eslint-disable-next-line no-unused-expressions
-            validateEmail(value)
-                ? toggleErrorMessage(errorMessageElement, 'add')
-                : toggleErrorMessage(errorMessageElement, 'remove');
-        } else if (fieldType === fieldTypes.Textarea) {
-            // eslint-disable-next-line no-unused-expressions
-            validateTextarea(value)
-                ? toggleErrorMessage(errorMessageElement, 'add')
-                : toggleErrorMessage(errorMessageElement, 'remove');
+        if (!values.email || !validateEmail(values.email)) {
+            errors.email = texts.pleaseEnterfirstAndLastName;
         }
+
+        if (!values.message) {
+            errors.message = texts.pleaseEnterfirstAndLastName;
+        }
+
+        return errors;
     };
 
-    const handleSubmit = (event): void => {
-        event.preventDefault();
-
-        console.log('evento', event);
-    };
+    const {
+        handleSubmit,
+        handleChange,
+        handleBlur,
+        touched,
+        values,
+        errors,
+    } = useFormik({
+        initialValues: {
+            name: '',
+            email: '',
+            message: '',
+            brand: '',
+            subject: '',
+        },
+        validate,
+        onSubmit: formState => {
+            console.log(JSON.stringify(formState));
+        },
+    });
 
     return (
         <>
             <section className="container">
                 <div className="wrapper genericMargins">
-                    <form>
-                        <div className="fieldWrapper">
-                            <label htmlFor={fieldTypes.Name}>
-                                {texts.name}
-                                {' '}
-                                *
-                            </label>
-                            <input
-                                required
-                                aria-describedby="nameErrorMessage"
-                                id={fieldTypes.Name}
-                                name={fieldTypes.Name}
-                                title={fieldTypes.Name}
-                                type="text"
-                                onBlur={(event): void => validateField(event, fieldTypes.Name)}
+                    <form noValidate onSubmit={handleSubmit}>
+                        {formSchema.map(({ id, type, isRequired, isInput, ariaError }) => (
+                            <FormField
+                                key={id}
+                                ariaError={ariaError}
+                                hasError={!!touched[id] && !!errors[id]}
+                                id={id}
+                                isInput={isInput}
+                                isRequired={isRequired}
+                                type={type}
+                                value={values[id]}
+                                onBlur={handleBlur}
+                                onChange={handleChange}
                             />
-                            <span className="errorMessage hidden" id="nameErrorMessage">{texts.pleaseEnterfirstAndLastName}</span>
-                        </div>
-                        <div className="fieldWrapper">
-                            <label htmlFor="brand">{texts.brandBusiness}</label>
-                            <input id="brand" name="brand" title="brand" type="text" />
-                        </div>
-                        <div className="fieldWrapper">
-                            <label htmlFor={fieldTypes.Email}>
-                                {texts.email}
-                                {' '}
-                                *
-                            </label>
-                            <input
-                                required
-                                aria-describedby="emailErrorMessage"
-                                id={fieldTypes.Email}
-                                name={fieldTypes.Email}
-                                title={fieldTypes.Email}
-                                type="email"
-                                onBlur={(event): void => validateField(event, fieldTypes.Email)}
-                            />
-                            <span className="errorMessage hidden" id="emailErrorMessage">{texts.pleaseEntervalidEmailAddress}</span>
-                        </div>
-                        <div className="fieldWrapper">
-                            <label htmlFor="subject">{texts.subject}</label>
-                            <input id="subject" name="subject" title="subject" type="text" />
-                        </div>
-                        <div className="fieldWrapper textarea">
-                            <label htmlFor={fieldTypes.Textarea}>
-                                {texts.message}
-                                {' '}
-                                *
-                            </label>
-                            <textarea
-                                required
-                                aria-describedby="messageErrorMessage"
-                                id={fieldTypes.Textarea}
-                                name={fieldTypes.Textarea}
-                                title={fieldTypes.Textarea}
-                                onBlur={(event): void => validateField(event, fieldTypes.Textarea)}
-                            />
-                            <span className="errorMessage hidden" id="messageErrorMessage">{texts.pleaseEnterAMessage}</span>
-                        </div>
+                        ))}
 
                         <Button isSubmit onClick={handleSubmit}>{texts.send}</Button>
                     </form>
@@ -136,58 +122,6 @@ const ContactForm: FC = () => {
                         display: flex;
                         flex-wrap: wrap;
                         justify-content: space-between;
-                    }
-
-                    .fieldWrapper {
-                        width: 47%;
-                        margin-bottom: 10rem;
-
-                        &.textarea {
-                            width: 100%;
-                            margin-bottom: 0;
-                        }
-                    }
-
-                    label {
-                        display: block;
-                        margin-bottom: 5rem;
-                        @include fontS($fontWeight: 600);
-
-                        @include mobile {
-                            @include fontXS($fontWeight: 600);
-                        }
-                    }
-
-                    input, textarea {
-                        width: 100%;
-                        background: $purple;
-                        border: none;
-                        padding: 5rem;
-                        @include fontS($white);
-
-                        @include mobile {
-                            @include fontXS($white);
-                        }
-                    }
-
-                    input {
-                        height: 30rem;
-                    }
-
-                    textarea {
-                        height: 120rem;
-                    }
-
-                    .errorMessage {
-                        opacity: 1;
-                        pointer-events: initial;
-                        @include fontXS($pink);
-                        margin-top: 5rem;
-
-                        &.hidden {
-                            opacity: 0;
-                            pointer-events: none;
-                        }
                     }
                 `}
             </style>

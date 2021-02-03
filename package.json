@@ -24,6 +24,7 @@
     ],
     "dependencies": {
         "classnames": "^2.2.6",
+        "formik": "^2.2.6",
         "js-cookie": "^2.2.1",
         "multilingual-url": "AndreMarquesDev/multilingual-url",
         "next": "^10.0.3",
