@@ -44,6 +44,19 @@ const FormField: FC<FormFieldProps> = ({
         }
     };
 
+    const getErrorMessage = (fieldId: string): string => {
+        switch (fieldId) {
+            case FieldTypes.Name:
+                return texts.pleaseEnterfirstAndLastName;
+            case FieldTypes.Email:
+                return texts.pleaseEntervalidEmailAddress;
+            case FieldTypes.Textarea:
+                return texts.pleaseEnterAMessage;
+            default:
+                return null;
+        }
+    };
+
     return (
         <>
             <div className={classNames('fieldWrapper', !isInput && 'textarea')}>
@@ -81,8 +94,7 @@ const FormField: FC<FormFieldProps> = ({
                     className={classNames('errorMessage', hasError && 'visible')}
                     id={ariaError}
                 >
-                    {texts.pleaseEnterfirstAndLastName}
-
+                    {getErrorMessage(id)}
                 </span>
             </div>
 

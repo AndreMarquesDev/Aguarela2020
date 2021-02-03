@@ -12,16 +12,17 @@ interface ButtonProps {
     alignLeft?: boolean;
     isUppercased?: boolean;
     isSubmit?: boolean;
+    disabled?: boolean;
     onClick?: (event) => void;
 }
 
-const Button: FC<ButtonProps> = ({ children, page, externalLink, alignLeft, isUppercased, isSubmit, onClick }) => {
+const Button: FC<ButtonProps> = ({ children, page, externalLink, alignLeft, isUppercased, isSubmit, disabled, onClick }) => {
     const {
         query,
     } = useRouter();
 
     const language = query.language?.toString();
-    const buttonBackgroundContainerStyles = classNames('buttonBackground', !alignLeft && 'alignCenter');
+    const buttonBackgroundContainerStyles = classNames('buttonBackground', !alignLeft && 'alignCenter', disabled && 'disabled');
     const buttonStyles = classNames('button', isUppercased && 'uppercase');
 
     return (
@@ -119,6 +120,11 @@ const Button: FC<ButtonProps> = ({ children, page, externalLink, alignLeft, isUp
                     .alignCenter {
                         left: 50%;
                         transform: translateX(-50%);
+                    }
+
+                    .disabled {
+                        opacity: 0.5;
+                        pointer-events: none;
                     }
                 `}
             </style>
