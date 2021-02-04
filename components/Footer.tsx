@@ -26,18 +26,18 @@ const Footer: FC<FooterProps> = ({ language }) => {
 
                     <ul>
                         <li>
-                            <a href="https://www.instagram.com/aguareladigital" rel="noreferrer" target="_blank">
+                            <a aria-label="Aguarela instagram" href="https://www.instagram.com/aguareladigital" rel="noreferrer" target="_blank">
                                 <FaInstagram />
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/aguareladigitalagency" rel="noreferrer" target="_blank">
+                            <a aria-label="Aguarela facebook" href="https://www.facebook.com/aguareladigitalagency" rel="noreferrer" target="_blank">
                                 <FaFacebookF />
                             </a>
                         </li>
                         <li>
                             <Link href={`/${language}/${'contact' as Page}`} prefetch={false}>
-                                <a>
+                                <a aria-label="Go to contact page">
                                     <FaEnvelope />
                                 </a>
                             </Link>

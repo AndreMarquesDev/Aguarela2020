@@ -30,10 +30,10 @@ const NukaCarousel: FC<NukaCarouselProps> = ({ children, width, framePadding, sl
                 framePadding={framePadding || '0px 30px'}
                 renderBottomCenterControls={null}
                 renderCenterLeftControls={({ previousSlide }): ReactNode => (
-                    <button type="button" onClick={(): void => handleClickPrev(previousSlide)}><FaChevronLeft /></button>
+                    <button aria-label="previous slide" type="button" onClick={(): void => handleClickPrev(previousSlide)}><FaChevronLeft /></button>
                 )}
                 renderCenterRightControls={({ nextSlide }): ReactNode => (
-                    <button type="button" onClick={(): void => handleClickNext(nextSlide)}><FaChevronRight /></button>
+                    <button aria-label="next slide" type="button" onClick={(): void => handleClickNext(nextSlide)}><FaChevronRight /></button>
                 )}
                 slidesToShow={slidesToShow || 1}
                 width={width || '100%'}

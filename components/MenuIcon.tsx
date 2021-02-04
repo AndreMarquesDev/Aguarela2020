@@ -12,7 +12,7 @@ const MenuIcon: FC<MenuIconProps> = ({ isOpen, isVisible, onClick }) => {
 
     return (
         <>
-            <i className={openMenuStyles} role="button" tabIndex={0} onClick={onClick} onKeyPress={onClick}><span /></i>
+            <i aria-label="toggle menu" className={openMenuStyles} role="button" tabIndex={0} onClick={onClick} onKeyPress={onClick}><span /></i>
 
             <style jsx>
                 {`
