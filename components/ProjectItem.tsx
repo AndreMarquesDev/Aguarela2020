@@ -135,11 +135,7 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
 
                             .backface {
                                 .brand {
-                                    @include fontS($yellow, uppercase);
-
-                                    @include desktop {
-                                        @include fontXS($yellow, uppercase);
-                                    }
+                                    @include fontXS($yellow, uppercase);
 
                                     @include tablet {
                                         @include fontXXS($yellow, uppercase);
@@ -147,11 +143,7 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                                 }
 
                                 .date {
-                                    @include fontS($yellow);
-
-                                    @include desktop {
-                                        @include fontXS($yellow);
-                                    }
+                                    @include fontXS($yellow);
 
                                     @include tablet {
                                         @include fontXXS($yellow);
@@ -197,38 +189,18 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                         padding: 10rem;
 
                         .brand {
-                            @include fontM($yellow, uppercase);
+                            @include fontXS($yellow, uppercase);
                             margin-bottom: 20rem;
-
-                            @include desktop {
-                                @include fontS($yellow, uppercase);
-                            }
-
-                            @include phablet {
-                                @include fontXS($yellow, uppercase);
-                            }
                         }
 
                         .date {
-                            @include fontM($yellow);
+                            @include fontXS($yellow);
                             margin-bottom: 20rem;
-
-                            @include desktop {
-                                @include fontS($yellow);
-                            }
-
-                            @include phablet {
-                                @include fontXS($yellow);
-                            }
                         }
 
                         .description {
-                            @include fontM($yellow);
+                            @include fontS($yellow);
                             margin-bottom: 20rem;
-
-                            @include desktop {
-                                @include fontS($yellow);
-                            }
 
                             @include phablet {
                                 @include fontXS($yellow);

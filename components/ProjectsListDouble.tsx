@@ -100,49 +100,6 @@ const ProjectsListDouble: FC = () => {
                                 year={2019}
                             />
                             <ProjectItem
-                                isActive
-                                isGrid
-                                brandLink="https://industriacriativa.pt/projeto/14473/a-amiga-esteticista"
-                                brandTag="@aamigaesteticista"
-                                description={texts.consultingAndContentCreation}
-                                imageAlt="a amiga esteticista"
-                                imageSrc="/images/amiga-esteticista.jpg"
-                                year={2017}
-                            />
-                        </div>
-                        <div>
-                            <ProjectItem
-                                isActive
-                                isGrid
-                                brandLink="https://www.linkedin.com/company/harpoon-lda"
-                                brandTag="@harpoonjobs"
-                                description={texts.socialMediaAndContentCreation}
-                                imageAlt="harpoon"
-                                imageSrc="/images/harpoon.jpg"
-                                year={2020}
-                            />
-                            <ProjectItem
-                                isGrid
-                                brandLink="https://www.instagram.com/icecreamroll.pt"
-                                brandTag="@icecreamroll.pt"
-                                description={texts.socialMediaAndContentCreation}
-                                imageAlt="icecream roll"
-                                imageSrc="/images/ice-cream-roll.jpg"
-                                year={2018}
-                            />
-                        </div>
-                        <div>
-                            <ProjectItem
-                                isGrid
-                                isInPartnership
-                                brandLink="https://www.instagram.com/becomeluminouscoaching"
-                                brandTag="@becomeluminous"
-                                description={texts.socialMediaAndPaidSocial}
-                                imageAlt="luminous"
-                                imageSrc="/images/luminous.jpg"
-                                year={2020}
-                            />
-                            <ProjectItem
                                 isGrid
                                 brandLink="https://www.instagram.com/madmarycuisine"
                                 brandTag="@madmarycuisine"
@@ -160,6 +117,47 @@ const ProjectsListDouble: FC = () => {
                                 description={texts.socialMediaAndContentCreation}
                                 imageAlt="bovine"
                                 imageSrc="/images/bovine.jpg"
+                                year={2020}
+                            />
+                            <ProjectItem
+                                isGrid
+                                brandLink="https://www.instagram.com/icecreamroll.pt"
+                                brandTag="@icecreamroll.pt"
+                                description={texts.socialMediaAndContentCreation}
+                                imageAlt="icecream roll"
+                                imageSrc="/images/ice-cream-roll.jpg"
+                                year={2018}
+                            />
+                        </div>
+                        <div>
+                            <ProjectItem
+                                isGrid
+                                brandLink="https://www.instagram.com/ricemerestaurante"
+                                brandTag="@ricemerestaurante"
+                                description={texts.socialMediaAndContentCreation}
+                                imageAlt="rice me"
+                                imageSrc="/images/rice-me.jpg"
+                                year={2020}
+                            />
+                            <ProjectItem
+                                isGrid
+                                brandLink="https://www.instagram.com/ricemedeli"
+                                brandTag="@ricemedeli"
+                                description={texts.socialMediaAndContentCreation}
+                                imageAlt="rice me deli"
+                                imageSrc="/images/rice-me-deli.jpg"
+                                year={2020}
+                            />
+                        </div>
+                        <div>
+                            <ProjectItem
+                                isActive
+                                isGrid
+                                brandLink="https://www.linkedin.com/company/harpoon-lda"
+                                brandTag="@harpoonjobs"
+                                description={texts.socialMediaAndContentCreation}
+                                imageAlt="harpoon"
+                                imageSrc="/images/harpoon.jpg"
                                 year={2020}
                             />
                             <ProjectItem
@@ -184,23 +182,25 @@ const ProjectsListDouble: FC = () => {
                             />
                             <ProjectItem
                                 isGrid
-                                brandLink="https://www.instagram.com/ricemerestaurante"
-                                brandTag="@ricemerestaurante"
-                                description={texts.socialMediaAndContentCreation}
-                                imageAlt="rice me"
-                                imageSrc="/images/rice-me.jpg"
+                                isInPartnership
+                                brandLink="https://www.instagram.com/becomeluminouscoaching"
+                                brandTag="@becomeluminous"
+                                description={texts.socialMediaAndPaidSocial}
+                                imageAlt="luminous"
+                                imageSrc="/images/luminous.jpg"
                                 year={2020}
                             />
                         </div>
                         <div>
                             <ProjectItem
+                                isActive
                                 isGrid
-                                brandLink="https://www.instagram.com/ricemedeli"
-                                brandTag="@ricemedeli"
-                                description={texts.socialMediaAndContentCreation}
-                                imageAlt="rice me deli"
-                                imageSrc="/images/rice-me-deli.jpg"
-                                year={2020}
+                                brandLink="https://industriacriativa.pt/projeto/14473/a-amiga-esteticista"
+                                brandTag="@aamigaesteticista"
+                                description={texts.consultingAndContentCreation}
+                                imageAlt="a amiga esteticista"
+                                imageSrc="/images/amiga-esteticista.jpg"
+                                year={2017}
                             />
                             <ProjectItem
                                 isGrid

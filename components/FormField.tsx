@@ -145,7 +145,7 @@ const FormField: FC<FormFieldProps> = ({
                     .errorMessage {
                         display: inline-block;
                         @include fontXXS($pink);
-                        line-height: 13px;
+                        line-height: 13rem;
                         margin-top: 5rem;
                         opacity: 0;
                         pointer-events: none;

@@ -9,7 +9,7 @@ interface SkillItemProps {
 
 const SkillItem: FC<SkillItemProps> = ({ icon, title, description }) => (
     <>
-        <Image alt={title} className="imageOpacity" height={160} layout="fixed" src={`/images/icons/${icon}.svg`} width={160} />
+        <Image alt={title} className="imageOpacity" height={130} layout="fixed" src={`/images/icons/${icon}.svg`} width={160} />
         <strong>{title}</strong>
         <p>{description}</p>
 
@@ -26,6 +26,7 @@ const SkillItem: FC<SkillItemProps> = ({ icon, title, description }) => (
                     p {
                         @include fontXS;
                         letter-spacing: 1rem;
+                        line-height: 19rem;
                     }
                 `}
         </style>
