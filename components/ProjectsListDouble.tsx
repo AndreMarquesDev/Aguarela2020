@@ -91,6 +91,30 @@ const ProjectsListDouble: FC = () => {
                         </div>
                         <div>
                             <ProjectItem
+                                isActive
+                                isGrid
+                                isInPartnership
+                                brandLink="https://www.instagram.com/jamesonportugal/"
+                                brandTag="@jamesonportugal"
+                                description={texts.socialMediaManagement}
+                                imageAlt="jameson"
+                                imageSrc="/images/jameson.jpg"
+                                year={2019}
+                            />
+                            <ProjectItem
+                                isActive
+                                isGrid
+                                isInPartnership
+                                brandLink="https://www.beefeater.pt"
+                                brandTag="@beefeater"
+                                description={texts.socialMediaManagement}
+                                imageAlt="beefeater"
+                                imageSrc="/images/beefeater.jpg"
+                                year={2019}
+                            />
+                        </div>
+                        <div>
+                            <ProjectItem
                                 isGrid
                                 brandLink="https://www.instagram.com/biergarten.jardimdacerveja"
                                 brandTag="@biergarten"
