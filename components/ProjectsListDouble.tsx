@@ -93,7 +93,6 @@ const ProjectsListDouble: FC = () => {
                             <ProjectItem
                                 isActive
                                 isGrid
-                                isInPartnership
                                 brandLink="https://www.instagram.com/jamesonportugal/"
                                 brandTag="@jamesonportugal"
                                 description={texts.socialMediaManagement}
@@ -104,7 +103,6 @@ const ProjectsListDouble: FC = () => {
                             <ProjectItem
                                 isActive
                                 isGrid
-                                isInPartnership
                                 brandLink="https://www.beefeater.pt"
                                 brandTag="@beefeater"
                                 description={texts.socialMediaManagement}
@@ -175,14 +173,13 @@ const ProjectsListDouble: FC = () => {
                         </div>
                         <div>
                             <ProjectItem
-                                isActive
                                 isGrid
                                 brandLink="https://www.linkedin.com/company/harpoon-lda"
                                 brandTag="@harpoonjobs"
                                 description={texts.socialMediaAndContentCreation}
                                 imageAlt="harpoon"
                                 imageSrc="/images/harpoon.jpg"
-                                year={2020}
+                                year="2020 - 2021"
                             />
                             <ProjectItem
                                 isGrid
