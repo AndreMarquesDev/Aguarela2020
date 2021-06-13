@@ -2,6 +2,8 @@
 
 Aguarela Digital website
 
+![GitHub deployments](https://img.shields.io/github/deployments/AndreMarquesDev/Aguarela2020/production?label=vercel&logo=vercel&logoColor=white)
+
 ## About
 
 ### Features / Contents
