@@ -1,3 +1,9 @@
 module.exports = {
-    extends: ['andremarquesdev'],
+    extends: [
+        'andremarquesdev',
+        'plugin:cypress/recommended',
+    ],
+    plugins: [
+        'cypress'
+    ],
 };
