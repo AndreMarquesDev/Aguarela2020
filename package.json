@@ -1,8 +1,9 @@
 {
-    "name": "Aguarela2020",
+    "name": "aguarela2020",
     "version": "0.0.1",
     "description": "Aguarela Digital website",
     "main": "index.js",
+    "license": "UNLICENSED",
     "scripts": {
         "dev": "next",
         "build": "next build",
