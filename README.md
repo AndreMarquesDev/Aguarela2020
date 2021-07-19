@@ -2,6 +2,7 @@
 
 Aguarela Digital website
 
+[![production](https://github.com/AndreMarquesDev/Aguarela2020/actions/workflows/production.yml/badge.svg)](https://github.com/AndreMarquesDev/Aguarela2020/actions/workflows/production.yml)
 ![GitHub deployments](https://img.shields.io/github/deployments/AndreMarquesDev/Aguarela2020/production?label=vercel&logo=vercel&logoColor=white)
 
 ## About
