@@ -4,3 +4,4 @@
 /public
 /*.json
 /styles/_reset.scss
+**/*.sh

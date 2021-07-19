@@ -38,6 +38,7 @@
 
     @include mobile {
         @include fontXS;
+
         line-height: 1.4;
 
         &--white {
