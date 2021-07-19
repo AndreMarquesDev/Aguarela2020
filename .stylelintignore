@@ -4,4 +4,5 @@
 /public
 /*.json
 /styles/_reset.scss
+/coverage/*
 **/*.sh
