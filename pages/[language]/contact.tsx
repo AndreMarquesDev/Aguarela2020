@@ -10,9 +10,7 @@ import ContactBlock from '../../components/ContactBlock';
 import ContactForm from '../../components/ContactForm';
 
 const ContactPage: NextPage = () => {
-    const {
-        query,
-    } = useRouter();
+    const { query } = useRouter();
 
     const currentLanguage = query.language?.toString() as Locale;
     const translatedPageTitle = getCurrentLanguagetexts(currentLanguage).contact;
@@ -28,11 +26,7 @@ const ContactPage: NextPage = () => {
         <NavLinksContext.Provider value={navLinksContext}>
             <Layout>
                 <Head>
-                    <title>
-                        {translatedPageTitle}
-                        {' '}
-                        - Aguarela Digital
-                    </title>
+                    <title>{translatedPageTitle} - Aguarela Digital</title>
                 </Head>
 
                 <ContactBlock />

@@ -16,8 +16,14 @@ class MyDocument extends Document {
             <Html lang={defaultLocale}>
                 <Head>
                     <meta content="André Marques" name="author" />
-                    <meta content="My name is Catarina Santiago and I'm a social media manager and content creator based in Lisbon. Aguarela was created with the mission to provide a premium service of social media management and content creation to local businesses and small companies." name="description" />
-                    <meta content="social media manager content creator paid social ads digital instagram facebook linkedin google lisbon portugal aguarela" name="keywords" />
+                    <meta
+                        content="My name is Catarina Santiago and I'm a social media manager and content creator based in Lisbon. Aguarela was created with the mission to provide a premium service of social media management and content creation to local businesses and small companies."
+                        name="description"
+                    />
+                    <meta
+                        content="social media manager content creator paid social ads digital instagram facebook linkedin google lisbon portugal aguarela"
+                        name="keywords"
+                    />
 
                     {/* mobile header color for Chrome, Firefox OS and Opera */}
                     <meta content="#a383ea" name="theme-color" />
@@ -44,7 +50,10 @@ class MyDocument extends Document {
                     <meta content="Aguarela Digital Website" property="og:title" />
                     <meta content="website" property="og:type" />
                     <meta content="https://aguareladigital.com" property="og:url" />
-                    <meta content="https://aguareladigital.com/images/logo_open_graph.png" property="og:image" />
+                    <meta
+                        content="https://aguareladigital.com/images/logo_open_graph.png"
+                        property="og:image"
+                    />
                     <meta content="315" property="og:image:width" />
                     <meta content="315" property="og:image:height" />
                     <meta content="Aguarela Digital's logo" property="og:image:alt" />
@@ -63,17 +72,26 @@ class MyDocument extends Document {
                         name="twitter:description"
                     />
                     {/* does not accept svg's */}
-                    <meta content="https://aguareladigital.com/images/logo_open_graph.png" name="twitter:image" />
+                    <meta
+                        content="https://aguareladigital.com/images/logo_open_graph.png"
+                        name="twitter:image"
+                    />
                     <meta content="Aguarela Digital's logo" name="twitter:image:alt" />
                     {/* pinterest lets you prevent people from saving things from your website */}
-                    <meta content="nopin" description="Sorry, you can't save from my website!" name="pinterest" />
-
-                    <link as="font" crossOrigin="true" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="preload" type="font/ttf" />
-                    <link
-                        href="/images/logo.svg"
-                        rel="shortcut icon"
-                        type="image/x-icon"
+                    <meta
+                        content="nopin"
+                        description="Sorry, you can't save from my website!"
+                        name="pinterest"
                     />
+
+                    <link
+                        as="font"
+                        crossOrigin="true"
+                        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap"
+                        rel="preload"
+                        type="font/ttf"
+                    />
+                    <link href="/images/logo.svg" rel="shortcut icon" type="image/x-icon" />
                 </Head>
                 <body>
                     <Main />

@@ -18,7 +18,18 @@ interface ProjectItemProps {
     isGrid?: boolean;
 }
 
-const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, brandTag, description, year, isDesktop, isInPartnership, isActive, isGrid }) => {
+const ProjectItem: FC<ProjectItemProps> = ({
+    imageSrc,
+    imageAlt,
+    brandLink,
+    brandTag,
+    description,
+    year,
+    isDesktop,
+    isInPartnership,
+    isActive,
+    isGrid,
+}) => {
     const { texts } = useContext(TextsContext);
 
     const isTouch = isClientSide && window?.matchMedia('(hover: none), (pointer: coarse)').matches;
@@ -39,15 +50,11 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
         <>
             {isDesktop ? (
                 <li>
-                    <Image
-                        priority
-                        alt={imageAlt}
-                        height={400}
-                        src={imageSrc}
-                        width={400}
-                    />
+                    <Image priority alt={imageAlt} height={400} src={imageSrc} width={400} />
                     <div className="backface">
-                        <a className="brand link" href={brandLink} rel="noreferrer" target="_blank">{brandTag}</a>
+                        <a className="brand link" href={brandLink} rel="noreferrer" target="_blank">
+                            {brandTag}
+                        </a>
                         <p className="description">{description}</p>
                         {year && (
                             <p className="date">
@@ -55,26 +62,20 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                                 {isActive && ` - ${texts.present}`}
                             </p>
                         )}
-                        {isInPartnership && (
-                            <small>
-                                *
-                                {' '}
-                                {texts.inPartnershipWith}
-                            </small>
-                        )}
+                        {isInPartnership && <small>* {texts.inPartnershipWith}</small>}
                     </div>
                 </li>
             ) : (
-                <div className={classNames('carouselItem', isTouch && 'touch', isGrid && 'grid')} data-times-touched={0} onTouchStart={handleTouch}>
-                    <Image
-                        priority
-                        alt={imageAlt}
-                        height={400}
-                        src={imageSrc}
-                        width={400}
-                    />
+                <div
+                    className={classNames('carouselItem', isTouch && 'touch', isGrid && 'grid')}
+                    data-times-touched={0}
+                    onTouchStart={handleTouch}
+                >
+                    <Image priority alt={imageAlt} height={400} src={imageSrc} width={400} />
                     <div className="backface">
-                        <a className="brand link" href={brandLink} rel="noreferrer" target="_blank">{brandTag}</a>
+                        <a className="brand link" href={brandLink} rel="noreferrer" target="_blank">
+                            {brandTag}
+                        </a>
                         <p className="description">{description}</p>
                         {year && (
                             <p className="date">
@@ -82,13 +83,7 @@ const ProjectItem: FC<ProjectItemProps> = ({ imageSrc, imageAlt, brandLink, bran
                                 {isActive && ` - ${texts.present}`}
                             </p>
                         )}
-                        {isInPartnership && (
-                            <small>
-                                *
-                                {' '}
-                                {texts.inPartnershipWith}
-                            </small>
-                        )}
+                        {isInPartnership && <small>* {texts.inPartnershipWith}</small>}
                     </div>
                 </div>
             )}

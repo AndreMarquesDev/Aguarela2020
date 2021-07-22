@@ -11,9 +11,7 @@ import { Locale } from '../../utils/locales';
 import ServicesBlock from '../../components/ServicesBlock';
 
 const ServicesPage: NextPage = () => {
-    const {
-        query,
-    } = useRouter();
+    const { query } = useRouter();
 
     const currentLanguage = query.language?.toString() as Locale;
     const translatedPageTitle = getCurrentLanguagetexts(currentLanguage).services;
@@ -29,11 +27,7 @@ const ServicesPage: NextPage = () => {
         <NavLinksContext.Provider value={navLinksContext}>
             <Layout>
                 <Head>
-                    <title>
-                        {translatedPageTitle}
-                        {' '}
-                        - Aguarela Digital
-                    </title>
+                    <title>{translatedPageTitle} - Aguarela Digital</title>
                 </Head>
 
                 <ServicesBlock />

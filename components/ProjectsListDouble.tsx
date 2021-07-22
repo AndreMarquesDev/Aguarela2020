@@ -19,7 +19,11 @@ const ProjectsListDouble: FC = () => {
                 <div className="wrapper genericMargins">
                     <Title colored text={texts.projects} />
 
-                    <NukaCarousel cellAlign="left" slidesToShow={slidesToShow} width={isMobile ? '100%' : '90%'}>
+                    <NukaCarousel
+                        cellAlign="left"
+                        slidesToShow={slidesToShow}
+                        width={isMobile ? '100%' : '90%'}
+                    >
                         <div>
                             <ProjectItem
                                 isActive
@@ -250,7 +254,6 @@ const ProjectsListDouble: FC = () => {
                             align-items: center;
                         }
                     }
-
                 `}
             </style>
         </>

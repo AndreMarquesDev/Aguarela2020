@@ -103,7 +103,8 @@ const ServicesBlock: FC = () => {
                             justify-content: space-between;
                         }
 
-                        li, .carouselItem {
+                        li,
+                        .carouselItem {
                             width: $blockSize;
                             height: $blockSize;
                             display: flex;
@@ -120,7 +121,8 @@ const ServicesBlock: FC = () => {
                                 height: $blockSizeMobile;
                             }
 
-                            &:before, &:after {
+                            &:before,
+                            &:after {
                                 content: '';
                                 width: $blockSize;
                                 height: $blockSize;

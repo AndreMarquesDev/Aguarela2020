@@ -8,24 +8,22 @@ interface TitleProps {
 
 const Title: FC<TitleProps> = ({ text, colored, marginBottom }) => (
     <>
-        <h1 className={colored && 'colored'}>
-            {text}
-        </h1>
+        <h1 className={colored && 'colored'}>{text}</h1>
 
         <style jsx>
             {`
-                    @import './styles/_vars.scss';
+                @import './styles/_vars.scss';
 
-                    h1 {
-                        @include fontL($white, uppercase, bold);
-                        text-align: center;
-                        margin-bottom: ${marginBottom || 50}rem;
-                    }
+                h1 {
+                    @include fontL($white, uppercase, bold);
+                    text-align: center;
+                    margin-bottom: ${marginBottom || 50}rem;
+                }
 
-                    .colored {
-                        color: $pink;
-                    }
-                `}
+                .colored {
+                    color: $pink;
+                }
+            `}
         </style>
     </>
 );

@@ -21,9 +21,7 @@ function MyApp({ Component, pageProps }) {
         document.querySelector('html').lang = locale; // eslint-disable-line no-undef
     }
 
-    return (
-        <Component {...pageProps} />
-    );
+    return <Component {...pageProps} />;
 }
 
 export default MyApp;

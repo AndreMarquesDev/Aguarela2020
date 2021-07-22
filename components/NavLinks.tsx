@@ -18,26 +18,24 @@ const NavLinks: FC<NavLinksProps> = ({ currentRoute, language, isMobile, isMenuO
     const navLinks = pagesMap.filter(page => page !== 'homepage');
     const { texts: navTexts } = useContext(TextsContext);
 
-    const linksContainerStyles = classNames(isMobile && 'mobileLayout', isMenuOpen && isMobile && 'menuOpen');
-    const linkStyles = (link: string): string => (
-        classNames(currentRoute.includes(link) && 'active')
+    const linksContainerStyles = classNames(
+        isMobile && 'mobileLayout',
+        isMenuOpen && isMobile && 'menuOpen'
     );
+    const linkStyles = (link: string): string =>
+        classNames(currentRoute.includes(link) && 'active');
 
     return (
         <ul className={linksContainerStyles}>
             {navLinks.map(link => (
                 <li key={language + link}>
                     <Link href={`/${language}/${link}`} prefetch={false}>
-                        <a className={linkStyles(link)}>
-                            {navTexts[`${link}`]}
-                        </a>
+                        <a className={linkStyles(link)}>{navTexts[`${link}`]}</a>
                     </Link>
                 </li>
             ))}
 
-            <li
-                className={classNames('languageButton', isMobile && 'white')}
-            >
+            <li className={classNames('languageButton', isMobile && 'white')}>
                 <LanguageButton />
             </li>
 
@@ -77,7 +75,8 @@ const NavLinks: FC<NavLinksProps> = ({ currentRoute, language, isMobile, isMenuO
                     li {
                         margin: 0 25rem;
 
-                        &:hover a, .active {
+                        &:hover a,
+                        .active {
                             color: $purple;
                         }
 

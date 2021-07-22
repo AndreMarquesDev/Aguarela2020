@@ -11,7 +11,13 @@ interface NukaCarouselProps {
     cellAlign?: CarouselCellAlignProp;
 }
 
-const NukaCarousel: FC<NukaCarouselProps> = ({ children, width, framePadding, slidesToShow, cellAlign }) => {
+const NukaCarousel: FC<NukaCarouselProps> = ({
+    children,
+    width,
+    framePadding,
+    slidesToShow,
+    cellAlign,
+}) => {
     const handleClickPrev = (goToPrevSlide: () => void): void => {
         resetTimesTouchedAttribute();
         goToPrevSlide();
@@ -30,10 +36,22 @@ const NukaCarousel: FC<NukaCarouselProps> = ({ children, width, framePadding, sl
                 framePadding={framePadding || '0px 30px'}
                 renderBottomCenterControls={null}
                 renderCenterLeftControls={({ previousSlide }): ReactNode => (
-                    <button aria-label="previous slide" type="button" onClick={(): void => handleClickPrev(previousSlide)}><FaChevronLeft /></button>
+                    <button
+                        aria-label="previous slide"
+                        type="button"
+                        onClick={(): void => handleClickPrev(previousSlide)}
+                    >
+                        <FaChevronLeft />
+                    </button>
                 )}
                 renderCenterRightControls={({ nextSlide }): ReactNode => (
-                    <button aria-label="next slide" type="button" onClick={(): void => handleClickNext(nextSlide)}><FaChevronRight /></button>
+                    <button
+                        aria-label="next slide"
+                        type="button"
+                        onClick={(): void => handleClickNext(nextSlide)}
+                    >
+                        <FaChevronRight />
+                    </button>
                 )}
                 slidesToShow={slidesToShow || 1}
                 width={width || '100%'}
@@ -43,18 +61,17 @@ const NukaCarousel: FC<NukaCarouselProps> = ({ children, width, framePadding, sl
 
             <style jsx>
                 {`
-                @import './styles/_vars.scss';
+                    @import './styles/_vars.scss';
 
-                button {
-                    display: flex;
-                    transition: transform 0.15s linear;
+                    button {
+                        display: flex;
+                        transition: transform 0.15s linear;
 
-                    &:hover {
-                        transform: scale(1.1);
+                        &:hover {
+                            transform: scale(1.1);
+                        }
                     }
-                }
-
-            `}
+                `}
             </style>
         </>
     );

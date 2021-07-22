@@ -13,7 +13,16 @@ interface TextShadowBlockProps {
     hasButton?: boolean;
 }
 
-const TextShadowBlock: FC<TextShadowBlockProps> = ({ title1, title2, title3, titleMobile, textBlock1, textBlock2, textBlock3, hasButton }) => {
+const TextShadowBlock: FC<TextShadowBlockProps> = ({
+    title1,
+    title2,
+    title3,
+    titleMobile,
+    textBlock1,
+    textBlock2,
+    textBlock3,
+    hasButton,
+}) => {
     const windowSize = useWindowSize();
     const isDesktop = windowSize.width > desktopBreakpoint;
     const isMobile = windowSize.width < mobileBreakpoint;
@@ -43,7 +52,15 @@ const TextShadowBlock: FC<TextShadowBlockProps> = ({ title1, title2, title3, tit
                         />
                         <p className="bodyText bodyText--white">{textBlock2}</p>
                         <p className="bodyText bodyText--white">{textBlock3}</p>
-                        {hasButton && <Button isUppercased alignLeft={isDesktop} externalLink="mailto:catarina@aguareladigital.pt">catarina@aguareladigital.pt</Button>}
+                        {hasButton && (
+                            <Button
+                                isUppercased
+                                alignLeft={isDesktop}
+                                externalLink="mailto:catarina@aguareladigital.pt"
+                            >
+                                catarina@aguareladigital.pt
+                            </Button>
+                        )}
                     </div>
                 </div>
             </section>

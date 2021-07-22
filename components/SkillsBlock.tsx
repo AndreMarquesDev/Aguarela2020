@@ -19,43 +19,91 @@ const SkillsBlock: FC = () => {
                     {isDesktop ? (
                         <ul>
                             <li>
-                                <SkillItem description={texts.makingAuditsAndAnalysis} icon="strategy" title={texts.socialMediaStrategy} />
+                                <SkillItem
+                                    description={texts.makingAuditsAndAnalysis}
+                                    icon="strategy"
+                                    title={texts.socialMediaStrategy}
+                                />
                             </li>
                             <li>
-                                <SkillItem description={texts.weCanHelpYourTeam} icon="phone" title={texts.socialMediaConsulting} />
+                                <SkillItem
+                                    description={texts.weCanHelpYourTeam}
+                                    icon="phone"
+                                    title={texts.socialMediaConsulting}
+                                />
                             </li>
                             <li>
-                                <SkillItem description={texts.whenWeSendAMessage} icon="chat" title={texts.communityManagement} />
+                                <SkillItem
+                                    description={texts.whenWeSendAMessage}
+                                    icon="chat"
+                                    title={texts.communityManagement}
+                                />
                             </li>
                             <li>
-                                <SkillItem description={texts.planningAndImplementing} icon="money" title={texts.paidSocialAndSearch} />
+                                <SkillItem
+                                    description={texts.planningAndImplementing}
+                                    icon="money"
+                                    title={texts.paidSocialAndSearch}
+                                />
                             </li>
                             <li>
-                                <SkillItem description={texts.measuringResults} icon="graph" title={texts.optimizationAndAnalysis} />
+                                <SkillItem
+                                    description={texts.measuringResults}
+                                    icon="graph"
+                                    title={texts.optimizationAndAnalysis}
+                                />
                             </li>
                             <li>
-                                <SkillItem description={texts.createAttractiveContent} icon="camera" title={texts.contentCreation} />
+                                <SkillItem
+                                    description={texts.createAttractiveContent}
+                                    icon="camera"
+                                    title={texts.contentCreation}
+                                />
                             </li>
                         </ul>
                     ) : (
                         <NukaCarousel width={isMobile ? '100%' : '90%'}>
                             <div className="carouselItem">
-                                <SkillItem description={texts.makingAuditsAndAnalysis} icon="strategy" title={texts.socialMediaStrategy} />
+                                <SkillItem
+                                    description={texts.makingAuditsAndAnalysis}
+                                    icon="strategy"
+                                    title={texts.socialMediaStrategy}
+                                />
                             </div>
                             <div className="carouselItem">
-                                <SkillItem description={texts.weCanHelpYourTeam} icon="phone" title={texts.socialMediaConsulting} />
+                                <SkillItem
+                                    description={texts.weCanHelpYourTeam}
+                                    icon="phone"
+                                    title={texts.socialMediaConsulting}
+                                />
                             </div>
                             <div className="carouselItem">
-                                <SkillItem description={texts.whenWeSendAMessage} icon="chat" title={texts.communityManagement} />
+                                <SkillItem
+                                    description={texts.whenWeSendAMessage}
+                                    icon="chat"
+                                    title={texts.communityManagement}
+                                />
                             </div>
                             <div className="carouselItem">
-                                <SkillItem description={texts.planningAndImplementing} icon="money" title={texts.paidSocialAndSearch} />
+                                <SkillItem
+                                    description={texts.planningAndImplementing}
+                                    icon="money"
+                                    title={texts.paidSocialAndSearch}
+                                />
                             </div>
                             <div className="carouselItem">
-                                <SkillItem description={texts.measuringResults} icon="graph" title={texts.optimizationAndAnalysis} />
+                                <SkillItem
+                                    description={texts.measuringResults}
+                                    icon="graph"
+                                    title={texts.optimizationAndAnalysis}
+                                />
                             </div>
                             <div className="carouselItem">
-                                <SkillItem description={texts.createAttractiveContent} icon="camera" title={texts.contentCreation} />
+                                <SkillItem
+                                    description={texts.createAttractiveContent}
+                                    icon="camera"
+                                    title={texts.contentCreation}
+                                />
                             </div>
                         </NukaCarousel>
                     )}
@@ -97,7 +145,6 @@ const SkillsBlock: FC = () => {
                             text-align: center;
                         }
                     }
-
                 `}
             </style>
         </>

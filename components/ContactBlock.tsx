@@ -7,11 +7,12 @@ import TextShadowBlock from './TextShadowBlock';
 const ContactBlock: FC = () => {
     const { texts } = useContext(TextsContext);
 
-    const {
-        query,
-    } = useRouter();
+    const { query } = useRouter();
     const currentLanguage = query.language?.toString() as Locale;
-    const titleMobile = currentLanguage === 'en' ? `${texts.contactMe1}${texts.contactMe2}t` : `${texts.contactMe1}${texts.contactMe2}${texts.contactMe3}`;
+    const titleMobile =
+        currentLanguage === 'en'
+            ? `${texts.contactMe1}${texts.contactMe2}t`
+            : `${texts.contactMe1}${texts.contactMe2}${texts.contactMe3}`;
 
     return (
         <TextShadowBlock

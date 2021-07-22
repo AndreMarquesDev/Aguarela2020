@@ -11,9 +11,7 @@ import { Locale } from '../../utils/locales';
 import ProjectsListDouble from '../../components/ProjectsListDouble';
 
 const ProjectsPage: NextPage = () => {
-    const {
-        query,
-    } = useRouter();
+    const { query } = useRouter();
 
     const currentLanguage = query.language?.toString() as Locale;
     const translatedPageTitle = getCurrentLanguagetexts(currentLanguage).projects;
@@ -29,11 +27,7 @@ const ProjectsPage: NextPage = () => {
         <NavLinksContext.Provider value={navLinksContext}>
             <Layout>
                 <Head>
-                    <title>
-                        {translatedPageTitle}
-                        {' '}
-                        - Aguarela Digital
-                    </title>
+                    <title>{translatedPageTitle} - Aguarela Digital</title>
                 </Head>
 
                 <ProjectsListDouble />

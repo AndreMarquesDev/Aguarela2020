@@ -9,7 +9,8 @@ const IndexPage: FC = () => {
     const router = useRouter();
     const locale = getInitialLocale(defaultLocale, locales);
     const urlHasLocale = !!getLangFromUrl(locales).length;
-    const redirectToHomepage = (nextRouter: NextRouter, localeString: string): Promise<boolean> => nextRouter.replace(`/${localeString}/${'homepage' as Page}`);
+    const redirectToHomepage = (nextRouter: NextRouter, localeString: string): Promise<boolean> =>
+        nextRouter.replace(`/${localeString}/${'homepage' as Page}`);
 
     useEffect(() => {
         if (!urlHasLocale) {

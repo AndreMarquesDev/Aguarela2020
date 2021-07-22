@@ -7,11 +7,12 @@ import TextShadowBlock from './TextShadowBlock';
 const WelcomeBlock: FC = () => {
     const { texts } = useContext(TextsContext);
 
-    const {
-        query,
-    } = useRouter();
+    const { query } = useRouter();
     const currentLanguage = query.language?.toString() as Locale;
-    const titleMobile = currentLanguage === 'pt' ? `${texts.welcome1}-${texts.welcome2}${texts.welcome3}` : `${texts.welcome1}${texts.welcome2}${texts.welcome3}`;
+    const titleMobile =
+        currentLanguage === 'pt'
+            ? `${texts.welcome1}-${texts.welcome2}${texts.welcome3}`
+            : `${texts.welcome1}${texts.welcome2}${texts.welcome3}`;
 
     return (
         <TextShadowBlock

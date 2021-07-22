@@ -134,10 +134,11 @@ const Workflow: FC = () => {
                                 @include mobile {
                                     width: $blockSizeMobile;
                                     height: $blockSizeMobile;
-                                    margin: 0 ;
+                                    margin: 0;
                                 }
 
-                                &:before, &:after {
+                                &:before,
+                                &:after {
                                     content: '';
                                     width: $blockSize;
                                     height: $blockSize;

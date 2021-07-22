@@ -23,10 +23,7 @@ const LanguageButton: FC = () => {
 
     return (
         <>
-            <button
-                type="button"
-                onClick={(): void => onButtonClick()}
-            >
+            <button type="button" onClick={(): void => onButtonClick()}>
                 {languageToSwitchTo}
             </button>
 

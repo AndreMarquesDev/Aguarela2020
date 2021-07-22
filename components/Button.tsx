@@ -16,13 +16,24 @@ interface ButtonProps {
     onClick?: (event) => void;
 }
 
-const Button: FC<ButtonProps> = ({ children, page, externalLink, alignLeft, isUppercased, isSubmit, disabled, onClick }) => {
-    const {
-        query,
-    } = useRouter();
+const Button: FC<ButtonProps> = ({
+    children,
+    page,
+    externalLink,
+    alignLeft,
+    isUppercased,
+    isSubmit,
+    disabled,
+    onClick,
+}) => {
+    const { query } = useRouter();
 
     const language = query.language?.toString();
-    const buttonBackgroundContainerStyles = classNames('buttonBackground', !alignLeft && 'alignCenter', disabled && 'disabled');
+    const buttonBackgroundContainerStyles = classNames(
+        'buttonBackground',
+        !alignLeft && 'alignCenter',
+        disabled && 'disabled'
+    );
     const buttonStyles = classNames('button', isUppercased && 'uppercase');
 
     return (
@@ -34,16 +45,18 @@ const Button: FC<ButtonProps> = ({ children, page, externalLink, alignLeft, isUp
                             {children}
                         </button>
                     ) : externalLink ? (
-                        <a className={buttonStyles} href={externalLink} rel="noreferrer" target="_blank">
+                        <a
+                            className={buttonStyles}
+                            href={externalLink}
+                            rel="noreferrer"
+                            target="_blank"
+                        >
                             {children}
                         </a>
                     ) : (
                         <Link href={`/${language}/${page}`} prefetch={false}>
-                            <a className={buttonStyles}>
-                                {children}
-                            </a>
+                            <a className={buttonStyles}>{children}</a>
                         </Link>
-
                     )}
                 </div>
             </div>
@@ -76,12 +89,13 @@ const Button: FC<ButtonProps> = ({ children, page, externalLink, alignLeft, isUp
                             }
                         }
 
-                        &:before, &:after {
+                        &:before,
+                        &:after {
                             content: '';
                             width: 100%;
                             height: 100%;
                             position: absolute;
-                            transition: background-color, .2s;
+                            transition: background-color, 0.2s;
                         }
 
                         &:before {

@@ -15,37 +15,43 @@ interface FormValues {
     subject: string;
 }
 
-const formSchema = [{
-    id: FieldTypes.Name,
-    type: 'text',
-    isRequired: true,
-    isInput: true,
-    ariaError: 'nameErrorMessage',
-}, {
-    id: FieldTypes.Brand,
-    type: 'text',
-    isRequired: false,
-    isInput: true,
-    ariaError: null,
-}, {
-    id: FieldTypes.Email,
-    type: 'email',
-    isRequired: true,
-    isInput: true,
-    ariaError: 'emailErrorMessage',
-}, {
-    id: FieldTypes.Subject,
-    type: 'text',
-    isRequired: false,
-    isInput: true,
-    ariaError: null,
-}, {
-    id: FieldTypes.Textarea,
-    type: null,
-    isRequired: true,
-    isInput: false,
-    ariaError: 'messageErrorMessage',
-}];
+const formSchema = [
+    {
+        id: FieldTypes.Name,
+        type: 'text',
+        isRequired: true,
+        isInput: true,
+        ariaError: 'nameErrorMessage',
+    },
+    {
+        id: FieldTypes.Brand,
+        type: 'text',
+        isRequired: false,
+        isInput: true,
+        ariaError: null,
+    },
+    {
+        id: FieldTypes.Email,
+        type: 'email',
+        isRequired: true,
+        isInput: true,
+        ariaError: 'emailErrorMessage',
+    },
+    {
+        id: FieldTypes.Subject,
+        type: 'text',
+        isRequired: false,
+        isInput: true,
+        ariaError: null,
+    },
+    {
+        id: FieldTypes.Textarea,
+        type: null,
+        isRequired: true,
+        isInput: false,
+        ariaError: 'messageErrorMessage',
+    },
+];
 
 const ContactForm: FC = () => {
     const { texts } = useContext(TextsContext);
@@ -89,8 +95,7 @@ const ContactForm: FC = () => {
         });
 
         axios
-            .post('https://aguarela-contact-form-backend.herokuapp.com/api/sendEmail',
-                formState)
+            .post('https://aguarela-contact-form-backend.herokuapp.com/api/sendEmail', formState)
             .then(() => {
                 setFormSubmitState({
                     sending: false,
@@ -104,8 +109,9 @@ const ContactForm: FC = () => {
                     submitted: true,
                     error: true,
                 });
-            }).finally(() => {
-                // eslint-disable-next-line no-use-before-define
+            })
+            .finally(() => {
+                // eslint-disable-next-line @typescript-eslint/no-use-before-define
                 resetForm();
             });
     };
@@ -116,15 +122,8 @@ const ContactForm: FC = () => {
         onSubmit,
     };
 
-    const {
-        handleSubmit,
-        handleChange,
-        handleBlur,
-        handleReset,
-        touched,
-        values,
-        errors,
-    } = useFormik(formikConfig);
+    const { handleSubmit, handleChange, handleBlur, handleReset, touched, values, errors } =
+        useFormik(formikConfig);
 
     const resetForm = (): void => {
         setTimeout(() => {
@@ -159,10 +158,15 @@ const ContactForm: FC = () => {
                             />
                         ))}
 
-                        <Button isSubmit disabled={formSubmitState.sending} onClick={handleSubmit}>{texts.send}</Button>
+                        <Button isSubmit disabled={formSubmitState.sending} onClick={handleSubmit}>
+                            {texts.send}
+                        </Button>
                         {formSubmitState.submitted && (
                             <span
-                                className={classNames('formNotification', formSubmitState.error && 'error')}
+                                className={classNames(
+                                    'formNotification',
+                                    formSubmitState.error && 'error'
+                                )}
                                 // eslint-disable-next-line react/no-danger
                                 dangerouslySetInnerHTML={{
                                     __html: formSubmitState.error

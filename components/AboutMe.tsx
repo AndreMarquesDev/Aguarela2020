@@ -29,7 +29,12 @@ const AboutMe: FC = () => {
                             <p className="bodyText">{texts.hiMyNameIs}</p>
                             <p className="bodyText">{texts.withMoreThan}</p>
                             <p className="bodyText">{texts.thesocialMediaCommunicationStrategy}</p>
-                            <Button alignLeft={isDesktop} externalLink="https://www.instagram.com/catarinasantiago">{texts.getToKnowMeBetter}</Button>
+                            <Button
+                                alignLeft={isDesktop}
+                                externalLink="https://www.instagram.com/catarinasantiago"
+                            >
+                                {texts.getToKnowMeBetter}
+                            </Button>
                         </div>
                     </div>
                 </div>

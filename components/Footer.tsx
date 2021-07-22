@@ -17,21 +17,36 @@ const Footer: FC<FooterProps> = ({ language }) => {
         <>
             <footer>
                 <div className="wrapper">
-
                     <p>
-                        {texts.footerInfo}
-                        {' '}
-                        <a className="animatedLink animatedLinkWhite" href="https://www.andremarquesdev.com" rel="noreferrer" target="_blank">André Marques</a>
+                        {texts.footerInfo}{' '}
+                        <a
+                            className="animatedLink animatedLinkWhite"
+                            href="https://www.andremarquesdev.com"
+                            rel="noreferrer"
+                            target="_blank"
+                        >
+                            André Marques
+                        </a>
                     </p>
 
                     <ul>
                         <li>
-                            <a aria-label="Aguarela instagram" href="https://www.instagram.com/aguareladigital" rel="noreferrer" target="_blank">
+                            <a
+                                aria-label="Aguarela instagram"
+                                href="https://www.instagram.com/aguareladigital"
+                                rel="noreferrer"
+                                target="_blank"
+                            >
                                 <FaInstagram />
                             </a>
                         </li>
                         <li>
-                            <a aria-label="Aguarela facebook" href="https://www.facebook.com/aguareladigitalagency" rel="noreferrer" target="_blank">
+                            <a
+                                aria-label="Aguarela facebook"
+                                href="https://www.facebook.com/aguareladigitalagency"
+                                rel="noreferrer"
+                                target="_blank"
+                            >
                                 <FaFacebookF />
                             </a>
                         </li>
@@ -43,7 +58,6 @@ const Footer: FC<FooterProps> = ({ language }) => {
                             </Link>
                         </li>
                     </ul>
-
                 </div>
             </footer>
 

@@ -15,9 +15,7 @@ interface HeaderProps {
 }
 
 const Header: FC<HeaderProps> = ({ currentRoute, language }) => {
-    const {
-        setNavHeight,
-    } = useContext(NavLinksContext);
+    const { setNavHeight } = useContext(NavLinksContext);
 
     const navRef = useRef(null);
 
@@ -38,12 +36,7 @@ const Header: FC<HeaderProps> = ({ currentRoute, language }) => {
             <nav ref={navRef} className="wrapper">
                 <Link href={`/${language}/${'homepage' as Page}`} prefetch={false}>
                     <a>
-                        <Image
-                            alt="Logo"
-                            height={35}
-                            src="/images/logo.svg"
-                            width={250}
-                        />
+                        <Image alt="Logo" height={35} src="/images/logo.svg" width={250} />
                     </a>
                 </Link>
 

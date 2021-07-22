@@ -90,10 +90,7 @@ const FormField: FC<FormFieldProps> = ({
                         onChange={onChange}
                     />
                 )}
-                <span
-                    className={classNames('errorMessage', hasError && 'visible')}
-                    id={ariaError}
-                >
+                <span className={classNames('errorMessage', hasError && 'visible')} id={ariaError}>
                     {getErrorMessage(id)}
                 </span>
             </div>
@@ -122,7 +119,8 @@ const FormField: FC<FormFieldProps> = ({
                         }
                     }
 
-                    input, textarea {
+                    input,
+                    textarea {
                         width: 100%;
                         background: $purple;
                         border: none;
