@@ -2,4 +2,5 @@
 /.next
 /out
 /coverage
+/build
 ignore-step.sh
