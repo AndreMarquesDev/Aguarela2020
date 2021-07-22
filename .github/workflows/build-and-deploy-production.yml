@@ -1,4 +1,4 @@
-name: production
+name: build-and-deploy-production
 
 on:
   push:
@@ -37,8 +37,9 @@ jobs:
     needs: build
     if: github.ref == 'refs/heads/master'
     steps:
+      - uses: actions/checkout@v2
       - name: Deploy to Vercel
-        run: npx vercel --token ${VERCEL_TOKEN} $prodRun
+        run: npx vercel --token ${VERCEL_TOKEN} --prod
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
