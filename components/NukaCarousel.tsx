@@ -32,7 +32,7 @@ const NukaCarousel: FC<NukaCarouselProps> = ({
         <>
             <Carousel
                 wrapAround
-                cellAlign={cellAlign || 'center'}
+                cellAlign={cellAlign || 'left'}
                 framePadding={framePadding || '0px 30px'}
                 renderBottomCenterControls={null}
                 renderCenterLeftControls={({ previousSlide }): ReactNode => (
