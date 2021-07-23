@@ -1,11 +1,4 @@
 module.exports = {
-    extends: [
-        'andremarquesdev',
-        'plugin:jest/recommended',
-        'plugin:cypress/recommended',
-    ],
-    plugins: [
-        'jest',
-        'cypress',
-    ],
+    extends: ['andremarquesdev', 'plugin:jest/recommended', 'plugin:cypress/recommended'],
+    plugins: ['jest', 'cypress'],
 };

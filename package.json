@@ -10,7 +10,7 @@
         "start": "next start",
         "test": "jest",
         "lint": "tsc --noEmit && eslint . --ext .js,.ts,.tsx && stylelint .",
-        "lint:fix": "tsc --noEmit && eslint . --ext .js,.ts,.tsx --fix && stylelint . --fix"
+        "lint:fix": "tsc --noEmit && eslint . --ext .js,.ts,.tsx --fix && stylelint . --fix",
         "cypress": "cypress open"
     },
     "keywords": [],
