@@ -192,7 +192,7 @@ export const textsPt: TextsInterface = {
     send: 'Enviar',
     messageSentSuccessfully: 'Mensagem enviada com sucesso.',
     thereWasAnErrorSendingTheMessage:
-        'Ocorreu um erro no envio da mensagem. Tente outra vez mais tarde ou entre em contacto através do meu email <a href="mailto:catarina@aguareladigital.pt" class="link">catarina@aguareladigital.pt</a>',
+        'Ocorreu um erro no envio da mensagem. Tente outra vez mais tarde ou entre em contacto através do meu email <a href="mailto:catarina@aguareladigital.com" class="link">catarina@aguareladigital.com</a>',
     pleaseEnterfirstAndLastName:
         'Este campo é obrigatório. Por favor insira o seu primeiro e último nome',
     pleaseEntervalidEmailAddress:
@@ -301,7 +301,7 @@ export const textsEn: TextsInterface = {
     send: 'Send',
     messageSentSuccessfully: 'Message sent successfully.',
     thereWasAnErrorSendingTheMessage:
-        'Thre was an error sending your message. Please try again later ou contact me through my email <a href="mailto:catarina@aguareladigital.pt" class="link">catarina@aguareladigital.pt</a>',
+        'Thre was an error sending your message. Please try again later ou contact me through my email <a href="mailto:catarina@aguareladigital.com" class="link">catarina@aguareladigital.com</a>',
     pleaseEnterfirstAndLastName: 'This field is required. Please enter your first and last name',
     pleaseEntervalidEmailAddress: 'This field is required. Please enter a valid email address',
     pleaseEnterAMessage: 'This field is required. Please enter a message',

@@ -56,9 +56,9 @@ const TextShadowBlock: FC<TextShadowBlockProps> = ({
                             <Button
                                 isUppercased
                                 alignLeft={isDesktop}
-                                externalLink="mailto:catarina@aguareladigital.pt"
+                                externalLink="mailto:catarina@aguareladigital.com"
                             >
-                                catarina@aguareladigital.pt
+                                catarina@aguareladigital.com
                             </Button>
                         )}
                     </div>
