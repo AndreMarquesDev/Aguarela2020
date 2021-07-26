@@ -1,3 +1,4 @@
 module.exports = {
-    extends: ['andremarquesdev'],
+    extends: ['andremarquesdev', 'plugin:jest/recommended'],
+    plugins: ['jest'],
 };

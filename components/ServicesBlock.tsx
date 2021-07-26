@@ -2,7 +2,7 @@ import React, { FC, useContext } from 'react';
 import { useWindowSize, mobileBreakpoint, phabletBreakpoint } from '../utils/useWindowSize';
 import TextsContext from './context/TextsContext';
 import NukaCarousel from './NukaCarousel';
-import Title from './Title';
+import Title from './Title/Title';
 
 const ServicesBlock: FC = () => {
     const { texts } = useContext(TextsContext);

@@ -1,7 +1,7 @@
 import React, { FC, useContext } from 'react';
 import Image from 'next/image';
 import TextsContext from './context/TextsContext';
-import Title from './Title';
+import Title from './Title/Title';
 
 const BrandsList: FC = () => {
     const { texts } = useContext(TextsContext);

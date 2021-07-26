@@ -4,5 +4,6 @@ node_modules
 .next
 .now
 out
-
+coverage
 .vercel
+yarn-error.log
