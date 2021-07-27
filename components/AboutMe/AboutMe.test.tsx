@@ -4,7 +4,7 @@ import { render, screen } from '@testing-library/react';
 import AboutMe from './AboutMe';
 import TextsContext from '../context/TextsContext';
 import { textsEn, textsPt } from '../../utils/texts';
-import { desktopBreakpoint } from '../../utils/useWindowSize';
+import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 
 describe('<AboutMe />', () => {
     test('renders properly', () => {
@@ -42,9 +42,8 @@ describe('<AboutMe />', () => {
     });
 
     test('renders properly in mobile', () => {
-        Object.defineProperty(window, 'innerWidth', {
-            value: desktopBreakpoint - 1,
-        });
+        setJestWindowWidth(true);
+
         const { container } = render(<AboutMe />);
 
         expect(container.getElementsByClassName('alignCenter').length).toBe(1);
