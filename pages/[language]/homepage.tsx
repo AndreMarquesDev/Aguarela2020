@@ -10,7 +10,7 @@ import SkillsBlock from '../../components/SkillsBlock';
 import Workflow from '../../components/Workflow';
 import ProjectsList from '../../components/ProjectsList';
 import LetsWork from '../../components/LetsWork';
-import BrandsList from '../../components/BrandsList';
+import BrandsList from '../../components/BrandsList/BrandsList';
 import { useWindowSize, mobileBreakpoint } from '../../utils/useWindowSize';
 
 const Homepage: NextPage = () => {
