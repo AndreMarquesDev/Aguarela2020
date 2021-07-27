@@ -8,7 +8,7 @@ import NavLinksContext, { NavLinksContextProps } from '../../components/context/
 import BrandsList from '../../components/BrandsList';
 import LetsWork from '../../components/LetsWork';
 import { Locale } from '../../utils/locales';
-import AboutMe from '../../components/AboutMe';
+import AboutMe from '../../components/AboutMe/AboutMe';
 
 const AboutPage: NextPage = () => {
     const { query } = useRouter();

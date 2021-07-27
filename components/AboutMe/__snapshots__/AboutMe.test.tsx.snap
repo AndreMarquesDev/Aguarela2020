@@ -1,0 +1,244 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AboutMe /> renders properly 1`] = `
+<section
+  class="jsx-1128069698 container"
+>
+  <div
+    class="jsx-1128069698 wrapper genericMargins"
+  >
+    <h1
+      class="jsx-3155756322 colored"
+    >
+      Sobre
+    </h1>
+    <div
+      class="jsx-1128069698 mainContentContainer"
+    >
+      <div
+        class="jsx-1128069698 imageBlock"
+      >
+        <div
+          style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+        >
+          <div
+            style="box-sizing: border-box; display: block; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              role="presentation"
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTMwIiBoZWlnaHQ9IjY1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+              style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+            />
+          </div>
+          <img
+            alt="homepage banner"
+            decoding="async"
+            src="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75 2x"
+            style="visibility: inherit; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+        </div>
+      </div>
+      <div
+        class="jsx-1128069698 textBlock"
+      >
+        <p
+          class="jsx-1128069698 bodyText"
+        >
+          Olá! O meu nome é Catarina Santiago e sou gestora de redes sociais e criadora de conteúdo baseada em Lisboa.
+        </p>
+        <p
+          class="jsx-1128069698 bodyText"
+        >
+          Com mais de 3 anos e 18 clientes de experiência, a Aguarela surgiu com a missão de providenciar um serviço premium de gestão de redes sociais e criação de conteúdo a negócios locais e pequenas empresas.
+        </p>
+        <p
+          class="jsx-1128069698 bodyText"
+        >
+          A estratégia de comunicação em redes sociais é sempre desenvolvida com base nos objetivos do cliente. Embora seja importante ser flexível e compreensiva, o meu papel é pensar fora da caixa, criar conteúdo inovador para redes sociais e otimizar a estratégia com base nos resultados. Acredito que uma boa estratégia de comunicação aliada a um planeamento visual de conteúdo é o segredo para o aumento da visibilidade e faturação do negócio.
+        </p>
+        <div
+          class="jsx-781296904 buttonWrapper"
+        >
+          <div
+            class="jsx-781296904 buttonBackground"
+          >
+            <a
+              class="jsx-781296904 button"
+              href="https://www.instagram.com/catarinasantiago"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Conhece-me melhor
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`<AboutMe /> renders properly in English 1`] = `
+<section
+  class="jsx-1128069698 container"
+>
+  <div
+    class="jsx-1128069698 wrapper genericMargins"
+  >
+    <h1
+      class="jsx-3155756322 colored"
+    >
+      About
+    </h1>
+    <div
+      class="jsx-1128069698 mainContentContainer"
+    >
+      <div
+        class="jsx-1128069698 imageBlock"
+      >
+        <div
+          style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+        >
+          <div
+            style="box-sizing: border-box; display: block; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              role="presentation"
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTMwIiBoZWlnaHQ9IjY1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+              style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+            />
+          </div>
+          <img
+            alt="homepage banner"
+            decoding="async"
+            src="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75 2x"
+            style="visibility: inherit; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+        </div>
+      </div>
+      <div
+        class="jsx-1128069698 textBlock"
+      >
+        <p
+          class="jsx-1128069698 bodyText"
+        >
+          Hi! My name is Catarina Santiago and I'm a social media manager and content creator based in Lisbon.
+        </p>
+        <p
+          class="jsx-1128069698 bodyText"
+        >
+          With more than 3 years of experience and 18 clients, Aguarela was created with the mission to provide a premium service of social media management and content creation to local businesses and small companies.
+        </p>
+        <p
+          class="jsx-1128069698 bodyText"
+        >
+          The social media communication strategy is always developed based on the client's goals. Even though it is important to be flexible and comprehensive, my role is to think outside the box, create inovative content and optimize the strategy based on results. I believe that a good communication strategy together with a visual planning of the content is the secret to increase the visibility of the business.
+        </p>
+        <div
+          class="jsx-781296904 buttonWrapper"
+        >
+          <div
+            class="jsx-781296904 buttonBackground"
+          >
+            <a
+              class="jsx-781296904 button"
+              href="https://www.instagram.com/catarinasantiago"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Get to know me better
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`<AboutMe /> renders properly in mobile 1`] = `
+<section
+  class="jsx-1128069698 container"
+>
+  <div
+    class="jsx-1128069698 wrapper genericMargins"
+  >
+    <h1
+      class="jsx-3155756322 colored"
+    >
+      Sobre
+    </h1>
+    <div
+      class="jsx-1128069698 mainContentContainer"
+    >
+      <div
+        class="jsx-1128069698 imageBlock"
+      >
+        <div
+          style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+        >
+          <div
+            style="box-sizing: border-box; display: block; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              role="presentation"
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTMwIiBoZWlnaHQ9IjY1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+              style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+            />
+          </div>
+          <img
+            alt="homepage banner"
+            decoding="async"
+            src="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75 2x"
+            style="visibility: inherit; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+        </div>
+      </div>
+      <div
+        class="jsx-1128069698 textBlock"
+      >
+        <p
+          class="jsx-1128069698 bodyText"
+        >
+          Olá! O meu nome é Catarina Santiago e sou gestora de redes sociais e criadora de conteúdo baseada em Lisboa.
+        </p>
+        <p
+          class="jsx-1128069698 bodyText"
+        >
+          Com mais de 3 anos e 18 clientes de experiência, a Aguarela surgiu com a missão de providenciar um serviço premium de gestão de redes sociais e criação de conteúdo a negócios locais e pequenas empresas.
+        </p>
+        <p
+          class="jsx-1128069698 bodyText"
+        >
+          A estratégia de comunicação em redes sociais é sempre desenvolvida com base nos objetivos do cliente. Embora seja importante ser flexível e compreensiva, o meu papel é pensar fora da caixa, criar conteúdo inovador para redes sociais e otimizar a estratégia com base nos resultados. Acredito que uma boa estratégia de comunicação aliada a um planeamento visual de conteúdo é o segredo para o aumento da visibilidade e faturação do negócio.
+        </p>
+        <div
+          class="jsx-781296904 buttonWrapper"
+        >
+          <div
+            class="jsx-781296904 buttonBackground alignCenter"
+          >
+            <a
+              class="jsx-781296904 button"
+              href="https://www.instagram.com/catarinasantiago"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Conhece-me melhor
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

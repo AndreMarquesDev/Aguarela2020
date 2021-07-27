@@ -1,9 +1,9 @@
 import React, { FC, useContext } from 'react';
 import Image from 'next/image';
-import Button from './Button';
-import TextsContext from './context/TextsContext';
-import Title from './Title/Title';
-import { useWindowSize, desktopBreakpoint } from '../utils/useWindowSize';
+import Button from '../Button';
+import TextsContext from '../context/TextsContext';
+import Title from '../Title/Title';
+import { useWindowSize, desktopBreakpoint } from '../../utils/useWindowSize';
 
 const AboutMe: FC = () => {
     const { texts } = useContext(TextsContext);
