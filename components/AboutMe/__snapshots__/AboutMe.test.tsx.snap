@@ -64,6 +64,7 @@ exports[`<AboutMe /> renders properly 1`] = `
         >
           <div
             class="jsx-781296904 buttonBackground"
+            data-testid="button_container"
           >
             <a
               class="jsx-781296904 button"
@@ -145,6 +146,7 @@ exports[`<AboutMe /> renders properly in English 1`] = `
         >
           <div
             class="jsx-781296904 buttonBackground"
+            data-testid="button_container"
           >
             <a
               class="jsx-781296904 button"
@@ -226,6 +228,7 @@ exports[`<AboutMe /> renders properly in mobile 1`] = `
         >
           <div
             class="jsx-781296904 buttonBackground alignCenter"
+            data-testid="button_container"
           >
             <a
               class="jsx-781296904 button"

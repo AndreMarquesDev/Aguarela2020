@@ -3,9 +3,9 @@ import React, { FC } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import classNames from 'classnames';
-import { Page } from '../utils/pages';
+import { Page } from '../../utils/pages';
 
-interface ButtonProps {
+export interface ButtonProps {
     children: string;
     page?: Page;
     externalLink?: string;
@@ -39,7 +39,7 @@ const Button: FC<ButtonProps> = ({
     return (
         <>
             <div className="buttonWrapper">
-                <div className={buttonBackgroundContainerStyles}>
+                <div className={buttonBackgroundContainerStyles} data-testid="button_container">
                     {isSubmit ? (
                         <button className={buttonStyles} type="submit" onClick={onClick}>
                             {children}
