@@ -1,6 +1,6 @@
 import React, { FC, useContext } from 'react';
 import Image from 'next/image';
-import Button from '../Button';
+import Button from '../Button/Button';
 import TextsContext from '../context/TextsContext';
 import Title from '../Title/Title';
 import { useWindowSize, desktopBreakpoint } from '../../utils/useWindowSize';

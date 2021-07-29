@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { useFormik } from 'formik';
 import React, { FC, useContext, useState } from 'react';
 import { FieldTypes, FormState, validateEmail, validateName } from '../utils/formValidation';
-import Button from './Button';
+import Button from './Button/Button';
 import TextsContext from './context/TextsContext';
 import FormField from './FormField';
 

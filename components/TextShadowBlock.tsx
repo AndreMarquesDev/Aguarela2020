@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { useWindowSize, mobileBreakpoint, desktopBreakpoint } from '../utils/useWindowSize';
-import Button from './Button';
+import Button from './Button/Button';
 
 interface TextShadowBlockProps {
     title1: string;
