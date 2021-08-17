@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
     }
 
     if (process.env.NODE_ENV === 'development') {
-        initializeAxiosMockAdapter();
+        initializeAxiosMockAdapter(1000);
     }
 
     return <Component {...pageProps} />;

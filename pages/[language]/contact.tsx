@@ -7,7 +7,7 @@ import NavLinksContext, { NavLinksContextProps } from '../../components/context/
 import { getCurrentLanguagetexts } from '../../utils/generic';
 import { Locale } from '../../utils/locales';
 import ContactBlock from '../../components/ContactBlock/ContactBlock';
-import ContactForm from '../../components/ContactForm';
+import ContactForm from '../../components/ContactForm/ContactForm';
 
 const ContactPage: NextPage = () => {
     const { query } = useRouter();

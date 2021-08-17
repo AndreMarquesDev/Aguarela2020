@@ -68,6 +68,7 @@ const FormField: FC<FormFieldProps> = ({
                     <input
                         aria-describedby={ariaError}
                         data-error={hasError && isRequired}
+                        data-testid={id}
                         id={id}
                         name={id}
                         required={isRequired}
@@ -81,6 +82,7 @@ const FormField: FC<FormFieldProps> = ({
                     <textarea
                         aria-describedby={ariaError}
                         data-error={hasError && isRequired}
+                        data-testid={id}
                         id={id}
                         name={id}
                         required={isRequired}
@@ -90,7 +92,11 @@ const FormField: FC<FormFieldProps> = ({
                         onChange={onChange}
                     />
                 )}
-                <span className={classNames('errorMessage', hasError && 'visible')} id={ariaError}>
+                <span
+                    className={classNames('errorMessage', hasError && 'visible')}
+                    data-testid={`errorMessage_${hasError ? 'visible' : 'hidden'}`}
+                    id={ariaError}
+                >
                     {getErrorMessage(id)}
                 </span>
             </div>
