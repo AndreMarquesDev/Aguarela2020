@@ -4,5 +4,6 @@
 /public
 /*.json
 /styles/_reset.scss
-/coverage/*
 **/*.sh
+/coverage/*
+/utils/jest/*

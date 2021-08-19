@@ -11,24 +11,30 @@ const baseProps: TitleProps = {
 
 describe('<Title />', () => {
     test('renders properly', () => {
-        const { container } = render(<Title {...baseProps} />);
+        render(<Title {...baseProps} />);
 
-        expect(screen.getByText(baseProps.text)).toBeInTheDocument();
-        expect(container.firstChild).toMatchSnapshot();
+        const h1Element = screen.getByText(baseProps.text);
+
+        expect(h1Element).toBeInTheDocument();
+        expect(h1Element).toMatchSnapshot();
     });
 
     test('renders properly with the colored class', () => {
-        const { container } = render(<Title {...baseProps} colored />);
+        render(<Title {...baseProps} colored />);
 
-        expect(screen.getByText(baseProps.text)).toBeInTheDocument();
-        expect(container.firstChild).toHaveClass('colored');
-        expect(container.firstChild).toMatchSnapshot();
+        const h1Element = screen.getByText(baseProps.text);
+
+        expect(h1Element).toBeInTheDocument();
+        expect(h1Element).toHaveClass('colored');
+        expect(h1Element).toMatchSnapshot();
     });
 
     test('renders properly with a custom margin-bottom', () => {
-        const { container } = render(<Title {...baseProps} marginBottom={100} />);
+        render(<Title {...baseProps} marginBottom={100} />);
 
-        expect(screen.getByText(baseProps.text)).toBeInTheDocument();
-        expect(container.firstChild).toMatchSnapshot();
+        const h1Element = screen.getByText(baseProps.text);
+
+        expect(h1Element).toBeInTheDocument();
+        expect(h1Element).toMatchSnapshot();
     });
 });
