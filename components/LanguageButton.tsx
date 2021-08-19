@@ -23,7 +23,7 @@ const LanguageButton: FC = () => {
 
     return (
         <>
-            <button type="button" onClick={(): void => onButtonClick()}>
+            <button suppressHydrationWarning type="button" onClick={onButtonClick}>
                 {languageToSwitchTo}
             </button>
 

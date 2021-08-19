@@ -5,7 +5,7 @@ import Image from 'next/image';
 import NavLinksContext from './context/NavLinksContext';
 import NavLinks from './NavLinks';
 import { Page } from '../utils/pages';
-import { useWindowSize, tabletBreakpoint } from '../utils/useWindowSize';
+import { useWindowSize, tabletBreakpoint, phabletBreakpoint } from '../utils/useWindowSize';
 import MenuIcon from './MenuIcon';
 import { Locale } from '../utils/locales';
 
@@ -30,13 +30,16 @@ const Header: FC<HeaderProps> = ({ currentRoute, language }) => {
 
     const windowSize = useWindowSize();
     const isDesktop = windowSize.width > tabletBreakpoint;
+    const isPhablet = windowSize.width < phabletBreakpoint;
+
+    const logoWidth = isPhablet ? 150 : 250;
 
     return (
         <header>
             <nav ref={navRef} className="wrapper">
                 <Link href={`/${language}/${'homepage' as Page}`} prefetch={false}>
                     <a>
-                        <Image alt="Logo" height={35} src="/images/logo.svg" width={250} />
+                        <Image alt="Logo" height={35} src="/images/logo.svg" width={logoWidth} />
                     </a>
                 </Link>
 

@@ -51,7 +51,7 @@ const NavLinks: FC<NavLinksProps> = ({ currentRoute, language, isMobile, isMenuO
 
                             li {
                                 a {
-                                    @include fontS($white, uppercase);
+                                    color: $white;
                                     margin-bottom: 25rem;
                                 }
                             }
@@ -88,10 +88,6 @@ const NavLinks: FC<NavLinksProps> = ({ currentRoute, language, isMobile, isMenuO
                             display: inline-block;
                             @include fontS($textTransform: uppercase);
                             transition: color 0.15s linear;
-
-                            @include phablet {
-                                @include fontXS($textTransform: uppercase);
-                            }
                         }
 
                         &.languageButton {
