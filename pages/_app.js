@@ -4,6 +4,7 @@ import '../styles/main.scss';
 import Cookies from 'js-cookie';
 import { getInitialLocale } from 'multilingual-url/lib';
 import { defaultLocale, locales } from '../utils/locales';
+import { initializeAxiosMockAdapter } from '../ajax/axiosMockAdapter';
 
 function MyApp({ Component, pageProps }) {
     const hasLangCookie = Cookies.get('lang');
@@ -19,6 +20,10 @@ function MyApp({ Component, pageProps }) {
 
     if (hasDocument) {
         document.querySelector('html').lang = locale; // eslint-disable-line no-undef
+    }
+
+    if (process.env.NODE_ENV === 'development') {
+        initializeAxiosMockAdapter();
     }
 
     return <Component {...pageProps} />;
