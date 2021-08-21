@@ -84,12 +84,11 @@ class MyDocument extends Document {
                         name="pinterest"
                     />
 
+                    <link href="https://fonts.googleapis.com" rel="preconnect" />
+                    <link crossOrigin="true" href="https://fonts.gstatic.com" rel="preconnect" />
                     <link
-                        as="font"
-                        crossOrigin="true"
                         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap"
-                        rel="preload"
-                        type="font/ttf"
+                        rel="stylesheet"
                     />
                     <link href="/images/logo.svg" rel="shortcut icon" type="image/x-icon" />
                 </Head>
