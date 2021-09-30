@@ -16,8 +16,9 @@ describe('<AboutMe />', () => {
         expect(screen.getByText(textsPt.thesocialMediaCommunicationStrategy)).toBeInTheDocument();
         expect(screen.getByText(textsPt.getToKnowMeBetter)).toBeInTheDocument();
 
+        // eslint-disable-next-line testing-library/no-container, testing-library/no-node-access
         expect(container.getElementsByClassName('alignCenter').length).toBe(0);
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
     });
 
     test('renders properly in English', () => {
@@ -37,8 +38,9 @@ describe('<AboutMe />', () => {
         expect(screen.getByText(textsEn.thesocialMediaCommunicationStrategy)).toBeInTheDocument();
         expect(screen.getByText(textsEn.getToKnowMeBetter)).toBeInTheDocument();
 
+        // eslint-disable-next-line testing-library/no-container, testing-library/no-node-access
         expect(container.getElementsByClassName('alignCenter').length).toBe(0);
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
     });
 
     test('renders properly in mobile', () => {
@@ -46,7 +48,8 @@ describe('<AboutMe />', () => {
 
         const { container } = render(<AboutMe />);
 
+        // eslint-disable-next-line testing-library/no-container, testing-library/no-node-access
         expect(container.getElementsByClassName('alignCenter').length).toBe(1);
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
     });
 });

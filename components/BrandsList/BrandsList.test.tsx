@@ -11,7 +11,7 @@ describe('<BrandsList />', () => {
 
         expect(screen.getByText(textsPt.myNetwork)).toBeInTheDocument();
 
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
     });
 
     test('renders properly in English', () => {
@@ -27,6 +27,6 @@ describe('<BrandsList />', () => {
 
         expect(screen.getByText(textsEn.myNetwork)).toBeInTheDocument();
 
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
     });
 });

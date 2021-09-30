@@ -154,7 +154,6 @@ exports[`<ContactForm /> displays error messages in required fields on submit wi
       >
         <div
           class="jsx-781296904 buttonBackground alignCenter"
-          data-testid="button_container"
         >
           <button
             class="jsx-781296904 button"
@@ -325,7 +324,6 @@ exports[`<ContactForm /> lets fields be properly filled 1`] = `
       >
         <div
           class="jsx-781296904 buttonBackground alignCenter"
-          data-testid="button_container"
         >
           <button
             class="jsx-781296904 button"
@@ -494,7 +492,6 @@ exports[`<ContactForm /> renders properly 1`] = `
       >
         <div
           class="jsx-781296904 buttonBackground alignCenter"
-          data-testid="button_container"
         >
           <button
             class="jsx-781296904 button"
@@ -663,7 +660,6 @@ exports[`<ContactForm /> renders properly in English 1`] = `
       >
         <div
           class="jsx-781296904 buttonBackground alignCenter"
-          data-testid="button_container"
         >
           <button
             class="jsx-781296904 button"
@@ -832,7 +828,6 @@ exports[`<ContactForm /> resets the form after it was successfully submitted 1`]
       >
         <div
           class="jsx-781296904 buttonBackground alignCenter"
-          data-testid="button_container"
         >
           <button
             class="jsx-781296904 button"
@@ -1003,7 +998,6 @@ exports[`<ContactForm /> shows an error message in case the POST request fails 1
       >
         <div
           class="jsx-781296904 buttonBackground alignCenter"
-          data-testid="button_container"
         >
           <button
             class="jsx-781296904 button"
@@ -1186,7 +1180,6 @@ exports[`<ContactForm /> submits the form successfully 1`] = `
       >
         <div
           class="jsx-781296904 buttonBackground alignCenter"
-          data-testid="button_container"
         >
           <button
             class="jsx-781296904 button"

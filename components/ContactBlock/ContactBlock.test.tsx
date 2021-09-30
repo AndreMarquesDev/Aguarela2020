@@ -26,7 +26,7 @@ describe('<ContactBlock />', () => {
         expect(screen.getByText(textsPt.sendMeAnEmail)).toBeInTheDocument();
         expect(screen.getByText(textsPt.iAmAvailableToAdvise)).toBeInTheDocument();
 
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
     });
 
     test('renders properly on mobile', () => {
@@ -44,7 +44,7 @@ describe('<ContactBlock />', () => {
         expect(screen.getByText(textsPt.sendMeAnEmail)).toBeInTheDocument();
         expect(screen.getByText(textsPt.iAmAvailableToAdvise)).toBeInTheDocument();
 
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
     });
 
     test('renders properly in English', () => {
@@ -67,7 +67,7 @@ describe('<ContactBlock />', () => {
         expect(screen.getByText(textsEn.sendMeAnEmail)).toBeInTheDocument();
         expect(screen.getByText(textsEn.iAmAvailableToAdvise)).toBeInTheDocument();
 
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
     });
 
     test('renders properly in English and mobile', () => {
@@ -97,6 +97,6 @@ describe('<ContactBlock />', () => {
         expect(screen.getByText(textsEn.sendMeAnEmail)).toBeInTheDocument();
         expect(screen.getByText(textsEn.iAmAvailableToAdvise)).toBeInTheDocument();
 
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
     });
 });
