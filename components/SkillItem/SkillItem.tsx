@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import Image from 'next/image';
 
-interface SkillItemProps {
+export interface SkillItemProps {
     icon: string;
     title: string;
     description: string;

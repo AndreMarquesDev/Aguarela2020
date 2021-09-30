@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SkillItem /> renders properly 1`] = `
+<div>
+  <div
+    style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 160px; height: 130px;"
+  >
+    <img
+      alt="Título"
+      class="imageOpacity"
+      decoding="async"
+      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+    />
+  </div>
+  <strong
+    class="jsx-1484428706"
+  >
+    Título
+  </strong>
+  <p
+    class="jsx-1484428706"
+  >
+    Descrição
+  </p>
+</div>
+`;
