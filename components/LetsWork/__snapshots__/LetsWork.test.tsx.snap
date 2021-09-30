@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LetsWork /> renders properly 1`] = `
+<div>
+  <section
+    class="jsx-2032054637 container"
+  >
+    <div
+      class="jsx-2032054637 wrapper genericMargins"
+    >
+      <h1
+        class="jsx-3155756322 "
+      >
+        Vamos trabalhar juntos!
+      </h1>
+      <p
+        class="jsx-2032054637 bodyText bodyText--white"
+      >
+        Precisa de ajuda com as redes sociais e marketing digital da sua marca ou negócio? Envie-me um email e vamos conversar. Estou disponível para ajudar a posicionar a sua marca no mundo digital.
+      </p>
+      <div
+        class="jsx-781296904 buttonWrapper"
+      >
+        <div
+          class="jsx-781296904 buttonBackground alignCenter"
+        >
+          <a
+            class="jsx-781296904 button"
+            href="/pt/contact"
+          >
+            Contacto
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`<LetsWork /> renders properly in English 1`] = `
+<div>
+  <section
+    class="jsx-2032054637 container"
+  >
+    <div
+      class="jsx-2032054637 wrapper genericMargins"
+    >
+      <h1
+        class="jsx-3155756322 "
+      >
+        Let's work together!
+      </h1>
+      <p
+        class="jsx-2032054637 bodyText bodyText--white"
+      >
+        Need help with digital marketing and the social media of your brand or business? Send me an email and let's talk. I'm available to help position your brand in the digital world.
+      </p>
+      <div
+        class="jsx-781296904 buttonWrapper"
+      >
+        <div
+          class="jsx-781296904 buttonBackground alignCenter"
+        >
+          <a
+            class="jsx-781296904 button"
+            href="/pt/contact"
+          >
+            Contact
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

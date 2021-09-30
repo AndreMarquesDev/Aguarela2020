@@ -6,7 +6,7 @@ import Layout from '../../components/Layout';
 import NavLinksContext, { NavLinksContextProps } from '../../components/context/NavLinksContext';
 import { getCurrentLanguagetexts } from '../../utils/generic';
 import BrandsList from '../../components/BrandsList/BrandsList';
-import LetsWork from '../../components/LetsWork';
+import LetsWork from '../../components/LetsWork/LetsWork';
 import { Locale } from '../../utils/locales';
 import ProjectsListDouble from '../../components/ProjectsListDouble';
 

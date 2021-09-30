@@ -1,7 +1,7 @@
 import React, { FC, useContext } from 'react';
-import Button from './Button/Button';
-import TextsContext from './context/TextsContext';
-import Title from './Title/Title';
+import Button from '../Button/Button';
+import TextsContext from '../context/TextsContext';
+import Title from '../Title/Title';
 
 const LetsWork: FC = () => {
     const { texts } = useContext(TextsContext);
