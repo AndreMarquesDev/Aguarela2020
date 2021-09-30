@@ -1,1229 +1,1233 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BrandsList /> renders properly 1`] = `
-<section
-  class="jsx-1373660134 container"
->
-  <div
-    class="jsx-1373660134 wrapper genericMargins"
+<div>
+  <section
+    class="jsx-1373660134 container"
   >
-    <h1
-      class="jsx-3155756322 colored"
+    <div
+      class="jsx-1373660134 wrapper genericMargins"
     >
-      A minha rede
-    </h1>
-    <ul
-      class="jsx-1373660134"
-    >
-      <li
+      <h1
+        class="jsx-3155756322 colored"
+      >
+        A minha rede
+      </h1>
+      <ul
         class="jsx-1373660134"
       >
-        <a
-          aria-label="avocado"
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/avocadohouselisbon"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="avocado"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/avocadohouselisbon"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="avocado logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="avocado logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="pernod"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.pernod-ricard.com"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="pernod"
+            class="jsx-1373660134"
+            href="https://www.pernod-ricard.com"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="pernod logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="pernod logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="tjela"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/tudonatjela"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="tjela"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/tudonatjela"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="tjela logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="tjela logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="guacamole"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/guacamolegmg"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="guacamole"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/guacamolegmg"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="guacamole logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="guacamole logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="kaffeehaus"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/kaffeehaus_lisboa"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="kaffeehaus"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/kaffeehaus_lisboa"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="kaffeehaus logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="kaffeehaus logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="taste of india"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/tasteofindiapt"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="taste of india"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/tasteofindiapt"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="taste of india logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="taste of india logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="icecream roll"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/icecreamroll.pt"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="icecream roll"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/icecreamroll.pt"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="icecream roll logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="icecream roll logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="marialimao"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/bebemarialimao"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="marialimao"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/bebemarialimao"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="marialimao logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="marialimao logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="biergarten"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/biergarten.jardimdacerveja"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="biergarten"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/biergarten.jardimdacerveja"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="biergarten logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="biergarten logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="trattoria"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/trattoriadipaola"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="trattoria"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/trattoriadipaola"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="trattoria logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="trattoria logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="a amiga esteticista"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/aamigaesteticista"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="a amiga esteticista"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/aamigaesteticista"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="a amiga esteticista logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="a amiga esteticista logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="rice me deli"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/ricemedeli"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="rice me deli"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/ricemedeli"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="rice me deli logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="rice me deli logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="4 patas de 5 estrelas"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://instagram.com/4patasde5estrelas"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="4 patas de 5 estrelas"
+            class="jsx-1373660134"
+            href="https://instagram.com/4patasde5estrelas"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="4 patas de 5 estrelas logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="4 patas de 5 estrelas logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="rice me"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/ricemerestaurante"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="rice me"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/ricemerestaurante"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="rice me logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="rice me logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="luminous"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/becomeluminouscoaching"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="luminous"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/becomeluminouscoaching"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="luminous logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="luminous logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="mad mary"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/madmarycuisine"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="mad mary"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/madmarycuisine"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="mad mary logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="mad mary logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="harpoon"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.linkedin.com/company/harpoon-lda"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="harpoon"
+            class="jsx-1373660134"
+            href="https://www.linkedin.com/company/harpoon-lda"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="harpoon logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="harpoon logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="bovine"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/bovinelisboa"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="bovine"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/bovinelisboa"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="bovine logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="bovine logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-    </ul>
-  </div>
-</section>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
 `;
 
 exports[`<BrandsList /> renders properly in English 1`] = `
-<section
-  class="jsx-1373660134 container"
->
-  <div
-    class="jsx-1373660134 wrapper genericMargins"
+<div>
+  <section
+    class="jsx-1373660134 container"
   >
-    <h1
-      class="jsx-3155756322 colored"
+    <div
+      class="jsx-1373660134 wrapper genericMargins"
     >
-      My network
-    </h1>
-    <ul
-      class="jsx-1373660134"
-    >
-      <li
+      <h1
+        class="jsx-3155756322 colored"
+      >
+        My network
+      </h1>
+      <ul
         class="jsx-1373660134"
       >
-        <a
-          aria-label="avocado"
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/avocadohouselisbon"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="avocado"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/avocadohouselisbon"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="avocado logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="avocado logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="pernod"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.pernod-ricard.com"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="pernod"
+            class="jsx-1373660134"
+            href="https://www.pernod-ricard.com"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="pernod logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="pernod logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="tjela"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/tudonatjela"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="tjela"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/tudonatjela"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="tjela logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="tjela logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="guacamole"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/guacamolegmg"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="guacamole"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/guacamolegmg"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="guacamole logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="guacamole logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="kaffeehaus"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/kaffeehaus_lisboa"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="kaffeehaus"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/kaffeehaus_lisboa"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="kaffeehaus logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="kaffeehaus logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="taste of india"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/tasteofindiapt"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="taste of india"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/tasteofindiapt"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="taste of india logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="taste of india logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="icecream roll"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/icecreamroll.pt"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="icecream roll"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/icecreamroll.pt"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="icecream roll logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="icecream roll logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="marialimao"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/bebemarialimao"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="marialimao"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/bebemarialimao"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="marialimao logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="marialimao logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="biergarten"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/biergarten.jardimdacerveja"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="biergarten"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/biergarten.jardimdacerveja"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="biergarten logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="biergarten logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="trattoria"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/trattoriadipaola"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="trattoria"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/trattoriadipaola"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="trattoria logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="trattoria logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="a amiga esteticista"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/aamigaesteticista"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="a amiga esteticista"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/aamigaesteticista"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="a amiga esteticista logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="a amiga esteticista logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="rice me deli"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/ricemedeli"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="rice me deli"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/ricemedeli"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="rice me deli logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="rice me deli logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="4 patas de 5 estrelas"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://instagram.com/4patasde5estrelas"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="4 patas de 5 estrelas"
+            class="jsx-1373660134"
+            href="https://instagram.com/4patasde5estrelas"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="4 patas de 5 estrelas logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="4 patas de 5 estrelas logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="rice me"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/ricemerestaurante"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="rice me"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/ricemerestaurante"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="rice me logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="rice me logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="luminous"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/becomeluminouscoaching"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="luminous"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/becomeluminouscoaching"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="luminous logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="luminous logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="mad mary"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/madmarycuisine"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="mad mary"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/madmarycuisine"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="mad mary logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="mad mary logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="harpoon"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.linkedin.com/company/harpoon-lda"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="harpoon"
+            class="jsx-1373660134"
+            href="https://www.linkedin.com/company/harpoon-lda"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="harpoon logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="harpoon logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-      <li
-        class="jsx-1373660134"
-      >
-        <a
-          aria-label="bovine"
+          </a>
+        </li>
+        <li
           class="jsx-1373660134"
-          href="https://www.instagram.com/bovinelisboa"
-          rel="noreferrer"
-          target="_blank"
         >
-          <div
-            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          <a
+            aria-label="bovine"
+            class="jsx-1373660134"
+            href="https://www.instagram.com/bovinelisboa"
+            rel="noreferrer"
+            target="_blank"
           >
             <div
-              style="box-sizing: border-box; display: block; max-width: 100%;"
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
             >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
               <img
-                alt=""
-                aria-hidden="true"
-                role="presentation"
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                alt="bovine logo"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
             </div>
-            <img
-              alt="bovine logo"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </div>
-        </a>
-      </li>
-    </ul>
-  </div>
-</section>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
 `;

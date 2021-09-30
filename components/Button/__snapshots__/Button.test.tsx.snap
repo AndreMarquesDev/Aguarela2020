@@ -1,77 +1,81 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Button /> renders properly 1`] = `
-<div
-  class="jsx-781296904 buttonWrapper"
->
+<div>
   <div
-    class="jsx-781296904 buttonBackground alignCenter"
-    data-testid="button_container"
+    class="jsx-781296904 buttonWrapper"
   >
-    <a
-      class="jsx-781296904 button"
-      href="https://www.google.com"
-      rel="noreferrer"
-      target="_blank"
+    <div
+      class="jsx-781296904 buttonBackground alignCenter"
     >
-      Texto dentro do botão
-    </a>
+      <a
+        class="jsx-781296904 button"
+        href="https://www.google.com"
+        rel="noreferrer"
+        target="_blank"
+      >
+        Texto dentro do botão
+      </a>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<Button /> renders properly as a submit button 1`] = `
-<div
-  class="jsx-781296904 buttonWrapper"
->
+<div>
   <div
-    class="jsx-781296904 buttonBackground alignCenter"
-    data-testid="button_container"
+    class="jsx-781296904 buttonWrapper"
   >
-    <button
-      class="jsx-781296904 button"
-      type="submit"
+    <div
+      class="jsx-781296904 buttonBackground alignCenter"
     >
-      Texto dentro do botão
-    </button>
+      <button
+        class="jsx-781296904 button"
+        type="submit"
+      >
+        Texto dentro do botão
+      </button>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<Button /> renders properly when disabled, uppercased and aligned left 1`] = `
-<div
-  class="jsx-781296904 buttonWrapper"
->
+<div>
   <div
-    class="jsx-781296904 buttonBackground disabled"
-    data-testid="button_container"
+    class="jsx-781296904 buttonWrapper"
   >
-    <a
-      class="jsx-781296904 button uppercase"
-      href="https://www.google.com"
-      rel="noreferrer"
-      target="_blank"
+    <div
+      class="jsx-781296904 buttonBackground disabled"
     >
-      Texto dentro do botão
-    </a>
+      <a
+        class="jsx-781296904 button uppercase"
+        href="https://www.google.com"
+        rel="noreferrer"
+        target="_blank"
+      >
+        Texto dentro do botão
+      </a>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<Button /> renders properly without an external link 1`] = `
-<div
-  class="jsx-781296904 buttonWrapper"
->
+<div>
   <div
-    class="jsx-781296904 buttonBackground alignCenter"
-    data-testid="button_container"
+    class="jsx-781296904 buttonWrapper"
   >
-    <a
-      class="jsx-781296904 button"
-      href="/pt/projects"
+    <div
+      class="jsx-781296904 buttonBackground alignCenter"
     >
-      Texto dentro do botão
-    </a>
+      <a
+        class="jsx-781296904 button"
+        href="/pt/projects"
+      >
+        Texto dentro do botão
+      </a>
+    </div>
   </div>
 </div>
 `;

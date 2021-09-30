@@ -39,7 +39,7 @@ const Button: FC<ButtonProps> = ({
     return (
         <>
             <div className="buttonWrapper">
-                <div className={buttonBackgroundContainerStyles} data-testid="button_container">
+                <div className={buttonBackgroundContainerStyles}>
                     {isSubmit ? (
                         <button className={buttonStyles} type="submit" onClick={onClick}>
                             {children}
