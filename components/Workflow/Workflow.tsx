@@ -1,6 +1,6 @@
 import React, { FC, useContext } from 'react';
-import TextsContext from './context/TextsContext';
-import Title from './Title/Title';
+import TextsContext from '../context/TextsContext';
+import Title from '../Title/Title';
 
 const Workflow: FC = () => {
     const { texts } = useContext(TextsContext);
