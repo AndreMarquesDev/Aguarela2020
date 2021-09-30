@@ -3,7 +3,7 @@ import TextsContext from './context/TextsContext';
 import Title from './Title/Title';
 import { mobileBreakpoint, tabletBreakpoint, useWindowSize } from '../utils/useWindowSize';
 import NukaCarousel from './NukaCarousel';
-import SkillItem from './SkillItem';
+import SkillItem from './SkillItem/SkillItem';
 
 const SkillsBlock: FC = () => {
     const { texts } = useContext(TextsContext);
