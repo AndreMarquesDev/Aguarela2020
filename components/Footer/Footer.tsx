@@ -2,11 +2,11 @@
 import React, { FC, useContext } from 'react';
 import Link from 'next/link';
 import { FaInstagram, FaFacebookF, FaEnvelope } from 'react-icons/fa';
-import TextsContext from './context/TextsContext';
-import { Page } from '../utils/pages';
-import { Locale } from '../utils/locales';
+import TextsContext from '../context/TextsContext';
+import { Page } from '../../utils/pages';
+import { Locale } from '../../utils/locales';
 
-interface FooterProps {
+export interface FooterProps {
     language: Locale;
 }
 

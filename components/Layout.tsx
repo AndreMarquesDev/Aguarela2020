@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import Header from './Header';
 import TextsContext from './context/TextsContext';
 import { textsEn, textsPt } from '../utils/texts';
-import Footer from './Footer';
+import Footer from './Footer/Footer';
 import { Locale } from '../utils/locales';
 import NavLinksContext from './context/NavLinksContext';
 import { useWindowSize, tabletBreakpoint } from '../utils/useWindowSize';
