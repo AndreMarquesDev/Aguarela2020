@@ -1,0 +1,367 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Workflow /> renders properly 1`] = `
+<div>
+  <section
+    class="jsx-3904647779 container"
+  >
+    <div
+      class="jsx-3904647779 wrapper genericMargins"
+    >
+      <h1
+        class="jsx-3155756322 "
+      >
+        Workflow
+      </h1>
+      <ul
+        class="jsx-3904647779"
+      >
+        <li
+          class="jsx-3904647779"
+        >
+          <p
+            class="jsx-3904647779"
+          >
+            1.
+          </p>
+          <p
+            class="jsx-3904647779"
+          >
+            Definir target
+          </p>
+          <div
+            class="jsx-3904647779 backface"
+          >
+            <p
+              class="jsx-3904647779"
+            >
+              Quem é o público-alvo da marca
+            </p>
+          </div>
+        </li>
+        <li
+          class="jsx-3904647779"
+        >
+          <p
+            class="jsx-3904647779"
+          >
+            2.
+          </p>
+          <p
+            class="jsx-3904647779"
+          >
+            Definir objetivos
+          </p>
+          <div
+            class="jsx-3904647779 backface"
+          >
+            <p
+              class="jsx-3904647779"
+            >
+              Quais são os objetivos de negócio e comunicação
+            </p>
+          </div>
+        </li>
+        <li
+          class="jsx-3904647779"
+        >
+          <p
+            class="jsx-3904647779"
+          >
+            3.
+          </p>
+          <p
+            class="jsx-3904647779"
+          >
+            Estratégia de plataformas
+          </p>
+          <div
+            class="jsx-3904647779 backface"
+          >
+            <p
+              class="jsx-3904647779"
+            >
+              Quais as plataformas onde a marca deve estar presente
+            </p>
+          </div>
+        </li>
+        <li
+          class="jsx-3904647779"
+        >
+          <p
+            class="jsx-3904647779"
+          >
+            4.
+          </p>
+          <p
+            class="jsx-3904647779"
+          >
+            Criação de Conteúdo
+          </p>
+          <div
+            class="jsx-3904647779 backface"
+          >
+            <p
+              class="jsx-3904647779"
+            >
+              Criação de conteúdo relevante e de qualidade para o target
+            </p>
+          </div>
+        </li>
+        <li
+          class="jsx-3904647779"
+        >
+          <p
+            class="jsx-3904647779"
+          >
+            5.
+          </p>
+          <p
+            class="jsx-3904647779"
+          >
+            Paid social & influencers
+          </p>
+          <div
+            class="jsx-3904647779 backface"
+          >
+            <p
+              class="jsx-3904647779"
+            >
+              Promoção de posts e colaborações com influencers
+            </p>
+          </div>
+        </li>
+        <li
+          class="jsx-3904647779"
+        >
+          <p
+            class="jsx-3904647779"
+          >
+            6.
+          </p>
+          <p
+            class="jsx-3904647779"
+          >
+            Insights e reports
+          </p>
+          <div
+            class="jsx-3904647779 backface"
+          >
+            <p
+              class="jsx-3904647779"
+            >
+              Análises detalhadas e identificação de insights
+            </p>
+          </div>
+        </li>
+        <li
+          class="jsx-3904647779"
+        >
+          <p
+            class="jsx-3904647779"
+          >
+            7.
+          </p>
+          <p
+            class="jsx-3904647779"
+          >
+            Otimização
+          </p>
+          <div
+            class="jsx-3904647779 backface"
+          >
+            <p
+              class="jsx-3904647779"
+            >
+              Melhorias e updates à estratégia
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`<Workflow /> renders properly in English 1`] = `
+<div>
+  <section
+    class="jsx-3904647779 container"
+  >
+    <div
+      class="jsx-3904647779 wrapper genericMargins"
+    >
+      <h1
+        class="jsx-3155756322 "
+      >
+        Workflow
+      </h1>
+      <ul
+        class="jsx-3904647779"
+      >
+        <li
+          class="jsx-3904647779"
+        >
+          <p
+            class="jsx-3904647779"
+          >
+            1.
+          </p>
+          <p
+            class="jsx-3904647779"
+          >
+            Set the target
+          </p>
+          <div
+            class="jsx-3904647779 backface"
+          >
+            <p
+              class="jsx-3904647779"
+            >
+              What's the target
+            </p>
+          </div>
+        </li>
+        <li
+          class="jsx-3904647779"
+        >
+          <p
+            class="jsx-3904647779"
+          >
+            2.
+          </p>
+          <p
+            class="jsx-3904647779"
+          >
+            Set goals
+          </p>
+          <div
+            class="jsx-3904647779 backface"
+          >
+            <p
+              class="jsx-3904647779"
+            >
+              What are the business and communication goals
+            </p>
+          </div>
+        </li>
+        <li
+          class="jsx-3904647779"
+        >
+          <p
+            class="jsx-3904647779"
+          >
+            3.
+          </p>
+          <p
+            class="jsx-3904647779"
+          >
+            Platforms strategies
+          </p>
+          <div
+            class="jsx-3904647779 backface"
+          >
+            <p
+              class="jsx-3904647779"
+            >
+              In what platforms should the brand be present
+            </p>
+          </div>
+        </li>
+        <li
+          class="jsx-3904647779"
+        >
+          <p
+            class="jsx-3904647779"
+          >
+            4.
+          </p>
+          <p
+            class="jsx-3904647779"
+          >
+            Content creation
+          </p>
+          <div
+            class="jsx-3904647779 backface"
+          >
+            <p
+              class="jsx-3904647779"
+            >
+              Relevant and quality content created for the target
+            </p>
+          </div>
+        </li>
+        <li
+          class="jsx-3904647779"
+        >
+          <p
+            class="jsx-3904647779"
+          >
+            5.
+          </p>
+          <p
+            class="jsx-3904647779"
+          >
+            Paid social & influencers
+          </p>
+          <div
+            class="jsx-3904647779 backface"
+          >
+            <p
+              class="jsx-3904647779"
+            >
+              Promoted posts and collaborations with influencers
+            </p>
+          </div>
+        </li>
+        <li
+          class="jsx-3904647779"
+        >
+          <p
+            class="jsx-3904647779"
+          >
+            6.
+          </p>
+          <p
+            class="jsx-3904647779"
+          >
+            Insights and reports
+          </p>
+          <div
+            class="jsx-3904647779 backface"
+          >
+            <p
+              class="jsx-3904647779"
+            >
+              Detailed analysis and insights' finding
+            </p>
+          </div>
+        </li>
+        <li
+          class="jsx-3904647779"
+        >
+          <p
+            class="jsx-3904647779"
+          >
+            7.
+          </p>
+          <p
+            class="jsx-3904647779"
+          >
+            Optimization
+          </p>
+          <div
+            class="jsx-3904647779 backface"
+          >
+            <p
+              class="jsx-3904647779"
+            >
+              Strategy updates and improvements
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+`;
