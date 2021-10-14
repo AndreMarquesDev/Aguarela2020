@@ -261,7 +261,7 @@ export const textsEn: TextsInterface = {
     withMoreThan:
         'With more than 3 years of experience and 18 clients, Aguarela was created with the mission to provide a premium service of social media management and content creation to local businesses and small companies.',
     thesocialMediaCommunicationStrategy:
-        "The social media communication strategy is always developed based on the client's goals. Even though it is important to be flexible and comprehensive, my role is to think outside the box, create inovative content and optimize the strategy based on results. I believe that a good communication strategy together with a visual planning of the content is the secret to increase the visibility of the business.",
+        "The social media communication strategy is always developed based on the client's goals. Even though it is important to be flexible and comprehensive, my role is to think outside the box, create innovative content and optimize the strategy based on results. I believe that a good communication strategy together with a visual planning of the content is the secret to increase the visibility of the business.",
     getToKnowMeBetter: 'Get to know me better',
     contactMe1: 'Con',
     contactMe2: 'Tac',
