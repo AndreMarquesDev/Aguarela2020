@@ -1,5 +1,3 @@
-/* eslint-disable line-comment-position */
-
 export interface TextsInterface {
     about: string;
     projects: string;

@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router';
 import React, { FC, useContext } from 'react';
-import { Locale } from '../utils/locales';
-import TextsContext from './context/TextsContext';
-import TextShadowBlock from './TextShadowBlock/TextShadowBlock';
+import { Locale } from '../../utils/locales';
+import TextsContext from '../context/TextsContext';
+import TextShadowBlock from '../TextShadowBlock/TextShadowBlock';
 
 const WelcomeBlock: FC = () => {
     const { texts } = useContext(TextsContext);

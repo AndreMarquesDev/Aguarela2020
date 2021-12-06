@@ -5,7 +5,7 @@ import Image from 'next/image';
 import classNames from 'classnames';
 import Layout from '../../components/Layout';
 import NavLinksContext, { NavLinksContextProps } from '../../components/context/NavLinksContext';
-import WelcomeBlock from '../../components/WelcomeBlock';
+import WelcomeBlock from '../../components/WelcomeBlock/WelcomeBlock';
 import SkillsBlock from '../../components/SkillsBlock';
 import Workflow from '../../components/Workflow/Workflow';
 import ProjectsList from '../../components/ProjectsList';
