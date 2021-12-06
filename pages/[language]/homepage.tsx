@@ -6,7 +6,7 @@ import classNames from 'classnames';
 import Layout from '../../components/Layout';
 import NavLinksContext, { NavLinksContextProps } from '../../components/context/NavLinksContext';
 import WelcomeBlock from '../../components/WelcomeBlock/WelcomeBlock';
-import SkillsBlock from '../../components/SkillsBlock';
+import { SkillsBlock } from '../../components/SkillsBlock/SkillsBlock';
 import Workflow from '../../components/Workflow/Workflow';
 import ProjectsList from '../../components/ProjectsList';
 import LetsWork from '../../components/LetsWork/LetsWork';
