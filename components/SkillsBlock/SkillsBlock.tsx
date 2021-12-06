@@ -1,11 +1,14 @@
 import React, { FC, useContext } from 'react';
-import TextsContext from './context/TextsContext';
-import Title from './Title/Title';
-import { mobileBreakpoint, tabletBreakpoint, useWindowSize } from '../utils/useWindowSize';
-import NukaCarousel from './NukaCarousel';
-import SkillItem from './SkillItem/SkillItem';
+import TextsContext from '../context/TextsContext';
+import Title from '../Title/Title';
+import { mobileBreakpoint, tabletBreakpoint, useWindowSize } from '../../utils/useWindowSize';
+import NukaCarousel from '../NukaCarousel';
+import SkillItem from '../SkillItem/SkillItem';
 
-const SkillsBlock: FC = () => {
+export const skillsBlockItemWrapperDataTestId = 'skillsBlock_skillItemWrapper';
+export const skillsBlockItemCarouselDataTestId = 'skillsBlock_skillItemCarousel';
+
+export const SkillsBlock: FC = () => {
     const { texts } = useContext(TextsContext);
     const windowSize = useWindowSize();
     const isDesktop = windowSize.width > tabletBreakpoint;
@@ -18,42 +21,42 @@ const SkillsBlock: FC = () => {
                     <Title colored text={texts.skills} />
                     {isDesktop ? (
                         <ul>
-                            <li>
+                            <li data-testid={skillsBlockItemWrapperDataTestId}>
                                 <SkillItem
                                     description={texts.makingAuditsAndAnalysis}
                                     icon="strategy"
                                     title={texts.socialMediaStrategy}
                                 />
                             </li>
-                            <li>
+                            <li data-testid={skillsBlockItemWrapperDataTestId}>
                                 <SkillItem
                                     description={texts.weCanHelpYourTeam}
                                     icon="phone"
                                     title={texts.socialMediaConsulting}
                                 />
                             </li>
-                            <li>
+                            <li data-testid={skillsBlockItemWrapperDataTestId}>
                                 <SkillItem
                                     description={texts.whenWeSendAMessage}
                                     icon="chat"
                                     title={texts.communityManagement}
                                 />
                             </li>
-                            <li>
+                            <li data-testid={skillsBlockItemWrapperDataTestId}>
                                 <SkillItem
                                     description={texts.planningAndImplementing}
                                     icon="money"
                                     title={texts.paidSocialAndSearch}
                                 />
                             </li>
-                            <li>
+                            <li data-testid={skillsBlockItemWrapperDataTestId}>
                                 <SkillItem
                                     description={texts.measuringResults}
                                     icon="graph"
                                     title={texts.optimizationAndAnalysis}
                                 />
                             </li>
-                            <li>
+                            <li data-testid={skillsBlockItemWrapperDataTestId}>
                                 <SkillItem
                                     description={texts.createAttractiveContent}
                                     icon="camera"
@@ -63,42 +66,60 @@ const SkillsBlock: FC = () => {
                         </ul>
                     ) : (
                         <NukaCarousel width={isMobile ? '100%' : '90%'}>
-                            <div className="carouselItem">
+                            <div
+                                className="carouselItem"
+                                data-testid={skillsBlockItemCarouselDataTestId}
+                            >
                                 <SkillItem
                                     description={texts.makingAuditsAndAnalysis}
                                     icon="strategy"
                                     title={texts.socialMediaStrategy}
                                 />
                             </div>
-                            <div className="carouselItem">
+                            <div
+                                className="carouselItem"
+                                data-testid={skillsBlockItemCarouselDataTestId}
+                            >
                                 <SkillItem
                                     description={texts.weCanHelpYourTeam}
                                     icon="phone"
                                     title={texts.socialMediaConsulting}
                                 />
                             </div>
-                            <div className="carouselItem">
+                            <div
+                                className="carouselItem"
+                                data-testid={skillsBlockItemCarouselDataTestId}
+                            >
                                 <SkillItem
                                     description={texts.whenWeSendAMessage}
                                     icon="chat"
                                     title={texts.communityManagement}
                                 />
                             </div>
-                            <div className="carouselItem">
+                            <div
+                                className="carouselItem"
+                                data-testid={skillsBlockItemCarouselDataTestId}
+                            >
                                 <SkillItem
                                     description={texts.planningAndImplementing}
                                     icon="money"
                                     title={texts.paidSocialAndSearch}
                                 />
                             </div>
-                            <div className="carouselItem">
+                            <div
+                                className="carouselItem"
+                                data-testid={skillsBlockItemCarouselDataTestId}
+                            >
                                 <SkillItem
                                     description={texts.measuringResults}
                                     icon="graph"
                                     title={texts.optimizationAndAnalysis}
                                 />
                             </div>
-                            <div className="carouselItem">
+                            <div
+                                className="carouselItem"
+                                data-testid={skillsBlockItemCarouselDataTestId}
+                            >
                                 <SkillItem
                                     description={texts.createAttractiveContent}
                                     icon="camera"
@@ -150,5 +171,3 @@ const SkillsBlock: FC = () => {
         </>
     );
 };
-
-export default SkillsBlock;
