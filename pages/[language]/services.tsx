@@ -8,7 +8,7 @@ import { getCurrentLanguagetexts } from '../../utils/generic';
 import BrandsList from '../../components/BrandsList/BrandsList';
 import LetsWork from '../../components/LetsWork/LetsWork';
 import { Locale } from '../../utils/locales';
-import ServicesBlock from '../../components/ServicesBlock';
+import { ServicesBlock } from '../../components/ServicesBlock/ServicesBlock';
 
 const ServicesPage: NextPage = () => {
     const { query } = useRouter();
