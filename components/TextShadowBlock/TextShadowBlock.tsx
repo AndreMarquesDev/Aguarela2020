@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
-import { useWindowSize, mobileBreakpoint, desktopBreakpoint } from '../utils/useWindowSize';
-import Button from './Button/Button';
+import { useWindowSize, mobileBreakpoint, desktopBreakpoint } from '../../utils/useWindowSize';
+import Button from '../Button/Button';
 
-interface TextShadowBlockProps {
+export interface TextShadowBlockProps {
     title1: string;
     title2: string;
     title3: string;
@@ -12,6 +12,10 @@ interface TextShadowBlockProps {
     textBlock3: string;
     hasButton?: boolean;
 }
+
+export const textBlock1DataTestId = 'textShadowBlock_textBlock1';
+export const buttonText = 'catarina@aguareladigital.com';
+export const mailtoValue = 'mailto:catarina@aguareladigital.com';
 
 const TextShadowBlock: FC<TextShadowBlockProps> = ({
     title1,
@@ -49,16 +53,13 @@ const TextShadowBlock: FC<TextShadowBlockProps> = ({
                                 __html: textBlock1,
                             }}
                             className="bodyText bodyText--white"
+                            data-testid={textBlock1DataTestId}
                         />
                         <p className="bodyText bodyText--white">{textBlock2}</p>
                         <p className="bodyText bodyText--white">{textBlock3}</p>
                         {hasButton && (
-                            <Button
-                                isUppercased
-                                alignLeft={isDesktop}
-                                externalLink="mailto:catarina@aguareladigital.com"
-                            >
-                                catarina@aguareladigital.com
+                            <Button isUppercased alignLeft={isDesktop} externalLink={mailtoValue}>
+                                {buttonText}
                             </Button>
                         )}
                     </div>

@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen, waitFor, waitForElementToBeRemoved } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import ContactForm, { FORM_RESET_TIMEOUT } from './ContactForm';
+import ContactForm, { contactFormContainerDataTestId, FORM_RESET_TIMEOUT } from './ContactForm';
 import TextsContext from '../context/TextsContext';
 import { textsEn, textsPt } from '../../utils/texts';
 import { FieldTypes } from '../../utils/formValidation';
@@ -17,7 +17,7 @@ describe('<ContactForm />', () => {
         expect(hiddenErrorMessages.length).toBe(5);
         expect(screen.getByText(textsPt.send)).toBeInTheDocument();
 
-        expect(screen.getByTestId('contactForm_container')).toMatchSnapshot();
+        expect(screen.getByTestId(contactFormContainerDataTestId)).toMatchSnapshot();
     });
 
     test('renders properly in English', () => {
@@ -36,7 +36,7 @@ describe('<ContactForm />', () => {
         expect(hiddenErrorMessages.length).toBe(5);
         expect(screen.getByText(textsEn.send)).toBeInTheDocument();
 
-        expect(screen.getByTestId('contactForm_container')).toMatchSnapshot();
+        expect(screen.getByTestId(contactFormContainerDataTestId)).toMatchSnapshot();
     });
 
     test('displays error messages in required fields on submit with empty fields', async () => {
@@ -50,7 +50,7 @@ describe('<ContactForm />', () => {
 
         expect(errorMessages.length).toBe(3);
 
-        expect(screen.getByTestId('contactForm_container')).toMatchSnapshot();
+        expect(screen.getByTestId(contactFormContainerDataTestId)).toMatchSnapshot();
     });
 
     test('lets fields be properly filled', async () => {
@@ -69,7 +69,7 @@ describe('<ContactForm />', () => {
         userEvent.type(textareaField, 'Textarea{space}field');
 
         await waitFor(() => {
-            expect(screen.getByTestId('contactForm_container')).toMatchSnapshot();
+            expect(screen.getByTestId(contactFormContainerDataTestId)).toMatchSnapshot();
         });
     });
 

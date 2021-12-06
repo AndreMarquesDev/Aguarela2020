@@ -54,6 +54,7 @@ const formSchema = [
 ];
 
 export const FORM_RESET_TIMEOUT = 7500;
+export const contactFormContainerDataTestId = 'contactForm_container';
 
 const ContactForm: FC = () => {
     const { texts } = useContext(TextsContext);
@@ -142,7 +143,7 @@ const ContactForm: FC = () => {
 
     return (
         <>
-            <section className="container" data-testid="contactForm_container">
+            <section className="container" data-testid={contactFormContainerDataTestId}>
                 <div className="wrapper genericMargins">
                     <form noValidate aria-describedby="contactForm" onSubmit={handleSubmit}>
                         {formSchema.map(({ id, type, isRequired, isInput, ariaError }) => (
