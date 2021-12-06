@@ -1,10 +1,13 @@
 import React, { FC, useContext } from 'react';
-import { useWindowSize, mobileBreakpoint, phabletBreakpoint } from '../utils/useWindowSize';
-import TextsContext from './context/TextsContext';
-import NukaCarousel from './NukaCarousel';
-import Title from './Title/Title';
+import { useWindowSize, mobileBreakpoint, phabletBreakpoint } from '../../utils/useWindowSize';
+import TextsContext from '../context/TextsContext';
+import NukaCarousel from '../NukaCarousel';
+import Title from '../Title/Title';
 
-const ServicesBlock: FC = () => {
+export const servicesBlockItemWrapperDataTestId = 'servicesBlock_blockWrapper';
+export const servicesBlockItemCarouselDataTestId = 'servicesBlock_blockCarousel';
+
+export const ServicesBlock: FC = () => {
     const { texts } = useContext(TextsContext);
     const windowSize = useWindowSize();
     const isDesktop = windowSize.width > phabletBreakpoint;
@@ -18,7 +21,7 @@ const ServicesBlock: FC = () => {
 
                     {isDesktop ? (
                         <ul>
-                            <li>
+                            <li data-testid={servicesBlockItemWrapperDataTestId}>
                                 <p>{texts.design}</p>
                                 <div className="backface">
                                     <p>{`- ${texts.webDesign}`}</p>
@@ -28,7 +31,7 @@ const ServicesBlock: FC = () => {
                                     <p>{`- ${texts.menus}`}</p>
                                 </div>
                             </li>
-                            <li>
+                            <li data-testid={servicesBlockItemWrapperDataTestId}>
                                 <p>{texts.socialMediaEn}</p>
                                 <div className="backface">
                                     <p>{`- ${texts.contentCreation}`}</p>
@@ -38,7 +41,7 @@ const ServicesBlock: FC = () => {
                                     <p>{`- ${texts.consulting}`}</p>
                                 </div>
                             </li>
-                            <li>
+                            <li data-testid={servicesBlockItemWrapperDataTestId}>
                                 <p>{texts.digital}</p>
                                 <div className="backface">
                                     <p>{`- ${texts.paidSearchCampaigns}`}</p>
@@ -48,7 +51,10 @@ const ServicesBlock: FC = () => {
                         </ul>
                     ) : (
                         <NukaCarousel framePadding="0px 10px" width={isMobile ? '100%' : '90%'}>
-                            <div className="carouselItem">
+                            <div
+                                className="carouselItem"
+                                data-testid={servicesBlockItemCarouselDataTestId}
+                            >
                                 <p>{texts.design}</p>
                                 <div className="backface">
                                     <p>{`- ${texts.webDesign}`}</p>
@@ -58,7 +64,10 @@ const ServicesBlock: FC = () => {
                                     <p>{`- ${texts.menus}`}</p>
                                 </div>
                             </div>
-                            <div className="carouselItem">
+                            <div
+                                className="carouselItem"
+                                data-testid={servicesBlockItemCarouselDataTestId}
+                            >
                                 <p>{texts.socialMediaEn}</p>
                                 <div className="backface">
                                     <p>{`- ${texts.contentCreation}`}</p>
@@ -68,7 +77,10 @@ const ServicesBlock: FC = () => {
                                     <p>{`- ${texts.consulting}`}</p>
                                 </div>
                             </div>
-                            <div className="carouselItem">
+                            <div
+                                className="carouselItem"
+                                data-testid={servicesBlockItemCarouselDataTestId}
+                            >
                                 <p>{texts.digital}</p>
                                 <div className="backface">
                                     <p>{`- ${texts.paidSearchCampaigns}`}</p>
@@ -189,5 +201,3 @@ const ServicesBlock: FC = () => {
         </>
     );
 };
-
-export default ServicesBlock;
