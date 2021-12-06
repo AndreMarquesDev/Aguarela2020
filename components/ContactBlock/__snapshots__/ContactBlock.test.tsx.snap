@@ -32,6 +32,7 @@ exports[`<ContactBlock /> renders properly 1`] = `
       >
         <p
           class="jsx-2290377079 bodyText bodyText--white"
+          data-testid="textShadowBlock_textBlock1"
         >
           Precisa de ajuda com o seu negócio, projeto ou marca?
         </p>
@@ -99,6 +100,7 @@ exports[`<ContactBlock /> renders properly in English 1`] = `
       >
         <p
           class="jsx-2290377079 bodyText bodyText--white"
+          data-testid="textShadowBlock_textBlock1"
         >
           Need help with your business, project or brand?
         </p>
@@ -156,6 +158,7 @@ exports[`<ContactBlock /> renders properly in English and mobile 1`] = `
       >
         <p
           class="jsx-2290377079 bodyText bodyText--white"
+          data-testid="textShadowBlock_textBlock1"
         >
           Need help with your business, project or brand?
         </p>
@@ -213,6 +216,7 @@ exports[`<ContactBlock /> renders properly on mobile 1`] = `
       >
         <p
           class="jsx-2290377079 bodyText bodyText--white"
+          data-testid="textShadowBlock_textBlock1"
         >
           Precisa de ajuda com o seu negócio, projeto ou marca?
         </p>
