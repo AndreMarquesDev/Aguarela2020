@@ -12,7 +12,7 @@ import {
 
 describe('<ServicesBlock />', () => {
     test('renders properly', () => {
-        render(<ServicesBlock />);
+        const { container } = render(<ServicesBlock />);
 
         const title = screen.getByText(textsPt.services);
         const block1Title = screen.getByText(textsPt.design);
@@ -53,10 +53,12 @@ describe('<ServicesBlock />', () => {
 
         expect(numberOfBlocks.length).toBe(3);
         expect(carouselItemWrapper).not.toBeInTheDocument();
+
+        expect(container).toMatchSnapshot();
     });
 
     test('renders properly in English', () => {
-        render(
+        const { container } = render(
             <TextsContext.Provider
                 value={{
                     texts: textsEn,
@@ -99,6 +101,8 @@ describe('<ServicesBlock />', () => {
         expect(block3Title).toBeInTheDocument();
         expect(block3Backface1).toBeInTheDocument();
         expect(block3Backface2).toBeInTheDocument();
+
+        expect(container).toMatchSnapshot();
     });
 
     test('renders properly on mobile', () => {

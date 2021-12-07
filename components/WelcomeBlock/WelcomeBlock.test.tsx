@@ -18,7 +18,7 @@ nextRouter.useRouter = jest.fn(() => ({
 
 describe('<WelcomeBlock />', () => {
     test('renders properly', () => {
-        render(<WelcomeBlock />);
+        const { container } = render(<WelcomeBlock />);
 
         const title1 = screen.getByText(textsPt.welcome1);
         const title2 = screen.getByText(textsPt.welcome2);
@@ -37,10 +37,12 @@ describe('<WelcomeBlock />', () => {
         expect(textBlock3).toBeInTheDocument();
 
         expect(textBlock1).toHaveTextContent(actualTextBlock1Text);
+
+        expect(container).toMatchSnapshot();
     });
 
     test('renders properly in English', () => {
-        render(
+        const { container } = render(
             <TextsContext.Provider
                 value={{
                     texts: textsEn,
@@ -67,6 +69,8 @@ describe('<WelcomeBlock />', () => {
         expect(textBlock3).toBeInTheDocument();
 
         expect(textBlock1).toHaveTextContent(actualTextBlock1Text);
+
+        expect(container).toMatchSnapshot();
     });
 
     test('renders properly on mobile', () => {

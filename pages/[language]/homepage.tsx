@@ -8,7 +8,7 @@ import NavLinksContext, { NavLinksContextProps } from '../../components/context/
 import WelcomeBlock from '../../components/WelcomeBlock/WelcomeBlock';
 import { SkillsBlock } from '../../components/SkillsBlock/SkillsBlock';
 import Workflow from '../../components/Workflow/Workflow';
-import ProjectsList from '../../components/ProjectsList';
+import { ProjectsList } from '../../components/ProjectsList/ProjectsList';
 import LetsWork from '../../components/LetsWork/LetsWork';
 import BrandsList from '../../components/BrandsList/BrandsList';
 import { useWindowSize, mobileBreakpoint } from '../../utils/useWindowSize';

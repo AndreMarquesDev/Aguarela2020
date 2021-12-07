@@ -1,12 +1,14 @@
 import React, { FC, useContext } from 'react';
-import TextsContext from './context/TextsContext';
-import Title from './Title/Title';
-import Button from './Button/Button';
-import { useWindowSize, tabletBreakpoint, mobileBreakpoint } from '../utils/useWindowSize';
-import NukaCarousel from './NukaCarousel';
-import ProjectItem from './ProjectItem';
+import TextsContext from '../context/TextsContext';
+import Title from '../Title/Title';
+import Button from '../Button/Button';
+import { useWindowSize, tabletBreakpoint, mobileBreakpoint } from '../../utils/useWindowSize';
+import NukaCarousel from '../NukaCarousel';
+import ProjectItem from '../ProjectItem';
 
-const ProjectsList: FC = () => {
+export const projectsListNoCarouselDataTestId = 'projectsList_noCarousel';
+
+export const ProjectsList: FC = () => {
     const { texts } = useContext(TextsContext);
     const windowSize = useWindowSize();
     const isDesktop = windowSize.width > tabletBreakpoint;
@@ -19,7 +21,7 @@ const ProjectsList: FC = () => {
                     <Title colored text={texts.projects} />
 
                     {isDesktop ? (
-                        <ul>
+                        <ul data-testid={projectsListNoCarouselDataTestId}>
                             <ProjectItem
                                 isActive
                                 isInPartnership
@@ -118,5 +120,3 @@ const ProjectsList: FC = () => {
         </>
     );
 };
-
-export default ProjectsList;

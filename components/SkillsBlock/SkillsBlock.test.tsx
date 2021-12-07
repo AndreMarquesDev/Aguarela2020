@@ -12,7 +12,7 @@ import {
 
 describe('<SkillsBlock />', () => {
     test('renders properly', () => {
-        render(<SkillsBlock />);
+        const { container } = render(<SkillsBlock />);
 
         const title = screen.getByText(textsPt.skills);
         const block1Title = screen.getByText(textsPt.socialMediaStrategy);
@@ -35,10 +35,12 @@ describe('<SkillsBlock />', () => {
 
         expect(numberOfBlocks.length).toBe(6);
         expect(carouselItemWrapper).not.toBeInTheDocument();
+
+        expect(container).toMatchSnapshot();
     });
 
     test('renders properly in English', () => {
-        render(
+        const { container } = render(
             <TextsContext.Provider
                 value={{
                     texts: textsEn,
@@ -63,6 +65,8 @@ describe('<SkillsBlock />', () => {
         expect(block4Title).toBeInTheDocument();
         expect(block5Title).toBeInTheDocument();
         expect(block6Title).toBeInTheDocument();
+
+        expect(container).toMatchSnapshot();
     });
 
     test('renders properly on mobile', () => {
