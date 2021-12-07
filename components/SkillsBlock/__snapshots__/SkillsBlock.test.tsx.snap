@@ -1,0 +1,357 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SkillsBlock /> renders properly 1`] = `
+<div>
+  <section
+    class="jsx-2589310862 container"
+  >
+    <div
+      class="jsx-2589310862 wrapper genericMargins"
+    >
+      <h1
+        class="jsx-3155756322 colored"
+      >
+        Skills
+      </h1>
+      <ul
+        class="jsx-2589310862"
+      >
+        <li
+          class="jsx-2589310862"
+          data-testid="skillsBlock_skillItemWrapper"
+        >
+          <div
+            style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 160px; height: 130px;"
+          >
+            <img
+              alt="Estratégia de Redes Sociais"
+              class="imageOpacity"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </div>
+          <strong
+            class="jsx-1484428706"
+          >
+            Estratégia de Redes Sociais
+          </strong>
+          <p
+            class="jsx-1484428706"
+          >
+            Realizar uma auditoria e análise detalhada, com base nos insights e objetivos da marca, definindo em que redes sociais a marca deve estar presente e quais as oportunidades disponíveis.
+          </p>
+        </li>
+        <li
+          class="jsx-2589310862"
+          data-testid="skillsBlock_skillItemWrapper"
+        >
+          <div
+            style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 160px; height: 130px;"
+          >
+            <img
+              alt="Consultoria de Redes Sociais"
+              class="imageOpacity"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </div>
+          <strong
+            class="jsx-1484428706"
+          >
+            Consultoria de Redes Sociais
+          </strong>
+          <p
+            class="jsx-1484428706"
+          >
+            Posso ajudar a sua equipa na forma como a marca está presente nas redes sociais, como comunica, como alcançar os objetivos pretendidos e como aproveitar as oportunidades disponíveis no mercado digital do seu negócio.
+          </p>
+        </li>
+        <li
+          class="jsx-2589310862"
+          data-testid="skillsBlock_skillItemWrapper"
+        >
+          <div
+            style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 160px; height: 130px;"
+          >
+            <img
+              alt="Gestão de Comunidade"
+              class="imageOpacity"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </div>
+          <strong
+            class="jsx-1484428706"
+          >
+            Gestão de Comunidade
+          </strong>
+          <p
+            class="jsx-1484428706"
+          >
+            Quando enviamos uma mensagem aos nossos amigos e eles demoram dias a responder-nos não é muito agradável e o mesmo acontece com as marcas. Faço gestão de comunidade, respondendo a mensagens e comentários da sua audiência em prazos toleráveis e ideais.
+          </p>
+        </li>
+        <li
+          class="jsx-2589310862"
+          data-testid="skillsBlock_skillItemWrapper"
+        >
+          <div
+            style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 160px; height: 130px;"
+          >
+            <img
+              alt="Paid Social e Search"
+              class="imageOpacity"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </div>
+          <strong
+            class="jsx-1484428706"
+          >
+            Paid Social e Search
+          </strong>
+          <p
+            class="jsx-1484428706"
+          >
+            Planeio, implemento e acompanho campanhas paid social (redes sociais) e campanhas paid search (anúncios no Google), otimizando os objetivos de marketing da sua marca ou negócio.
+          </p>
+        </li>
+        <li
+          class="jsx-2589310862"
+          data-testid="skillsBlock_skillItemWrapper"
+        >
+          <div
+            style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 160px; height: 130px;"
+          >
+            <img
+              alt="Análise e Otimização"
+              class="imageOpacity"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </div>
+          <strong
+            class="jsx-1484428706"
+          >
+            Análise e Otimização
+          </strong>
+          <p
+            class="jsx-1484428706"
+          >
+            Medir resultados de forma a otimizar a estratégia é a chave para uma presença de sucesso nas redes sociais. Em todos os meus projetos faço uma análise mensal detalhada de forma a existir uma adaptação contínua ao mercado e às exigências dos consumidores.
+          </p>
+        </li>
+        <li
+          class="jsx-2589310862"
+          data-testid="skillsBlock_skillItemWrapper"
+        >
+          <div
+            style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 160px; height: 130px;"
+          >
+            <img
+              alt="Criação de Conteúdo"
+              class="imageOpacity"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </div>
+          <strong
+            class="jsx-1484428706"
+          >
+            Criação de Conteúdo
+          </strong>
+          <p
+            class="jsx-1484428706"
+          >
+            Crio conteúdo (fotográfico, animado, design e vídeo) atrativo e relevante para os consumidores. Ao reunir insights de consumidores e know-how consigo saber o tipo de conteúdo que melhor funciona para cada negócio.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`<SkillsBlock /> renders properly in English 1`] = `
+<div>
+  <section
+    class="jsx-2589310862 container"
+  >
+    <div
+      class="jsx-2589310862 wrapper genericMargins"
+    >
+      <h1
+        class="jsx-3155756322 colored"
+      >
+        Skills
+      </h1>
+      <ul
+        class="jsx-2589310862"
+      >
+        <li
+          class="jsx-2589310862"
+          data-testid="skillsBlock_skillItemWrapper"
+        >
+          <div
+            style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 160px; height: 130px;"
+          >
+            <img
+              alt="Social Media strategy"
+              class="imageOpacity"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </div>
+          <strong
+            class="jsx-1484428706"
+          >
+            Social Media strategy
+          </strong>
+          <p
+            class="jsx-1484428706"
+          >
+            Making audits and detailed analysis, based on the brand's insights and goals, deciding in what social networks the brand should be present in and what are the available opportunities.
+          </p>
+        </li>
+        <li
+          class="jsx-2589310862"
+          data-testid="skillsBlock_skillItemWrapper"
+        >
+          <div
+            style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 160px; height: 130px;"
+          >
+            <img
+              alt="Social Media consulting"
+              class="imageOpacity"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </div>
+          <strong
+            class="jsx-1484428706"
+          >
+            Social Media consulting
+          </strong>
+          <p
+            class="jsx-1484428706"
+          >
+            I can help your team in the way your brand is present on social media, how it communicates, how to achieve the intended goals and how to take advantage of the opportunities available in the digital market of your business.
+          </p>
+        </li>
+        <li
+          class="jsx-2589310862"
+          data-testid="skillsBlock_skillItemWrapper"
+        >
+          <div
+            style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 160px; height: 130px;"
+          >
+            <img
+              alt="Community Management"
+              class="imageOpacity"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </div>
+          <strong
+            class="jsx-1484428706"
+          >
+            Community Management
+          </strong>
+          <p
+            class="jsx-1484428706"
+          >
+            When we send a message to our friends and they take days to answer us it is not very pleasant and the same is true with brands. I do community management, responding to messages and comments from your audience within tolerable and ideal deadlines.
+          </p>
+        </li>
+        <li
+          class="jsx-2589310862"
+          data-testid="skillsBlock_skillItemWrapper"
+        >
+          <div
+            style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 160px; height: 130px;"
+          >
+            <img
+              alt="Paid Social and Search"
+              class="imageOpacity"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </div>
+          <strong
+            class="jsx-1484428706"
+          >
+            Paid Social and Search
+          </strong>
+          <p
+            class="jsx-1484428706"
+          >
+            I plan, implement and monitor paid social campaigns (social media) and paid search campaigns (ads on Google), optimizing the marketing objectives of your brand or business.
+          </p>
+        </li>
+        <li
+          class="jsx-2589310862"
+          data-testid="skillsBlock_skillItemWrapper"
+        >
+          <div
+            style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 160px; height: 130px;"
+          >
+            <img
+              alt="Optimization and Analysis"
+              class="imageOpacity"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </div>
+          <strong
+            class="jsx-1484428706"
+          >
+            Optimization and Analysis
+          </strong>
+          <p
+            class="jsx-1484428706"
+          >
+            Measuring results in order to optimize the strategy is the key to a successful presence on social media. In all my projects I do a detailed monthly analysis so that there is a continuous adaptation to the market and to the demands of consumers.
+          </p>
+        </li>
+        <li
+          class="jsx-2589310862"
+          data-testid="skillsBlock_skillItemWrapper"
+        >
+          <div
+            style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 160px; height: 130px;"
+          >
+            <img
+              alt="Content creation"
+              class="imageOpacity"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </div>
+          <strong
+            class="jsx-1484428706"
+          >
+            Content creation
+          </strong>
+          <p
+            class="jsx-1484428706"
+          >
+            I create attractive and relevant content to consumers (photographic, animated, design and video). By gathering consumer insights and know-how, I know the type of content that works best for each business.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+`;

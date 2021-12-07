@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WelcomeBlock /> renders properly 1`] = `
+<div>
+  <section
+    class="jsx-2290377079 container"
+  >
+    <div
+      class="jsx-2290377079 wrapper genericMargins"
+    >
+      <div
+        class="jsx-2290377079 titleBlock"
+      >
+        <strong
+          class="jsx-2290377079"
+        >
+          Bem
+        </strong>
+        <strong
+          class="jsx-2290377079"
+        >
+          Vin
+        </strong>
+        <strong
+          class="jsx-2290377079"
+        >
+          Dos
+        </strong>
+      </div>
+      <div
+        class="jsx-2290377079 textBlock"
+      >
+        <p
+          class="jsx-2290377079 bodyText bodyText--white"
+          data-testid="textShadowBlock_textBlock1"
+        >
+          Gestão de redes sociais está no meu ADN. Sou uma freelancer, baseada em Lisboa, com experiência em gestão de redes sociais e criação de conteúdo. A 
+          <a
+            class="link"
+            href="https://www.instagram.com/aguareladigital"
+            rel="noreferrer"
+            target="_blank"
+          >
+            @Aguarela
+          </a>
+           surgiu com o objetivo de ajudar negócios locais e pequenas empresas a posicionarem-se no digital, gerar awareness, criar uma relação com o target e impulsionar vendas.
+        </p>
+        <p
+          class="jsx-2290377079 bodyText bodyText--white"
+        >
+          Do ínicio ao fim, acompanho, monitorizo e otimizo todo o processo e estratégia de gestão de redes sociais.
+        </p>
+        <p
+          class="jsx-2290377079 bodyText bodyText--white"
+        >
+          Através do planeamento estratégico, criação de conteúdo e implementação estou disponível para ser o vosso braço direito.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`<WelcomeBlock /> renders properly in English 1`] = `
+<div>
+  <section
+    class="jsx-2290377079 container"
+  >
+    <div
+      class="jsx-2290377079 wrapper genericMargins"
+    >
+      <div
+        class="jsx-2290377079 titleBlock"
+      >
+        <strong
+          class="jsx-2290377079"
+        >
+          Wel
+        </strong>
+        <strong
+          class="jsx-2290377079"
+        >
+          Co
+        </strong>
+        <strong
+          class="jsx-2290377079"
+        >
+          Me
+        </strong>
+      </div>
+      <div
+        class="jsx-2290377079 textBlock"
+      >
+        <p
+          class="jsx-2290377079 bodyText bodyText--white"
+          data-testid="textShadowBlock_textBlock1"
+        >
+          Social media management is in my DNA. I'm a freelancer, based in Lisbon, with experience in social media management and content creation. 
+          <a
+            class="link"
+            href="https://www.instagram.com/aguareladigital"
+            rel="noreferrer"
+            target="_blank"
+          >
+            @Aguarela
+          </a>
+          's goal is to help local businesses and small companies position themselves digitally, create awareness, create a realtionship with the target and boost sales.
+        </p>
+        <p
+          class="jsx-2290377079 bodyText bodyText--white"
+        >
+          From start to finish I keep up with, monitor and optimize the whole social media management process and strategy.
+        </p>
+        <p
+          class="jsx-2290377079 bodyText bodyText--white"
+        >
+          Through strategic planning, content creation and implementation I can be your right hand.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+`;
