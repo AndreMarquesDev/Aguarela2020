@@ -1,5 +1,5 @@
 import React, { FC, useContext } from 'react';
-import { useWindowSize, mobileBreakpoint, phabletBreakpoint } from '../../utils/useWindowSize';
+import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 import TextsContext from '../context/TextsContext';
 import NukaCarousel from '../NukaCarousel';
 import Title from '../Title/Title';
@@ -10,8 +10,8 @@ export const servicesBlockItemCarouselDataTestId = 'servicesBlock_blockCarousel'
 export const ServicesBlock: FC = () => {
     const { texts } = useContext(TextsContext);
     const windowSize = useWindowSize();
-    const isDesktop = windowSize.width > phabletBreakpoint;
-    const isMobile = windowSize.width < mobileBreakpoint;
+    const isDesktop = windowSize.width > Breakpoint.Phablet;
+    const isMobile = windowSize.width < Breakpoint.Mobile;
 
     return (
         <>

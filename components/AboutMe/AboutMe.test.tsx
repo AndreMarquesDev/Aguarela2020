@@ -5,6 +5,7 @@ import AboutMe from './AboutMe';
 import TextsContext from '../context/TextsContext';
 import { textsEn, textsPt } from '../../utils/texts';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
+import { Breakpoint } from '../../utils/useWindowSize';
 
 describe('<AboutMe />', () => {
     test('renders properly', () => {
@@ -44,7 +45,7 @@ describe('<AboutMe />', () => {
     });
 
     test('renders properly in mobile', () => {
-        setJestWindowWidth(true);
+        setJestWindowWidth(Breakpoint.Mobile);
 
         const { container } = render(<AboutMe />);
 

@@ -5,7 +5,7 @@ import Image from 'next/image';
 import NavLinksContext from './context/NavLinksContext';
 import NavLinks from './NavLinks';
 import { Page } from '../utils/pages';
-import { useWindowSize, tabletBreakpoint, phabletBreakpoint } from '../utils/useWindowSize';
+import { useWindowSize, Breakpoint } from '../utils/useWindowSize';
 import MenuIcon from './MenuIcon';
 import { Locale } from '../utils/locales';
 
@@ -29,8 +29,8 @@ const Header: FC<HeaderProps> = ({ currentRoute, language }) => {
     const handleMenuClick = (): void => toggleMenu(!isMenuOpen);
 
     const windowSize = useWindowSize();
-    const isDesktop = windowSize.width > tabletBreakpoint;
-    const isPhablet = windowSize.width < phabletBreakpoint;
+    const isDesktop = windowSize.width > Breakpoint.Tablet;
+    const isPhablet = windowSize.width < Breakpoint.Phablet;
 
     const logoWidth = isPhablet ? 150 : 250;
 

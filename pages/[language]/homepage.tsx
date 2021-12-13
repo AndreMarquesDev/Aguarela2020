@@ -11,7 +11,7 @@ import Workflow from '../../components/Workflow/Workflow';
 import { ProjectsList } from '../../components/ProjectsList/ProjectsList';
 import LetsWork from '../../components/LetsWork/LetsWork';
 import BrandsList from '../../components/BrandsList/BrandsList';
-import { useWindowSize, mobileBreakpoint } from '../../utils/useWindowSize';
+import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 
 const Homepage: NextPage = () => {
     const [navHeight, setNavHeight] = useState(0);
@@ -26,7 +26,7 @@ const Homepage: NextPage = () => {
     };
 
     const windowSize = useWindowSize();
-    const isMobile = windowSize.width < mobileBreakpoint;
+    const isMobile = windowSize.width < Breakpoint.Mobile;
 
     return (
         <NavLinksContext.Provider value={navLinksContext}>

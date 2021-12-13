@@ -1,3 +1,4 @@
+import { Breakpoint } from '../useWindowSize';
 import { setJestWindowWidth } from './setJestWindowWidth';
 
 Object.defineProperty(window, 'matchMedia', {
@@ -8,4 +9,4 @@ Object.defineProperty(window, 'matchMedia', {
     })),
 });
 
-setJestWindowWidth();
+setJestWindowWidth(Breakpoint.Desktop);

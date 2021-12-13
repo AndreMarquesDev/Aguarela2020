@@ -1,7 +1,7 @@
 import React, { FC, useContext } from 'react';
 import TextsContext from '../context/TextsContext';
 import Title from '../Title/Title';
-import { mobileBreakpoint, tabletBreakpoint, useWindowSize } from '../../utils/useWindowSize';
+import { Breakpoint, useWindowSize } from '../../utils/useWindowSize';
 import NukaCarousel from '../NukaCarousel';
 import SkillItem from '../SkillItem/SkillItem';
 
@@ -11,8 +11,8 @@ export const skillsBlockItemCarouselDataTestId = 'skillsBlock_skillItemCarousel'
 export const SkillsBlock: FC = () => {
     const { texts } = useContext(TextsContext);
     const windowSize = useWindowSize();
-    const isDesktop = windowSize.width > tabletBreakpoint;
-    const isMobile = windowSize.width < mobileBreakpoint;
+    const isDesktop = windowSize.width > Breakpoint.Tablet;
+    const isMobile = windowSize.width < Breakpoint.Mobile;
 
     return (
         <>

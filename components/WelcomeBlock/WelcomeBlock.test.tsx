@@ -7,6 +7,7 @@ import { textsPt, textsEn } from '../../utils/texts';
 import TextsContext from '../context/TextsContext';
 import { textBlock1DataTestId } from '../TextShadowBlock/TextShadowBlock';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
+import { Breakpoint } from '../../utils/useWindowSize';
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -74,7 +75,7 @@ describe('<WelcomeBlock />', () => {
     });
 
     test('renders properly on mobile', () => {
-        setJestWindowWidth(true);
+        setJestWindowWidth(Breakpoint.Mobile);
 
         render(<WelcomeBlock />);
 
@@ -92,7 +93,7 @@ describe('<WelcomeBlock />', () => {
             },
         }));
 
-        setJestWindowWidth(true);
+        setJestWindowWidth(Breakpoint.Mobile);
 
         render(
             <TextsContext.Provider

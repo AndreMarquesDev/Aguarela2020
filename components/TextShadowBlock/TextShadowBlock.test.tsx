@@ -8,6 +8,7 @@ import TextShadowBlock, {
     TextShadowBlockProps,
 } from './TextShadowBlock';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
+import { Breakpoint } from '../../utils/useWindowSize';
 
 const baseProps: TextShadowBlockProps = {
     title1: 'Bem',
@@ -55,7 +56,7 @@ describe('<TextShadowBlock />', () => {
     });
 
     test('renders properly on mobile', () => {
-        setJestWindowWidth(true);
+        setJestWindowWidth(Breakpoint.Mobile);
 
         renderComponent();
 
@@ -73,7 +74,7 @@ describe('<TextShadowBlock />', () => {
     });
 
     test('renders properly with a button', () => {
-        setJestWindowWidth();
+        setJestWindowWidth(Breakpoint.Desktop);
 
         const { container } = renderComponent({
             hasButton: true,

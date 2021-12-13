@@ -6,6 +6,7 @@ import ContactBlock from './ContactBlock';
 import TextsContext from '../context/TextsContext';
 import { textsEn, textsPt } from '../../utils/texts';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
+import { Breakpoint } from '../../utils/useWindowSize';
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -30,7 +31,7 @@ describe('<ContactBlock />', () => {
     });
 
     test('renders properly on mobile', () => {
-        setJestWindowWidth(true);
+        setJestWindowWidth(Breakpoint.Mobile);
 
         const { container } = render(<ContactBlock />);
 
@@ -48,7 +49,7 @@ describe('<ContactBlock />', () => {
     });
 
     test('renders properly in English', () => {
-        setJestWindowWidth(false);
+        setJestWindowWidth(Breakpoint.Desktop);
 
         const { container } = render(
             <TextsContext.Provider
@@ -77,7 +78,7 @@ describe('<ContactBlock />', () => {
             },
         }));
 
-        setJestWindowWidth(true);
+        setJestWindowWidth(Breakpoint.Mobile);
 
         const { container } = render(
             <TextsContext.Provider

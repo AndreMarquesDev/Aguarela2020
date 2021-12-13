@@ -9,6 +9,7 @@ import {
     servicesBlockItemCarouselDataTestId,
     servicesBlockItemWrapperDataTestId,
 } from './ServicesBlock';
+import { Breakpoint } from '../../utils/useWindowSize';
 
 describe('<ServicesBlock />', () => {
     test('renders properly', () => {
@@ -106,7 +107,7 @@ describe('<ServicesBlock />', () => {
     });
 
     test('renders properly on mobile', () => {
-        setJestWindowWidth(true);
+        setJestWindowWidth(Breakpoint.Mobile);
 
         render(<ServicesBlock />);
 

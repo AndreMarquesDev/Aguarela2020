@@ -3,12 +3,12 @@ import Image from 'next/image';
 import Button from '../Button/Button';
 import TextsContext from '../context/TextsContext';
 import Title from '../Title/Title';
-import { useWindowSize, desktopBreakpoint } from '../../utils/useWindowSize';
+import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 
 const AboutMe: FC = () => {
     const { texts } = useContext(TextsContext);
     const windowSize = useWindowSize();
-    const isDesktop = windowSize.width > desktopBreakpoint;
+    const isDesktop = windowSize.width > Breakpoint.Desktop;
 
     return (
         <>
