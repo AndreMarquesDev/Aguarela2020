@@ -5,6 +5,7 @@ import { textsPt, textsEn } from '../../utils/texts';
 import TextsContext from '../context/TextsContext';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { ProjectsList, projectsListNoCarouselDataTestId } from './ProjectsList';
+import { Breakpoint } from '../../utils/useWindowSize';
 
 describe('<ProjectsList />', () => {
     test('renders properly', () => {
@@ -46,7 +47,7 @@ describe('<ProjectsList />', () => {
     });
 
     test('renders properly on mobile', () => {
-        setJestWindowWidth(true);
+        setJestWindowWidth(Breakpoint.Mobile);
 
         render(<ProjectsList />);
 

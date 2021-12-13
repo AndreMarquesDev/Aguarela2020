@@ -9,6 +9,7 @@ import {
     skillsBlockItemWrapperDataTestId,
     skillsBlockItemCarouselDataTestId,
 } from './SkillsBlock';
+import { Breakpoint } from '../../utils/useWindowSize';
 
 describe('<SkillsBlock />', () => {
     test('renders properly', () => {
@@ -70,7 +71,7 @@ describe('<SkillsBlock />', () => {
     });
 
     test('renders properly on mobile', () => {
-        setJestWindowWidth(true);
+        setJestWindowWidth(Breakpoint.Mobile);
 
         render(<SkillsBlock />);
 

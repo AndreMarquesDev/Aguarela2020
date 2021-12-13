@@ -7,7 +7,7 @@ import { textsEn, textsPt } from '../utils/texts';
 import Footer from './Footer/Footer';
 import { Locale } from '../utils/locales';
 import NavLinksContext from './context/NavLinksContext';
-import { useWindowSize, tabletBreakpoint } from '../utils/useWindowSize';
+import { useWindowSize, Breakpoint } from '../utils/useWindowSize';
 
 const Layout: FC = props => {
     const { children } = props;
@@ -19,7 +19,7 @@ const Layout: FC = props => {
     const texts = currentLanguage === 'pt' ? textsPt : textsEn;
 
     const windowSize = useWindowSize();
-    const isDesktop = windowSize.width > tabletBreakpoint;
+    const isDesktop = windowSize.width > Breakpoint.Tablet;
 
     return (
         <TextsContext.Provider

@@ -29,7 +29,9 @@ export const useWindowSize = (): WindowSize => {
     return windowSize;
 };
 
-export const desktopBreakpoint = 1280;
-export const phabletBreakpoint = 1023;
-export const tabletBreakpoint = 767;
-export const mobileBreakpoint = 511;
+export enum Breakpoint {
+    Desktop = 1280,
+    Phablet = 1023,
+    Tablet = 767,
+    Mobile = 511,
+}

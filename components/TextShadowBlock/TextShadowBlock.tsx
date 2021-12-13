@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { useWindowSize, mobileBreakpoint, desktopBreakpoint } from '../../utils/useWindowSize';
+import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 import Button from '../Button/Button';
 
 export interface TextShadowBlockProps {
@@ -28,8 +28,8 @@ const TextShadowBlock: FC<TextShadowBlockProps> = ({
     hasButton,
 }) => {
     const windowSize = useWindowSize();
-    const isDesktop = windowSize.width > desktopBreakpoint;
-    const isMobile = windowSize.width < mobileBreakpoint;
+    const isDesktop = windowSize.width > Breakpoint.Desktop;
+    const isMobile = windowSize.width < Breakpoint.Mobile;
 
     return (
         <>
