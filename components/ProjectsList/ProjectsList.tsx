@@ -4,7 +4,7 @@ import Title from '../Title/Title';
 import Button from '../Button/Button';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 import NukaCarousel from '../NukaCarousel';
-import ProjectItem from '../ProjectItem';
+import { ProjectItem } from '../ProjectItem/ProjectItem';
 
 export const projectsListNoCarouselDataTestId = 'projectsList_noCarousel';
 

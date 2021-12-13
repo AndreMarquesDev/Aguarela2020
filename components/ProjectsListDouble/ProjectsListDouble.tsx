@@ -3,7 +3,7 @@ import TextsContext from '../context/TextsContext';
 import Title from '../Title/Title';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 import NukaCarousel from '../NukaCarousel';
-import ProjectItem from '../ProjectItem';
+import { ProjectItem } from '../ProjectItem/ProjectItem';
 
 export const ProjectsListDouble: FC = () => {
     const { texts } = useContext(TextsContext);
