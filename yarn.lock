@@ -3020,10 +3020,10 @@ eslint-config-airbnb@^18.2.1:
     object.assign "^4.1.2"
     object.entries "^1.1.2"
 
-eslint-config-andremarquesdev@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/eslint-config-andremarquesdev/-/eslint-config-andremarquesdev-1.2.2.tgz#0e575b0e0bffa5744a3ecf7d3608f7b286705d8e"
-  integrity sha512-QJr1/+lg6dOc+GlaCG9sZAX9pk6DBcqCln959EoEOS7j70pQ9oHXrnJs5T9p6i5gPqG5Vv7JMYGokPVP1xRdeg==
+eslint-config-andremarquesdev@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/eslint-config-andremarquesdev/-/eslint-config-andremarquesdev-1.2.3.tgz#396bfe7847c39ff737f3c29b19b9cd4cdcac4bba"
+  integrity sha512-e7C2EovLMlKGA+CYXkjrvQ9xzUss5ZE/mkwKESKaLxDHc5goWoDEesFlpUCtHjcA5BOBOIogBXdewagHVIhR5A==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.28.4"
     "@typescript-eslint/parser" "^4.28.4"
