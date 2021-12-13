@@ -8,7 +8,7 @@ import { getCurrentLanguagetexts } from '../../utils/generic';
 import BrandsList from '../../components/BrandsList/BrandsList';
 import LetsWork from '../../components/LetsWork/LetsWork';
 import { Locale } from '../../utils/locales';
-import ProjectsListDouble from '../../components/ProjectsListDouble';
+import { ProjectsListDouble } from '../../components/ProjectsListDouble/ProjectsListDouble';
 
 const ProjectsPage: NextPage = () => {
     const { query } = useRouter();
