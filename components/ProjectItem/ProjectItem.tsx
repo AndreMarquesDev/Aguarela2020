@@ -2,10 +2,10 @@ import React, { FC, useContext, TouchEvent } from 'react';
 import Image from 'next/image';
 import { isClientSide } from 'multilingual-url/lib';
 import classNames from 'classnames';
-import TextsContext from './context/TextsContext';
-import { resetTimesTouchedAttribute } from '../utils/generic';
+import TextsContext from '../context/TextsContext';
+import { resetTimesTouchedAttribute } from '../../utils/generic';
 
-interface ProjectItemProps {
+export interface ProjectItemProps {
     imageSrc: string;
     imageAlt: string;
     brandLink: string;
@@ -18,7 +18,9 @@ interface ProjectItemProps {
     isGrid?: boolean;
 }
 
-const ProjectItem: FC<ProjectItemProps> = ({
+export const projectItemTouchDivDataTestId = 'projectItem_touch_div';
+
+export const ProjectItem: FC<ProjectItemProps> = ({
     imageSrc,
     imageAlt,
     brandLink,
@@ -68,6 +70,7 @@ const ProjectItem: FC<ProjectItemProps> = ({
             ) : (
                 <div
                     className={classNames('carouselItem', isTouch && 'touch', isGrid && 'grid')}
+                    data-testid={projectItemTouchDivDataTestId}
                     data-times-touched={0}
                     onTouchStart={handleTouch}
                 >
@@ -211,5 +214,3 @@ const ProjectItem: FC<ProjectItemProps> = ({
         </>
     );
 };
-
-export default ProjectItem;
