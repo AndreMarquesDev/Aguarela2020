@@ -3,7 +3,7 @@ import TextsContext from '../context/TextsContext';
 import Title from '../Title/Title';
 import Button from '../Button/Button';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
-import NukaCarousel from '../NukaCarousel';
+import { NukaCarousel } from '../NukaCarousel/NukaCarousel';
 import { ProjectItem } from '../ProjectItem/ProjectItem';
 
 export const projectsListNoCarouselDataTestId = 'projectsList_noCarousel';

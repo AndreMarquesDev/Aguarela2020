@@ -2,7 +2,7 @@ import React, { FC, useContext } from 'react';
 import TextsContext from '../context/TextsContext';
 import Title from '../Title/Title';
 import { Breakpoint, useWindowSize } from '../../utils/useWindowSize';
-import NukaCarousel from '../NukaCarousel';
+import { NukaCarousel } from '../NukaCarousel/NukaCarousel';
 import SkillItem from '../SkillItem/SkillItem';
 
 export const skillsBlockItemWrapperDataTestId = 'skillsBlock_skillItemWrapper';

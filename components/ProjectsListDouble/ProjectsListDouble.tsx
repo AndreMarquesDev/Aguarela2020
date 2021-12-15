@@ -2,7 +2,7 @@ import React, { FC, useContext } from 'react';
 import TextsContext from '../context/TextsContext';
 import Title from '../Title/Title';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
-import NukaCarousel from '../NukaCarousel';
+import { NukaCarousel } from '../NukaCarousel/NukaCarousel';
 import { ProjectItem } from '../ProjectItem/ProjectItem';
 
 export const ProjectsListDouble: FC = () => {
