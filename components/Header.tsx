@@ -3,7 +3,7 @@ import React, { FC, useContext, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import NavLinksContext from './context/NavLinksContext';
-import NavLinks from './NavLinks';
+import { NavLinks } from './NavLinks/NavLinks';
 import { Page } from '../utils/pages';
 import { useWindowSize, Breakpoint } from '../utils/useWindowSize';
 import MenuIcon from './MenuIcon';
