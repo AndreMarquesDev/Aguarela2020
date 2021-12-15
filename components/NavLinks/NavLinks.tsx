@@ -1,22 +1,21 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { FC, useContext } from 'react';
 import Link from 'next/link';
 import classNames from 'classnames';
-import { pagesMap } from '../utils/pages';
-import TextsContext from './context/TextsContext';
-import LanguageButton from './LanguageButton';
-import { Locale } from '../utils/locales';
+import { pagesMap } from '../../utils/pages';
+import TextsContext from '../context/TextsContext';
+import LanguageButton from '../LanguageButton';
+import { Locale } from '../../utils/locales';
 
-interface NavLinksProps {
+export interface NavLinksProps {
     currentRoute: string;
     language: Locale;
     isMobile: boolean;
     isMenuOpen: boolean;
 }
 
-const NavLinks: FC<NavLinksProps> = ({ currentRoute, language, isMobile, isMenuOpen }) => {
+export const NavLinks: FC<NavLinksProps> = ({ currentRoute, language, isMobile, isMenuOpen }) => {
     const navLinks = pagesMap.filter(page => page !== 'homepage');
-    const { texts: navTexts } = useContext(TextsContext);
+    const { texts } = useContext(TextsContext);
 
     const linksContainerStyles = classNames(
         isMobile && 'mobileLayout',
@@ -30,7 +29,8 @@ const NavLinks: FC<NavLinksProps> = ({ currentRoute, language, isMobile, isMenuO
             {navLinks.map(link => (
                 <li key={language + link}>
                     <Link href={`/${language}/${link}`} prefetch={false}>
-                        <a className={linkStyles(link)}>{navTexts[`${link}`]}</a>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a className={linkStyles(link)}>{texts[`${link}`]}</a>
                     </Link>
                 </li>
             ))}
@@ -115,5 +115,3 @@ const NavLinks: FC<NavLinksProps> = ({ currentRoute, language, isMobile, isMenuO
         </ul>
     );
 };
-
-export default NavLinks;
