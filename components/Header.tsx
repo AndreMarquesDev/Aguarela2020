@@ -6,7 +6,7 @@ import NavLinksContext from './context/NavLinksContext';
 import { NavLinks } from './NavLinks/NavLinks';
 import { Page } from '../utils/pages';
 import { useWindowSize, Breakpoint } from '../utils/useWindowSize';
-import MenuIcon from './MenuIcon';
+import { MenuIcon } from './MenuIcon/MenuIcon';
 import { Locale } from '../utils/locales';
 
 interface HeaderProps {

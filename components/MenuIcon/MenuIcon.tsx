@@ -1,13 +1,13 @@
 import classNames from 'classnames';
 import React, { FC } from 'react';
 
-interface MenuIconProps {
+export interface MenuIconProps {
     isOpen: boolean;
     isVisible: boolean;
     onClick: () => void;
 }
 
-const MenuIcon: FC<MenuIconProps> = ({ isOpen, isVisible, onClick }) => {
+export const MenuIcon: FC<MenuIconProps> = ({ isOpen, isVisible, onClick }) => {
     const openMenuStyles = classNames('menuIcon', isOpen && 'open', !isVisible && 'hidden');
 
     return (
@@ -109,5 +109,3 @@ const MenuIcon: FC<MenuIconProps> = ({ isOpen, isVisible, onClick }) => {
         </>
     );
 };
-
-export default MenuIcon;
