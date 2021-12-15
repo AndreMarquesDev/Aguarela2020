@@ -1,9 +1,9 @@
 import React, { FC, ReactNode } from 'react';
 import Carousel, { CarouselCellAlignProp } from 'nuka-carousel';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import { resetTimesTouchedAttribute } from '../utils/generic';
+import { resetTimesTouchedAttribute } from '../../utils/generic';
 
-interface NukaCarouselProps {
+export interface NukaCarouselProps {
     children: ReactNode;
     width?: string;
     framePadding?: string;
@@ -11,7 +11,7 @@ interface NukaCarouselProps {
     cellAlign?: CarouselCellAlignProp;
 }
 
-const NukaCarousel: FC<NukaCarouselProps> = ({
+export const NukaCarousel: FC<NukaCarouselProps> = ({
     children,
     width,
     framePadding,
@@ -76,5 +76,3 @@ const NukaCarousel: FC<NukaCarouselProps> = ({
         </>
     );
 };
-
-export default NukaCarousel;

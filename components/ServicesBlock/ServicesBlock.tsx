@@ -1,7 +1,7 @@
 import React, { FC, useContext } from 'react';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 import TextsContext from '../context/TextsContext';
-import NukaCarousel from '../NukaCarousel';
+import { NukaCarousel } from '../NukaCarousel/NukaCarousel';
 import Title from '../Title/Title';
 
 export const servicesBlockItemWrapperDataTestId = 'servicesBlock_blockWrapper';

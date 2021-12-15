@@ -46,6 +46,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -102,6 +103,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -171,6 +173,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -221,6 +224,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -290,6 +294,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -346,6 +351,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -407,6 +413,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -457,6 +464,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -519,6 +527,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -568,6 +577,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -629,6 +639,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -678,6 +689,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -739,6 +751,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -788,6 +801,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -849,6 +863,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -898,6 +913,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -954,6 +970,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -1004,6 +1021,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -1071,6 +1089,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -1121,6 +1140,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -1278,6 +1298,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -1334,6 +1355,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -1403,6 +1425,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -1453,6 +1476,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -1522,6 +1546,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -1578,6 +1603,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -1639,6 +1665,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -1689,6 +1716,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -1751,6 +1779,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -1800,6 +1829,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -1861,6 +1891,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -1910,6 +1941,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -1971,6 +2003,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -2020,6 +2053,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -2081,6 +2115,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -2130,6 +2165,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -2186,6 +2222,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -2236,6 +2273,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -2303,6 +2341,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -2353,6 +2392,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -2510,6 +2550,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -2566,6 +2607,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -2634,6 +2676,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -2684,6 +2727,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -2752,6 +2796,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -2808,6 +2853,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -2869,6 +2915,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -2919,6 +2966,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -2981,6 +3029,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -3030,6 +3079,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -3091,6 +3141,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -3140,6 +3191,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -3201,6 +3253,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -3250,6 +3303,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -3311,6 +3365,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -3360,6 +3415,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -3416,6 +3472,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -3466,6 +3523,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -3533,6 +3591,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -3583,6 +3642,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -3740,6 +3800,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -3796,6 +3857,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -3865,6 +3927,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -3915,6 +3978,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -3983,6 +4047,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -4039,6 +4104,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -4100,6 +4166,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -4150,6 +4217,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -4212,6 +4280,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -4261,6 +4330,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -4322,6 +4392,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -4371,6 +4442,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -4432,6 +4504,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -4481,6 +4554,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -4542,6 +4616,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -4591,6 +4666,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -4647,6 +4723,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -4697,6 +4774,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -4764,6 +4842,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
               >
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
@@ -4814,6 +4893,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
                 </div>
                 <div
                   class="jsx-4127294762 carouselItem grid"
+                  data-testid="projectItem_touch_div"
                   data-times-touched="0"
                 >
                   <div
