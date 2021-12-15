@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { NextPage } from 'next';
 import Image from 'next/image';
 import classNames from 'classnames';
-import Layout from '../../components/Layout';
+import { Layout } from '../../components/Layout/Layout';
 import NavLinksContext, { NavLinksContextProps } from '../../components/context/NavLinksContext';
 import WelcomeBlock from '../../components/WelcomeBlock/WelcomeBlock';
 import { SkillsBlock } from '../../components/SkillsBlock/SkillsBlock';

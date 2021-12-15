@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
-import Layout from '../../components/Layout';
+import { Layout } from '../../components/Layout/Layout';
 import { getCurrentLanguagetexts } from '../../utils/generic';
 import NavLinksContext, { NavLinksContextProps } from '../../components/context/NavLinksContext';
 import BrandsList from '../../components/BrandsList/BrandsList';
