@@ -1,7 +1,7 @@
 import React, { FC, ReactNode, useContext } from 'react';
 import { useRouter } from 'next/router';
 import classNames from 'classnames';
-import Header from '../Header';
+import { Header } from '../Header/Header';
 import TextsContext from '../context/TextsContext';
 import { textsEn, textsPt } from '../../utils/texts';
 import Footer from '../Footer/Footer';
