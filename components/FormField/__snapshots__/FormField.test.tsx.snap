@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormField /> renders properly 1`] = `
+<div>
+  <div
+    class="jsx-793279434 fieldWrapper"
+  >
+    <label
+      class="jsx-793279434"
+      for="name"
+    >
+      Nome
+       *
+    </label>
+    <input
+      aria-describedby="nameErrorMessage"
+      class="jsx-793279434"
+      data-error="true"
+      data-testid="name"
+      id="name"
+      name="name"
+      required=""
+      title="name"
+      type="text"
+      value=""
+    />
+    <span
+      class="jsx-793279434 errorMessage visible"
+      data-testid="errorMessage_visible"
+      id="nameErrorMessage"
+    >
+      Este campo é obrigatório. Por favor insira o seu primeiro e último nome
+    </span>
+  </div>
+</div>
+`;

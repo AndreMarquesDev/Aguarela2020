@@ -1,9 +1,9 @@
 import classNames from 'classnames';
 import React, { FC, useContext, FocusEvent, ChangeEvent } from 'react';
-import { FieldTypes } from '../utils/formValidation';
-import TextsContext from './context/TextsContext';
+import { FieldTypes } from '../../utils/formValidation';
+import TextsContext from '../context/TextsContext';
 
-interface FormFieldProps {
+export interface FormFieldProps {
     id: FieldTypes;
     type: string;
     value: string;
@@ -15,7 +15,7 @@ interface FormFieldProps {
     ariaError?: string;
 }
 
-const FormField: FC<FormFieldProps> = ({
+export const FormField: FC<FormFieldProps> = ({
     id,
     type,
     value,
@@ -27,6 +27,7 @@ const FormField: FC<FormFieldProps> = ({
     ariaError,
 }) => {
     const { texts } = useContext(TextsContext);
+
     const getLabel = (fieldId: string): string => {
         switch (fieldId) {
             case FieldTypes.Name:
@@ -164,5 +165,3 @@ const FormField: FC<FormFieldProps> = ({
         </>
     );
 };
-
-export default FormField;

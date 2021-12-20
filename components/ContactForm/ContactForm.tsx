@@ -5,7 +5,7 @@ import React, { FC, useContext, useState } from 'react';
 import { FieldTypes, FormState, validateName, validateEmail } from '../../utils/formValidation';
 import Button from '../Button/Button';
 import TextsContext from '../context/TextsContext';
-import FormField from '../FormField';
+import { FormField } from '../FormField/FormField';
 
 interface FormValues {
     name: string;
