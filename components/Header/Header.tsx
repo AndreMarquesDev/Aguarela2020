@@ -1,20 +1,19 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { FC, useContext, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import NavLinksContext from './context/NavLinksContext';
-import { NavLinks } from './NavLinks/NavLinks';
-import { Page } from '../utils/pages';
-import { useWindowSize, Breakpoint } from '../utils/useWindowSize';
-import { MenuIcon } from './MenuIcon/MenuIcon';
-import { Locale } from '../utils/locales';
+import NavLinksContext from '../context/NavLinksContext';
+import { NavLinks } from '../NavLinks/NavLinks';
+import { Page } from '../../utils/pages';
+import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
+import { MenuIcon } from '../MenuIcon/MenuIcon';
+import { Locale } from '../../utils/locales';
 
-interface HeaderProps {
+export interface HeaderProps {
     currentRoute: string;
     language: Locale;
 }
 
-const Header: FC<HeaderProps> = ({ currentRoute, language }) => {
+export const Header: FC<HeaderProps> = ({ currentRoute, language }) => {
     const { setNavHeight } = useContext(NavLinksContext);
 
     const navRef = useRef(null);
@@ -38,6 +37,7 @@ const Header: FC<HeaderProps> = ({ currentRoute, language }) => {
         <header>
             <nav ref={navRef} className="wrapper">
                 <Link href={`/${language}/${'homepage' as Page}`} prefetch={false}>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a>
                         <Image alt="Logo" height={35} src="/images/logo.svg" width={logoWidth} />
                     </a>
@@ -75,5 +75,3 @@ const Header: FC<HeaderProps> = ({ currentRoute, language }) => {
         </header>
     );
 };
-
-export default Header;
