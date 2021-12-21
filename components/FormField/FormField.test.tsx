@@ -2,9 +2,6 @@ import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen, RenderResult } from '@testing-library/react';
 import { FormField, FormFieldProps } from './FormField';
-import NavLinksContext from '../context/NavLinksContext';
-import { Breakpoint } from '../../utils/useWindowSize';
-import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { FieldTypes } from '../../utils/formValidation';
 import { textsPt } from '../../utils/texts';
 
@@ -97,5 +94,14 @@ describe('<FormField />', () => {
         const errorMessage = screen.getByTestId('errorMessage_hidden');
 
         expect(errorMessage).toBeInTheDocument();
+    });
+
+    test('renders without a label if an invalid id is provided', () => {
+        // @ts-ignore
+        renderComponent({ id: 'invalidId', isRequired: true });
+
+        const label = screen.getByText('*');
+
+        expect(label).toBeInTheDocument();
     });
 });
