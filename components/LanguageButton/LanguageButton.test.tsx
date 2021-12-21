@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, RenderResult, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import * as nextRouter from 'next/router';
 import { LanguageButton } from './LanguageButton';
@@ -14,13 +14,19 @@ nextRouter.useRouter = jest.fn(() => ({
     replace: jest.fn(),
 }));
 
+const mockToggleMenu = jest.fn();
+
+const renderComponent = (isMenuOpen = true): RenderResult => {
+    return render(
+        <NavLinksContext.Provider value={{ isMenuOpen, toggleMenu: mockToggleMenu }}>
+            <LanguageButton />
+        </NavLinksContext.Provider>
+    );
+};
+
 describe('<LanguageButton />', () => {
     test('renders properly', () => {
-        const { container } = render(
-            <NavLinksContext.Provider value={{ isMenuOpen: false, toggleMenu: jest.fn() }}>
-                <LanguageButton />
-            </NavLinksContext.Provider>
-        );
+        const { container } = renderComponent();
 
         const button = screen.getByRole('button');
 
@@ -34,21 +40,32 @@ describe('<LanguageButton />', () => {
             value: {
                 pathname: '/en/about',
             },
-            writable: true,
         });
 
-        render(
-            <NavLinksContext.Provider value={{ isMenuOpen: false, toggleMenu: jest.fn() }}>
-                <LanguageButton />
-            </NavLinksContext.Provider>
-        );
+        renderComponent();
 
         const button = screen.getByText('pt');
 
         expect(button).toBeInTheDocument();
 
+        expect(mockToggleMenu).toHaveBeenCalledTimes(0);
+
         userEvent.click(button);
 
         expect(document.title).toBe('Sobre - Aguarela Digital');
+
+        expect(mockToggleMenu).toHaveBeenCalledTimes(1);
+    });
+
+    test('does not call the "toggleMenu" function if menu is closed', () => {
+        renderComponent(false);
+
+        const button = screen.getByText('pt');
+
+        expect(mockToggleMenu).toHaveBeenCalledTimes(0);
+
+        userEvent.click(button);
+
+        expect(mockToggleMenu).toHaveBeenCalledTimes(0);
     });
 });
