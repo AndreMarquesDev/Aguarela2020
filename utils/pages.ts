@@ -6,7 +6,6 @@ export const pagesMap: Page[] = ['homepage', 'about', 'projects', 'services', 'c
 
 export const pagePathRegex = (page: Page): RegExp => RegExp(`${page}$`);
 
-// export const getPageFromUrl = isClientSide ? pagesMap.filter(page => pagePathRegex(page).test(window.location.pathname)) : [];
 export const getPageFromUrl = (): Page[] => {
     if (!isClientSide) {
         return [];
