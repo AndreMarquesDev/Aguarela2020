@@ -1,4 +1,3 @@
-/* eslint-disable jest/expect-expect */
 import { urls, selectors } from '../utils/selectors';
 
 describe('homepage', () => {
