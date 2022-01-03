@@ -4,9 +4,10 @@ import Title from '../Title/Title';
 import { Breakpoint, useWindowSize } from '../../utils/useWindowSize';
 import { NukaCarousel } from '../NukaCarousel/NukaCarousel';
 import SkillItem from '../SkillItem/SkillItem';
-
-export const skillsBlockItemWrapperDataTestId = 'skillsBlock_skillItemWrapper';
-export const skillsBlockItemCarouselDataTestId = 'skillsBlock_skillItemCarousel';
+import {
+    skillsBlockItemWrapperDataTestId,
+    skillsBlockItemCarouselDataTestId,
+} from '../../utils/dataTestIds';
 
 export const SkillsBlock: FC = () => {
     const { texts } = useContext(TextsContext);

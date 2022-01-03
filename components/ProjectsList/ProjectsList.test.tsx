@@ -4,8 +4,9 @@ import { render, screen } from '@testing-library/react';
 import { textsPt, textsEn } from '../../utils/texts';
 import TextsContext from '../context/TextsContext';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
-import { ProjectsList, projectsListNoCarouselDataTestId } from './ProjectsList';
+import { ProjectsList } from './ProjectsList';
 import { Breakpoint } from '../../utils/useWindowSize';
+import { projectsListNoCarouselDataTestId } from '../../utils/dataTestIds';
 
 describe('<ProjectsList />', () => {
     test('renders properly', () => {

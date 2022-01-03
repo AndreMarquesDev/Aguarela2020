@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { textBlock1DataTestId } from '../../utils/dataTestIds';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 import Button from '../Button/Button';
 
@@ -13,7 +14,6 @@ export interface TextShadowBlockProps {
     hasButton?: boolean;
 }
 
-export const textBlock1DataTestId = 'textShadowBlock_textBlock1';
 export const buttonText = 'catarina@aguareladigital.com';
 export const mailtoValue = 'mailto:catarina@aguareladigital.com';
 

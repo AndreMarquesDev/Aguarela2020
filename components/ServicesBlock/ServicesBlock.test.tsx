@@ -4,12 +4,12 @@ import { render, screen } from '@testing-library/react';
 import { textsPt, textsEn } from '../../utils/texts';
 import TextsContext from '../context/TextsContext';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
-import {
-    ServicesBlock,
-    servicesBlockItemCarouselDataTestId,
-    servicesBlockItemWrapperDataTestId,
-} from './ServicesBlock';
+import { ServicesBlock } from './ServicesBlock';
 import { Breakpoint } from '../../utils/useWindowSize';
+import {
+    servicesBlockItemWrapperDataTestId,
+    servicesBlockItemCarouselDataTestId,
+} from '../../utils/dataTestIds';
 
 describe('<ServicesBlock />', () => {
     test('renders properly', () => {

@@ -2,6 +2,7 @@ import axios from 'axios';
 import classNames from 'classnames';
 import { useFormik } from 'formik';
 import React, { FC, useContext, useState } from 'react';
+import { contactFormContainerDataTestId } from '../../utils/dataTestIds';
 import { FieldTypes, FormState, validateName, validateEmail } from '../../utils/formValidation';
 import Button from '../Button/Button';
 import TextsContext from '../context/TextsContext';
@@ -54,7 +55,6 @@ const formSchema = [
 ];
 
 export const FORM_RESET_TIMEOUT = 7500;
-export const contactFormContainerDataTestId = 'contactForm_container';
 
 const ContactForm: FC = () => {
     const { texts } = useContext(TextsContext);

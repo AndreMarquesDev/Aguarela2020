@@ -4,6 +4,7 @@ import { isClientSide } from 'multilingual-url/lib';
 import classNames from 'classnames';
 import TextsContext from '../context/TextsContext';
 import { resetTimesTouchedAttribute } from '../../utils/generic';
+import { projectItemTouchDivDataTestId } from '../../utils/dataTestIds';
 
 export interface ProjectItemProps {
     imageSrc: string;
@@ -17,8 +18,6 @@ export interface ProjectItemProps {
     isActive?: boolean;
     isGrid?: boolean;
 }
-
-export const projectItemTouchDivDataTestId = 'projectItem_touch_div';
 
 export const ProjectItem: FC<ProjectItemProps> = ({
     imageSrc,

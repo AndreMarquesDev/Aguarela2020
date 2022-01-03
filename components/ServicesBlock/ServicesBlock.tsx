@@ -1,11 +1,12 @@
 import React, { FC, useContext } from 'react';
+import {
+    servicesBlockItemWrapperDataTestId,
+    servicesBlockItemCarouselDataTestId,
+} from '../../utils/dataTestIds';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 import TextsContext from '../context/TextsContext';
 import { NukaCarousel } from '../NukaCarousel/NukaCarousel';
 import Title from '../Title/Title';
-
-export const servicesBlockItemWrapperDataTestId = 'servicesBlock_blockWrapper';
-export const servicesBlockItemCarouselDataTestId = 'servicesBlock_blockCarousel';
 
 export const ServicesBlock: FC = () => {
     const { texts } = useContext(TextsContext);

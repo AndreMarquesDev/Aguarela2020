@@ -1,9 +1,10 @@
 import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen, RenderResult, fireEvent } from '@testing-library/react';
-import { ProjectItem, ProjectItemProps, projectItemTouchDivDataTestId } from './ProjectItem';
+import { ProjectItem, ProjectItemProps } from './ProjectItem';
 import { textsEn, textsPt } from '../../utils/texts';
 import TextsContext from '../context/TextsContext';
+import { projectItemTouchDivDataTestId } from '../../utils/dataTestIds';
 
 const baseProps: ProjectItemProps = {
     brandLink: 'https://www.instagram.com/tudonatjela',
