@@ -2,11 +2,12 @@ import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen, waitFor, waitForElementToBeRemoved } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import ContactForm, { contactFormContainerDataTestId, FORM_RESET_TIMEOUT } from './ContactForm';
+import ContactForm, { FORM_RESET_TIMEOUT } from './ContactForm';
 import TextsContext from '../context/TextsContext';
 import { textsEn, textsPt } from '../../utils/texts';
 import { FieldTypes } from '../../utils/formValidation';
 import { initializeAxiosMockAdapter } from '../../ajax/axiosMockAdapter';
+import { contactFormContainerDataTestId } from '../../utils/dataTestIds';
 
 describe('<ContactForm />', () => {
     test('renders properly', () => {

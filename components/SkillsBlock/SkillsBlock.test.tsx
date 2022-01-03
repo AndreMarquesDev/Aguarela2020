@@ -4,12 +4,12 @@ import { render, screen } from '@testing-library/react';
 import { textsPt, textsEn } from '../../utils/texts';
 import TextsContext from '../context/TextsContext';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
+import { SkillsBlock } from './SkillsBlock';
+import { Breakpoint } from '../../utils/useWindowSize';
 import {
-    SkillsBlock,
     skillsBlockItemWrapperDataTestId,
     skillsBlockItemCarouselDataTestId,
-} from './SkillsBlock';
-import { Breakpoint } from '../../utils/useWindowSize';
+} from '../../utils/dataTestIds';
 
 describe('<SkillsBlock />', () => {
     test('renders properly', () => {

@@ -1,14 +1,10 @@
 import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen, RenderResult } from '@testing-library/react';
-import TextShadowBlock, {
-    buttonText,
-    mailtoValue,
-    textBlock1DataTestId,
-    TextShadowBlockProps,
-} from './TextShadowBlock';
+import TextShadowBlock, { buttonText, mailtoValue, TextShadowBlockProps } from './TextShadowBlock';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { Breakpoint } from '../../utils/useWindowSize';
+import { textBlock1DataTestId } from '../../utils/dataTestIds';
 
 const baseProps: TextShadowBlockProps = {
     title1: 'Bem',

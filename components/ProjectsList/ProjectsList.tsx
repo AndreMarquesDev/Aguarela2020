@@ -5,8 +5,7 @@ import Button from '../Button/Button';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 import { NukaCarousel } from '../NukaCarousel/NukaCarousel';
 import { ProjectItem } from '../ProjectItem/ProjectItem';
-
-export const projectsListNoCarouselDataTestId = 'projectsList_noCarousel';
+import { projectsListNoCarouselDataTestId } from '../../utils/dataTestIds';
 
 export const ProjectsList: FC = () => {
     const { texts } = useContext(TextsContext);

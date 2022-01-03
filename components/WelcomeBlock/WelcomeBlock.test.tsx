@@ -5,9 +5,9 @@ import * as nextRouter from 'next/router';
 import WelcomeBlock from './WelcomeBlock';
 import { textsPt, textsEn } from '../../utils/texts';
 import TextsContext from '../context/TextsContext';
-import { textBlock1DataTestId } from '../TextShadowBlock/TextShadowBlock';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { Breakpoint } from '../../utils/useWindowSize';
+import { textBlock1DataTestId } from '../../utils/dataTestIds';
 
 // @ts-ignore
 nextRouter.useRouter = jest.fn(() => ({
