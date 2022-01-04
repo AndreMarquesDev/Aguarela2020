@@ -11,6 +11,7 @@ export interface TextShadowBlockProps {
     textBlock1: string;
     textBlock2: string;
     textBlock3: string;
+    dataTestId: string;
     hasButton?: boolean;
 }
 
@@ -25,6 +26,7 @@ const TextShadowBlock: FC<TextShadowBlockProps> = ({
     textBlock1,
     textBlock2,
     textBlock3,
+    dataTestId,
     hasButton,
 }) => {
     const windowSize = useWindowSize();
@@ -33,7 +35,7 @@ const TextShadowBlock: FC<TextShadowBlockProps> = ({
 
     return (
         <>
-            <section className="container">
+            <section className="container" data-testid={dataTestId}>
                 <div className="wrapper genericMargins">
                     <div className="titleBlock">
                         {isMobile ? (

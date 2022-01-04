@@ -17,6 +17,7 @@ const baseProps: TextShadowBlockProps = {
         'Do ínicio ao fim, acompanho, monitorizo e otimizo todo o processo e estratégia de gestão de redes sociais.',
     textBlock3:
         'Através do planeamento estratégico, criação de conteúdo e implementação estou disponível para ser o vosso braço direito.',
+    dataTestId: 'dataTestId',
     hasButton: false,
 };
 

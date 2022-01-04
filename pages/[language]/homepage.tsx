@@ -12,6 +12,7 @@ import { ProjectsList } from '../../components/ProjectsList/ProjectsList';
 import LetsWork from '../../components/LetsWork/LetsWork';
 import BrandsList from '../../components/BrandsList/BrandsList';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
+import { homepageBannerContainerDataTestId } from '../../utils/dataTestIds';
 
 const Homepage: NextPage = () => {
     const [navHeight, setNavHeight] = useState(0);
@@ -35,7 +36,10 @@ const Homepage: NextPage = () => {
                     <title>Aguarela Digital</title>
                 </Head>
 
-                <div className={classNames('homepageBanner', isMobile && 'mobileNavHeight')}>
+                <div
+                    className={classNames('homepageBanner', isMobile && 'mobileNavHeight')}
+                    data-testid={homepageBannerContainerDataTestId}
+                >
                     <Image
                         priority
                         alt="homepage banner"
