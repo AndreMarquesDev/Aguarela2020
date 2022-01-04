@@ -6,6 +6,7 @@ declare namespace Cypress {
         imageIsVisible(dataTestId: string, selector: string): Chainable<Element>;
         isHidden(parent: string, selector: string): Chainable<Element>;
         isVisible(parent: string, selector: string): Chainable<Element>;
+        urlIsEqualTo(url: string): Chainable<Element>;
         forceHover(): Chainable<Element>;
     }
 }
@@ -33,6 +34,10 @@ Cypress.Commands.add('isHidden', (parent, selector) => {
 
 Cypress.Commands.add('isVisible', (parent, selector) => {
     cy.getByText(parent, selector).should('be.visible');
+});
+
+Cypress.Commands.add('urlIsEqualTo', url => {
+    cy.url().should('eq', url);
 });
 
 Cypress.Commands.add('forceHover', { prevSubject: true }, subject => {

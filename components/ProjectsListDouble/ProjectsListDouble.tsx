@@ -4,6 +4,7 @@ import Title from '../Title/Title';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 import { NukaCarousel } from '../NukaCarousel/NukaCarousel';
 import { ProjectItem } from '../ProjectItem/ProjectItem';
+import { projectsListDoubleSectionDataTestId } from '../../utils/dataTestIds';
 
 export const ProjectsListDouble: FC = () => {
     const { texts } = useContext(TextsContext);
@@ -15,7 +16,7 @@ export const ProjectsListDouble: FC = () => {
 
     return (
         <>
-            <section className="container">
+            <section className="container" data-testid={projectsListDoubleSectionDataTestId}>
                 <div className="wrapper genericMargins">
                     <Title colored text={texts.projects} />
 
