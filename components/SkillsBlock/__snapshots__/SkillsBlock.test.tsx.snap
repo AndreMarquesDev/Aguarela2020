@@ -4,6 +4,7 @@ exports[`<SkillsBlock /> renders properly 1`] = `
 <div>
   <section
     class="jsx-2589310862 container"
+    data-testid="skillsBlock_section"
   >
     <div
       class="jsx-2589310862 wrapper genericMargins"
@@ -182,6 +183,7 @@ exports[`<SkillsBlock /> renders properly in English 1`] = `
 <div>
   <section
     class="jsx-2589310862 container"
+    data-testid="skillsBlock_section"
   >
     <div
       class="jsx-2589310862 wrapper genericMargins"

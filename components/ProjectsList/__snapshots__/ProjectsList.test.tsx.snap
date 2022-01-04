@@ -4,6 +4,7 @@ exports[`<ProjectsList /> renders properly 1`] = `
 <div>
   <section
     class="jsx-982443136 container"
+    data-testid="projectsList_section"
   >
     <div
       class="jsx-982443136 wrapper genericMargins"
@@ -200,6 +201,7 @@ exports[`<ProjectsList /> renders properly in English 1`] = `
 <div>
   <section
     class="jsx-982443136 container"
+    data-testid="projectsList_section"
   >
     <div
       class="jsx-982443136 wrapper genericMargins"

@@ -4,6 +4,7 @@ exports[`<ContactBlock /> renders properly 1`] = `
 <div>
   <section
     class="jsx-2290377079 container"
+    data-testid="contactBlock_section"
   >
     <div
       class="jsx-2290377079 wrapper genericMargins"
@@ -72,6 +73,7 @@ exports[`<ContactBlock /> renders properly in English 1`] = `
 <div>
   <section
     class="jsx-2290377079 container"
+    data-testid="contactBlock_section"
   >
     <div
       class="jsx-2290377079 wrapper genericMargins"
@@ -140,6 +142,7 @@ exports[`<ContactBlock /> renders properly in English and mobile 1`] = `
 <div>
   <section
     class="jsx-2290377079 container"
+    data-testid="contactBlock_section"
   >
     <div
       class="jsx-2290377079 wrapper genericMargins"
@@ -198,6 +201,7 @@ exports[`<ContactBlock /> renders properly on mobile 1`] = `
 <div>
   <section
     class="jsx-2290377079 container"
+    data-testid="contactBlock_section"
   >
     <div
       class="jsx-2290377079 wrapper genericMargins"

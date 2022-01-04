@@ -4,6 +4,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
 <div>
   <section
     class="jsx-1134843165 container"
+    data-testid="projectsListDouble_section"
   >
     <div
       class="jsx-1134843165 wrapper genericMargins"
@@ -1256,6 +1257,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
 <div>
   <section
     class="jsx-1134843165 container"
+    data-testid="projectsListDouble_section"
   >
     <div
       class="jsx-1134843165 wrapper genericMargins"
@@ -2508,6 +2510,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
 <div>
   <section
     class="jsx-1134843165 container"
+    data-testid="projectsListDouble_section"
   >
     <div
       class="jsx-1134843165 wrapper genericMargins"
@@ -3758,6 +3761,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
 <div>
   <section
     class="jsx-1134843165 container"
+    data-testid="projectsListDouble_section"
   >
     <div
       class="jsx-1134843165 wrapper genericMargins"

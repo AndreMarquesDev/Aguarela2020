@@ -4,6 +4,7 @@ exports[`<TextShadowBlock /> renders properly with a button 1`] = `
 <div>
   <section
     class="jsx-2290377079 container"
+    data-testid="dataTestId"
   >
     <div
       class="jsx-2290377079 wrapper genericMargins"
