@@ -4,6 +4,7 @@ exports[`<WelcomeBlock /> renders properly 1`] = `
 <div>
   <section
     class="jsx-2290377079 container"
+    data-testid="welcome_section"
   >
     <div
       class="jsx-2290377079 wrapper genericMargins"
@@ -65,6 +66,7 @@ exports[`<WelcomeBlock /> renders properly in English 1`] = `
 <div>
   <section
     class="jsx-2290377079 container"
+    data-testid="welcome_section"
   >
     <div
       class="jsx-2290377079 wrapper genericMargins"

@@ -4,6 +4,7 @@ exports[`<Workflow /> renders properly 1`] = `
 <div>
   <section
     class="jsx-3904647779 container"
+    data-testid="workflow_section"
   >
     <div
       class="jsx-3904647779 wrapper genericMargins"
@@ -187,6 +188,7 @@ exports[`<Workflow /> renders properly in English 1`] = `
 <div>
   <section
     class="jsx-3904647779 container"
+    data-testid="workflow_section"
   >
     <div
       class="jsx-3904647779 wrapper genericMargins"
