@@ -7,6 +7,7 @@ import SkillItem from '../SkillItem/SkillItem';
 import {
     skillsBlockItemWrapperDataTestId,
     skillsBlockItemCarouselDataTestId,
+    skillsBlockSectionDataTestId,
 } from '../../utils/dataTestIds';
 
 export const SkillsBlock: FC = () => {
@@ -17,7 +18,7 @@ export const SkillsBlock: FC = () => {
 
     return (
         <>
-            <section className="container">
+            <section className="container" data-testid={skillsBlockSectionDataTestId}>
                 <div className="wrapper genericMargins">
                     <Title colored text={texts.skills} />
                     {isDesktop ? (

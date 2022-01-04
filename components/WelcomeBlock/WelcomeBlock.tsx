@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import React, { FC, useContext } from 'react';
+import { welcomeSectionDataTestId } from '../../utils/dataTestIds';
 import { Locale } from '../../utils/locales';
 import TextsContext from '../context/TextsContext';
 import TextShadowBlock from '../TextShadowBlock/TextShadowBlock';
@@ -16,6 +17,7 @@ const WelcomeBlock: FC = () => {
 
     return (
         <TextShadowBlock
+            dataTestId={welcomeSectionDataTestId}
             textBlock1={texts.managingsocialMedia}
             textBlock2={texts.monitorAndOptimizeProcessAndStrategy}
             textBlock3={texts.throughStrategicPlanning}

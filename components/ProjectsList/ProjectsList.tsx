@@ -5,7 +5,10 @@ import Button from '../Button/Button';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 import { NukaCarousel } from '../NukaCarousel/NukaCarousel';
 import { ProjectItem } from '../ProjectItem/ProjectItem';
-import { projectsListNoCarouselDataTestId } from '../../utils/dataTestIds';
+import {
+    projectsListNoCarouselDataTestId,
+    projectsListSectionDataTestId,
+} from '../../utils/dataTestIds';
 
 export const ProjectsList: FC = () => {
     const { texts } = useContext(TextsContext);
@@ -15,7 +18,7 @@ export const ProjectsList: FC = () => {
 
     return (
         <>
-            <section className="container">
+            <section className="container" data-testid={projectsListSectionDataTestId}>
                 <div className="wrapper genericMargins">
                     <Title colored text={texts.projects} />
 

@@ -1,4 +1,5 @@
 import React, { FC, useContext } from 'react';
+import { workflowSectionDataTestId } from '../../utils/dataTestIds';
 import TextsContext from '../context/TextsContext';
 import Title from '../Title/Title';
 
@@ -7,7 +8,7 @@ const Workflow: FC = () => {
 
     return (
         <>
-            <section className="container">
+            <section className="container" data-testid={workflowSectionDataTestId}>
                 <div className="wrapper genericMargins">
                     <Title text={texts.workflow} />
 

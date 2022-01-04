@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import React, { FC, useContext } from 'react';
+import { contactBlockSectionDataTestId } from '../../utils/dataTestIds';
 import { Locale } from '../../utils/locales';
 import TextsContext from '../context/TextsContext';
 import TextShadowBlock from '../TextShadowBlock/TextShadowBlock';
@@ -17,6 +18,7 @@ const ContactBlock: FC = () => {
     return (
         <TextShadowBlock
             hasButton
+            dataTestId={contactBlockSectionDataTestId}
             textBlock1={texts.needHelpWithYourBusiness}
             textBlock2={texts.sendMeAnEmail}
             textBlock3={texts.iAmAvailableToAdvise}

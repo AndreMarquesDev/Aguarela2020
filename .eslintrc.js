@@ -1,11 +1,11 @@
 module.exports = {
-    extends: ['andremarquesdev', 'plugin:testing-library/react', 'plugin:cypress/recommended'],
-    plugins: ['testing-library', 'cypress'],
+    extends: ['andremarquesdev', 'plugin:cypress/recommended'],
+    plugins: ['cypress'],
     overrides: [
         {
             files: ['*test.js', '*test.ts', '*test.tsx'],
-            extends: ['plugin:jest/recommended'],
-            plugins: ['jest'],
+            extends: ['plugin:jest/recommended', 'plugin:testing-library/react'],
+            plugins: ['jest', 'testing-library'],
         },
     ],
 };
