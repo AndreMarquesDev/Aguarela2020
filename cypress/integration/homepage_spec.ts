@@ -1,5 +1,6 @@
 import {
     homepageBannerContainerDataTestId,
+    projectsListDoubleSectionDataTestId,
     projectsListNoCarouselDataTestId,
     projectsListSectionDataTestId,
     skillsBlockItemWrapperDataTestId,
@@ -58,7 +59,7 @@ describe('homepage', () => {
     });
 
     it('loads', () => {
-        cy.url().should('eq', urls.pt.homepage);
+        cy.urlIsEqualTo(urls.pt.homepage);
     });
 
     it('loads the banner', () => {
@@ -202,7 +203,7 @@ describe('homepage', () => {
         cy.isVisible(projectsListSectionDataTestId, `* ${inPartnershipWith}`);
 
         cy.getByText(projectsListSectionDataTestId, seeMore).click();
-
-        cy.url().should('eq', urls.pt.homepage);
+        cy.getByDataTestId(projectsListDoubleSectionDataTestId);
+        cy.urlIsEqualTo(urls.pt.projects);
     });
 });

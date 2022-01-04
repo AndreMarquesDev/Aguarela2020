@@ -5,6 +5,7 @@ export const workflowSectionDataTestId = 'workflow_section';
 export const welcomeSectionDataTestId = 'welcome_section';
 export const contactBlockSectionDataTestId = 'contactBlock_section';
 export const projectsListSectionDataTestId = 'projectsList_section';
+export const projectsListDoubleSectionDataTestId = 'projectsListDouble_section';
 
 export const projectsListNoCarouselDataTestId = 'projectsList_noCarousel';
 export const projectItemTouchDivDataTestId = 'projectItem_touch_div';
