@@ -4,6 +4,7 @@ exports[`<AboutMe /> renders properly 1`] = `
 <div>
   <section
     class="jsx-1128069698 container"
+    data-testid="aboutMe_section"
   >
     <div
       class="jsx-1128069698 wrapper genericMargins"
@@ -87,6 +88,7 @@ exports[`<AboutMe /> renders properly in English 1`] = `
 <div>
   <section
     class="jsx-1128069698 container"
+    data-testid="aboutMe_section"
   >
     <div
       class="jsx-1128069698 wrapper genericMargins"
@@ -170,6 +172,7 @@ exports[`<AboutMe /> renders properly in mobile 1`] = `
 <div>
   <section
     class="jsx-1128069698 container"
+    data-testid="aboutMe_section"
   >
     <div
       class="jsx-1128069698 wrapper genericMargins"

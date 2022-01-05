@@ -4,6 +4,7 @@ import Button from '../Button/Button';
 import TextsContext from '../context/TextsContext';
 import Title from '../Title/Title';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
+import { aboutMeSectionDataTestId } from '../../utils/dataTestIds';
 
 const AboutMe: FC = () => {
     const { texts } = useContext(TextsContext);
@@ -12,7 +13,7 @@ const AboutMe: FC = () => {
 
     return (
         <>
-            <section className="container">
+            <section className="container" data-testid={aboutMeSectionDataTestId}>
                 <div className="wrapper genericMargins">
                     <Title colored text={texts.about} />
                     <div className="mainContentContainer">

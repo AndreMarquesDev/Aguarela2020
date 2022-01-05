@@ -4,12 +4,14 @@ exports[`<Header /> renders properly 1`] = `
 <div>
   <header
     class="jsx-2230556198"
+    data-testid="header_section"
   >
     <nav
       class="jsx-2230556198 wrapper"
     >
       <a
         class="jsx-2230556198"
+        data-testid="header_homepageLogoLink"
         href="/pt/homepage"
       >
         <div
@@ -107,12 +109,14 @@ exports[`<Header /> renders properly below phablet 1`] = `
 <div>
   <header
     class="jsx-2230556198"
+    data-testid="header_section"
   >
     <nav
       class="jsx-2230556198 wrapper"
     >
       <a
         class="jsx-2230556198"
+        data-testid="header_homepageLogoLink"
         href="/pt/homepage"
       >
         <div
