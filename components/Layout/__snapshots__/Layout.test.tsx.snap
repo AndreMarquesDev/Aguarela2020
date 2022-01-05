@@ -110,6 +110,7 @@ exports[`<Layout /> renders properly 1`] = `
     </div>
     <footer
       class="jsx-1577276803"
+      data-testid="footer_section"
     >
       <div
         class="jsx-1577276803 wrapper"
@@ -321,6 +322,7 @@ exports[`<Layout /> renders properly in English 1`] = `
     </div>
     <footer
       class="jsx-1577276803"
+      data-testid="footer_section"
     >
       <div
         class="jsx-1577276803 wrapper"
@@ -532,6 +534,7 @@ exports[`<Layout /> renders properly when the menu is open and the resolution is
     </div>
     <footer
       class="jsx-1577276803"
+      data-testid="footer_section"
     >
       <div
         class="jsx-1577276803 wrapper"

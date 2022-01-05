@@ -6,6 +6,9 @@ export const welcomeSectionDataTestId = 'welcome_section';
 export const contactBlockSectionDataTestId = 'contactBlock_section';
 export const projectsListSectionDataTestId = 'projectsList_section';
 export const projectsListDoubleSectionDataTestId = 'projectsListDouble_section';
+export const brandsListSectionDataTestId = 'brandsList_section';
+export const letsWorkSectionDataTestId = 'letsWork_section';
+export const footerDataTestId = 'footer_section';
 
 export const projectsListNoCarouselDataTestId = 'projectsList_noCarousel';
 export const projectItemTouchDivDataTestId = 'projectItem_touch_div';
