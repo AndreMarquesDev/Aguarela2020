@@ -2,13 +2,14 @@ import React, { FC, useContext } from 'react';
 import Image from 'next/image';
 import TextsContext from '../context/TextsContext';
 import Title from '../Title/Title';
+import { brandsListSectionDataTestId } from '../../utils/dataTestIds';
 
 const BrandsList: FC = () => {
     const { texts } = useContext(TextsContext);
 
     return (
         <>
-            <section className="container">
+            <section className="container" data-testid={brandsListSectionDataTestId}>
                 <div className="wrapper genericMargins">
                     <Title colored text={texts.myNetwork} />
 

@@ -1,5 +1,9 @@
 import {
+    brandsListSectionDataTestId,
+    contactBlockSectionDataTestId,
+    footerDataTestId,
     homepageBannerContainerDataTestId,
+    letsWorkSectionDataTestId,
     projectsListDoubleSectionDataTestId,
     projectsListNoCarouselDataTestId,
     projectsListSectionDataTestId,
@@ -49,6 +53,11 @@ const {
     present,
     inPartnershipWith,
     seeMore,
+    myNetwork,
+    letsWork,
+    letsWorkDescription,
+    contact,
+    footerInfo,
 } = textsPt;
 
 describe('homepage', () => {
@@ -62,11 +71,11 @@ describe('homepage', () => {
         cy.urlIsEqualTo(urls.pt.homepage);
     });
 
-    it('loads the banner', () => {
+    it('renders the banner', () => {
         cy.imageIsVisible(homepageBannerContainerDataTestId, 'homepage banner');
     });
 
-    it('loads the welcome block', () => {
+    it('renders the welcome section', () => {
         cy.getByText(welcomeSectionDataTestId, welcome1);
         cy.getByText(welcomeSectionDataTestId, welcome2);
         cy.getByText(welcomeSectionDataTestId, welcome3);
@@ -76,7 +85,7 @@ describe('homepage', () => {
         cy.getByText(welcomeSectionDataTestId, throughStrategicPlanning);
     });
 
-    it('loads the skills block', () => {
+    it('renders the skills section', () => {
         cy.getByText(skillsBlockSectionDataTestId, skills).scrollIntoView();
 
         cy.imageIsVisible(skillsBlockItemWrapperDataTestId, socialMediaStrategy);
@@ -104,7 +113,7 @@ describe('homepage', () => {
         cy.getByText(skillsBlockSectionDataTestId, createAttractiveContent);
     });
 
-    it('loads the workflow block', () => {
+    it('renders the workflow section', () => {
         cy.contains(workflow).scrollIntoView();
 
         cy.getByText(workflowSectionDataTestId, defineTarget);
@@ -164,7 +173,7 @@ describe('homepage', () => {
         cy.isVisible(workflowSectionDataTestId, improvementsAndUpdatesToTheStrategy);
     });
 
-    it('loads the projects block', () => {
+    it('renders the projects section', () => {
         cy.getByText(projectsListSectionDataTestId, projects).scrollIntoView();
 
         cy.imageIsVisible(projectsListSectionDataTestId, 'tjela logo');
@@ -205,5 +214,57 @@ describe('homepage', () => {
         cy.getByText(projectsListSectionDataTestId, seeMore).click();
         cy.getByDataTestId(projectsListDoubleSectionDataTestId);
         cy.urlIsEqualTo(urls.pt.projects);
+    });
+
+    it('renders the brands list section', () => {
+        cy.getByText(brandsListSectionDataTestId, myNetwork).scrollIntoView();
+
+        cy.imageIsVisible(brandsListSectionDataTestId, 'guacamole logo');
+        cy.imageIsVisible(brandsListSectionDataTestId, 'avocado logo');
+        cy.imageIsVisible(brandsListSectionDataTestId, 'pernod logo');
+        cy.imageIsVisible(brandsListSectionDataTestId, 'tjela logo');
+        cy.imageIsVisible(brandsListSectionDataTestId, 'guacamole logo');
+        cy.imageIsVisible(brandsListSectionDataTestId, 'kaffeehaus logo');
+        cy.imageIsVisible(brandsListSectionDataTestId, 'taste of india logo');
+        cy.imageIsVisible(brandsListSectionDataTestId, 'icecream roll logo');
+        cy.imageIsVisible(brandsListSectionDataTestId, 'marialimao logo');
+        cy.imageIsVisible(brandsListSectionDataTestId, 'biergarten logo');
+        cy.imageIsVisible(brandsListSectionDataTestId, 'trattoria logo');
+        cy.imageIsVisible(brandsListSectionDataTestId, 'a amiga esteticista logo');
+        cy.imageIsVisible(brandsListSectionDataTestId, 'rice me deli logo');
+        cy.imageIsVisible(brandsListSectionDataTestId, '4 patas de 5 estrelas logo');
+        cy.imageIsVisible(brandsListSectionDataTestId, 'rice me logo');
+        cy.imageIsVisible(brandsListSectionDataTestId, 'luminous logo');
+        cy.imageIsVisible(brandsListSectionDataTestId, 'mad mary logo');
+        cy.imageIsVisible(brandsListSectionDataTestId, 'harpoon logo');
+        cy.imageIsVisible(brandsListSectionDataTestId, 'bovine logo');
+    });
+
+    it("renders the let's work list section", () => {
+        cy.getByText(letsWorkSectionDataTestId, letsWork).scrollIntoView();
+
+        cy.getByText(letsWorkSectionDataTestId, letsWorkDescription);
+
+        cy.getByText(letsWorkSectionDataTestId, contact).click();
+        cy.getByDataTestId(contactBlockSectionDataTestId);
+        cy.urlIsEqualTo(urls.pt.contact);
+    });
+
+    it('renders the footer', () => {
+        cy.getByText(footerDataTestId, `${footerInfo} André Marques`).scrollIntoView();
+
+        cy.getByDataTestId(footerDataTestId).find('[href="https://www.andremarquesdev.com"]');
+        cy.getByDataTestId(footerDataTestId).find(
+            '[aria-label="Aguarela instagram"][href="https://www.instagram.com/aguareladigital"]'
+        );
+        cy.getByDataTestId(footerDataTestId).find(
+            '[aria-label="Aguarela facebook"][href="https://www.facebook.com/aguareladigitalagency"]'
+        );
+
+        cy.getByDataTestId(footerDataTestId).find('[aria-label="Go to contact page"]').click();
+        cy.getByDataTestId(contactBlockSectionDataTestId);
+        cy.urlIsEqualTo(urls.pt.contact);
+
+        cy.visit('/');
     });
 });
