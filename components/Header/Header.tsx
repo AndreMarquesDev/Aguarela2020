@@ -7,6 +7,7 @@ import { Page } from '../../utils/pages';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 import { MenuIcon } from '../MenuIcon/MenuIcon';
 import { Locale } from '../../utils/locales';
+import { headerDataTestId, homepageLogoLinkDataTestId } from '../../utils/dataTestIds';
 
 export interface HeaderProps {
     currentRoute: string;
@@ -34,11 +35,11 @@ export const Header: FC<HeaderProps> = ({ currentRoute, language }) => {
     const logoWidth = isPhablet ? 150 : 250;
 
     return (
-        <header>
+        <header data-testid={headerDataTestId}>
             <nav ref={navRef} className="wrapper">
                 <Link href={`/${language}/${'homepage' as Page}`} prefetch={false}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a>
+                    <a data-testid={homepageLogoLinkDataTestId}>
                         <Image alt="Logo" height={35} src="/images/logo.svg" width={logoWidth} />
                     </a>
                 </Link>

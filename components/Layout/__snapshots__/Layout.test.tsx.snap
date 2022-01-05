@@ -7,12 +7,14 @@ exports[`<Layout /> renders properly 1`] = `
   >
     <header
       class="jsx-2230556198"
+      data-testid="header_section"
     >
       <nav
         class="jsx-2230556198 wrapper"
       >
         <a
           class="jsx-2230556198"
+          data-testid="header_homepageLogoLink"
           href="/pt/homepage"
         >
           <div
@@ -219,12 +221,14 @@ exports[`<Layout /> renders properly in English 1`] = `
   >
     <header
       class="jsx-2230556198"
+      data-testid="header_section"
     >
       <nav
         class="jsx-2230556198 wrapper"
       >
         <a
           class="jsx-2230556198"
+          data-testid="header_homepageLogoLink"
           href="/en/homepage"
         >
           <div
@@ -431,12 +435,14 @@ exports[`<Layout /> renders properly when the menu is open and the resolution is
   >
     <header
       class="jsx-2230556198"
+      data-testid="header_section"
     >
       <nav
         class="jsx-2230556198 wrapper"
       >
         <a
           class="jsx-2230556198"
+          data-testid="header_homepageLogoLink"
           href="/pt/homepage"
         >
           <div

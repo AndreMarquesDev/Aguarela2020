@@ -1,18 +1,22 @@
 import {
+    aboutMeSectionDataTestId,
     brandsListSectionDataTestId,
     contactBlockSectionDataTestId,
     footerDataTestId,
+    headerDataTestId,
     homepageBannerContainerDataTestId,
+    homepageLogoLinkDataTestId,
     letsWorkSectionDataTestId,
     projectsListDoubleSectionDataTestId,
     projectsListNoCarouselDataTestId,
     projectsListSectionDataTestId,
+    servicesBlockSectionDataTestId,
     skillsBlockItemWrapperDataTestId,
     skillsBlockSectionDataTestId,
     welcomeSectionDataTestId,
     workflowSectionDataTestId,
 } from '../../utils/dataTestIds';
-import { textsPt } from '../../utils/texts';
+import { textsEn, textsPt } from '../../utils/texts';
 import { urls } from '../utils/selectors';
 
 const {
@@ -58,7 +62,11 @@ const {
     letsWorkDescription,
     contact,
     footerInfo,
+    about,
+    services,
 } = textsPt;
+
+const { projects: projectsEn, contact: contactEn, about: aboutEn, services: servicesEn } = textsEn;
 
 describe('homepage', () => {
     beforeEach(() => {
@@ -71,8 +79,66 @@ describe('homepage', () => {
         cy.urlIsEqualTo(urls.pt.homepage);
     });
 
+    it('renders the header and navigates properly', () => {
+        cy.imageIsVisible(headerDataTestId, 'Logo');
+
+        cy.getByText(headerDataTestId, about).click();
+        cy.getByDataTestId(aboutMeSectionDataTestId);
+        cy.urlIsEqualTo(urls.pt.about);
+        cy.getByDataTestId(homepageLogoLinkDataTestId).click();
+        cy.getByDataTestId(homepageBannerContainerDataTestId);
+        cy.urlIsEqualTo(urls.pt.homepage);
+
+        cy.getByText(headerDataTestId, projects).click();
+        cy.getByDataTestId(projectsListDoubleSectionDataTestId);
+        cy.urlIsEqualTo(urls.pt.projects);
+        cy.getByDataTestId(homepageLogoLinkDataTestId).click();
+        cy.getByDataTestId(homepageBannerContainerDataTestId);
+        cy.urlIsEqualTo(urls.pt.homepage);
+
+        cy.getByText(headerDataTestId, services).click();
+        cy.getByDataTestId(servicesBlockSectionDataTestId);
+        cy.urlIsEqualTo(urls.pt.services);
+        cy.getByDataTestId(homepageLogoLinkDataTestId).click();
+        cy.getByDataTestId(homepageBannerContainerDataTestId);
+        cy.urlIsEqualTo(urls.pt.homepage);
+
+        cy.getByText(headerDataTestId, contact).click();
+        cy.getByDataTestId(contactBlockSectionDataTestId);
+        cy.urlIsEqualTo(urls.pt.contact);
+        cy.getByDataTestId(homepageLogoLinkDataTestId).click();
+        cy.getByDataTestId(homepageBannerContainerDataTestId);
+        cy.urlIsEqualTo(urls.pt.homepage);
+
+        cy.getByText(headerDataTestId, 'en').click();
+        cy.getByText(headerDataTestId, aboutEn);
+        cy.getByText(headerDataTestId, projectsEn);
+        cy.getByText(headerDataTestId, servicesEn);
+        cy.getByText(headerDataTestId, contactEn);
+        cy.urlIsEqualTo(urls.en.homepage);
+        cy.getByText(headerDataTestId, 'pt').click();
+        cy.getByText(headerDataTestId, about);
+        cy.getByText(headerDataTestId, projects);
+        cy.getByText(headerDataTestId, services);
+        cy.getByText(headerDataTestId, contact);
+        cy.urlIsEqualTo(urls.pt.homepage);
+    });
+
     it('renders the banner', () => {
         cy.imageIsVisible(homepageBannerContainerDataTestId, 'homepage banner');
+
+        const viewportWidth = 1920;
+        const viewportHeight = 1080;
+        const navHeight = 160;
+        const bannerHeight = viewportHeight * 0.9 - navHeight;
+
+        cy.viewport(viewportWidth, viewportHeight);
+        cy.getByDataTestId(homepageBannerContainerDataTestId)
+            .find('[alt="homepage banner"]')
+            .and($img => {
+                expect(($img[0] as HTMLImageElement).naturalWidth).to.equal(viewportWidth);
+                expect(($img[0] as HTMLImageElement).scrollHeight).to.equal(bannerHeight);
+            });
     });
 
     it('renders the welcome section', () => {

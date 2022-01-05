@@ -4,6 +4,7 @@ exports[`<ServicesBlock /> renders properly 1`] = `
 <div>
   <section
     class="jsx-1405412835 container"
+    data-testid="servicesBlock_section"
   >
     <div
       class="jsx-1405412835 wrapper genericMargins"
@@ -128,6 +129,7 @@ exports[`<ServicesBlock /> renders properly in English 1`] = `
 <div>
   <section
     class="jsx-1405412835 container"
+    data-testid="servicesBlock_section"
   >
     <div
       class="jsx-1405412835 wrapper genericMargins"

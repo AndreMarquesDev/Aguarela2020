@@ -8,7 +8,10 @@ export const projectsListSectionDataTestId = 'projectsList_section';
 export const projectsListDoubleSectionDataTestId = 'projectsListDouble_section';
 export const brandsListSectionDataTestId = 'brandsList_section';
 export const letsWorkSectionDataTestId = 'letsWork_section';
+export const headerDataTestId = 'header_section';
 export const footerDataTestId = 'footer_section';
+export const aboutMeSectionDataTestId = 'aboutMe_section';
+export const servicesBlockSectionDataTestId = 'servicesBlock_section';
 
 export const projectsListNoCarouselDataTestId = 'projectsList_noCarousel';
 export const projectItemTouchDivDataTestId = 'projectItem_touch_div';
@@ -17,3 +20,4 @@ export const servicesBlockItemCarouselDataTestId = 'servicesBlock_blockCarousel'
 export const skillsBlockItemWrapperDataTestId = 'skillsBlock_skillItemWrapper';
 export const skillsBlockItemCarouselDataTestId = 'skillsBlock_skillItemCarousel';
 export const textBlock1DataTestId = 'textShadowBlock_textBlock1';
+export const homepageLogoLinkDataTestId = 'header_homepageLogoLink';

@@ -2,6 +2,7 @@ import React, { FC, useContext } from 'react';
 import {
     servicesBlockItemWrapperDataTestId,
     servicesBlockItemCarouselDataTestId,
+    servicesBlockSectionDataTestId,
 } from '../../utils/dataTestIds';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 import TextsContext from '../context/TextsContext';
@@ -16,7 +17,7 @@ export const ServicesBlock: FC = () => {
 
     return (
         <>
-            <section className="container">
+            <section className="container" data-testid={servicesBlockSectionDataTestId}>
                 <div className="wrapper genericMargins">
                     <Title colored text={texts.services} />
 
