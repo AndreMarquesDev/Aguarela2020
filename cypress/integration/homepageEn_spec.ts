@@ -426,6 +426,6 @@ describe('homepage', () => {
         cy.getByDataTestId(contactBlockSectionDataTestId);
         cy.urlIsEqualTo(urls.en.contact);
 
-        cy.visit('/');
+        cy.visit(urls.en.homepage);
     });
 });
