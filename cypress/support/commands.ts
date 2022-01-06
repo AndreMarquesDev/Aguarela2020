@@ -3,6 +3,7 @@ declare namespace Cypress {
     interface Chainable {
         getByDataTestId(selector: string): Chainable<Element>;
         getByText(parent: string, text: string): Chainable<Element>;
+        getByHref(parent: string, hrefValue: string): Chainable<Element>;
         imageIsVisible(dataTestId: string, selector: string): Chainable<Element>;
         imageWidthIs(dataTestId: string, selector: string, width: number): Chainable<Element>;
         imageHeightIs(dataTestId: string, selector: string, height: number): Chainable<Element>;
@@ -19,6 +20,10 @@ Cypress.Commands.add('getByDataTestId', selector => {
 
 Cypress.Commands.add('getByText', (parent, text) => {
     cy.getByDataTestId(parent).contains(text);
+});
+
+Cypress.Commands.add('getByHref', (parent, hrefValue) => {
+    cy.getByDataTestId(parent).find(`[href="${hrefValue}"]`);
 });
 
 Cypress.Commands.add('imageIsVisible', (dataTestId, selector) => {

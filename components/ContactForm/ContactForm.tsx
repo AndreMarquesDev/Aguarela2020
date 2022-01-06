@@ -4,6 +4,7 @@ import { useFormik } from 'formik';
 import React, { FC, useContext, useState } from 'react';
 import { contactFormContainerDataTestId } from '../../utils/dataTestIds';
 import { FieldTypes, FormState, validateName, validateEmail } from '../../utils/formValidation';
+import { contactFormBackendUrl } from '../../utils/urls';
 import Button from '../Button/Button';
 import TextsContext from '../context/TextsContext';
 import { FormField } from '../FormField/FormField';
@@ -98,7 +99,7 @@ const ContactForm: FC = () => {
         });
 
         axios
-            .post('https://aguarela-contact-form-backend.herokuapp.com/api/sendEmail', formState)
+            .post(contactFormBackendUrl, formState)
             .then(() => {
                 setFormSubmitState({
                     sending: false,

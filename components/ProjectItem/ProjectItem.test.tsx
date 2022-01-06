@@ -5,9 +5,10 @@ import { ProjectItem, ProjectItemProps } from './ProjectItem';
 import { textsEn, textsPt } from '../../utils/texts';
 import TextsContext from '../context/TextsContext';
 import { projectItemTouchDivDataTestId } from '../../utils/dataTestIds';
+import { tjelaInstagramUrl } from '../../utils/urls';
 
 const baseProps: ProjectItemProps = {
-    brandLink: 'https://www.instagram.com/tudonatjela',
+    brandLink: tjelaInstagramUrl,
     brandTag: '@tudonatjela',
     description: textsPt.socialMediaManagementAndContentCreation,
     imageAlt: 'tjela logo',

@@ -419,7 +419,7 @@ exports[`<BrandsList /> renders properly 1`] = `
           <a
             aria-label="4 patas de 5 estrelas"
             class="jsx-1373660134"
-            href="https://instagram.com/4patasde5estrelas"
+            href="https://www.instagram.com/4patasde5estrelas"
             rel="noreferrer"
             target="_blank"
           >
@@ -1036,7 +1036,7 @@ exports[`<BrandsList /> renders properly in English 1`] = `
           <a
             aria-label="4 patas de 5 estrelas"
             class="jsx-1373660134"
-            href="https://instagram.com/4patasde5estrelas"
+            href="https://www.instagram.com/4patasde5estrelas"
             rel="noreferrer"
             target="_blank"
           >

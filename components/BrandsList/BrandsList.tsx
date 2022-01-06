@@ -3,6 +3,26 @@ import Image from 'next/image';
 import TextsContext from '../context/TextsContext';
 import Title from '../Title/Title';
 import { brandsListSectionDataTestId } from '../../utils/dataTestIds';
+import {
+    avocadoInstagramUrl,
+    pernodWebsiteUrl,
+    tjelaInstagramUrl,
+    guacamoleInstagramUrl,
+    kaffeehausInstagramUrl,
+    tasteOfIndiaInstagramUrl,
+    icecreamRollInstagramUrl,
+    mariaLimaoInstagramUrl,
+    biergartenInstagramUrl,
+    trattoriaInstagramUrl,
+    aAmigaEsteticistaInstagramUrl,
+    riceMeDeliInstagramUrl,
+    quatroPatasDe5EstrelasInstagramUrl,
+    riceMeInstagramUrl,
+    luminousInstagramUrl,
+    madMaryInstagramUrl,
+    harpoonLinkedInUrl,
+    bovineInstagramUrl,
+} from '../../utils/urls';
 
 const BrandsList: FC = () => {
     const { texts } = useContext(TextsContext);
@@ -17,7 +37,7 @@ const BrandsList: FC = () => {
                         <li>
                             <a
                                 aria-label="avocado"
-                                href="https://www.instagram.com/avocadohouselisbon"
+                                href={avocadoInstagramUrl}
                                 rel="noreferrer"
                                 target="_blank"
                             >
@@ -32,7 +52,7 @@ const BrandsList: FC = () => {
                         <li>
                             <a
                                 aria-label="pernod"
-                                href="https://www.pernod-ricard.com"
+                                href={pernodWebsiteUrl}
                                 rel="noreferrer"
                                 target="_blank"
                             >
@@ -47,7 +67,7 @@ const BrandsList: FC = () => {
                         <li>
                             <a
                                 aria-label="tjela"
-                                href="https://www.instagram.com/tudonatjela"
+                                href={tjelaInstagramUrl}
                                 rel="noreferrer"
                                 target="_blank"
                             >
@@ -62,7 +82,7 @@ const BrandsList: FC = () => {
                         <li>
                             <a
                                 aria-label="guacamole"
-                                href="https://www.instagram.com/guacamolegmg"
+                                href={guacamoleInstagramUrl}
                                 rel="noreferrer"
                                 target="_blank"
                             >
@@ -77,7 +97,7 @@ const BrandsList: FC = () => {
                         <li>
                             <a
                                 aria-label="kaffeehaus"
-                                href="https://www.instagram.com/kaffeehaus_lisboa"
+                                href={kaffeehausInstagramUrl}
                                 rel="noreferrer"
                                 target="_blank"
                             >
@@ -92,7 +112,7 @@ const BrandsList: FC = () => {
                         <li>
                             <a
                                 aria-label="taste of india"
-                                href="https://www.instagram.com/tasteofindiapt"
+                                href={tasteOfIndiaInstagramUrl}
                                 rel="noreferrer"
                                 target="_blank"
                             >
@@ -107,7 +127,7 @@ const BrandsList: FC = () => {
                         <li>
                             <a
                                 aria-label="icecream roll"
-                                href="https://www.instagram.com/icecreamroll.pt"
+                                href={icecreamRollInstagramUrl}
                                 rel="noreferrer"
                                 target="_blank"
                             >
@@ -122,7 +142,7 @@ const BrandsList: FC = () => {
                         <li>
                             <a
                                 aria-label="marialimao"
-                                href="https://www.instagram.com/bebemarialimao"
+                                href={mariaLimaoInstagramUrl}
                                 rel="noreferrer"
                                 target="_blank"
                             >
@@ -137,7 +157,7 @@ const BrandsList: FC = () => {
                         <li>
                             <a
                                 aria-label="biergarten"
-                                href="https://www.instagram.com/biergarten.jardimdacerveja"
+                                href={biergartenInstagramUrl}
                                 rel="noreferrer"
                                 target="_blank"
                             >
@@ -152,7 +172,7 @@ const BrandsList: FC = () => {
                         <li>
                             <a
                                 aria-label="trattoria"
-                                href="https://www.instagram.com/trattoriadipaola"
+                                href={trattoriaInstagramUrl}
                                 rel="noreferrer"
                                 target="_blank"
                             >
@@ -167,7 +187,7 @@ const BrandsList: FC = () => {
                         <li>
                             <a
                                 aria-label="a amiga esteticista"
-                                href="https://www.instagram.com/aamigaesteticista"
+                                href={aAmigaEsteticistaInstagramUrl}
                                 rel="noreferrer"
                                 target="_blank"
                             >
@@ -182,7 +202,7 @@ const BrandsList: FC = () => {
                         <li>
                             <a
                                 aria-label="rice me deli"
-                                href="https://www.instagram.com/ricemedeli"
+                                href={riceMeDeliInstagramUrl}
                                 rel="noreferrer"
                                 target="_blank"
                             >
@@ -197,7 +217,7 @@ const BrandsList: FC = () => {
                         <li>
                             <a
                                 aria-label="4 patas de 5 estrelas"
-                                href="https://instagram.com/4patasde5estrelas"
+                                href={quatroPatasDe5EstrelasInstagramUrl}
                                 rel="noreferrer"
                                 target="_blank"
                             >
@@ -212,7 +232,7 @@ const BrandsList: FC = () => {
                         <li>
                             <a
                                 aria-label="rice me"
-                                href="https://www.instagram.com/ricemerestaurante"
+                                href={riceMeInstagramUrl}
                                 rel="noreferrer"
                                 target="_blank"
                             >
@@ -227,7 +247,7 @@ const BrandsList: FC = () => {
                         <li>
                             <a
                                 aria-label="luminous"
-                                href="https://www.instagram.com/becomeluminouscoaching"
+                                href={luminousInstagramUrl}
                                 rel="noreferrer"
                                 target="_blank"
                             >
@@ -242,7 +262,7 @@ const BrandsList: FC = () => {
                         <li>
                             <a
                                 aria-label="mad mary"
-                                href="https://www.instagram.com/madmarycuisine"
+                                href={madMaryInstagramUrl}
                                 rel="noreferrer"
                                 target="_blank"
                             >
@@ -257,7 +277,7 @@ const BrandsList: FC = () => {
                         <li>
                             <a
                                 aria-label="harpoon"
-                                href="https://www.linkedin.com/company/harpoon-lda"
+                                href={harpoonLinkedInUrl}
                                 rel="noreferrer"
                                 target="_blank"
                             >
@@ -272,7 +292,7 @@ const BrandsList: FC = () => {
                         <li>
                             <a
                                 aria-label="bovine"
-                                href="https://www.instagram.com/bovinelisboa"
+                                href={bovineInstagramUrl}
                                 rel="noreferrer"
                                 target="_blank"
                             >
