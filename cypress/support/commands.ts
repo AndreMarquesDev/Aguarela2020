@@ -4,6 +4,8 @@ declare namespace Cypress {
         getByDataTestId(selector: string): Chainable<Element>;
         getByText(parent: string, text: string): Chainable<Element>;
         imageIsVisible(dataTestId: string, selector: string): Chainable<Element>;
+        imageWidthIs(dataTestId: string, selector: string, width: number): Chainable<Element>;
+        imageHeightIs(dataTestId: string, selector: string, height: number): Chainable<Element>;
         isHidden(parent: string, selector: string): Chainable<Element>;
         isVisible(parent: string, selector: string): Chainable<Element>;
         urlIsEqualTo(url: string): Chainable<Element>;
@@ -19,12 +21,28 @@ Cypress.Commands.add('getByText', (parent, text) => {
     cy.getByDataTestId(parent).contains(text);
 });
 
-Cypress.Commands.add('imageIsVisible', (parent, selector) => {
-    cy.getByDataTestId(parent)
+Cypress.Commands.add('imageIsVisible', (dataTestId, selector) => {
+    cy.getByDataTestId(dataTestId)
         .find(`img[alt="${selector}"]`)
         .should('be.visible')
         .and($img => {
             expect(($img[0] as HTMLImageElement).naturalWidth).to.be.greaterThan(0);
+        });
+});
+
+Cypress.Commands.add('imageWidthIs', (dataTestId, selector, width) => {
+    cy.getByDataTestId(dataTestId)
+        .find(`img[alt="${selector}"]`)
+        .and($img => {
+            expect(($img[0] as HTMLImageElement).scrollWidth).to.equal(width);
+        });
+});
+
+Cypress.Commands.add('imageHeightIs', (dataTestId, selector, height) => {
+    cy.getByDataTestId(dataTestId)
+        .find(`img[alt="${selector}"]`)
+        .and($img => {
+            expect(($img[0] as HTMLImageElement).scrollHeight).to.equal(height);
         });
 });
 

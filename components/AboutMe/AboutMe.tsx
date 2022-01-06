@@ -20,7 +20,7 @@ const AboutMe: FC = () => {
                         <div className="imageBlock">
                             <Image
                                 priority
-                                alt="homepage banner"
+                                alt="a picture of me, Catarina"
                                 height={650}
                                 src="/images/about-me.jpg"
                                 width={530}
@@ -29,7 +29,7 @@ const AboutMe: FC = () => {
                         <div className="textBlock">
                             <p className="bodyText">{texts.hiMyNameIs}</p>
                             <p className="bodyText">{texts.withMoreThan}</p>
-                            <p className="bodyText">{texts.thesocialMediaCommunicationStrategy}</p>
+                            <p className="bodyText">{texts.theSocialMediaCommunicationStrategy}</p>
                             <Button
                                 alignLeft={isDesktop}
                                 externalLink="https://www.instagram.com/catarinasantiago"
