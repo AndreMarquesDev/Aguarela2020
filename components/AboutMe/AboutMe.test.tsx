@@ -14,7 +14,7 @@ describe('<AboutMe />', () => {
         expect(screen.getByText(textsPt.about)).toBeInTheDocument();
         expect(screen.getByText(textsPt.hiMyNameIs)).toBeInTheDocument();
         expect(screen.getByText(textsPt.withMoreThan)).toBeInTheDocument();
-        expect(screen.getByText(textsPt.thesocialMediaCommunicationStrategy)).toBeInTheDocument();
+        expect(screen.getByText(textsPt.theSocialMediaCommunicationStrategy)).toBeInTheDocument();
         expect(screen.getByText(textsPt.getToKnowMeBetter)).toBeInTheDocument();
 
         // eslint-disable-next-line testing-library/no-container, testing-library/no-node-access
@@ -36,7 +36,7 @@ describe('<AboutMe />', () => {
         expect(screen.getByText(textsEn.about)).toBeInTheDocument();
         expect(screen.getByText(textsEn.hiMyNameIs)).toBeInTheDocument();
         expect(screen.getByText(textsEn.withMoreThan)).toBeInTheDocument();
-        expect(screen.getByText(textsEn.thesocialMediaCommunicationStrategy)).toBeInTheDocument();
+        expect(screen.getByText(textsEn.theSocialMediaCommunicationStrategy)).toBeInTheDocument();
         expect(screen.getByText(textsEn.getToKnowMeBetter)).toBeInTheDocument();
 
         // eslint-disable-next-line testing-library/no-container, testing-library/no-node-access

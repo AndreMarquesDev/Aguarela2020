@@ -35,7 +35,7 @@ exports[`<AboutMe /> renders properly 1`] = `
               />
             </div>
             <img
-              alt="homepage banner"
+              alt="a picture of me, Catarina"
               decoding="async"
               src="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75"
               srcset="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75 2x"
@@ -119,7 +119,7 @@ exports[`<AboutMe /> renders properly in English 1`] = `
               />
             </div>
             <img
-              alt="homepage banner"
+              alt="a picture of me, Catarina"
               decoding="async"
               src="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75"
               srcset="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75 2x"
@@ -203,7 +203,7 @@ exports[`<AboutMe /> renders properly in mobile 1`] = `
               />
             </div>
             <img
-              alt="homepage banner"
+              alt="a picture of me, Catarina"
               decoding="async"
               src="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75"
               srcset="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75 2x"
