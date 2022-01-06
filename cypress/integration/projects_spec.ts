@@ -1,4 +1,17 @@
 import {
+    aboutMeSectionDataTestId,
+    brandsListSectionDataTestId,
+    contactBlockSectionDataTestId,
+    footerDataTestId,
+    headerDataTestId,
+    homepageBannerContainerDataTestId,
+    homepageLogoLinkDataTestId,
+    letsWorkSectionDataTestId,
+    projectsListDoubleSectionDataTestId,
+    servicesBlockSectionDataTestId,
+} from '../../utils/dataTestIds';
+import { textsEn, textsPt } from '../../utils/texts';
+import {
     aAmigaEsteticistaInstagramUrl,
     aguarelaDigitalFacebookUrl,
     aguarelaDigitalInstagramUrl,
@@ -6,7 +19,6 @@ import {
     avocadoInstagramUrl,
     biergartenInstagramUrl,
     bovineInstagramUrl,
-    catarinaSantiagoInstagramUrl,
     guacamoleInstagramUrl,
     harpoonLinkedInUrl,
     icecreamRollInstagramUrl,
@@ -22,19 +34,6 @@ import {
     tjelaInstagramUrl,
     trattoriaInstagramUrl,
 } from '../../utils/urls';
-import {
-    aboutMeSectionDataTestId,
-    brandsListSectionDataTestId,
-    contactBlockSectionDataTestId,
-    footerDataTestId,
-    headerDataTestId,
-    homepageBannerContainerDataTestId,
-    homepageLogoLinkDataTestId,
-    letsWorkSectionDataTestId,
-    projectsListDoubleSectionDataTestId,
-    servicesBlockSectionDataTestId,
-} from '../../utils/dataTestIds';
-import { textsEn, textsPt } from '../../utils/texts';
 import { urls } from '../utils/selectors';
 import {
     defaultViewportWidth,
@@ -43,30 +42,18 @@ import {
     brandLogosWidth,
 } from '../utils/variables';
 
-const {
-    projects,
-    contact,
-    about,
-    services,
-    hiMyNameIs,
-    withMoreThan,
-    theSocialMediaCommunicationStrategy,
-    getToKnowMeBetter,
-    myNetwork,
-    letsWork,
-    letsWorkDescription,
-    footerInfo,
-} = textsPt;
+const { projects, myNetwork, letsWork, letsWorkDescription, contact, footerInfo, about, services } =
+    textsPt;
 
 const { projects: projectsEn, contact: contactEn, about: aboutEn, services: servicesEn } = textsEn;
 
 describe('homepage', () => {
     beforeEach(() => {
-        cy.visit('/about');
+        cy.visit(urls.pt.projects);
     });
 
     it('loads', () => {
-        cy.urlIsEqualTo(urls.pt.about);
+        cy.urlIsEqualTo(urls.pt.projects);
     });
 
     it('renders the header and navigates properly', () => {
@@ -75,60 +62,47 @@ describe('homepage', () => {
         cy.getByDataTestId(homepageLogoLinkDataTestId).click();
         cy.getByDataTestId(homepageBannerContainerDataTestId);
         cy.urlIsEqualTo(urls.pt.homepage);
-        cy.getByText(headerDataTestId, about).click();
-        cy.getByDataTestId(aboutMeSectionDataTestId);
-        cy.urlIsEqualTo(urls.pt.about);
-
         cy.getByText(headerDataTestId, projects).click();
         cy.getByDataTestId(projectsListDoubleSectionDataTestId);
         cy.urlIsEqualTo(urls.pt.projects);
+
         cy.getByText(headerDataTestId, about).click();
         cy.getByDataTestId(aboutMeSectionDataTestId);
         cy.urlIsEqualTo(urls.pt.about);
+        cy.getByText(headerDataTestId, projects).click();
+        cy.getByDataTestId(projectsListDoubleSectionDataTestId);
+        cy.urlIsEqualTo(urls.pt.projects);
 
         cy.getByText(headerDataTestId, services).click();
         cy.getByDataTestId(servicesBlockSectionDataTestId);
         cy.urlIsEqualTo(urls.pt.services);
-        cy.getByText(headerDataTestId, about).click();
-        cy.getByDataTestId(aboutMeSectionDataTestId);
-        cy.urlIsEqualTo(urls.pt.about);
+        cy.getByText(headerDataTestId, projects).click();
+        cy.getByDataTestId(projectsListDoubleSectionDataTestId);
+        cy.urlIsEqualTo(urls.pt.projects);
 
         cy.getByText(headerDataTestId, contact).click();
         cy.getByDataTestId(contactBlockSectionDataTestId);
         cy.urlIsEqualTo(urls.pt.contact);
-        cy.getByText(headerDataTestId, about).click();
-        cy.getByDataTestId(aboutMeSectionDataTestId);
-        cy.urlIsEqualTo(urls.pt.about);
+        cy.getByText(headerDataTestId, projects).click();
+        cy.getByDataTestId(projectsListDoubleSectionDataTestId);
+        cy.urlIsEqualTo(urls.pt.projects);
 
         cy.getByText(headerDataTestId, 'en').click();
         cy.getByText(headerDataTestId, aboutEn);
         cy.getByText(headerDataTestId, projectsEn);
         cy.getByText(headerDataTestId, servicesEn);
         cy.getByText(headerDataTestId, contactEn);
-        cy.urlIsEqualTo(urls.en.about);
+        cy.urlIsEqualTo(urls.en.projects);
         cy.getByText(headerDataTestId, 'pt').click();
         cy.getByText(headerDataTestId, about);
         cy.getByText(headerDataTestId, projects);
         cy.getByText(headerDataTestId, services);
         cy.getByText(headerDataTestId, contact);
-        cy.urlIsEqualTo(urls.pt.about);
+        cy.urlIsEqualTo(urls.pt.projects);
     });
 
-    it('renders the about me section', () => {
-        cy.getByText(aboutMeSectionDataTestId, about).scrollIntoView();
-
-        cy.imageIsVisible(aboutMeSectionDataTestId, 'a picture of me, Catarina');
-        cy.getByText(aboutMeSectionDataTestId, hiMyNameIs);
-        cy.getByText(aboutMeSectionDataTestId, withMoreThan);
-        cy.getByText(aboutMeSectionDataTestId, theSocialMediaCommunicationStrategy);
-
-        cy.getByText(aboutMeSectionDataTestId, getToKnowMeBetter);
-        cy.getByHref(aboutMeSectionDataTestId, catarinaSantiagoInstagramUrl);
-
-        cy.viewport(defaultViewportWidth, defaultViewportHeight);
-
-        cy.imageWidthIs(aboutMeSectionDataTestId, 'a picture of me, Catarina', 476);
-        cy.imageHeightIs(aboutMeSectionDataTestId, 'a picture of me, Catarina', 584);
+    it('renders the projects section', () => {
+        cy.getByText(projectsListDoubleSectionDataTestId, projects).scrollIntoView();
     });
 
     it('renders the brands list section', () => {
