@@ -56,17 +56,17 @@ const {
     letsWork,
     letsWorkDescription,
     footerInfo,
-} = textsPt;
+} = textsEn;
 
-const { projects: projectsEn, contact: contactEn, about: aboutEn, services: servicesEn } = textsEn;
+const { projects: projectsEn, contact: contactEn, about: aboutEn, services: servicesEn } = textsPt;
 
 describe('homepage', () => {
     beforeEach(() => {
-        cy.visit('/about');
+        cy.visit(urls.en.about);
     });
 
     it('loads', () => {
-        cy.urlIsEqualTo(urls.pt.about);
+        cy.urlIsEqualTo(urls.en.about);
     });
 
     it('renders the header and navigates properly', () => {
@@ -74,44 +74,44 @@ describe('homepage', () => {
 
         cy.getByDataTestId(homepageLogoLinkDataTestId).click();
         cy.getByDataTestId(homepageBannerContainerDataTestId);
-        cy.urlIsEqualTo(urls.pt.homepage);
+        cy.urlIsEqualTo(urls.en.homepage);
         cy.getByText(headerDataTestId, about).click();
         cy.getByDataTestId(aboutMeSectionDataTestId);
-        cy.urlIsEqualTo(urls.pt.about);
+        cy.urlIsEqualTo(urls.en.about);
 
         cy.getByText(headerDataTestId, projects).click();
         cy.getByDataTestId(projectsListDoubleSectionDataTestId);
-        cy.urlIsEqualTo(urls.pt.projects);
+        cy.urlIsEqualTo(urls.en.projects);
         cy.getByText(headerDataTestId, about).click();
         cy.getByDataTestId(aboutMeSectionDataTestId);
-        cy.urlIsEqualTo(urls.pt.about);
+        cy.urlIsEqualTo(urls.en.about);
 
         cy.getByText(headerDataTestId, services).click();
         cy.getByDataTestId(servicesBlockSectionDataTestId);
-        cy.urlIsEqualTo(urls.pt.services);
+        cy.urlIsEqualTo(urls.en.services);
         cy.getByText(headerDataTestId, about).click();
         cy.getByDataTestId(aboutMeSectionDataTestId);
-        cy.urlIsEqualTo(urls.pt.about);
+        cy.urlIsEqualTo(urls.en.about);
 
         cy.getByText(headerDataTestId, contact).click();
         cy.getByDataTestId(contactBlockSectionDataTestId);
-        cy.urlIsEqualTo(urls.pt.contact);
+        cy.urlIsEqualTo(urls.en.contact);
         cy.getByText(headerDataTestId, about).click();
         cy.getByDataTestId(aboutMeSectionDataTestId);
-        cy.urlIsEqualTo(urls.pt.about);
+        cy.urlIsEqualTo(urls.en.about);
 
-        cy.getByText(headerDataTestId, 'en').click();
+        cy.getByText(headerDataTestId, 'pt').click();
         cy.getByText(headerDataTestId, aboutEn);
         cy.getByText(headerDataTestId, projectsEn);
         cy.getByText(headerDataTestId, servicesEn);
         cy.getByText(headerDataTestId, contactEn);
-        cy.urlIsEqualTo(urls.en.about);
-        cy.getByText(headerDataTestId, 'pt').click();
+        cy.urlIsEqualTo(urls.pt.about);
+        cy.getByText(headerDataTestId, 'en').click();
         cy.getByText(headerDataTestId, about);
         cy.getByText(headerDataTestId, projects);
         cy.getByText(headerDataTestId, services);
         cy.getByText(headerDataTestId, contact);
-        cy.urlIsEqualTo(urls.pt.about);
+        cy.urlIsEqualTo(urls.en.about);
     });
 
     it('renders the about me section', () => {
@@ -238,7 +238,7 @@ describe('homepage', () => {
 
         cy.getByText(letsWorkSectionDataTestId, contact).click();
         cy.getByDataTestId(contactBlockSectionDataTestId);
-        cy.urlIsEqualTo(urls.pt.contact);
+        cy.urlIsEqualTo(urls.en.contact);
     });
 
     it('renders the footer', () => {
@@ -250,8 +250,8 @@ describe('homepage', () => {
 
         cy.getByDataTestId(footerDataTestId).find('[aria-label="Go to contact page"]').click();
         cy.getByDataTestId(contactBlockSectionDataTestId);
-        cy.urlIsEqualTo(urls.pt.contact);
+        cy.urlIsEqualTo(urls.en.contact);
 
-        cy.visit('/');
+        cy.visit(urls.en.about);
     });
 });
