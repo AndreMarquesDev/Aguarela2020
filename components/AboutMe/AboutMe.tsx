@@ -5,6 +5,7 @@ import TextsContext from '../context/TextsContext';
 import Title from '../Title/Title';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 import { aboutMeSectionDataTestId } from '../../utils/dataTestIds';
+import { catarinaSantiagoInstagramUrl } from '../../utils/urls';
 
 const AboutMe: FC = () => {
     const { texts } = useContext(TextsContext);
@@ -32,7 +33,7 @@ const AboutMe: FC = () => {
                             <p className="bodyText">{texts.theSocialMediaCommunicationStrategy}</p>
                             <Button
                                 alignLeft={isDesktop}
-                                externalLink="https://www.instagram.com/catarinasantiago"
+                                externalLink={catarinaSantiagoInstagramUrl}
                             >
                                 {texts.getToKnowMeBetter}
                             </Button>

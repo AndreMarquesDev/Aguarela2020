@@ -5,6 +5,28 @@ import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 import { NukaCarousel } from '../NukaCarousel/NukaCarousel';
 import { ProjectItem } from '../ProjectItem/ProjectItem';
 import { projectsListDoubleSectionDataTestId } from '../../utils/dataTestIds';
+import {
+    aAmigaEsteticistaIndustriaCriativaUrl,
+    anaroIndustriaCriativaUrl,
+    avocadoInstagramUrl,
+    beefeaterWebsiteUrl,
+    biergartenInstagramUrl,
+    bovineInstagramUrl,
+    catarinaSantiagoInstagramUrl,
+    guacamoleInstagramUrl,
+    harpoonLinkedInUrl,
+    icecreamRollInstagramUrl,
+    jamesonInstagramUrl,
+    kaffeehausInstagramUrl,
+    luminousInstagramUrl,
+    madMaryInstagramUrl,
+    mariaLimaoIndustriaCriativaUrl,
+    quatroPatasDe5EstrelasInstagramUrl,
+    riceMeDeliInstagramUrl,
+    riceMeInstagramUrl,
+    tasteOfIndiaInstagramUrl,
+    tjelaInstagramUrl,
+} from '../../utils/urls';
 
 export const ProjectsListDouble: FC = () => {
     const { texts } = useContext(TextsContext);
@@ -30,7 +52,7 @@ export const ProjectsListDouble: FC = () => {
                                 isActive
                                 isGrid
                                 isInPartnership
-                                brandLink="https://www.instagram.com/tudonatjela"
+                                brandLink={tjelaInstagramUrl}
                                 brandTag="@tudonatjela"
                                 description={texts.socialMediaAndContentCreation}
                                 imageAlt="tjela"
@@ -41,7 +63,7 @@ export const ProjectsListDouble: FC = () => {
                                 isActive
                                 isGrid
                                 isInPartnership
-                                brandLink="https://www.instagram.com/tasteofindiapt"
+                                brandLink={tasteOfIndiaInstagramUrl}
                                 brandTag="@tasteofindia"
                                 description={texts.socialMediaAndContentCreation}
                                 imageAlt="taste of india"
@@ -53,7 +75,7 @@ export const ProjectsListDouble: FC = () => {
                             <ProjectItem
                                 isActive
                                 isGrid
-                                brandLink="https://www.instagram.com/kaffeehaus_lisboa"
+                                brandLink={kaffeehausInstagramUrl}
                                 brandTag="@kaffeehaus_lisboa"
                                 description={texts.socialMediaAndContentCreation}
                                 imageAlt="kaffeehaus"
@@ -64,7 +86,7 @@ export const ProjectsListDouble: FC = () => {
                                 isActive
                                 isGrid
                                 isInPartnership
-                                brandLink="https://www.instagram.com/avocadohouselisbon"
+                                brandLink={avocadoInstagramUrl}
                                 brandTag="@avocadohouselisbon"
                                 description={texts.socialMediaAndContentCreation}
                                 imageAlt="avocado"
@@ -77,7 +99,7 @@ export const ProjectsListDouble: FC = () => {
                                 isActive
                                 isGrid
                                 isInPartnership
-                                brandLink="https://www.instagram.com/guacamolegmg"
+                                brandLink={guacamoleInstagramUrl}
                                 brandTag="@guacamolegmg"
                                 description={texts.socialMediaAndContentCreation}
                                 imageAlt="guacamole"
@@ -86,7 +108,7 @@ export const ProjectsListDouble: FC = () => {
                             />
                             <ProjectItem
                                 isGrid
-                                brandLink="https://industriacriativa.pt/projeto/45759/maria-limao-gestao-de-redes-sociais"
+                                brandLink={mariaLimaoIndustriaCriativaUrl}
                                 brandTag="@bebemarialimao"
                                 description={texts.socialMediaAndContentCreation}
                                 imageAlt="marialimao"
@@ -98,7 +120,7 @@ export const ProjectsListDouble: FC = () => {
                             <ProjectItem
                                 isActive
                                 isGrid
-                                brandLink="https://www.instagram.com/jamesonportugal/"
+                                brandLink={jamesonInstagramUrl}
                                 brandTag="@jamesonportugal"
                                 description={texts.socialMediaManagement}
                                 imageAlt="jameson"
@@ -108,7 +130,7 @@ export const ProjectsListDouble: FC = () => {
                             <ProjectItem
                                 isActive
                                 isGrid
-                                brandLink="https://www.beefeater.pt"
+                                brandLink={beefeaterWebsiteUrl}
                                 brandTag="@beefeater"
                                 description={texts.socialMediaManagement}
                                 imageAlt="beefeater"
@@ -119,7 +141,7 @@ export const ProjectsListDouble: FC = () => {
                         <div>
                             <ProjectItem
                                 isGrid
-                                brandLink="https://www.instagram.com/biergarten.jardimdacerveja"
+                                brandLink={biergartenInstagramUrl}
                                 brandTag="@biergarten"
                                 description={texts.socialMediaAndContentCreation}
                                 imageAlt="biergarten"
@@ -128,7 +150,7 @@ export const ProjectsListDouble: FC = () => {
                             />
                             <ProjectItem
                                 isGrid
-                                brandLink="https://www.instagram.com/madmarycuisine"
+                                brandLink={madMaryInstagramUrl}
                                 brandTag="@madmarycuisine"
                                 description={texts.socialMediaAndContentCreation}
                                 imageAlt="mad mary"
@@ -139,7 +161,7 @@ export const ProjectsListDouble: FC = () => {
                         <div>
                             <ProjectItem
                                 isGrid
-                                brandLink="https://www.instagram.com/bovinelisboa"
+                                brandLink={bovineInstagramUrl}
                                 brandTag="@bovinelisboa"
                                 description={texts.socialMediaAndContentCreation}
                                 imageAlt="bovine"
@@ -148,7 +170,7 @@ export const ProjectsListDouble: FC = () => {
                             />
                             <ProjectItem
                                 isGrid
-                                brandLink="https://www.instagram.com/icecreamroll.pt"
+                                brandLink={icecreamRollInstagramUrl}
                                 brandTag="@icecreamroll.pt"
                                 description={texts.socialMediaAndContentCreation}
                                 imageAlt="icecream roll"
@@ -159,7 +181,7 @@ export const ProjectsListDouble: FC = () => {
                         <div>
                             <ProjectItem
                                 isGrid
-                                brandLink="https://www.instagram.com/ricemerestaurante"
+                                brandLink={riceMeInstagramUrl}
                                 brandTag="@ricemerestaurante"
                                 description={texts.socialMediaAndContentCreation}
                                 imageAlt="rice me"
@@ -168,7 +190,7 @@ export const ProjectsListDouble: FC = () => {
                             />
                             <ProjectItem
                                 isGrid
-                                brandLink="https://www.instagram.com/ricemedeli"
+                                brandLink={riceMeDeliInstagramUrl}
                                 brandTag="@ricemedeli"
                                 description={texts.socialMediaAndContentCreation}
                                 imageAlt="rice me deli"
@@ -179,7 +201,7 @@ export const ProjectsListDouble: FC = () => {
                         <div>
                             <ProjectItem
                                 isGrid
-                                brandLink="https://www.linkedin.com/company/harpoon-lda"
+                                brandLink={harpoonLinkedInUrl}
                                 brandTag="@harpoonjobs"
                                 description={texts.socialMediaAndContentCreation}
                                 imageAlt="harpoon"
@@ -188,7 +210,7 @@ export const ProjectsListDouble: FC = () => {
                             />
                             <ProjectItem
                                 isGrid
-                                brandLink="https://www.instagram.com/catarinasantiago"
+                                brandLink={catarinaSantiagoInstagramUrl}
                                 brandTag="@catarinasantiago"
                                 description={texts.contentCreation}
                                 imageAlt="catarina santiago"
@@ -199,7 +221,7 @@ export const ProjectsListDouble: FC = () => {
                             <ProjectItem
                                 isActive
                                 isGrid
-                                brandLink="https://instagram.com/4patasde5estrelas"
+                                brandLink={quatroPatasDe5EstrelasInstagramUrl}
                                 brandTag="@4patasde5estrelas"
                                 description={texts.socialMediaManagement}
                                 imageAlt="4 patas de 5 estrelas"
@@ -209,7 +231,7 @@ export const ProjectsListDouble: FC = () => {
                             <ProjectItem
                                 isGrid
                                 isInPartnership
-                                brandLink="https://www.instagram.com/becomeluminouscoaching"
+                                brandLink={luminousInstagramUrl}
                                 brandTag="@becomeluminous"
                                 description={texts.socialMediaAndPaidSocial}
                                 imageAlt="luminous"
@@ -221,7 +243,7 @@ export const ProjectsListDouble: FC = () => {
                             <ProjectItem
                                 isActive
                                 isGrid
-                                brandLink="https://industriacriativa.pt/projeto/14473/a-amiga-esteticista"
+                                brandLink={aAmigaEsteticistaIndustriaCriativaUrl}
                                 brandTag="@aamigaesteticista"
                                 description={texts.consultingAndContentCreation}
                                 imageAlt="a amiga esteticista"
@@ -230,7 +252,7 @@ export const ProjectsListDouble: FC = () => {
                             />
                             <ProjectItem
                                 isGrid
-                                brandLink="https://industriacriativa.pt/projeto/45758/anaro-artist-content-creation"
+                                brandLink={anaroIndustriaCriativaUrl}
                                 brandTag="@anaro.artistpage"
                                 description={texts.consultingAndContentCreation}
                                 imageAlt="AnaRo"

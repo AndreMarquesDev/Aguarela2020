@@ -5,6 +5,11 @@ import TextsContext from '../context/TextsContext';
 import { Page } from '../../utils/pages';
 import { Locale } from '../../utils/locales';
 import { footerDataTestId } from '../../utils/dataTestIds';
+import {
+    aguarelaDigitalFacebookUrl,
+    aguarelaDigitalInstagramUrl,
+    andreMarquesDevWebsiteUrl,
+} from '../../utils/urls';
 
 export interface FooterProps {
     language: Locale;
@@ -21,7 +26,7 @@ const Footer: FC<FooterProps> = ({ language }) => {
                         {texts.footerInfo}{' '}
                         <a
                             className="animatedLink animatedLinkWhite"
-                            href="https://www.andremarquesdev.com"
+                            href={andreMarquesDevWebsiteUrl}
                             rel="noreferrer"
                             target="_blank"
                         >
@@ -33,7 +38,7 @@ const Footer: FC<FooterProps> = ({ language }) => {
                         <li>
                             <a
                                 aria-label="Aguarela instagram"
-                                href="https://www.instagram.com/aguareladigital"
+                                href={aguarelaDigitalInstagramUrl}
                                 rel="noreferrer"
                                 target="_blank"
                             >
@@ -43,7 +48,7 @@ const Footer: FC<FooterProps> = ({ language }) => {
                         <li>
                             <a
                                 aria-label="Aguarela facebook"
-                                href="https://www.facebook.com/aguareladigitalagency"
+                                href={aguarelaDigitalFacebookUrl}
                                 rel="noreferrer"
                                 target="_blank"
                             >

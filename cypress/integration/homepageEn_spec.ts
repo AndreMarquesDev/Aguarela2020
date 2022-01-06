@@ -17,6 +17,11 @@ import {
     workflowSectionDataTestId,
 } from '../../utils/dataTestIds';
 import { textsEn, textsPt } from '../../utils/texts';
+import {
+    aguarelaDigitalFacebookUrl,
+    aguarelaDigitalInstagramUrl,
+    andreMarquesDevWebsiteUrl,
+} from '../../utils/urls';
 import { urls } from '../utils/selectors';
 import { defaultViewportWidth, defaultViewportHeight } from '../utils/viewportSizes';
 
@@ -382,13 +387,9 @@ describe('homepage', () => {
     it('renders the footer', () => {
         cy.getByText(footerDataTestId, `${footerInfo} André Marques`).scrollIntoView();
 
-        cy.getByDataTestId(footerDataTestId).find('[href="https://www.andremarquesdev.com"]');
-        cy.getByDataTestId(footerDataTestId).find(
-            '[aria-label="Aguarela instagram"][href="https://www.instagram.com/aguareladigital"]'
-        );
-        cy.getByDataTestId(footerDataTestId).find(
-            '[aria-label="Aguarela facebook"][href="https://www.facebook.com/aguareladigitalagency"]'
-        );
+        cy.getByHref(footerDataTestId, andreMarquesDevWebsiteUrl);
+        cy.getByHref(footerDataTestId, aguarelaDigitalInstagramUrl);
+        cy.getByHref(footerDataTestId, aguarelaDigitalFacebookUrl);
 
         cy.getByDataTestId(footerDataTestId).find('[aria-label="Go to contact page"]').click();
         cy.getByDataTestId(contactBlockSectionDataTestId);

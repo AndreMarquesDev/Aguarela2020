@@ -9,6 +9,7 @@ import {
     projectsListNoCarouselDataTestId,
     projectsListSectionDataTestId,
 } from '../../utils/dataTestIds';
+import { tjelaInstagramUrl, kaffeehausInstagramUrl, guacamoleInstagramUrl } from '../../utils/urls';
 
 export const ProjectsList: FC = () => {
     const { texts } = useContext(TextsContext);
@@ -27,7 +28,7 @@ export const ProjectsList: FC = () => {
                             <ProjectItem
                                 isActive
                                 isInPartnership
-                                brandLink="https://www.instagram.com/tudonatjela"
+                                brandLink={tjelaInstagramUrl}
                                 brandTag="@tudonatjela"
                                 description={texts.socialMediaManagementAndContentCreation}
                                 imageAlt="tjela logo"
@@ -37,7 +38,7 @@ export const ProjectsList: FC = () => {
                             />
                             <ProjectItem
                                 isActive
-                                brandLink="https://www.instagram.com/kaffeehaus_lisboa"
+                                brandLink={kaffeehausInstagramUrl}
                                 brandTag="@kaffeehaus_lisboa"
                                 description={texts.socialMediaManagementAndContentCreation}
                                 imageAlt="kaffeehaus logo"
@@ -48,7 +49,7 @@ export const ProjectsList: FC = () => {
                             <ProjectItem
                                 isActive
                                 isInPartnership
-                                brandLink="https://www.instagram.com/guacamolegmg"
+                                brandLink={guacamoleInstagramUrl}
                                 brandTag="@guacamolegmg"
                                 description={texts.socialMediaManagementAndContentCreation}
                                 imageAlt="guacamole logo"
@@ -62,7 +63,7 @@ export const ProjectsList: FC = () => {
                             <ProjectItem
                                 isActive
                                 isInPartnership
-                                brandLink="https://www.instagram.com/tudonatjela"
+                                brandLink={tjelaInstagramUrl}
                                 brandTag="@tudonatjela"
                                 description={texts.socialMediaManagementAndContentCreation}
                                 imageAlt="tjela logo"
@@ -72,7 +73,7 @@ export const ProjectsList: FC = () => {
                             />
                             <ProjectItem
                                 isActive
-                                brandLink="https://www.instagram.com/kaffeehaus_lisboa"
+                                brandLink={kaffeehausInstagramUrl}
                                 brandTag="@kaffeehaus_lisboa"
                                 description={texts.socialMediaManagementAndContentCreation}
                                 imageAlt="kaffeehaus logo"
@@ -83,7 +84,7 @@ export const ProjectsList: FC = () => {
                             <ProjectItem
                                 isActive
                                 isInPartnership
-                                brandLink="https://www.instagram.com/guacamolegmg"
+                                brandLink={guacamoleInstagramUrl}
                                 brandTag="@guacamolegmg"
                                 description={texts.socialMediaManagementAndContentCreation}
                                 imageAlt="guacamole logo"

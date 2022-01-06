@@ -1,3 +1,5 @@
+import { aguarelaDigitalInstagramUrl } from './urls';
+
 export interface TextsInterface {
     about: string;
     projects: string;
@@ -98,8 +100,7 @@ export const textsPt: TextsInterface = {
     welcome2: 'Vin',
     welcome3: 'Dos',
     footerInfo: 'Aguarela Digital - Developed by',
-    managingsocialMedia:
-        'Gestão de redes sociais está no meu ADN. Sou uma freelancer, baseada em Lisboa, com experiência em gestão de redes sociais e criação de conteúdo. A <a href="https://www.instagram.com/aguareladigital" target="_blank" rel="noreferrer" class="link">@Aguarela</a> surgiu com o objetivo de ajudar negócios locais e pequenas empresas a posicionarem-se no digital, gerar awareness, criar uma relação com o target e impulsionar vendas.',
+    managingsocialMedia: `Gestão de redes sociais está no meu ADN. Sou uma freelancer, baseada em Lisboa, com experiência em gestão de redes sociais e criação de conteúdo. A <a href="${aguarelaDigitalInstagramUrl}" target="_blank" rel="noreferrer" class="link">@Aguarela</a> surgiu com o objetivo de ajudar negócios locais e pequenas empresas a posicionarem-se no digital, gerar awareness, criar uma relação com o target e impulsionar vendas.`,
     throughStrategicPlanning:
         'Através do planeamento estratégico, criação de conteúdo e implementação estou disponível para ser o vosso braço direito.',
     monitorAndOptimizeProcessAndStrategy:
@@ -207,8 +208,7 @@ export const textsEn: TextsInterface = {
     welcome2: 'Co',
     welcome3: 'Me',
     footerInfo: 'Aguarela Digital - Developed by',
-    managingsocialMedia:
-        'Social media management is in my DNA. I\'m a freelancer, based in Lisbon, with experience in social media management and content creation. <a href="https://www.instagram.com/aguareladigital" target="_blank" rel="noreferrer" class="link">@Aguarela</a>\'s goal is to help local businesses and small companies position themselves digitally, create awareness, create a realtionship with the target and boost sales.',
+    managingsocialMedia: `Social media management is in my DNA. I'm a freelancer, based in Lisbon, with experience in social media management and content creation. <a href="${aguarelaDigitalInstagramUrl}" target="_blank" rel="noreferrer" class="link">@Aguarela</a>'s goal is to help local businesses and small companies position themselves digitally, create awareness, create a realtionship with the target and boost sales.`,
     throughStrategicPlanning:
         'Through strategic planning, content creation and implementation I can be your right hand.',
     monitorAndOptimizeProcessAndStrategy:

@@ -5,14 +5,14 @@ import TextShadowBlock, { buttonText, mailtoValue, TextShadowBlockProps } from '
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { Breakpoint } from '../../utils/useWindowSize';
 import { textBlock1DataTestId } from '../../utils/dataTestIds';
+import { aguarelaDigitalInstagramUrl } from '../../utils/urls';
 
 const baseProps: TextShadowBlockProps = {
     title1: 'Bem',
     title2: 'Vin',
     title3: 'Dos',
     titleMobile: 'Bem-VinDos',
-    textBlock1:
-        'Gestão de redes sociais está no meu ADN. Sou uma freelancer, baseada em Lisboa, com experiência em gestão de redes sociais e criação de conteúdo. A <a href="https://www.instagram.com/aguareladigital" target="_blank" rel="noreferrer" class="link">@Aguarela</a> surgiu com o objetivo de ajudar negócios locais e pequenas empresas a posicionarem-se no digital, gerar awareness, criar uma relação com o target e impulsionar vendas.',
+    textBlock1: `Gestão de redes sociais está no meu ADN. Sou uma freelancer, baseada em Lisboa, com experiência em gestão de redes sociais e criação de conteúdo. A <a href="${aguarelaDigitalInstagramUrl}" target="_blank" rel="noreferrer" class="link">@Aguarela</a> surgiu com o objetivo de ajudar negócios locais e pequenas empresas a posicionarem-se no digital, gerar awareness, criar uma relação com o target e impulsionar vendas.`,
     textBlock2:
         'Do ínicio ao fim, acompanho, monitorizo e otimizo todo o processo e estratégia de gestão de redes sociais.',
     textBlock3:

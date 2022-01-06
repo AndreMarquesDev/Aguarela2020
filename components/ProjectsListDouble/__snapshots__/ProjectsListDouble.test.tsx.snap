@@ -444,7 +444,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
                   >
                     <a
                       class="jsx-4127294762 brand link"
-                      href="https://www.instagram.com/jamesonportugal/"
+                      href="https://www.instagram.com/jamesonportugal"
                       rel="noreferrer"
                       target="_blank"
                     >
@@ -1001,7 +1001,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
                   >
                     <a
                       class="jsx-4127294762 brand link"
-                      href="https://instagram.com/4patasde5estrelas"
+                      href="https://www.instagram.com/4patasde5estrelas"
                       rel="noreferrer"
                       target="_blank"
                     >
@@ -1697,7 +1697,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
                   >
                     <a
                       class="jsx-4127294762 brand link"
-                      href="https://www.instagram.com/jamesonportugal/"
+                      href="https://www.instagram.com/jamesonportugal"
                       rel="noreferrer"
                       target="_blank"
                     >
@@ -2254,7 +2254,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
                   >
                     <a
                       class="jsx-4127294762 brand link"
-                      href="https://instagram.com/4patasde5estrelas"
+                      href="https://www.instagram.com/4patasde5estrelas"
                       rel="noreferrer"
                       target="_blank"
                     >
@@ -2948,7 +2948,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
                   >
                     <a
                       class="jsx-4127294762 brand link"
-                      href="https://www.instagram.com/jamesonportugal/"
+                      href="https://www.instagram.com/jamesonportugal"
                       rel="noreferrer"
                       target="_blank"
                     >
@@ -3505,7 +3505,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
                   >
                     <a
                       class="jsx-4127294762 brand link"
-                      href="https://instagram.com/4patasde5estrelas"
+                      href="https://www.instagram.com/4patasde5estrelas"
                       rel="noreferrer"
                       target="_blank"
                     >
@@ -4200,7 +4200,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
                   >
                     <a
                       class="jsx-4127294762 brand link"
-                      href="https://www.instagram.com/jamesonportugal/"
+                      href="https://www.instagram.com/jamesonportugal"
                       rel="noreferrer"
                       target="_blank"
                     >
@@ -4757,7 +4757,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
                   >
                     <a
                       class="jsx-4127294762 brand link"
-                      href="https://instagram.com/4patasde5estrelas"
+                      href="https://www.instagram.com/4patasde5estrelas"
                       rel="noreferrer"
                       target="_blank"
                     >
