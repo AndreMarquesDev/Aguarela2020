@@ -1,257 +1,44 @@
-import {
-    aAmigaEsteticistaInstagramUrl,
-    aguarelaDigitalFacebookUrl,
-    aguarelaDigitalInstagramUrl,
-    andreMarquesDevWebsiteUrl,
-    avocadoInstagramUrl,
-    biergartenInstagramUrl,
-    bovineInstagramUrl,
-    catarinaSantiagoInstagramUrl,
-    guacamoleInstagramUrl,
-    harpoonLinkedInUrl,
-    icecreamRollInstagramUrl,
-    kaffeehausInstagramUrl,
-    luminousInstagramUrl,
-    madMaryInstagramUrl,
-    mariaLimaoInstagramUrl,
-    pernodWebsiteUrl,
-    quatroPatasDe5EstrelasInstagramUrl,
-    riceMeDeliInstagramUrl,
-    riceMeInstagramUrl,
-    tasteOfIndiaInstagramUrl,
-    tjelaInstagramUrl,
-    trattoriaInstagramUrl,
-} from '../../utils/urls';
-import {
-    aboutMeSectionDataTestId,
-    brandsListSectionDataTestId,
-    contactBlockSectionDataTestId,
-    footerDataTestId,
-    headerDataTestId,
-    homepageBannerContainerDataTestId,
-    homepageLogoLinkDataTestId,
-    letsWorkSectionDataTestId,
-    projectsListDoubleSectionDataTestId,
-    servicesBlockSectionDataTestId,
-} from '../../utils/dataTestIds';
-import { textsEn, textsPt } from '../../utils/texts';
 import { urls } from '../utils/selectors';
-import {
-    defaultViewportWidth,
-    defaultViewportHeight,
-    brandLogosHeight,
-    brandLogosWidth,
-} from '../utils/variables';
+import { Locale } from '../../utils/locales';
+import { brandsListTest } from '../testsFunctions/brandsListTest';
+import { footerTest } from '../testsFunctions/footerTest';
+import { letsWorkSectionTest } from '../testsFunctions/letsWorkSectionTest';
+import { navigationAboutTest } from '../testsFunctions/navigation/navigationAboutPageTest';
+import { aboutMeSectionTest } from '../testsFunctions/aboutMeSectionTest';
+import { defaultViewportWidth, defaultViewportHeight } from '../utils/variables';
 
-const {
-    projects,
-    contact,
-    about,
-    services,
-    hiMyNameIs,
-    withMoreThan,
-    theSocialMediaCommunicationStrategy,
-    getToKnowMeBetter,
-    myNetwork,
-    letsWork,
-    letsWorkDescription,
-    footerInfo,
-} = textsPt;
+const locale: Locale = 'pt';
+const otherLocale: Locale = 'en';
+const pageBeingTested = urls.pt.about;
 
-const { projects: projectsEn, contact: contactEn, about: aboutEn, services: servicesEn } = textsEn;
-
-describe('homepage', () => {
+describe('about page', () => {
     beforeEach(() => {
         cy.visit('/about');
+
+        cy.viewport(defaultViewportWidth, defaultViewportHeight);
     });
 
     it('loads', () => {
-        cy.urlIsEqualTo(urls.pt.about);
+        cy.urlIsEqualTo(pageBeingTested);
     });
 
     it('renders the header and navigates properly', () => {
-        cy.imageIsVisible(headerDataTestId, 'Logo');
-
-        cy.getByDataTestId(homepageLogoLinkDataTestId).click();
-        cy.getByDataTestId(homepageBannerContainerDataTestId);
-        cy.urlIsEqualTo(urls.pt.homepage);
-        cy.getByText(headerDataTestId, about).click();
-        cy.getByDataTestId(aboutMeSectionDataTestId);
-        cy.urlIsEqualTo(urls.pt.about);
-
-        cy.getByText(headerDataTestId, projects).click();
-        cy.getByDataTestId(projectsListDoubleSectionDataTestId);
-        cy.urlIsEqualTo(urls.pt.projects);
-        cy.getByText(headerDataTestId, about).click();
-        cy.getByDataTestId(aboutMeSectionDataTestId);
-        cy.urlIsEqualTo(urls.pt.about);
-
-        cy.getByText(headerDataTestId, services).click();
-        cy.getByDataTestId(servicesBlockSectionDataTestId);
-        cy.urlIsEqualTo(urls.pt.services);
-        cy.getByText(headerDataTestId, about).click();
-        cy.getByDataTestId(aboutMeSectionDataTestId);
-        cy.urlIsEqualTo(urls.pt.about);
-
-        cy.getByText(headerDataTestId, contact).click();
-        cy.getByDataTestId(contactBlockSectionDataTestId);
-        cy.urlIsEqualTo(urls.pt.contact);
-        cy.getByText(headerDataTestId, about).click();
-        cy.getByDataTestId(aboutMeSectionDataTestId);
-        cy.urlIsEqualTo(urls.pt.about);
-
-        cy.getByText(headerDataTestId, 'en').click();
-        cy.getByText(headerDataTestId, aboutEn);
-        cy.getByText(headerDataTestId, projectsEn);
-        cy.getByText(headerDataTestId, servicesEn);
-        cy.getByText(headerDataTestId, contactEn);
-        cy.urlIsEqualTo(urls.en.about);
-        cy.getByText(headerDataTestId, 'pt').click();
-        cy.getByText(headerDataTestId, about);
-        cy.getByText(headerDataTestId, projects);
-        cy.getByText(headerDataTestId, services);
-        cy.getByText(headerDataTestId, contact);
-        cy.urlIsEqualTo(urls.pt.about);
+        navigationAboutTest(locale, otherLocale, pageBeingTested);
     });
 
     it('renders the about me section', () => {
-        cy.getByText(aboutMeSectionDataTestId, about).scrollIntoView();
-
-        cy.imageIsVisible(aboutMeSectionDataTestId, 'a picture of me, Catarina');
-        cy.getByText(aboutMeSectionDataTestId, hiMyNameIs);
-        cy.getByText(aboutMeSectionDataTestId, withMoreThan);
-        cy.getByText(aboutMeSectionDataTestId, theSocialMediaCommunicationStrategy);
-
-        cy.getByText(aboutMeSectionDataTestId, getToKnowMeBetter);
-        cy.getByHref(aboutMeSectionDataTestId, catarinaSantiagoInstagramUrl);
-
-        cy.viewport(defaultViewportWidth, defaultViewportHeight);
-
-        cy.imageWidthIs(aboutMeSectionDataTestId, 'a picture of me, Catarina', 476);
-        cy.imageHeightIs(aboutMeSectionDataTestId, 'a picture of me, Catarina', 584);
+        aboutMeSectionTest(locale);
     });
 
     it('renders the brands list section', () => {
-        cy.getByText(brandsListSectionDataTestId, myNetwork).scrollIntoView();
-
-        cy.viewport(defaultViewportWidth, defaultViewportHeight);
-
-        cy.imageIsVisible(brandsListSectionDataTestId, 'avocado logo');
-        cy.imageWidthIs(brandsListSectionDataTestId, 'avocado logo', brandLogosWidth);
-        cy.imageHeightIs(brandsListSectionDataTestId, 'avocado logo', brandLogosHeight);
-        cy.getByHref(brandsListSectionDataTestId, avocadoInstagramUrl);
-
-        cy.imageIsVisible(brandsListSectionDataTestId, 'pernod logo');
-        cy.imageWidthIs(brandsListSectionDataTestId, 'pernod logo', brandLogosWidth);
-        cy.imageHeightIs(brandsListSectionDataTestId, 'pernod logo', brandLogosHeight);
-        cy.getByHref(brandsListSectionDataTestId, pernodWebsiteUrl);
-
-        cy.imageIsVisible(brandsListSectionDataTestId, 'tjela logo');
-        cy.imageWidthIs(brandsListSectionDataTestId, 'tjela logo', brandLogosWidth);
-        cy.imageHeightIs(brandsListSectionDataTestId, 'tjela logo', brandLogosHeight);
-        cy.getByHref(brandsListSectionDataTestId, tjelaInstagramUrl);
-
-        cy.imageIsVisible(brandsListSectionDataTestId, 'guacamole logo');
-        cy.imageWidthIs(brandsListSectionDataTestId, 'guacamole logo', brandLogosWidth);
-        cy.imageHeightIs(brandsListSectionDataTestId, 'guacamole logo', brandLogosHeight);
-        cy.getByHref(brandsListSectionDataTestId, guacamoleInstagramUrl);
-
-        cy.imageIsVisible(brandsListSectionDataTestId, 'kaffeehaus logo');
-        cy.imageWidthIs(brandsListSectionDataTestId, 'kaffeehaus logo', brandLogosWidth);
-        cy.imageHeightIs(brandsListSectionDataTestId, 'kaffeehaus logo', brandLogosHeight);
-        cy.getByHref(brandsListSectionDataTestId, kaffeehausInstagramUrl);
-
-        cy.imageIsVisible(brandsListSectionDataTestId, 'taste of india logo');
-        cy.imageWidthIs(brandsListSectionDataTestId, 'taste of india logo', brandLogosWidth);
-        cy.imageHeightIs(brandsListSectionDataTestId, 'taste of india logo', brandLogosHeight);
-        cy.getByHref(brandsListSectionDataTestId, tasteOfIndiaInstagramUrl);
-
-        cy.imageIsVisible(brandsListSectionDataTestId, 'icecream roll logo');
-        cy.imageWidthIs(brandsListSectionDataTestId, 'icecream roll logo', brandLogosWidth);
-        cy.imageHeightIs(brandsListSectionDataTestId, 'icecream roll logo', brandLogosHeight);
-        cy.getByHref(brandsListSectionDataTestId, icecreamRollInstagramUrl);
-
-        cy.imageIsVisible(brandsListSectionDataTestId, 'marialimao logo');
-        cy.imageWidthIs(brandsListSectionDataTestId, 'marialimao logo', brandLogosWidth);
-        cy.imageHeightIs(brandsListSectionDataTestId, 'marialimao logo', brandLogosHeight);
-        cy.getByHref(brandsListSectionDataTestId, mariaLimaoInstagramUrl);
-
-        cy.imageIsVisible(brandsListSectionDataTestId, 'biergarten logo');
-        cy.imageWidthIs(brandsListSectionDataTestId, 'biergarten logo', brandLogosWidth);
-        cy.imageHeightIs(brandsListSectionDataTestId, 'biergarten logo', brandLogosHeight);
-        cy.getByHref(brandsListSectionDataTestId, biergartenInstagramUrl);
-
-        cy.imageIsVisible(brandsListSectionDataTestId, 'trattoria logo');
-        cy.imageWidthIs(brandsListSectionDataTestId, 'trattoria logo', brandLogosWidth);
-        cy.imageHeightIs(brandsListSectionDataTestId, 'trattoria logo', brandLogosHeight);
-        cy.getByHref(brandsListSectionDataTestId, trattoriaInstagramUrl);
-
-        cy.imageIsVisible(brandsListSectionDataTestId, 'a amiga esteticista logo');
-        cy.imageWidthIs(brandsListSectionDataTestId, 'a amiga esteticista logo', brandLogosWidth);
-        cy.imageHeightIs(brandsListSectionDataTestId, 'a amiga esteticista logo', brandLogosHeight);
-        cy.getByHref(brandsListSectionDataTestId, aAmigaEsteticistaInstagramUrl);
-
-        cy.imageIsVisible(brandsListSectionDataTestId, 'rice me deli logo');
-        cy.imageWidthIs(brandsListSectionDataTestId, 'rice me deli logo', brandLogosWidth);
-        cy.imageHeightIs(brandsListSectionDataTestId, 'rice me deli logo', brandLogosHeight);
-        cy.getByHref(brandsListSectionDataTestId, riceMeDeliInstagramUrl);
-
-        cy.imageIsVisible(brandsListSectionDataTestId, '4 patas de 5 estrelas logo');
-        cy.imageWidthIs(brandsListSectionDataTestId, '4 patas de 5 estrelas logo', brandLogosWidth);
-        cy.imageHeightIs(
-            brandsListSectionDataTestId,
-            '4 patas de 5 estrelas logo',
-            brandLogosHeight
-        );
-        cy.getByHref(brandsListSectionDataTestId, quatroPatasDe5EstrelasInstagramUrl);
-
-        cy.imageIsVisible(brandsListSectionDataTestId, 'rice me logo');
-        cy.imageWidthIs(brandsListSectionDataTestId, 'rice me logo', brandLogosWidth);
-        cy.imageHeightIs(brandsListSectionDataTestId, 'rice me logo', brandLogosHeight);
-        cy.getByHref(brandsListSectionDataTestId, riceMeInstagramUrl);
-
-        cy.imageIsVisible(brandsListSectionDataTestId, 'luminous logo');
-        cy.imageWidthIs(brandsListSectionDataTestId, 'luminous logo', brandLogosWidth);
-        cy.imageHeightIs(brandsListSectionDataTestId, 'luminous logo', brandLogosHeight);
-        cy.getByHref(brandsListSectionDataTestId, luminousInstagramUrl);
-
-        cy.imageIsVisible(brandsListSectionDataTestId, 'mad mary logo');
-        cy.imageWidthIs(brandsListSectionDataTestId, 'mad mary logo', brandLogosWidth);
-        cy.imageHeightIs(brandsListSectionDataTestId, 'mad mary logo', brandLogosHeight);
-        cy.getByHref(brandsListSectionDataTestId, madMaryInstagramUrl);
-
-        cy.imageIsVisible(brandsListSectionDataTestId, 'harpoon logo');
-        cy.imageWidthIs(brandsListSectionDataTestId, 'harpoon logo', brandLogosWidth);
-        cy.imageHeightIs(brandsListSectionDataTestId, 'harpoon logo', brandLogosHeight);
-        cy.getByHref(brandsListSectionDataTestId, harpoonLinkedInUrl);
-
-        cy.imageIsVisible(brandsListSectionDataTestId, 'bovine logo');
-        cy.imageWidthIs(brandsListSectionDataTestId, 'bovine logo', brandLogosWidth);
-        cy.imageHeightIs(brandsListSectionDataTestId, 'bovine logo', brandLogosHeight);
-        cy.getByHref(brandsListSectionDataTestId, bovineInstagramUrl);
+        brandsListTest(locale);
     });
 
-    it("renders the let's work list section", () => {
-        cy.getByText(letsWorkSectionDataTestId, letsWork).scrollIntoView();
-
-        cy.getByText(letsWorkSectionDataTestId, letsWorkDescription);
-
-        cy.getByText(letsWorkSectionDataTestId, contact).click();
-        cy.getByDataTestId(contactBlockSectionDataTestId);
-        cy.urlIsEqualTo(urls.pt.contact);
+    it("renders the let's work section", () => {
+        letsWorkSectionTest(locale);
     });
 
     it('renders the footer', () => {
-        cy.getByText(footerDataTestId, `${footerInfo} André Marques`).scrollIntoView();
-
-        cy.getByHref(footerDataTestId, andreMarquesDevWebsiteUrl);
-        cy.getByHref(footerDataTestId, aguarelaDigitalInstagramUrl);
-        cy.getByHref(footerDataTestId, aguarelaDigitalFacebookUrl);
-
-        cy.getByDataTestId(footerDataTestId).find('[aria-label="Go to contact page"]').click();
-        cy.getByDataTestId(contactBlockSectionDataTestId);
-        cy.urlIsEqualTo(urls.pt.contact);
-
-        cy.visit(urls.pt.about);
+        footerTest(locale, pageBeingTested);
     });
 });
