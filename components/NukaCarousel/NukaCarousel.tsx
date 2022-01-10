@@ -2,6 +2,10 @@ import React, { FC, ReactNode } from 'react';
 import Carousel, { CarouselCellAlignProp } from 'nuka-carousel';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { resetTimesTouchedAttribute } from '../../utils/generic';
+import {
+    nukaCarouselPrevButtonDataTestId,
+    nukaCarouselNextButtonDataTestId,
+} from '../../utils/dataTestIds';
 
 export interface NukaCarouselProps {
     children: ReactNode;
@@ -38,6 +42,7 @@ export const NukaCarousel: FC<NukaCarouselProps> = ({
                 renderCenterLeftControls={({ previousSlide }): ReactNode => (
                     <button
                         aria-label="previous slide"
+                        data-testid={nukaCarouselPrevButtonDataTestId}
                         type="button"
                         onClick={(): void => handleClickPrev(previousSlide)}
                     >
@@ -47,6 +52,7 @@ export const NukaCarousel: FC<NukaCarouselProps> = ({
                 renderCenterRightControls={({ nextSlide }): ReactNode => (
                     <button
                         aria-label="next slide"
+                        data-testid={nukaCarouselNextButtonDataTestId}
                         type="button"
                         onClick={(): void => handleClickNext(nextSlide)}
                     >

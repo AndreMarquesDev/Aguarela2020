@@ -21,3 +21,5 @@ export const skillsBlockItemWrapperDataTestId = 'skillsBlock_skillItemWrapper';
 export const skillsBlockItemCarouselDataTestId = 'skillsBlock_skillItemCarousel';
 export const textBlock1DataTestId = 'textShadowBlock_textBlock1';
 export const homepageLogoLinkDataTestId = 'header_homepageLogoLink';
+export const nukaCarouselPrevButtonDataTestId = 'nukaCarousel_previousSlideButton';
+export const nukaCarouselNextButtonDataTestId = 'nukaCarousel_nextSlideButton';

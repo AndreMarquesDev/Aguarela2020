@@ -11,3 +11,5 @@ export const skillsBlockImagesWidth = 160;
 export const skillsBlockImagesHeight = 130;
 export const projectsListNoCarouselImagesWidth = 400;
 export const projectsListNoCarouselImagesHeight = 400;
+export const projectsListDoubleCarouselImagesWidth = 357;
+export const projectsListDoubleCarouselImagesHeight = 357;
