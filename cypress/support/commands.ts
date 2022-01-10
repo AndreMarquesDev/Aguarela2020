@@ -4,11 +4,18 @@ declare namespace Cypress {
         getByDataTestId(selector: string): Chainable<Element>;
         getByText(parent: string, text: string): Chainable<Element>;
         getByHref(parent: string, hrefValue: string): Chainable<Element>;
+        getBackfaceProjectsListDouble(parent: string, imageSelector: string): Chainable<Element>;
         imageIsVisible(dataTestId: string, selector: string): Chainable<Element>;
+        imageInCurrentSlideIsVisible(dataTestId: string, selector: string): Chainable<Element>;
         imageWidthIs(dataTestId: string, selector: string, width: number): Chainable<Element>;
         imageHeightIs(dataTestId: string, selector: string, height: number): Chainable<Element>;
         isHidden(parent: string, selector: string): Chainable<Element>;
         isVisible(parent: string, selector: string): Chainable<Element>;
+        isTextInBackfaceVisible(
+            parent: string,
+            imageSelector: string,
+            text: string
+        ): Chainable<Element>;
         urlIsEqualTo(url: string): Chainable<Element>;
         forceHover(): Chainable<Element>;
     }
@@ -26,9 +33,22 @@ Cypress.Commands.add('getByHref', (parent, hrefValue) => {
     cy.getByDataTestId(parent).find(`[href="${hrefValue}"]`);
 });
 
+Cypress.Commands.add('getBackfaceProjectsListDouble', (parent, imageSelector) => {
+    cy.getByDataTestId(parent).find(`[alt="${imageSelector}"]`).parent().next();
+});
+
 Cypress.Commands.add('imageIsVisible', (dataTestId, selector) => {
     cy.getByDataTestId(dataTestId)
         .find(`img[alt="${selector}"]`)
+        .should('be.visible')
+        .and($img => {
+            expect(($img[0] as HTMLImageElement).naturalWidth).to.be.greaterThan(0);
+        });
+});
+
+Cypress.Commands.add('imageInCurrentSlideIsVisible', (dataTestId, selector) => {
+    cy.getByDataTestId(dataTestId)
+        .find(`.slide-visible img[alt="${selector}"]`)
         .should('be.visible')
         .and($img => {
             expect(($img[0] as HTMLImageElement).naturalWidth).to.be.greaterThan(0);
@@ -57,6 +77,10 @@ Cypress.Commands.add('isHidden', (parent, selector) => {
 
 Cypress.Commands.add('isVisible', (parent, selector) => {
     cy.getByText(parent, selector).should('be.visible');
+});
+
+Cypress.Commands.add('isTextInBackfaceVisible', (parent, imageSelector, text) => {
+    cy.getBackfaceProjectsListDouble(parent, imageSelector).contains(text).should('be.visible');
 });
 
 Cypress.Commands.add('urlIsEqualTo', url => {
