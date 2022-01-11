@@ -1200,6 +1200,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
           <button
             aria-label="previous slide"
             class="jsx-361434774"
+            data-testid="nukaCarousel_previousSlideButton"
             type="button"
           >
             <svg
@@ -1224,6 +1225,7 @@ exports[`<ProjectsListDouble /> renders properly 1`] = `
           <button
             aria-label="next slide"
             class="jsx-361434774"
+            data-testid="nukaCarousel_nextSlideButton"
             type="button"
           >
             <svg
@@ -2453,6 +2455,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
           <button
             aria-label="previous slide"
             class="jsx-361434774"
+            data-testid="nukaCarousel_previousSlideButton"
             type="button"
           >
             <svg
@@ -2477,6 +2480,7 @@ exports[`<ProjectsListDouble /> renders properly in English 1`] = `
           <button
             aria-label="next slide"
             class="jsx-361434774"
+            data-testid="nukaCarousel_nextSlideButton"
             type="button"
           >
             <svg
@@ -3704,6 +3708,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
           <button
             aria-label="previous slide"
             class="jsx-361434774"
+            data-testid="nukaCarousel_previousSlideButton"
             type="button"
           >
             <svg
@@ -3728,6 +3733,7 @@ exports[`<ProjectsListDouble /> renders properly on mobile 1`] = `
           <button
             aria-label="next slide"
             class="jsx-361434774"
+            data-testid="nukaCarousel_nextSlideButton"
             type="button"
           >
             <svg
@@ -4956,6 +4962,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
           <button
             aria-label="previous slide"
             class="jsx-361434774"
+            data-testid="nukaCarousel_previousSlideButton"
             type="button"
           >
             <svg
@@ -4980,6 +4987,7 @@ exports[`<ProjectsListDouble /> renders properly on phablet 1`] = `
           <button
             aria-label="next slide"
             class="jsx-361434774"
+            data-testid="nukaCarousel_nextSlideButton"
             type="button"
           >
             <svg

@@ -1,11 +1,11 @@
 import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen, RenderResult } from '@testing-library/react';
-import TextShadowBlock, { buttonText, mailtoValue, TextShadowBlockProps } from './TextShadowBlock';
+import TextShadowBlock, { TextShadowBlockProps } from './TextShadowBlock';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { Breakpoint } from '../../utils/useWindowSize';
 import { textBlock1DataTestId } from '../../utils/dataTestIds';
-import { aguarelaDigitalInstagramUrl } from '../../utils/urls';
+import { aguarelaDigitalEmail, aguarelaDigitalInstagramUrl } from '../../utils/urls';
 
 const baseProps: TextShadowBlockProps = {
     title1: 'Bem',
@@ -77,10 +77,10 @@ describe('<TextShadowBlock />', () => {
             hasButton: true,
         });
 
-        const buttonContent = screen.getByText(buttonText);
+        const buttonContent = screen.getByText(aguarelaDigitalEmail);
 
         expect(buttonContent).toBeInTheDocument();
-        expect(buttonContent).toHaveAttribute('href', mailtoValue);
+        expect(buttonContent).toHaveAttribute('href', `mailto:${aguarelaDigitalEmail}`);
 
         expect(container).toMatchSnapshot();
     });

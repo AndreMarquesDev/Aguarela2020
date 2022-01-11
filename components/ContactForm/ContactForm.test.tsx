@@ -7,13 +7,17 @@ import TextsContext from '../context/TextsContext';
 import { textsEn, textsPt } from '../../utils/texts';
 import { FieldTypes } from '../../utils/formValidation';
 import { initializeAxiosMockAdapter } from '../../ajax/axiosMockAdapter';
-import { contactFormContainerDataTestId } from '../../utils/dataTestIds';
+import {
+    contactFormContainerDataTestId,
+    contactFormErrorMessageHiddenDataTestId,
+    contactFormErrorMessageVisibleDataTestId,
+} from '../../utils/dataTestIds';
 
 describe('<ContactForm />', () => {
     test('renders properly', () => {
         render(<ContactForm />);
 
-        const hiddenErrorMessages = screen.getAllByTestId('errorMessage_hidden');
+        const hiddenErrorMessages = screen.getAllByTestId(contactFormErrorMessageHiddenDataTestId);
 
         expect(hiddenErrorMessages.length).toBe(5);
         expect(screen.getByText(textsPt.send)).toBeInTheDocument();
@@ -32,7 +36,7 @@ describe('<ContactForm />', () => {
             </TextsContext.Provider>
         );
 
-        const hiddenErrorMessages = screen.getAllByTestId('errorMessage_hidden');
+        const hiddenErrorMessages = screen.getAllByTestId(contactFormErrorMessageHiddenDataTestId);
 
         expect(hiddenErrorMessages.length).toBe(5);
         expect(screen.getByText(textsEn.send)).toBeInTheDocument();
@@ -47,7 +51,9 @@ describe('<ContactForm />', () => {
 
         userEvent.click(submitButton);
 
-        const errorMessages = await screen.findAllByTestId('errorMessage_visible');
+        const errorMessages = await screen.findAllByTestId(
+            contactFormErrorMessageVisibleDataTestId
+        );
 
         expect(errorMessages.length).toBe(3);
 

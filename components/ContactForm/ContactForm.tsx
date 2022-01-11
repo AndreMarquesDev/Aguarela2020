@@ -78,15 +78,15 @@ const ContactForm: FC = () => {
         const errors = {} as FormState;
 
         if (!values.name || !validateName(values.name)) {
-            errors.name = texts.pleaseEnterfirstAndLastName;
+            errors.name = texts.pleaseEnterFirstAndLastName;
         }
 
         if (!values.email || !validateEmail(values.email)) {
-            errors.email = texts.pleaseEnterfirstAndLastName;
+            errors.email = texts.pleaseEnterValidEmailAddress;
         }
 
         if (!values.message) {
-            errors.message = texts.pleaseEnterfirstAndLastName;
+            errors.message = texts.pleaseEnterAMessage;
         }
 
         return errors;
