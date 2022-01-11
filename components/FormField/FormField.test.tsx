@@ -27,7 +27,7 @@ describe('<FormField />', () => {
 
         const label = screen.getByText(`${textsPt.name} *`);
         const field = screen.getByTitle(baseProps.id);
-        const errorMessage = screen.getByText(textsPt.pleaseEnterfirstAndLastName);
+        const errorMessage = screen.getByText(textsPt.pleaseEnterFirstAndLastName);
 
         expect(label).toBeInTheDocument();
         expect(field).toBeInTheDocument();
@@ -51,7 +51,7 @@ describe('<FormField />', () => {
 
         const label = screen.getByText(textsPt.email);
         const field = screen.getByTitle(FieldTypes.Email);
-        const errorMessage = screen.getByText(textsPt.pleaseEntervalidEmailAddress);
+        const errorMessage = screen.getByText(textsPt.pleaseEnterValidEmailAddress);
 
         expect(label).toBeInTheDocument();
         expect(field).toBeInTheDocument();

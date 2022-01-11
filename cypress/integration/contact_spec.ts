@@ -1,10 +1,10 @@
-import { textsPt } from '../../utils/texts';
 import { Locale } from '../../utils/locales';
+import { contactBlockTest } from '../testsFunctions/contactBlockTest';
+import { contactFormTest } from '../testsFunctions/contactFormTest';
 import { footerTest } from '../testsFunctions/footerTest';
+import { navigationContactPageTest } from '../testsFunctions/navigation/navigationContactPageTest';
 import { urls } from '../utils/selectors';
 import { defaultViewportWidth, defaultViewportHeight } from '../utils/variables';
-import { contactBlockSectionDataTestId } from '../../utils/dataTestIds';
-import { navigationContactPageTest } from '../testsFunctions/navigation/navigationContactPageTest';
 
 const locale: Locale = 'pt';
 const otherLocale: Locale = 'en';
@@ -27,12 +27,12 @@ describe('contact page', () => {
         navigationContactPageTest(locale, otherLocale, pageBeingTested);
     });
 
-    it('renders the contact block section', () => {
-        const { contactMe1, contactMe2, contactMe3 } = textsPt;
+    it('renders the contact block', () => {
+        contactBlockTest(locale);
+    });
 
-        cy.getByText(contactBlockSectionDataTestId, contactMe1);
-        cy.getByText(contactBlockSectionDataTestId, contactMe2);
-        cy.getByText(contactBlockSectionDataTestId, contactMe3);
+    it('renders the contact form', () => {
+        contactFormTest(locale);
     });
 
     it('renders the footer', () => {

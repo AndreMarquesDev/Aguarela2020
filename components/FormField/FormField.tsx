@@ -1,5 +1,9 @@
 import classNames from 'classnames';
 import React, { FC, useContext, FocusEvent, ChangeEvent } from 'react';
+import {
+    contactFormErrorMessageVisibleDataTestId,
+    contactFormErrorMessageHiddenDataTestId,
+} from '../../utils/dataTestIds';
 import { FieldTypes } from '../../utils/formValidation';
 import TextsContext from '../context/TextsContext';
 
@@ -48,9 +52,9 @@ export const FormField: FC<FormFieldProps> = ({
     const getErrorMessage = (fieldId: string): string => {
         switch (fieldId) {
             case FieldTypes.Name:
-                return texts.pleaseEnterfirstAndLastName;
+                return texts.pleaseEnterFirstAndLastName;
             case FieldTypes.Email:
-                return texts.pleaseEntervalidEmailAddress;
+                return texts.pleaseEnterValidEmailAddress;
             case FieldTypes.Textarea:
                 return texts.pleaseEnterAMessage;
             default:
@@ -95,7 +99,11 @@ export const FormField: FC<FormFieldProps> = ({
                 )}
                 <span
                     className={classNames('errorMessage', hasError && 'visible')}
-                    data-testid={`errorMessage_${hasError ? 'visible' : 'hidden'}`}
+                    data-testid={
+                        hasError
+                            ? contactFormErrorMessageVisibleDataTestId
+                            : contactFormErrorMessageHiddenDataTestId
+                    }
                     id={ariaError}
                 >
                     {getErrorMessage(id)}

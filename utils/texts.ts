@@ -1,4 +1,4 @@
-import { aguarelaDigitalInstagramUrl } from './urls';
+import { aguarelaDigitalEmail, aguarelaDigitalInstagramUrl } from './urls';
 
 export interface TextsInterface {
     about: string;
@@ -86,8 +86,8 @@ export interface TextsInterface {
     send: string;
     messageSentSuccessfully: string;
     thereWasAnErrorSendingTheMessage: string;
-    pleaseEnterfirstAndLastName: string;
-    pleaseEntervalidEmailAddress: string;
+    pleaseEnterFirstAndLastName: string;
+    pleaseEnterValidEmailAddress: string;
     pleaseEnterAMessage: string;
 }
 
@@ -190,11 +190,10 @@ export const textsPt: TextsInterface = {
     message: 'Mensagem',
     send: 'Enviar',
     messageSentSuccessfully: 'Mensagem enviada com sucesso.',
-    thereWasAnErrorSendingTheMessage:
-        'Ocorreu um erro no envio da mensagem. Tente outra vez mais tarde ou entre em contacto através do meu email <a href="mailto:catarina@aguareladigital.com" class="link">catarina@aguareladigital.com</a>',
-    pleaseEnterfirstAndLastName:
+    thereWasAnErrorSendingTheMessage: `Ocorreu um erro no envio da mensagem. Tente outra vez mais tarde ou entre em contacto através do meu email <a href="mailto:${aguarelaDigitalEmail}" class="link">${aguarelaDigitalEmail}</a>`,
+    pleaseEnterFirstAndLastName:
         'Este campo é obrigatório. Por favor insira o seu primeiro e último nome',
-    pleaseEntervalidEmailAddress:
+    pleaseEnterValidEmailAddress:
         'Este campo é obrigatório. Por favor insira um endereço de email válido',
     pleaseEnterAMessage: 'Este campo é obrigatório. Por favor insira uma mensagem',
 };
@@ -298,9 +297,8 @@ export const textsEn: TextsInterface = {
     message: 'Message',
     send: 'Send',
     messageSentSuccessfully: 'Message sent successfully.',
-    thereWasAnErrorSendingTheMessage:
-        'Thre was an error sending your message. Please try again later ou contact me through my email <a href="mailto:catarina@aguareladigital.com" class="link">catarina@aguareladigital.com</a>',
-    pleaseEnterfirstAndLastName: 'This field is required. Please enter your first and last name',
-    pleaseEntervalidEmailAddress: 'This field is required. Please enter a valid email address',
+    thereWasAnErrorSendingTheMessage: `There was an error sending your message. Please try again later ou contact me through my email <a href="mailto:${aguarelaDigitalEmail}" class="link">${aguarelaDigitalEmail}</a>`,
+    pleaseEnterFirstAndLastName: 'This field is required. Please enter your first and last name',
+    pleaseEnterValidEmailAddress: 'This field is required. Please enter a valid email address',
     pleaseEnterAMessage: 'This field is required. Please enter a message',
 };
