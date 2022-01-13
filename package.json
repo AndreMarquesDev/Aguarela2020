@@ -11,7 +11,9 @@
         "test": "jest",
         "lint": "tsc --noEmit && eslint . --ext .js,.ts,.tsx && stylelint .",
         "lint:fix": "tsc --noEmit && eslint . --ext .js,.ts,.tsx --fix && stylelint . --fix",
-        "cypress": "cypress open"
+        "cypress": "cypress open",
+        "cypress:headless": "cypress run --browser chrome:beta",
+        "cypress:start:and:test": "start-server-and-test start http://localhost:3000 cypress:headless"
     },
     "keywords": [],
     "author": "André Marques <andregm_7@hotmail.com> (andremarquesdev.com)",
@@ -62,6 +64,7 @@
         "postcss-flexbugs-fixes": "^5.0.2",
         "postcss-preset-env": "^6.7.0",
         "precss": "^4.0.0",
+        "start-server-and-test": "^1.14.0",
         "stylelint": "^13.7.2",
         "stylelint-config-recommended-scss": "^4.2.0",
         "stylelint-config-standard": "^20.0.0",
