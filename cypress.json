@@ -2,5 +2,7 @@
     "baseUrl": "http://localhost:3000/pt",
     "experimentalStudio": true,
     "fixturesFolder": false,
-    "pluginsFile": false
+    "pluginsFile": false,
+    "video": false,
+    "screenshotOnRunFailure": false
 }
