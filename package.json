@@ -12,8 +12,12 @@
         "lint": "tsc --noEmit && eslint . --ext .js,.ts,.tsx && stylelint .",
         "lint:fix": "tsc --noEmit && eslint . --ext .js,.ts,.tsx --fix && stylelint . --fix",
         "cypress": "cypress open",
-        "cypress:headless": "cypress run --browser chrome:beta",
-        "cypress:start:and:test": "start-server-and-test start http://localhost:3000 cypress:headless"
+        "cypress:chrome": "cypress run --browser chrome",
+        "cypress:chrome:beta": "cypress run --browser chrome:beta",
+        "cypress:firefox": "cypress run --browser firefox",
+        "cypress:test:chrome": "start-server-and-test start http://localhost:3000 cypress:chrome",
+        "cypress:test:chrome:beta": "start-server-and-test start http://localhost:3000 cypress:chrome:beta",
+        "cypress:test:firefox": "start-server-and-test start http://localhost:3000 cypress:firefox"
     },
     "keywords": [],
     "author": "André Marques <andregm_7@hotmail.com> (andremarquesdev.com)",

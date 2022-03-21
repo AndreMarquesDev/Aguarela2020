@@ -1,4 +1,4 @@
-name: build-and-deploy-production
+name: Build and deploy to production
 
 on:
   push:
@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [12.22.10]
 
     steps:
       - uses: actions/checkout@v2

@@ -8,4 +8,7 @@ module.exports = {
             plugins: ['jest', 'testing-library'],
         },
     ],
+    parserOptions: {
+        project: ['tsconfig.json', './cypress/tsconfig.json'],
+    },
 };
