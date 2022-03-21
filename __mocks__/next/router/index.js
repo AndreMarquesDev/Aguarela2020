@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 jest.mock('next/router', () => ({
     ...jest.requireActual('next/router'),
     useRouter() {

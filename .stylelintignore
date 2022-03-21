@@ -2,7 +2,7 @@
 /.next
 /out
 /public
-/*.json
+**/*.json
 /styles/_reset.scss
 **/*.sh
 /coverage/*

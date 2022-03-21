@@ -34,20 +34,22 @@ export const contactFormTest = (locale: Locale): void => {
     cy.isVisible(contactFormContainerDataTestId, pleaseEnterValidEmailAddress);
     cy.isVisible(contactFormContainerDataTestId, pleaseEnterAMessage);
 
-    cy.getByDataTestId(FieldTypes.Name).type('André');
+    cy.getByDataTestId(FieldTypes.Name).type('Ignora');
     cy.isVisible(contactFormContainerDataTestId, pleaseEnterFirstAndLastName);
-    cy.getByDataTestId(FieldTypes.Name).type(' Marques');
+    cy.getByDataTestId(FieldTypes.Name).type(' Isto');
     cy.isHidden(contactFormContainerDataTestId, pleaseEnterFirstAndLastName);
 
     cy.getByDataTestId(FieldTypes.Brand).type('Brand');
     cy.getByDataTestId(FieldTypes.Subject).type('Subject');
 
-    cy.getByDataTestId(FieldTypes.Email).type('andregm_7@');
+    cy.getByDataTestId(FieldTypes.Email).type('emaildeteste_7@');
     cy.isVisible(contactFormContainerDataTestId, pleaseEnterValidEmailAddress);
     cy.getByDataTestId(FieldTypes.Email).type('hotmail.com');
     cy.isHidden(contactFormContainerDataTestId, pleaseEnterValidEmailAddress);
 
-    cy.getByDataTestId(FieldTypes.Textarea).type('This is a message');
+    cy.getByDataTestId(FieldTypes.Textarea).type(
+        'Ignora, isto é um teste ao formulário de contacto'
+    );
     cy.isHidden(contactFormContainerDataTestId, pleaseEnterAMessage);
 
     cy.getByDataTestId(contactFormContainerDataTestId).find('.buttonBackground').not('.disabled');
