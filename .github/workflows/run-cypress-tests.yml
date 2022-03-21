@@ -29,10 +29,10 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          record: true
+          record: false
           browser: chrome
           headless: true
-          config-file: cypress.json
+          config-file: cypress-ci.json
           build: yarn build
           start: yarn cypress:test:chrome
         env:

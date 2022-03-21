@@ -8,6 +8,11 @@ declare namespace Cypress {
         imageIsVisible(dataTestId: string, selector: string): Chainable<Element>;
         imageInCurrentSlideIsVisible(dataTestId: string, selector: string): Chainable<Element>;
         imageWidthIs(dataTestId: string, selector: string, width: number): Chainable<Element>;
+        imageWidthIsBetween(
+            dataTestId: string,
+            selector: string,
+            width: number
+        ): Chainable<Element>;
         imageHeightIs(dataTestId: string, selector: string, height: number): Chainable<Element>;
         isHidden(parent: string, selector: string): Chainable<Element>;
         isVisible(parent: string, selector: string): Chainable<Element>;
@@ -60,6 +65,15 @@ Cypress.Commands.add('imageWidthIs', (dataTestId, selector, width) => {
         .find(`img[alt="${selector}"]`)
         .and($img => {
             expect(($img[0] as HTMLImageElement).scrollWidth).to.equal(width);
+        });
+});
+
+Cypress.Commands.add('imageWidthIsBetween', (dataTestId, selector, width) => {
+    cy.getByDataTestId(dataTestId)
+        .find(`img[alt="${selector}"]`)
+        .and($img => {
+            expect(($img[0] as HTMLImageElement).scrollWidth).to.be.greaterThan(width - 5);
+            expect(($img[0] as HTMLImageElement).scrollWidth).to.be.lessThan(width + 5);
         });
 });
 
