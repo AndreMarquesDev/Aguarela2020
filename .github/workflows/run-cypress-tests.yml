@@ -5,6 +5,7 @@ on:
     branches: [master]
   pull_request:
     branches: [master]
+    types: [synchronize]
 
 jobs:
   cypress-run:
@@ -29,7 +30,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          record: false
+          record: true
           browser: chrome
           headless: true
           config-file: cypress-ci.json
