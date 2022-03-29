@@ -56,6 +56,7 @@ const formSchema = [
 ];
 
 export const FORM_RESET_TIMEOUT = 7500;
+export const FORM_TEST_MODE_CHECKBOX_ID = 'formTestMode';
 
 const ContactForm: FC = () => {
     const { texts } = useContext(TextsContext);
@@ -98,8 +99,13 @@ const ContactForm: FC = () => {
             sending: true,
         });
 
+        const isTest = (
+            document.querySelector(`input#${FORM_TEST_MODE_CHECKBOX_ID}`) as HTMLInputElement
+        )?.checked;
+        const formStateWithTestMode = { ...formState, isTest };
+
         axios
-            .post(contactFormBackendUrl, formState)
+            .post(contactFormBackendUrl, formStateWithTestMode)
             .then(() => {
                 setFormSubmitState({
                     sending: false,
@@ -161,6 +167,14 @@ const ContactForm: FC = () => {
                                 onChange={handleChange}
                             />
                         ))}
+
+                        <input
+                            hidden
+                            data-testid={FORM_TEST_MODE_CHECKBOX_ID}
+                            id={FORM_TEST_MODE_CHECKBOX_ID}
+                            name={FORM_TEST_MODE_CHECKBOX_ID}
+                            type="checkbox"
+                        />
 
                         <Button isSubmit disabled={formSubmitState.sending} onClick={handleSubmit}>
                             {texts.send}
