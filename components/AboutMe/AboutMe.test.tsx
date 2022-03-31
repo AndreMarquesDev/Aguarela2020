@@ -1,8 +1,8 @@
 import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import AboutMe from './AboutMe';
-import TextsContext from '../context/TextsContext';
+import { AboutMe } from './AboutMe';
+import { TextsContext } from '../context/TextsContext';
 import { textsEn, textsPt } from '../../utils/texts';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { Breakpoint } from '../../utils/useWindowSize';

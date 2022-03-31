@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Link from 'next/link';
 import { FaInstagram, FaFacebookF, FaEnvelope } from 'react-icons/fa';
-import TextsContext from '../context/TextsContext';
+import { TextsContext } from '../context/TextsContext';
 import { Page } from '../../utils/pages';
 import { Locale } from '../../utils/locales';
 import { footerDataTestId } from '../../utils/dataTestIds';
@@ -15,7 +15,7 @@ export interface FooterProps {
     language: Locale;
 }
 
-const Footer = ({ language }: FooterProps): JSX.Element => {
+export const Footer = ({ language }: FooterProps): JSX.Element => {
     const { texts } = useContext(TextsContext);
 
     return (
@@ -134,5 +134,3 @@ const Footer = ({ language }: FooterProps): JSX.Element => {
         </>
     );
 };
-
-export default Footer;

@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import { letsWorkSectionDataTestId } from '../../utils/dataTestIds';
-import Button from '../Button/Button';
-import TextsContext from '../context/TextsContext';
-import Title from '../Title/Title';
+import { Button } from '../Button/Button';
+import { TextsContext } from '../context/TextsContext';
+import { Title } from '../Title/Title';
 
-const LetsWork = (): JSX.Element => {
+export const LetsWork = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
 
     return (
@@ -35,5 +35,3 @@ const LetsWork = (): JSX.Element => {
         </>
     );
 };
-
-export default LetsWork;

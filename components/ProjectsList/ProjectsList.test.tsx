@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { textsPt, textsEn } from '../../utils/texts';
-import TextsContext from '../context/TextsContext';
+import { TextsContext } from '../context/TextsContext';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { ProjectsList } from './ProjectsList';
 import { Breakpoint } from '../../utils/useWindowSize';

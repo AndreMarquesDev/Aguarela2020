@@ -1,8 +1,8 @@
 import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import BrandsList from './BrandsList';
-import TextsContext from '../context/TextsContext';
+import { BrandsList } from './BrandsList';
+import { TextsContext } from '../context/TextsContext';
 import { textsEn, textsPt } from '../../utils/texts';
 
 describe('<BrandsList />', () => {

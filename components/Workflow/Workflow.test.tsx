@@ -1,8 +1,8 @@
 import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Workflow from './Workflow';
-import TextsContext from '../context/TextsContext';
+import { Workflow } from './Workflow';
+import { TextsContext } from '../context/TextsContext';
 import { textsEn, textsPt } from '../../utils/texts';
 
 describe('<Workflow />', () => {

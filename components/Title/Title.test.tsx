@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Title, { TitleProps } from './Title';
+import { Title, TitleProps } from './Title';
 
 const baseProps: TitleProps = {
     text: 'dummy text',

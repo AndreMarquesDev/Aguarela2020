@@ -7,7 +7,7 @@ export interface SkillItemProps {
     description: string;
 }
 
-const SkillItem = ({ icon, title, description }: SkillItemProps): JSX.Element => (
+export const SkillItem = ({ icon, title, description }: SkillItemProps): JSX.Element => (
     <>
         <Image
             alt={title}
@@ -39,5 +39,3 @@ const SkillItem = ({ icon, title, description }: SkillItemProps): JSX.Element =>
         </style>
     </>
 );
-
-export default SkillItem;

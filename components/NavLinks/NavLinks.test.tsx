@@ -2,9 +2,9 @@ import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen, RenderResult } from '@testing-library/react';
 import { NavLinks, NavLinksProps } from './NavLinks';
-import NavLinksContext from '../context/NavLinksContext';
+import { NavLinksContext } from '../context/NavLinksContext';
 import { textsEn, textsPt } from '../../utils/texts';
-import TextsContext from '../context/TextsContext';
+import { TextsContext } from '../context/TextsContext';
 
 const baseProps: NavLinksProps = {
     currentRoute: 'services',

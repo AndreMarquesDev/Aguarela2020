@@ -5,9 +5,9 @@ import {
     servicesBlockSectionDataTestId,
 } from '../../utils/dataTestIds';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
-import TextsContext from '../context/TextsContext';
+import { TextsContext } from '../context/TextsContext';
 import { NukaCarousel } from '../NukaCarousel/NukaCarousel';
-import Title from '../Title/Title';
+import { Title } from '../Title/Title';
 
 export const ServicesBlock = (): JSX.Element => {
     const { texts } = useContext(TextsContext);

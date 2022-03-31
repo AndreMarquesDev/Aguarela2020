@@ -5,8 +5,6 @@ export interface TextsContextProps {
     texts: TextsInterface;
 }
 
-const TextsContext: Context<TextsContextProps> = createContext({
+export const TextsContext: Context<TextsContextProps> = createContext({
     texts: textsPt,
 });
-
-export default TextsContext;

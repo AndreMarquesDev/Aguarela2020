@@ -5,8 +5,8 @@ import React, { useContext, useState } from 'react';
 import { contactFormContainerDataTestId } from '../../utils/dataTestIds';
 import { FieldTypes, FormState, validateName, validateEmail } from '../../utils/formValidation';
 import { contactFormBackendUrl } from '../../utils/urls';
-import Button from '../Button/Button';
-import TextsContext from '../context/TextsContext';
+import { Button } from '../Button/Button';
+import { TextsContext } from '../context/TextsContext';
 import { FormField } from '../FormField/FormField';
 
 interface FormValues {
@@ -58,7 +58,7 @@ const formSchema = [
 export const FORM_RESET_TIMEOUT = 7500;
 export const FORM_TEST_MODE_CHECKBOX_ID = 'formTestMode';
 
-const ContactForm = (): JSX.Element => {
+export const ContactForm = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
 
     const [formSubmitState, setFormSubmitState] = useState({
@@ -241,5 +241,3 @@ const ContactForm = (): JSX.Element => {
         </>
     );
 };
-
-export default ContactForm;

@@ -2,7 +2,7 @@ import React, { useContext, TouchEvent } from 'react';
 import Image from 'next/image';
 import { isClientSide } from 'multilingual-url/lib';
 import classNames from 'classnames';
-import TextsContext from '../context/TextsContext';
+import { TextsContext } from '../context/TextsContext';
 import { resetTimesTouchedAttribute } from '../../utils/generic';
 import { projectItemTouchDivDataTestId } from '../../utils/dataTestIds';
 

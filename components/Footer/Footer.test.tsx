@@ -1,8 +1,8 @@
 import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Footer, { FooterProps } from './Footer';
-import TextsContext from '../context/TextsContext';
+import { Footer, FooterProps } from './Footer';
+import { TextsContext } from '../context/TextsContext';
 import { textsEn, textsPt } from '../../utils/texts';
 
 const baseProps: FooterProps = {

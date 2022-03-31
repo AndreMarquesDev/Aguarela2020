@@ -6,7 +6,7 @@ export interface TitleProps {
     marginBottom?: number;
 }
 
-const Title = ({ text, colored, marginBottom }: TitleProps): JSX.Element => (
+export const Title = ({ text, colored, marginBottom }: TitleProps): JSX.Element => (
     <>
         <h1 className={colored && 'colored'}>{text}</h1>
 
@@ -27,5 +27,3 @@ const Title = ({ text, colored, marginBottom }: TitleProps): JSX.Element => (
         </style>
     </>
 );
-
-export default Title;

@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
 import Image from 'next/image';
-import Button from '../Button/Button';
-import TextsContext from '../context/TextsContext';
-import Title from '../Title/Title';
+import { Button } from '../Button/Button';
+import { TextsContext } from '../context/TextsContext';
+import { Title } from '../Title/Title';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 import { aboutMeSectionDataTestId } from '../../utils/dataTestIds';
 import { catarinaSantiagoInstagramUrl } from '../../utils/urls';
 
-const AboutMe = (): JSX.Element => {
+export const AboutMe = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
     const windowSize = useWindowSize();
     const isDesktop = windowSize.width > Breakpoint.Desktop;
@@ -113,5 +113,3 @@ const AboutMe = (): JSX.Element => {
         </>
     );
 };
-
-export default AboutMe;

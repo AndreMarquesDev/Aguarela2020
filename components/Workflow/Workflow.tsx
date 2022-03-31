@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { workflowSectionDataTestId } from '../../utils/dataTestIds';
-import TextsContext from '../context/TextsContext';
-import Title from '../Title/Title';
+import { TextsContext } from '../context/TextsContext';
+import { Title } from '../Title/Title';
 
-const Workflow = (): JSX.Element => {
+export const Workflow = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
 
     return (
@@ -213,5 +213,3 @@ const Workflow = (): JSX.Element => {
         </>
     );
 };
-
-export default Workflow;

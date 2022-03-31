@@ -4,7 +4,7 @@ import { render, RenderResult, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import * as nextRouter from 'next/router';
 import { LanguageButton } from './LanguageButton';
-import NavLinksContext from '../context/NavLinksContext';
+import { NavLinksContext } from '../context/NavLinksContext';
 
 // @ts-ignore
 nextRouter.useRouter = jest.fn(() => ({

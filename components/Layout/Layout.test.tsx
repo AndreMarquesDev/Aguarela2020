@@ -3,7 +3,7 @@ import React from 'react';
 import { render, screen, RenderResult } from '@testing-library/react';
 import * as nextRouter from 'next/router';
 import { Layout, LayoutProps } from './Layout';
-import NavLinksContext from '../context/NavLinksContext';
+import { NavLinksContext } from '../context/NavLinksContext';
 import { Breakpoint } from '../../utils/useWindowSize';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { textsEn } from '../../utils/texts';

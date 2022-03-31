@@ -3,11 +3,11 @@ import Head from 'next/head';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
 import { Layout } from '../../components/Layout/Layout';
-import NavLinksContext, { NavLinksContextProps } from '../../components/context/NavLinksContext';
+import { NavLinksContext, NavLinksContextProps } from '../../components/context/NavLinksContext';
 import { getCurrentLanguagetexts } from '../../utils/generic';
 import { Locale } from '../../utils/locales';
-import ContactBlock from '../../components/ContactBlock/ContactBlock';
-import ContactForm from '../../components/ContactForm/ContactForm';
+import { ContactBlock } from '../../components/ContactBlock/ContactBlock';
+import { ContactForm } from '../../components/ContactForm/ContactForm';
 
 const ContactPage: NextPage = () => {
     const { query } = useRouter();

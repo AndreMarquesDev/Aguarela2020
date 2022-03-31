@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Image from 'next/image';
-import TextsContext from '../context/TextsContext';
-import Title from '../Title/Title';
+import { TextsContext } from '../context/TextsContext';
+import { Title } from '../Title/Title';
 import { brandsListSectionDataTestId } from '../../utils/dataTestIds';
 import {
     avocadoInstagramUrl,
@@ -24,7 +24,7 @@ import {
     bovineInstagramUrl,
 } from '../../utils/urls';
 
-const BrandsList = (): JSX.Element => {
+export const BrandsList = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
 
     return (
@@ -344,5 +344,3 @@ const BrandsList = (): JSX.Element => {
         </>
     );
 };
-
-export default BrandsList;

@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Button, { ButtonProps } from './Button';
+import { Button, ButtonProps } from './Button';
 
 const children = 'Texto dentro do botão';
 

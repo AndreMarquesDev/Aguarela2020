@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen, RenderResult } from '@testing-library/react';
-import TextShadowBlock, { TextShadowBlockProps } from './TextShadowBlock';
+import { TextShadowBlock, TextShadowBlockProps } from './TextShadowBlock';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { Breakpoint } from '../../utils/useWindowSize';
 import { textBlock1DataTestId } from '../../utils/dataTestIds';

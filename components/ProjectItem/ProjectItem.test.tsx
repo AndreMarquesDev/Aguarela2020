@@ -3,7 +3,7 @@ import React from 'react';
 import { render, screen, RenderResult, fireEvent } from '@testing-library/react';
 import { ProjectItem, ProjectItemProps } from './ProjectItem';
 import { textsEn, textsPt } from '../../utils/texts';
-import TextsContext from '../context/TextsContext';
+import { TextsContext } from '../context/TextsContext';
 import { projectItemTouchDivDataTestId } from '../../utils/dataTestIds';
 import { tjelaInstagramUrl } from '../../utils/urls';
 

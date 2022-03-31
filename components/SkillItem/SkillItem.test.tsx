@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import SkillItem, { SkillItemProps } from './SkillItem';
+import { SkillItem, SkillItemProps } from './SkillItem';
 
 const baseProps: SkillItemProps = {
     icon: 'strategy',

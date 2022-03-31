@@ -2,11 +2,11 @@ import React, { ReactNode, useContext } from 'react';
 import { useRouter } from 'next/router';
 import classNames from 'classnames';
 import { Header } from '../Header/Header';
-import TextsContext from '../context/TextsContext';
+import { TextsContext } from '../context/TextsContext';
 import { textsEn, textsPt } from '../../utils/texts';
-import Footer from '../Footer/Footer';
+import { Footer } from '../Footer/Footer';
 import { Locale } from '../../utils/locales';
-import NavLinksContext from '../context/NavLinksContext';
+import { NavLinksContext } from '../context/NavLinksContext';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 
 export interface LayoutProps {

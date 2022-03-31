@@ -4,13 +4,13 @@ import { NextPage } from 'next';
 import Image from 'next/image';
 import classNames from 'classnames';
 import { Layout } from '../../components/Layout/Layout';
-import NavLinksContext, { NavLinksContextProps } from '../../components/context/NavLinksContext';
-import WelcomeBlock from '../../components/WelcomeBlock/WelcomeBlock';
+import { NavLinksContext, NavLinksContextProps } from '../../components/context/NavLinksContext';
+import { WelcomeBlock } from '../../components/WelcomeBlock/WelcomeBlock';
 import { SkillsBlock } from '../../components/SkillsBlock/SkillsBlock';
-import Workflow from '../../components/Workflow/Workflow';
+import { Workflow } from '../../components/Workflow/Workflow';
 import { ProjectsList } from '../../components/ProjectsList/ProjectsList';
-import LetsWork from '../../components/LetsWork/LetsWork';
-import BrandsList from '../../components/BrandsList/BrandsList';
+import { LetsWork } from '../../components/LetsWork/LetsWork';
+import { BrandsList } from '../../components/BrandsList/BrandsList';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 import { homepageBannerContainerDataTestId } from '../../utils/dataTestIds';
 

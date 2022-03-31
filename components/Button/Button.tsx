@@ -16,7 +16,7 @@ export interface ButtonProps {
     onClick?: (event) => void;
 }
 
-const Button = ({
+export const Button = ({
     children,
     page,
     externalLink,
@@ -145,5 +145,3 @@ const Button = ({
         </>
     );
 };
-
-export default Button;

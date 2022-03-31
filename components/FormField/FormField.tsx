@@ -5,7 +5,7 @@ import {
     contactFormErrorMessageHiddenDataTestId,
 } from '../../utils/dataTestIds';
 import { FieldTypes } from '../../utils/formValidation';
-import TextsContext from '../context/TextsContext';
+import { TextsContext } from '../context/TextsContext';
 
 export interface FormFieldProps {
     id: FieldTypes;

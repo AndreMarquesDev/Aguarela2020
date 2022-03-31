@@ -4,7 +4,7 @@ import { getRemainingLang } from 'multilingual-url/lib';
 import { Locale, locales } from '../../utils/locales';
 import { getPageFromUrl } from '../../utils/pages';
 import { getCurrentLanguagetexts } from '../../utils/generic';
-import NavLinksContext from '../context/NavLinksContext';
+import { NavLinksContext } from '../context/NavLinksContext';
 
 export const LanguageButton = (): JSX.Element => {
     const router = useRouter();

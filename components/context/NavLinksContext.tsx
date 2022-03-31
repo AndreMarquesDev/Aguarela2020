@@ -6,6 +6,4 @@ export interface NavLinksContextProps {
     setNavHeight?: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const NavLinksContext: Context<NavLinksContextProps> = createContext(null);
-
-export default NavLinksContext;
+export const NavLinksContext: Context<NavLinksContextProps> = createContext(null);

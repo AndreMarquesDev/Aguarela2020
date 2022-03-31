@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import TextsContext from '../context/TextsContext';
-import Title from '../Title/Title';
+import { TextsContext } from '../context/TextsContext';
+import { Title } from '../Title/Title';
 import { Breakpoint, useWindowSize } from '../../utils/useWindowSize';
 import { NukaCarousel } from '../NukaCarousel/NukaCarousel';
-import SkillItem from '../SkillItem/SkillItem';
+import { SkillItem } from '../SkillItem/SkillItem';
 import {
     skillsBlockItemWrapperDataTestId,
     skillsBlockItemCarouselDataTestId,

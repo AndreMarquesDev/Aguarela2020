@@ -2,7 +2,7 @@ import React from 'react';
 import { textBlock1DataTestId } from '../../utils/dataTestIds';
 import { aguarelaDigitalEmail } from '../../utils/urls';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
-import Button from '../Button/Button';
+import { Button } from '../Button/Button';
 
 export interface TextShadowBlockProps {
     title1: string;
@@ -16,7 +16,7 @@ export interface TextShadowBlockProps {
     hasButton?: boolean;
 }
 
-const TextShadowBlock = ({
+export const TextShadowBlock = ({
     title1,
     title2,
     title3,
@@ -144,5 +144,3 @@ const TextShadowBlock = ({
         </>
     );
 };
-
-export default TextShadowBlock;
