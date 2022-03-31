@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import React, { FC, useContext, FocusEvent, ChangeEvent } from 'react';
+import React, { useContext, FocusEvent, ChangeEvent } from 'react';
 import {
     contactFormErrorMessageVisibleDataTestId,
     contactFormErrorMessageHiddenDataTestId,
@@ -19,7 +19,7 @@ export interface FormFieldProps {
     ariaError?: string;
 }
 
-export const FormField: FC<FormFieldProps> = ({
+export const FormField = ({
     id,
     type,
     value,
@@ -29,7 +29,7 @@ export const FormField: FC<FormFieldProps> = ({
     onChange,
     onBlur,
     ariaError,
-}) => {
+}: FormFieldProps): JSX.Element => {
     const { texts } = useContext(TextsContext);
 
     const getLabel = (fieldId: string): string => {

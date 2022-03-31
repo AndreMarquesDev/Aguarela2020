@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import Carousel, { CarouselCellAlignProp } from 'nuka-carousel';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { resetTimesTouchedAttribute } from '../../utils/generic';
@@ -15,13 +15,13 @@ export interface NukaCarouselProps {
     cellAlign?: CarouselCellAlignProp;
 }
 
-export const NukaCarousel: FC<NukaCarouselProps> = ({
+export const NukaCarousel = ({
     children,
     width,
     framePadding,
     slidesToShow,
     cellAlign,
-}) => {
+}: NukaCarouselProps): JSX.Element => {
     const handleClickPrev = (goToPrevSlide: () => void): void => {
         resetTimesTouchedAttribute();
         goToPrevSlide();

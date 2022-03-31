@@ -1,4 +1,4 @@
-import React, { FC, useContext, TouchEvent } from 'react';
+import React, { useContext, TouchEvent } from 'react';
 import Image from 'next/image';
 import { isClientSide } from 'multilingual-url/lib';
 import classNames from 'classnames';
@@ -19,7 +19,7 @@ export interface ProjectItemProps {
     isGrid?: boolean;
 }
 
-export const ProjectItem: FC<ProjectItemProps> = ({
+export const ProjectItem = ({
     imageSrc,
     imageAlt,
     brandLink,
@@ -30,7 +30,7 @@ export const ProjectItem: FC<ProjectItemProps> = ({
     isInPartnership,
     isActive,
     isGrid,
-}) => {
+}: ProjectItemProps): JSX.Element => {
     const { texts } = useContext(TextsContext);
 
     const isTouch = isClientSide && window?.matchMedia('(hover: none), (pointer: coarse)').matches;

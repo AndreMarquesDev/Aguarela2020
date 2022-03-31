@@ -1,10 +1,10 @@
-import React, { FC, useContext } from 'react';
+import React, { useContext } from 'react';
 import { letsWorkSectionDataTestId } from '../../utils/dataTestIds';
 import Button from '../Button/Button';
 import TextsContext from '../context/TextsContext';
 import Title from '../Title/Title';
 
-const LetsWork: FC = () => {
+const LetsWork = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
 
     return (

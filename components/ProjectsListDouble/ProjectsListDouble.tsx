@@ -1,4 +1,4 @@
-import React, { FC, useContext } from 'react';
+import React, { useContext } from 'react';
 import TextsContext from '../context/TextsContext';
 import Title from '../Title/Title';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
@@ -28,7 +28,7 @@ import {
     tjelaInstagramUrl,
 } from '../../utils/urls';
 
-export const ProjectsListDouble: FC = () => {
+export const ProjectsListDouble = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
     const windowSize = useWindowSize();
     const isPhablet = windowSize.width < Breakpoint.Phablet;

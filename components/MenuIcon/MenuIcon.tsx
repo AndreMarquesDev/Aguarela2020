@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import React, { FC } from 'react';
+import React from 'react';
 
 export interface MenuIconProps {
     isOpen: boolean;
@@ -7,7 +7,7 @@ export interface MenuIconProps {
     onClick: () => void;
 }
 
-export const MenuIcon: FC<MenuIconProps> = ({ isOpen, isVisible, onClick }) => {
+export const MenuIcon = ({ isOpen, isVisible, onClick }: MenuIconProps): JSX.Element => {
     const openMenuStyles = classNames('menuIcon', isOpen && 'open', !isVisible && 'hidden');
 
     return (

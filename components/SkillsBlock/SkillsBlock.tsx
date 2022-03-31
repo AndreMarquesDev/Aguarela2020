@@ -1,4 +1,4 @@
-import React, { FC, useContext } from 'react';
+import React, { useContext } from 'react';
 import TextsContext from '../context/TextsContext';
 import Title from '../Title/Title';
 import { Breakpoint, useWindowSize } from '../../utils/useWindowSize';
@@ -10,7 +10,7 @@ import {
     skillsBlockSectionDataTestId,
 } from '../../utils/dataTestIds';
 
-export const SkillsBlock: FC = () => {
+export const SkillsBlock = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
     const windowSize = useWindowSize();
     const isDesktop = windowSize.width > Breakpoint.Tablet;

@@ -1,4 +1,4 @@
-import React, { FC, useContext } from 'react';
+import React, { useContext } from 'react';
 import Link from 'next/link';
 import { FaInstagram, FaFacebookF, FaEnvelope } from 'react-icons/fa';
 import TextsContext from '../context/TextsContext';
@@ -15,7 +15,7 @@ export interface FooterProps {
     language: Locale;
 }
 
-const Footer: FC<FooterProps> = ({ language }) => {
+const Footer = ({ language }: FooterProps): JSX.Element => {
     const { texts } = useContext(TextsContext);
 
     return (

@@ -1,4 +1,4 @@
-import React, { FC, useContext } from 'react';
+import React, { useContext } from 'react';
 import Link from 'next/link';
 import classNames from 'classnames';
 import { pagesMap } from '../../utils/pages';
@@ -13,7 +13,12 @@ export interface NavLinksProps {
     isMenuOpen: boolean;
 }
 
-export const NavLinks: FC<NavLinksProps> = ({ currentRoute, language, isMobile, isMenuOpen }) => {
+export const NavLinks = ({
+    currentRoute,
+    language,
+    isMobile,
+    isMenuOpen,
+}: NavLinksProps): JSX.Element => {
     const navLinks = pagesMap.filter(page => page !== 'homepage');
     const { texts } = useContext(TextsContext);
 

@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 
 export interface TitleProps {
     text: string;
@@ -6,7 +6,7 @@ export interface TitleProps {
     marginBottom?: number;
 }
 
-const Title: FC<TitleProps> = ({ text, colored, marginBottom }) => (
+const Title = ({ text, colored, marginBottom }: TitleProps): JSX.Element => (
     <>
         <h1 className={colored && 'colored'}>{text}</h1>
 

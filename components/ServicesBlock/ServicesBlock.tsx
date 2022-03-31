@@ -1,4 +1,4 @@
-import React, { FC, useContext } from 'react';
+import React, { useContext } from 'react';
 import {
     servicesBlockItemWrapperDataTestId,
     servicesBlockItemCarouselDataTestId,
@@ -9,7 +9,7 @@ import TextsContext from '../context/TextsContext';
 import { NukaCarousel } from '../NukaCarousel/NukaCarousel';
 import Title from '../Title/Title';
 
-export const ServicesBlock: FC = () => {
+export const ServicesBlock = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
     const windowSize = useWindowSize();
     const isDesktop = windowSize.width > Breakpoint.Phablet;

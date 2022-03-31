@@ -1,4 +1,4 @@
-import React, { FC, useContext, useRef, useEffect } from 'react';
+import React, { useContext, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import NavLinksContext from '../context/NavLinksContext';
@@ -14,7 +14,7 @@ export interface HeaderProps {
     language: Locale;
 }
 
-export const Header: FC<HeaderProps> = ({ currentRoute, language }) => {
+export const Header = ({ currentRoute, language }: HeaderProps): JSX.Element => {
     const { setNavHeight } = useContext(NavLinksContext);
 
     const navRef = useRef(null);

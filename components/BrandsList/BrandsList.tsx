@@ -1,4 +1,4 @@
-import React, { FC, useContext } from 'react';
+import React, { useContext } from 'react';
 import Image from 'next/image';
 import TextsContext from '../context/TextsContext';
 import Title from '../Title/Title';
@@ -24,7 +24,7 @@ import {
     bovineInstagramUrl,
 } from '../../utils/urls';
 
-const BrandsList: FC = () => {
+const BrandsList = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
 
     return (

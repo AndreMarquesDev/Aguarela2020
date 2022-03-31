@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, useContext } from 'react';
+import React, { ReactNode, useContext } from 'react';
 import { useRouter } from 'next/router';
 import classNames from 'classnames';
 import { Header } from '../Header/Header';
@@ -13,7 +13,7 @@ export interface LayoutProps {
     children: ReactNode;
 }
 
-export const Layout: FC = ({ children }) => {
+export const Layout = ({ children }: LayoutProps): JSX.Element => {
     const { route, query } = useRouter();
     const { isMenuOpen } = useContext(NavLinksContext);
 

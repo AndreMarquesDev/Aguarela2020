@@ -1,4 +1,4 @@
-import React, { FC, useContext } from 'react';
+import React, { useContext } from 'react';
 import { useRouter } from 'next/router';
 import { getRemainingLang } from 'multilingual-url/lib';
 import { Locale, locales } from '../../utils/locales';
@@ -6,7 +6,7 @@ import { getPageFromUrl } from '../../utils/pages';
 import { getCurrentLanguagetexts } from '../../utils/generic';
 import NavLinksContext from '../context/NavLinksContext';
 
-export const LanguageButton: FC = () => {
+export const LanguageButton = (): JSX.Element => {
     const router = useRouter();
     const currentPage = getPageFromUrl()[0];
     const languageToSwitchTo = getRemainingLang(locales)[0] as Locale;

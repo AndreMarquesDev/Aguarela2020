@@ -1,9 +1,9 @@
-import React, { FC, useContext } from 'react';
+import React, { useContext } from 'react';
 import { workflowSectionDataTestId } from '../../utils/dataTestIds';
 import TextsContext from '../context/TextsContext';
 import Title from '../Title/Title';
 
-const Workflow: FC = () => {
+const Workflow = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
 
     return (

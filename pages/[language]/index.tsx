@@ -1,11 +1,11 @@
-import React, { FC, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter, NextRouter } from 'next/router';
 import { getInitialLocale, getLangFromUrl } from 'multilingual-url/lib';
 import { defaultLocale, locales } from '../../utils/locales';
 import { Page } from '../../utils/pages';
 
-const IndexPage: FC = () => {
+const IndexPage = (): JSX.Element => {
     const router = useRouter();
     const locale = getInitialLocale(defaultLocale, locales);
     const urlHasLocale = !!getLangFromUrl(locales).length;

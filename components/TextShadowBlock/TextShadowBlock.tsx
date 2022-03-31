@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import { textBlock1DataTestId } from '../../utils/dataTestIds';
 import { aguarelaDigitalEmail } from '../../utils/urls';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
@@ -16,7 +16,7 @@ export interface TextShadowBlockProps {
     hasButton?: boolean;
 }
 
-const TextShadowBlock: FC<TextShadowBlockProps> = ({
+const TextShadowBlock = ({
     title1,
     title2,
     title3,
@@ -26,7 +26,7 @@ const TextShadowBlock: FC<TextShadowBlockProps> = ({
     textBlock3,
     dataTestId,
     hasButton,
-}) => {
+}: TextShadowBlockProps): JSX.Element => {
     const windowSize = useWindowSize();
     const isDesktop = windowSize.width > Breakpoint.Desktop;
     const isMobile = windowSize.width < Breakpoint.Mobile;

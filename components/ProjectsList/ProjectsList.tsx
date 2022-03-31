@@ -1,4 +1,4 @@
-import React, { FC, useContext } from 'react';
+import React, { useContext } from 'react';
 import TextsContext from '../context/TextsContext';
 import Title from '../Title/Title';
 import Button from '../Button/Button';
@@ -11,7 +11,7 @@ import {
 } from '../../utils/dataTestIds';
 import { tjelaInstagramUrl, kaffeehausInstagramUrl, guacamoleInstagramUrl } from '../../utils/urls';
 
-export const ProjectsList: FC = () => {
+export const ProjectsList = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
     const windowSize = useWindowSize();
     const isDesktop = windowSize.width > Breakpoint.Tablet;

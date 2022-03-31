@@ -1,5 +1,5 @@
 /* eslint-disable no-nested-ternary, jsx-a11y/anchor-is-valid */
-import React, { FC } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import classNames from 'classnames';
@@ -16,7 +16,7 @@ export interface ButtonProps {
     onClick?: (event) => void;
 }
 
-const Button: FC<ButtonProps> = ({
+const Button = ({
     children,
     page,
     externalLink,
@@ -25,7 +25,7 @@ const Button: FC<ButtonProps> = ({
     isSubmit,
     disabled,
     onClick,
-}) => {
+}: ButtonProps): JSX.Element => {
     const { query } = useRouter();
 
     const language = query.language?.toString();

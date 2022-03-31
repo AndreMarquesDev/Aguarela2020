@@ -1,7 +1,7 @@
 import axios from 'axios';
 import classNames from 'classnames';
 import { useFormik } from 'formik';
-import React, { FC, useContext, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { contactFormContainerDataTestId } from '../../utils/dataTestIds';
 import { FieldTypes, FormState, validateName, validateEmail } from '../../utils/formValidation';
 import { contactFormBackendUrl } from '../../utils/urls';
@@ -58,7 +58,7 @@ const formSchema = [
 export const FORM_RESET_TIMEOUT = 7500;
 export const FORM_TEST_MODE_CHECKBOX_ID = 'formTestMode';
 
-const ContactForm: FC = () => {
+const ContactForm = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
 
     const [formSubmitState, setFormSubmitState] = useState({

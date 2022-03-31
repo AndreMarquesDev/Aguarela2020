@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import Image from 'next/image';
 
 export interface SkillItemProps {
@@ -7,7 +7,7 @@ export interface SkillItemProps {
     description: string;
 }
 
-const SkillItem: FC<SkillItemProps> = ({ icon, title, description }) => (
+const SkillItem = ({ icon, title, description }: SkillItemProps): JSX.Element => (
     <>
         <Image
             alt={title}

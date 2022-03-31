@@ -1,11 +1,11 @@
 import { useRouter } from 'next/router';
-import React, { FC, useContext } from 'react';
+import React, { useContext } from 'react';
 import { contactBlockSectionDataTestId } from '../../utils/dataTestIds';
 import { Locale } from '../../utils/locales';
 import TextsContext from '../context/TextsContext';
 import TextShadowBlock from '../TextShadowBlock/TextShadowBlock';
 
-const ContactBlock: FC = () => {
+const ContactBlock = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
 
     const { query } = useRouter();
