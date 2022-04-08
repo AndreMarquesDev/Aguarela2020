@@ -5893,8 +5893,8 @@ ms@^2.1.1:
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
 
 multilingual-url@AndreMarquesDev/multilingual-url:
-  version "1.0.3"
-  resolved "https://codeload.github.com/AndreMarquesDev/multilingual-url/tar.gz/fd18c3161c9c8a20c55f6b2567f5b4bc9d015626"
+  version "1.0.4"
+  resolved "https://codeload.github.com/AndreMarquesDev/multilingual-url/tar.gz/da9705f6594ed26ec841575dd9b3aead3758ef97"
   dependencies:
     js-cookie "^2.2.1"
     typescript "^3.8.3"

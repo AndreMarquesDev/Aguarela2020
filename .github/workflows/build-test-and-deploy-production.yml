@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12.22.10]
+        node-version: [14.17.4]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -39,7 +39,7 @@ jobs:
     needs: build
     strategy:
       matrix:
-        node-version: [12.22.10]
+        node-version: [14.17.4]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -53,7 +53,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          record: ${{ secrets.CYPRESS_RECORD_TOGGLED }}
+          record: ${CYPRESS_RECORD_TOGGLED}
           browser: chrome
           headless: true
           build: yarn build
@@ -61,6 +61,7 @@ jobs:
         env:
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          CYPRESS_RECORD_TOGGLED: ${{ secrets.CYPRESS_RECORD_TOGGLED }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   cypress-edge:
@@ -68,7 +69,7 @@ jobs:
     needs: cypress-chrome
     strategy:
       matrix:
-        node-version: [12.22.10]
+        node-version: [14.17.4]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -82,7 +83,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          record: ${{ secrets.CYPRESS_RECORD_TOGGLED }}
+          record: ${CYPRESS_RECORD_TOGGLED}
           browser: edge
           headless: true
           build: yarn build
@@ -90,6 +91,7 @@ jobs:
         env:
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          CYPRESS_RECORD_TOGGLED: ${{ secrets.CYPRESS_RECORD_TOGGLED }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   deploy:
