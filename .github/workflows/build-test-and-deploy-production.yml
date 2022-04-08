@@ -1,0 +1,106 @@
+name: Build, test and deploy to production
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.22.10]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Use node ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "yarn"
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Run linter
+        run: yarn lint
+
+      - name: Run tests
+        run: yarn test
+
+      - name: Build app
+        run: yarn build
+
+  cypress-chrome:
+    runs-on: ubuntu-latest
+    needs: build
+    strategy:
+      matrix:
+        node-version: [12.22.10]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Use node ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "yarn"
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          record: ${{ secrets.CYPRESS_RECORD_TOGGLED }}
+          browser: chrome
+          headless: true
+          build: yarn build
+          command: yarn cypress:test:chrome
+        env:
+          CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  cypress-edge:
+    runs-on: windows-latest
+    needs: cypress-chrome
+    strategy:
+      matrix:
+        node-version: [12.22.10]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Use node ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "yarn"
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          record: ${{ secrets.CYPRESS_RECORD_TOGGLED }}
+          browser: edge
+          headless: true
+          build: yarn build
+          command: yarn cypress:test:edge
+        env:
+          CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: cypress-edge
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - uses: actions/checkout@v3
+      - name: Deploy to Vercel
+        run: npx vercel --token ${VERCEL_TOKEN} --prod
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}

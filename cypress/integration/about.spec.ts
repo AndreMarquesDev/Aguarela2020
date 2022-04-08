@@ -13,7 +13,7 @@ const pageBeingTested = urls.pt.about;
 
 describe('about page', () => {
     beforeEach(() => {
-        cy.visit('/about');
+        cy.visit(pageBeingTested);
 
         cy.viewport(defaultViewportWidth, defaultViewportHeight);
     });
