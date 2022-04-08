@@ -1,15 +1,19 @@
 import '@testing-library/jest-dom';
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, RenderResult, screen } from '@testing-library/react';
 import { AboutMe } from './AboutMe';
 import { TextsContext } from '../context/TextsContext';
 import { textsEn, textsPt } from '../../utils/texts';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { Breakpoint } from '../../utils/useWindowSize';
 
+const renderComponent = (): RenderResult => {
+    return render(<AboutMe />);
+};
+
 describe('<AboutMe />', () => {
     test('renders properly', () => {
-        const { container } = render(<AboutMe />);
+        const { container } = renderComponent();
 
         expect(screen.getByText(textsPt.about)).toBeInTheDocument();
         expect(screen.getByText(textsPt.hiMyNameIs)).toBeInTheDocument();
@@ -47,7 +51,7 @@ describe('<AboutMe />', () => {
     test('renders properly in mobile', () => {
         setJestWindowWidth(Breakpoint.Mobile);
 
-        const { container } = render(<AboutMe />);
+        const { container } = renderComponent();
 
         // eslint-disable-next-line testing-library/no-container, testing-library/no-node-access
         expect(container.getElementsByClassName('alignCenter').length).toBe(1);

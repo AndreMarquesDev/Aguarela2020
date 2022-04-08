@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, RenderResult, screen } from '@testing-library/react';
 import { Title, TitleProps } from './Title';
 
 const baseProps: TitleProps = {
@@ -9,9 +9,13 @@ const baseProps: TitleProps = {
     marginBottom: null,
 };
 
+const renderComponent = (newProps?: Partial<TitleProps>): RenderResult => {
+    return render(<Title {...baseProps} {...newProps} />);
+};
+
 describe('<Title />', () => {
     test('renders properly', () => {
-        render(<Title {...baseProps} />);
+        renderComponent();
 
         const h1Element = screen.getByText(baseProps.text);
 
@@ -20,7 +24,7 @@ describe('<Title />', () => {
     });
 
     test('renders properly with the colored class', () => {
-        render(<Title {...baseProps} colored />);
+        renderComponent({ colored: true });
 
         const h1Element = screen.getByText(baseProps.text);
 
@@ -30,7 +34,7 @@ describe('<Title />', () => {
     });
 
     test('renders properly with a custom margin-bottom', () => {
-        render(<Title {...baseProps} marginBottom={100} />);
+        renderComponent({ marginBottom: 100 });
 
         const h1Element = screen.getByText(baseProps.text);
 

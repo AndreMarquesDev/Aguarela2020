@@ -1,15 +1,19 @@
 import '@testing-library/jest-dom';
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, RenderResult, screen } from '@testing-library/react';
 import { textsPt, textsEn } from '../../utils/texts';
 import { TextsContext } from '../context/TextsContext';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { ProjectsListDouble } from './ProjectsListDouble';
 import { Breakpoint } from '../../utils/useWindowSize';
 
+const renderComponent = (): RenderResult => {
+    return render(<ProjectsListDouble />);
+};
+
 describe('<ProjectsListDouble />', () => {
     test('renders properly', () => {
-        const { container } = render(<ProjectsListDouble />);
+        const { container } = renderComponent();
 
         const title = screen.getByText(textsPt.projects);
         const tjela = screen.getByAltText('tjela');
@@ -97,7 +101,7 @@ describe('<ProjectsListDouble />', () => {
     test('renders properly on phablet', () => {
         setJestWindowWidth(Breakpoint.Phablet);
 
-        const { container } = render(<ProjectsListDouble />);
+        const { container } = renderComponent();
 
         expect(container).toMatchSnapshot();
     });
@@ -105,7 +109,7 @@ describe('<ProjectsListDouble />', () => {
     test('renders properly on mobile', () => {
         setJestWindowWidth(Breakpoint.Mobile);
 
-        const { container } = render(<ProjectsListDouble />);
+        const { container } = renderComponent();
 
         expect(container).toMatchSnapshot();
     });

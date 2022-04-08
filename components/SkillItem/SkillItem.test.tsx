@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, RenderResult, screen } from '@testing-library/react';
 import { SkillItem, SkillItemProps } from './SkillItem';
 
 const baseProps: SkillItemProps = {
@@ -9,9 +9,13 @@ const baseProps: SkillItemProps = {
     description: 'Descrição',
 };
 
+const renderComponent = (newProps?: Partial<SkillItemProps>): RenderResult => {
+    return render(<SkillItem {...baseProps} {...newProps} />);
+};
+
 describe('<SkillItem />', () => {
     test('renders properly', () => {
-        const { container } = render(<SkillItem {...baseProps} />);
+        const { container } = renderComponent();
 
         expect(screen.getByText(baseProps.title)).toBeInTheDocument();
         expect(screen.getByText(baseProps.description)).toBeInTheDocument();

@@ -1,13 +1,17 @@
 import '@testing-library/jest-dom';
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, RenderResult, screen } from '@testing-library/react';
 import { Workflow } from './Workflow';
 import { TextsContext } from '../context/TextsContext';
 import { textsEn, textsPt } from '../../utils/texts';
 
+const renderComponent = (): RenderResult => {
+    return render(<Workflow />);
+};
+
 describe('<Workflow />', () => {
     test('renders properly', () => {
-        const { container } = render(<Workflow />);
+        const { container } = renderComponent();
 
         expect(screen.getByText(textsPt.workflow)).toBeInTheDocument();
         expect(screen.getByText(textsPt.defineTarget)).toBeInTheDocument();

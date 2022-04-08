@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, RenderResult, screen } from '@testing-library/react';
 import { textsPt, textsEn } from '../../utils/texts';
 import { TextsContext } from '../context/TextsContext';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
@@ -11,9 +11,13 @@ import {
     skillsBlockItemCarouselDataTestId,
 } from '../../utils/dataTestIds';
 
+const renderComponent = (): RenderResult => {
+    return render(<SkillsBlock />);
+};
+
 describe('<SkillsBlock />', () => {
     test('renders properly', () => {
-        const { container } = render(<SkillsBlock />);
+        const { container } = renderComponent();
 
         const title = screen.getByText(textsPt.skills);
         const block1Title = screen.getByText(textsPt.socialMediaStrategy);
@@ -73,7 +77,7 @@ describe('<SkillsBlock />', () => {
     test('renders properly on mobile', () => {
         setJestWindowWidth(Breakpoint.Mobile);
 
-        render(<SkillsBlock />);
+        renderComponent();
 
         const carouselItemWrapper = screen.getAllByTestId(skillsBlockItemCarouselDataTestId);
         const numberOfBlocks = screen.queryByTestId(skillsBlockItemWrapperDataTestId);

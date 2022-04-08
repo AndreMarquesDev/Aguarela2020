@@ -1,6 +1,12 @@
 import '@testing-library/jest-dom';
 import React from 'react';
-import { render, screen, waitFor, waitForElementToBeRemoved } from '@testing-library/react';
+import {
+    render,
+    RenderResult,
+    screen,
+    waitFor,
+    waitForElementToBeRemoved,
+} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { ContactForm, FORM_RESET_TIMEOUT } from './ContactForm';
 import { TextsContext } from '../context/TextsContext';
@@ -13,9 +19,13 @@ import {
     contactFormErrorMessageVisibleDataTestId,
 } from '../../utils/dataTestIds';
 
+const renderComponent = (): RenderResult => {
+    return render(<ContactForm />);
+};
+
 describe('<ContactForm />', () => {
     test('renders properly', () => {
-        render(<ContactForm />);
+        renderComponent();
 
         const hiddenErrorMessages = screen.getAllByTestId(contactFormErrorMessageHiddenDataTestId);
 
@@ -45,7 +55,7 @@ describe('<ContactForm />', () => {
     });
 
     test('displays error messages in required fields on submit with empty fields', async () => {
-        render(<ContactForm />);
+        renderComponent();
 
         const submitButton = screen.getByText(textsPt.send);
 
@@ -61,7 +71,7 @@ describe('<ContactForm />', () => {
     });
 
     test('lets fields be properly filled', async () => {
-        render(<ContactForm />);
+        renderComponent();
 
         const nameInput = screen.getByTestId(FieldTypes.Name);
         const brandInput = screen.getByTestId(FieldTypes.Brand);
@@ -83,7 +93,7 @@ describe('<ContactForm />', () => {
     test('submits the form successfully', async () => {
         initializeAxiosMockAdapter();
 
-        render(<ContactForm />);
+        renderComponent();
 
         const nameInput = screen.getByTestId(FieldTypes.Name);
         const brandInput = screen.getByTestId(FieldTypes.Brand);
@@ -111,7 +121,7 @@ describe('<ContactForm />', () => {
         async () => {
             initializeAxiosMockAdapter();
 
-            render(<ContactForm />);
+            renderComponent();
 
             const nameInput = screen.getByTestId(FieldTypes.Name);
             const brandInput = screen.getByTestId(FieldTypes.Brand);
@@ -143,7 +153,7 @@ describe('<ContactForm />', () => {
     test('shows an error message in case the POST request fails', async () => {
         initializeAxiosMockAdapter(0, false);
 
-        render(<ContactForm />);
+        renderComponent();
 
         const nameInput = screen.getByTestId(FieldTypes.Name);
         const brandInput = screen.getByTestId(FieldTypes.Brand);

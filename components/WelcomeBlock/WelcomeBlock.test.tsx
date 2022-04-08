@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, RenderResult, screen } from '@testing-library/react';
 import * as nextRouter from 'next/router';
 import { WelcomeBlock } from './WelcomeBlock';
 import { textsPt, textsEn } from '../../utils/texts';
@@ -16,9 +16,13 @@ nextRouter.useRouter = jest.fn(() => ({
     },
 }));
 
+const renderComponent = (): RenderResult => {
+    return render(<WelcomeBlock />);
+};
+
 describe('<WelcomeBlock />', () => {
     test('renders properly', () => {
-        const { container } = render(<WelcomeBlock />);
+        const { container } = renderComponent();
 
         const title1 = screen.getByText(textsPt.welcome1);
         const title2 = screen.getByText(textsPt.welcome2);
@@ -76,7 +80,7 @@ describe('<WelcomeBlock />', () => {
     test('renders properly on mobile', () => {
         setJestWindowWidth(Breakpoint.Mobile);
 
-        render(<WelcomeBlock />);
+        renderComponent();
 
         const titleMobile = screen.getByText(
             `${textsPt.welcome1}-${textsPt.welcome2}${textsPt.welcome3}`

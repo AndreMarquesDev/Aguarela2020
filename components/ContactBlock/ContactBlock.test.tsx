@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, RenderResult, screen } from '@testing-library/react';
 import * as nextRouter from 'next/router';
 import { ContactBlock } from './ContactBlock';
 import { TextsContext } from '../context/TextsContext';
@@ -15,9 +15,13 @@ nextRouter.useRouter = jest.fn(() => ({
     },
 }));
 
+const renderComponent = (): RenderResult => {
+    return render(<ContactBlock />);
+};
+
 describe('<ContactBlock />', () => {
     test('renders properly', () => {
-        const { container } = render(<ContactBlock />);
+        const { container } = renderComponent();
 
         expect(screen.getByText(textsPt.contactMe1)).toBeInTheDocument();
         expect(screen.getByText(textsPt.contactMe2)).toBeInTheDocument();
@@ -32,7 +36,7 @@ describe('<ContactBlock />', () => {
     test('renders properly on mobile', () => {
         setJestWindowWidth(Breakpoint.Mobile);
 
-        const { container } = render(<ContactBlock />);
+        const { container } = renderComponent();
 
         expect(screen.queryByText(textsPt.contactMe1)).not.toBeInTheDocument();
         expect(screen.queryByText(textsPt.contactMe2)).not.toBeInTheDocument();

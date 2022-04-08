@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, RenderResult, screen } from '@testing-library/react';
 import { Button, ButtonProps } from './Button';
 
 const children = 'Texto dentro do botão';
@@ -16,9 +16,17 @@ const baseProps: ButtonProps = {
     onClick: jest.fn(),
 };
 
+const renderComponent = (newProps?: Partial<ButtonProps>): RenderResult => {
+    return render(
+        <Button {...baseProps} {...newProps}>
+            {children}
+        </Button>
+    );
+};
+
 describe('<Button />', () => {
     test('renders properly', () => {
-        const { container } = render(<Button {...baseProps}>{children}</Button>);
+        const { container } = renderComponent();
 
         const anchorElement = screen.getByText(children);
 
@@ -30,11 +38,7 @@ describe('<Button />', () => {
     });
 
     test('renders properly without an external link', () => {
-        const { container } = render(
-            <Button {...baseProps} externalLink={null}>
-                {children}
-            </Button>
-        );
+        const { container } = renderComponent({ externalLink: null });
 
         const anchorElement = screen.getByText(children);
 
@@ -44,11 +48,7 @@ describe('<Button />', () => {
     });
 
     test('renders properly as a submit button', () => {
-        const { container } = render(
-            <Button {...baseProps} isSubmit>
-                {children}
-            </Button>
-        );
+        const { container } = renderComponent({ isSubmit: true });
 
         const buttonElement = screen.getByText(children);
 
@@ -57,11 +57,11 @@ describe('<Button />', () => {
     });
 
     test('renders properly when disabled, uppercased and aligned left', () => {
-        const { container } = render(
-            <Button {...baseProps} alignLeft disabled isUppercased>
-                {children}
-            </Button>
-        );
+        const { container } = renderComponent({
+            alignLeft: true,
+            disabled: true,
+            isUppercased: true,
+        });
 
         expect(container).toMatchSnapshot();
     });

@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, RenderResult, screen } from '@testing-library/react';
 import { textsPt, textsEn } from '../../utils/texts';
 import { TextsContext } from '../context/TextsContext';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
@@ -11,9 +11,13 @@ import {
     servicesBlockItemCarouselDataTestId,
 } from '../../utils/dataTestIds';
 
+const renderComponent = (): RenderResult => {
+    return render(<ServicesBlock />);
+};
+
 describe('<ServicesBlock />', () => {
     test('renders properly', () => {
-        const { container } = render(<ServicesBlock />);
+        const { container } = renderComponent();
 
         const title = screen.getByText(textsPt.services);
         const block1Title = screen.getByText(textsPt.design);
@@ -109,7 +113,7 @@ describe('<ServicesBlock />', () => {
     test('renders properly on mobile', () => {
         setJestWindowWidth(Breakpoint.Mobile);
 
-        render(<ServicesBlock />);
+        renderComponent();
 
         const carouselItemWrapper = screen.getAllByTestId(servicesBlockItemCarouselDataTestId);
         const numberOfBlocks = screen.queryByTestId(servicesBlockItemWrapperDataTestId);

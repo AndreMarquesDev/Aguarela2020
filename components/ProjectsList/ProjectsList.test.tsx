@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, RenderResult, screen } from '@testing-library/react';
 import { textsPt, textsEn } from '../../utils/texts';
 import { TextsContext } from '../context/TextsContext';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
@@ -8,9 +8,13 @@ import { ProjectsList } from './ProjectsList';
 import { Breakpoint } from '../../utils/useWindowSize';
 import { projectsListNoCarouselDataTestId } from '../../utils/dataTestIds';
 
+const renderComponent = (): RenderResult => {
+    return render(<ProjectsList />);
+};
+
 describe('<ProjectsList />', () => {
     test('renders properly', () => {
-        const { container } = render(<ProjectsList />);
+        const { container } = renderComponent();
 
         const title = screen.getByText(textsPt.projects);
         const button = screen.getByText(textsPt.seeMore);
@@ -50,7 +54,7 @@ describe('<ProjectsList />', () => {
     test('renders properly on mobile', () => {
         setJestWindowWidth(Breakpoint.Mobile);
 
-        render(<ProjectsList />);
+        renderComponent();
 
         const noCarouselWrapper = screen.queryByTestId(projectsListNoCarouselDataTestId);
 
