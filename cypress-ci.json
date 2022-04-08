@@ -1,8 +1,0 @@
-{
-    "baseUrl": "http://localhost:3000/pt",
-    "fixturesFolder": false,
-    "pluginsFile": false,
-    "video": false,
-    "screenshotOnRunFailure": false,
-    "defaultCommandTimeout": 13000
-}
