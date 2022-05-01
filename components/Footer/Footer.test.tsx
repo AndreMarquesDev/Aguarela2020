@@ -2,15 +2,19 @@ import '@testing-library/jest-dom';
 import React from 'react';
 import { render, RenderResult, screen } from '@testing-library/react';
 import { Footer, FooterProps } from './Footer';
-import { TextsContext } from '../context/TextsContext';
 import { textsEn, textsPt } from '../../utils/texts';
+import { MockTextsContext } from '../../utils/jest/MockTextsContext';
 
 const baseProps: FooterProps = {
     language: 'pt',
 };
 
-const renderComponent = (newProps?: Partial<FooterProps>): RenderResult => {
-    return render(<Footer {...baseProps} {...newProps} />);
+const renderComponent = (newProps?: Partial<FooterProps>, isEnglish = false): RenderResult => {
+    return render(
+        <MockTextsContext isEnglish={isEnglish}>
+            <Footer {...baseProps} {...newProps} />
+        </MockTextsContext>
+    );
 };
 
 describe('<Footer />', () => {
@@ -23,15 +27,7 @@ describe('<Footer />', () => {
     });
 
     test('renders properly in English', () => {
-        const { container } = render(
-            <TextsContext.Provider
-                value={{
-                    texts: textsEn,
-                }}
-            >
-                <Footer language="en" />
-            </TextsContext.Provider>
-        );
+        const { container } = renderComponent({ language: 'en' }, true);
 
         expect(screen.getByText(textsEn.footerInfo)).toBeInTheDocument();
 

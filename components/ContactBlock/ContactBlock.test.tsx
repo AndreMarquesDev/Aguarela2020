@@ -3,10 +3,10 @@ import React from 'react';
 import { render, RenderResult, screen } from '@testing-library/react';
 import * as nextRouter from 'next/router';
 import { ContactBlock } from './ContactBlock';
-import { TextsContext } from '../context/TextsContext';
 import { textsEn, textsPt } from '../../utils/texts';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { Breakpoint } from '../../utils/useWindowSize';
+import { MockTextsContext } from '../../utils/jest/MockTextsContext';
 
 // @ts-ignore
 nextRouter.useRouter = jest.fn(() => ({
@@ -15,8 +15,12 @@ nextRouter.useRouter = jest.fn(() => ({
     },
 }));
 
-const renderComponent = (): RenderResult => {
-    return render(<ContactBlock />);
+const renderComponent = (isEnglish = false): RenderResult => {
+    return render(
+        <MockTextsContext isEnglish={isEnglish}>
+            <ContactBlock />
+        </MockTextsContext>
+    );
 };
 
 describe('<ContactBlock />', () => {
@@ -54,15 +58,7 @@ describe('<ContactBlock />', () => {
     test('renders properly in English', () => {
         setJestWindowWidth(Breakpoint.Desktop);
 
-        const { container } = render(
-            <TextsContext.Provider
-                value={{
-                    texts: textsEn,
-                }}
-            >
-                <ContactBlock />
-            </TextsContext.Provider>
-        );
+        const { container } = renderComponent(true);
 
         expect(screen.getByText(textsEn.contactMe1)).toBeInTheDocument();
         expect(screen.getByText(textsEn.contactMe2)).toBeInTheDocument();
@@ -83,15 +79,7 @@ describe('<ContactBlock />', () => {
 
         setJestWindowWidth(Breakpoint.Mobile);
 
-        const { container } = render(
-            <TextsContext.Provider
-                value={{
-                    texts: textsEn,
-                }}
-            >
-                <ContactBlock />
-            </TextsContext.Provider>
-        );
+        const { container } = renderComponent(true);
 
         expect(screen.queryByText(textsEn.contactMe1)).not.toBeInTheDocument();
         expect(screen.queryByText(textsEn.contactMe2)).not.toBeInTheDocument();

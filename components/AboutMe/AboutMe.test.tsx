@@ -2,13 +2,17 @@ import '@testing-library/jest-dom';
 import React from 'react';
 import { render, RenderResult, screen } from '@testing-library/react';
 import { AboutMe } from './AboutMe';
-import { TextsContext } from '../context/TextsContext';
 import { textsEn, textsPt } from '../../utils/texts';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { Breakpoint } from '../../utils/useWindowSize';
+import { MockTextsContext } from '../../utils/jest/MockTextsContext';
 
-const renderComponent = (): RenderResult => {
-    return render(<AboutMe />);
+const renderComponent = (isEnglish = false): RenderResult => {
+    return render(
+        <MockTextsContext isEnglish={isEnglish}>
+            <AboutMe />
+        </MockTextsContext>
+    );
 };
 
 describe('<AboutMe />', () => {
@@ -27,15 +31,7 @@ describe('<AboutMe />', () => {
     });
 
     test('renders properly in English', () => {
-        const { container } = render(
-            <TextsContext.Provider
-                value={{
-                    texts: textsEn,
-                }}
-            >
-                <AboutMe />
-            </TextsContext.Provider>
-        );
+        const { container } = renderComponent(true);
 
         expect(screen.getByText(textsEn.about)).toBeInTheDocument();
         expect(screen.getByText(textsEn.hiMyNameIs)).toBeInTheDocument();

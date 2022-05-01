@@ -2,13 +2,17 @@ import '@testing-library/jest-dom';
 import React from 'react';
 import { render, RenderResult, screen } from '@testing-library/react';
 import { textsPt, textsEn } from '../../utils/texts';
-import { TextsContext } from '../context/TextsContext';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { ProjectsListDouble } from './ProjectsListDouble';
 import { Breakpoint } from '../../utils/useWindowSize';
+import { MockTextsContext } from '../../utils/jest/MockTextsContext';
 
-const renderComponent = (): RenderResult => {
-    return render(<ProjectsListDouble />);
+const renderComponent = (isEnglish = false): RenderResult => {
+    return render(
+        <MockTextsContext isEnglish={isEnglish}>
+            <ProjectsListDouble />
+        </MockTextsContext>
+    );
 };
 
 describe('<ProjectsListDouble />', () => {
@@ -81,15 +85,7 @@ describe('<ProjectsListDouble />', () => {
     });
 
     test('renders properly in English', () => {
-        const { container } = render(
-            <TextsContext.Provider
-                value={{
-                    texts: textsEn,
-                }}
-            >
-                <ProjectsListDouble />
-            </TextsContext.Provider>
-        );
+        const { container } = renderComponent(true);
 
         const title = screen.getByText(textsEn.projects);
 

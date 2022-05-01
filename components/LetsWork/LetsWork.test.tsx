@@ -2,11 +2,15 @@ import '@testing-library/jest-dom';
 import React from 'react';
 import { render, RenderResult, screen } from '@testing-library/react';
 import { LetsWork } from './LetsWork';
-import { TextsContext } from '../context/TextsContext';
 import { textsEn, textsPt } from '../../utils/texts';
+import { MockTextsContext } from '../../utils/jest/MockTextsContext';
 
-const renderComponent = (): RenderResult => {
-    return render(<LetsWork />);
+const renderComponent = (isEnglish = false): RenderResult => {
+    return render(
+        <MockTextsContext isEnglish={isEnglish}>
+            <LetsWork />
+        </MockTextsContext>
+    );
 };
 
 describe('<LetsWork />', () => {
@@ -21,15 +25,7 @@ describe('<LetsWork />', () => {
     });
 
     test('renders properly in English', () => {
-        const { container } = render(
-            <TextsContext.Provider
-                value={{
-                    texts: textsEn,
-                }}
-            >
-                <LetsWork />
-            </TextsContext.Provider>
-        );
+        const { container } = renderComponent(true);
 
         expect(screen.getByText(textsEn.letsWork)).toBeInTheDocument();
         expect(screen.getByText(textsEn.letsWorkDescription)).toBeInTheDocument();

@@ -2,14 +2,18 @@ import '@testing-library/jest-dom';
 import React from 'react';
 import { render, RenderResult, screen } from '@testing-library/react';
 import { textsPt, textsEn } from '../../utils/texts';
-import { TextsContext } from '../context/TextsContext';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { ProjectsList } from './ProjectsList';
 import { Breakpoint } from '../../utils/useWindowSize';
 import { projectsListNoCarouselDataTestId } from '../../utils/dataTestIds';
+import { MockTextsContext } from '../../utils/jest/MockTextsContext';
 
-const renderComponent = (): RenderResult => {
-    return render(<ProjectsList />);
+const renderComponent = (isEnglish = false): RenderResult => {
+    return render(
+        <MockTextsContext isEnglish={isEnglish}>
+            <ProjectsList />
+        </MockTextsContext>
+    );
 };
 
 describe('<ProjectsList />', () => {
@@ -32,15 +36,7 @@ describe('<ProjectsList />', () => {
     });
 
     test('renders properly in English', () => {
-        const { container } = render(
-            <TextsContext.Provider
-                value={{
-                    texts: textsEn,
-                }}
-            >
-                <ProjectsList />
-            </TextsContext.Provider>
-        );
+        const { container } = renderComponent(true);
 
         const title = screen.getByText(textsEn.projects);
         const button = screen.getByText(textsEn.seeMore);

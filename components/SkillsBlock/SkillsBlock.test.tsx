@@ -2,7 +2,6 @@ import '@testing-library/jest-dom';
 import React from 'react';
 import { render, RenderResult, screen } from '@testing-library/react';
 import { textsPt, textsEn } from '../../utils/texts';
-import { TextsContext } from '../context/TextsContext';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { SkillsBlock } from './SkillsBlock';
 import { Breakpoint } from '../../utils/useWindowSize';
@@ -10,9 +9,14 @@ import {
     skillsBlockItemWrapperDataTestId,
     skillsBlockItemCarouselDataTestId,
 } from '../../utils/dataTestIds';
+import { MockTextsContext } from '../../utils/jest/MockTextsContext';
 
-const renderComponent = (): RenderResult => {
-    return render(<SkillsBlock />);
+const renderComponent = (isEnglish = false): RenderResult => {
+    return render(
+        <MockTextsContext isEnglish={isEnglish}>
+            <SkillsBlock />
+        </MockTextsContext>
+    );
 };
 
 describe('<SkillsBlock />', () => {
@@ -45,15 +49,7 @@ describe('<SkillsBlock />', () => {
     });
 
     test('renders properly in English', () => {
-        const { container } = render(
-            <TextsContext.Provider
-                value={{
-                    texts: textsEn,
-                }}
-            >
-                <SkillsBlock />
-            </TextsContext.Provider>
-        );
+        const { container } = renderComponent(true);
 
         const title = screen.getByText(textsEn.skills);
         const block1Title = screen.getByText(textsEn.socialMediaStrategy);

@@ -9,7 +9,6 @@ import {
 } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { ContactForm, FORM_RESET_TIMEOUT } from './ContactForm';
-import { TextsContext } from '../context/TextsContext';
 import { textsEn, textsPt } from '../../utils/texts';
 import { FieldTypes } from '../../utils/formValidation';
 import { initializeAxiosMockAdapter } from '../../ajax/axiosMockAdapter';
@@ -18,9 +17,14 @@ import {
     contactFormErrorMessageHiddenDataTestId,
     contactFormErrorMessageVisibleDataTestId,
 } from '../../utils/dataTestIds';
+import { MockTextsContext } from '../../utils/jest/MockTextsContext';
 
-const renderComponent = (): RenderResult => {
-    return render(<ContactForm />);
+const renderComponent = (isEnglish = false): RenderResult => {
+    return render(
+        <MockTextsContext isEnglish={isEnglish}>
+            <ContactForm />
+        </MockTextsContext>
+    );
 };
 
 describe('<ContactForm />', () => {
@@ -36,15 +40,7 @@ describe('<ContactForm />', () => {
     });
 
     test('renders properly in English', () => {
-        render(
-            <TextsContext.Provider
-                value={{
-                    texts: textsEn,
-                }}
-            >
-                <ContactForm />
-            </TextsContext.Provider>
-        );
+        renderComponent(true);
 
         const hiddenErrorMessages = screen.getAllByTestId(contactFormErrorMessageHiddenDataTestId);
 

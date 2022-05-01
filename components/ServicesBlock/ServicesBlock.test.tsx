@@ -2,7 +2,6 @@ import '@testing-library/jest-dom';
 import React from 'react';
 import { render, RenderResult, screen } from '@testing-library/react';
 import { textsPt, textsEn } from '../../utils/texts';
-import { TextsContext } from '../context/TextsContext';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { ServicesBlock } from './ServicesBlock';
 import { Breakpoint } from '../../utils/useWindowSize';
@@ -10,9 +9,14 @@ import {
     servicesBlockItemWrapperDataTestId,
     servicesBlockItemCarouselDataTestId,
 } from '../../utils/dataTestIds';
+import { MockTextsContext } from '../../utils/jest/MockTextsContext';
 
-const renderComponent = (): RenderResult => {
-    return render(<ServicesBlock />);
+const renderComponent = (isEnglish = false): RenderResult => {
+    return render(
+        <MockTextsContext isEnglish={isEnglish}>
+            <ServicesBlock />
+        </MockTextsContext>
+    );
 };
 
 describe('<ServicesBlock />', () => {
@@ -63,15 +67,7 @@ describe('<ServicesBlock />', () => {
     });
 
     test('renders properly in English', () => {
-        const { container } = render(
-            <TextsContext.Provider
-                value={{
-                    texts: textsEn,
-                }}
-            >
-                <ServicesBlock />
-            </TextsContext.Provider>
-        );
+        const { container } = renderComponent(true);
 
         const title = screen.getByText(textsEn.services);
         const block1Title = screen.getByText(textsEn.design);

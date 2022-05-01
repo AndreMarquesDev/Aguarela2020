@@ -4,10 +4,10 @@ import { render, RenderResult, screen } from '@testing-library/react';
 import * as nextRouter from 'next/router';
 import { WelcomeBlock } from './WelcomeBlock';
 import { textsPt, textsEn } from '../../utils/texts';
-import { TextsContext } from '../context/TextsContext';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { Breakpoint } from '../../utils/useWindowSize';
 import { textBlock1DataTestId } from '../../utils/dataTestIds';
+import { MockTextsContext } from '../../utils/jest/MockTextsContext';
 
 // @ts-ignore
 nextRouter.useRouter = jest.fn(() => ({
@@ -16,8 +16,12 @@ nextRouter.useRouter = jest.fn(() => ({
     },
 }));
 
-const renderComponent = (): RenderResult => {
-    return render(<WelcomeBlock />);
+const renderComponent = (isEnglish = false): RenderResult => {
+    return render(
+        <MockTextsContext isEnglish={isEnglish}>
+            <WelcomeBlock />
+        </MockTextsContext>
+    );
 };
 
 describe('<WelcomeBlock />', () => {
@@ -46,15 +50,7 @@ describe('<WelcomeBlock />', () => {
     });
 
     test('renders properly in English', () => {
-        const { container } = render(
-            <TextsContext.Provider
-                value={{
-                    texts: textsEn,
-                }}
-            >
-                <WelcomeBlock />
-            </TextsContext.Provider>
-        );
+        const { container } = renderComponent(true);
 
         const title1 = screen.getByText(textsEn.welcome1);
         const title2 = screen.getByText(textsEn.welcome2);
@@ -98,15 +94,7 @@ describe('<WelcomeBlock />', () => {
 
         setJestWindowWidth(Breakpoint.Mobile);
 
-        render(
-            <TextsContext.Provider
-                value={{
-                    texts: textsEn,
-                }}
-            >
-                <WelcomeBlock />
-            </TextsContext.Provider>
-        );
+        renderComponent(true);
 
         const titleMobile = screen.getByText(
             `${textsEn.welcome1}${textsEn.welcome2}${textsEn.welcome3}`

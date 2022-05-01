@@ -3,9 +3,9 @@ import React from 'react';
 import { render, screen, RenderResult, fireEvent } from '@testing-library/react';
 import { ProjectItem, ProjectItemProps } from './ProjectItem';
 import { textsEn, textsPt } from '../../utils/texts';
-import { TextsContext } from '../context/TextsContext';
 import { projectItemTouchDivDataTestId } from '../../utils/dataTestIds';
 import { tjelaInstagramUrl } from '../../utils/urls';
+import { MockTextsContext } from '../../utils/jest/MockTextsContext';
 
 const baseProps: ProjectItemProps = {
     brandLink: tjelaInstagramUrl,
@@ -20,8 +20,12 @@ const baseProps: ProjectItemProps = {
     year: 2020,
 };
 
-const renderComponent = (newProps?: Partial<ProjectItemProps>): RenderResult => {
-    return render(<ProjectItem {...baseProps} {...newProps} />);
+const renderComponent = (newProps?: Partial<ProjectItemProps>, isEnglish = false): RenderResult => {
+    return render(
+        <MockTextsContext isEnglish={isEnglish}>
+            <ProjectItem {...baseProps} {...newProps} />
+        </MockTextsContext>
+    );
 };
 
 describe('<ProjectItem />', () => {
@@ -46,17 +50,9 @@ describe('<ProjectItem />', () => {
     });
 
     test('renders properly in English', () => {
-        const { container } = render(
-            <TextsContext.Provider
-                value={{
-                    texts: textsEn,
-                }}
-            >
-                <ProjectItem
-                    {...baseProps}
-                    description={textsEn.socialMediaManagementAndContentCreation}
-                />
-            </TextsContext.Provider>
+        const { container } = renderComponent(
+            { description: textsEn.socialMediaManagementAndContentCreation },
+            true
         );
 
         const year = screen.getByText(`${baseProps.year} - ${textsEn.present}`);
