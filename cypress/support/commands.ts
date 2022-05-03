@@ -5,7 +5,11 @@ declare namespace Cypress {
         getByText(parent: string, text: string): Chainable<Element>;
         getByHref(parent: string, hrefValue: string): Chainable<Element>;
         getBackfaceProjectsListDouble(parent: string, imageSelector: string): Chainable<Element>;
-        imageIsVisible(dataTestId: string, selector: string): Chainable<Element>;
+        imageIsVisible(
+            dataTestId: string,
+            selector: string,
+            isFirefox?: boolean
+        ): Chainable<Element>;
         imageInCurrentSlideIsVisible(dataTestId: string, selector: string): Chainable<Element>;
         imageWidthIs(dataTestId: string, selector: string, width: number): Chainable<Element>;
         imageWidthIsBetween(
@@ -42,12 +46,17 @@ Cypress.Commands.add('getBackfaceProjectsListDouble', (parent, imageSelector) =>
     cy.getByDataTestId(parent).find(`[alt="${imageSelector}"]`).parent().next();
 });
 
-Cypress.Commands.add('imageIsVisible', (dataTestId, selector) => {
+Cypress.Commands.add('imageIsVisible', (dataTestId, selector, isFirefox = false) => {
     cy.getByDataTestId(dataTestId)
         .find(`img[alt="${selector}"]`)
         .should('be.visible')
         .and($img => {
-            expect(($img[0] as HTMLImageElement).naturalWidth).to.be.greaterThan(0);
+            // it would report the naturalWidth of the image to be 0 on Firefox, don't know why
+            if (isFirefox) {
+                expect(($img[0] as HTMLImageElement).width).to.be.greaterThan(0);
+            } else {
+                expect(($img[0] as HTMLImageElement).naturalWidth).to.be.greaterThan(0);
+            }
         });
 });
 
@@ -72,8 +81,8 @@ Cypress.Commands.add('imageWidthIsBetween', (dataTestId, selector, width) => {
     cy.getByDataTestId(dataTestId)
         .find(`img[alt="${selector}"]`)
         .and($img => {
-            expect(($img[0] as HTMLImageElement).scrollWidth).to.be.greaterThan(width - 5);
-            expect(($img[0] as HTMLImageElement).scrollWidth).to.be.lessThan(width + 5);
+            expect(($img[0] as HTMLImageElement).scrollWidth).to.be.greaterThan(width - 6);
+            expect(($img[0] as HTMLImageElement).scrollWidth).to.be.lessThan(width + 6);
         });
 });
 

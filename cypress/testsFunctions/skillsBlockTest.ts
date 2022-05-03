@@ -22,6 +22,7 @@ export const skillsBlockTest = (locale: Locale): void => {
         contentCreation,
         createAttractiveContent,
     } = getLocalizedTexts(locale);
+    const isFirefox = Cypress.isBrowser('firefox');
 
     cy.getByText(skillsBlockSectionDataTestId, skills).scrollIntoView();
 
@@ -59,7 +60,7 @@ export const skillsBlockTest = (locale: Locale): void => {
     cy.getByText(skillsBlockSectionDataTestId, communityManagement);
     cy.getByText(skillsBlockSectionDataTestId, whenWeSendAMessage);
 
-    cy.imageIsVisible(skillsBlockItemWrapperDataTestId, paidSocialAndSearch);
+    cy.imageIsVisible(skillsBlockItemWrapperDataTestId, paidSocialAndSearch, isFirefox);
     cy.imageWidthIs(skillsBlockItemWrapperDataTestId, paidSocialAndSearch, skillsBlockImagesWidth);
     cy.imageHeightIs(
         skillsBlockItemWrapperDataTestId,
@@ -69,7 +70,7 @@ export const skillsBlockTest = (locale: Locale): void => {
     cy.getByText(skillsBlockSectionDataTestId, paidSocialAndSearch);
     cy.getByText(skillsBlockSectionDataTestId, planningAndImplementing);
 
-    cy.imageIsVisible(skillsBlockItemWrapperDataTestId, optimizationAndAnalysis);
+    cy.imageIsVisible(skillsBlockItemWrapperDataTestId, optimizationAndAnalysis, isFirefox);
     cy.imageWidthIs(
         skillsBlockItemWrapperDataTestId,
         optimizationAndAnalysis,
@@ -83,7 +84,7 @@ export const skillsBlockTest = (locale: Locale): void => {
     cy.getByText(skillsBlockSectionDataTestId, optimizationAndAnalysis);
     cy.getByText(skillsBlockSectionDataTestId, measuringResults);
 
-    cy.imageIsVisible(skillsBlockItemWrapperDataTestId, contentCreation);
+    cy.imageIsVisible(skillsBlockItemWrapperDataTestId, contentCreation, isFirefox);
     cy.imageWidthIs(skillsBlockItemWrapperDataTestId, contentCreation, skillsBlockImagesWidth);
     cy.imageHeightIs(skillsBlockItemWrapperDataTestId, contentCreation, skillsBlockImagesHeight);
     cy.getByText(skillsBlockSectionDataTestId, contentCreation);

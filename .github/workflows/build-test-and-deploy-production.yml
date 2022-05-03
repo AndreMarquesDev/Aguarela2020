@@ -9,6 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     strategy:
       matrix:
         node-version: [14.17.4]
@@ -25,17 +26,18 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Run linter
-        run: yarn lint
-
-      - name: Run tests
-        run: yarn test
-
       - name: Build app
         run: yarn build
 
+      - name: Run unit tests
+        run: yarn test
+
+      - name: Run linter
+        run: yarn lint
+
   cypress-chrome:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     needs: build
     strategy:
       matrix:
@@ -53,20 +55,21 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          record: ${CYPRESS_RECORD_TOGGLED}
+          record: false
           browser: chrome
           headless: true
+          group: "Chrome"
           build: yarn build
           command: yarn cypress:test:chrome
         env:
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          CYPRESS_RECORD_TOGGLED: ${{ secrets.CYPRESS_RECORD_TOGGLED }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  cypress-edge:
-    runs-on: windows-latest
-    needs: cypress-chrome
+  cypress-firefox:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    needs: build
     strategy:
       matrix:
         node-version: [14.17.4]
@@ -83,20 +86,52 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          record: ${CYPRESS_RECORD_TOGGLED}
+          record: false
+          browser: firefox
+          headless: true
+          group: "Firefox"
+          build: yarn build
+          command: yarn cypress:test:firefox
+        env:
+          CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  cypress-edge:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    needs: build
+    strategy:
+      matrix:
+        node-version: [14.17.4]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Use node ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "yarn"
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          record: false
           browser: edge
           headless: true
+          group: "Edge"
           build: yarn build
           command: yarn cypress:test:edge
         env:
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          CYPRESS_RECORD_TOGGLED: ${{ secrets.CYPRESS_RECORD_TOGGLED }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   deploy:
     runs-on: ubuntu-latest
-    needs: cypress-edge
+    timeout-minutes: 15
+    needs: [cypress-chrome, cypress-firefox, cypress-edge]
     if: github.ref == 'refs/heads/master'
     steps:
       - uses: actions/checkout@v3
