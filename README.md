@@ -2,7 +2,7 @@
 
 Aguarela Digital website
 
-[![build-and-deploy-production](https://github.com/AndreMarquesDev/Aguarela2020/actions/workflows/build-and-deploy-production.yml/badge.svg)](https://github.com/AndreMarquesDev/Aguarela2020/actions/workflows/build-and-deploy-production.yml)
+[![build-test-and-deploy-production](https://github.com/AndreMarquesDev/Aguarela2020/actions/workflows/build-test-and-deploy-production.yml/badge.svg)](https://github.com/AndreMarquesDev/Aguarela2020/actions/workflows/build-test-and-deploy-production.yml)
 ![GitHub deployments](https://img.shields.io/github/deployments/AndreMarquesDev/Aguarela2020/production?label=vercel&logo=vercel&logoColor=white)
 
 ## About
