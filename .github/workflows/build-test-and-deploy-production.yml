@@ -6,8 +6,8 @@ on:
   pull_request:
     branches: [master]
   schedule:
-    # runs "every thursday at 20h GMT" (https://crontab.guru)
-    - cron: "0 21 * * 4"
+    # runs "every friday at 20h GMT" (https://crontab.guru)
+    - cron: "0 19 * * 5"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -134,7 +134,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     needs: [cypress-chrome, cypress-firefox, cypress-edge]
-    if: github.ref == 'refs/heads/master' && github.event.schedule != '0 21 * * 4'
+    if: github.ref == 'refs/heads/master' && github.event.schedule != '0 19 * * 5'
     steps:
       - uses: actions/checkout@v3
       - name: Deploy to Vercel

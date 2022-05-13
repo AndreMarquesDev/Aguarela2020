@@ -1,8 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/no-namespace
 declare namespace Cypress {
     interface Chainable {
-        getByDataTestId(selector: string): Chainable<Element>;
-        getByText(parent: string, text: string): Chainable<Element>;
+        getByDataTestId(selector: string, timeout?: number): Chainable<Element>;
+        getByText(parent: string, text: string, timeout?: number): Chainable<Element>;
         getByHref(parent: string, hrefValue: string): Chainable<Element>;
         getBackfaceProjectsListDouble(parent: string, imageSelector: string): Chainable<Element>;
         imageIsVisible(
@@ -30,12 +30,12 @@ declare namespace Cypress {
     }
 }
 
-Cypress.Commands.add('getByDataTestId', selector => {
-    cy.get(`[data-testid="${selector}"]`);
+Cypress.Commands.add('getByDataTestId', (selector, timeout = 4000) => {
+    cy.get(`[data-testid="${selector}"]`, { timeout });
 });
 
-Cypress.Commands.add('getByText', (parent, text) => {
-    cy.getByDataTestId(parent).contains(text);
+Cypress.Commands.add('getByText', (parent, text, timeout = 4000) => {
+    cy.getByDataTestId(parent, timeout).contains(text, { timeout });
 });
 
 Cypress.Commands.add('getByHref', (parent, hrefValue) => {

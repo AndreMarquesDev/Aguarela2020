@@ -3,6 +3,10 @@ import { FieldTypes } from '../../utils/formValidation';
 import { Locale } from '../../utils/locales';
 import { getLocalizedTexts } from '../utils/getTexts';
 
+const formSuccessMessageAppearTimeout = 10000;
+const FORM_RESET_TIMEOUT = 7500;
+const formSuccessMessageDisappearTimeout = FORM_RESET_TIMEOUT + 2000;
+
 export const contactFormTest = (locale: Locale): void => {
     const {
         name,
@@ -55,11 +59,16 @@ export const contactFormTest = (locale: Locale): void => {
     cy.getByDataTestId(contactFormContainerDataTestId).find('.buttonBackground').not('.disabled');
     cy.getByText(contactFormContainerDataTestId, send).click();
     cy.getByDataTestId(contactFormContainerDataTestId).find('.buttonBackground.disabled');
-    cy.getByText(contactFormContainerDataTestId, messageSentSuccessfully);
+    cy.getByText(
+        contactFormContainerDataTestId,
+        messageSentSuccessfully,
+        formSuccessMessageAppearTimeout
+    );
     cy.getByDataTestId(contactFormContainerDataTestId).find('.buttonBackground').not('.disabled');
 
-    // eslint-disable-next-line cypress/no-unnecessary-waiting
-    cy.wait(8000);
-
-    cy.getByText(contactFormContainerDataTestId, messageSentSuccessfully).should('not.exist');
+    cy.getByText(
+        contactFormContainerDataTestId,
+        messageSentSuccessfully,
+        formSuccessMessageDisappearTimeout
+    ).should('not.exist');
 };
