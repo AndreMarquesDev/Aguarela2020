@@ -1,32 +1,44 @@
-// eslint-disable-next-line @typescript-eslint/no-namespace
-declare namespace Cypress {
-    interface Chainable {
-        getByDataTestId(selector: string, timeout?: number): Chainable<Element>;
-        getByText(parent: string, text: string, timeout?: number): Chainable<Element>;
-        getByHref(parent: string, hrefValue: string): Chainable<Element>;
-        getBackfaceProjectsListDouble(parent: string, imageSelector: string): Chainable<Element>;
-        imageIsVisible(
-            dataTestId: string,
-            selector: string,
-            isFirefox?: boolean
-        ): Chainable<Element>;
-        imageInCurrentSlideIsVisible(dataTestId: string, selector: string): Chainable<Element>;
-        imageWidthIs(dataTestId: string, selector: string, width: number): Chainable<Element>;
-        imageWidthIsBetween(
-            dataTestId: string,
-            selector: string,
-            width: number
-        ): Chainable<Element>;
-        imageHeightIs(dataTestId: string, selector: string, height: number): Chainable<Element>;
-        isHidden(parent: string, selector: string): Chainable<Element>;
-        isVisible(parent: string, selector: string): Chainable<Element>;
-        isTextInBackfaceVisible(
-            parent: string,
-            imageSelector: string,
-            text: string
-        ): Chainable<Element>;
-        urlIsEqualTo(url: string): Chainable<Element>;
-        forceHover(): Chainable<Element>;
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command';
+
+addMatchImageSnapshotCommand();
+
+declare global {
+    // eslint-disable-next-line @typescript-eslint/no-namespace
+    namespace Cypress {
+        // declare namespace Cypress {
+        interface Chainable {
+            getByDataTestId(selector: string, timeout?: number): Chainable<Element>;
+            getByText(parent: string, text: string, timeout?: number): Chainable<Element>;
+            getByHref(parent: string, hrefValue: string): Chainable<Element>;
+            getBackfaceProjectsListDouble(
+                parent: string,
+                imageSelector: string
+            ): Chainable<Element>;
+            imageIsVisible(
+                dataTestId: string,
+                selector: string,
+                isFirefox?: boolean
+            ): Chainable<Element>;
+            imageInCurrentSlideIsVisible(dataTestId: string, selector: string): Chainable<Element>;
+            imageWidthIs(dataTestId: string, selector: string, width: number): Chainable<Element>;
+            imageWidthIsBetween(
+                dataTestId: string,
+                selector: string,
+                width: number
+            ): Chainable<Element>;
+            imageHeightIs(dataTestId: string, selector: string, height: number): Chainable<Element>;
+            isHidden(parent: string, selector: string): Chainable<Element>;
+            isVisible(parent: string, selector: string): Chainable<Element>;
+            isTextInBackfaceVisible(
+                parent: string,
+                imageSelector: string,
+                text: string
+            ): Chainable<Element>;
+            urlIsEqualTo(url: string): Chainable<Element>;
+            forceHover(): Chainable<Element>;
+            matchImageSnapshot(name: string, options?: unknown): Chainable<Element>;
+        }
     }
 }
 

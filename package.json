@@ -60,6 +60,7 @@
         "@types/styled-jsx": "^2.2.8",
         "axios-mock-adapter": "^1.20.0",
         "cypress": "^9.2.0",
+        "cypress-image-snapshot": "^4.0.1",
         "eslint": "7.31.0",
         "eslint-config-andremarquesdev": "^1.2.3",
         "eslint-plugin-cypress": "^2.12.1",
