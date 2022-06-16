@@ -26,7 +26,7 @@ class MyDocument extends Document {
                     />
 
                     {/* mobile header color for Chrome, Firefox OS and Opera */}
-                    <meta content="#a383ea" name="theme-color" />
+                    <meta content="#c9b1ff" name="theme-color" />
                     <meta content="all" name="robots" />
                     {/* google Specific */}
                     {/* tells Google not to provide a translation for this document */}
