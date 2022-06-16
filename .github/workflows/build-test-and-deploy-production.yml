@@ -134,7 +134,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     needs: [cypress-chrome, cypress-firefox, cypress-edge]
-    if: github.ref == 'refs/heads/master' && github.event.schedule != '0 14 * * 3'
+    if: github.ref == 'refs/heads/master' && github.event.schedule != '0 14 * * 3' && "!contains(github.event.head_commit.message, 'chore')"
     steps:
       - uses: actions/checkout@v3
       - name: Deploy to Vercel

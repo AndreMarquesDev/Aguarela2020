@@ -3,7 +3,7 @@ import { FieldTypes } from '../../utils/formValidation';
 import { Locale } from '../../utils/locales';
 import { getLocalizedTexts } from '../utils/getTexts';
 
-const formSuccessMessageAppearTimeout = 10000;
+const formSuccessMessageAppearTimeout = 15000;
 const FORM_RESET_TIMEOUT = 7500;
 const formSuccessMessageDisappearTimeout = FORM_RESET_TIMEOUT + 2000;
 
