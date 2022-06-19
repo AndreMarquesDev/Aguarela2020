@@ -1,4 +1,4 @@
-import { aguarelaDigitalEmail, aguarelaDigitalInstagramUrl } from './urls';
+import { aguarelaDigitalEmail } from './urls';
 
 export interface TextsInterface {
     about: string;
@@ -100,11 +100,12 @@ export const textsPt: TextsInterface = {
     welcome2: 'Vin',
     welcome3: 'Dos',
     footerInfo: 'Aguarela Digital - Developed by',
-    managingsocialMedia: `Gestão de redes sociais está no meu ADN. Sou uma freelancer, baseada em Lisboa, com experiência em gestão de redes sociais e criação de conteúdo. A <a href="${aguarelaDigitalInstagramUrl}" target="_blank" rel="noreferrer" class="link">@Aguarela</a> surgiu com o objetivo de ajudar negócios locais e pequenas empresas a posicionarem-se no digital, gerar awareness, criar uma relação com o target e impulsionar vendas.`,
+    managingsocialMedia:
+        'Juntámos a vontade de comunicar ao gosto por fotografar. A Aguarela Digital é uma agência de comunicação que tem como objetivo posicionar e fazer brilhar negócios locais e pequenas empresas no digital, desenvolvendo estratégias de comunicação adequadas às suas necessidades e objetivos.',
     throughStrategicPlanning:
-        'Através do planeamento estratégico, criação de conteúdo e implementação estou disponível para ser o vosso braço direito.',
+        'Do o início ao fim, fazemos o acompanhamento, monitorização e otimização de todo o processo e estratégia de gestão de redes sociais, campanhas paid social (Facebook e Instagram) e paid search (Google Ads), otimização de SEO, criação de conteúdo e consultoria.',
     monitorAndOptimizeProcessAndStrategy:
-        'Do ínicio ao fim, acompanho, monitorizo e otimizo todo o processo e estratégia de gestão de redes sociais.',
+        'Através do planeamento estratégico, criação de uma identidade visual, conteúdo de qualidade e implementação de campanhas digitais, a Aguarela dedica-se a todas as marcas como se fossem suas.',
     skills: 'Skills',
     socialMediaStrategy: 'Estratégia de Redes Sociais',
     makingAuditsAndAnalysis:
@@ -147,11 +148,11 @@ export const textsPt: TextsInterface = {
         'Precisa de ajuda com as redes sociais e marketing digital da sua marca ou negócio? Envie-me um email e vamos conversar. Estou disponível para ajudar a posicionar a sua marca no mundo digital.',
     myNetwork: 'A minha rede',
     hiMyNameIs:
-        'Olá! O meu nome é Catarina Santiago e sou gestora de redes sociais e criadora de conteúdo baseada em Lisboa.',
+        'Olá! O meu nome é Catarina Santiago e sou gestora de redes sociais e fotógrafa baseada em Lisboa.',
     withMoreThan:
-        'Com mais de 3 anos e 18 clientes de experiência, a Aguarela surgiu com a missão de providenciar um serviço premium de gestão de redes sociais e criação de conteúdo a negócios locais e pequenas empresas.',
+        'Com mais de 4 anos e 18 clientes de experiência, um projeto de freelance transformou-se na Aguarela Digital, uma agência de comunicação com o objetivo de posicionar e fazer brilhar marcas e negócios no digital.',
     theSocialMediaCommunicationStrategy:
-        'A estratégia de comunicação em redes sociais é sempre desenvolvida com base nos objetivos do cliente. Embora seja importante ser flexível e compreensiva, o meu papel é pensar fora da caixa, criar conteúdo inovador para redes sociais e otimizar a estratégia com base nos resultados. Acredito que uma boa estratégia de comunicação aliada a um planeamento visual de conteúdo é o segredo para o aumento da visibilidade e faturação do negócio.',
+        'A estratégia de comunicação em redes sociais é sempre desenvolvida com base nos objetivos do cliente. Embora seja importante ser flexível e compreensiva, o meu papel é pensar fora da caixa, criar conteúdo inovador para redes sociais e otimizar a estratégia com base nos resultados e tendências de mercado. Acredito que uma boa estratégia de comunicação aliada a um planeamento visual de conteúdo é o segredo para o aumento da visibilidade e faturação do negócio.',
     getToKnowMeBetter: 'Conhece-me melhor',
     contactMe1: 'Con',
     contactMe2: 'Ver',
@@ -207,11 +208,12 @@ export const textsEn: TextsInterface = {
     welcome2: 'Co',
     welcome3: 'Me',
     footerInfo: 'Aguarela Digital - Developed by',
-    managingsocialMedia: `Social media management is in my DNA. I'm a freelancer, based in Lisbon, with experience in social media management and content creation. <a href="${aguarelaDigitalInstagramUrl}" target="_blank" rel="noreferrer" class="link">@Aguarela</a>'s goal is to help local businesses and small companies position themselves digitally, create awareness, create a realtionship with the target and boost sales.`,
+    managingsocialMedia:
+        'We meshed the desire to communicate with the passion for photography. Aguarela Digital is a communication agency that aims to position and make local and small businesses shine in the digital world, developing communication strategies suited to their needs and goals.',
     throughStrategicPlanning:
-        'Through strategic planning, content creation and implementation I can be your right hand.',
+        'Through strategic planning, creation of a visual identity, quality content and implementation of digital campaigns, Aguarela dedicates itself to all brands as if they were their own.',
     monitorAndOptimizeProcessAndStrategy:
-        'From start to finish I keep up with, monitor and optimize the whole social media management process and strategy.',
+        'From start to finish we follow up, monitor and optimize the entire process and strategy of social media management, paid social campaigns (Facebook and Instagram) and paid search (Google Ads), SEO optimization, content creation and consulting.',
     skills: 'Skills',
     socialMediaStrategy: 'Social Media strategy',
     makingAuditsAndAnalysis:
@@ -254,11 +256,11 @@ export const textsEn: TextsInterface = {
         "Need help with digital marketing and the social media of your brand or business? Send me an email and let's talk. I'm available to help position your brand in the digital world.",
     myNetwork: 'My network',
     hiMyNameIs:
-        "Hi! My name is Catarina Santiago and I'm a social media manager and content creator based in Lisbon.",
+        "Hi! My name is Catarina Santiago and I'm a social media manager and photographer based in Lisbon.",
     withMoreThan:
-        'With more than 3 years of experience and 18 clients, Aguarela was created with the mission to provide a premium service of social media management and content creation to local businesses and small companies.',
+        'With more than 4 years of experience and 18 clients, a freelance project became Aguarela Digital, a communication agency with the goal to position and make brands and businesses shine in the digital world.',
     theSocialMediaCommunicationStrategy:
-        "The social media communication strategy is always developed based on the client's goals. Even though it is important to be flexible and comprehensive, my role is to think outside the box, create innovative content and optimize the strategy based on results. I believe that a good communication strategy together with a visual planning of the content is the secret to increase the visibility of the business.",
+        "The social media strategy is always developed based on the client's goals. While it is important to be flexible, my role is to think outside the box by creating innovative content and optimizing the strategy based on results and market trends. I believe that a good communication strategy combined with a visual planning of the content is the key to increase the visibility and revenue of the business.",
     getToKnowMeBetter: 'Get to know me better',
     contactMe1: 'Con',
     contactMe2: 'Tac',

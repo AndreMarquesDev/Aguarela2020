@@ -35,26 +35,17 @@ exports[`<WelcomeBlock /> renders properly 1`] = `
           class="jsx-2290377079 bodyText bodyText--white"
           data-testid="textShadowBlock_textBlock1"
         >
-          Gestão de redes sociais está no meu ADN. Sou uma freelancer, baseada em Lisboa, com experiência em gestão de redes sociais e criação de conteúdo. A 
-          <a
-            class="link"
-            href="https://www.instagram.com/aguareladigital"
-            rel="noreferrer"
-            target="_blank"
-          >
-            @Aguarela
-          </a>
-           surgiu com o objetivo de ajudar negócios locais e pequenas empresas a posicionarem-se no digital, gerar awareness, criar uma relação com o target e impulsionar vendas.
+          Juntámos a vontade de comunicar ao gosto por fotografar. A Aguarela Digital é uma agência de comunicação que tem como objetivo posicionar e fazer brilhar negócios locais e pequenas empresas no digital, desenvolvendo estratégias de comunicação adequadas às suas necessidades e objetivos.
         </p>
         <p
           class="jsx-2290377079 bodyText bodyText--white"
         >
-          Do ínicio ao fim, acompanho, monitorizo e otimizo todo o processo e estratégia de gestão de redes sociais.
+          Através do planeamento estratégico, criação de uma identidade visual, conteúdo de qualidade e implementação de campanhas digitais, a Aguarela dedica-se a todas as marcas como se fossem suas.
         </p>
         <p
           class="jsx-2290377079 bodyText bodyText--white"
         >
-          Através do planeamento estratégico, criação de conteúdo e implementação estou disponível para ser o vosso braço direito.
+          Do o início ao fim, fazemos o acompanhamento, monitorização e otimização de todo o processo e estratégia de gestão de redes sociais, campanhas paid social (Facebook e Instagram) e paid search (Google Ads), otimização de SEO, criação de conteúdo e consultoria.
         </p>
       </div>
     </div>
@@ -97,26 +88,17 @@ exports[`<WelcomeBlock /> renders properly in English 1`] = `
           class="jsx-2290377079 bodyText bodyText--white"
           data-testid="textShadowBlock_textBlock1"
         >
-          Social media management is in my DNA. I'm a freelancer, based in Lisbon, with experience in social media management and content creation. 
-          <a
-            class="link"
-            href="https://www.instagram.com/aguareladigital"
-            rel="noreferrer"
-            target="_blank"
-          >
-            @Aguarela
-          </a>
-          's goal is to help local businesses and small companies position themselves digitally, create awareness, create a realtionship with the target and boost sales.
+          We meshed the desire to communicate with the passion for photography. Aguarela Digital is a communication agency that aims to position and make local and small businesses shine in the digital world, developing communication strategies suited to their needs and goals.
         </p>
         <p
           class="jsx-2290377079 bodyText bodyText--white"
         >
-          From start to finish I keep up with, monitor and optimize the whole social media management process and strategy.
+          From start to finish we follow up, monitor and optimize the entire process and strategy of social media management, paid social campaigns (Facebook and Instagram) and paid search (Google Ads), SEO optimization, content creation and consulting.
         </p>
         <p
           class="jsx-2290377079 bodyText bodyText--white"
         >
-          Through strategic planning, content creation and implementation I can be your right hand.
+          Through strategic planning, creation of a visual identity, quality content and implementation of digital campaigns, Aguarela dedicates itself to all brands as if they were their own.
         </p>
       </div>
     </div>

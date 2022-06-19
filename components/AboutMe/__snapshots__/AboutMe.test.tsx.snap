@@ -49,17 +49,17 @@ exports[`<AboutMe /> renders properly 1`] = `
           <p
             class="jsx-1128069698 bodyText"
           >
-            Olá! O meu nome é Catarina Santiago e sou gestora de redes sociais e criadora de conteúdo baseada em Lisboa.
+            Olá! O meu nome é Catarina Santiago e sou gestora de redes sociais e fotógrafa baseada em Lisboa.
           </p>
           <p
             class="jsx-1128069698 bodyText"
           >
-            Com mais de 3 anos e 18 clientes de experiência, a Aguarela surgiu com a missão de providenciar um serviço premium de gestão de redes sociais e criação de conteúdo a negócios locais e pequenas empresas.
+            Com mais de 4 anos e 18 clientes de experiência, um projeto de freelance transformou-se na Aguarela Digital, uma agência de comunicação com o objetivo de posicionar e fazer brilhar marcas e negócios no digital.
           </p>
           <p
             class="jsx-1128069698 bodyText"
           >
-            A estratégia de comunicação em redes sociais é sempre desenvolvida com base nos objetivos do cliente. Embora seja importante ser flexível e compreensiva, o meu papel é pensar fora da caixa, criar conteúdo inovador para redes sociais e otimizar a estratégia com base nos resultados. Acredito que uma boa estratégia de comunicação aliada a um planeamento visual de conteúdo é o segredo para o aumento da visibilidade e faturação do negócio.
+            A estratégia de comunicação em redes sociais é sempre desenvolvida com base nos objetivos do cliente. Embora seja importante ser flexível e compreensiva, o meu papel é pensar fora da caixa, criar conteúdo inovador para redes sociais e otimizar a estratégia com base nos resultados e tendências de mercado. Acredito que uma boa estratégia de comunicação aliada a um planeamento visual de conteúdo é o segredo para o aumento da visibilidade e faturação do negócio.
           </p>
           <div
             class="jsx-781296904 buttonWrapper"
@@ -133,17 +133,17 @@ exports[`<AboutMe /> renders properly in English 1`] = `
           <p
             class="jsx-1128069698 bodyText"
           >
-            Hi! My name is Catarina Santiago and I'm a social media manager and content creator based in Lisbon.
+            Hi! My name is Catarina Santiago and I'm a social media manager and photographer based in Lisbon.
           </p>
           <p
             class="jsx-1128069698 bodyText"
           >
-            With more than 3 years of experience and 18 clients, Aguarela was created with the mission to provide a premium service of social media management and content creation to local businesses and small companies.
+            With more than 4 years of experience and 18 clients, a freelance project became Aguarela Digital, a communication agency with the goal to position and make brands and businesses shine in the digital world.
           </p>
           <p
             class="jsx-1128069698 bodyText"
           >
-            The social media communication strategy is always developed based on the client's goals. Even though it is important to be flexible and comprehensive, my role is to think outside the box, create innovative content and optimize the strategy based on results. I believe that a good communication strategy together with a visual planning of the content is the secret to increase the visibility of the business.
+            The social media strategy is always developed based on the client's goals. While it is important to be flexible, my role is to think outside the box by creating innovative content and optimizing the strategy based on results and market trends. I believe that a good communication strategy combined with a visual planning of the content is the key to increase the visibility and revenue of the business.
           </p>
           <div
             class="jsx-781296904 buttonWrapper"
@@ -217,17 +217,17 @@ exports[`<AboutMe /> renders properly in mobile 1`] = `
           <p
             class="jsx-1128069698 bodyText"
           >
-            Olá! O meu nome é Catarina Santiago e sou gestora de redes sociais e criadora de conteúdo baseada em Lisboa.
+            Olá! O meu nome é Catarina Santiago e sou gestora de redes sociais e fotógrafa baseada em Lisboa.
           </p>
           <p
             class="jsx-1128069698 bodyText"
           >
-            Com mais de 3 anos e 18 clientes de experiência, a Aguarela surgiu com a missão de providenciar um serviço premium de gestão de redes sociais e criação de conteúdo a negócios locais e pequenas empresas.
+            Com mais de 4 anos e 18 clientes de experiência, um projeto de freelance transformou-se na Aguarela Digital, uma agência de comunicação com o objetivo de posicionar e fazer brilhar marcas e negócios no digital.
           </p>
           <p
             class="jsx-1128069698 bodyText"
           >
-            A estratégia de comunicação em redes sociais é sempre desenvolvida com base nos objetivos do cliente. Embora seja importante ser flexível e compreensiva, o meu papel é pensar fora da caixa, criar conteúdo inovador para redes sociais e otimizar a estratégia com base nos resultados. Acredito que uma boa estratégia de comunicação aliada a um planeamento visual de conteúdo é o segredo para o aumento da visibilidade e faturação do negócio.
+            A estratégia de comunicação em redes sociais é sempre desenvolvida com base nos objetivos do cliente. Embora seja importante ser flexível e compreensiva, o meu papel é pensar fora da caixa, criar conteúdo inovador para redes sociais e otimizar a estratégia com base nos resultados e tendências de mercado. Acredito que uma boa estratégia de comunicação aliada a um planeamento visual de conteúdo é o segredo para o aumento da visibilidade e faturação do negócio.
           </p>
           <div
             class="jsx-781296904 buttonWrapper"

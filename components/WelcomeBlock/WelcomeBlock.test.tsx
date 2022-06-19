@@ -31,20 +31,16 @@ describe('<WelcomeBlock />', () => {
         const title1 = screen.getByText(textsPt.welcome1);
         const title2 = screen.getByText(textsPt.welcome2);
         const title3 = screen.getByText(textsPt.welcome3);
+        const textBlock1 = screen.getByText(textsPt.managingsocialMedia);
         const textBlock2 = screen.getByText(textsPt.monitorAndOptimizeProcessAndStrategy);
         const textBlock3 = screen.getByText(textsPt.throughStrategicPlanning);
-
-        const textBlock1 = screen.getByTestId(textBlock1DataTestId);
-        const actualTextBlock1Text =
-            'Gestão de redes sociais está no meu ADN. Sou uma freelancer, baseada em Lisboa, com experiência em gestão de redes sociais e criação de conteúdo. A @Aguarela surgiu com o objetivo de ajudar negócios locais e pequenas empresas a posicionarem-se no digital, gerar awareness, criar uma relação com o target e impulsionar vendas';
 
         expect(title1).toBeInTheDocument();
         expect(title2).toBeInTheDocument();
         expect(title3).toBeInTheDocument();
+        expect(textBlock1).toBeInTheDocument();
         expect(textBlock2).toBeInTheDocument();
         expect(textBlock3).toBeInTheDocument();
-
-        expect(textBlock1).toHaveTextContent(actualTextBlock1Text);
 
         expect(container).toMatchSnapshot();
     });
@@ -55,20 +51,16 @@ describe('<WelcomeBlock />', () => {
         const title1 = screen.getByText(textsEn.welcome1);
         const title2 = screen.getByText(textsEn.welcome2);
         const title3 = screen.getByText(textsEn.welcome3);
+        const textBlock1 = screen.getByText(textsEn.managingsocialMedia);
         const textBlock2 = screen.getByText(textsEn.monitorAndOptimizeProcessAndStrategy);
         const textBlock3 = screen.getByText(textsEn.throughStrategicPlanning);
-
-        const textBlock1 = screen.getByTestId(textBlock1DataTestId);
-        const actualTextBlock1Text =
-            "Social media management is in my DNA. I'm a freelancer, based in Lisbon, with experience in social media management and content creation. @Aguarela's goal is to help local businesses and small companies position themselves digitally, create awareness, create a realtionship with the target and boost sales";
 
         expect(title1).toBeInTheDocument();
         expect(title2).toBeInTheDocument();
         expect(title3).toBeInTheDocument();
+        expect(textBlock1).toBeInTheDocument();
         expect(textBlock2).toBeInTheDocument();
         expect(textBlock3).toBeInTheDocument();
-
-        expect(textBlock1).toHaveTextContent(actualTextBlock1Text);
 
         expect(container).toMatchSnapshot();
     });
