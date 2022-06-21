@@ -7,6 +7,7 @@ export const welcomeSectionTest = (locale: Locale): void => {
         welcome1,
         welcome2,
         welcome3,
+        managingsocialMedia,
         monitorAndOptimizeProcessAndStrategy,
         throughStrategicPlanning,
     } = getLocalizedTexts(locale);
@@ -15,11 +16,7 @@ export const welcomeSectionTest = (locale: Locale): void => {
     cy.getByText(welcomeSectionDataTestId, welcome2);
     cy.getByText(welcomeSectionDataTestId, welcome3);
 
-    if (locale === 'pt') {
-        cy.getByText(welcomeSectionDataTestId, 'Gestão de redes sociais está no meu ADN');
-    } else {
-        cy.getByText(welcomeSectionDataTestId, 'Social media management is in my DNA');
-    }
+    cy.getByText(welcomeSectionDataTestId, managingsocialMedia);
     cy.getByText(welcomeSectionDataTestId, monitorAndOptimizeProcessAndStrategy);
     cy.getByText(welcomeSectionDataTestId, throughStrategicPlanning);
 };
