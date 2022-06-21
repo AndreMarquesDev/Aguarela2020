@@ -6,7 +6,6 @@ import { WelcomeBlock } from './WelcomeBlock';
 import { textsPt, textsEn } from '../../utils/texts';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { Breakpoint } from '../../utils/useWindowSize';
-import { textBlock1DataTestId } from '../../utils/dataTestIds';
 import { MockTextsContext } from '../../utils/jest/MockTextsContext';
 
 // @ts-ignore
