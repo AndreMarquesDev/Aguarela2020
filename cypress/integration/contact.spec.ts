@@ -2,6 +2,7 @@ import { Locale } from '../../utils/locales';
 import { contactBlockTest } from '../testsFunctions/contactBlockTest';
 import { contactFormTest } from '../testsFunctions/contactFormTest';
 import { footerTest } from '../testsFunctions/footerTest';
+import { matchSnapshot } from '../testsFunctions/matchSnapshot';
 import { navigationContactPageTest } from '../testsFunctions/navigation/navigationContactPageTest';
 import { urls } from '../utils/selectors';
 import { defaultViewportWidth, defaultViewportHeight } from '../utils/variables';
@@ -37,5 +38,9 @@ describe('contact page', () => {
 
     it('renders the footer', () => {
         footerTest(locale, pageBeingTested);
+    });
+
+    it('passes the visual regression snapshot test', () => {
+        matchSnapshot('contact', locale);
     });
 });

@@ -6,6 +6,7 @@ import { navigationProjectsPageTest } from '../testsFunctions/navigation/navigat
 import { urls } from '../utils/selectors';
 import { defaultViewportWidth, defaultViewportHeight } from '../utils/variables';
 import { projectsLisDoubleSectionTest } from '../testsFunctions/projectsLisDoubleSectionTest';
+import { matchSnapshot } from '../testsFunctions/matchSnapshot';
 
 const locale: Locale = 'pt';
 const otherLocale: Locale = 'en';
@@ -40,5 +41,9 @@ describe('projects page', () => {
 
     it('renders the footer', () => {
         footerTest(locale, pageBeingTested);
+    });
+
+    it('passes the visual regression snapshot test', () => {
+        matchSnapshot('projects', locale);
     });
 });

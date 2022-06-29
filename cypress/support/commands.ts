@@ -1,7 +1,16 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command';
 
-addMatchImageSnapshotCommand();
+addMatchImageSnapshotCommand({
+    // threshold for entire image
+    failureThreshold: 0.001,
+    // percent of image or number of pixels
+    failureThresholdType: 'percent',
+    // threshold for each pixel
+    customDiffConfig: { threshold: 0.05 },
+    // capture viewport in screenshot
+    capture: 'fullPage',
+});
 
 declare global {
     // eslint-disable-next-line @typescript-eslint/no-namespace

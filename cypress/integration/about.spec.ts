@@ -1,3 +1,4 @@
+import { matchSnapshot } from '../testsFunctions/matchSnapshot';
 import { urls } from '../utils/selectors';
 import { Locale } from '../../utils/locales';
 import { brandsListTest } from '../testsFunctions/brandsListTest';
@@ -40,5 +41,9 @@ describe('about page', () => {
 
     it('renders the footer', () => {
         footerTest(locale, pageBeingTested);
+    });
+
+    it('passes the visual regression snapshot test', () => {
+        matchSnapshot('about', locale);
     });
 });

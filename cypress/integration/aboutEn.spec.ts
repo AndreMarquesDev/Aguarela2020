@@ -6,6 +6,7 @@ import { letsWorkSectionTest } from '../testsFunctions/letsWorkSectionTest';
 import { navigationAboutTest } from '../testsFunctions/navigation/navigationAboutPageTest';
 import { aboutMeSectionTest } from '../testsFunctions/aboutMeSectionTest';
 import { defaultViewportWidth, defaultViewportHeight } from '../utils/variables';
+import { matchSnapshot } from '../testsFunctions/matchSnapshot';
 
 const locale: Locale = 'en';
 const otherLocale: Locale = 'pt';
@@ -40,5 +41,9 @@ describe('about page in English', () => {
 
     it('renders the footer', () => {
         footerTest(locale, pageBeingTested);
+    });
+
+    it('passes the visual regression snapshot test', () => {
+        matchSnapshot('about', locale);
     });
 });

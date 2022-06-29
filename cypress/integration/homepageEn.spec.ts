@@ -3,6 +3,7 @@ import { bannerTest } from '../testsFunctions/bannerTest';
 import { brandsListTest } from '../testsFunctions/brandsListTest';
 import { footerTest } from '../testsFunctions/footerTest';
 import { letsWorkSectionTest } from '../testsFunctions/letsWorkSectionTest';
+import { matchSnapshot } from '../testsFunctions/matchSnapshot';
 import { navigationHomepageTest } from '../testsFunctions/navigation/navigationHomepageTest';
 import { projectsSectionTest } from '../testsFunctions/projectsSectionTest';
 import { skillsBlockTest } from '../testsFunctions/skillsBlockTest';
@@ -62,5 +63,9 @@ describe('homepage in English', () => {
 
     it('renders the footer', () => {
         footerTest(locale, pageBeingTested);
+    });
+
+    it('passes the visual regression snapshot test', () => {
+        matchSnapshot('homepage', locale);
     });
 });

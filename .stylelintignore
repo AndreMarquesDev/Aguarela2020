@@ -8,3 +8,4 @@
 /coverage/*
 /utils/jest/*
 **/*.test.tsx.snap
+/cypress/snapshots/*

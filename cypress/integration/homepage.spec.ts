@@ -10,6 +10,7 @@ import { footerTest } from '../testsFunctions/footerTest';
 import { letsWorkSectionTest } from '../testsFunctions/letsWorkSectionTest';
 import { bannerTest } from '../testsFunctions/bannerTest';
 import { navigationHomepageTest } from '../testsFunctions/navigation/navigationHomepageTest';
+import { matchSnapshot } from '../testsFunctions/matchSnapshot';
 
 const locale: Locale = 'pt';
 const otherLocale: Locale = 'en';
@@ -62,5 +63,9 @@ describe('homepage', () => {
 
     it('renders the footer', () => {
         footerTest(locale, pageBeingTested);
+    });
+
+    it('passes the visual regression snapshot test', () => {
+        matchSnapshot('homepage', locale);
     });
 });

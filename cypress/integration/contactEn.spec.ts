@@ -5,6 +5,7 @@ import { defaultViewportWidth, defaultViewportHeight } from '../utils/variables'
 import { navigationContactPageTest } from '../testsFunctions/navigation/navigationContactPageTest';
 import { contactBlockTest } from '../testsFunctions/contactBlockTest';
 import { contactFormTest } from '../testsFunctions/contactFormTest';
+import { matchSnapshot } from '../testsFunctions/matchSnapshot';
 
 const locale: Locale = 'en';
 const otherLocale: Locale = 'pt';
@@ -37,5 +38,9 @@ describe('contact page', () => {
 
     it('renders the footer', () => {
         footerTest(locale, pageBeingTested);
+    });
+
+    it('passes the visual regression snapshot test', () => {
+        matchSnapshot('contact', locale);
     });
 });

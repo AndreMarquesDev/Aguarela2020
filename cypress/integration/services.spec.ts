@@ -6,6 +6,7 @@ import { urls } from '../utils/selectors';
 import { defaultViewportWidth, defaultViewportHeight } from '../utils/variables';
 import { navigationServicesPageTest } from '../testsFunctions/navigation/navigationServicesPageTest';
 import { servicesSectionTest } from '../testsFunctions/servicesSectionTest';
+import { matchSnapshot } from '../testsFunctions/matchSnapshot';
 
 const locale: Locale = 'pt';
 const otherLocale: Locale = 'en';
@@ -40,5 +41,9 @@ describe('services page', () => {
 
     it('renders the footer', () => {
         footerTest(locale, pageBeingTested);
+    });
+
+    it('passes the visual regression snapshot test', () => {
+        matchSnapshot('services', locale);
     });
 });

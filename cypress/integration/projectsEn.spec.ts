@@ -2,6 +2,7 @@ import { Locale } from '../../utils/locales';
 import { brandsListTest } from '../testsFunctions/brandsListTest';
 import { footerTest } from '../testsFunctions/footerTest';
 import { letsWorkSectionTest } from '../testsFunctions/letsWorkSectionTest';
+import { matchSnapshot } from '../testsFunctions/matchSnapshot';
 import { navigationProjectsPageTest } from '../testsFunctions/navigation/navigationProjectsPageTest';
 import { projectsLisDoubleSectionTest } from '../testsFunctions/projectsLisDoubleSectionTest';
 import { urls } from '../utils/selectors';
@@ -40,5 +41,9 @@ describe('projects page in English', () => {
 
     it('renders the footer', () => {
         footerTest(locale, pageBeingTested);
+    });
+
+    it('passes the visual regression snapshot test', () => {
+        matchSnapshot('projects', locale);
     });
 });
