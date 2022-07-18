@@ -14,7 +14,6 @@ export default (on, config): void => {
         }
 
         if (browser.name === 'firefox' && browser.isHeadless) {
-            // seems to not actually work though...
             launchOptions.args.push(`--width=${defaultViewportWidth}`);
             launchOptions.args.push(`--height=${defaultViewportHeight}`);
         }

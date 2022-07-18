@@ -3,5 +3,6 @@
     "experimentalStudio": true,
     "fixturesFolder": false,
     "video": false,
-    "screenshotOnRunFailure": false
+    "screenshotOnRunFailure": false,
+    "retries": 2
 }

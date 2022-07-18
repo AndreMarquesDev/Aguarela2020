@@ -9,7 +9,7 @@ addMatchImageSnapshotCommand({
     // threshold for each pixel
     customDiffConfig: { threshold: 0.05 },
     // capture viewport in screenshot
-    capture: 'fullPage',
+    capture: 'viewport',
 });
 
 declare global {
