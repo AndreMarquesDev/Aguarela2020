@@ -31,6 +31,7 @@ import {
     projectsListDoubleCarouselImagesWidth,
     projectsListDoubleCarouselImagesHeight,
 } from '../utils/variables';
+import { matchSnapshot } from './matchSnapshot';
 
 export const projectsLisDoubleSectionTest = (locale: Locale): void => {
     const {
@@ -46,7 +47,9 @@ export const projectsLisDoubleSectionTest = (locale: Locale): void => {
 
     const container = projectsListDoubleSectionDataTestId;
 
-    cy.getByText(container, projects);
+    cy.getByText(container, projects).scrollIntoView();
+
+    matchSnapshot('projectsListDouble', locale);
 
     cy.getByDataTestId(container).find('.slide-visible').should('have.length', 3);
     cy.getByDataTestId(container)

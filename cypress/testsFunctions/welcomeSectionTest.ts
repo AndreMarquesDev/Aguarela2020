@@ -1,6 +1,7 @@
 import { welcomeSectionDataTestId } from '../../utils/dataTestIds';
 import { Locale } from '../../utils/locales';
 import { getLocalizedTexts } from '../utils/getTexts';
+import { matchSnapshot } from './matchSnapshot';
 
 export const welcomeSectionTest = (locale: Locale): void => {
     const {
@@ -12,6 +13,8 @@ export const welcomeSectionTest = (locale: Locale): void => {
         throughStrategicPlanning,
     } = getLocalizedTexts(locale);
 
+    cy.contains(welcome1).scrollIntoView();
+
     cy.getByText(welcomeSectionDataTestId, welcome1);
     cy.getByText(welcomeSectionDataTestId, welcome2);
     cy.getByText(welcomeSectionDataTestId, welcome3);
@@ -19,4 +22,6 @@ export const welcomeSectionTest = (locale: Locale): void => {
     cy.getByText(welcomeSectionDataTestId, managingsocialMedia);
     cy.getByText(welcomeSectionDataTestId, monitorAndOptimizeProcessAndStrategy);
     cy.getByText(welcomeSectionDataTestId, throughStrategicPlanning);
+
+    matchSnapshot('welcome', locale);
 };

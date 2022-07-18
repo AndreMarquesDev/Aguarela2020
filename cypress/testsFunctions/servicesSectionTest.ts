@@ -4,6 +4,7 @@ import {
 } from '../../utils/dataTestIds';
 import { Locale } from '../../utils/locales';
 import { getLocalizedTexts } from '../utils/getTexts';
+import { matchSnapshot } from './matchSnapshot';
 
 export const servicesSectionTest = (locale: Locale): void => {
     const {
@@ -25,7 +26,9 @@ export const servicesSectionTest = (locale: Locale): void => {
         opinionPlatformsManagement,
     } = getLocalizedTexts(locale);
 
-    cy.getByText(servicesBlockSectionDataTestId, services);
+    cy.getByText(servicesBlockSectionDataTestId, services).scrollIntoView();
+
+    matchSnapshot('services', locale);
 
     cy.getByText(servicesBlockSectionDataTestId, design);
     cy.isHidden(servicesBlockSectionDataTestId, `- ${webDesign}`);

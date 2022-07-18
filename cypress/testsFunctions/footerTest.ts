@@ -7,11 +7,14 @@ import {
 } from '../../utils/urls';
 import { getLocalizedTexts } from '../utils/getTexts';
 import { urls } from '../utils/selectors';
+import { matchSnapshot } from './matchSnapshot';
 
 export const footerTest = (locale: Locale, pageBeingTested: string): void => {
     const { footerInfo } = getLocalizedTexts(locale);
 
     cy.getByText(footerDataTestId, `${footerInfo} André Marques`).scrollIntoView();
+
+    matchSnapshot('footer', locale);
 
     cy.getByHref(footerDataTestId, andreMarquesDevWebsiteUrl);
     cy.getByHref(footerDataTestId, aguarelaDigitalInstagramUrl);

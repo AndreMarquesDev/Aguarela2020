@@ -5,6 +5,7 @@ import {
 } from '../../utils/dataTestIds';
 import { skillsBlockImagesWidth, skillsBlockImagesHeight } from '../utils/variables';
 import { getLocalizedTexts } from '../utils/getTexts';
+import { matchSnapshot } from './matchSnapshot';
 
 export const skillsBlockTest = (locale: Locale): void => {
     const {
@@ -89,4 +90,6 @@ export const skillsBlockTest = (locale: Locale): void => {
     cy.imageHeightIs(skillsBlockItemWrapperDataTestId, contentCreation, skillsBlockImagesHeight);
     cy.getByText(skillsBlockSectionDataTestId, contentCreation);
     cy.getByText(skillsBlockSectionDataTestId, createAttractiveContent);
+
+    matchSnapshot('skillsBlock', locale);
 };

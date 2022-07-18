@@ -2,6 +2,7 @@ import { aboutMeSectionDataTestId } from '../../utils/dataTestIds';
 import { Locale } from '../../utils/locales';
 import { catarinaSantiagoInstagramUrl } from '../../utils/urls';
 import { getLocalizedTexts } from '../utils/getTexts';
+import { matchSnapshot } from './matchSnapshot';
 
 export const aboutMeSectionTest = (locale: Locale): void => {
     const {
@@ -24,4 +25,6 @@ export const aboutMeSectionTest = (locale: Locale): void => {
 
     cy.getByText(aboutMeSectionDataTestId, getToKnowMeBetter);
     cy.getByHref(aboutMeSectionDataTestId, catarinaSantiagoInstagramUrl);
+
+    matchSnapshot('aboutMe', locale);
 };

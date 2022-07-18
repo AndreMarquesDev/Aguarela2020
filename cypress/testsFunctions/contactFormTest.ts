@@ -2,6 +2,7 @@ import { contactFormContainerDataTestId } from '../../utils/dataTestIds';
 import { FieldTypes } from '../../utils/formValidation';
 import { Locale } from '../../utils/locales';
 import { getLocalizedTexts } from '../utils/getTexts';
+import { matchSnapshot } from './matchSnapshot';
 
 const formSuccessMessageAppearTimeout = 15000;
 const FORM_RESET_TIMEOUT = 7500;
@@ -22,6 +23,8 @@ export const contactFormTest = (locale: Locale): void => {
     } = getLocalizedTexts(locale);
 
     cy.getByDataTestId(contactFormContainerDataTestId).scrollIntoView();
+
+    matchSnapshot('contactForm_initial', locale);
 
     cy.getByText(contactFormContainerDataTestId, `${name} *`);
     cy.getByText(contactFormContainerDataTestId, brandBusiness);
@@ -54,6 +57,8 @@ export const contactFormTest = (locale: Locale): void => {
     cy.getByDataTestId(FieldTypes.Textarea).type(`Cypress | ${locale} | ${Cypress.browser.name}`);
     cy.isHidden(contactFormContainerDataTestId, pleaseEnterAMessage);
 
+    matchSnapshot('contactForm_filled', locale);
+
     cy.getByDataTestId('formTestMode').check({ force: true });
 
     cy.getByDataTestId(contactFormContainerDataTestId).find('.buttonBackground').not('.disabled');
@@ -64,6 +69,9 @@ export const contactFormTest = (locale: Locale): void => {
         messageSentSuccessfully,
         formSuccessMessageAppearTimeout
     );
+
+    matchSnapshot('contactForm_success', locale);
+
     cy.getByDataTestId(contactFormContainerDataTestId).find('.buttonBackground').not('.disabled');
 
     cy.getByText(
@@ -71,4 +79,6 @@ export const contactFormTest = (locale: Locale): void => {
         messageSentSuccessfully,
         formSuccessMessageDisappearTimeout
     ).should('not.exist');
+
+    matchSnapshot('contactForm_reset', locale);
 };

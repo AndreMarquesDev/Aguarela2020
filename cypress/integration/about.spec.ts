@@ -21,6 +21,8 @@ describe('about page', () => {
 
     it('loads', () => {
         cy.urlIsEqualTo(pageBeingTested);
+
+        matchSnapshot('about_loads', locale);
     });
 
     it('renders the header and navigates properly', () => {
@@ -41,9 +43,5 @@ describe('about page', () => {
 
     it('renders the footer', () => {
         footerTest(locale, pageBeingTested);
-    });
-
-    it('passes the visual regression snapshot test', () => {
-        matchSnapshot('about', locale);
     });
 });

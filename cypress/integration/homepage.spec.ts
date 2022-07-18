@@ -27,6 +27,8 @@ describe('homepage', () => {
 
     it('loads', () => {
         cy.urlIsEqualTo(pageBeingTested);
+
+        matchSnapshot('homepage_loads', locale);
     });
 
     it('renders the header and navigates properly', () => {
@@ -34,7 +36,7 @@ describe('homepage', () => {
     });
 
     it('renders the banner', () => {
-        bannerTest();
+        bannerTest(locale);
     });
 
     it('renders the welcome section', () => {
@@ -63,9 +65,5 @@ describe('homepage', () => {
 
     it('renders the footer', () => {
         footerTest(locale, pageBeingTested);
-    });
-
-    it('passes the visual regression snapshot test', () => {
-        matchSnapshot('homepage', locale);
     });
 });
