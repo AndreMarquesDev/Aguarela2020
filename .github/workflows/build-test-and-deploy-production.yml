@@ -41,6 +41,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     needs: build
+    container: andremarquesdev/aguarela-cypress-tests-chrome:1.0.1
     strategy:
       matrix:
         node-version: [14.17.4]
@@ -55,11 +56,10 @@ jobs:
           cache: "yarn"
 
       - name: Cypress run
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v4
         with:
           record: true
           browser: chrome
-          headless: true
           group: "Chrome"
           build: yarn build
           command: yarn cypress:test:chrome
@@ -68,10 +68,18 @@ jobs:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  cypress-firefox:
+      - name: Upload snapshots
+        uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+          name: cypress-diff-snapshots-chrome
+          path: "**/*.diff.png"
+
+  cypress-edge:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     needs: build
+    container: andremarquesdev/aguarela-cypress-tests-edge:1.0.1
     strategy:
       matrix:
         node-version: [14.17.4]
@@ -86,11 +94,50 @@ jobs:
           cache: "yarn"
 
       - name: Cypress run
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v4
+        with:
+          record: true
+          browser: edge
+          group: "Edge"
+          build: yarn build
+          command: yarn cypress:test:edge
+        env:
+          CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload snapshots
+        uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+          name: cypress-diff-snapshots-edge
+          path: "**/*.diff.png"
+
+  cypress-firefox:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    needs: build
+    container:
+      image: andremarquesdev/aguarela-cypress-tests-firefox:1.0.0
+      options: --user 1001
+    strategy:
+      matrix:
+        node-version: [14.17.4]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Use node ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "yarn"
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v4
         with:
           record: true
           browser: firefox
-          headless: true
           group: "Firefox"
           build: yarn build
           command: yarn cypress:test:firefox
@@ -99,36 +146,12 @@ jobs:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  cypress-edge:
-    runs-on: windows-latest
-    timeout-minutes: 15
-    needs: build
-    strategy:
-      matrix:
-        node-version: [14.17.4]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Use node ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+      - name: Upload snapshots
+        uses: actions/upload-artifact@v3
+        if: failure()
         with:
-          node-version: ${{ matrix.node-version }}
-          cache: "yarn"
-
-      - name: Cypress run
-        uses: cypress-io/github-action@v2
-        with:
-          record: true
-          browser: edge
-          headless: true
-          group: "Edge"
-          build: yarn build
-          command: yarn cypress:test:edge
-        env:
-          CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          name: cypress-diff-snapshots-firefox
+          path: "**/*.diff.png"
 
   deploy:
     runs-on: ubuntu-latest
