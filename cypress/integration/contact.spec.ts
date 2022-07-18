@@ -22,6 +22,8 @@ describe('contact page', () => {
 
     it('loads', () => {
         cy.urlIsEqualTo(pageBeingTested);
+
+        matchSnapshot('contact_loads', locale);
     });
 
     it('renders the header and navigates properly', () => {
@@ -38,9 +40,5 @@ describe('contact page', () => {
 
     it('renders the footer', () => {
         footerTest(locale, pageBeingTested);
-    });
-
-    it('passes the visual regression snapshot test', () => {
-        matchSnapshot('contact', locale);
     });
 });

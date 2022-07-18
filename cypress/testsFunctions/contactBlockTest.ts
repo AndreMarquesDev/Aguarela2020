@@ -2,6 +2,7 @@ import { contactBlockSectionDataTestId } from '../../utils/dataTestIds';
 import { Locale } from '../../utils/locales';
 import { aguarelaDigitalEmail } from '../../utils/urls';
 import { getLocalizedTexts } from '../utils/getTexts';
+import { matchSnapshot } from './matchSnapshot';
 
 export const contactBlockTest = (locale: Locale): void => {
     const {
@@ -21,4 +22,6 @@ export const contactBlockTest = (locale: Locale): void => {
     cy.getByText(contactBlockSectionDataTestId, iAmAvailableToAdvise);
     cy.getByText(contactBlockSectionDataTestId, aguarelaDigitalEmail);
     cy.getByHref(contactBlockSectionDataTestId, `mailto:${aguarelaDigitalEmail}`);
+
+    matchSnapshot('contactBlock', locale);
 };

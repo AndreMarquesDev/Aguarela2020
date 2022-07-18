@@ -10,6 +10,7 @@ import {
     projectsListNoCarouselImagesHeight,
     projectsListNoCarouselImagesWidth,
 } from '../utils/variables';
+import { matchSnapshot } from './matchSnapshot';
 
 export const projectsSectionTest = (locale: Locale): void => {
     const {
@@ -21,6 +22,8 @@ export const projectsSectionTest = (locale: Locale): void => {
     } = getLocalizedTexts(locale);
 
     cy.getByText(projectsListSectionDataTestId, projects).scrollIntoView();
+
+    matchSnapshot('projectsList', locale);
 
     cy.imageIsVisible(projectsListSectionDataTestId, 'tjela logo');
     cy.imageWidthIs(projectsListSectionDataTestId, 'tjela logo', projectsListNoCarouselImagesWidth);

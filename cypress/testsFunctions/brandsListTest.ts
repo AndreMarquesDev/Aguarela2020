@@ -22,6 +22,7 @@ import {
 } from '../../utils/urls';
 import { getLocalizedTexts } from '../utils/getTexts';
 import { brandLogosHeight, brandLogosWidth } from '../utils/variables';
+import { matchSnapshot } from './matchSnapshot';
 
 export const brandsListTest = (locale: Locale): void => {
     const { myNetwork } = getLocalizedTexts(locale);
@@ -117,4 +118,6 @@ export const brandsListTest = (locale: Locale): void => {
     cy.imageWidthIs(brandsListSectionDataTestId, 'bovine logo', brandLogosWidth);
     cy.imageHeightIs(brandsListSectionDataTestId, 'bovine logo', brandLogosHeight);
     cy.getByHref(brandsListSectionDataTestId, bovineInstagramUrl);
+
+    matchSnapshot('brandsList', locale);
 };

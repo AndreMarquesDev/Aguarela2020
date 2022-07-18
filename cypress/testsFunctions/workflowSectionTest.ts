@@ -1,6 +1,7 @@
 import { getLocalizedTexts } from '../utils/getTexts';
 import { workflowSectionDataTestId } from '../../utils/dataTestIds';
 import { Locale } from '../../utils/locales';
+import { matchSnapshot } from './matchSnapshot';
 
 export const workflowSectionTest = (locale: Locale): void => {
     const {
@@ -22,6 +23,8 @@ export const workflowSectionTest = (locale: Locale): void => {
     } = getLocalizedTexts(locale);
 
     cy.contains(workflow).scrollIntoView();
+
+    matchSnapshot('workflow', locale);
 
     cy.getByText(workflowSectionDataTestId, defineTarget);
     cy.isHidden(workflowSectionDataTestId, whatIsTheTarget);
