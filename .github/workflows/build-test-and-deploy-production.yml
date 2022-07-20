@@ -60,7 +60,7 @@ jobs:
         with:
           record: true
           browser: chrome
-          group: "Chrome"
+          tag: chrome
           build: yarn build
           command: yarn cypress:test:chrome
         env:
@@ -98,7 +98,7 @@ jobs:
         with:
           record: true
           browser: edge
-          group: "Edge"
+          tag: edge
           build: yarn build
           command: yarn cypress:test:edge
         env:
@@ -138,7 +138,7 @@ jobs:
         with:
           record: true
           browser: firefox
-          group: "Firefox"
+          tag: firefox
           build: yarn build
           command: yarn cypress:test:firefox
         env:
