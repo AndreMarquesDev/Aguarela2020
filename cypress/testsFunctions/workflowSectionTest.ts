@@ -72,4 +72,6 @@ export const workflowSectionTest = (locale: Locale): void => {
     cy.isHidden(workflowSectionDataTestId, improvementsAndUpdatesToTheStrategy);
     cy.getByText(workflowSectionDataTestId, optimization).parent().find('.backface').forceHover();
     cy.isVisible(workflowSectionDataTestId, improvementsAndUpdatesToTheStrategy);
+
+    matchSnapshot('workflow_backface', locale);
 };

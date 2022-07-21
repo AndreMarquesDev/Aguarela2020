@@ -56,4 +56,6 @@ export const servicesSectionTest = (locale: Locale): void => {
     cy.getByText(servicesBlockSectionDataTestId, digital).next().forceHover();
     cy.isVisible(servicesBlockSectionDataTestId, `- ${paidSearchCampaigns}`);
     cy.isVisible(servicesBlockSectionDataTestId, `- ${opinionPlatformsManagement}`);
+
+    matchSnapshot('service_backface', locale);
 };

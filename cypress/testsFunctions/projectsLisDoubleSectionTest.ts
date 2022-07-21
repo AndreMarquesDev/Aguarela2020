@@ -186,6 +186,10 @@ export const projectsLisDoubleSectionTest = (locale: Locale): void => {
     cy.isTextInBackfaceVisible(container, 'icecream roll', socialMediaAndContentCreation);
     cy.isTextInBackfaceVisible(container, 'icecream roll', '2018');
 
+    cy.getByText(container, projects).scrollIntoView();
+
+    matchSnapshot('projectsListDouble_slide_4_to_6', locale);
+
     cy.getByDataTestId(nukaCarouselNextButtonDataTestId).click();
 
     cy.imageInCurrentSlideIsVisible(container, 'rice me');
@@ -252,6 +256,10 @@ export const projectsLisDoubleSectionTest = (locale: Locale): void => {
     cy.isTextInBackfaceVisible(container, 'luminous', '2020');
     cy.isTextInBackfaceVisible(container, 'luminous', `* ${inPartnershipWith}`);
 
+    cy.getByText(container, projects).scrollIntoView();
+
+    matchSnapshot('projectsListDouble_slide_7_to_9', locale);
+
     cy.getByDataTestId(nukaCarouselNextButtonDataTestId).click();
 
     cy.imageInCurrentSlideIsVisible(container, 'a amiga esteticista');
@@ -273,6 +281,10 @@ export const projectsLisDoubleSectionTest = (locale: Locale): void => {
     cy.isTextInBackfaceVisible(container, 'AnaRo', '@anaro.artistpage');
     cy.isTextInBackfaceVisible(container, 'AnaRo', consultingAndContentCreation);
     cy.isTextInBackfaceVisible(container, 'AnaRo', '2019');
+
+    cy.getByText(container, projects).scrollIntoView();
+
+    matchSnapshot('projectsListDouble_slide_10_to_11', locale);
 
     cy.getByDataTestId(nukaCarouselNextButtonDataTestId).click();
 };

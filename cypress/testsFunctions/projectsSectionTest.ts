@@ -86,6 +86,8 @@ export const projectsSectionTest = (locale: Locale): void => {
     cy.isVisible(projectsListSectionDataTestId, `2019 - ${present}`);
     cy.isVisible(projectsListSectionDataTestId, `* ${inPartnershipWith}`);
 
+    matchSnapshot('projectsList_backface', locale);
+
     cy.getByText(projectsListSectionDataTestId, seeMore).click();
     cy.getByDataTestId(projectsListDoubleSectionDataTestId);
     cy.urlIsEqualTo(urls[locale].projects);
