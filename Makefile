@@ -1,19 +1,34 @@
 CURRENT_DIRECTORY := ${CURDIR}
 
-run-cypress-tests-chrome:
-	docker run --rm -it -v ${CURRENT_DIRECTORY}/cypress/snapshots:/home/app/cypress/snapshots --entrypoint yarn andremarquesdev/aguarela-cypress-tests-chrome:1.0.1 cypress:test:chrome
+clean:
+	docker compose down
 
-run-cypress-tests-chrome-update:
-	docker run --rm -it -v ${CURRENT_DIRECTORY}/cypress/snapshots:/home/app/cypress/snapshots --entrypoint yarn andremarquesdev/aguarela-cypress-tests-chrome:1.0.1 cypress:test:chrome:update
+rebuild:
+	docker-compose up --build --force-recreate
 
-run-cypress-tests-edge:
-	docker run --rm -it -v ${CURRENT_DIRECTORY}/cypress/snapshots:/home/app/cypress/snapshots --entrypoint yarn andremarquesdev/aguarela-cypress-tests-edge:1.0.1 cypress:test:edge
+chrome:
+	docker compose up chrome
 
-run-cypress-tests-edge-update:
-	docker run --rm -it -v ${CURRENT_DIRECTORY}/cypress/snapshots:/home/app/cypress/snapshots --entrypoint yarn andremarquesdev/aguarela-cypress-tests-edge:1.0.1 cypress:test:edge:update
+edge:
+	docker compose up edge
 
-run-cypress-tests-firefox:
-	docker run --rm -it -v ${CURRENT_DIRECTORY}/cypress/snapshots:/home/app/cypress/snapshots --entrypoint yarn andremarquesdev/aguarela-cypress-tests-firefox:1.0.0 cypress:test:firefox
+firefox:
+	docker compose up firefox
 
-run-cypress-tests-firefox-update:
-	docker run --rm -it -v ${CURRENT_DIRECTORY}/cypress/snapshots:/home/app/cypress/snapshots --entrypoint yarn andremarquesdev/aguarela-cypress-tests-firefox:1.0.0 cypress:test:firefox:update
+chrome-update:
+	docker compose up chrome-update
+
+edge-update:
+	docker compose up edge-update
+
+firefox-update:
+	docker compose up firefox-update
+
+chrome-rebuild:
+	docker compose up chrome --build --force-recreate
+
+edge-rebuild:
+	docker compose up edge --build --force-recreate
+
+firefox-rebuild:
+	docker compose up firefox --build --force-recreate

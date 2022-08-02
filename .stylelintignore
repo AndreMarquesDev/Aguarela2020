@@ -12,3 +12,4 @@
 Makefile
 Dockerfile
 Dockerfile.*
+docker-compose.yml

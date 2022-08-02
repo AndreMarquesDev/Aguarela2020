@@ -1,6 +1,0 @@
-FROM andremarquesdev/aguarela-cypress-tests-base:1.0.0
-
-# get Chrome
-RUN wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-# install Chrome
-RUN apt-get -y install ./google-chrome-stable_current_amd64.deb

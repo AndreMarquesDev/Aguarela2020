@@ -1,0 +1,44 @@
+version: '3.9'
+
+x-volume-config:
+    &volume-config
+      - type: bind
+        source: ./cypress/snapshots
+        target: /home/app/cypress/snapshots
+
+x-build-config:
+    &build-config
+      context: .
+      dockerfile: Dockerfile
+
+services:
+    chrome:
+        container_name: chrome_container
+        build: *build-config
+        volumes: *volume-config
+        entrypoint: sh -c "yarn cypress:test:chrome"
+    edge:
+        container_name: edge_container
+        build: *build-config
+        volumes: *volume-config
+        entrypoint: sh -c "yarn cypress:test:edge"
+    firefox:
+        container_name: firefox_container
+        build: *build-config
+        volumes: *volume-config
+        entrypoint: sh -c "yarn cypress:test:firefox"
+    chrome-update:
+        container_name: chrome_container_update
+        build: *build-config
+        volumes: *volume-config
+        entrypoint: sh -c "yarn cypress:test:chrome:update"
+    edge-update:
+        container_name: edge_container_update
+        build: *build-config
+        volumes: *volume-config
+        entrypoint: sh -c "yarn cypress:test:edge:update"
+    firefox-update:
+        container_name: firefox_container_update
+        build: *build-config
+        volumes: *volume-config
+        entrypoint: sh -c "yarn cypress:test:firefox:update"
