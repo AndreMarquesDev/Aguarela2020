@@ -41,7 +41,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     needs: build
-    container: andremarquesdev/aguarela-cypress-tests-chrome:1.0.1
+    container: cypress/browsers:node14.17.6-slim-chrome100-ff99-edge
     strategy:
       matrix:
         node-version: [14.17.4]
@@ -79,7 +79,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     needs: build
-    container: andremarquesdev/aguarela-cypress-tests-edge:1.0.1
+    container: cypress/browsers:node14.17.6-slim-chrome100-ff99-edge
     strategy:
       matrix:
         node-version: [14.17.4]
@@ -118,7 +118,7 @@ jobs:
     timeout-minutes: 15
     needs: build
     container:
-      image: andremarquesdev/aguarela-cypress-tests-firefox:1.0.0
+      image: cypress/browsers:node14.17.6-slim-chrome100-ff99-edge
       options: --user 1001
     strategy:
       matrix:
