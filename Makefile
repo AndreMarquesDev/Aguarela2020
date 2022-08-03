@@ -16,13 +16,13 @@ firefox:
 	docker compose up firefox
 
 chrome-update:
-	docker compose up chrome-update
+	docker compose up chrome-update --build --force-recreate
 
 edge-update:
-	docker compose up edge-update
+	docker compose up edge-update --build --force-recreate
 
 firefox-update:
-	docker compose up firefox-update
+	docker compose up firefox-update --build --force-recreate
 
 chrome-rebuild:
 	docker compose up chrome --build --force-recreate
