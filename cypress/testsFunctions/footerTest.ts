@@ -7,14 +7,19 @@ import {
 } from '../../utils/urls';
 import { getLocalizedTexts } from '../utils/getTexts';
 import { urls } from '../utils/selectors';
+import { Viewport } from '../utils/variables';
 import { matchSnapshot } from './matchSnapshot';
 
-export const footerTest = (locale: Locale, pageBeingTested: string): void => {
+export const footerTest = (
+    locale: Locale,
+    pageBeingTested: string,
+    viewport: Viewport = Viewport.desktop
+): void => {
     const { footerInfo } = getLocalizedTexts(locale);
 
     cy.getByText(footerDataTestId, `${footerInfo} André Marques`).scrollIntoView();
 
-    matchSnapshot('footer', locale);
+    matchSnapshot('footer', locale, viewport);
 
     cy.getByHref(footerDataTestId, andreMarquesDevWebsiteUrl);
     cy.getByHref(footerDataTestId, aguarelaDigitalInstagramUrl);

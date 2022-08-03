@@ -2,14 +2,18 @@ import { contactBlockSectionDataTestId, letsWorkSectionDataTestId } from '../../
 import { Locale } from '../../utils/locales';
 import { getLocalizedTexts } from '../utils/getTexts';
 import { urls } from '../utils/selectors';
+import { Viewport } from '../utils/variables';
 import { matchSnapshot } from './matchSnapshot';
 
-export const letsWorkSectionTest = (locale: Locale): void => {
+export const letsWorkSectionTest = (
+    locale: Locale,
+    viewport: Viewport = Viewport.desktop
+): void => {
     const { letsWork, letsWorkDescription, contact } = getLocalizedTexts(locale);
 
     cy.getByText(letsWorkSectionDataTestId, letsWork).scrollIntoView();
 
-    matchSnapshot('letsWork', locale);
+    matchSnapshot('letsWork', locale, viewport);
 
     cy.getByText(letsWorkSectionDataTestId, letsWorkDescription);
 

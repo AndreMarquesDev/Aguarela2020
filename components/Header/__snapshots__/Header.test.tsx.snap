@@ -93,6 +93,7 @@ exports[`<Header /> renders properly 1`] = `
       <i
         aria-label="toggle menu"
         class="jsx-2133906697 menuIcon hidden"
+        data-testid="menuIcon_button"
         role="button"
         tabindex="0"
       >
@@ -198,6 +199,7 @@ exports[`<Header /> renders properly below phablet 1`] = `
       <i
         aria-label="toggle menu"
         class="jsx-2133906697 menuIcon"
+        data-testid="menuIcon_button"
         role="button"
         tabindex="0"
       >

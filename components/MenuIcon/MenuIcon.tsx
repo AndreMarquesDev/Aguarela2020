@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import React from 'react';
+import { menuIconButtonDataTestId } from '../../utils/dataTestIds';
 
 export interface MenuIconProps {
     isOpen: boolean;
@@ -15,6 +16,7 @@ export const MenuIcon = ({ isOpen, isVisible, onClick }: MenuIconProps): JSX.Ele
             <i
                 aria-label="toggle menu"
                 className={openMenuStyles}
+                data-testid={menuIconButtonDataTestId}
                 role="button"
                 tabIndex={0}
                 onClick={onClick}

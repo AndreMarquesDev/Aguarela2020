@@ -25,3 +25,4 @@ export const nukaCarouselPrevButtonDataTestId = 'nukaCarousel_previousSlideButto
 export const nukaCarouselNextButtonDataTestId = 'nukaCarousel_nextSlideButton';
 export const contactFormErrorMessageHiddenDataTestId = 'errorMessage_hidden';
 export const contactFormErrorMessageVisibleDataTestId = 'errorMessage_visible';
+export const menuIconButtonDataTestId = 'menuIcon_button';
