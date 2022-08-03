@@ -28,7 +28,7 @@ import {
     brandLogosWidthMobile,
     Viewport,
 } from '../utils/variables';
-import { matchSnapshot } from './matchSnapshot';
+import { defaultFailureThreshold, matchSnapshot } from './matchSnapshot';
 
 const testLogo = (brand: string, instagramUrl: string, isMobile: boolean): void => {
     const isFirefox = Cypress.isBrowser('firefox');
@@ -46,6 +46,8 @@ const testLogo = (brand: string, instagramUrl: string, isMobile: boolean): void 
 export const brandsListTest = (locale: Locale, viewport: Viewport = Viewport.desktop): void => {
     const { myNetwork } = getLocalizedTexts(locale);
     const isMobile = viewport === Viewport.mobile;
+    const isFirefox = Cypress.isBrowser('firefox');
+    const snapshotFailureThreshold = isFirefox ? 0.009 : defaultFailureThreshold;
 
     cy.getByText(brandsListSectionDataTestId, myNetwork).scrollIntoView();
 
@@ -68,5 +70,5 @@ export const brandsListTest = (locale: Locale, viewport: Viewport = Viewport.des
     testLogo('harpoon', harpoonLinkedInUrl, isMobile);
     testLogo('bovine', bovineInstagramUrl, isMobile);
 
-    matchSnapshot('brandsList', locale, viewport);
+    matchSnapshot('brandsList', locale, viewport, snapshotFailureThreshold);
 };

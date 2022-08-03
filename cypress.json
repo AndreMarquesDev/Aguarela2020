@@ -4,5 +4,5 @@
     "fixturesFolder": false,
     "video": false,
     "screenshotOnRunFailure": false,
-    "retries": 2
+    "retries": 4
 }
