@@ -46,7 +46,7 @@ export const skillsBlockTest = (locale: Locale, viewport: Viewport): void => {
 
     cy.getByText(skillsBlockSectionDataTestId, skills).scrollIntoView();
 
-    cy.imageIsVisible(skillsBlockItemDataTestId, socialMediaStrategy);
+    cy.imageIsVisible(skillsBlockItemDataTestId, socialMediaStrategy, isFirefox);
     cy.imageWidthIs(skillsBlockItemDataTestId, socialMediaStrategy, skillsBlockImagesWidth);
     cy.imageHeightIs(skillsBlockItemDataTestId, socialMediaStrategy, skillsBlockImagesHeight);
     cy.getByText(skillsBlockSectionDataTestId, socialMediaStrategy);
@@ -54,7 +54,7 @@ export const skillsBlockTest = (locale: Locale, viewport: Viewport): void => {
 
     clickNextArrowButtonIfMobile(isMobile, skills);
 
-    cy.imageIsVisible(skillsBlockItemDataTestId, socialMediaConsulting);
+    cy.imageIsVisible(skillsBlockItemDataTestId, socialMediaConsulting, isFirefox);
     cy.imageWidthIs(skillsBlockItemDataTestId, socialMediaConsulting, skillsBlockImagesWidth);
     cy.imageHeightIs(skillsBlockItemDataTestId, socialMediaConsulting, skillsBlockImagesHeight);
     cy.getByText(skillsBlockSectionDataTestId, socialMediaConsulting);

@@ -39,7 +39,7 @@ jobs:
 
   cypress-chrome:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     needs: build
     container: cypress/browsers:node14.17.6-slim-chrome100-ff99-edge
     strategy:
@@ -77,7 +77,7 @@ jobs:
 
   cypress-edge:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     needs: build
     container: cypress/browsers:node14.17.6-slim-chrome100-ff99-edge
     strategy:
@@ -115,7 +115,7 @@ jobs:
 
   cypress-firefox:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     needs: build
     container:
       image: cypress/browsers:node14.17.6-slim-chrome100-ff99-edge
