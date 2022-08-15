@@ -9,6 +9,11 @@ declare global {
         // declare namespace Cypress {
         interface Chainable {
             getByDataTestId(selector: string, timeout?: number): Chainable<Element>;
+            getByDataTestIdParent(
+                parent: string,
+                selector: string,
+                timeout?: number
+            ): Chainable<Element>;
             getByText(parent: string, text: string, timeout?: number): Chainable<Element>;
             getByHref(parent: string, hrefValue: string): Chainable<Element>;
             getBackfaceProjectsListDouble(
@@ -44,6 +49,10 @@ declare global {
 
 Cypress.Commands.add('getByDataTestId', (selector, timeout = 4000) => {
     cy.get(`[data-testid="${selector}"]`, { timeout });
+});
+
+Cypress.Commands.add('getByDataTestIdParent', (parent, selector, timeout = 4000) => {
+    cy.get(`[data-testid="${parent}"] [data-testid="${selector}"]`, { timeout });
 });
 
 Cypress.Commands.add('getByText', (parent, text, timeout = 4000) => {

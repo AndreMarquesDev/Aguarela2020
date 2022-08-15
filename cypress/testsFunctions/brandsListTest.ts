@@ -70,5 +70,7 @@ export const brandsListTest = (locale: Locale, viewport: Viewport = Viewport.des
     testLogo('harpoon', harpoonLinkedInUrl, isMobile);
     testLogo('bovine', bovineInstagramUrl, isMobile);
 
+    cy.getByText(brandsListSectionDataTestId, myNetwork).scrollIntoView();
+
     matchSnapshot('brandsList', locale, viewport, snapshotFailureThreshold);
 };

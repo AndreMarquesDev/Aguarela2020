@@ -1,4 +1,5 @@
 import {
+    nukaCarouselNextButtonDataTestId,
     projectsListDoubleSectionDataTestId,
     projectsListNoCarouselDataTestId,
     projectsListSectionDataTestId,
@@ -8,85 +9,99 @@ import { getLocalizedTexts } from '../utils/getTexts';
 import { urls } from '../utils/selectors';
 import {
     projectsListNoCarouselImagesHeight,
+    projectsListNoCarouselImagesHeightFirefoxMobile,
+    projectsListNoCarouselImagesHeightMobile,
     projectsListNoCarouselImagesWidth,
+    projectsListNoCarouselImagesWidthFirefoxMobile,
+    projectsListNoCarouselImagesWidthMobile,
+    Viewport,
 } from '../utils/variables';
 import { matchSnapshot } from './matchSnapshot';
 
-export const projectsSectionTest = (locale: Locale): void => {
-    const {
-        projects,
-        socialMediaManagementAndContentCreation,
-        present,
-        inPartnershipWith,
-        seeMore,
-    } = getLocalizedTexts(locale);
+const testSlide = (
+    locale: Locale,
+    project: string,
+    instagramUrl: string,
+    startYear: number,
+    isInPartnership: boolean,
+    isMobile: boolean
+): void => {
+    const isFirefox = Cypress.isBrowser('firefox');
+    const { socialMediaManagementAndContentCreation, present, inPartnershipWith } =
+        getLocalizedTexts(locale);
+
+    const projectsListMobileWidth = isFirefox
+        ? projectsListNoCarouselImagesWidthFirefoxMobile
+        : projectsListNoCarouselImagesWidthMobile;
+    const slideWidth = isMobile ? projectsListMobileWidth : projectsListNoCarouselImagesWidth;
+
+    const projectsListMobileHeight = isFirefox
+        ? projectsListNoCarouselImagesHeightFirefoxMobile
+        : projectsListNoCarouselImagesHeightMobile;
+    const slideHeight = isMobile ? projectsListMobileHeight : projectsListNoCarouselImagesHeight;
+
+    const dataTestIdWrapper = isMobile
+        ? projectsListSectionDataTestId
+        : projectsListNoCarouselDataTestId;
+
+    cy.imageIsVisible(projectsListSectionDataTestId, `${project} logo`);
+    cy.imageWidthIs(projectsListSectionDataTestId, `${project} logo`, slideWidth);
+    cy.imageHeightIs(projectsListSectionDataTestId, `${project} logo`, slideHeight);
+    cy.isHidden(projectsListSectionDataTestId, instagramUrl);
+    cy.getByDataTestId(dataTestIdWrapper)
+        .find(`[alt="${project} logo"]`)
+        .parentsUntil('ul', 'li')
+        .find('.backface')
+        .forceHover();
+    cy.isVisible(projectsListSectionDataTestId, instagramUrl);
+
+    if (!isMobile) {
+        cy.isVisible(projectsListSectionDataTestId, socialMediaManagementAndContentCreation);
+    }
+
+    cy.isVisible(projectsListSectionDataTestId, `${startYear} - ${present}`);
+
+    if (isInPartnership && !isMobile) {
+        cy.isVisible(projectsListSectionDataTestId, `* ${inPartnershipWith}`);
+    }
+};
+
+const clickNextArrowButtonIfMobile = (isMobile: boolean, projectsText: string): void => {
+    const isFirefox = Cypress.isBrowser('firefox');
+
+    if (isMobile) {
+        cy.getByDataTestIdParent(
+            projectsListSectionDataTestId,
+            nukaCarouselNextButtonDataTestId
+        ).click({ force: isFirefox });
+
+        cy.getByText(projectsListSectionDataTestId, projectsText).scrollIntoView();
+    }
+};
+
+export const projectsSectionTest = (locale: Locale, viewport: Viewport): void => {
+    const { projects, seeMore } = getLocalizedTexts(locale);
+    const isMobile = viewport === Viewport.mobile;
 
     cy.getByText(projectsListSectionDataTestId, projects).scrollIntoView();
 
-    matchSnapshot('projectsList', locale);
+    matchSnapshot('projectsList', locale, viewport);
 
-    cy.imageIsVisible(projectsListSectionDataTestId, 'tjela logo');
-    cy.imageWidthIs(projectsListSectionDataTestId, 'tjela logo', projectsListNoCarouselImagesWidth);
-    cy.imageHeightIs(
-        projectsListSectionDataTestId,
-        'tjela logo',
-        projectsListNoCarouselImagesHeight
-    );
-    cy.isHidden(projectsListSectionDataTestId, '@tudonatjela');
-    cy.getByDataTestId(projectsListNoCarouselDataTestId)
-        .find('[alt="tjela logo"]')
-        .parentsUntil('ul', 'li')
-        .find('.backface')
-        .forceHover();
-    cy.isVisible(projectsListSectionDataTestId, '@tudonatjela');
-    cy.isVisible(projectsListSectionDataTestId, socialMediaManagementAndContentCreation);
-    cy.isVisible(projectsListSectionDataTestId, `2020 - ${present}`);
-    cy.isVisible(projectsListSectionDataTestId, `* ${inPartnershipWith}`);
+    testSlide(locale, 'tjela', '@tudonatjela', 2020, true, isMobile);
 
-    cy.imageIsVisible(projectsListSectionDataTestId, 'kaffeehaus logo');
-    cy.imageWidthIs(
-        projectsListSectionDataTestId,
-        'kaffeehaus logo',
-        projectsListNoCarouselImagesWidth
-    );
-    cy.imageHeightIs(
-        projectsListSectionDataTestId,
-        'kaffeehaus logo',
-        projectsListNoCarouselImagesHeight
-    );
-    cy.isHidden(projectsListSectionDataTestId, '@kaffeehaus_lisboa');
-    cy.getByDataTestId(projectsListNoCarouselDataTestId)
-        .find('[alt="kaffeehaus logo"]')
-        .parentsUntil('ul', 'li')
-        .find('.backface')
-        .forceHover();
-    cy.isVisible(projectsListSectionDataTestId, '@kaffeehaus_lisboa');
-    cy.isVisible(projectsListSectionDataTestId, socialMediaManagementAndContentCreation);
-    cy.isVisible(projectsListSectionDataTestId, `2018 - ${present}`);
+    clickNextArrowButtonIfMobile(isMobile, projects);
 
-    cy.imageIsVisible(projectsListSectionDataTestId, 'guacamole logo');
-    cy.imageWidthIs(
-        projectsListSectionDataTestId,
-        'guacamole logo',
-        projectsListNoCarouselImagesWidth
-    );
-    cy.imageHeightIs(
-        projectsListSectionDataTestId,
-        'guacamole logo',
-        projectsListNoCarouselImagesHeight
-    );
-    cy.isHidden(projectsListSectionDataTestId, '@guacamolegmg');
-    cy.getByDataTestId(projectsListNoCarouselDataTestId)
-        .find('[alt="guacamole logo"]')
-        .parentsUntil('ul', 'li')
-        .find('.backface')
-        .forceHover();
-    cy.isVisible(projectsListSectionDataTestId, '@guacamolegmg');
-    cy.isVisible(projectsListSectionDataTestId, socialMediaManagementAndContentCreation);
-    cy.isVisible(projectsListSectionDataTestId, `2019 - ${present}`);
-    cy.isVisible(projectsListSectionDataTestId, `* ${inPartnershipWith}`);
+    testSlide(locale, 'kaffeehaus', '@kaffeehaus_lisboa', 2018, false, isMobile);
 
-    matchSnapshot('projectsList_backface', locale);
+    clickNextArrowButtonIfMobile(isMobile, projects);
+
+    testSlide(locale, 'guacamole', '@guacamolegmg', 2019, true, isMobile);
+
+    clickNextArrowButtonIfMobile(isMobile, projects);
+
+    cy.getByText(projectsListSectionDataTestId, projects).scrollIntoView();
+
+    matchSnapshot('projectsList_backface', locale, viewport);
 
     cy.getByText(projectsListSectionDataTestId, seeMore).click();
     cy.getByDataTestId(projectsListDoubleSectionDataTestId);

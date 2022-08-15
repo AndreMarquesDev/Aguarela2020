@@ -5,6 +5,7 @@ export enum Viewport {
 
 const scrollbarWidth = 17;
 const navHeight = 160;
+const navHeightMobile = 100;
 
 // eslint-disable-next-line capitalized-comments
 // TODO rename to desktopViewportWidth
@@ -15,6 +16,8 @@ export const mobileViewportHeight = 800;
 
 export const bannerWidth = defaultViewportWidth - scrollbarWidth;
 export const bannerHeight = defaultViewportHeight * 0.9 - navHeight;
+export const bannerWidthMobile = mobileViewportWidth - scrollbarWidth;
+export const bannerHeightMobile = mobileViewportHeight * 0.5 - navHeightMobile;
 
 export const brandLogosWidth = 150;
 export const brandLogosHeight = 150;
@@ -26,5 +29,9 @@ export const skillsBlockImagesHeight = 130;
 
 export const projectsListNoCarouselImagesWidth = 400;
 export const projectsListNoCarouselImagesHeight = 400;
+export const projectsListNoCarouselImagesWidthMobile = 275;
+export const projectsListNoCarouselImagesHeightMobile = 275;
+export const projectsListNoCarouselImagesWidthFirefoxMobile = 278;
+export const projectsListNoCarouselImagesHeightFirefoxMobile = 278;
 export const projectsListDoubleCarouselImagesWidth = 357;
 export const projectsListDoubleCarouselImagesHeight = 357;

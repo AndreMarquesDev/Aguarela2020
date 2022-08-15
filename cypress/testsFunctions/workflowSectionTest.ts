@@ -2,8 +2,9 @@ import { getLocalizedTexts } from '../utils/getTexts';
 import { workflowSectionDataTestId } from '../../utils/dataTestIds';
 import { Locale } from '../../utils/locales';
 import { matchSnapshot } from './matchSnapshot';
+import { Viewport } from '../utils/variables';
 
-export const workflowSectionTest = (locale: Locale): void => {
+export const workflowSectionTest = (locale: Locale, viewport: Viewport): void => {
     const {
         contentCreation,
         workflow,
@@ -24,7 +25,7 @@ export const workflowSectionTest = (locale: Locale): void => {
 
     cy.contains(workflow).scrollIntoView();
 
-    matchSnapshot('workflow', locale);
+    matchSnapshot('workflow', locale, viewport);
 
     cy.getByText(workflowSectionDataTestId, defineTarget);
     cy.isHidden(workflowSectionDataTestId, whatIsTheTarget);
@@ -73,5 +74,7 @@ export const workflowSectionTest = (locale: Locale): void => {
     cy.getByText(workflowSectionDataTestId, optimization).parent().find('.backface').forceHover();
     cy.isVisible(workflowSectionDataTestId, improvementsAndUpdatesToTheStrategy);
 
-    matchSnapshot('workflow_backface', locale);
+    cy.contains(workflow).scrollIntoView();
+
+    matchSnapshot('workflow_backface', locale, viewport);
 };
