@@ -24,7 +24,5 @@ export const welcomeSectionTest = (locale: Locale, viewport: Viewport): void => 
     cy.getByText(welcomeSectionDataTestId, monitorAndOptimizeProcessAndStrategy);
     cy.getByText(welcomeSectionDataTestId, throughStrategicPlanning);
 
-    cy.contains(welcome1).scrollIntoView();
-
     matchSnapshot('welcome', locale, viewport);
 };
