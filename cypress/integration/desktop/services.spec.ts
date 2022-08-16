@@ -1,16 +1,16 @@
-import { Locale } from '../../utils/locales';
-import { brandsListTest } from '../testsFunctions/brandsListTest';
-import { footerTest } from '../testsFunctions/footerTest';
-import { letsWorkSectionTest } from '../testsFunctions/letsWorkSectionTest';
-import { urls } from '../utils/selectors';
-import { defaultViewportWidth, defaultViewportHeight } from '../utils/variables';
-import { navigationServicesPageTest } from '../testsFunctions/navigation/navigationServicesPageTest';
-import { servicesSectionTest } from '../testsFunctions/servicesSectionTest';
-import { matchSnapshot } from '../testsFunctions/matchSnapshot';
+import { Locale } from '../../../utils/locales';
+import { brandsListTest } from '../../testsFunctions/brandsListTest';
+import { footerTest } from '../../testsFunctions/footerTest';
+import { letsWorkSectionTest } from '../../testsFunctions/letsWorkSectionTest';
+import { urls } from '../../utils/selectors';
+import { defaultViewportWidth, defaultViewportHeight } from '../../utils/variables';
+import { navigationServicesPageTest } from '../../testsFunctions/navigation/navigationServicesPageTest';
+import { servicesSectionTest } from '../../testsFunctions/servicesSectionTest';
+import { matchSnapshot } from '../../testsFunctions/matchSnapshot';
 
-const locale: Locale = 'en';
-const otherLocale: Locale = 'pt';
-const pageBeingTested = urls.en.services;
+const locale: Locale = 'pt';
+const otherLocale: Locale = 'en';
+const pageBeingTested = urls.pt.services;
 
 describe('services page', () => {
     beforeEach(() => {
