@@ -32,3 +32,21 @@ edge-rebuild:
 
 firefox-rebuild:
 	docker compose up firefox --build --force-recreate
+
+chrome-desktop-rebuild:
+	docker compose up chrome-desktop --build --force-recreate
+
+edge-desktop-rebuild:
+	docker compose up edge-desktop --build --force-recreate
+
+firefox-desktop-rebuild:
+	docker compose up firefox-desktop --build --force-recreate
+
+chrome-mobile-rebuild:
+	docker compose up chrome-mobile --build --force-recreate
+
+edge-mobile-rebuild:
+	docker compose up edge-mobile --build --force-recreate
+
+firefox-mobile-rebuild:
+	docker compose up firefox-mobile --build --force-recreate

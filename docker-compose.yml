@@ -27,6 +27,36 @@ services:
         build: *build-config
         volumes: *volume-config
         entrypoint: sh -c "yarn cypress:test:firefox"
+    chrome-desktop:
+        container_name: chrome_container_desktop
+        build: *build-config
+        volumes: *volume-config
+        entrypoint: sh -c "yarn cypress:test:chrome:desktop"
+    edge-desktop:
+        container_name: edge_container_desktop
+        build: *build-config
+        volumes: *volume-config
+        entrypoint: sh -c "yarn cypress:test:edge:desktop"
+    firefox-desktop:
+        container_name: firefox_container_desktop
+        build: *build-config
+        volumes: *volume-config
+        entrypoint: sh -c "yarn cypress:test:firefox:desktop"
+    chrome-mobile:
+        container_name: chrome_container_mobile
+        build: *build-config
+        volumes: *volume-config
+        entrypoint: sh -c "yarn cypress:test:chrome:mobile"
+    edge-mobile:
+        container_name: edge_container_mobile
+        build: *build-config
+        volumes: *volume-config
+        entrypoint: sh -c "yarn cypress:test:edge:mobile"
+    firefox-mobile:
+        container_name: firefox_container_mobile
+        build: *build-config
+        volumes: *volume-config
+        entrypoint: sh -c "yarn cypress:test:firefox:mobile"
     chrome-update:
         container_name: chrome_container_update
         build: *build-config
