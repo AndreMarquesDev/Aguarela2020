@@ -1,5 +1,4 @@
-export const contactFormBackendUrl =
-    'https://aguarela-contact-form-backend.herokuapp.com/api/sendEmail';
+export const contactFormBackendUrl = '/api/submitContactForm';
 
 export const aguarelaDigitalInstagramUrl = 'https://www.instagram.com/aguareladigital';
 export const aguarelaDigitalFacebookUrl = 'https://www.facebook.com/aguareladigitalagency';

@@ -67,6 +67,9 @@ jobs:
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODEMAILER_SEND_EMAIL_FROM: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM }}
+          NODEMAILER_SEND_EMAIL_FROM_PASS: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM_PASS }}
+          NODEMAILER_SEND_EMAIL_TO: ${{ secrets.NODEMAILER_SEND_EMAIL_TO }}
 
       - name: Upload snapshots
         uses: actions/upload-artifact@v3
@@ -105,6 +108,9 @@ jobs:
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODEMAILER_SEND_EMAIL_FROM: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM }}
+          NODEMAILER_SEND_EMAIL_FROM_PASS: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM_PASS }}
+          NODEMAILER_SEND_EMAIL_TO: ${{ secrets.NODEMAILER_SEND_EMAIL_TO }}
 
       - name: Upload snapshots
         uses: actions/upload-artifact@v3
@@ -145,6 +151,9 @@ jobs:
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODEMAILER_SEND_EMAIL_FROM: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM }}
+          NODEMAILER_SEND_EMAIL_FROM_PASS: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM_PASS }}
+          NODEMAILER_SEND_EMAIL_TO: ${{ secrets.NODEMAILER_SEND_EMAIL_TO }}
 
       - name: Upload snapshots
         uses: actions/upload-artifact@v3
@@ -183,6 +192,9 @@ jobs:
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODEMAILER_SEND_EMAIL_FROM: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM }}
+          NODEMAILER_SEND_EMAIL_FROM_PASS: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM_PASS }}
+          NODEMAILER_SEND_EMAIL_TO: ${{ secrets.NODEMAILER_SEND_EMAIL_TO }}
 
       - name: Upload snapshots
         uses: actions/upload-artifact@v3
@@ -221,6 +233,9 @@ jobs:
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODEMAILER_SEND_EMAIL_FROM: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM }}
+          NODEMAILER_SEND_EMAIL_FROM_PASS: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM_PASS }}
+          NODEMAILER_SEND_EMAIL_TO: ${{ secrets.NODEMAILER_SEND_EMAIL_TO }}
 
       - name: Upload snapshots
         uses: actions/upload-artifact@v3
@@ -261,6 +276,9 @@ jobs:
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODEMAILER_SEND_EMAIL_FROM: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM }}
+          NODEMAILER_SEND_EMAIL_FROM_PASS: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM_PASS }}
+          NODEMAILER_SEND_EMAIL_TO: ${{ secrets.NODEMAILER_SEND_EMAIL_TO }}
 
       - name: Upload snapshots
         uses: actions/upload-artifact@v3

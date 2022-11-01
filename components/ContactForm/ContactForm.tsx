@@ -2,20 +2,14 @@ import axios from 'axios';
 import classNames from 'classnames';
 import { useFormik } from 'formik';
 import React, { useContext, useState } from 'react';
+import { FormPostRequestBody } from '../../types/FormPostRequestBody';
+import { FormValues } from '../../types/FormValues';
 import { contactFormContainerDataTestId } from '../../utils/dataTestIds';
 import { FieldTypes, FormState, validateName, validateEmail } from '../../utils/formValidation';
 import { contactFormBackendUrl } from '../../utils/urls';
 import { Button } from '../Button/Button';
 import { TextsContext } from '../context/TextsContext';
 import { FormField } from '../FormField/FormField';
-
-interface FormValues {
-    name: string;
-    email: string;
-    message: string;
-    brand: string;
-    subject: string;
-}
 
 const formSchema = [
     {
@@ -102,7 +96,7 @@ export const ContactForm = (): JSX.Element => {
         const isTest = (
             document.querySelector(`input#${FORM_TEST_MODE_CHECKBOX_ID}`) as HTMLInputElement
         )?.checked;
-        const formStateWithTestMode = { ...formState, isTest };
+        const formStateWithTestMode: FormPostRequestBody = { ...formState, isTest };
 
         axios
             .post(contactFormBackendUrl, formStateWithTestMode)
