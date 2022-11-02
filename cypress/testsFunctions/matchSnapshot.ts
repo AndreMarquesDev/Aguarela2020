@@ -21,7 +21,6 @@ export const matchSnapshot = (
 ): void => {
     const isFirefox = Cypress.isBrowser('firefox');
     const firefoxSuffix = isFirefox ? '_firefox' : '';
-    // eslint-disable-next-line capitalized-comments
     // TODO add desktop suffix
     const mobileSuffix = viewport === Viewport.mobile ? '_mobile' : '';
     const snapshotFileName = `${snapshotName}_${locale}${mobileSuffix}${firefoxSuffix}`;

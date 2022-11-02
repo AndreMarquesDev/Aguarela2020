@@ -48,7 +48,6 @@ export const TextShadowBlock = ({
                     </div>
                     <div className="textBlock">
                         <p
-                            // eslint-disable-next-line react/no-danger
                             dangerouslySetInnerHTML={{
                                 __html: textBlock1,
                             }}

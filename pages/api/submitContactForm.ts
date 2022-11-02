@@ -20,7 +20,6 @@ const buildEmailOptions = (data: FormPostRequestBody): SendMailOptions => {
 
     return {
         from: emailToSendFrom,
-        // eslint-disable-next-line id-length
         to: emailToSendTo,
         subject: emailSubject,
         html: emailBody,

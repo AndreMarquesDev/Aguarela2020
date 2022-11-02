@@ -2,7 +2,6 @@
 import { addMatchImageSnapshotPlugin } from 'cypress-image-snapshot/plugin';
 import { defaultViewportWidth, defaultViewportHeight } from '../utils/variables';
 
-// eslint-disable-next-line id-length
 export default (on, config): void => {
     addMatchImageSnapshotPlugin(on, config);
 

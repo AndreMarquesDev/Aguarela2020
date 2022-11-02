@@ -82,6 +82,7 @@ describe('<ContactForm />', () => {
         userEvent.type(textareaField, 'Textarea{space}field');
 
         await waitFor(() => {
+            // eslint-disable-next-line testing-library/no-wait-for-snapshot
             expect(screen.getByTestId(contactFormContainerDataTestId)).toMatchSnapshot();
         });
     });

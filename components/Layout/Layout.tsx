@@ -1,8 +1,8 @@
-import React, { ReactNode, useContext } from 'react';
+import React, { ReactNode, useContext, useMemo } from 'react';
 import { useRouter } from 'next/router';
 import classNames from 'classnames';
 import { Header } from '../Header/Header';
-import { TextsContext } from '../context/TextsContext';
+import { TextsContext, TextsContextProps } from '../context/TextsContext';
 import { textsEn, textsPt } from '../../utils/texts';
 import { Footer } from '../Footer/Footer';
 import { Locale } from '../../utils/locales';
@@ -23,13 +23,16 @@ export const Layout = ({ children }: LayoutProps): JSX.Element => {
     const windowSize = useWindowSize();
     const isDesktop = windowSize.width > Breakpoint.Tablet;
 
+    const textsContextValue = useMemo<TextsContextProps>(
+        () => ({
+            texts,
+        }),
+        [texts]
+    );
+
     return (
         <>
-            <TextsContext.Provider
-                value={{
-                    texts,
-                }}
-            >
+            <TextsContext.Provider value={textsContextValue}>
                 <main className={classNames('layout', isMenuOpen && !isDesktop && 'menuOpen')}>
                     <Header currentRoute={route} language={currentLanguage} />
 

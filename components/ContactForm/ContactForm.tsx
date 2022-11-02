@@ -131,7 +131,6 @@ export const ContactForm = (): JSX.Element => {
 
     const resetForm = (): void => {
         setTimeout(() => {
-            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
             // @ts-ignore
             handleReset();
             setFormSubmitState({
@@ -175,16 +174,15 @@ export const ContactForm = (): JSX.Element => {
                         </Button>
                         {formSubmitState.submitted && (
                             <span
-                                className={classNames(
-                                    'formNotification',
-                                    formSubmitState.error && 'error'
-                                )}
-                                // eslint-disable-next-line react/no-danger
                                 dangerouslySetInnerHTML={{
                                     __html: formSubmitState.error
                                         ? texts.thereWasAnErrorSendingTheMessage
                                         : texts.messageSentSuccessfully,
                                 }}
+                                className={classNames(
+                                    'formNotification',
+                                    formSubmitState.error && 'error'
+                                )}
                                 id="contactForm"
                             />
                         )}

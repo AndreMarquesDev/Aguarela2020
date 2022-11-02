@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import Head from 'next/head';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
@@ -16,14 +16,17 @@ const ContactPage: NextPage = () => {
     const translatedPageTitle = getCurrentLanguagetexts(currentLanguage).contact;
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const toggleMenu = (): void => setIsMenuOpen(!isMenuOpen);
-    const navLinksContext: NavLinksContextProps = {
-        isMenuOpen,
-        toggleMenu,
-    };
+
+    const navLinksContextValue = useMemo<NavLinksContextProps>(
+        () => ({
+            isMenuOpen,
+            toggleMenu: () => setIsMenuOpen(!isMenuOpen),
+        }),
+        [isMenuOpen]
+    );
 
     return (
-        <NavLinksContext.Provider value={navLinksContext}>
+        <NavLinksContext.Provider value={navLinksContextValue}>
             <Layout>
                 <Head>
                     <title>{translatedPageTitle} - Aguarela Digital</title>

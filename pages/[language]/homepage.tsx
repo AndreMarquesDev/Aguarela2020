@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import Head from 'next/head';
 import { NextPage } from 'next';
 import Image from 'next/image';
@@ -18,19 +18,20 @@ const Homepage: NextPage = () => {
     const [navHeight, setNavHeight] = useState(0);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const toggleMenu = (): void => setIsMenuOpen(!isMenuOpen);
-
-    const navLinksContext: NavLinksContextProps = {
-        isMenuOpen,
-        toggleMenu,
-        setNavHeight,
-    };
+    const navLinksContextValue = useMemo<NavLinksContextProps>(
+        () => ({
+            isMenuOpen,
+            toggleMenu: () => setIsMenuOpen(!isMenuOpen),
+            setNavHeight,
+        }),
+        [isMenuOpen]
+    );
 
     const windowSize = useWindowSize();
     const isMobile = windowSize.width < Breakpoint.Mobile;
 
     return (
-        <NavLinksContext.Provider value={navLinksContext}>
+        <NavLinksContext.Provider value={navLinksContextValue}>
             <Layout>
                 <Head>
                     <title>Aguarela Digital</title>

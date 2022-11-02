@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-constructed-context-values */
 import React, { ReactNode } from 'react';
 import { TextsContext } from '../../components/context/TextsContext';
 import { textsEn, textsPt } from '../texts';

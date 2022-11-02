@@ -7,7 +7,6 @@ const scrollbarWidth = 17;
 const navHeight = 160;
 const navHeightMobile = 100;
 
-// eslint-disable-next-line capitalized-comments
 // TODO rename to desktopViewportWidth
 export const defaultViewportWidth = 1920;
 export const defaultViewportHeight = 1080;
