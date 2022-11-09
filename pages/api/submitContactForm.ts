@@ -50,7 +50,9 @@ const submitContactForm = (req: CustomNextApiRequest, res: NextApiResponse): voi
             res.status(200).send({ messsage: 'Success' });
         }
 
-        smtpTransport.close();
+        if (smtpTransport.close) {
+            smtpTransport.close();
+        }
     };
 
     smtpTransport.sendMail(emailOptions, smtpCallback);

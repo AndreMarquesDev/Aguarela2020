@@ -6,12 +6,14 @@ import { getCurrentLanguagetexts } from '../../utils/generic';
 import { NavLinksContext } from '../context/NavLinksContext';
 import { locales } from '../../constants/locales';
 import { Locale } from '../../types/Locale';
+import { TextsInterface } from '../../utils/texts';
 
 export const LanguageButton = (): JSX.Element => {
     const router = useRouter();
     const currentPage = getPageFromUrl()[0];
     const languageToSwitchTo = getRemainingLang(locales)[0] as Locale;
-    const translatedPageTitle: string = getCurrentLanguagetexts(languageToSwitchTo)[currentPage];
+    const translatedPageTitle: string =
+        getCurrentLanguagetexts(languageToSwitchTo)[currentPage as keyof TextsInterface];
 
     const { isMenuOpen, toggleMenu } = useContext(NavLinksContext);
 

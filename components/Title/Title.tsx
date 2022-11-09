@@ -8,7 +8,7 @@ export interface TitleProps {
 
 export const Title = ({ text, colored, marginBottom }: TitleProps): JSX.Element => (
     <>
-        <h1 className={colored && 'colored'}>{text}</h1>
+        <h1 className={colored ? 'colored' : ''}>{text}</h1>
 
         <style jsx>
             {`

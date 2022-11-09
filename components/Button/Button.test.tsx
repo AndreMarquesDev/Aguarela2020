@@ -38,7 +38,7 @@ describe('<Button />', () => {
     });
 
     test('renders properly without an external link', () => {
-        const { container } = renderComponent({ externalLink: null });
+        const { container } = renderComponent({ externalLink: undefined });
 
         const anchorElement = screen.getByText(children);
 

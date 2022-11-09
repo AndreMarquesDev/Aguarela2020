@@ -13,7 +13,7 @@ export interface ButtonProps {
     isUppercased?: boolean;
     isSubmit?: boolean;
     disabled?: boolean;
-    onClick?: (event) => void;
+    onClick?: () => void;
 }
 
 export const Button = ({

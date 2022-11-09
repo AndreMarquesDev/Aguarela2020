@@ -5,6 +5,7 @@ import { pagesMap } from '../../utils/pages';
 import { TextsContext } from '../context/TextsContext';
 import { LanguageButton } from '../LanguageButton/LanguageButton';
 import { Locale } from '../../types/Locale';
+import { TextsInterface } from '../../utils/texts';
 
 export interface NavLinksProps {
     currentRoute: string;
@@ -35,7 +36,7 @@ export const NavLinks = ({
                 <li key={language + link}>
                     <Link href={`/${language}/${link}`} prefetch={false}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a className={linkStyles(link)}>{texts[`${link}`]}</a>
+                        <a className={linkStyles(link)}>{texts[link as keyof TextsInterface]}</a>
                     </Link>
                 </li>
             ))}

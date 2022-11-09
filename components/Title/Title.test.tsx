@@ -6,7 +6,7 @@ import { Title, TitleProps } from './Title';
 const baseProps: TitleProps = {
     text: 'dummy text',
     colored: false,
-    marginBottom: null,
+    marginBottom: undefined,
 };
 
 const renderComponent = (newProps?: Partial<TitleProps>): RenderResult => {

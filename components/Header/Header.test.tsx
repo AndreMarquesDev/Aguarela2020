@@ -16,7 +16,7 @@ const baseProps: HeaderProps = {
 const mockSetNavHeight = jest.fn();
 const mockToggleMenu = jest.fn();
 
-const renderComponent = (setNavHeight: jest.Mock): RenderResult => {
+const renderComponent = (setNavHeight: jest.Mock | undefined): RenderResult => {
     return render(
         <MockProviders setNavHeight={setNavHeight} toggleMenu={mockToggleMenu}>
             <Header {...baseProps} />

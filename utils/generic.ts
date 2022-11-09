@@ -7,6 +7,6 @@ export const getCurrentLanguagetexts = (language: Locale): TextsInterface =>
     language === Locale.Pt ? textsPt : textsEn;
 
 export const resetTimesTouchedAttribute = (): void =>
-    document
-        .querySelectorAll('[data-times-touched]')
-        .forEach((element: HTMLLIElement) => (element.dataset.timesTouched = '0')); // eslint-disable-line no-return-assign, no-param-reassign
+    document.querySelectorAll('[data-times-touched]').forEach(
+        element => ((element as HTMLLIElement).dataset.timesTouched = '0') // eslint-disable-line no-return-assign, no-param-reassign
+    );

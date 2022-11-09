@@ -42,25 +42,25 @@ describe('<NukaCarousel />', () => {
     });
 
     test('renders properly when width prop is not provided', () => {
-        const { container } = renderComponent({ width: null });
+        const { container } = renderComponent({ width: undefined });
 
         expect(container).toMatchSnapshot();
     });
 
     test('renders properly when framePadding prop is not provided', () => {
-        const { container } = renderComponent({ framePadding: null });
+        const { container } = renderComponent({ framePadding: undefined });
 
         expect(container).toMatchSnapshot();
     });
 
     test('renders properly when slidesToShow prop is not provided', () => {
-        const { container } = renderComponent({ slidesToShow: null });
+        const { container } = renderComponent({ slidesToShow: undefined });
 
         expect(container).toMatchSnapshot();
     });
 
     test('renders properly when cellAlign prop is not provided', () => {
-        const { container } = renderComponent({ cellAlign: null });
+        const { container } = renderComponent({ cellAlign: undefined });
 
         expect(container).toMatchSnapshot();
     });

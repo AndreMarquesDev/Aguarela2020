@@ -24,7 +24,7 @@ const formSchema = [
         type: 'text',
         isRequired: false,
         isInput: true,
-        ariaError: null,
+        ariaError: undefined,
     },
     {
         id: FieldTypes.Email,
@@ -38,11 +38,11 @@ const formSchema = [
         type: 'text',
         isRequired: false,
         isInput: true,
-        ariaError: null,
+        ariaError: undefined,
     },
     {
         id: FieldTypes.Textarea,
-        type: null,
+        type: '',
         isRequired: true,
         isInput: false,
         ariaError: 'messageErrorMessage',

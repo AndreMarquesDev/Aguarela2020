@@ -99,7 +99,7 @@ describe('<ProjectItem />', () => {
     test('renders properly with isActive being false', () => {
         renderComponent({ isActive: false });
 
-        const year = screen.getByText(baseProps.year);
+        const year = screen.getByText(baseProps.year as number);
 
         const presentText = screen.queryByText(textsPt.present);
 

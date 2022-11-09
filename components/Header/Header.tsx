@@ -17,10 +17,10 @@ export interface HeaderProps {
 export const Header = ({ currentRoute, language }: HeaderProps): JSX.Element => {
     const { setNavHeight } = useContext(NavLinksContext);
 
-    const navRef = useRef(null);
+    const navRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        if (setNavHeight) {
+        if (setNavHeight && navRef.current) {
             setNavHeight(navRef.current.clientHeight);
         }
     });

@@ -32,7 +32,7 @@ export const FormField = ({
 }: FormFieldProps): JSX.Element => {
     const { texts } = useContext(TextsContext);
 
-    const getLabel = (fieldId: string): string => {
+    const getLabel = (fieldId: string): string | null => {
         switch (fieldId) {
             case FieldTypes.Name:
                 return texts.name;
@@ -49,7 +49,7 @@ export const FormField = ({
         }
     };
 
-    const getErrorMessage = (fieldId: string): string => {
+    const getErrorMessage = (fieldId: string): string | null => {
         switch (fieldId) {
             case FieldTypes.Name:
                 return texts.pleaseEnterFirstAndLastName;
