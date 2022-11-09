@@ -7,7 +7,7 @@ import { NavLinksContext, NavLinksContextProps } from '../../components/context/
 import { getCurrentLanguagetexts } from '../../utils/generic';
 import { BrandsList } from '../../components/BrandsList/BrandsList';
 import { LetsWork } from '../../components/LetsWork/LetsWork';
-import { Locale } from '../../utils/locales';
+import { Locale } from '../../types/Locale';
 import { ProjectsListDouble } from '../../components/ProjectsListDouble/ProjectsListDouble';
 
 const ProjectsPage: NextPage = () => {

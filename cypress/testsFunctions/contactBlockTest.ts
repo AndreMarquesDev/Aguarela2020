@@ -1,5 +1,5 @@
 import { contactBlockSectionDataTestId } from '../../utils/dataTestIds';
-import { Locale } from '../../utils/locales';
+import { Locale } from '../../types/Locale';
 import { aguarelaDigitalEmail } from '../../utils/urls';
 import { getLocalizedTexts } from '../utils/getTexts';
 import { matchSnapshot } from './matchSnapshot';

@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
 import { useRouter } from 'next/router';
 import { getRemainingLang } from 'multilingual-url/lib';
-import { Locale, locales } from '../../utils/locales';
 import { getPageFromUrl } from '../../utils/pages';
 import { getCurrentLanguagetexts } from '../../utils/generic';
 import { NavLinksContext } from '../context/NavLinksContext';
+import { locales } from '../../constants/locales';
+import { Locale } from '../../types/Locale';
 
 export const LanguageButton = (): JSX.Element => {
     const router = useRouter();

@@ -6,9 +6,9 @@ import { textsEn, textsPt } from '../../utils/texts';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { Breakpoint } from '../../utils/useWindowSize';
 import { MockProviders } from '../../utils/jest/MockProviders';
-import { Locale } from '../../utils/locales';
+import { Locale } from '../../types/Locale';
 
-const renderComponent = (language: Locale = 'pt'): RenderResult => {
+const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
     return render(
         <MockProviders language={language}>
             <AboutMe />
@@ -32,7 +32,7 @@ describe('<AboutMe />', () => {
     });
 
     test('renders properly in English', () => {
-        const { container } = renderComponent('en');
+        const { container } = renderComponent(Locale.En);
 
         expect(screen.getByText(textsEn.about)).toBeInTheDocument();
         expect(screen.getByText(textsEn.hiMyNameIs)).toBeInTheDocument();

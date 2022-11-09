@@ -1,4 +1,4 @@
-import { Locale } from '../../utils/locales';
+import { Locale } from '../../types/Locale';
 import {
     skillsBlockSectionDataTestId,
     skillsBlockItemWrapperDataTestId,

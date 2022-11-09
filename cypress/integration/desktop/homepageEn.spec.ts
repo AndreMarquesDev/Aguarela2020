@@ -1,10 +1,10 @@
-import { Locale } from '../../../utils/locales';
+import { Locale } from '../../../types/Locale';
 import { homepageTestBlock } from '../../testsFunctions/testBlocks/homepageTestBlock';
 import { urls } from '../../utils/selectors';
 import { defaultViewportWidth, defaultViewportHeight, Viewport } from '../../utils/variables';
 
-const locale: Locale = 'en';
-const otherLocale: Locale = 'pt';
+const locale: Locale = Locale.En;
+const otherLocale: Locale = Locale.Pt;
 const pageBeingTested = urls.en.homepage;
 
 describe('homepage in English', () => {

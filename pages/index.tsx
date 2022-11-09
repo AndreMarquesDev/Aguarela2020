@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { getInitialLocale } from 'multilingual-url/lib';
-import { defaultLocale, locales } from '../utils/locales';
+import { defaultLocale, locales } from '../constants/locales';
 
 const Index = (): JSX.Element => {
     const router = useRouter();

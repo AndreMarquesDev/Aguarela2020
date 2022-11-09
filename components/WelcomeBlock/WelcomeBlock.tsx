@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import React, { useContext } from 'react';
 import { welcomeSectionDataTestId } from '../../utils/dataTestIds';
-import { Locale } from '../../utils/locales';
+import { Locale } from '../../types/Locale';
 import { TextsContext } from '../context/TextsContext';
 import { TextShadowBlock } from '../TextShadowBlock/TextShadowBlock';
 
@@ -11,7 +11,7 @@ export const WelcomeBlock = (): JSX.Element => {
     const { query } = useRouter();
     const currentLanguage = query.language?.toString() as Locale;
     const titleMobile =
-        currentLanguage === 'pt'
+        currentLanguage === Locale.Pt
             ? `${texts.welcome1}-${texts.welcome2}${texts.welcome3}`
             : `${texts.welcome1}${texts.welcome2}${texts.welcome3}`;
 

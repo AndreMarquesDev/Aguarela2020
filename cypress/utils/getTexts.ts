@@ -1,8 +1,8 @@
+import { Locale } from '../../types/Locale';
 import { TextsInterface, textsPt, textsEn } from '../../utils/texts';
-import { Locale } from '../../utils/locales';
 
 export const getLocalizedTexts = (locale: Locale): TextsInterface => {
-    if (locale === 'pt') {
+    if (locale === Locale.Pt) {
         return textsPt;
     }
 

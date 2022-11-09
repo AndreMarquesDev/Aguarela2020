@@ -1,10 +1,10 @@
-import { Locale } from './locales';
+import { Locale } from '../types/Locale';
 import { textsPt, textsEn, TextsInterface } from './texts';
 
 export const capitalize = (string: string): string =>
     string.charAt(0).toUpperCase() + string.slice(1);
 export const getCurrentLanguagetexts = (language: Locale): TextsInterface =>
-    language === 'pt' ? textsPt : textsEn;
+    language === Locale.Pt ? textsPt : textsEn;
 
 export const resetTimesTouchedAttribute = (): void =>
     document

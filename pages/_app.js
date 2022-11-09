@@ -3,7 +3,7 @@ import React from 'react';
 import '../styles/main.scss';
 import Cookies from 'js-cookie';
 import { getInitialLocale } from 'multilingual-url/lib';
-import { defaultLocale, locales } from '../utils/locales';
+import { defaultLocale, locales } from '../constants/locales';
 import { initializeAxiosMockAdapter } from '../ajax/axiosMockAdapter';
 
 function MyApp({ Component, pageProps }) {

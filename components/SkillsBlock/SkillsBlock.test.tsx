@@ -10,9 +10,9 @@ import {
     skillsBlockItemCarouselDataTestId,
 } from '../../utils/dataTestIds';
 import { MockProviders } from '../../utils/jest/MockProviders';
-import { Locale } from '../../utils/locales';
+import { Locale } from '../../types/Locale';
 
-const renderComponent = (language: Locale = 'pt'): RenderResult => {
+const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
     return render(
         <MockProviders language={language}>
             <SkillsBlock />
@@ -50,7 +50,7 @@ describe('<SkillsBlock />', () => {
     });
 
     test('renders properly in English', () => {
-        const { container } = renderComponent('en');
+        const { container } = renderComponent(Locale.En);
 
         const title = screen.getByText(textsEn.skills);
         const block1Title = screen.getByText(textsEn.socialMediaStrategy);

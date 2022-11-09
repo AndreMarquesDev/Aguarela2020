@@ -18,9 +18,9 @@ import {
     contactFormErrorMessageVisibleDataTestId,
 } from '../../utils/dataTestIds';
 import { MockProviders } from '../../utils/jest/MockProviders';
-import { Locale } from '../../utils/locales';
+import { Locale } from '../../types/Locale';
 
-const renderComponent = (language: Locale = 'pt'): RenderResult => {
+const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
     return render(
         <MockProviders language={language}>
             <ContactForm />
@@ -41,7 +41,7 @@ describe('<ContactForm />', () => {
     });
 
     test('renders properly in English', () => {
-        renderComponent('en');
+        renderComponent(Locale.En);
 
         const hiddenErrorMessages = screen.getAllByTestId(contactFormErrorMessageHiddenDataTestId);
 

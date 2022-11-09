@@ -7,9 +7,9 @@ import { ProjectsList } from './ProjectsList';
 import { Breakpoint } from '../../utils/useWindowSize';
 import { projectsListNoCarouselDataTestId } from '../../utils/dataTestIds';
 import { MockProviders } from '../../utils/jest/MockProviders';
-import { Locale } from '../../utils/locales';
+import { Locale } from '../../types/Locale';
 
-const renderComponent = (language: Locale = 'pt'): RenderResult => {
+const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
     return render(
         <MockProviders language={language}>
             <ProjectsList />
@@ -37,7 +37,7 @@ describe('<ProjectsList />', () => {
     });
 
     test('renders properly in English', () => {
-        const { container } = renderComponent('en');
+        const { container } = renderComponent(Locale.En);
 
         const title = screen.getByText(textsEn.projects);
         const button = screen.getByText(textsEn.seeMore);

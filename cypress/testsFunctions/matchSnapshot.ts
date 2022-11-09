@@ -1,4 +1,4 @@
-import { Locale } from '../../utils/locales';
+import { Locale } from '../../types/Locale';
 import { Viewport } from '../utils/variables';
 
 export const defaultFailureThreshold = 0.001;

@@ -7,7 +7,7 @@ import { textsEn, textsPt } from '../../utils/texts';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { Breakpoint } from '../../utils/useWindowSize';
 import { MockProviders } from '../../utils/jest/MockProviders';
-import { Locale } from '../../utils/locales';
+import { Locale } from '../../types/Locale';
 
 // @ts-ignore
 nextRouter.useRouter = jest.fn(() => ({
@@ -16,7 +16,7 @@ nextRouter.useRouter = jest.fn(() => ({
     },
 }));
 
-const renderComponent = (language: Locale = 'pt'): RenderResult => {
+const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
     return render(
         <MockProviders language={language}>
             <ContactBlock />
@@ -59,7 +59,7 @@ describe('<ContactBlock />', () => {
     test('renders properly in English', () => {
         setJestWindowWidth(Breakpoint.Desktop);
 
-        const { container } = renderComponent('en');
+        const { container } = renderComponent(Locale.En);
 
         expect(screen.getByText(textsEn.contactMe1)).toBeInTheDocument();
         expect(screen.getByText(textsEn.contactMe2)).toBeInTheDocument();
@@ -80,7 +80,7 @@ describe('<ContactBlock />', () => {
 
         setJestWindowWidth(Breakpoint.Mobile);
 
-        const { container } = renderComponent('en');
+        const { container } = renderComponent(Locale.En);
 
         expect(screen.queryByText(textsEn.contactMe1)).not.toBeInTheDocument();
         expect(screen.queryByText(textsEn.contactMe2)).not.toBeInTheDocument();

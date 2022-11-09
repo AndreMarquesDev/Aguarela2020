@@ -8,7 +8,7 @@ import {
     contactBlockSectionDataTestId,
     menuIconButtonDataTestId,
 } from '../../../utils/dataTestIds';
-import { Locale } from '../../../utils/locales';
+import { Locale } from '../../../types/Locale';
 import { urls } from '../../utils/selectors';
 import { getLocalizedTexts } from '../../utils/getTexts';
 import { Viewport } from '../../utils/variables';

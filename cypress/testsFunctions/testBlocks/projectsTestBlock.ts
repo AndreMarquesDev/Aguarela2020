@@ -1,4 +1,4 @@
-import { Locale } from '../../../utils/locales';
+import { Locale } from '../../../types/Locale';
 import { brandsListTest } from '../brandsListTest';
 import { footerTest } from '../footerTest';
 import { letsWorkSectionTest } from '../letsWorkSectionTest';

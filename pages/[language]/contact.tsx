@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { Layout } from '../../components/Layout/Layout';
 import { NavLinksContext, NavLinksContextProps } from '../../components/context/NavLinksContext';
 import { getCurrentLanguagetexts } from '../../utils/generic';
-import { Locale } from '../../utils/locales';
+import { Locale } from '../../types/Locale';
 import { ContactBlock } from '../../components/ContactBlock/ContactBlock';
 import { ContactForm } from '../../components/ContactForm/ContactForm';
 

@@ -2,7 +2,7 @@
 import React, { ReactNode } from 'react';
 import { NavLinksContext } from '../../components/context/NavLinksContext';
 import { TextsContext } from '../../components/context/TextsContext';
-import { Locale } from '../locales';
+import { Locale } from '../../types/Locale';
 import { textsEn, textsPt } from '../texts';
 
 interface MockProvidersProps {
@@ -14,7 +14,7 @@ interface MockProvidersProps {
 }
 
 export const MockProviders = ({
-    language = 'pt',
+    language = Locale.Pt,
     isMenuOpen = false,
     toggleMenu = jest.fn(),
     setNavHeight = undefined,
@@ -23,7 +23,7 @@ export const MockProviders = ({
     return (
         <TextsContext.Provider
             value={{
-                texts: language === 'pt' ? textsPt : textsEn,
+                texts: language === Locale.Pt ? textsPt : textsEn,
             }}
         >
             <NavLinksContext.Provider value={{ isMenuOpen, toggleMenu, setNavHeight }}>

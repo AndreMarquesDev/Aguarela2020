@@ -4,9 +4,9 @@ import { render, RenderResult, screen } from '@testing-library/react';
 import { BrandsList } from './BrandsList';
 import { textsEn, textsPt } from '../../utils/texts';
 import { MockProviders } from '../../utils/jest/MockProviders';
-import { Locale } from '../../utils/locales';
+import { Locale } from '../../types/Locale';
 
-const renderComponent = (language: Locale = 'pt'): RenderResult => {
+const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
     return render(
         <MockProviders language={language}>
             <BrandsList />
@@ -24,7 +24,7 @@ describe('<BrandsList />', () => {
     });
 
     test('renders properly in English', () => {
-        const { container } = renderComponent('en');
+        const { container } = renderComponent(Locale.En);
 
         expect(screen.getByText(textsEn.myNetwork)).toBeInTheDocument();
 

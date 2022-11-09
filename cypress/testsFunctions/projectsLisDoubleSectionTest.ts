@@ -3,7 +3,7 @@ import {
     projectItemTouchDivDataTestId,
     nukaCarouselNextButtonDataTestId,
 } from '../../utils/dataTestIds';
-import { Locale } from '../../utils/locales';
+import { Locale } from '../../types/Locale';
 import {
     tjelaInstagramUrl,
     tasteOfIndiaInstagramUrl,

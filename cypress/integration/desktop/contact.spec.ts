@@ -1,10 +1,10 @@
-import { Locale } from '../../../utils/locales';
+import { Locale } from '../../../types/Locale';
 import { contactPageTestBlock } from '../../testsFunctions/testBlocks/contactPageTestBlock';
 import { urls } from '../../utils/selectors';
 import { defaultViewportWidth, defaultViewportHeight, Viewport } from '../../utils/variables';
 
-const locale: Locale = 'pt';
-const otherLocale: Locale = 'en';
+const locale: Locale = Locale.Pt;
+const otherLocale: Locale = Locale.En;
 const pageBeingTested = urls.pt.contact;
 
 describe('contact page mobile', () => {

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter, NextRouter } from 'next/router';
 import { getInitialLocale, getLangFromUrl } from 'multilingual-url/lib';
-import { defaultLocale, locales } from '../../utils/locales';
+import { defaultLocale, locales } from '../../constants/locales';
 import { Page } from '../../utils/pages';
 
 const IndexPage = (): JSX.Element => {

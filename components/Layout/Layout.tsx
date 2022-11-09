@@ -5,7 +5,7 @@ import { Header } from '../Header/Header';
 import { TextsContext, TextsContextProps } from '../context/TextsContext';
 import { textsEn, textsPt } from '../../utils/texts';
 import { Footer } from '../Footer/Footer';
-import { Locale } from '../../utils/locales';
+import { Locale } from '../../types/Locale';
 import { NavLinksContext } from '../context/NavLinksContext';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 
@@ -18,7 +18,7 @@ export const Layout = ({ children }: LayoutProps): JSX.Element => {
     const { isMenuOpen } = useContext(NavLinksContext);
 
     const currentLanguage = query.language?.toString() as Locale;
-    const texts = currentLanguage === 'pt' ? textsPt : textsEn;
+    const texts = currentLanguage === Locale.Pt ? textsPt : textsEn;
 
     const windowSize = useWindowSize();
     const isDesktop = windowSize.width > Breakpoint.Tablet;

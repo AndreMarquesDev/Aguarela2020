@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import React, { useContext } from 'react';
 import { contactBlockSectionDataTestId } from '../../utils/dataTestIds';
-import { Locale } from '../../utils/locales';
+import { Locale } from '../../types/Locale';
 import { TextsContext } from '../context/TextsContext';
 import { TextShadowBlock } from '../TextShadowBlock/TextShadowBlock';
 

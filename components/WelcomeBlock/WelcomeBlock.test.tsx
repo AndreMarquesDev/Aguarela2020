@@ -7,7 +7,7 @@ import { textsPt, textsEn } from '../../utils/texts';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { Breakpoint } from '../../utils/useWindowSize';
 import { MockProviders } from '../../utils/jest/MockProviders';
-import { Locale } from '../../utils/locales';
+import { Locale } from '../../types/Locale';
 
 // @ts-ignore
 nextRouter.useRouter = jest.fn(() => ({
@@ -16,7 +16,7 @@ nextRouter.useRouter = jest.fn(() => ({
     },
 }));
 
-const renderComponent = (language: Locale = 'pt'): RenderResult => {
+const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
     return render(
         <MockProviders language={language}>
             <WelcomeBlock />
@@ -46,7 +46,7 @@ describe('<WelcomeBlock />', () => {
     });
 
     test('renders properly in English', () => {
-        const { container } = renderComponent('en');
+        const { container } = renderComponent(Locale.En);
 
         const title1 = screen.getByText(textsEn.welcome1);
         const title2 = screen.getByText(textsEn.welcome2);
@@ -86,7 +86,7 @@ describe('<WelcomeBlock />', () => {
 
         setJestWindowWidth(Breakpoint.Mobile);
 
-        renderComponent('en');
+        renderComponent(Locale.En);
 
         const titleMobile = screen.getByText(
             `${textsEn.welcome1}${textsEn.welcome2}${textsEn.welcome3}`

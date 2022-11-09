@@ -4,9 +4,9 @@ import { render, RenderResult, screen } from '@testing-library/react';
 import { Workflow } from './Workflow';
 import { textsEn, textsPt } from '../../utils/texts';
 import { MockProviders } from '../../utils/jest/MockProviders';
-import { Locale } from '../../utils/locales';
+import { Locale } from '../../types/Locale';
 
-const renderComponent = (language: Locale = 'pt'): RenderResult => {
+const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
     return render(
         <MockProviders language={language}>
             <Workflow />
@@ -38,7 +38,7 @@ describe('<Workflow />', () => {
     });
 
     test('renders properly in English', () => {
-        const { container } = renderComponent('en');
+        const { container } = renderComponent(Locale.En);
 
         expect(screen.getByText(textsEn.workflow)).toBeInTheDocument();
         expect(screen.getByText(textsEn.defineTarget)).toBeInTheDocument();

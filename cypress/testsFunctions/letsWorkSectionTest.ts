@@ -1,5 +1,5 @@
 import { contactBlockSectionDataTestId, letsWorkSectionDataTestId } from '../../utils/dataTestIds';
-import { Locale } from '../../utils/locales';
+import { Locale } from '../../types/Locale';
 import { getLocalizedTexts } from '../utils/getTexts';
 import { urls } from '../utils/selectors';
 import { Viewport } from '../utils/variables';

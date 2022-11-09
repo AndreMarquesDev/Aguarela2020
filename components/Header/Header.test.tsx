@@ -6,10 +6,11 @@ import { Header, HeaderProps } from './Header';
 import { Breakpoint } from '../../utils/useWindowSize';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { MockProviders } from '../../utils/jest/MockProviders';
+import { Locale } from '../../types/Locale';
 
 const baseProps: HeaderProps = {
     currentRoute: 'services',
-    language: 'pt',
+    language: Locale.Pt,
 };
 
 const mockSetNavHeight = jest.fn();

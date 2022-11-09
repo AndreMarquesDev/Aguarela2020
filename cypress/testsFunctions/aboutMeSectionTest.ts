@@ -1,5 +1,5 @@
+import { Locale } from '../../types/Locale';
 import { aboutMeSectionDataTestId } from '../../utils/dataTestIds';
-import { Locale } from '../../utils/locales';
 import { catarinaSantiagoInstagramUrl } from '../../utils/urls';
 import { getLocalizedTexts } from '../utils/getTexts';
 import { Viewport } from '../utils/variables';

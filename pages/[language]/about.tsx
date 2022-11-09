@@ -7,8 +7,8 @@ import { getCurrentLanguagetexts } from '../../utils/generic';
 import { NavLinksContext, NavLinksContextProps } from '../../components/context/NavLinksContext';
 import { BrandsList } from '../../components/BrandsList/BrandsList';
 import { LetsWork } from '../../components/LetsWork/LetsWork';
-import { Locale } from '../../utils/locales';
 import { AboutMe } from '../../components/AboutMe/AboutMe';
+import { Locale } from '../../types/Locale';
 
 const AboutPage: NextPage = () => {
     const { query } = useRouter();

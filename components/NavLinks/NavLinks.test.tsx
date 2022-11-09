@@ -4,11 +4,11 @@ import { render, screen, RenderResult } from '@testing-library/react';
 import { NavLinks, NavLinksProps } from './NavLinks';
 import { textsEn, textsPt } from '../../utils/texts';
 import { MockProviders } from '../../utils/jest/MockProviders';
-import { Locale } from '../../utils/locales';
+import { Locale } from '../../types/Locale';
 
 const baseProps: NavLinksProps = {
     currentRoute: 'services',
-    language: 'pt',
+    language: Locale.Pt,
     isMobile: false,
     isMenuOpen: false,
 };
@@ -16,7 +16,7 @@ const baseProps: NavLinksProps = {
 const renderComponent = (
     newProps?: Partial<NavLinksProps>,
     isMenuOpen = baseProps.isMenuOpen,
-    language: Locale = 'pt'
+    language: Locale = Locale.Pt
 ): RenderResult => {
     return render(
         <MockProviders isMenuOpen={isMenuOpen} language={language}>
@@ -50,7 +50,7 @@ describe('<NavLinks />', () => {
     });
 
     test('renders properly when language is en', () => {
-        const { container } = renderComponent({ language: 'en' }, false, 'en');
+        const { container } = renderComponent({ language: Locale.En }, false, Locale.En);
 
         const aboutLink = screen.getByText(textsEn.about);
         const projectsLink = screen.getByText(textsEn.projects);

@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { pagesMap } from '../../utils/pages';
 import { TextsContext } from '../context/TextsContext';
 import { LanguageButton } from '../LanguageButton/LanguageButton';
-import { Locale } from '../../utils/locales';
+import { Locale } from '../../types/Locale';
 
 export interface NavLinksProps {
     currentRoute: string;

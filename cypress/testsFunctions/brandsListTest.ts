@@ -1,5 +1,5 @@
 import { brandsListSectionDataTestId } from '../../utils/dataTestIds';
-import { Locale } from '../../utils/locales';
+import { Locale } from '../../types/Locale';
 import {
     avocadoInstagramUrl,
     pernodWebsiteUrl,

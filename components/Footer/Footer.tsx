@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FaInstagram, FaFacebookF, FaEnvelope } from 'react-icons/fa';
 import { TextsContext } from '../context/TextsContext';
 import { Page } from '../../utils/pages';
-import { Locale } from '../../utils/locales';
+import { Locale } from '../../types/Locale';
 import { footerDataTestId } from '../../utils/dataTestIds';
 import {
     aguarelaDigitalFacebookUrl,
