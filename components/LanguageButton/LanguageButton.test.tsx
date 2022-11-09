@@ -4,7 +4,7 @@ import { render, RenderResult, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import * as nextRouter from 'next/router';
 import { LanguageButton } from './LanguageButton';
-import { NavLinksContext } from '../context/NavLinksContext';
+import { MockProviders } from '../../utils/jest/MockProviders';
 
 // @ts-ignore
 nextRouter.useRouter = jest.fn(() => ({
@@ -18,9 +18,9 @@ const mockToggleMenu = jest.fn();
 
 const renderComponent = (isMenuOpen = true): RenderResult => {
     return render(
-        <NavLinksContext.Provider value={{ isMenuOpen, toggleMenu: mockToggleMenu }}>
+        <MockProviders isMenuOpen={isMenuOpen} toggleMenu={mockToggleMenu}>
             <LanguageButton />
-        </NavLinksContext.Provider>
+        </MockProviders>
     );
 };
 

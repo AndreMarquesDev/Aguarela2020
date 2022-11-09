@@ -5,13 +5,14 @@ import { AboutMe } from './AboutMe';
 import { textsEn, textsPt } from '../../utils/texts';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { Breakpoint } from '../../utils/useWindowSize';
-import { MockTextsContext } from '../../utils/jest/MockTextsContext';
+import { MockProviders } from '../../utils/jest/MockProviders';
+import { Locale } from '../../utils/locales';
 
-const renderComponent = (isEnglish = false): RenderResult => {
+const renderComponent = (language: Locale = 'pt'): RenderResult => {
     return render(
-        <MockTextsContext isEnglish={isEnglish}>
+        <MockProviders language={language}>
             <AboutMe />
-        </MockTextsContext>
+        </MockProviders>
     );
 };
 
@@ -31,7 +32,7 @@ describe('<AboutMe />', () => {
     });
 
     test('renders properly in English', () => {
-        const { container } = renderComponent(true);
+        const { container } = renderComponent('en');
 
         expect(screen.getByText(textsEn.about)).toBeInTheDocument();
         expect(screen.getByText(textsEn.hiMyNameIs)).toBeInTheDocument();

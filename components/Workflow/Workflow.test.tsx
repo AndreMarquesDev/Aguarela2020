@@ -3,13 +3,14 @@ import React from 'react';
 import { render, RenderResult, screen } from '@testing-library/react';
 import { Workflow } from './Workflow';
 import { textsEn, textsPt } from '../../utils/texts';
-import { MockTextsContext } from '../../utils/jest/MockTextsContext';
+import { MockProviders } from '../../utils/jest/MockProviders';
+import { Locale } from '../../utils/locales';
 
-const renderComponent = (isEnglish = false): RenderResult => {
+const renderComponent = (language: Locale = 'pt'): RenderResult => {
     return render(
-        <MockTextsContext isEnglish={isEnglish}>
+        <MockProviders language={language}>
             <Workflow />
-        </MockTextsContext>
+        </MockProviders>
     );
 };
 
@@ -37,7 +38,7 @@ describe('<Workflow />', () => {
     });
 
     test('renders properly in English', () => {
-        const { container } = renderComponent(true);
+        const { container } = renderComponent('en');
 
         expect(screen.getByText(textsEn.workflow)).toBeInTheDocument();
         expect(screen.getByText(textsEn.defineTarget)).toBeInTheDocument();

@@ -17,13 +17,14 @@ import {
     contactFormErrorMessageHiddenDataTestId,
     contactFormErrorMessageVisibleDataTestId,
 } from '../../utils/dataTestIds';
-import { MockTextsContext } from '../../utils/jest/MockTextsContext';
+import { MockProviders } from '../../utils/jest/MockProviders';
+import { Locale } from '../../utils/locales';
 
-const renderComponent = (isEnglish = false): RenderResult => {
+const renderComponent = (language: Locale = 'pt'): RenderResult => {
     return render(
-        <MockTextsContext isEnglish={isEnglish}>
+        <MockProviders language={language}>
             <ContactForm />
-        </MockTextsContext>
+        </MockProviders>
     );
 };
 
@@ -40,7 +41,7 @@ describe('<ContactForm />', () => {
     });
 
     test('renders properly in English', () => {
-        renderComponent(true);
+        renderComponent('en');
 
         const hiddenErrorMessages = screen.getAllByTestId(contactFormErrorMessageHiddenDataTestId);
 

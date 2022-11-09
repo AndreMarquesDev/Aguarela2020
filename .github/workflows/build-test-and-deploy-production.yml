@@ -299,7 +299,7 @@ jobs:
         cypress-firefox-mobile,
         cypress-edge-mobile,
       ]
-    if: github.ref == 'refs/heads/master' && github.event.schedule != '0 14 * * 3' && !contains(github.event.head_commit.message, 'chore')
+    if: github.ref == 'refs/heads/master' && github.event.schedule != '0 14 * * 3' && !contains(github.event.head_commit.message, 'chore') && !contains(github.event.head_commit.message, 'test') && !contains(github.event.head_commit.message, 'docs')
     steps:
       - uses: actions/checkout@v3
       - name: Deploy to Vercel

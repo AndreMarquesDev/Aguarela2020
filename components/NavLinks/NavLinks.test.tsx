@@ -2,9 +2,9 @@ import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen, RenderResult } from '@testing-library/react';
 import { NavLinks, NavLinksProps } from './NavLinks';
-import { NavLinksContext } from '../context/NavLinksContext';
 import { textsEn, textsPt } from '../../utils/texts';
-import { TextsContext } from '../context/TextsContext';
+import { MockProviders } from '../../utils/jest/MockProviders';
+import { Locale } from '../../utils/locales';
 
 const baseProps: NavLinksProps = {
     currentRoute: 'services',
@@ -13,13 +13,15 @@ const baseProps: NavLinksProps = {
     isMenuOpen: false,
 };
 
-const renderComponent = (newProps?: Partial<NavLinksProps>): RenderResult => {
+const renderComponent = (
+    newProps?: Partial<NavLinksProps>,
+    isMenuOpen = baseProps.isMenuOpen,
+    language: Locale = 'pt'
+): RenderResult => {
     return render(
-        <NavLinksContext.Provider
-            value={{ isMenuOpen: baseProps.isMenuOpen, toggleMenu: jest.fn() }}
-        >
+        <MockProviders isMenuOpen={isMenuOpen} language={language}>
             <NavLinks {...baseProps} {...newProps} />
-        </NavLinksContext.Provider>
+        </MockProviders>
     );
 };
 
@@ -48,19 +50,7 @@ describe('<NavLinks />', () => {
     });
 
     test('renders properly when language is en', () => {
-        const { container } = render(
-            <TextsContext.Provider
-                value={{
-                    texts: textsEn,
-                }}
-            >
-                <NavLinksContext.Provider
-                    value={{ isMenuOpen: baseProps.isMenuOpen, toggleMenu: jest.fn() }}
-                >
-                    <NavLinks {...baseProps} language="en" />
-                </NavLinksContext.Provider>
-            </TextsContext.Provider>
-        );
+        const { container } = renderComponent({ language: 'en' }, false, 'en');
 
         const aboutLink = screen.getByText(textsEn.about);
         const projectsLink = screen.getByText(textsEn.projects);
@@ -87,7 +77,7 @@ describe('<NavLinks />', () => {
     });
 
     test('renders properly when the menu is open', () => {
-        const { container } = renderComponent({ isMenuOpen: true, isMobile: true });
+        const { container } = renderComponent({ isMenuOpen: true, isMobile: true }, true);
 
         expect(container).toMatchSnapshot();
     });

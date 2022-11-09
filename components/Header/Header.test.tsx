@@ -3,9 +3,9 @@ import React from 'react';
 import { render, RenderResult, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Header, HeaderProps } from './Header';
-import { NavLinksContext } from '../context/NavLinksContext';
 import { Breakpoint } from '../../utils/useWindowSize';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
+import { MockProviders } from '../../utils/jest/MockProviders';
 
 const baseProps: HeaderProps = {
     currentRoute: 'services',
@@ -15,16 +15,11 @@ const baseProps: HeaderProps = {
 const mockSetNavHeight = jest.fn();
 const mockToggleMenu = jest.fn();
 
-const renderComponent = (
-    setNavHeight: jest.Mock,
-    newProps?: Partial<HeaderProps>
-): RenderResult => {
+const renderComponent = (setNavHeight: jest.Mock): RenderResult => {
     return render(
-        <NavLinksContext.Provider
-            value={{ isMenuOpen: false, toggleMenu: mockToggleMenu, setNavHeight }}
-        >
-            <Header {...baseProps} {...newProps} />
-        </NavLinksContext.Provider>
+        <MockProviders setNavHeight={setNavHeight} toggleMenu={mockToggleMenu}>
+            <Header {...baseProps} />
+        </MockProviders>
     );
 };
 

@@ -3,17 +3,21 @@ import React from 'react';
 import { render, RenderResult, screen } from '@testing-library/react';
 import { Footer, FooterProps } from './Footer';
 import { textsEn, textsPt } from '../../utils/texts';
-import { MockTextsContext } from '../../utils/jest/MockTextsContext';
+import { MockProviders } from '../../utils/jest/MockProviders';
+import { Locale } from '../../utils/locales';
 
 const baseProps: FooterProps = {
     language: 'pt',
 };
 
-const renderComponent = (newProps?: Partial<FooterProps>, isEnglish = false): RenderResult => {
+const renderComponent = (
+    newProps?: Partial<FooterProps>,
+    language: Locale = 'pt'
+): RenderResult => {
     return render(
-        <MockTextsContext isEnglish={isEnglish}>
+        <MockProviders language={language}>
             <Footer {...baseProps} {...newProps} />
-        </MockTextsContext>
+        </MockProviders>
     );
 };
 
@@ -27,7 +31,7 @@ describe('<Footer />', () => {
     });
 
     test('renders properly in English', () => {
-        const { container } = renderComponent({ language: 'en' }, true);
+        const { container } = renderComponent({ language: 'en' }, 'en');
 
         expect(screen.getByText(textsEn.footerInfo)).toBeInTheDocument();
 

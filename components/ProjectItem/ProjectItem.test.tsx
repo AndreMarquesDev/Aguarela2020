@@ -5,7 +5,8 @@ import { ProjectItem, ProjectItemProps } from './ProjectItem';
 import { textsEn, textsPt } from '../../utils/texts';
 import { projectItemTouchDivDataTestId } from '../../utils/dataTestIds';
 import { tjelaInstagramUrl } from '../../utils/urls';
-import { MockTextsContext } from '../../utils/jest/MockTextsContext';
+import { MockProviders } from '../../utils/jest/MockProviders';
+import { Locale } from '../../utils/locales';
 
 const baseProps: ProjectItemProps = {
     brandLink: tjelaInstagramUrl,
@@ -20,11 +21,14 @@ const baseProps: ProjectItemProps = {
     year: 2020,
 };
 
-const renderComponent = (newProps?: Partial<ProjectItemProps>, isEnglish = false): RenderResult => {
+const renderComponent = (
+    newProps?: Partial<ProjectItemProps>,
+    language: Locale = 'pt'
+): RenderResult => {
     return render(
-        <MockTextsContext isEnglish={isEnglish}>
+        <MockProviders language={language}>
             <ProjectItem {...baseProps} {...newProps} />
-        </MockTextsContext>
+        </MockProviders>
     );
 };
 
@@ -52,7 +56,7 @@ describe('<ProjectItem />', () => {
     test('renders properly in English', () => {
         const { container } = renderComponent(
             { description: textsEn.socialMediaManagementAndContentCreation },
-            true
+            'en'
         );
 
         const year = screen.getByText(`${baseProps.year} - ${textsEn.present}`);

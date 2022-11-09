@@ -9,13 +9,14 @@ import {
     servicesBlockItemWrapperDataTestId,
     servicesBlockItemCarouselDataTestId,
 } from '../../utils/dataTestIds';
-import { MockTextsContext } from '../../utils/jest/MockTextsContext';
+import { MockProviders } from '../../utils/jest/MockProviders';
+import { Locale } from '../../utils/locales';
 
-const renderComponent = (isEnglish = false): RenderResult => {
+const renderComponent = (language: Locale = 'pt'): RenderResult => {
     return render(
-        <MockTextsContext isEnglish={isEnglish}>
+        <MockProviders language={language}>
             <ServicesBlock />
-        </MockTextsContext>
+        </MockProviders>
     );
 };
 
@@ -67,7 +68,7 @@ describe('<ServicesBlock />', () => {
     });
 
     test('renders properly in English', () => {
-        const { container } = renderComponent(true);
+        const { container } = renderComponent('en');
 
         const title = screen.getByText(textsEn.services);
         const block1Title = screen.getByText(textsEn.design);

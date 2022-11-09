@@ -3,10 +3,10 @@ import React from 'react';
 import { render, screen, RenderResult } from '@testing-library/react';
 import * as nextRouter from 'next/router';
 import { Layout, LayoutProps } from './Layout';
-import { NavLinksContext } from '../context/NavLinksContext';
 import { Breakpoint } from '../../utils/useWindowSize';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { textsEn } from '../../utils/texts';
+import { MockProviders } from '../../utils/jest/MockProviders';
 
 // @ts-ignore
 nextRouter.useRouter = jest.fn(() => ({
@@ -24,11 +24,11 @@ const baseProps: LayoutProps = {
     ),
 };
 
-const renderComponent = (newProps?: Partial<LayoutProps>, isMenuOpen = false): RenderResult => {
+const renderComponent = (isMenuOpen = false): RenderResult => {
     return render(
-        <NavLinksContext.Provider value={{ isMenuOpen, toggleMenu: jest.fn() }}>
-            <Layout {...baseProps} {...newProps} />
-        </NavLinksContext.Provider>
+        <MockProviders isMenuOpen={isMenuOpen}>
+            <Layout {...baseProps} />
+        </MockProviders>
     );
 };
 
@@ -48,7 +48,7 @@ describe('<Layout />', () => {
     test('renders properly when the menu is open and the resolution is lower than desktop', () => {
         setJestWindowWidth(Breakpoint.Mobile);
 
-        const { container } = renderComponent({}, true);
+        const { container } = renderComponent(true);
 
         expect(container).toMatchSnapshot();
     });
