@@ -5,6 +5,8 @@ export const setJestWindowWidth = (breakpoint: Breakpoint): void => {
 
     if (breakpoint === Breakpoint.Mobile) {
         width = Breakpoint.Mobile - 1;
+    } else if (breakpoint === Breakpoint.Tablet) {
+        width = Breakpoint.Tablet - 1;
     } else if (breakpoint === Breakpoint.Phablet) {
         width = Breakpoint.Phablet - 1;
     } else {

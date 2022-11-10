@@ -48,13 +48,27 @@ describe('<ProjectsList />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly on mobile', () => {
-        setJestWindowWidth(Breakpoint.Mobile);
+    test('renders properly on tablet', () => {
+        setJestWindowWidth(Breakpoint.Tablet);
 
-        renderComponent();
+        const { container } = renderComponent();
 
         const noCarouselWrapper = screen.queryByTestId(projectsListNoCarouselDataTestId);
 
         expect(noCarouselWrapper).not.toBeInTheDocument();
+
+        expect(container).toMatchSnapshot();
+    });
+
+    test('renders properly on mobile', () => {
+        setJestWindowWidth(Breakpoint.Mobile);
+
+        const { container } = renderComponent();
+
+        const noCarouselWrapper = screen.queryByTestId(projectsListNoCarouselDataTestId);
+
+        expect(noCarouselWrapper).not.toBeInTheDocument();
+
+        expect(container).toMatchSnapshot();
     });
 });

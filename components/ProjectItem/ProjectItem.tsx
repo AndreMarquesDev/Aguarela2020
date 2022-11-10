@@ -37,7 +37,7 @@ export const ProjectItem = ({
 
     const handleTouch = (event: TouchEvent<HTMLElement>): void => {
         const target = event.currentTarget;
-        const timesTouched = parseInt(target.dataset.timesTouched || '');
+        const timesTouched = parseInt(target.dataset.timesTouched as string);
 
         if (timesTouched === 0) {
             resetTimesTouchedAttribute();

@@ -71,15 +71,31 @@ describe('<SkillsBlock />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly on mobile', () => {
-        setJestWindowWidth(Breakpoint.Mobile);
+    test('renders properly on tablet', () => {
+        setJestWindowWidth(Breakpoint.Tablet);
 
-        renderComponent();
+        const { container } = renderComponent();
 
         const carouselItemWrapper = screen.getAllByTestId(skillsBlockItemCarouselDataTestId);
         const numberOfBlocks = screen.queryByTestId(skillsBlockItemWrapperDataTestId);
 
         expect(carouselItemWrapper.length).toBe(6);
         expect(numberOfBlocks).not.toBeInTheDocument();
+
+        expect(container).toMatchSnapshot();
+    });
+
+    test('renders properly on mobile', () => {
+        setJestWindowWidth(Breakpoint.Mobile);
+
+        const { container } = renderComponent();
+
+        const carouselItemWrapper = screen.getAllByTestId(skillsBlockItemCarouselDataTestId);
+        const numberOfBlocks = screen.queryByTestId(skillsBlockItemWrapperDataTestId);
+
+        expect(carouselItemWrapper.length).toBe(6);
+        expect(numberOfBlocks).not.toBeInTheDocument();
+
+        expect(container).toMatchSnapshot();
     });
 });

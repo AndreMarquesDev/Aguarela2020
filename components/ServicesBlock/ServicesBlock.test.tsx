@@ -107,15 +107,31 @@ describe('<ServicesBlock />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly on mobile', () => {
-        setJestWindowWidth(Breakpoint.Mobile);
+    test('renders properly on tablet', () => {
+        setJestWindowWidth(Breakpoint.Tablet);
 
-        renderComponent();
+        const { container } = renderComponent();
 
         const carouselItemWrapper = screen.getAllByTestId(servicesBlockItemCarouselDataTestId);
         const numberOfBlocks = screen.queryByTestId(servicesBlockItemWrapperDataTestId);
 
         expect(carouselItemWrapper.length).toBe(3);
         expect(numberOfBlocks).not.toBeInTheDocument();
+
+        expect(container).toMatchSnapshot();
+    });
+
+    test('renders properly on mobile', () => {
+        setJestWindowWidth(Breakpoint.Mobile);
+
+        const { container } = renderComponent();
+
+        const carouselItemWrapper = screen.getAllByTestId(servicesBlockItemCarouselDataTestId);
+        const numberOfBlocks = screen.queryByTestId(servicesBlockItemWrapperDataTestId);
+
+        expect(carouselItemWrapper.length).toBe(3);
+        expect(numberOfBlocks).not.toBeInTheDocument();
+
+        expect(container).toMatchSnapshot();
     });
 });
