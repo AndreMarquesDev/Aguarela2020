@@ -162,6 +162,14 @@ jobs:
           name: cypress-diff-snapshots-firefox-desktop
           path: "**/*.diff.png"
 
+      - name: Retry on error
+        uses: nick-fields/retry@v2
+        with:
+          timeout_seconds: 15
+          max_attempts: 3
+          retry_on: error
+          command: echo('Retry')
+
   cypress-chrome-mobile:
     runs-on: ubuntu-latest
     timeout-minutes: 20
@@ -287,6 +295,14 @@ jobs:
           name: cypress-diff-snapshots-firefox-mobile
           path: "**/*.diff.png"
 
+      - name: Retry on error
+        uses: nick-fields/retry@v2
+        with:
+          timeout_seconds: 15
+          max_attempts: 3
+          retry_on: error
+          command: echo('Retry')
+
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 15
@@ -299,7 +315,7 @@ jobs:
         cypress-firefox-mobile,
         cypress-edge-mobile,
       ]
-    if: github.ref == 'refs/heads/master' && github.event.schedule != '0 14 * * 3' && !contains(github.event.head_commit.message, 'chore') && !contains(github.event.head_commit.message, 'test') && !contains(github.event.head_commit.message, 'docs')
+    if: github.ref == 'refs/heads/master' && github.event.schedule != '0 14 * * 3' && !contains(github.event.head_commit.message, 'chore') && !contains(github.event.head_commit.message, 'test') && !contains(github.event.head_commit.message, 'docs') && !contains(github.event.head_commit.message, 'ci')
     steps:
       - uses: actions/checkout@v3
       - name: Deploy to Vercel
