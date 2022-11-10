@@ -5,6 +5,11 @@ Aguarela Digital website
 [![build-test-and-deploy-production](https://github.com/AndreMarquesDev/Aguarela2020/actions/workflows/build-test-and-deploy-production.yml/badge.svg)](https://github.com/AndreMarquesDev/Aguarela2020/actions/workflows/build-test-and-deploy-production.yml)
 ![GitHub deployments](https://img.shields.io/github/deployments/AndreMarquesDev/Aguarela2020/production?label=vercel&logo=vercel&logoColor=white)
 
+![Coverage statements](utils/jest/coverageBadges/badge-statements.svg)
+![Coverage branches](utils/jest/coverageBadges/badge-branches.svg)
+![Coverage functions](utils/jest/coverageBadges/badge-functions.svg)
+![Coverage lines](utils/jest/coverageBadges/badge-lines.svg)
+
 ## About
 
 ### Technologies

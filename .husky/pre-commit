@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npx yarn test:generate:badge
+git add 'utils/jest/coverageBadges'
