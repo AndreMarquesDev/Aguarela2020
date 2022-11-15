@@ -5,8 +5,9 @@ import {
 import { Locale } from '../../types/Locale';
 import { getLocalizedTexts } from '../utils/getTexts';
 import { matchSnapshot } from './matchSnapshot';
+import { Viewport } from '../utils/variables';
 
-export const servicesSectionTest = (locale: Locale): void => {
+export const servicesSectionTest = (locale: Locale, viewport: Viewport): void => {
     const {
         services,
         design,
@@ -28,7 +29,7 @@ export const servicesSectionTest = (locale: Locale): void => {
 
     cy.getByText(servicesBlockSectionDataTestId, services).scrollIntoView();
 
-    matchSnapshot('services', locale);
+    matchSnapshot('services', locale, viewport);
 
     cy.getByText(servicesBlockSectionDataTestId, design);
     cy.isHidden(servicesBlockSectionDataTestId, `- ${webDesign}`);
@@ -57,5 +58,5 @@ export const servicesSectionTest = (locale: Locale): void => {
     cy.isVisible(servicesBlockSectionDataTestId, `- ${paidSearchCampaigns}`);
     cy.isVisible(servicesBlockSectionDataTestId, `- ${opinionPlatformsManagement}`);
 
-    matchSnapshot('service_backface', locale);
+    matchSnapshot('service_backface', locale, viewport);
 };

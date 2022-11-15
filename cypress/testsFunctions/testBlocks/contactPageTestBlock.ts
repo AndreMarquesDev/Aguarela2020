@@ -15,7 +15,7 @@ export const contactPageTestBlock = (
     it('loads', () => {
         cy.urlIsEqualTo(pageBeingTested);
 
-        matchSnapshot('contact_loads', locale);
+        matchSnapshot('contact_loads', locale, viewport);
     });
 
     it('renders the header and navigates properly', () => {
@@ -23,14 +23,14 @@ export const contactPageTestBlock = (
     });
 
     it('renders the contact block', () => {
-        contactBlockTest(locale);
+        contactBlockTest(locale, viewport);
     });
 
     it('renders the contact form', () => {
-        contactFormTest(locale);
+        contactFormTest(locale, viewport);
     });
 
     it('renders the footer', () => {
-        footerTest(locale, pageBeingTested);
+        footerTest(locale, pageBeingTested, viewport);
     });
 };

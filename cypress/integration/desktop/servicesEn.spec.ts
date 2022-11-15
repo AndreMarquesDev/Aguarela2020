@@ -1,7 +1,7 @@
 import { Locale } from '../../../types/Locale';
 import { servicesTestBlock } from '../../testsFunctions/testBlocks/servicesTestBlock';
 import { urls } from '../../utils/selectors';
-import { defaultViewportWidth, defaultViewportHeight } from '../../utils/variables';
+import { desktopViewportWidth, desktopViewportHeight, Viewport } from '../../utils/variables';
 
 const locale: Locale = Locale.En;
 const otherLocale: Locale = Locale.Pt;
@@ -11,8 +11,8 @@ describe('services page in English', () => {
     beforeEach(() => {
         cy.visit(pageBeingTested);
 
-        cy.viewport(defaultViewportWidth, defaultViewportHeight);
+        cy.viewport(desktopViewportWidth, desktopViewportHeight);
     });
 
-    servicesTestBlock(pageBeingTested, locale, otherLocale);
+    servicesTestBlock(pageBeingTested, locale, otherLocale, Viewport.desktop);
 });

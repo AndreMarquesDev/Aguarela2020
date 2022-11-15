@@ -30,10 +30,11 @@ import { getLocalizedTexts } from '../utils/getTexts';
 import {
     projectsListDoubleCarouselImagesWidth,
     projectsListDoubleCarouselImagesHeight,
+    Viewport,
 } from '../utils/variables';
 import { matchSnapshot } from './matchSnapshot';
 
-export const projectsLisDoubleSectionTest = (locale: Locale): void => {
+export const projectsLisDoubleSectionTest = (locale: Locale, viewport: Viewport): void => {
     const {
         projects,
         socialMediaAndContentCreation,
@@ -49,7 +50,7 @@ export const projectsLisDoubleSectionTest = (locale: Locale): void => {
 
     cy.getByText(container, projects).scrollIntoView();
 
-    matchSnapshot('projectsListDouble', locale);
+    matchSnapshot('projectsListDouble', locale, viewport);
 
     cy.getByDataTestId(container).find('.slide-visible').should('have.length', 3);
     cy.getByDataTestId(container)
@@ -188,7 +189,7 @@ export const projectsLisDoubleSectionTest = (locale: Locale): void => {
 
     cy.getByText(container, projects).scrollIntoView();
 
-    matchSnapshot('projectsListDouble_slide_4_to_6', locale);
+    matchSnapshot('projectsListDouble_slide_4_to_6', locale, viewport);
 
     cy.getByDataTestId(nukaCarouselNextButtonDataTestId).click();
 
@@ -258,7 +259,7 @@ export const projectsLisDoubleSectionTest = (locale: Locale): void => {
 
     cy.getByText(container, projects).scrollIntoView();
 
-    matchSnapshot('projectsListDouble_slide_7_to_9', locale);
+    matchSnapshot('projectsListDouble_slide_7_to_9', locale, viewport);
 
     cy.getByDataTestId(nukaCarouselNextButtonDataTestId).click();
 
@@ -284,7 +285,7 @@ export const projectsLisDoubleSectionTest = (locale: Locale): void => {
 
     cy.getByText(container, projects).scrollIntoView();
 
-    matchSnapshot('projectsListDouble_slide_10_to_11', locale);
+    matchSnapshot('projectsListDouble_slide_10_to_11', locale, viewport);
 
     cy.getByDataTestId(nukaCarouselNextButtonDataTestId).click();
 };

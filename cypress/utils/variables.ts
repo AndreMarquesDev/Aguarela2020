@@ -7,14 +7,13 @@ const scrollbarWidth = 17;
 const navHeight = 160;
 const navHeightMobile = 100;
 
-// TODO rename to desktopViewportWidth
-export const defaultViewportWidth = 1920;
-export const defaultViewportHeight = 1080;
+export const desktopViewportWidth = 1920;
+export const desktopViewportHeight = 1080;
 export const mobileViewportWidth = 390;
 export const mobileViewportHeight = 800;
 
-export const bannerWidth = defaultViewportWidth - scrollbarWidth;
-export const bannerHeight = defaultViewportHeight * 0.9 - navHeight;
+export const bannerWidth = desktopViewportWidth - scrollbarWidth;
+export const bannerHeight = desktopViewportHeight * 0.9 - navHeight;
 export const bannerWidthMobile = mobileViewportWidth - scrollbarWidth;
 export const bannerHeightMobile = mobileViewportHeight * 0.5 - navHeightMobile;
 

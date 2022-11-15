@@ -18,14 +18,13 @@ const defaultMatchImageSnapshotOptions = {
 export const matchSnapshot = (
     snapshotName: string,
     locale: Locale,
-    viewport: Viewport = Viewport.desktop,
+    viewport: Viewport,
     failureThreshold = defaultFailureThreshold
 ): void => {
     const isFirefox = Cypress.isBrowser('firefox');
     const firefoxSuffix = isFirefox ? '_firefox' : '';
-    // TODO add desktop suffix
-    const mobileSuffix = viewport === Viewport.mobile ? '_mobile' : '';
-    const snapshotFileName = `${snapshotName}_${locale}${mobileSuffix}${firefoxSuffix}`;
+    const viewportSuffix = viewport === Viewport.mobile ? '_mobile' : '_desktop';
+    const snapshotFileName = `${snapshotName}_${locale}${viewportSuffix}${firefoxSuffix}`;
 
     // eslint-disable-next-line cypress/no-unnecessary-waiting
     cy.wait(1000);

@@ -10,11 +10,7 @@ import { urls } from '../utils/selectors';
 import { Viewport } from '../utils/variables';
 import { matchSnapshot } from './matchSnapshot';
 
-export const footerTest = (
-    locale: Locale,
-    pageBeingTested: string,
-    viewport: Viewport = Viewport.desktop
-): void => {
+export const footerTest = (locale: Locale, pageBeingTested: string, viewport: Viewport): void => {
     const { footerInfo } = getLocalizedTexts(locale);
 
     cy.getByText(footerDataTestId, `${footerInfo} André Marques`).scrollIntoView();

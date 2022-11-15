@@ -1,5 +1,5 @@
 import { Locale } from '../../../types/Locale';
-import { defaultViewportWidth, defaultViewportHeight, Viewport } from '../../utils/variables';
+import { desktopViewportWidth, desktopViewportHeight, Viewport } from '../../utils/variables';
 import { urls } from '../../utils/selectors';
 import { homepageTestBlock } from '../../testsFunctions/testBlocks/homepageTestBlock';
 
@@ -11,7 +11,7 @@ describe('homepage', () => {
     beforeEach(() => {
         cy.visit('/');
 
-        cy.viewport(defaultViewportWidth, defaultViewportHeight);
+        cy.viewport(desktopViewportWidth, desktopViewportHeight);
 
         cy.document().its('fonts').invoke('check', '900 150rem Montserrat').should('be.true');
     });

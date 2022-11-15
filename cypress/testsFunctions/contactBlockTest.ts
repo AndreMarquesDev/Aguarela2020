@@ -3,8 +3,9 @@ import { Locale } from '../../types/Locale';
 import { aguarelaDigitalEmail } from '../../utils/urls';
 import { getLocalizedTexts } from '../utils/getTexts';
 import { matchSnapshot } from './matchSnapshot';
+import { Viewport } from '../utils/variables';
 
-export const contactBlockTest = (locale: Locale): void => {
+export const contactBlockTest = (locale: Locale, viewport: Viewport): void => {
     const {
         contactMe1,
         contactMe2,
@@ -23,5 +24,5 @@ export const contactBlockTest = (locale: Locale): void => {
     cy.getByText(contactBlockSectionDataTestId, aguarelaDigitalEmail);
     cy.getByHref(contactBlockSectionDataTestId, `mailto:${aguarelaDigitalEmail}`);
 
-    matchSnapshot('contactBlock', locale);
+    matchSnapshot('contactBlock', locale, viewport);
 };
