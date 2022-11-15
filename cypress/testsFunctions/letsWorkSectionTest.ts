@@ -6,11 +6,12 @@ import { Viewport } from '../utils/variables';
 import { matchSnapshot } from './matchSnapshot';
 
 export const letsWorkSectionTest = (locale: Locale, viewport: Viewport): void => {
+    const isFirefox = Cypress.isBrowser('firefox');
     const { letsWork, letsWorkDescription, contact } = getLocalizedTexts(locale);
 
     cy.getByText(letsWorkSectionDataTestId, letsWork).scrollIntoView();
 
-    matchSnapshot('letsWork', locale, viewport);
+    matchSnapshot('letsWork', locale, viewport, isFirefox);
 
     cy.getByText(letsWorkSectionDataTestId, letsWorkDescription);
 

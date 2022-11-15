@@ -11,11 +11,12 @@ import { Viewport } from '../utils/variables';
 import { matchSnapshot } from './matchSnapshot';
 
 export const footerTest = (locale: Locale, pageBeingTested: string, viewport: Viewport): void => {
+    const isFirefox = Cypress.isBrowser('firefox');
     const { footerInfo } = getLocalizedTexts(locale);
 
     cy.getByText(footerDataTestId, `${footerInfo} André Marques`).scrollIntoView();
 
-    matchSnapshot('footer', locale, viewport);
+    matchSnapshot('footer', locale, viewport, isFirefox);
 
     cy.getByHref(footerDataTestId, andreMarquesDevWebsiteUrl);
     cy.getByHref(footerDataTestId, aguarelaDigitalInstagramUrl);

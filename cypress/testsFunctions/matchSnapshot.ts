@@ -1,16 +1,14 @@
 import { Locale } from '../../types/Locale';
 import { Viewport } from '../utils/variables';
 
-export const defaultFailureThreshold = 0.001;
-const firefoxFailureThreshold = 0.003;
+const defaultFailureThreshold = 0.001;
+const increasedFailureThreshold = 0.009;
+const defaultPixelThreshold = 0.05;
+const increasedPixelThreshold = 0.3;
 
 const defaultMatchImageSnapshotOptions = {
-    // threshold for entire image
-    failureThreshold: defaultFailureThreshold,
     // percent of image or number of pixels
     failureThresholdType: 'percent',
-    // threshold for each pixel
-    customDiffConfig: { threshold: 0.05 },
     // capture viewport in screenshot
     capture: 'viewport',
 };
@@ -19,7 +17,7 @@ export const matchSnapshot = (
     snapshotName: string,
     locale: Locale,
     viewport: Viewport,
-    failureThreshold = defaultFailureThreshold
+    isHigherThreshold = false
 ): void => {
     const isFirefox = Cypress.isBrowser('firefox');
     const firefoxSuffix = isFirefox ? '_firefox' : '';
@@ -31,6 +29,11 @@ export const matchSnapshot = (
 
     cy.matchImageSnapshot(snapshotFileName, {
         ...defaultMatchImageSnapshotOptions,
-        failureThreshold: isFirefox ? firefoxFailureThreshold : failureThreshold,
+        // threshold for entire image
+        failureThreshold: isHigherThreshold ? increasedFailureThreshold : defaultFailureThreshold,
+        // threshold for each pixel
+        customDiffConfig: {
+            threshold: isHigherThreshold ? increasedPixelThreshold : defaultPixelThreshold,
+        },
     });
 };
