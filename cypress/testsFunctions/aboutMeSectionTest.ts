@@ -5,7 +5,7 @@ import { getLocalizedTexts } from '../utils/getTexts';
 import { Viewport } from '../utils/variables';
 import { matchSnapshot } from './matchSnapshot';
 
-export const aboutMeSectionTest = (locale: Locale, viewport: Viewport = Viewport.desktop): void => {
+export const aboutMeSectionTest = (locale: Locale, viewport: Viewport): void => {
     const {
         about,
         hiMyNameIs,

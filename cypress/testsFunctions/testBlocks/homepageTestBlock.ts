@@ -20,7 +20,7 @@ export const homepageTestBlock = (
     it('loads', () => {
         cy.urlIsEqualTo(pageBeingTested);
 
-        matchSnapshot('homepage_loads', locale);
+        matchSnapshot('homepage_loads', locale, viewport);
     });
 
     it('renders the header and navigates properly', () => {

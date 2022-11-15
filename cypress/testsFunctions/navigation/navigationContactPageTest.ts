@@ -23,7 +23,7 @@ export const navigationContactPageTest = (
     locale: Locale,
     otherLocale: Locale,
     pageBeingTested: string,
-    viewport: Viewport = Viewport.desktop
+    viewport: Viewport
 ): void => {
     const { about, projects, services, contact } = getLocalizedTexts(locale);
     const remainingTexts = getLocalizedTexts(otherLocale);

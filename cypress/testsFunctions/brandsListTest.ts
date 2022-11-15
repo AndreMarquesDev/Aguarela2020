@@ -43,7 +43,7 @@ const testLogo = (brand: string, instagramUrl: string, isMobile: boolean): void 
     cy.getByHref(brandsListSectionDataTestId, instagramUrl);
 };
 
-export const brandsListTest = (locale: Locale, viewport: Viewport = Viewport.desktop): void => {
+export const brandsListTest = (locale: Locale, viewport: Viewport): void => {
     const { myNetwork } = getLocalizedTexts(locale);
     const isMobile = viewport === Viewport.mobile;
     const isFirefox = Cypress.isBrowser('firefox');

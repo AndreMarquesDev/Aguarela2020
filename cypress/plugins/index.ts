@@ -1,6 +1,6 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { addMatchImageSnapshotPlugin } from 'cypress-image-snapshot/plugin';
-import { defaultViewportWidth, defaultViewportHeight } from '../utils/variables';
+import { desktopViewportWidth, desktopViewportHeight } from '../utils/variables';
 
 export default (on, config): void => {
     addMatchImageSnapshotPlugin(on, config);
@@ -8,13 +8,13 @@ export default (on, config): void => {
     on('before:browser:launch', (browser, launchOptions) => {
         if (browser.family === 'chromium' && browser.isHeadless) {
             launchOptions.args.push(
-                `--window-size=${defaultViewportWidth},${defaultViewportHeight}`
+                `--window-size=${desktopViewportWidth},${desktopViewportHeight}`
             );
         }
 
         if (browser.name === 'firefox' && browser.isHeadless) {
-            launchOptions.args.push(`--width=${defaultViewportWidth}`);
-            launchOptions.args.push(`--height=${defaultViewportHeight}`);
+            launchOptions.args.push(`--width=${desktopViewportWidth}`);
+            launchOptions.args.push(`--height=${desktopViewportHeight}`);
         }
 
         return launchOptions;

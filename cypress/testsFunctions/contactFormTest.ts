@@ -3,12 +3,13 @@ import { FieldTypes } from '../../utils/formValidation';
 import { Locale } from '../../types/Locale';
 import { getLocalizedTexts } from '../utils/getTexts';
 import { matchSnapshot } from './matchSnapshot';
+import { Viewport } from '../utils/variables';
 
 const formSuccessMessageAppearTimeout = 15000;
 const FORM_RESET_TIMEOUT = 7500;
 const formSuccessMessageDisappearTimeout = FORM_RESET_TIMEOUT + 2000;
 
-export const contactFormTest = (locale: Locale): void => {
+export const contactFormTest = (locale: Locale, viewport: Viewport): void => {
     const {
         name,
         brandBusiness,
@@ -24,7 +25,7 @@ export const contactFormTest = (locale: Locale): void => {
 
     cy.getByDataTestId(contactFormContainerDataTestId).scrollIntoView();
 
-    matchSnapshot('contactForm_initial', locale);
+    matchSnapshot('contactForm_initial', locale, viewport);
 
     cy.getByText(contactFormContainerDataTestId, `${name} *`);
     cy.getByText(contactFormContainerDataTestId, brandBusiness);
@@ -57,7 +58,7 @@ export const contactFormTest = (locale: Locale): void => {
     cy.getByDataTestId(FieldTypes.Textarea).type(`Cypress | ${locale} | ${Cypress.browser.name}`);
     cy.isHidden(contactFormContainerDataTestId, pleaseEnterAMessage);
 
-    matchSnapshot('contactForm_filled', locale);
+    matchSnapshot('contactForm_filled', locale, viewport);
 
     cy.getByDataTestId('formTestMode').check({ force: true });
 
@@ -70,7 +71,7 @@ export const contactFormTest = (locale: Locale): void => {
         formSuccessMessageAppearTimeout
     );
 
-    matchSnapshot('contactForm_success', locale);
+    matchSnapshot('contactForm_success', locale, viewport);
 
     cy.getByDataTestId(contactFormContainerDataTestId).find('.buttonBackground').not('.disabled');
 
@@ -80,5 +81,5 @@ export const contactFormTest = (locale: Locale): void => {
         formSuccessMessageDisappearTimeout
     ).should('not.exist');
 
-    matchSnapshot('contactForm_reset', locale);
+    matchSnapshot('contactForm_reset', locale, viewport);
 };
