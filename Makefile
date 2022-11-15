@@ -6,14 +6,40 @@ clean:
 rebuild:
 	docker-compose up --build --force-recreate
 
+# Run all tests
+
 chrome:
-	docker compose up chrome
+	docker compose up chrome --build --force-recreate
 
 edge:
-	docker compose up edge
+	docker compose up edge --build --force-recreate
 
 firefox:
-	docker compose up firefox
+	docker compose up firefox --build --force-recreate
+
+# Run tests for desktop
+
+chrome-desktop:
+	docker compose up chrome-desktop --build --force-recreate
+
+edge-desktop:
+	docker compose up edge-desktop --build --force-recreate
+
+firefox-desktop:
+	docker compose up firefox-desktop --build --force-recreate
+
+# Run tests for mobile
+
+chrome-mobile:
+	docker compose up chrome-mobile --build --force-recreate
+
+edge-mobile:
+	docker compose up edge-mobile --build --force-recreate
+
+firefox-mobile:
+	docker compose up firefox-mobile --build --force-recreate
+
+# Update snapshots
 
 chrome-update:
 	docker compose up chrome-update --build --force-recreate
@@ -23,30 +49,3 @@ edge-update:
 
 firefox-update:
 	docker compose up firefox-update --build --force-recreate
-
-chrome-rebuild:
-	docker compose up chrome --build --force-recreate
-
-edge-rebuild:
-	docker compose up edge --build --force-recreate
-
-firefox-rebuild:
-	docker compose up firefox --build --force-recreate
-
-chrome-desktop-rebuild:
-	docker compose up chrome-desktop --build --force-recreate
-
-edge-desktop-rebuild:
-	docker compose up edge-desktop --build --force-recreate
-
-firefox-desktop-rebuild:
-	docker compose up firefox-desktop --build --force-recreate
-
-chrome-mobile-rebuild:
-	docker compose up chrome-mobile --build --force-recreate
-
-edge-mobile-rebuild:
-	docker compose up edge-mobile --build --force-recreate
-
-firefox-mobile-rebuild:
-	docker compose up firefox-mobile --build --force-recreate

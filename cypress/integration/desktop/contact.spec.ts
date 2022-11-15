@@ -7,7 +7,7 @@ const locale: Locale = Locale.Pt;
 const otherLocale: Locale = Locale.En;
 const pageBeingTested = urls.pt.contact;
 
-describe('contact page mobile', () => {
+describe('contact page', () => {
     beforeEach(() => {
         cy.visit(pageBeingTested);
 
