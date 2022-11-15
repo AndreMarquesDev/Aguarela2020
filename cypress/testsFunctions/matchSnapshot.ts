@@ -2,6 +2,8 @@ import { Locale } from '../../types/Locale';
 import { Viewport } from '../utils/variables';
 
 export const defaultFailureThreshold = 0.001;
+const firefoxFailureThreshold = 0.003;
+
 const defaultMatchImageSnapshotOptions = {
     // threshold for entire image
     failureThreshold: defaultFailureThreshold,
@@ -30,6 +32,6 @@ export const matchSnapshot = (
 
     cy.matchImageSnapshot(snapshotFileName, {
         ...defaultMatchImageSnapshotOptions,
-        failureThreshold,
+        failureThreshold: isFirefox ? firefoxFailureThreshold : failureThreshold,
     });
 };

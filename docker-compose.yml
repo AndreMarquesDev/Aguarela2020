@@ -12,6 +12,8 @@ x-build-config:
       dockerfile: Dockerfile
 
 services:
+
+    # Run all tests
     chrome:
         container_name: chrome_container
         build: *build-config
@@ -27,6 +29,8 @@ services:
         build: *build-config
         volumes: *volume-config
         entrypoint: sh -c "yarn cypress:test:firefox"
+
+    # Run tests for desktop
     chrome-desktop:
         container_name: chrome_container_desktop
         build: *build-config
@@ -42,6 +46,8 @@ services:
         build: *build-config
         volumes: *volume-config
         entrypoint: sh -c "yarn cypress:test:firefox:desktop"
+
+    # Run tests for mobile
     chrome-mobile:
         container_name: chrome_container_mobile
         build: *build-config
@@ -57,6 +63,8 @@ services:
         build: *build-config
         volumes: *volume-config
         entrypoint: sh -c "yarn cypress:test:firefox:mobile"
+
+    # Update snapshots
     chrome-update:
         container_name: chrome_container_update
         build: *build-config
