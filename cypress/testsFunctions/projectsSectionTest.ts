@@ -1,11 +1,10 @@
 import {
-    nukaCarouselNextButtonDataTestId,
     projectsListDoubleSectionDataTestId,
     projectsListNoCarouselDataTestId,
     projectsListSectionDataTestId,
 } from '../../utils/dataTestIds';
 import { Locale } from '../../types/Locale';
-import { getLocalizedTexts } from '../utils/utils';
+import { clickNextArrowButtonIfMobile, getLocalizedTexts } from '../utils/utils';
 import { urls } from '../utils/selectors';
 import {
     projectsListNoCarouselImagesHeight,
@@ -66,19 +65,6 @@ const testSlide = (
     }
 };
 
-const clickNextArrowButtonIfMobile = (isMobile: boolean, projectsText: string): void => {
-    const isFirefox = Cypress.isBrowser('firefox');
-
-    if (isMobile) {
-        cy.getByDataTestIdParent(
-            projectsListSectionDataTestId,
-            nukaCarouselNextButtonDataTestId
-        ).click({ force: isFirefox });
-
-        cy.getByText(projectsListSectionDataTestId, projectsText).scrollIntoView();
-    }
-};
-
 export const projectsSectionTest = (locale: Locale, viewport: Viewport): void => {
     const { projects, seeMore } = getLocalizedTexts(locale);
     const isMobile = viewport === Viewport.mobile;
@@ -89,15 +75,15 @@ export const projectsSectionTest = (locale: Locale, viewport: Viewport): void =>
 
     testSlide(locale, 'tjela', '@tudonatjela', 2020, true, isMobile);
 
-    clickNextArrowButtonIfMobile(isMobile, projects);
+    clickNextArrowButtonIfMobile(isMobile, projectsListSectionDataTestId, projects);
 
     testSlide(locale, 'kaffeehaus', '@kaffeehaus_lisboa', 2018, false, isMobile);
 
-    clickNextArrowButtonIfMobile(isMobile, projects);
+    clickNextArrowButtonIfMobile(isMobile, projectsListSectionDataTestId, projects);
 
     testSlide(locale, 'guacamole', '@guacamolegmg', 2019, true, isMobile);
 
-    clickNextArrowButtonIfMobile(isMobile, projects);
+    clickNextArrowButtonIfMobile(isMobile, projectsListSectionDataTestId, projects);
 
     cy.getByText(projectsListSectionDataTestId, projects).scrollIntoView();
 

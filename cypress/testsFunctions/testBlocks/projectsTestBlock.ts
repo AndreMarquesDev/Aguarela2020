@@ -20,7 +20,7 @@ export const projectsTestBlock = (
     });
 
     it('renders the header and navigates properly', () => {
-        navigationProjectsPageTest(locale, otherLocale, pageBeingTested);
+        navigationProjectsPageTest(locale, otherLocale, pageBeingTested, viewport);
     });
 
     it('renders the projects list double section', () => {

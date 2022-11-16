@@ -6,18 +6,11 @@ import {
     projectsListDoubleSectionDataTestId,
     servicesBlockSectionDataTestId,
     contactBlockSectionDataTestId,
-    menuIconButtonDataTestId,
 } from '../../../utils/dataTestIds';
 import { Locale } from '../../../types/Locale';
 import { urls } from '../../utils/selectors';
-import { getLocalizedTexts } from '../../utils/utils';
+import { getLocalizedTexts, openMenuMobile } from '../../utils/utils';
 import { Viewport } from '../../utils/variables';
-
-const openMenuMobile = (isMobile: boolean, isFirefox: boolean): void => {
-    if (isMobile) {
-        cy.getByDataTestId(menuIconButtonDataTestId).click({ force: isFirefox });
-    }
-};
 
 export const navigationHomepageTest = (
     locale: Locale,

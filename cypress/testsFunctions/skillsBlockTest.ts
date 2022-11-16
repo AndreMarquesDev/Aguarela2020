@@ -3,24 +3,10 @@ import {
     skillsBlockSectionDataTestId,
     skillsBlockItemWrapperDataTestId,
     skillsBlockItemCarouselDataTestId,
-    nukaCarouselNextButtonDataTestId,
 } from '../../utils/dataTestIds';
 import { skillsBlockImagesWidth, skillsBlockImagesHeight, Viewport } from '../utils/variables';
-import { getLocalizedTexts } from '../utils/utils';
+import { clickNextArrowButtonIfMobile, getLocalizedTexts } from '../utils/utils';
 import { matchSnapshot } from './matchSnapshot';
-
-const clickNextArrowButtonIfMobile = (isMobile: boolean, skillsText: string): void => {
-    const isFirefox = Cypress.isBrowser('firefox');
-
-    if (isMobile) {
-        cy.getByDataTestIdParent(
-            skillsBlockSectionDataTestId,
-            nukaCarouselNextButtonDataTestId
-        ).click({ force: isFirefox });
-
-        cy.getByText(skillsBlockSectionDataTestId, skillsText).scrollIntoView();
-    }
-};
 
 export const skillsBlockTest = (locale: Locale, viewport: Viewport): void => {
     const {
@@ -52,7 +38,7 @@ export const skillsBlockTest = (locale: Locale, viewport: Viewport): void => {
     cy.getByText(skillsBlockSectionDataTestId, socialMediaStrategy);
     cy.getByText(skillsBlockSectionDataTestId, makingAuditsAndAnalysis);
 
-    clickNextArrowButtonIfMobile(isMobile, skills);
+    clickNextArrowButtonIfMobile(isMobile, skillsBlockSectionDataTestId, skills);
 
     cy.imageIsVisible(skillsBlockItemDataTestId, socialMediaConsulting, isFirefox);
     cy.imageWidthIs(skillsBlockItemDataTestId, socialMediaConsulting, skillsBlockImagesWidth);
@@ -60,7 +46,7 @@ export const skillsBlockTest = (locale: Locale, viewport: Viewport): void => {
     cy.getByText(skillsBlockSectionDataTestId, socialMediaConsulting);
     cy.getByText(skillsBlockSectionDataTestId, weCanHelpYourTeam);
 
-    clickNextArrowButtonIfMobile(isMobile, skills);
+    clickNextArrowButtonIfMobile(isMobile, skillsBlockSectionDataTestId, skills);
 
     cy.imageIsVisible(skillsBlockItemDataTestId, communityManagement);
     cy.imageWidthIs(skillsBlockItemDataTestId, communityManagement, skillsBlockImagesWidth);
@@ -68,7 +54,7 @@ export const skillsBlockTest = (locale: Locale, viewport: Viewport): void => {
     cy.getByText(skillsBlockSectionDataTestId, communityManagement);
     cy.getByText(skillsBlockSectionDataTestId, whenWeSendAMessage);
 
-    clickNextArrowButtonIfMobile(isMobile, skills);
+    clickNextArrowButtonIfMobile(isMobile, skillsBlockSectionDataTestId, skills);
 
     cy.imageIsVisible(skillsBlockItemDataTestId, paidSocialAndSearch, isFirefox);
     cy.imageWidthIs(skillsBlockItemDataTestId, paidSocialAndSearch, skillsBlockImagesWidth);
@@ -76,7 +62,7 @@ export const skillsBlockTest = (locale: Locale, viewport: Viewport): void => {
     cy.getByText(skillsBlockSectionDataTestId, paidSocialAndSearch);
     cy.getByText(skillsBlockSectionDataTestId, planningAndImplementing);
 
-    clickNextArrowButtonIfMobile(isMobile, skills);
+    clickNextArrowButtonIfMobile(isMobile, skillsBlockSectionDataTestId, skills);
 
     cy.imageIsVisible(skillsBlockItemDataTestId, optimizationAndAnalysis, isFirefox);
     cy.imageWidthIs(skillsBlockItemDataTestId, optimizationAndAnalysis, skillsBlockImagesWidth);
@@ -84,7 +70,7 @@ export const skillsBlockTest = (locale: Locale, viewport: Viewport): void => {
     cy.getByText(skillsBlockSectionDataTestId, optimizationAndAnalysis);
     cy.getByText(skillsBlockSectionDataTestId, measuringResults);
 
-    clickNextArrowButtonIfMobile(isMobile, skills);
+    clickNextArrowButtonIfMobile(isMobile, skillsBlockSectionDataTestId, skills);
 
     cy.imageIsVisible(skillsBlockItemDataTestId, contentCreation, isFirefox);
     cy.imageWidthIs(skillsBlockItemDataTestId, contentCreation, skillsBlockImagesWidth);
@@ -92,7 +78,7 @@ export const skillsBlockTest = (locale: Locale, viewport: Viewport): void => {
     cy.getByText(skillsBlockSectionDataTestId, contentCreation);
     cy.getByText(skillsBlockSectionDataTestId, createAttractiveContent);
 
-    clickNextArrowButtonIfMobile(isMobile, skills);
+    clickNextArrowButtonIfMobile(isMobile, skillsBlockSectionDataTestId, skills);
 
     matchSnapshot('skillsBlock', locale, viewport);
 };

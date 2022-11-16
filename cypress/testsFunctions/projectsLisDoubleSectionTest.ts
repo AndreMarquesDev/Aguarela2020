@@ -26,166 +26,224 @@ import {
     aAmigaEsteticistaIndustriaCriativaUrl,
     anaroIndustriaCriativaUrl,
 } from '../../utils/urls';
-import { getLocalizedTexts } from '../utils/utils';
+import { clickNextArrowButtonIfMobile, getLocalizedTexts } from '../utils/utils';
 import {
     projectsListDoubleCarouselImagesWidth,
     projectsListDoubleCarouselImagesHeight,
     Viewport,
+    projectsListDoubleCarouselImagesWidthMobile,
+    projectsListDoubleCarouselImagesHeightMobile,
+    projectsListDoubleCarouselImagesHeightFirefoxMobile,
+    projectsListDoubleCarouselImagesWidthFirefoxMobile,
 } from '../utils/variables';
 import { matchSnapshot } from './matchSnapshot';
+
+const testSlide = (
+    locale: Locale,
+    isMobile: boolean,
+    brand: string,
+    handle: string,
+    instagramUrl: string,
+    title: string,
+    year: string,
+    isInPartnership: boolean
+): void => {
+    const isFirefox = Cypress.isBrowser('firefox');
+    const { inPartnershipWith } = getLocalizedTexts(locale);
+
+    const container = projectsListDoubleSectionDataTestId;
+
+    const slideWidthMobile = isFirefox
+        ? projectsListDoubleCarouselImagesWidthFirefoxMobile
+        : projectsListDoubleCarouselImagesWidthMobile;
+    const slideImageWidth = isMobile ? slideWidthMobile : projectsListDoubleCarouselImagesWidth;
+
+    const slideHeightMobile = isFirefox
+        ? projectsListDoubleCarouselImagesHeightFirefoxMobile
+        : projectsListDoubleCarouselImagesHeightMobile;
+    const slideImageHeight = isMobile ? slideHeightMobile : projectsListDoubleCarouselImagesHeight;
+
+    cy.imageInCurrentSlideIsVisible(container, brand);
+    cy.imageWidthIs(container, brand, slideImageWidth);
+    cy.imageHeightIs(container, brand, slideImageHeight);
+    cy.isHidden(container, handle);
+    cy.getBackfaceProjectsListDouble(container, brand).forceHover();
+    cy.getByHref(container, instagramUrl);
+    cy.isTextInBackfaceVisible(container, brand, handle);
+    cy.isTextInBackfaceVisible(container, brand, title);
+
+    if (year) {
+        cy.isTextInBackfaceVisible(container, brand, year);
+    }
+
+    if (isInPartnership) {
+        cy.isTextInBackfaceVisible(container, brand, `* ${inPartnershipWith}`);
+    }
+};
 
 export const projectsLisDoubleSectionTest = (locale: Locale, viewport: Viewport): void => {
     const {
         projects,
         socialMediaAndContentCreation,
         present,
-        inPartnershipWith,
         socialMediaManagement,
         contentCreation,
         consultingAndContentCreation,
         socialMediaAndPaidSocial,
     } = getLocalizedTexts(locale);
 
+    const isMobile = viewport === Viewport.mobile;
+
     const container = projectsListDoubleSectionDataTestId;
+    const numberOfActiveSlides = isMobile ? 1 : 3;
+    const numberOfVisibleSlides = isMobile ? 2 : 6;
 
     cy.getByText(container, projects).scrollIntoView();
 
     matchSnapshot('projectsListDouble', locale, viewport);
 
-    cy.getByDataTestId(container).find('.slide-visible').should('have.length', 3);
+    cy.getByDataTestId(container)
+        .find('.slide-visible')
+        .should('have.length', numberOfActiveSlides);
     cy.getByDataTestId(container)
         .find(`.slide-visible [data-testid="${projectItemTouchDivDataTestId}"]`)
-        .should('have.length', 6);
+        .should('have.length', numberOfVisibleSlides);
 
-    cy.imageInCurrentSlideIsVisible(container, 'tjela');
-    cy.imageWidthIs(container, 'tjela', projectsListDoubleCarouselImagesWidth);
-    cy.imageHeightIs(container, 'tjela', projectsListDoubleCarouselImagesHeight);
-    cy.isHidden(container, '@tudonatjela');
-    cy.getBackfaceProjectsListDouble(container, 'tjela').forceHover();
-    cy.getByHref(container, tjelaInstagramUrl);
-    cy.isTextInBackfaceVisible(container, 'tjela', '@tudonatjela');
-    cy.isTextInBackfaceVisible(container, 'tjela', socialMediaAndContentCreation);
-    cy.isTextInBackfaceVisible(container, 'tjela', `2020 - ${present}`);
-    cy.isTextInBackfaceVisible(container, 'tjela', `* ${inPartnershipWith}`);
+    testSlide(
+        locale,
+        isMobile,
+        'tjela',
+        '@tudonatjela',
+        tjelaInstagramUrl,
+        socialMediaAndContentCreation,
+        `2020 - ${present}`,
+        true
+    );
+    testSlide(
+        locale,
+        isMobile,
+        'taste of india',
+        '@tasteofindia',
+        tasteOfIndiaInstagramUrl,
+        socialMediaAndContentCreation,
+        `2020 - ${present}`,
+        true
+    );
 
-    cy.imageInCurrentSlideIsVisible(container, 'taste of india');
-    cy.imageWidthIs(container, 'taste of india', projectsListDoubleCarouselImagesWidth);
-    cy.imageHeightIs(container, 'taste of india', projectsListDoubleCarouselImagesHeight);
-    cy.isHidden(container, '@tasteofindia');
-    cy.getBackfaceProjectsListDouble(container, 'taste of india').forceHover();
-    cy.getByHref(container, tasteOfIndiaInstagramUrl);
-    cy.isTextInBackfaceVisible(container, 'taste of india', '@tasteofindia');
-    cy.isTextInBackfaceVisible(container, 'taste of india', socialMediaAndContentCreation);
-    cy.isTextInBackfaceVisible(container, 'taste of india', `2020 - ${present}`);
-    cy.isTextInBackfaceVisible(container, 'taste of india', `* ${inPartnershipWith}`);
+    clickNextArrowButtonIfMobile(isMobile, container, projects);
 
-    cy.imageInCurrentSlideIsVisible(container, 'kaffeehaus');
-    cy.imageWidthIs(container, 'kaffeehaus', projectsListDoubleCarouselImagesWidth);
-    cy.imageHeightIs(container, 'kaffeehaus', projectsListDoubleCarouselImagesHeight);
-    cy.isHidden(container, '@kaffeehaus_lisboa');
-    cy.getBackfaceProjectsListDouble(container, 'kaffeehaus').forceHover();
-    cy.getByHref(container, kaffeehausInstagramUrl);
-    cy.isTextInBackfaceVisible(container, 'kaffeehaus', '@kaffeehaus_lisboa');
-    cy.isTextInBackfaceVisible(container, 'kaffeehaus', socialMediaAndContentCreation);
-    cy.isTextInBackfaceVisible(container, 'kaffeehaus', `2018 - ${present}`);
+    testSlide(
+        locale,
+        isMobile,
+        'kaffeehaus',
+        '@kaffeehaus_lisboa',
+        kaffeehausInstagramUrl,
+        socialMediaAndContentCreation,
+        `2018 - ${present}`,
+        false
+    );
+    testSlide(
+        locale,
+        isMobile,
+        'avocado',
+        '@avocadohouselisbon',
+        avocadoInstagramUrl,
+        socialMediaAndContentCreation,
+        `2020 - ${present}`,
+        true
+    );
 
-    cy.imageInCurrentSlideIsVisible(container, 'avocado');
-    cy.imageWidthIs(container, 'avocado', projectsListDoubleCarouselImagesWidth);
-    cy.imageHeightIs(container, 'avocado', projectsListDoubleCarouselImagesHeight);
-    cy.isHidden(container, '@avocadohouselisbon');
-    cy.getBackfaceProjectsListDouble(container, 'avocado').forceHover();
-    cy.getByHref(container, avocadoInstagramUrl);
-    cy.isTextInBackfaceVisible(container, 'avocado', '@avocadohouselisbon');
-    cy.isTextInBackfaceVisible(container, 'avocado', socialMediaAndContentCreation);
-    cy.isTextInBackfaceVisible(container, 'avocado', `2020 - ${present}`);
-    cy.isTextInBackfaceVisible(container, 'avocado', `* ${inPartnershipWith}`);
+    clickNextArrowButtonIfMobile(isMobile, container, projects);
 
-    cy.imageInCurrentSlideIsVisible(container, 'guacamole');
-    cy.imageWidthIs(container, 'guacamole', projectsListDoubleCarouselImagesWidth);
-    cy.imageHeightIs(container, 'guacamole', projectsListDoubleCarouselImagesHeight);
-    cy.isHidden(container, '@guacamolegmg');
-    cy.getBackfaceProjectsListDouble(container, 'guacamole').forceHover();
-    cy.getByHref(container, guacamoleInstagramUrl);
-    cy.isTextInBackfaceVisible(container, 'guacamole', '@guacamolegmg');
-    cy.isTextInBackfaceVisible(container, 'guacamole', socialMediaAndContentCreation);
-    cy.isTextInBackfaceVisible(container, 'guacamole', `2019 - ${present}`);
-    cy.isTextInBackfaceVisible(container, 'guacamole', `* ${inPartnershipWith}`);
-
-    cy.imageInCurrentSlideIsVisible(container, 'marialimao');
-    cy.imageWidthIs(container, 'marialimao', projectsListDoubleCarouselImagesWidth);
-    cy.imageHeightIs(container, 'marialimao', projectsListDoubleCarouselImagesHeight);
-    cy.isHidden(container, '@bebemarialimao');
-    cy.getBackfaceProjectsListDouble(container, 'marialimao').forceHover();
-    cy.getByHref(container, mariaLimaoIndustriaCriativaUrl);
-    cy.isTextInBackfaceVisible(container, 'marialimao', '@bebemarialimao');
-    cy.isTextInBackfaceVisible(container, 'marialimao', socialMediaAndContentCreation);
-    cy.isTextInBackfaceVisible(container, 'marialimao', '2019 - 2020');
-
-    cy.getByDataTestId(nukaCarouselNextButtonDataTestId).click();
-
-    cy.imageInCurrentSlideIsVisible(container, 'jameson');
-    cy.imageWidthIs(container, 'jameson', projectsListDoubleCarouselImagesWidth);
-    cy.imageHeightIs(container, 'jameson', projectsListDoubleCarouselImagesHeight);
-    cy.isHidden(container, '@jamesonportugal');
-    cy.getBackfaceProjectsListDouble(container, 'jameson').forceHover();
-    cy.getByHref(container, jamesonInstagramUrl);
-    cy.isTextInBackfaceVisible(container, 'jameson', '@jamesonportugal');
-    cy.isTextInBackfaceVisible(container, 'jameson', socialMediaManagement);
-    cy.isTextInBackfaceVisible(container, 'jameson', `2019 - ${present}`);
-
-    cy.imageInCurrentSlideIsVisible(container, 'beefeater');
-    cy.imageWidthIs(container, 'beefeater', projectsListDoubleCarouselImagesWidth);
-    cy.imageHeightIs(container, 'beefeater', projectsListDoubleCarouselImagesHeight);
-    cy.isHidden(container, '@beefeater');
-    cy.getBackfaceProjectsListDouble(container, 'beefeater').forceHover();
-    cy.getByHref(container, beefeaterWebsiteUrl);
-    cy.isTextInBackfaceVisible(container, 'beefeater', '@beefeater');
-    cy.isTextInBackfaceVisible(container, 'beefeater', socialMediaManagement);
-    cy.isTextInBackfaceVisible(container, 'beefeater', `2019 - ${present}`);
+    testSlide(
+        locale,
+        isMobile,
+        'guacamole',
+        '@guacamolegmg',
+        guacamoleInstagramUrl,
+        socialMediaAndContentCreation,
+        `2019 - ${present}`,
+        true
+    );
+    testSlide(
+        locale,
+        isMobile,
+        'marialimao',
+        '@bebemarialimao',
+        mariaLimaoIndustriaCriativaUrl,
+        socialMediaAndContentCreation,
+        '2019 - 2020',
+        false
+    );
 
     cy.getByDataTestId(nukaCarouselNextButtonDataTestId).click();
 
-    cy.imageInCurrentSlideIsVisible(container, 'biergarten');
-    cy.imageWidthIs(container, 'biergarten', projectsListDoubleCarouselImagesWidth);
-    cy.imageHeightIs(container, 'biergarten', projectsListDoubleCarouselImagesHeight);
-    cy.isHidden(container, '@biergarten');
-    cy.getBackfaceProjectsListDouble(container, 'biergarten').forceHover();
-    cy.getByHref(container, biergartenInstagramUrl);
-    cy.isTextInBackfaceVisible(container, 'biergarten', '@biergarten');
-    cy.isTextInBackfaceVisible(container, 'biergarten', socialMediaAndContentCreation);
-    cy.isTextInBackfaceVisible(container, 'biergarten', '2019');
-
-    cy.imageInCurrentSlideIsVisible(container, 'mad mary');
-    cy.imageWidthIs(container, 'mad mary', projectsListDoubleCarouselImagesWidth);
-    cy.imageHeightIs(container, 'mad mary', projectsListDoubleCarouselImagesHeight);
-    cy.isHidden(container, '@madmarycuisine');
-    cy.getBackfaceProjectsListDouble(container, 'mad mary').forceHover();
-    cy.getByHref(container, madMaryInstagramUrl);
-    cy.isTextInBackfaceVisible(container, 'mad mary', '@madmarycuisine');
-    cy.isTextInBackfaceVisible(container, 'mad mary', socialMediaAndContentCreation);
-    cy.isTextInBackfaceVisible(container, 'mad mary', '2019');
+    testSlide(
+        locale,
+        isMobile,
+        'jameson',
+        '@jamesonportugal',
+        jamesonInstagramUrl,
+        socialMediaManagement,
+        `2019 - ${present}`,
+        false
+    );
+    testSlide(
+        locale,
+        isMobile,
+        'beefeater',
+        '@beefeater',
+        beefeaterWebsiteUrl,
+        socialMediaManagement,
+        `2019 - ${present}`,
+        false
+    );
 
     cy.getByDataTestId(nukaCarouselNextButtonDataTestId).click();
 
-    cy.imageInCurrentSlideIsVisible(container, 'bovine');
-    cy.imageWidthIs(container, 'bovine', projectsListDoubleCarouselImagesWidth);
-    cy.imageHeightIs(container, 'bovine', projectsListDoubleCarouselImagesHeight);
-    cy.isHidden(container, '@bovinelisboa');
-    cy.getBackfaceProjectsListDouble(container, 'bovine').forceHover();
-    cy.getByHref(container, bovineInstagramUrl);
-    cy.isTextInBackfaceVisible(container, 'bovine', '@bovinelisboa');
-    cy.isTextInBackfaceVisible(container, 'bovine', socialMediaAndContentCreation);
-    cy.isTextInBackfaceVisible(container, 'bovine', '2020');
+    testSlide(
+        locale,
+        isMobile,
+        'biergarten',
+        '@biergarten',
+        biergartenInstagramUrl,
+        socialMediaAndContentCreation,
+        '2019',
+        false
+    );
+    testSlide(
+        locale,
+        isMobile,
+        'mad mary',
+        '@madmarycuisine',
+        madMaryInstagramUrl,
+        socialMediaAndContentCreation,
+        '2019',
+        false
+    );
 
-    cy.imageInCurrentSlideIsVisible(container, 'icecream roll');
-    cy.imageWidthIs(container, 'icecream roll', projectsListDoubleCarouselImagesWidth);
-    cy.imageHeightIs(container, 'icecream roll', projectsListDoubleCarouselImagesHeight);
-    cy.isHidden(container, '@icecreamroll.pt');
-    cy.getBackfaceProjectsListDouble(container, 'icecream roll').forceHover();
-    cy.getByHref(container, icecreamRollInstagramUrl);
-    cy.isTextInBackfaceVisible(container, 'icecream roll', '@icecreamroll.pt');
-    cy.isTextInBackfaceVisible(container, 'icecream roll', socialMediaAndContentCreation);
-    cy.isTextInBackfaceVisible(container, 'icecream roll', '2018');
+    cy.getByDataTestId(nukaCarouselNextButtonDataTestId).click();
+
+    testSlide(
+        locale,
+        isMobile,
+        'bovine',
+        '@bovinelisboa',
+        bovineInstagramUrl,
+        socialMediaAndContentCreation,
+        '2020',
+        false
+    );
+    testSlide(
+        locale,
+        isMobile,
+        'icecream roll',
+        '@icecreamroll.pt',
+        icecreamRollInstagramUrl,
+        socialMediaAndContentCreation,
+        '2018',
+        false
+    );
 
     cy.getByText(container, projects).scrollIntoView();
 
@@ -193,69 +251,72 @@ export const projectsLisDoubleSectionTest = (locale: Locale, viewport: Viewport)
 
     cy.getByDataTestId(nukaCarouselNextButtonDataTestId).click();
 
-    cy.imageInCurrentSlideIsVisible(container, 'rice me');
-    cy.imageWidthIs(container, 'rice me', projectsListDoubleCarouselImagesWidth);
-    cy.imageHeightIs(container, 'rice me', projectsListDoubleCarouselImagesHeight);
-    cy.isHidden(container, '@ricemerestaurante');
-    cy.getBackfaceProjectsListDouble(container, 'rice me').forceHover();
-    cy.getByHref(container, riceMeInstagramUrl);
-    cy.isTextInBackfaceVisible(container, 'rice me', '@ricemerestaurante');
-    cy.isTextInBackfaceVisible(container, 'rice me', socialMediaAndContentCreation);
-    cy.isTextInBackfaceVisible(container, 'rice me', '2020');
-
-    cy.imageInCurrentSlideIsVisible(container, 'rice me deli');
-    cy.imageWidthIs(container, 'rice me deli', projectsListDoubleCarouselImagesWidth);
-    cy.imageHeightIs(container, 'rice me deli', projectsListDoubleCarouselImagesHeight);
-    cy.isHidden(container, '@ricemedeli');
-    cy.getBackfaceProjectsListDouble(container, 'rice me deli').forceHover();
-    cy.getByHref(container, riceMeDeliInstagramUrl);
-    cy.isTextInBackfaceVisible(container, 'rice me deli', '@ricemedeli');
-    cy.isTextInBackfaceVisible(container, 'rice me deli', socialMediaAndContentCreation);
-    cy.isTextInBackfaceVisible(container, 'rice me deli', '2020');
-
-    cy.getByDataTestId(nukaCarouselNextButtonDataTestId).click();
-
-    cy.imageInCurrentSlideIsVisible(container, 'harpoon');
-    cy.imageWidthIs(container, 'harpoon', projectsListDoubleCarouselImagesWidth);
-    cy.imageHeightIs(container, 'harpoon', projectsListDoubleCarouselImagesHeight);
-    cy.isHidden(container, '@harpoonjobs');
-    cy.getBackfaceProjectsListDouble(container, 'harpoon').forceHover();
-    cy.getByHref(container, harpoonLinkedInUrl);
-    cy.isTextInBackfaceVisible(container, 'harpoon', '@harpoonjobs');
-    cy.isTextInBackfaceVisible(container, 'harpoon', socialMediaAndContentCreation);
-    cy.isTextInBackfaceVisible(container, 'harpoon', '2020 - 2021');
-
-    cy.imageInCurrentSlideIsVisible(container, 'catarina santiago');
-    cy.imageWidthIs(container, 'catarina santiago', projectsListDoubleCarouselImagesWidth);
-    cy.imageHeightIs(container, 'catarina santiago', projectsListDoubleCarouselImagesHeight);
-    cy.isHidden(container, '@catarinasantiago');
-    cy.getBackfaceProjectsListDouble(container, 'catarina santiago').forceHover();
-    cy.getByHref(container, catarinaSantiagoInstagramUrl);
-    cy.isTextInBackfaceVisible(container, 'catarina santiago', '@catarinasantiago');
-    cy.isTextInBackfaceVisible(container, 'catarina santiago', contentCreation);
+    testSlide(
+        locale,
+        isMobile,
+        'rice me',
+        '@ricemerestaurante',
+        riceMeInstagramUrl,
+        socialMediaAndContentCreation,
+        '2020',
+        false
+    );
+    testSlide(
+        locale,
+        isMobile,
+        'rice me deli',
+        '@ricemedeli',
+        riceMeDeliInstagramUrl,
+        socialMediaAndContentCreation,
+        '2020',
+        false
+    );
 
     cy.getByDataTestId(nukaCarouselNextButtonDataTestId).click();
 
-    cy.imageInCurrentSlideIsVisible(container, '4 patas de 5 estrelas');
-    cy.imageWidthIs(container, '4 patas de 5 estrelas', projectsListDoubleCarouselImagesWidth);
-    cy.imageHeightIs(container, '4 patas de 5 estrelas', projectsListDoubleCarouselImagesHeight);
-    cy.isHidden(container, '@4patasde5estrelas');
-    cy.getBackfaceProjectsListDouble(container, '4 patas de 5 estrelas').forceHover();
-    cy.getByHref(container, quatroPatasDe5EstrelasInstagramUrl);
-    cy.isTextInBackfaceVisible(container, '4 patas de 5 estrelas', '@4patasde5estrelas');
-    cy.isTextInBackfaceVisible(container, '4 patas de 5 estrelas', socialMediaManagement);
-    cy.isTextInBackfaceVisible(container, '4 patas de 5 estrelas', `2020 - ${present}`);
+    testSlide(
+        locale,
+        isMobile,
+        'harpoon',
+        '@harpoonjobs',
+        harpoonLinkedInUrl,
+        socialMediaAndContentCreation,
+        '2020 - 2021',
+        false
+    );
+    testSlide(
+        locale,
+        isMobile,
+        'catarina santiago',
+        '@catarinasantiago',
+        catarinaSantiagoInstagramUrl,
+        contentCreation,
+        '',
+        false
+    );
 
-    cy.imageInCurrentSlideIsVisible(container, 'luminous');
-    cy.imageWidthIs(container, 'luminous', projectsListDoubleCarouselImagesWidth);
-    cy.imageHeightIs(container, 'luminous', projectsListDoubleCarouselImagesHeight);
-    cy.isHidden(container, '@becomeluminous');
-    cy.getBackfaceProjectsListDouble(container, 'luminous').forceHover();
-    cy.getByHref(container, luminousInstagramUrl);
-    cy.isTextInBackfaceVisible(container, 'luminous', '@becomeluminous');
-    cy.isTextInBackfaceVisible(container, 'luminous', socialMediaAndPaidSocial);
-    cy.isTextInBackfaceVisible(container, 'luminous', '2020');
-    cy.isTextInBackfaceVisible(container, 'luminous', `* ${inPartnershipWith}`);
+    cy.getByDataTestId(nukaCarouselNextButtonDataTestId).click();
+
+    testSlide(
+        locale,
+        isMobile,
+        '4 patas de 5 estrelas',
+        '@4patasde5estrelas',
+        quatroPatasDe5EstrelasInstagramUrl,
+        socialMediaManagement,
+        `2020 - ${present}`,
+        false
+    );
+    testSlide(
+        locale,
+        isMobile,
+        'luminous',
+        '@becomeluminous',
+        luminousInstagramUrl,
+        socialMediaAndPaidSocial,
+        '2020',
+        true
+    );
 
     cy.getByText(container, projects).scrollIntoView();
 
@@ -263,25 +324,26 @@ export const projectsLisDoubleSectionTest = (locale: Locale, viewport: Viewport)
 
     cy.getByDataTestId(nukaCarouselNextButtonDataTestId).click();
 
-    cy.imageInCurrentSlideIsVisible(container, 'a amiga esteticista');
-    cy.imageWidthIs(container, 'a amiga esteticista', projectsListDoubleCarouselImagesWidth);
-    cy.imageHeightIs(container, 'a amiga esteticista', projectsListDoubleCarouselImagesHeight);
-    cy.isHidden(container, '@aamigaesteticista');
-    cy.getBackfaceProjectsListDouble(container, 'a amiga esteticista').forceHover();
-    cy.getByHref(container, aAmigaEsteticistaIndustriaCriativaUrl);
-    cy.isTextInBackfaceVisible(container, 'a amiga esteticista', '@aamigaesteticista');
-    cy.isTextInBackfaceVisible(container, 'a amiga esteticista', consultingAndContentCreation);
-    cy.isTextInBackfaceVisible(container, 'a amiga esteticista', `2017 - ${present}`);
-
-    cy.imageInCurrentSlideIsVisible(container, 'AnaRo');
-    cy.imageWidthIs(container, 'AnaRo', projectsListDoubleCarouselImagesWidth);
-    cy.imageHeightIs(container, 'AnaRo', projectsListDoubleCarouselImagesHeight);
-    cy.isHidden(container, '@anaro.artistpage');
-    cy.getBackfaceProjectsListDouble(container, 'AnaRo').forceHover();
-    cy.getByHref(container, anaroIndustriaCriativaUrl);
-    cy.isTextInBackfaceVisible(container, 'AnaRo', '@anaro.artistpage');
-    cy.isTextInBackfaceVisible(container, 'AnaRo', consultingAndContentCreation);
-    cy.isTextInBackfaceVisible(container, 'AnaRo', '2019');
+    testSlide(
+        locale,
+        isMobile,
+        'a amiga esteticista',
+        '@aamigaesteticista',
+        aAmigaEsteticistaIndustriaCriativaUrl,
+        consultingAndContentCreation,
+        `2017 - ${present}`,
+        false
+    );
+    testSlide(
+        locale,
+        isMobile,
+        'AnaRo',
+        '@anaro.artistpage',
+        anaroIndustriaCriativaUrl,
+        consultingAndContentCreation,
+        '2019',
+        false
+    );
 
     cy.getByText(container, projects).scrollIntoView();
 

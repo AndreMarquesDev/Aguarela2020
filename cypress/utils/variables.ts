@@ -33,3 +33,7 @@ export const projectsListNoCarouselImagesWidthFirefoxMobile = 278;
 export const projectsListNoCarouselImagesHeightFirefoxMobile = 278;
 export const projectsListDoubleCarouselImagesWidth = 357;
 export const projectsListDoubleCarouselImagesHeight = 357;
+export const projectsListDoubleCarouselImagesWidthMobile = 264;
+export const projectsListDoubleCarouselImagesHeightMobile = 264;
+export const projectsListDoubleCarouselImagesWidthFirefoxMobile = 267;
+export const projectsListDoubleCarouselImagesHeightFirefoxMobile = 267;
