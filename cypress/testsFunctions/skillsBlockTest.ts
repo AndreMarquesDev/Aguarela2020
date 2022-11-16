@@ -6,7 +6,7 @@ import {
     nukaCarouselNextButtonDataTestId,
 } from '../../utils/dataTestIds';
 import { skillsBlockImagesWidth, skillsBlockImagesHeight, Viewport } from '../utils/variables';
-import { getLocalizedTexts } from '../utils/getTexts';
+import { getLocalizedTexts } from '../utils/utils';
 import { matchSnapshot } from './matchSnapshot';
 
 const clickNextArrowButtonIfMobile = (isMobile: boolean, skillsText: string): void => {

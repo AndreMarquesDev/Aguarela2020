@@ -5,7 +5,7 @@ import {
     projectsListSectionDataTestId,
 } from '../../utils/dataTestIds';
 import { Locale } from '../../types/Locale';
-import { getLocalizedTexts } from '../utils/getTexts';
+import { getLocalizedTexts } from '../utils/utils';
 import { urls } from '../utils/selectors';
 import {
     projectsListNoCarouselImagesHeight,

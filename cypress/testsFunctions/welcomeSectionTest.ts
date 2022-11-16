@@ -1,6 +1,6 @@
 import { welcomeSectionDataTestId } from '../../utils/dataTestIds';
 import { Locale } from '../../types/Locale';
-import { getLocalizedTexts } from '../utils/getTexts';
+import { getLocalizedTexts } from '../utils/utils';
 import { Viewport } from '../utils/variables';
 import { matchSnapshot } from './matchSnapshot';
 

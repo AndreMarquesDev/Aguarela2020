@@ -5,7 +5,7 @@ import {
     aguarelaDigitalInstagramUrl,
     aguarelaDigitalFacebookUrl,
 } from '../../utils/urls';
-import { getLocalizedTexts } from '../utils/getTexts';
+import { getLocalizedTexts } from '../utils/utils';
 import { urls } from '../utils/selectors';
 import { Viewport } from '../utils/variables';
 import { matchSnapshot } from './matchSnapshot';

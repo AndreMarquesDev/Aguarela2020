@@ -9,7 +9,7 @@ import {
 } from '../../../utils/dataTestIds';
 import { Locale } from '../../../types/Locale';
 import { urls } from '../../utils/selectors';
-import { getLocalizedTexts } from '../../utils/getTexts';
+import { getLocalizedTexts } from '../../utils/utils';
 
 export const navigationProjectsPageTest = (
     locale: Locale,

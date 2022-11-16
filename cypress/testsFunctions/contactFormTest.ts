@@ -1,7 +1,7 @@
 import { contactFormContainerDataTestId } from '../../utils/dataTestIds';
 import { FieldTypes } from '../../utils/formValidation';
 import { Locale } from '../../types/Locale';
-import { getLocalizedTexts } from '../utils/getTexts';
+import { getLocalizedTexts } from '../utils/utils';
 import { matchSnapshot } from './matchSnapshot';
 import { Viewport } from '../utils/variables';
 

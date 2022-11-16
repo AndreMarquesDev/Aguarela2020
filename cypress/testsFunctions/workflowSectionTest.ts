@@ -1,4 +1,4 @@
-import { getLocalizedTexts } from '../utils/getTexts';
+import { getLocalizedTexts } from '../utils/utils';
 import { workflowSectionDataTestId } from '../../utils/dataTestIds';
 import { Locale } from '../../types/Locale';
 import { matchSnapshot } from './matchSnapshot';

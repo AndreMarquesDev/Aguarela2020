@@ -1,7 +1,7 @@
 import { Locale } from '../../types/Locale';
 import { aboutMeSectionDataTestId } from '../../utils/dataTestIds';
 import { catarinaSantiagoInstagramUrl } from '../../utils/urls';
-import { getLocalizedTexts } from '../utils/getTexts';
+import { getLocalizedTexts } from '../utils/utils';
 import { Viewport } from '../utils/variables';
 import { matchSnapshot } from './matchSnapshot';
 
