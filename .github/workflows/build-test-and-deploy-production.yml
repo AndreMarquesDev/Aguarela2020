@@ -70,6 +70,7 @@ jobs:
           NODEMAILER_SEND_EMAIL_FROM: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM }}
           NODEMAILER_SEND_EMAIL_FROM_PASS: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM_PASS }}
           NODEMAILER_SEND_EMAIL_TO: ${{ secrets.NODEMAILER_SEND_EMAIL_TO }}
+          NEXT_PUBLIC_LOGROCKET_APPID: ${{ secrets.NEXT_PUBLIC_LOGROCKET_APPID }}
 
       - name: Upload snapshots
         uses: actions/upload-artifact@v3
@@ -111,6 +112,7 @@ jobs:
           NODEMAILER_SEND_EMAIL_FROM: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM }}
           NODEMAILER_SEND_EMAIL_FROM_PASS: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM_PASS }}
           NODEMAILER_SEND_EMAIL_TO: ${{ secrets.NODEMAILER_SEND_EMAIL_TO }}
+          NEXT_PUBLIC_LOGROCKET_APPID: ${{ secrets.NEXT_PUBLIC_LOGROCKET_APPID }}
 
       - name: Upload snapshots
         uses: actions/upload-artifact@v3
@@ -154,6 +156,7 @@ jobs:
           NODEMAILER_SEND_EMAIL_FROM: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM }}
           NODEMAILER_SEND_EMAIL_FROM_PASS: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM_PASS }}
           NODEMAILER_SEND_EMAIL_TO: ${{ secrets.NODEMAILER_SEND_EMAIL_TO }}
+          NEXT_PUBLIC_LOGROCKET_APPID: ${{ secrets.NEXT_PUBLIC_LOGROCKET_APPID }}
 
       - name: Upload snapshots
         uses: actions/upload-artifact@v3
@@ -195,6 +198,7 @@ jobs:
           NODEMAILER_SEND_EMAIL_FROM: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM }}
           NODEMAILER_SEND_EMAIL_FROM_PASS: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM_PASS }}
           NODEMAILER_SEND_EMAIL_TO: ${{ secrets.NODEMAILER_SEND_EMAIL_TO }}
+          NEXT_PUBLIC_LOGROCKET_APPID: ${{ secrets.NEXT_PUBLIC_LOGROCKET_APPID }}
 
       - name: Upload snapshots
         uses: actions/upload-artifact@v3
@@ -236,6 +240,7 @@ jobs:
           NODEMAILER_SEND_EMAIL_FROM: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM }}
           NODEMAILER_SEND_EMAIL_FROM_PASS: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM_PASS }}
           NODEMAILER_SEND_EMAIL_TO: ${{ secrets.NODEMAILER_SEND_EMAIL_TO }}
+          NEXT_PUBLIC_LOGROCKET_APPID: ${{ secrets.NEXT_PUBLIC_LOGROCKET_APPID }}
 
       - name: Upload snapshots
         uses: actions/upload-artifact@v3
@@ -279,6 +284,7 @@ jobs:
           NODEMAILER_SEND_EMAIL_FROM: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM }}
           NODEMAILER_SEND_EMAIL_FROM_PASS: ${{ secrets.NODEMAILER_SEND_EMAIL_FROM_PASS }}
           NODEMAILER_SEND_EMAIL_TO: ${{ secrets.NODEMAILER_SEND_EMAIL_TO }}
+          NEXT_PUBLIC_LOGROCKET_APPID: ${{ secrets.NEXT_PUBLIC_LOGROCKET_APPID }}
 
       - name: Upload snapshots
         uses: actions/upload-artifact@v3
