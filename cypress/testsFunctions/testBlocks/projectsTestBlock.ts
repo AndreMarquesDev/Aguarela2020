@@ -5,7 +5,7 @@ import { footerTest } from '../footerTest';
 import { letsWorkSectionTest } from '../letsWorkSectionTest';
 import { matchSnapshot } from '../matchSnapshot';
 import { navigationProjectsPageTest } from '../navigation/navigationProjectsPageTest';
-import { projectsLisDoubleSectionTest } from '../projectsLisDoubleSectionTest';
+import { projectsListDoubleSectionTest } from '../projectsListDoubleSectionTest';
 
 export const projectsTestBlock = (
     pageBeingTested: string,
@@ -24,7 +24,7 @@ export const projectsTestBlock = (
     });
 
     it('renders the projects list double section', () => {
-        projectsLisDoubleSectionTest(locale, viewport);
+        projectsListDoubleSectionTest(locale, viewport);
     });
 
     it('renders the brands list section', () => {

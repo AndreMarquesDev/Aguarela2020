@@ -81,7 +81,7 @@ const testSlide = (
     }
 };
 
-export const projectsLisDoubleSectionTest = (locale: Locale, viewport: Viewport): void => {
+export const projectsListDoubleSectionTest = (locale: Locale, viewport: Viewport): void => {
     const {
         projects,
         socialMediaAndContentCreation,
