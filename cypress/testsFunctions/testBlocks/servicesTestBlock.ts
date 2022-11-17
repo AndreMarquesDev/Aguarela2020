@@ -20,7 +20,7 @@ export const servicesTestBlock = (
     });
 
     it('renders the header and navigates properly', () => {
-        navigationServicesPageTest(locale, otherLocale, pageBeingTested);
+        navigationServicesPageTest(locale, otherLocale, pageBeingTested, viewport);
     });
 
     it('renders the services section', () => {

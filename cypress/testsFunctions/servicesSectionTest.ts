@@ -1,13 +1,18 @@
 import {
     servicesBlockSectionDataTestId,
     servicesBlockItemWrapperDataTestId,
+    servicesBlockItemCarouselDataTestId,
 } from '../../utils/dataTestIds';
 import { Locale } from '../../types/Locale';
-import { getLocalizedTexts } from '../utils/utils';
+import { clickNextArrowButtonIfMobile, getLocalizedTexts } from '../utils/utils';
 import { matchSnapshot } from './matchSnapshot';
 import { Viewport } from '../utils/variables';
 
 export const servicesSectionTest = (locale: Locale, viewport: Viewport): void => {
+    const isMobile = viewport === Viewport.mobile;
+    const slideDataTestId = isMobile
+        ? servicesBlockItemCarouselDataTestId
+        : servicesBlockItemWrapperDataTestId;
     const {
         services,
         design,
@@ -40,17 +45,18 @@ export const servicesSectionTest = (locale: Locale, viewport: Viewport): void =>
     cy.isVisible(servicesBlockSectionDataTestId, `- ${socialMediaTemplates}`);
     cy.isVisible(servicesBlockSectionDataTestId, `- ${menus}`);
 
-    cy.get(`[data-testid="${servicesBlockItemWrapperDataTestId}"] > p`).contains(socialMediaEn);
+    clickNextArrowButtonIfMobile(isMobile, servicesBlockSectionDataTestId, services);
+
+    cy.get(`[data-testid="${slideDataTestId}"] > p`).contains(socialMediaEn);
     cy.isHidden(servicesBlockSectionDataTestId, `- ${contentCreation}`);
-    cy.get(`[data-testid="${servicesBlockItemWrapperDataTestId}"] > p`)
-        .contains(socialMediaEn)
-        .next()
-        .forceHover();
+    cy.get(`[data-testid="${slideDataTestId}"] > p`).contains(socialMediaEn).next().forceHover();
     cy.isVisible(servicesBlockSectionDataTestId, `- ${contentCreation}`);
     cy.isVisible(servicesBlockSectionDataTestId, `- ${marketAnalysis}`);
     cy.isVisible(servicesBlockSectionDataTestId, `- ${socialMediaStrategyAndManagement}`);
     cy.isVisible(servicesBlockSectionDataTestId, `- ${paidSocial}`);
     cy.isVisible(servicesBlockSectionDataTestId, `- ${consulting}`);
+
+    clickNextArrowButtonIfMobile(isMobile, servicesBlockSectionDataTestId, services);
 
     cy.getByText(servicesBlockSectionDataTestId, digital);
     cy.isHidden(servicesBlockSectionDataTestId, `- ${paidSearchCampaigns}`);
