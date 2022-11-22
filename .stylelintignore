@@ -13,3 +13,4 @@ Makefile
 Dockerfile
 Dockerfile.*
 docker-compose.yml
+yarn-error.log

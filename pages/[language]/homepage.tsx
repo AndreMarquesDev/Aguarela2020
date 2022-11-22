@@ -30,6 +30,10 @@ const Homepage: NextPage = () => {
     const windowSize = useWindowSize();
     const isMobile = windowSize.width < Breakpoint.Mobile;
 
+    // TODO remove this workaround after migrating from SASS - https://github.com/Thream/styled-jsx-plugin-sass/issues/135
+    const navHeightStyles = `calc(90vh - ${navHeight}px)`;
+    const navHeightStylesMobile = `calc(50vh - ${navHeight}px)`;
+
     return (
         <NavLinksContext.Provider value={navLinksContextValue}>
             <Layout>
@@ -61,11 +65,11 @@ const Homepage: NextPage = () => {
                     {`
                         .homepageBanner {
                             width: 100%;
-                            height: calc(90vh - ${navHeight}px);
+                            height: ${navHeightStyles};
                             position: relative;
 
                             &.mobileNavHeight {
-                                height: calc(50vh - ${navHeight}px);
+                                height: ${navHeightStylesMobile};
                             }
                         }
                     `}

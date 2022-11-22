@@ -7,7 +7,7 @@
                     "vendorPrefixes": false,
                     "plugins": [
                         [
-                            "styled-jsx-plugin-sass",
+                            "@styled-jsx/plugin-sass",
                             "styled-jsx-plugin-postcss",
                             {
                                 "path": "./postcss.config.js"

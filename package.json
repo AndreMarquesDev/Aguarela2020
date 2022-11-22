@@ -42,7 +42,7 @@
     "keywords": [],
     "author": "André Marques <andregm_7@hotmail.com> (andremarquesdev.com)",
     "engines": {
-        "node": ">=14.18.0 <15",
+        "node": ">=16.18.0 <17",
         "yarn": "1"
     },
     "browserslist": [
@@ -52,6 +52,7 @@
         "not op_mini all"
     ],
     "dependencies": {
+        "@styled-jsx/plugin-sass": "^4.0.2",
         "axios": "^0.21.1",
         "classnames": "^2.2.6",
         "formik": "^2.2.6",
@@ -59,15 +60,14 @@
         "logrocket": "^3.0.1",
         "multilingual-url": "AndreMarquesDev/multilingual-url",
         "next": "^10.0.6",
-        "node-sass": "^4.14.1",
         "nodemailer": "^6.8.0",
         "nuka-carousel": "^4.7.5",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
         "react-icons": "^3.11.0",
+        "sass": "^1.56.1",
         "styled-jsx": "^3.3.1",
-        "styled-jsx-plugin-postcss": "^3.0.2",
-        "styled-jsx-plugin-sass": "^1.0.0"
+        "styled-jsx-plugin-postcss": "^3.0.2"
     },
     "devDependencies": {
         "@testing-library/dom": "^8.1.0",

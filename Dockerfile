@@ -1,4 +1,4 @@
-FROM cypress/browsers:node14.19.0-chrome100-ff99-edge
+FROM cypress/browsers:node16.18.0-chrome107-ff106-edge
 
 USER root
 
