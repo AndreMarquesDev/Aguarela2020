@@ -37,7 +37,9 @@
         "cypress:test:firefox:mobile": "start-server-and-test start http://localhost:3000 cypress:firefox:mobile",
         "cypress:test:chrome:update": "start-server-and-test start http://localhost:3000 cypress:chrome:update",
         "cypress:test:edge:update": "start-server-and-test start http://localhost:3000 cypress:edge:update",
-        "cypress:test:firefox:update": "start-server-and-test start http://localhost:3000 cypress:firefox:update"
+        "cypress:test:firefox:update": "start-server-and-test start http://localhost:3000 cypress:firefox:update",
+        "run:lighthouse": "lhci autorun --config=./lighthouse/lighthouserc.js",
+        "run:lighthouse:ci": "lhci autorun --config=./lighthouse/lighthouserc.ci.js"
     },
     "keywords": [],
     "author": "André Marques <andregm_7@hotmail.com> (andremarquesdev.com)",
@@ -71,6 +73,7 @@
         "styled-jsx-plugin-postcss": "^3.0.2"
     },
     "devDependencies": {
+        "@lhci/cli": "^0.10.0",
         "@testing-library/dom": "^8.1.0",
         "@testing-library/jest-dom": "^5.14.1",
         "@testing-library/react": "^12.0.0",

@@ -7,3 +7,4 @@ out
 coverage
 .vercel
 yarn-error.log
+.lighthouseci

@@ -4,4 +4,5 @@ module.exports = {
     parserOptions: {
         project: ['tsconfig.json', './cypress/tsconfig.json'],
     },
+    ignorePatterns: ['!.*'],
 };
