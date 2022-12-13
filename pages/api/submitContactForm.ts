@@ -1,10 +1,24 @@
 import { NextApiResponse } from 'next';
 import nodemailer, { SendMailOptions } from 'nodemailer';
+import DOMPurify from 'isomorphic-dompurify';
 import { CustomNextApiRequest } from '../../types/CustomNextApiRequest';
 import { FormPostRequestBody } from '../../types/FormPostRequestBody';
 
 const buildEmailOptions = (data: FormPostRequestBody): SendMailOptions => {
-    const { name, email, message, brand, subject, isTest } = data;
+    const {
+        name: dirtyName,
+        email: dirtyEmail,
+        message: dirtyMessage,
+        brand: dirtyBrand,
+        subject: dirtySubject,
+        isTest,
+    } = data;
+
+    const name = DOMPurify.sanitize(dirtyName);
+    const email = DOMPurify.sanitize(dirtyEmail);
+    const message = DOMPurify.sanitize(dirtyMessage);
+    const brand = DOMPurify.sanitize(dirtyBrand);
+    const subject = DOMPurify.sanitize(dirtySubject);
 
     const emailToSendFrom = process.env.NODEMAILER_SEND_EMAIL_FROM;
     const regularSubjectString = `aguareladigital.com - Contacto de ${name}${
