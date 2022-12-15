@@ -87,7 +87,7 @@ class MyDocument extends Document {
                     <link href="https://fonts.googleapis.com" rel="preconnect" />
                     <link crossOrigin="true" href="https://fonts.gstatic.com" rel="preconnect" />
                     <link
-                        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap"
+                        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&amp;display=swap"
                         rel="stylesheet"
                     />
                     <link href="/images/logo.svg" rel="shortcut icon" type="image/x-icon" />
