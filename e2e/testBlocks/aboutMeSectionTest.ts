@@ -1,10 +1,10 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Page, expect } from '@playwright/test';
-import { getLocalizedTexts } from '../../cypress/utils/utils';
 import { Locale } from '../../types/Locale';
 import { aboutMeSectionDataTestId } from '../../utils/dataTestIds';
 import { catarinaSantiagoInstagramUrl } from '../../utils/urls';
 import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
+import { getLocalizedTexts } from '../utils/utils';
 
 const getPictureSizes = (
     isMobile: boolean | undefined,
@@ -31,10 +31,13 @@ const getPictureSizes = (
 
 export const aboutMeSectionTest = async (
     page: Page,
-    isMobile: boolean | undefined,
+    isMobile: boolean,
     browserName: PlaywrightBrowserName,
     locale: Locale
 ): Promise<void> => {
+    const container = page.getByTestId(aboutMeSectionDataTestId);
+    const image = container.getByAltText('a picture of me, Catarina');
+    const imageBoundingBox = await image.boundingBox();
     const {
         about,
         hiMyNameIs,
@@ -45,17 +48,13 @@ export const aboutMeSectionTest = async (
 
     const { pictureWidth, pictureHeight } = getPictureSizes(isMobile, browserName);
 
-    const container = await page.getByTestId(aboutMeSectionDataTestId);
-    const image = await container.getByAltText('a picture of me, Catarina');
-    const imageBoundingBox = await image.boundingBox();
-
     // renders page title
     await expect(container.getByText(about)).toBeVisible();
 
-    // renders te main image
+    // renders the main image
     await expect(image).toBeVisible();
-    await expect(imageBoundingBox?.width).toEqual(pictureWidth);
-    await expect(imageBoundingBox?.height).toEqual(pictureHeight);
+    expect(imageBoundingBox?.width).toEqual(pictureWidth);
+    expect(imageBoundingBox?.height).toEqual(pictureHeight);
 
     // renders block of text
     await expect(container.getByText(hiMyNameIs)).toBeVisible();
