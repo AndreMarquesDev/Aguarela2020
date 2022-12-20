@@ -8,3 +8,4 @@ coverage
 .vercel
 yarn-error.log
 .lighthouseci
+/playwright-report/
