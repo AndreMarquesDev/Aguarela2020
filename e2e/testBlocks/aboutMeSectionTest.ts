@@ -4,7 +4,7 @@ import { Locale } from '../../types/Locale';
 import { aboutMeSectionDataTestId } from '../../utils/dataTestIds';
 import { catarinaSantiagoInstagramUrl } from '../../utils/urls';
 import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
-import { getLocalizedTexts } from '../utils/utils';
+import { getLocalizedTexts, openNewTab } from '../utils/utils';
 
 const getImageSizes = (
     isMobile: boolean | undefined,
@@ -63,15 +63,5 @@ export const aboutMeSectionTest = async (
     await expect(container.getByText(theSocialMediaCommunicationStrategy)).toBeVisible();
 
     // 'Get to know me better' links to Catarina Santiago's Instagram
-    await expect(anchor).toBeVisible();
-
-    const newTabPromise = page.waitForEvent('popup');
-
-    await anchor.click();
-
-    const newTab = await newTabPromise;
-
-    await newTab.waitForLoadState();
-
-    await expect(newTab).toHaveURL(catarinaSantiagoInstagramUrl);
+    await openNewTab(page, anchor, catarinaSantiagoInstagramUrl);
 };

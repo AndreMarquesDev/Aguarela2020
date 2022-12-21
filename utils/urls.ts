@@ -1,6 +1,6 @@
 export const contactFormBackendUrl = '/api/submitContactForm';
 
-export const aguarelaDigitalInstagramUrl = 'https://www.instagram.com/aguareladigital';
+export const aguarelaDigitalInstagramUrl = 'https://www.instagram.com/aguareladigital/';
 export const aguarelaDigitalFacebookUrl = 'https://www.facebook.com/aguareladigitalagency';
 export const aguarelaDigitalEmail = 'catarina@aguareladigital.com';
 export const catarinaSantiagoInstagramUrl = 'https://www.instagram.com/catarinasantiago/';

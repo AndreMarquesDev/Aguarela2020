@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { Page, expect, test } from '@playwright/test';
+import { Page, expect } from '@playwright/test';
 import { Locale } from '../../types/Locale';
 import { brandsListSectionDataTestId } from '../../utils/dataTestIds';
 import {
@@ -22,7 +22,7 @@ import {
     trattoriaInstagramUrl,
 } from '../../utils/urls';
 import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
-import { getLocalizedTexts } from '../utils/utils';
+import { getLocalizedTexts, openNewTab } from '../utils/utils';
 
 const getImageSizes = (
     isMobile: boolean | undefined,
@@ -56,7 +56,7 @@ export const brandsListTest = async (
     const container = page.getByTestId(brandsListSectionDataTestId);
     const { myNetwork } = getLocalizedTexts(locale);
 
-    const testLogo = async (brand: string, instagramUrl: string | RegExp): Promise<void> => {
+    const testLogo = async (brand: string, url: string | RegExp): Promise<void> => {
         const image = container.getByAltText(`${brand} logo`);
         const imageBoundingBox = await image.boundingBox();
         const anchor = container.getByRole('link', { name: brand, exact: true });
@@ -69,17 +69,7 @@ export const brandsListTest = async (
         expect(imageBoundingBox?.height).toEqual(imageHeight);
 
         // clicking on the logo links to the brand's assigned url
-        await expect(anchor).toBeVisible();
-
-        const newTabPromise = page.waitForEvent('popup');
-
-        await anchor.click();
-
-        const newTab = await newTabPromise;
-
-        await newTab.waitForLoadState();
-
-        await expect(newTab).toHaveURL(instagramUrl, { timeout: 10000 });
+        await openNewTab(page, anchor, url, 10000);
     };
 
     // renders section title
