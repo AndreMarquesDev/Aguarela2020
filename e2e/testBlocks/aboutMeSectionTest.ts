@@ -6,10 +6,10 @@ import { catarinaSantiagoInstagramUrl } from '../../utils/urls';
 import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
 import { getLocalizedTexts } from '../utils/utils';
 
-const getPictureSizes = (
+const getImageSizes = (
     isMobile: boolean | undefined,
     browserName: PlaywrightBrowserName
-): { pictureWidth: number; pictureHeight: number } => {
+): { imageWidth: number; imageHeight: number } => {
     const widthDesktop = 530;
     const widthMobileChrome = 353;
     const widthMobileSafari = 350;
@@ -19,14 +19,14 @@ const getPictureSizes = (
     const heightMobileSafari = 429.234375;
 
     if (!isMobile) {
-        return { pictureWidth: widthDesktop, pictureHeight: heightDesktop };
+        return { imageWidth: widthDesktop, imageHeight: heightDesktop };
     }
 
     if (browserName === PlaywrightBrowserName.Chromium) {
-        return { pictureWidth: widthMobileChrome, pictureHeight: heightMobileChrome };
+        return { imageWidth: widthMobileChrome, imageHeight: heightMobileChrome };
     }
 
-    return { pictureWidth: widthMobileSafari, pictureHeight: heightMobileSafari };
+    return { imageWidth: widthMobileSafari, imageHeight: heightMobileSafari };
 };
 
 export const aboutMeSectionTest = async (
@@ -35,9 +35,6 @@ export const aboutMeSectionTest = async (
     browserName: PlaywrightBrowserName,
     locale: Locale
 ): Promise<void> => {
-    const container = page.getByTestId(aboutMeSectionDataTestId);
-    const image = container.getByAltText('a picture of me, Catarina');
-    const imageBoundingBox = await image.boundingBox();
     const {
         about,
         hiMyNameIs,
@@ -45,16 +42,20 @@ export const aboutMeSectionTest = async (
         theSocialMediaCommunicationStrategy,
         getToKnowMeBetter,
     } = getLocalizedTexts(locale);
+    const { imageWidth, imageHeight } = getImageSizes(isMobile, browserName);
 
-    const { pictureWidth, pictureHeight } = getPictureSizes(isMobile, browserName);
+    const container = page.getByTestId(aboutMeSectionDataTestId);
+    const anchor = container.getByRole('link', { name: getToKnowMeBetter });
+    const image = container.getByAltText('a picture of me, Catarina');
+    const imageBoundingBox = await image.boundingBox();
 
     // renders page title
     await expect(container.getByText(about)).toBeVisible();
 
     // renders the main image
     await expect(image).toBeVisible();
-    expect(imageBoundingBox?.width).toEqual(pictureWidth);
-    expect(imageBoundingBox?.height).toEqual(pictureHeight);
+    expect(imageBoundingBox?.width).toEqual(imageWidth);
+    expect(imageBoundingBox?.height).toEqual(imageHeight);
 
     // renders block of text
     await expect(container.getByText(hiMyNameIs)).toBeVisible();
@@ -62,11 +63,11 @@ export const aboutMeSectionTest = async (
     await expect(container.getByText(theSocialMediaCommunicationStrategy)).toBeVisible();
 
     // 'Get to know me better' links to Catarina Santiago's Instagram
-    await expect(container.getByRole('link', { name: getToKnowMeBetter })).toBeVisible();
+    await expect(anchor).toBeVisible();
 
     const newTabPromise = page.waitForEvent('popup');
 
-    await container.getByRole('link', { name: getToKnowMeBetter }).click();
+    await anchor.click();
 
     const newTab = await newTabPromise;
 

@@ -3,6 +3,7 @@ import { test } from '@playwright/test';
 import { Locale } from '../../types/Locale';
 import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
 import { aboutMeSectionTest } from '../testBlocks/aboutMeSectionTest';
+import { brandsListTest } from '../testBlocks/brandsListTest';
 import { navigationAboutTest } from '../testBlocks/navigation/navigationAboutPageTest';
 import { urls } from '../utils/selectors';
 
@@ -18,8 +19,12 @@ test.describe('PT | About page', () => {
         await navigationAboutTest(page, !!isMobile, locale, otherLocale);
     });
 
-    test("renders the 'About Me' section", async ({ page, isMobile, browserName }) => {
+    test('renders the about me section', async ({ page, isMobile, browserName }) => {
         await aboutMeSectionTest(page, !!isMobile, browserName as PlaywrightBrowserName, locale);
+    });
+
+    test('renders the brands list section', async ({ page, isMobile, browserName }) => {
+        await brandsListTest(page, !!isMobile, browserName as PlaywrightBrowserName, locale);
     });
 });
 
@@ -37,5 +42,9 @@ test.describe('EN | About page', () => {
 
     test("renders the 'About Me' section", async ({ page, isMobile, browserName }) => {
         await aboutMeSectionTest(page, !!isMobile, browserName as PlaywrightBrowserName, locale);
+    });
+
+    test('renders the brands list section', async ({ page, isMobile, browserName }) => {
+        await brandsListTest(page, !!isMobile, browserName as PlaywrightBrowserName, locale);
     });
 });
