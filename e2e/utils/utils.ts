@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { Locator, Page, expect } from '@playwright/test';
 import { Locale } from '../../types/Locale';
 import { TextsInterface, textsPt, textsEn } from '../../utils/texts';
