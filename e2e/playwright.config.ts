@@ -1,5 +1,4 @@
 import type { PlaywrightTestConfig } from '@playwright/test';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { devices } from '@playwright/test';
 
 /**
