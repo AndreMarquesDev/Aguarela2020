@@ -42,7 +42,7 @@
         "run:lighthouse:ci": "lhci autorun --config=./lighthouse/lighthouserc.ci.js",
         "run:playwright": "playwright test --config ./e2e/playwright.config.ts",
         "run:playwright:chrome": "playwright test --config ./e2e/playwright.config.ts --project=chrome",
-        "run:playwright:debug": "playwright test --config ./e2e/playwright.config.ts --debug",
+        "run:playwright:debug": "playwright test --config ./e2e/playwright.config.ts --debug --project=chrome",
         "run:playwright:debug:mobile": "playwright test --config ./e2e/playwright.config.ts --debug --project=chrome-mobile"
     },
     "keywords": [],

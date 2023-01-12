@@ -1,5 +1,6 @@
 import { Locator, Page, expect } from '@playwright/test';
 import { Locale } from '../../types/Locale';
+import { nukaCarouselNextButtonDataTestId } from '../../utils/dataTestIds';
 import { TextsInterface, textsPt, textsEn } from '../../utils/texts';
 
 export const getLocalizedTexts = (locale: Locale): TextsInterface => {
@@ -33,4 +34,10 @@ export const openNewTab = async (
     await newTab.waitForLoadState();
 
     await expect(newTab).toHaveURL(url, { timeout });
+};
+
+export const clickNextArrowButtonIfMobile = (isMobile: boolean, container: Locator): void => {
+    if (isMobile) {
+        container.getByTestId(nukaCarouselNextButtonDataTestId).click();
+    }
 };

@@ -1,16 +1,16 @@
 import { test, expect } from '@playwright/test';
 import { Locale } from '../../types/Locale';
 import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
-import { aboutMeSectionDataTestId } from '../../utils/dataTestIds';
-import { aboutMeSectionTest } from '../testBlocks/aboutMeSectionTest';
+import { servicesBlockSectionDataTestId } from '../../utils/dataTestIds';
+import { servicesSectionTest } from '../testBlocks/servicesSectionTest';
 import { brandsListTest } from '../testBlocks/brandsListTest';
 import { footerTest } from '../testBlocks/footerTest';
 import { letsWorkSectionTest } from '../testBlocks/letsWorkSectionTest';
 import { headerNavigationTest } from '../testBlocks/headerNavigationTest';
 import { urls } from '../utils/selectors';
 
-test.describe('PT | About page', () => {
-    const url = urls.pt.about;
+test.describe('PT | Services page', () => {
+    const url = urls.pt.services;
     const locale = Locale.Pt;
     const otherLocale = Locale.En;
 
@@ -23,16 +23,16 @@ test.describe('PT | About page', () => {
     test('renders the header and navigates properly', async ({ page, isMobile }) => {
         await headerNavigationTest(
             page,
-            'about',
-            aboutMeSectionDataTestId,
+            'services',
+            servicesBlockSectionDataTestId,
             !!isMobile,
             locale,
             otherLocale
         );
     });
 
-    test('renders the about me section', async ({ page, isMobile, browserName }) => {
-        await aboutMeSectionTest(page, !!isMobile, browserName as PlaywrightBrowserName, locale);
+    test('renders the services section', async ({ page, isMobile }) => {
+        await servicesSectionTest(page, !!isMobile, locale);
     });
 
     test('renders the brands list section', async ({ page, isMobile, browserName }) => {
@@ -48,8 +48,8 @@ test.describe('PT | About page', () => {
     });
 });
 
-test.describe('EN | About page', () => {
-    const url = urls.en.about;
+test.describe('EN | Services page', () => {
+    const url = urls.en.services;
     const locale = Locale.En;
     const otherLocale = Locale.Pt;
 
@@ -62,16 +62,16 @@ test.describe('EN | About page', () => {
     test('renders the header and navigates properly', async ({ page, isMobile }) => {
         await headerNavigationTest(
             page,
-            'about',
-            aboutMeSectionDataTestId,
+            'services',
+            servicesBlockSectionDataTestId,
             !!isMobile,
             locale,
             otherLocale
         );
     });
 
-    test('renders the about me section', async ({ page, isMobile, browserName }) => {
-        await aboutMeSectionTest(page, !!isMobile, browserName as PlaywrightBrowserName, locale);
+    test('renders the services section', async ({ page, isMobile }) => {
+        await servicesSectionTest(page, !!isMobile, locale);
     });
 
     test('renders the brands list section', async ({ page, isMobile, browserName }) => {

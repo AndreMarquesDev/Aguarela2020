@@ -1,31 +1,35 @@
 import { Page, expect } from '@playwright/test';
-import { Locale } from '../../../types/Locale';
+import { Page as PageName } from '../../utils/pages';
+import { Locale } from '../../types/Locale';
 import {
     headerDataTestId,
     homepageBannerContainerDataTestId,
-    aboutMeSectionDataTestId,
     contactBlockSectionDataTestId,
     projectsListDoubleSectionDataTestId,
     servicesBlockSectionDataTestId,
-} from '../../../utils/dataTestIds';
-import { urls } from '../../utils/selectors';
-import { getLocalizedTexts, openMenuMobile } from '../../utils/utils';
+    aboutMeSectionDataTestId,
+} from '../../utils/dataTestIds';
+import { urls } from '../utils/selectors';
+import { getLocalizedTexts, openMenuMobile } from '../utils/utils';
 
-export const navigationAboutTest = async (
+export const headerNavigationTest = async (
     page: Page,
+    pageName: Exclude<PageName, 'homepage'>,
+    pageTitleDataTestId: string,
     isMobile: boolean,
     locale: Locale,
     otherLocale: Locale
 ): Promise<void> => {
     const container = page.getByTestId(headerDataTestId);
     const image = container.getByAltText('Logo');
-    const { about, projects, services, contact } = getLocalizedTexts(locale);
+    const texts = getLocalizedTexts(locale);
+    const { about, projects, services, contact } = texts;
     const otherLocaleTexts = getLocalizedTexts(otherLocale);
 
-    const goBackToAboutPage = async (): Promise<void> => {
-        await container.getByRole('link', { name: about }).click();
-        await expect(page).toHaveURL(urls[locale].about);
-        await expect(page.getByTestId(aboutMeSectionDataTestId)).toBeVisible();
+    const goBackToStartingPage = async (): Promise<void> => {
+        await container.getByRole('link', { name: texts[pageName] }).click();
+        await expect(page).toHaveURL(urls[locale][pageName]);
+        await expect(page.getByTestId(pageTitleDataTestId)).toBeVisible();
     };
 
     // renders logo
@@ -39,8 +43,22 @@ export const navigationAboutTest = async (
     // open the menu if is mobile
     openMenuMobile(page, isMobile);
 
-    // navigates back to about page
-    await goBackToAboutPage();
+    // navigates back to starting page
+    await goBackToStartingPage();
+
+    // open the menu if is mobile
+    openMenuMobile(page, isMobile);
+
+    // navigates to about page
+    await container.getByRole('link', { name: about }).click();
+    await expect(page).toHaveURL(urls[locale].about);
+    await expect(page.getByTestId(aboutMeSectionDataTestId)).toBeVisible();
+
+    // open the menu if is mobile
+    openMenuMobile(page, isMobile);
+
+    // navigates back to starting page
+    await goBackToStartingPage();
 
     // open the menu if is mobile
     openMenuMobile(page, isMobile);
@@ -53,8 +71,8 @@ export const navigationAboutTest = async (
     // open the menu if is mobile
     openMenuMobile(page, isMobile);
 
-    // navigates back to about page
-    await goBackToAboutPage();
+    // navigates back to starting page
+    await goBackToStartingPage();
 
     // open the menu if is mobile
     openMenuMobile(page, isMobile);
@@ -67,8 +85,8 @@ export const navigationAboutTest = async (
     // open the menu if is mobile
     openMenuMobile(page, isMobile);
 
-    // navigates back to about page
-    await goBackToAboutPage();
+    // navigates back to starting page
+    await goBackToStartingPage();
 
     // open the menu if is mobile
     openMenuMobile(page, isMobile);
@@ -81,15 +99,15 @@ export const navigationAboutTest = async (
     // open the menu if is mobile
     openMenuMobile(page, isMobile);
 
-    // navigates back to about page
-    await goBackToAboutPage();
+    // navigates back to starting page
+    await goBackToStartingPage();
 
     // open the menu if is mobile
     openMenuMobile(page, isMobile);
 
     // switches locale
     await container.getByRole('button', { name: otherLocale, exact: true }).click();
-    await expect(page).toHaveURL(urls[otherLocale].about);
+    await expect(page).toHaveURL(urls[otherLocale][pageName]);
     // open the menu again if is mobile so that texts are visible
     openMenuMobile(page, isMobile);
     await expect(container.getByRole('link', { name: otherLocaleTexts.about })).toBeVisible();
@@ -102,7 +120,7 @@ export const navigationAboutTest = async (
 
     // switches back to initial locale
     await container.getByRole('button', { name: locale, exact: true }).click();
-    await expect(page).toHaveURL(urls[locale].about);
+    await expect(page).toHaveURL(urls[locale][pageName]);
     // open the menu again if is mobile so that texts are visible
     openMenuMobile(page, isMobile);
     await expect(container.getByRole('link', { name: about })).toBeVisible();
