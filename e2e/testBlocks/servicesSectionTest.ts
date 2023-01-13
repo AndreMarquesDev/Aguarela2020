@@ -62,7 +62,7 @@ export const servicesSectionTest = async (
     await pageTitle.hover();
     await expect(slide1BackfaceFirstText).toBeHidden();
 
-    clickNextArrowButtonIfMobile(isMobile, container);
+    await clickNextArrowButtonIfMobile(isMobile, container);
 
     // renders second slide
     await expect(container.getByText(socialMediaEn, { exact: true })).toBeVisible();
@@ -80,7 +80,7 @@ export const servicesSectionTest = async (
     await pageTitle.hover();
     await expect(slide2BackfaceFirstText).toBeHidden();
 
-    clickNextArrowButtonIfMobile(isMobile, container);
+    await clickNextArrowButtonIfMobile(isMobile, container);
 
     // renders third slide
     await expect(container.getByText(digital, { exact: true })).toBeVisible();

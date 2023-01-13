@@ -69,7 +69,7 @@ export const ProjectItem = ({
             ) : (
                 <div
                     className={classNames('carouselItem', isTouch && 'touch', isGrid && 'grid')}
-                    data-testid={projectItemTouchDivDataTestId}
+                    data-testid={`${projectItemTouchDivDataTestId}_${imageAlt}`}
                     data-times-touched={0}
                     onTouchStart={handleTouch}
                 >
