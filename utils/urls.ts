@@ -27,7 +27,7 @@ export const jamesonInstagramUrl = 'https://www.instagram.com/jamesonportugal/';
 export const harpoonLinkedInUrl = 'https://www.linkedin.com/company/harpoon-lda';
 
 export const pernodWebsiteUrl = 'https://www.pernod-ricard.com';
-export const beefeaterWebsiteUrl = 'https://www.beefeater.pt';
+export const beefeaterWebsiteUrl = 'https://www.beefeatergin.com/en/';
 export const mariaLimaoIndustriaCriativaUrl =
     'https://industriacriativa.pt/projeto/45759/maria-limao-gestao-de-redes-sociais';
 export const aAmigaEsteticistaIndustriaCriativaUrl =

@@ -1,7 +1,19 @@
 import { Locator, Page, expect } from '@playwright/test';
 import { Locale } from '../../types/Locale';
+import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
 import { nukaCarouselNextButtonDataTestId } from '../../utils/dataTestIds';
 import { TextsInterface, textsPt, textsEn } from '../../utils/texts';
+
+export const isChromium = (browserName: PlaywrightBrowserName): boolean =>
+    browserName === PlaywrightBrowserName.Chromium;
+export const isFirefox = (browserName: PlaywrightBrowserName): boolean =>
+    browserName === PlaywrightBrowserName.Firefox;
+export const isSafari = (browserName: PlaywrightBrowserName): boolean =>
+    browserName === PlaywrightBrowserName.Webkit;
+
+export const oneAndAHalfMinTimeout = 90000;
+export const twoMinTimeout = 120000;
+export const twoAndAHalfMinTimeout = 150000;
 
 export const getLocalizedTexts = (locale: Locale): TextsInterface => {
     if (locale === Locale.Pt) {
@@ -9,6 +21,24 @@ export const getLocalizedTexts = (locale: Locale): TextsInterface => {
     }
 
     return textsEn;
+};
+
+export const getSlidesImageSize = (
+    isMobile: boolean,
+    browserName: PlaywrightBrowserName,
+    sizeDesktop: number,
+    sizeMobileChrome: number,
+    sizeMobileSafari: number
+): number => {
+    if (!isMobile) {
+        return sizeDesktop;
+    }
+
+    if (isChromium(browserName)) {
+        return sizeMobileChrome;
+    }
+
+    return sizeMobileSafari;
 };
 
 export const openMenuMobile = (page: Page, isMobile: boolean): void => {
@@ -36,8 +66,11 @@ export const openNewTab = async (
     await expect(newTab).toHaveURL(url, { timeout });
 };
 
-export const clickNextArrowButtonIfMobile = (isMobile: boolean, container: Locator): void => {
+export const clickNextArrowButtonIfMobile = async (
+    isMobile: boolean,
+    container: Locator
+): Promise<void> => {
     if (isMobile) {
-        container.getByTestId(nukaCarouselNextButtonDataTestId).click();
+        await container.getByTestId(nukaCarouselNextButtonDataTestId).click();
     }
 };

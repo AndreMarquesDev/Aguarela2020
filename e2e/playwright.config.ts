@@ -81,14 +81,12 @@ const config: PlaywrightTestConfig = {
             use: {
                 ...devices['Desktop Firefox'],
             },
-            timeout: 120000,
         },
         {
             name: 'webkit',
             use: {
                 ...devices['Desktop Safari'],
             },
-            timeout: 120000,
         },
 
         /* test against mobile viewports. */
@@ -103,7 +101,6 @@ const config: PlaywrightTestConfig = {
             use: {
                 ...devices['iPhone 12'],
             },
-            timeout: 120000,
         },
     ],
 
