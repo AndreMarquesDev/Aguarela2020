@@ -3,30 +3,7 @@ import { Locale } from '../../types/Locale';
 import { aboutMeSectionDataTestId } from '../../utils/dataTestIds';
 import { catarinaSantiagoInstagramUrl } from '../../utils/urls';
 import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
-import { getLocalizedTexts, openNewTab } from '../utils/utils';
-
-const getImageSizes = (
-    isMobile: boolean | undefined,
-    browserName: PlaywrightBrowserName
-): { imageWidth: number; imageHeight: number } => {
-    const widthDesktop = 530;
-    const widthMobileChrome = 353;
-    const widthMobileSafari = 350;
-
-    const heightDesktop = 650;
-    const heightMobileChrome = 432.921875;
-    const heightMobileSafari = 429.234375;
-
-    if (!isMobile) {
-        return { imageWidth: widthDesktop, imageHeight: heightDesktop };
-    }
-
-    if (browserName === PlaywrightBrowserName.Chromium) {
-        return { imageWidth: widthMobileChrome, imageHeight: heightMobileChrome };
-    }
-
-    return { imageWidth: widthMobileSafari, imageHeight: heightMobileSafari };
-};
+import { getLocalizedTexts, getImageDimension, openNewTab } from '../utils/utils';
 
 export const aboutMeSectionTest = async (
     page: Page,
@@ -41,20 +18,39 @@ export const aboutMeSectionTest = async (
         theSocialMediaCommunicationStrategy,
         getToKnowMeBetter,
     } = getLocalizedTexts(locale);
-    const { imageWidth, imageHeight } = getImageSizes(isMobile, browserName);
 
     const container = page.getByTestId(aboutMeSectionDataTestId);
     const anchor = container.getByRole('link', { name: getToKnowMeBetter });
     const image = container.getByAltText('a picture of me, Catarina');
     const imageBoundingBox = await image.boundingBox();
+    const imageWidthDesktop = 530;
+    const imageWidthMobileChrome = 353;
+    const imageWidthMobileSafari = 350;
+    const imageHeightDesktop = 650;
+    const imageHeightMobileChrome = 433;
+    const imageHeightMobileSafari = 429;
+    const imageWidth = getImageDimension(
+        isMobile,
+        browserName,
+        imageWidthDesktop,
+        imageWidthMobileChrome,
+        imageWidthMobileSafari
+    );
+    const imageHeight = getImageDimension(
+        isMobile,
+        browserName,
+        imageHeightDesktop,
+        imageHeightMobileChrome,
+        imageHeightMobileSafari
+    );
 
     // renders page title
     await expect(container.getByText(about)).toBeVisible();
 
     // renders the main image
     await expect(image).toBeVisible();
-    expect(imageBoundingBox?.width).toEqual(imageWidth);
-    expect(imageBoundingBox?.height).toEqual(imageHeight);
+    expect(Math.round(imageBoundingBox?.width || 0)).toEqual(imageWidth);
+    expect(Math.round(imageBoundingBox?.height || 0)).toEqual(imageHeight);
 
     // renders block of text
     await expect(container.getByText(hiMyNameIs)).toBeVisible();

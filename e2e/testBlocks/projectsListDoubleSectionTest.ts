@@ -30,7 +30,7 @@ import {
 import {
     clickNextArrowButtonIfMobile,
     getLocalizedTexts,
-    getSlidesImageSize,
+    getImageDimension,
     isFirefox,
     isSafari,
     oneAndAHalfMinTimeout,
@@ -84,7 +84,7 @@ export const projectsListDoubleSectionTest = async (
         const imageSizeDesktop = 313;
         const imageSizeMobileChrome = 281;
         const imageSizeMobileSafari = 278;
-        const imageSize = getSlidesImageSize(
+        const imageSize = getImageDimension(
             isMobile,
             browserName,
             imageSizeDesktop,

@@ -11,9 +11,10 @@ export const isFirefox = (browserName: PlaywrightBrowserName): boolean =>
 export const isSafari = (browserName: PlaywrightBrowserName): boolean =>
     browserName === PlaywrightBrowserName.Webkit;
 
-export const oneAndAHalfMinTimeout = 90000;
-export const twoMinTimeout = 120000;
-export const twoAndAHalfMinTimeout = 150000;
+export const oneMinTimeout = 60000;
+export const oneAndAHalfMinTimeout = oneMinTimeout * 1.5;
+export const twoMinTimeout = oneMinTimeout * 2;
+export const twoAndAHalfMinTimeout = oneMinTimeout * 2.5;
 
 export const getLocalizedTexts = (locale: Locale): TextsInterface => {
     if (locale === Locale.Pt) {
@@ -23,7 +24,7 @@ export const getLocalizedTexts = (locale: Locale): TextsInterface => {
     return textsEn;
 };
 
-export const getSlidesImageSize = (
+export const getImageDimension = (
     isMobile: boolean,
     browserName: PlaywrightBrowserName,
     sizeDesktop: number,

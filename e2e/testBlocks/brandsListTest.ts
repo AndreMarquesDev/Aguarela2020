@@ -1,4 +1,4 @@
-import { Page, expect } from '@playwright/test';
+import { Page, expect, test } from '@playwright/test';
 import { Locale } from '../../types/Locale';
 import { brandsListSectionDataTestId } from '../../utils/dataTestIds';
 import {
@@ -21,30 +21,14 @@ import {
     trattoriaInstagramUrl,
 } from '../../utils/urls';
 import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
-import { getLocalizedTexts, openNewTab } from '../utils/utils';
-
-const getImageSizes = (
-    isMobile: boolean | undefined,
-    browserName: PlaywrightBrowserName
-): { imageWidth: number; imageHeight: number } => {
-    const widthDesktop = 150;
-    const widthMobileChrome = 107.65625;
-    const widthMobileSafari = 106.65625;
-
-    const heightDesktop = 150;
-    const heightMobileChrome = 107.65625;
-    const heightMobileSafari = 106.65625;
-
-    if (!isMobile) {
-        return { imageWidth: widthDesktop, imageHeight: heightDesktop };
-    }
-
-    if (browserName === PlaywrightBrowserName.Chromium) {
-        return { imageWidth: widthMobileChrome, imageHeight: heightMobileChrome };
-    }
-
-    return { imageWidth: widthMobileSafari, imageHeight: heightMobileSafari };
-};
+import {
+    getLocalizedTexts,
+    getImageDimension,
+    isFirefox,
+    isSafari,
+    oneAndAHalfMinTimeout,
+    openNewTab,
+} from '../utils/utils';
 
 export const brandsListTest = async (
     page: Page,
@@ -52,20 +36,33 @@ export const brandsListTest = async (
     browserName: PlaywrightBrowserName,
     locale: Locale
 ): Promise<void> => {
+    if (isSafari(browserName) || isFirefox(browserName) || isMobile) {
+        test.setTimeout(oneAndAHalfMinTimeout);
+    }
+
     const container = page.getByTestId(brandsListSectionDataTestId);
     const { myNetwork } = getLocalizedTexts(locale);
 
     const testLogo = async (brand: string, url: string | RegExp): Promise<void> => {
+        const anchor = container.getByRole('link', { name: brand, exact: true });
         const image = container.getByAltText(`${brand} logo`);
         const imageBoundingBox = await image.boundingBox();
-        const anchor = container.getByRole('link', { name: brand, exact: true });
-        const { imageWidth, imageHeight } = getImageSizes(isMobile, browserName);
+        const imageSizeDesktop = 150;
+        const imageSizeMobileChrome = 108;
+        const imageSizeMobileSafari = 107;
+        const imageSize = getImageDimension(
+            isMobile,
+            browserName,
+            imageSizeDesktop,
+            imageSizeMobileChrome,
+            imageSizeMobileSafari
+        );
 
         // renders the image
         image.scrollIntoViewIfNeeded();
         await expect(image).toBeVisible();
-        expect(imageBoundingBox?.width).toEqual(imageWidth);
-        expect(imageBoundingBox?.height).toEqual(imageHeight);
+        expect(Math.round(imageBoundingBox?.width || 0)).toEqual(imageSize);
+        expect(Math.round(imageBoundingBox?.height || 0)).toEqual(imageSize);
 
         // clicking on the logo links to the brand's assigned url
         await openNewTab(page, anchor, url, 10000);

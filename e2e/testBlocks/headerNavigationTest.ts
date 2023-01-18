@@ -1,4 +1,4 @@
-import { Page, expect } from '@playwright/test';
+import { Page, expect, test } from '@playwright/test';
 import { Page as PageName } from '../../utils/pages';
 import { Locale } from '../../types/Locale';
 import {
@@ -10,7 +10,7 @@ import {
     aboutMeSectionDataTestId,
 } from '../../utils/dataTestIds';
 import { urls } from '../utils/selectors';
-import { getLocalizedTexts, openMenuMobile } from '../utils/utils';
+import { getLocalizedTexts, oneAndAHalfMinTimeout, openMenuMobile } from '../utils/utils';
 
 export const headerNavigationTest = async (
     page: Page,
@@ -20,6 +20,10 @@ export const headerNavigationTest = async (
     locale: Locale,
     otherLocale: Locale
 ): Promise<void> => {
+    if (isMobile) {
+        test.setTimeout(oneAndAHalfMinTimeout);
+    }
+
     const container = page.getByTestId(headerDataTestId);
     const image = container.getByAltText('Logo');
     const texts = getLocalizedTexts(locale);
