@@ -38,7 +38,7 @@ exports[`<TextShadowBlock /> renders properly with a button 1`] = `
           Gestão de redes sociais está no meu ADN. Sou uma freelancer, baseada em Lisboa, com experiência em gestão de redes sociais e criação de conteúdo. A 
           <a
             class="link"
-            href="https://www.instagram.com/aguareladigital"
+            href="https://www.instagram.com/aguareladigital/"
             rel="noreferrer"
             target="_blank"
           >

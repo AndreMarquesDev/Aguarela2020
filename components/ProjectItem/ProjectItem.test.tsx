@@ -129,7 +129,9 @@ describe('<ProjectItem />', () => {
 
         const { container } = renderComponent({ isDesktop: false });
 
-        const wrapper = screen.getByTestId(projectItemTouchDivDataTestId);
+        const wrapper = screen.getByTestId(
+            `${projectItemTouchDivDataTestId}_${baseProps.imageAlt}`
+        );
 
         expect(wrapper).toHaveAttribute('data-times-touched', '0');
 

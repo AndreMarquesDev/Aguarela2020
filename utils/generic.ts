@@ -1,6 +1,7 @@
 import { Locale } from '../types/Locale';
 import { textsPt, textsEn, TextsInterface } from './texts';
 
+export const isDev = process.env.NODE_ENV === 'development';
 export const capitalize = (string: string): string =>
     string.charAt(0).toUpperCase() + string.slice(1);
 export const getCurrentLanguagetexts = (language: Locale): TextsInterface =>

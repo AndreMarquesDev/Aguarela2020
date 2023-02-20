@@ -6,7 +6,6 @@ import { getInitialLocale } from 'multilingual-url/lib';
 // TODO - review LogRocket usage
 // import LogRocket from 'logrocket';
 import { defaultLocale, locales } from '../constants/locales';
-import { initializeAxiosMockAdapter } from '../ajax/axiosMockAdapter';
 
 function MyApp({ Component, pageProps }) {
     const hasLangCookie = Cookies.get('lang');
@@ -15,7 +14,6 @@ function MyApp({ Component, pageProps }) {
     // TODO - review LogRocket usage
     // const isCypress = typeof window !== 'undefined' && window.Cypress;
     // const isProd = process.env.NODE_ENV === 'production';
-    const isDev = process.env.NODE_ENV === 'development';
 
     if (!hasLangCookie) {
         Cookies.set('lang', locale, {
@@ -32,10 +30,6 @@ function MyApp({ Component, pageProps }) {
     //     LogRocket.init(process.env.NEXT_PUBLIC_LOGROCKET_APPID);
     //     LogRocket.identify();
     // }
-
-    if (isDev) {
-        initializeAxiosMockAdapter(1000);
-    }
 
     return <Component {...pageProps} />;
 }

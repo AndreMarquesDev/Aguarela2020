@@ -32,7 +32,7 @@ exports[`<ProjectItem /> renders properly 1`] = `
     >
       <a
         class="jsx-4127294762 brand link"
-        href="https://www.instagram.com/tudonatjela"
+        href="https://www.instagram.com/tudonatjela/"
         rel="noreferrer"
         target="_blank"
       >
@@ -92,7 +92,7 @@ exports[`<ProjectItem /> renders properly in English 1`] = `
     >
       <a
         class="jsx-4127294762 brand link"
-        href="https://www.instagram.com/tudonatjela"
+        href="https://www.instagram.com/tudonatjela/"
         rel="noreferrer"
         target="_blank"
       >
@@ -124,7 +124,7 @@ exports[`<ProjectItem /> renders properly in mobile 1`] = `
 <div>
   <div
     class="jsx-4127294762 carouselItem grid"
-    data-testid="projectItem_touch_div"
+    data-testid="projectItem_touch_div_tjela logo"
     data-times-touched="0"
   >
     <div
@@ -154,7 +154,7 @@ exports[`<ProjectItem /> renders properly in mobile 1`] = `
     >
       <a
         class="jsx-4127294762 brand link"
-        href="https://www.instagram.com/tudonatjela"
+        href="https://www.instagram.com/tudonatjela/"
         rel="noreferrer"
         target="_blank"
       >
@@ -186,7 +186,7 @@ exports[`<ProjectItem /> renders properly when device is touch 1`] = `
 <div>
   <div
     class="jsx-4127294762 carouselItem touch grid"
-    data-testid="projectItem_touch_div"
+    data-testid="projectItem_touch_div_tjela logo"
     data-times-touched="1"
   >
     <div
@@ -216,7 +216,7 @@ exports[`<ProjectItem /> renders properly when device is touch 1`] = `
     >
       <a
         class="jsx-4127294762 brand link"
-        href="https://www.instagram.com/tudonatjela"
+        href="https://www.instagram.com/tudonatjela/"
         rel="noreferrer"
         target="_blank"
       >
@@ -248,7 +248,7 @@ exports[`<ProjectItem /> renders properly with isGrid being false 1`] = `
 <div>
   <div
     class="jsx-4127294762 carouselItem"
-    data-testid="projectItem_touch_div"
+    data-testid="projectItem_touch_div_tjela logo"
     data-times-touched="0"
   >
     <div
@@ -278,7 +278,7 @@ exports[`<ProjectItem /> renders properly with isGrid being false 1`] = `
     >
       <a
         class="jsx-4127294762 brand link"
-        href="https://www.instagram.com/tudonatjela"
+        href="https://www.instagram.com/tudonatjela/"
         rel="noreferrer"
         target="_blank"
       >

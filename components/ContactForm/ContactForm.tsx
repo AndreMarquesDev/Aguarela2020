@@ -49,8 +49,7 @@ const formSchema = [
     },
 ];
 
-export const FORM_RESET_TIMEOUT = 7500;
-export const FORM_TEST_MODE_CHECKBOX_ID = 'formTestMode';
+export const FORM_RESET_TIMEOUT = 5000;
 
 export const ContactForm = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
@@ -93,23 +92,24 @@ export const ContactForm = (): JSX.Element => {
             sending: true,
         });
 
-        const isTest = (
-            document.querySelector(`input#${FORM_TEST_MODE_CHECKBOX_ID}`) as HTMLInputElement
-        )?.checked;
-        const formStateWithTestMode: FormPostRequestBody = { ...formState, isTest };
+        const isTest = !!window.isPlaywrightRunning;
+        const formStateWithHiddenInputs: FormPostRequestBody = {
+            ...formState,
+            isTest,
+        };
 
         axios
-            .post(contactFormBackendUrl, formStateWithTestMode)
+            .post(contactFormBackendUrl, formStateWithHiddenInputs)
             .then(() => {
                 setFormSubmitState({
-                    sending: false,
+                    sending: true,
                     submitted: true,
                     error: false,
                 });
             })
             .catch(() => {
                 setFormSubmitState({
-                    sending: false,
+                    sending: true,
                     submitted: true,
                     error: true,
                 });
@@ -160,14 +160,6 @@ export const ContactForm = (): JSX.Element => {
                                 onChange={handleChange}
                             />
                         ))}
-
-                        <input
-                            hidden
-                            data-testid={FORM_TEST_MODE_CHECKBOX_ID}
-                            id={FORM_TEST_MODE_CHECKBOX_ID}
-                            name={FORM_TEST_MODE_CHECKBOX_ID}
-                            type="checkbox"
-                        />
 
                         <Button isSubmit disabled={formSubmitState.sending} onClick={handleSubmit}>
                             {texts.send}
