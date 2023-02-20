@@ -3,6 +3,7 @@ import nodemailer, { SendMailOptions } from 'nodemailer';
 import DOMPurify from 'isomorphic-dompurify';
 import { CustomNextApiRequest } from '../../types/CustomNextApiRequest';
 import { FormPostRequestBody } from '../../types/FormPostRequestBody';
+import { isDev } from '../../utils/generic';
 
 const buildEmailOptions = (data: FormPostRequestBody): SendMailOptions => {
     const {
@@ -23,8 +24,8 @@ const buildEmailOptions = (data: FormPostRequestBody): SendMailOptions => {
     const emailToSendFrom = process.env.NODEMAILER_SEND_EMAIL_FROM;
     const regularSubjectString = `aguareladigital.com - Contacto de ${name}${
         brand && ` da empresa ${brand}`
-    }`;
-    const testSubjectString = `Aguarela Contact Form - Cypress | ${name} | ${brand}`;
+        }`;
+    const testSubjectString = `Aguarela Contact Form - E2E | ${name} | ${brand}`;
     const emailBody = `<p>Assunto: ${subject}</p><br/><p>Email: ${email}</p><br/><p>${message}</p>`;
 
     const emailToSendTo = isTest
@@ -40,9 +41,28 @@ const buildEmailOptions = (data: FormPostRequestBody): SendMailOptions => {
     };
 };
 
+const responseSuccess = (response: NextApiResponse): void =>
+    response.status(200).send({ messsage: 'Success' });
+const responseError = (response: NextApiResponse): void =>
+    response.status(400).send({ messsage: 'Error' });
+
 const submitContactForm = (req: CustomNextApiRequest, res: NextApiResponse): void => {
+    // only allow POST requests
+    if (req.method !== 'POST') {
+        responseError(res);
+
+        return;
+    }
+
     const data = req.body;
     const emailOptions = buildEmailOptions(data);
+
+    // return success if is dev
+    if (isDev) {
+        responseSuccess(res);
+
+        return;
+    }
 
     const smtpTransport = nodemailer.createTransport({
         host: 'smtp-mail.outlook.com',
@@ -59,9 +79,9 @@ const submitContactForm = (req: CustomNextApiRequest, res: NextApiResponse): voi
 
     const smtpCallback = (error: Error): void => {
         if (error) {
-            res.status(400).send({ messsage: 'Error' });
+            responseError(res);
         } else {
-            res.status(200).send({ messsage: 'Success' });
+            responseSuccess(res);
         }
 
         if (smtpTransport.close) {

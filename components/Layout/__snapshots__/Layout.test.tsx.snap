@@ -141,7 +141,7 @@ exports[`<Layout /> renders properly 1`] = `
             <a
               aria-label="Aguarela instagram"
               class="jsx-1577276803"
-              href="https://www.instagram.com/aguareladigital"
+              href="https://www.instagram.com/aguareladigital/"
               rel="noreferrer"
               target="_blank"
             >
@@ -356,7 +356,7 @@ exports[`<Layout /> renders properly in English 1`] = `
             <a
               aria-label="Aguarela instagram"
               class="jsx-1577276803"
-              href="https://www.instagram.com/aguareladigital"
+              href="https://www.instagram.com/aguareladigital/"
               rel="noreferrer"
               target="_blank"
             >
@@ -571,7 +571,7 @@ exports[`<Layout /> renders properly when the menu is open and the resolution is
             <a
               aria-label="Aguarela instagram"
               class="jsx-1577276803"
-              href="https://www.instagram.com/aguareladigital"
+              href="https://www.instagram.com/aguareladigital/"
               rel="noreferrer"
               target="_blank"
             >

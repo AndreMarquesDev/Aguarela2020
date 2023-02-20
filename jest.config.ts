@@ -77,7 +77,7 @@ export default {
     // moduleNameMapper: {},
 
     // an array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
-    modulePathIgnorePatterns: ['cypress'],
+    modulePathIgnorePatterns: ['cypress', 'e2e'],
 
     // activates notifications for test results
     // notify: false,

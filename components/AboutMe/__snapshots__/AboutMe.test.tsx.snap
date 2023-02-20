@@ -69,7 +69,7 @@ exports[`<AboutMe /> renders properly 1`] = `
             >
               <a
                 class="jsx-781296904 button"
-                href="https://www.instagram.com/catarinasantiago"
+                href="https://www.instagram.com/catarinasantiago/"
                 rel="noreferrer"
                 target="_blank"
               >
@@ -153,7 +153,7 @@ exports[`<AboutMe /> renders properly in English 1`] = `
             >
               <a
                 class="jsx-781296904 button"
-                href="https://www.instagram.com/catarinasantiago"
+                href="https://www.instagram.com/catarinasantiago/"
                 rel="noreferrer"
                 target="_blank"
               >
@@ -237,7 +237,7 @@ exports[`<AboutMe /> renders properly in mobile 1`] = `
             >
               <a
                 class="jsx-781296904 button"
-                href="https://www.instagram.com/catarinasantiago"
+                href="https://www.instagram.com/catarinasantiago/"
                 rel="noreferrer"
                 target="_blank"
               >

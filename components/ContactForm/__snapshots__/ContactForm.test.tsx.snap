@@ -149,14 +149,6 @@ exports[`<ContactForm /> displays error messages in required fields on submit wi
           Este campo é obrigatório. Por favor insira uma mensagem
         </span>
       </div>
-      <input
-        class="jsx-3691481647"
-        data-testid="formTestMode"
-        hidden=""
-        id="formTestMode"
-        name="formTestMode"
-        type="checkbox"
-      />
       <div
         class="jsx-781296904 buttonWrapper"
       >
@@ -327,14 +319,6 @@ exports[`<ContactForm /> lets fields be properly filled 1`] = `
           Este campo é obrigatório. Por favor insira uma mensagem
         </span>
       </div>
-      <input
-        class="jsx-3691481647"
-        data-testid="formTestMode"
-        hidden=""
-        id="formTestMode"
-        name="formTestMode"
-        type="checkbox"
-      />
       <div
         class="jsx-781296904 buttonWrapper"
       >
@@ -503,14 +487,6 @@ exports[`<ContactForm /> renders properly 1`] = `
           Este campo é obrigatório. Por favor insira uma mensagem
         </span>
       </div>
-      <input
-        class="jsx-3691481647"
-        data-testid="formTestMode"
-        hidden=""
-        id="formTestMode"
-        name="formTestMode"
-        type="checkbox"
-      />
       <div
         class="jsx-781296904 buttonWrapper"
       >
@@ -679,14 +655,6 @@ exports[`<ContactForm /> renders properly in English 1`] = `
           This field is required. Please enter a message
         </span>
       </div>
-      <input
-        class="jsx-3691481647"
-        data-testid="formTestMode"
-        hidden=""
-        id="formTestMode"
-        name="formTestMode"
-        type="checkbox"
-      />
       <div
         class="jsx-781296904 buttonWrapper"
       >
@@ -855,14 +823,6 @@ exports[`<ContactForm /> resets the form after it was successfully submitted 1`]
           Este campo é obrigatório. Por favor insira uma mensagem
         </span>
       </div>
-      <input
-        class="jsx-3691481647"
-        data-testid="formTestMode"
-        hidden=""
-        id="formTestMode"
-        name="formTestMode"
-        type="checkbox"
-      />
       <div
         class="jsx-781296904 buttonWrapper"
       >
@@ -1033,19 +993,11 @@ exports[`<ContactForm /> shows an error message in case the POST request fails 1
           Este campo é obrigatório. Por favor insira uma mensagem
         </span>
       </div>
-      <input
-        class="jsx-3691481647"
-        data-testid="formTestMode"
-        hidden=""
-        id="formTestMode"
-        name="formTestMode"
-        type="checkbox"
-      />
       <div
         class="jsx-781296904 buttonWrapper"
       >
         <div
-          class="jsx-781296904 buttonBackground alignCenter"
+          class="jsx-781296904 buttonBackground alignCenter disabled"
         >
           <button
             class="jsx-781296904 button"
@@ -1223,19 +1175,11 @@ exports[`<ContactForm /> submits the form successfully 1`] = `
           Este campo é obrigatório. Por favor insira uma mensagem
         </span>
       </div>
-      <input
-        class="jsx-3691481647"
-        data-testid="formTestMode"
-        hidden=""
-        id="formTestMode"
-        name="formTestMode"
-        type="checkbox"
-      />
       <div
         class="jsx-781296904 buttonWrapper"
       >
         <div
-          class="jsx-781296904 buttonBackground alignCenter"
+          class="jsx-781296904 buttonBackground alignCenter disabled"
         >
           <button
             class="jsx-781296904 button"
