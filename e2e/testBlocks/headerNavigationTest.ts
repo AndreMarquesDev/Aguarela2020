@@ -14,7 +14,7 @@ import { getLocalizedTexts, oneAndAHalfMinTimeout, openMenuMobile } from '../uti
 
 export const headerNavigationTest = async (
     page: Page,
-    pageName: Exclude<PageName, 'homepage'>,
+    pageName: PageName,
     pageTitleDataTestId: string,
     isMobile: boolean,
     locale: Locale,
@@ -25,22 +25,26 @@ export const headerNavigationTest = async (
     }
 
     const container = page.getByTestId(headerDataTestId);
-    const image = container.getByAltText('Logo');
+    const logo = container.getByAltText('Logo');
     const texts = getLocalizedTexts(locale);
     const { about, projects, services, contact } = texts;
     const otherLocaleTexts = getLocalizedTexts(otherLocale);
 
     const goBackToStartingPage = async (): Promise<void> => {
-        await container.getByRole('link', { name: texts[pageName] }).click();
+        if (pageName === 'homepage') {
+            await logo.click();
+        } else {
+            await container.getByRole('link', { name: texts[pageName] }).click();
+        }
         await expect(page).toHaveURL(urls[locale][pageName]);
         await expect(page.getByTestId(pageTitleDataTestId)).toBeVisible();
     };
 
     // renders logo
-    await expect(image).toBeVisible();
+    await expect(logo).toBeVisible();
 
     // clicks on logo and goes to homepage
-    await image.click();
+    await logo.click();
     await expect(page).toHaveURL(urls[locale].homepage);
     await expect(page.getByTestId(homepageBannerContainerDataTestId)).toBeVisible();
 

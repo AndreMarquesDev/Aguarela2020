@@ -59,7 +59,7 @@ export const brandsListTest = async (
         );
 
         // renders the image
-        image.scrollIntoViewIfNeeded();
+        await image.scrollIntoViewIfNeeded();
         await expect(image).toBeVisible();
         expect(Math.round(imageBoundingBox?.width || 0)).toEqual(imageSize);
         expect(Math.round(imageBoundingBox?.height || 0)).toEqual(imageSize);
