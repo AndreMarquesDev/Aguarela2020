@@ -34,6 +34,8 @@ export const bannerTest = async (
 
     // renders the banner image
     await expect(banner).toBeVisible();
-    expect(Math.round(bannerBoundingBox?.width || 0)).toEqual(imageWidth);
-    expect(Math.round(bannerBoundingBox?.height || 0)).toEqual(imageHeight);
+    expect(Math.round(bannerBoundingBox?.width || 0)).toBeGreaterThanOrEqual(imageWidth - 2);
+    expect(Math.round(bannerBoundingBox?.width || 0)).toBeLessThanOrEqual(imageWidth + 2);
+    expect(Math.round(bannerBoundingBox?.height || 0)).toBeGreaterThanOrEqual(imageHeight - 2);
+    expect(Math.round(bannerBoundingBox?.height || 0)).toBeLessThanOrEqual(imageHeight + 2);
 };

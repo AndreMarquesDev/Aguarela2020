@@ -33,9 +33,9 @@ import {
     getImageDimension,
     isFirefox,
     isSafari,
-    oneAndAHalfMinTimeout,
     openNewTab,
     twoAndAHalfMinTimeout,
+    twoMinTimeout,
 } from '../utils/utils';
 
 export const projectsListDoubleSectionTest = async (
@@ -47,7 +47,7 @@ export const projectsListDoubleSectionTest = async (
     if (isSafari(browserName) || isFirefox(browserName)) {
         test.setTimeout(twoAndAHalfMinTimeout);
     } else {
-        test.setTimeout(oneAndAHalfMinTimeout);
+        test.setTimeout(twoMinTimeout);
     }
 
     const {

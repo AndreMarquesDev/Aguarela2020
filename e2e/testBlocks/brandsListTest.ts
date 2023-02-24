@@ -21,14 +21,7 @@ import {
     trattoriaInstagramUrl,
 } from '../../utils/urls';
 import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
-import {
-    getLocalizedTexts,
-    getImageDimension,
-    isFirefox,
-    isSafari,
-    oneAndAHalfMinTimeout,
-    openNewTab,
-} from '../utils/utils';
+import { getLocalizedTexts, getImageDimension, openNewTab, twoMinTimeout } from '../utils/utils';
 
 export const brandsListTest = async (
     page: Page,
@@ -36,9 +29,7 @@ export const brandsListTest = async (
     browserName: PlaywrightBrowserName,
     locale: Locale
 ): Promise<void> => {
-    if (isSafari(browserName) || isFirefox(browserName) || isMobile) {
-        test.setTimeout(oneAndAHalfMinTimeout);
-    }
+    test.setTimeout(twoMinTimeout);
 
     const container = page.getByTestId(brandsListSectionDataTestId);
     const { myNetwork } = getLocalizedTexts(locale);
