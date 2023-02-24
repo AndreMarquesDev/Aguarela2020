@@ -66,15 +66,11 @@ const config: PlaywrightTestConfig = {
         // },
         {
             name: 'chrome',
-            use: {
-                channel: 'chrome',
-            },
+            use: { ...devices['Desktop Chrome'] },
         },
         {
             name: 'edge',
-            use: {
-                channel: 'msedge',
-            },
+            use: { ...devices['Desktop Edge'] },
         },
         {
             name: 'firefox',
