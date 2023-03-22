@@ -1,4 +1,4 @@
-import { Page, expect, test } from '@playwright/test';
+import { Page, expect, test, TestInfo } from '@playwright/test';
 import { Locale } from '../../types/Locale';
 import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
 import {
@@ -31,24 +31,29 @@ import {
     clickNextArrowButtonIfMobile,
     getLocalizedTexts,
     getImageDimension,
-    isFirefox,
-    isSafari,
     openNewTab,
-    twoAndAHalfMinTimeout,
-    twoMinTimeout,
+    oneMinTimeout,
+    getInstagramFallbackUrl,
 } from '../utils/utils';
 
 export const projectsListDoubleSectionTest = async (
     page: Page,
     isMobile: boolean,
     browserName: PlaywrightBrowserName,
-    locale: Locale
+    locale: Locale,
+    testNumber: number,
+    testInfo: TestInfo
 ): Promise<void> => {
-    if (isSafari(browserName) || isFirefox(browserName)) {
-        test.setTimeout(twoAndAHalfMinTimeout);
-    } else {
-        test.setTimeout(twoMinTimeout);
-    }
+    test.setTimeout(oneMinTimeout);
+
+    const isRetry = !!testInfo.retry;
+
+    // this test takes too long so this is a way to split its execution
+    const isTest1 = testNumber === 1;
+    const isTest2 = testNumber === 2;
+    const isTest3 = testNumber === 3;
+    const isTest4 = testNumber === 4;
+    const isTest5 = testNumber === 5;
 
     const {
         projects,
@@ -77,6 +82,7 @@ export const projectsListDoubleSectionTest = async (
         isInPartnership: boolean,
         year?: string
     ): Promise<void> => {
+        const isInstagramUrl = typeof url === 'string' && url.includes('instagram');
         const slide = container.getByTestId(`${projectItemTouchDivDataTestId}_${brand}`);
         const anchor = slide.getByRole('link', { name: instagramHandle });
         const image = container.getByAltText(brand, { exact: true });
@@ -103,7 +109,13 @@ export const projectsListDoubleSectionTest = async (
         await expect(anchor).toBeVisible();
 
         // clicks on link to instagram
-        await openNewTab(page, anchor, url);
+        if (isRetry && isInstagramUrl) {
+            const fallbackUrl = getInstagramFallbackUrl(url);
+
+            await openNewTab(page, anchor, fallbackUrl);
+        } else {
+            await openNewTab(page, anchor, url);
+        }
 
         // after the click, the backface is hidden again sometimes
         await slide.hover();
@@ -132,200 +144,228 @@ export const projectsListDoubleSectionTest = async (
     visibleSlides.forEach(slide => expect(slide).toBeVisible());
 
     // renders slides
-    await testSlide(
-        'tjela',
-        '@tudonatjela',
-        tjelaInstagramUrl,
-        socialMediaAndContentCreation,
-        true,
-        `2020 - ${present}`
-    );
+    if (isTest1) {
+        await testSlide(
+            'tjela',
+            '@tudonatjela',
+            tjelaInstagramUrl,
+            socialMediaAndContentCreation,
+            true,
+            `2020 - ${present}`
+        );
 
-    await testSlide(
-        'taste of india',
-        '@tasteofindia',
-        tasteOfIndiaInstagramUrl,
-        socialMediaAndContentCreation,
-        true,
-        `2020 - ${present}`
-    );
-
-    await clickNextArrowButtonIfMobile(isMobile, container);
-
-    await testSlide(
-        'kaffeehaus',
-        '@kaffeehaus_lisboa',
-        kaffeehausInstagramUrl,
-        socialMediaAndContentCreation,
-        false,
-        `2018 - ${present}`
-    );
-
-    await testSlide(
-        'avocado',
-        '@avocadohouselisbon',
-        avocadoInstagramUrl,
-        socialMediaAndContentCreation,
-        true,
-        `2020 - ${present}`
-    );
+        await testSlide(
+            'taste of india',
+            '@tasteofindia',
+            tasteOfIndiaInstagramUrl,
+            socialMediaAndContentCreation,
+            true,
+            `2020 - ${present}`
+        );
+    }
 
     await clickNextArrowButtonIfMobile(isMobile, container);
 
-    await testSlide(
-        'guacamole',
-        '@guacamolegmg',
-        guacamoleInstagramUrl,
-        socialMediaAndContentCreation,
-        true,
-        `2019 - ${present}`
-    );
+    if (isTest1) {
+        await testSlide(
+            'kaffeehaus',
+            '@kaffeehaus_lisboa',
+            kaffeehausInstagramUrl,
+            socialMediaAndContentCreation,
+            false,
+            `2018 - ${present}`
+        );
 
-    await testSlide(
-        'marialimao',
-        '@bebemarialimao',
-        mariaLimaoIndustriaCriativaUrl,
-        socialMediaAndContentCreation,
-        false,
-        '2019 - 2020'
-    );
+        await testSlide(
+            'avocado',
+            '@avocadohouselisbon',
+            avocadoInstagramUrl,
+            socialMediaAndContentCreation,
+            true,
+            `2020 - ${present}`
+        );
 
-    await clickNextArrowButton();
+        return;
+    }
 
-    await testSlide(
-        'jameson',
-        '@jamesonportugal',
-        jamesonInstagramUrl,
-        socialMediaManagement,
-        false,
-        `2019 - ${present}`
-    );
+    await clickNextArrowButtonIfMobile(isMobile, container);
 
-    await testSlide(
-        'beefeater',
-        '@beefeater',
-        beefeaterWebsiteUrl,
-        socialMediaManagement,
-        false,
-        `2019 - ${present}`
-    );
+    if (isTest2) {
+        await testSlide(
+            'guacamole',
+            '@guacamolegmg',
+            guacamoleInstagramUrl,
+            socialMediaAndContentCreation,
+            true,
+            `2019 - ${present}`
+        );
 
-    await clickNextArrowButton();
-
-    await testSlide(
-        'biergarten',
-        '@biergarten',
-        biergartenInstagramUrl,
-        socialMediaAndContentCreation,
-        false,
-        '2019'
-    );
-
-    await testSlide(
-        'mad mary',
-        '@madmarycuisine',
-        madMaryInstagramUrl,
-        socialMediaAndContentCreation,
-        false,
-        '2019'
-    );
+        await testSlide(
+            'marialimao',
+            '@bebemarialimao',
+            mariaLimaoIndustriaCriativaUrl,
+            socialMediaAndContentCreation,
+            false,
+            '2019 - 2020'
+        );
+    }
 
     await clickNextArrowButton();
 
-    await testSlide(
-        'bovine',
-        '@bovinelisboa',
-        bovineInstagramUrl,
-        socialMediaAndContentCreation,
-        false,
-        '2020'
-    );
+    if (isTest2) {
+        await testSlide(
+            'jameson',
+            '@jamesonportugal',
+            jamesonInstagramUrl,
+            socialMediaManagement,
+            false,
+            `2019 - ${present}`
+        );
 
-    await testSlide(
-        'icecream roll',
-        '@icecreamroll.pt',
-        icecreamRollInstagramUrl,
-        socialMediaAndContentCreation,
-        false,
-        '2018'
-    );
+        await testSlide(
+            'beefeater',
+            '@beefeater',
+            beefeaterWebsiteUrl,
+            socialMediaManagement,
+            false,
+            `2019 - ${present}`
+        );
 
-    await clickNextArrowButton();
-
-    await testSlide(
-        'rice me',
-        '@ricemerestaurante',
-        riceMeInstagramUrl,
-        socialMediaAndContentCreation,
-        false,
-        '2020'
-    );
-
-    await testSlide(
-        'rice me deli',
-        '@ricemedeli',
-        riceMeDeliInstagramUrl,
-        socialMediaAndContentCreation,
-        false,
-        '2020'
-    );
+        return;
+    }
 
     await clickNextArrowButton();
 
-    await testSlide(
-        'harpoon',
-        '@harpoonjobs',
-        /.*harpoon-lda/,
-        socialMediaAndContentCreation,
-        false,
-        '2020 - 2021'
-    );
+    if (isTest3) {
+        await testSlide(
+            'biergarten',
+            '@biergarten',
+            biergartenInstagramUrl,
+            socialMediaAndContentCreation,
+            false,
+            '2019'
+        );
 
-    await testSlide(
-        'catarina santiago',
-        '@catarinasantiago',
-        catarinaSantiagoInstagramUrl,
-        contentCreation,
-        false
-    );
-
-    await clickNextArrowButton();
-
-    await testSlide(
-        '4 patas de 5 estrelas',
-        '@4patasde5estrelas',
-        quatroPatasDe5EstrelasInstagramUrl,
-        socialMediaManagement,
-        false,
-        `2020 - ${present}`
-    );
-
-    await testSlide(
-        'luminous',
-        '@becomeluminous',
-        luminousInstagramUrl,
-        socialMediaAndPaidSocial,
-        true,
-        '2020'
-    );
+        await testSlide(
+            'mad mary',
+            '@madmarycuisine',
+            madMaryInstagramUrl,
+            socialMediaAndContentCreation,
+            false,
+            '2019'
+        );
+    }
 
     await clickNextArrowButton();
 
-    await testSlide(
-        'a amiga esteticista',
-        '@aamigaesteticista',
-        aAmigaEsteticistaIndustriaCriativaUrl,
-        consultingAndContentCreation,
-        false,
-        `2017 - ${present}`
-    );
+    if (isTest3) {
+        await testSlide(
+            'bovine',
+            '@bovinelisboa',
+            bovineInstagramUrl,
+            socialMediaAndContentCreation,
+            false,
+            '2020'
+        );
 
-    await testSlide(
-        'AnaRo',
-        '@anaro.artistpage',
-        anaroIndustriaCriativaUrl,
-        consultingAndContentCreation,
-        false,
-        '2019'
-    );
+        await testSlide(
+            'icecream roll',
+            '@icecreamroll.pt',
+            icecreamRollInstagramUrl,
+            socialMediaAndContentCreation,
+            false,
+            '2018'
+        );
+
+        return;
+    }
+
+    await clickNextArrowButton();
+
+    if (isTest4) {
+        await testSlide(
+            'rice me',
+            '@ricemerestaurante',
+            riceMeInstagramUrl,
+            socialMediaAndContentCreation,
+            false,
+            '2020'
+        );
+
+        await testSlide(
+            'rice me deli',
+            '@ricemedeli',
+            riceMeDeliInstagramUrl,
+            socialMediaAndContentCreation,
+            false,
+            '2020'
+        );
+    }
+
+    await clickNextArrowButton();
+
+    if (isTest4) {
+        await testSlide(
+            'harpoon',
+            '@harpoonjobs',
+            /.*harpoon-lda/,
+            socialMediaAndContentCreation,
+            false,
+            '2020 - 2021'
+        );
+
+        await testSlide(
+            'catarina santiago',
+            '@catarinasantiago',
+            catarinaSantiagoInstagramUrl,
+            contentCreation,
+            false
+        );
+
+        return;
+    }
+
+    await clickNextArrowButton();
+
+    if (isTest5) {
+        await testSlide(
+            '4 patas de 5 estrelas',
+            '@4patasde5estrelas',
+            quatroPatasDe5EstrelasInstagramUrl,
+            socialMediaManagement,
+            false,
+            `2020 - ${present}`
+        );
+
+        await testSlide(
+            'luminous',
+            '@becomeluminous',
+            luminousInstagramUrl,
+            socialMediaAndPaidSocial,
+            true,
+            '2020'
+        );
+    }
+
+    await clickNextArrowButton();
+
+    if (isTest5) {
+        await testSlide(
+            'a amiga esteticista',
+            '@aamigaesteticista',
+            aAmigaEsteticistaIndustriaCriativaUrl,
+            consultingAndContentCreation,
+            false,
+            `2017 - ${present}`
+        );
+
+        await testSlide(
+            'AnaRo',
+            '@anaro.artistpage',
+            anaroIndustriaCriativaUrl,
+            consultingAndContentCreation,
+            false,
+            '2019'
+        );
+    }
 };

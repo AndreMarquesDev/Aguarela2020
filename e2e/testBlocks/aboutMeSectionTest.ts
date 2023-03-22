@@ -1,16 +1,24 @@
-import { Page, expect } from '@playwright/test';
+import { Page, expect, TestInfo } from '@playwright/test';
 import { Locale } from '../../types/Locale';
 import { aboutMeSectionDataTestId } from '../../utils/dataTestIds';
 import { catarinaSantiagoInstagramUrl } from '../../utils/urls';
 import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
-import { getLocalizedTexts, getImageDimension, openNewTab } from '../utils/utils';
+import {
+    getLocalizedTexts,
+    getImageDimension,
+    openNewTab,
+    getInstagramFallbackUrl,
+} from '../utils/utils';
 
 export const aboutMeSectionTest = async (
     page: Page,
     isMobile: boolean,
     browserName: PlaywrightBrowserName,
-    locale: Locale
+    locale: Locale,
+    testInfo: TestInfo
 ): Promise<void> => {
+    const isRetry = !!testInfo.retry;
+
     const {
         about,
         hiMyNameIs,
@@ -58,5 +66,11 @@ export const aboutMeSectionTest = async (
     await expect(container.getByText(theSocialMediaCommunicationStrategy)).toBeVisible();
 
     // 'Get to know me better' links to Catarina Santiago's Instagram
-    await openNewTab(page, anchor, catarinaSantiagoInstagramUrl);
+    if (isRetry) {
+        const fallbackUrl = getInstagramFallbackUrl(catarinaSantiagoInstagramUrl);
+
+        await openNewTab(page, anchor, fallbackUrl);
+    } else {
+        await openNewTab(page, anchor, catarinaSantiagoInstagramUrl);
+    }
 };

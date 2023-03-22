@@ -57,7 +57,7 @@ exports[`<Footer /> renders properly 1`] = `
           <a
             aria-label="Aguarela facebook"
             class="jsx-1577276803"
-            href="https://www.facebook.com/aguareladigitalagency"
+            href="https://www.facebook.com/aguareladigitalpt"
             rel="noreferrer"
             target="_blank"
           >
@@ -162,7 +162,7 @@ exports[`<Footer /> renders properly in English 1`] = `
           <a
             aria-label="Aguarela facebook"
             class="jsx-1577276803"
-            href="https://www.facebook.com/aguareladigitalagency"
+            href="https://www.facebook.com/aguareladigitalpt"
             rel="noreferrer"
             target="_blank"
           >

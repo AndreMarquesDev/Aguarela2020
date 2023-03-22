@@ -42,6 +42,18 @@ export const getImageDimension = (
     return sizeMobileSafari;
 };
 
+// sometimes instagram opens the login page instead of the respective account page
+// in cases like that the url looks like this:
+// "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Flogin%2F%3Fnext%3Dhttps%253A%252F%252Fwww.instagram.com%252Fcatarinasantiago%252F%26__coig_login%3D1"
+// the goal here is to try the standard url and if instagram redirects to the login page,
+// assert that at least the url is correct
+export const getInstagramFallbackUrl = (url: string): string => {
+    const accountHandle = url.split('https://www.instagram.com/')[1].split('/')[0];
+    const fallbackUrl = `https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Flogin%2F%3Fnext%3Dhttps%253A%252F%252Fwww.instagram.com%252F${accountHandle}%252F%26__coig_login%3D1`;
+
+    return fallbackUrl;
+};
+
 export const openMenuMobile = (page: Page, isMobile: boolean): void => {
     if (isMobile) {
         page.getByRole('button', { name: 'toggle menu' }).click();

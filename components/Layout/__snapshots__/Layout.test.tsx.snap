@@ -166,7 +166,7 @@ exports[`<Layout /> renders properly 1`] = `
             <a
               aria-label="Aguarela facebook"
               class="jsx-1577276803"
-              href="https://www.facebook.com/aguareladigitalagency"
+              href="https://www.facebook.com/aguareladigitalpt"
               rel="noreferrer"
               target="_blank"
             >
@@ -381,7 +381,7 @@ exports[`<Layout /> renders properly in English 1`] = `
             <a
               aria-label="Aguarela facebook"
               class="jsx-1577276803"
-              href="https://www.facebook.com/aguareladigitalagency"
+              href="https://www.facebook.com/aguareladigitalpt"
               rel="noreferrer"
               target="_blank"
             >
@@ -596,7 +596,7 @@ exports[`<Layout /> renders properly when the menu is open and the resolution is
             <a
               aria-label="Aguarela facebook"
               class="jsx-1577276803"
-              href="https://www.facebook.com/aguareladigitalagency"
+              href="https://www.facebook.com/aguareladigitalpt"
               rel="noreferrer"
               target="_blank"
             >
