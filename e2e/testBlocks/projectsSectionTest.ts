@@ -1,4 +1,4 @@
-import { Page, expect, test } from '@playwright/test';
+import { Page, expect, TestInfo } from '@playwright/test';
 import { Locale } from '../../types/Locale';
 import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
 import { projectsListSectionDataTestId } from '../../utils/dataTestIds';
@@ -9,20 +9,17 @@ import {
     getLocalizedTexts,
     getImageDimension,
     openNewTab,
-    isSafari,
-    oneMinTimeout,
-    isFirefox,
+    getInstagramFallbackUrl,
 } from '../utils/utils';
 
 export const projectsSectionTest = async (
     page: Page,
     isMobile: boolean,
     browserName: PlaywrightBrowserName,
-    locale: Locale
+    locale: Locale,
+    testInfo: TestInfo
 ): Promise<void> => {
-    if (isSafari(browserName) || isFirefox(browserName)) {
-        test.setTimeout(oneMinTimeout);
-    }
+    const isRetry = !!testInfo.retry;
 
     const {
         socialMediaManagementAndContentCreation,
@@ -39,7 +36,7 @@ export const projectsSectionTest = async (
         number: number,
         brand: string,
         instagramHandle: string,
-        url: string | RegExp,
+        url: string,
         title: string,
         isInPartnership: boolean,
         year?: string
@@ -72,7 +69,13 @@ export const projectsSectionTest = async (
         await expect(anchor).toBeVisible();
 
         // clicks on link to instagram
-        await openNewTab(page, anchor, url);
+        if (isRetry) {
+            const fallbackUrl = getInstagramFallbackUrl(url);
+
+            await openNewTab(page, anchor, fallbackUrl);
+        } else {
+            await openNewTab(page, anchor, url);
+        }
 
         // after the click, the backface is hidden again sometimes
         await slide.hover();

@@ -47,8 +47,8 @@ test.describe('PT | Contact page', () => {
         await contactFormTest(page, locale, browserName as PlaywrightBrowserName);
     });
 
-    test('renders the footer', async ({ page, isMobile }) => {
-        await footerTest(page, !!isMobile, locale);
+    test('renders the footer', async ({ page, isMobile }, testInfo) => {
+        await footerTest(page, !!isMobile, locale, testInfo);
     });
 });
 
@@ -85,7 +85,7 @@ test.describe('EN | Contact page', () => {
         await contactFormTest(page, locale, browserName as PlaywrightBrowserName);
     });
 
-    test('renders the footer', async ({ page, isMobile }) => {
-        await footerTest(page, !!isMobile, locale);
+    test('renders the footer', async ({ page, isMobile }, testInfo) => {
+        await footerTest(page, !!isMobile, locale, testInfo);
     });
 });
