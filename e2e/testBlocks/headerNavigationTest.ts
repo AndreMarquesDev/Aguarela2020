@@ -10,17 +10,19 @@ import {
     aboutMeSectionDataTestId,
 } from '../../utils/dataTestIds';
 import { urls } from '../utils/selectors';
-import { getLocalizedTexts, oneAndAHalfMinTimeout, openMenuMobile } from '../utils/utils';
+import { getLocalizedTexts, isSafari, oneAndAHalfMinTimeout, openMenuMobile } from '../utils/utils';
+import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
 
 export const headerNavigationTest = async (
     page: Page,
     pageName: PageName,
     pageTitleDataTestId: string,
     isMobile: boolean,
+    browserName: PlaywrightBrowserName,
     locale: Locale,
     otherLocale: Locale
 ): Promise<void> => {
-    if (isMobile) {
+    if (isMobile && isSafari(browserName)) {
         test.setTimeout(oneAndAHalfMinTimeout);
     }
 

@@ -1,26 +1,17 @@
-import { Page, expect, TestInfo } from '@playwright/test';
+import { Page, expect } from '@playwright/test';
 import { Locale } from '../../types/Locale';
 import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
 import { projectsListSectionDataTestId } from '../../utils/dataTestIds';
 import { guacamoleInstagramUrl, kaffeehausInstagramUrl, tjelaInstagramUrl } from '../../utils/urls';
 import { urls } from '../utils/selectors';
-import {
-    clickNextArrowButtonIfMobile,
-    getLocalizedTexts,
-    getImageDimension,
-    openNewTab,
-    getInstagramFallbackUrl,
-} from '../utils/utils';
+import { clickNextArrowButtonIfMobile, getLocalizedTexts, getImageDimension } from '../utils/utils';
 
 export const projectsSectionTest = async (
     page: Page,
     isMobile: boolean,
     browserName: PlaywrightBrowserName,
-    locale: Locale,
-    testInfo: TestInfo
+    locale: Locale
 ): Promise<void> => {
-    const isRetry = !!testInfo.retry;
-
     const {
         socialMediaManagementAndContentCreation,
         projects,
@@ -69,13 +60,8 @@ export const projectsSectionTest = async (
         await expect(anchor).toBeVisible();
 
         // clicks on link to instagram
-        if (isRetry) {
-            const fallbackUrl = getInstagramFallbackUrl(url);
-
-            await openNewTab(page, anchor, fallbackUrl);
-        } else {
-            await openNewTab(page, anchor, url);
-        }
+        await expect(anchor).toBeVisible();
+        await expect(anchor).toHaveAttribute('href', url);
 
         // after the click, the backface is hidden again sometimes
         await slide.hover();
