@@ -1,4 +1,4 @@
-import { Locator, Page, expect } from '@playwright/test';
+import { Locator, Page } from '@playwright/test';
 import { Locale } from '../../types/Locale';
 import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
 import { nukaCarouselNextButtonDataTestId } from '../../utils/dataTestIds';
@@ -42,41 +42,10 @@ export const getImageDimension = (
     return sizeMobileSafari;
 };
 
-// sometimes instagram opens the login page instead of the respective account page
-// in cases like that the url looks like this:
-// "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Flogin%2F%3Fnext%3Dhttps%253A%252F%252Fwww.instagram.com%252Fcatarinasantiago%252F%26__coig_login%3D1"
-// the goal here is to try the standard url and if instagram redirects to the login page,
-// assert that at least the url is correct
-export const getInstagramFallbackUrl = (url: string): string => {
-    const accountHandle = url.split('https://www.instagram.com/')[1].split('/')[0];
-    const fallbackUrl = `https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Flogin%2F%3Fnext%3Dhttps%253A%252F%252Fwww.instagram.com%252F${accountHandle}%252F%26__coig_login%3D1`;
-
-    return fallbackUrl;
-};
-
 export const openMenuMobile = (page: Page, isMobile: boolean): void => {
     if (isMobile) {
         page.getByRole('button', { name: 'toggle menu' }).click();
     }
-};
-
-export const openNewTab = async (
-    page: Page,
-    anchor: Locator,
-    url: string | RegExp,
-    timeout = 5000
-): Promise<void> => {
-    await expect(anchor).toBeVisible();
-
-    const newTabPromise = page.waitForEvent('popup');
-
-    await anchor.click();
-
-    const newTab = await newTabPromise;
-
-    await newTab.waitForLoadState();
-
-    await expect(newTab).toHaveURL(url, { timeout });
 };
 
 export const clickNextArrowButtonIfMobile = async (
@@ -87,3 +56,24 @@ export const clickNextArrowButtonIfMobile = async (
         await container.getByTestId(nukaCarouselNextButtonDataTestId).click();
     }
 };
+
+// this technique is recommended by Playwright (https://playwright.dev/docs/pages#handling-popups)
+// but was very buggy so I decided to ditch it
+// export const openNewTab = async (
+//     page: Page,
+//     anchor: Locator,
+//     url: string | RegExp,
+//     timeout = 5000
+// ): Promise<void> => {
+//     await expect(anchor).toBeVisible();
+
+//     const newTabPromise = page.waitForEvent('popup');
+
+//     await anchor.click();
+
+//     const newTab = await newTabPromise;
+
+//     await newTab.waitForLoadState();
+
+//     await expect(newTab).toHaveURL(url, { timeout });
+// };

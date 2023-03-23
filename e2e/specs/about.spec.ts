@@ -20,78 +20,32 @@ test.describe('PT | About page', () => {
         await expect(page).toHaveURL(url);
     });
 
-    test('renders the header and navigates properly', async ({ page, isMobile }) => {
+    test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
         await headerNavigationTest(
             page,
             'about',
             aboutMeSectionDataTestId,
             !!isMobile,
+            browserName as PlaywrightBrowserName,
             locale,
             otherLocale
         );
     });
 
-    test('renders the about me section', async ({ page, isMobile, browserName }, testInfo) => {
-        await aboutMeSectionTest(
-            page,
-            !!isMobile,
-            browserName as PlaywrightBrowserName,
-            locale,
-            testInfo
-        );
+    test('renders the about me section', async ({ page, isMobile, browserName }) => {
+        await aboutMeSectionTest(page, !!isMobile, browserName as PlaywrightBrowserName, locale);
     });
 
-    test('renders the brands list section part 1', async ({
-        page,
-        isMobile,
-        browserName,
-    }, testInfo) => {
-        await brandsListTest(
-            page,
-            !!isMobile,
-            browserName as PlaywrightBrowserName,
-            locale,
-            1,
-            testInfo
-        );
-    });
-
-    test('renders the brands list section part 2', async ({
-        page,
-        isMobile,
-        browserName,
-    }, testInfo) => {
-        await brandsListTest(
-            page,
-            !!isMobile,
-            browserName as PlaywrightBrowserName,
-            locale,
-            2,
-            testInfo
-        );
-    });
-
-    test('renders the brands list section part 3', async ({
-        page,
-        isMobile,
-        browserName,
-    }, testInfo) => {
-        await brandsListTest(
-            page,
-            !!isMobile,
-            browserName as PlaywrightBrowserName,
-            locale,
-            3,
-            testInfo
-        );
+    test('renders the brands list section', async ({ page, isMobile, browserName }) => {
+        await brandsListTest(page, !!isMobile, browserName as PlaywrightBrowserName, locale);
     });
 
     test("renders the let's work section", async ({ page }) => {
         await letsWorkSectionTest(page, locale);
     });
 
-    test('renders the footer', async ({ page, isMobile }, testInfo) => {
-        await footerTest(page, !!isMobile, locale, testInfo);
+    test('renders the footer', async ({ page }) => {
+        await footerTest(page, locale);
     });
 });
 
@@ -106,77 +60,31 @@ test.describe('EN | About page', () => {
         await expect(page).toHaveURL(url);
     });
 
-    test('renders the header and navigates properly', async ({ page, isMobile }) => {
+    test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
         await headerNavigationTest(
             page,
             'about',
             aboutMeSectionDataTestId,
             !!isMobile,
+            browserName as PlaywrightBrowserName,
             locale,
             otherLocale
         );
     });
 
-    test('renders the about me section', async ({ page, isMobile, browserName }, testInfo) => {
-        await aboutMeSectionTest(
-            page,
-            !!isMobile,
-            browserName as PlaywrightBrowserName,
-            locale,
-            testInfo
-        );
+    test('renders the about me section', async ({ page, isMobile, browserName }) => {
+        await aboutMeSectionTest(page, !!isMobile, browserName as PlaywrightBrowserName, locale);
     });
 
-    test('renders the brands list section part 1', async ({
-        page,
-        isMobile,
-        browserName,
-    }, testInfo) => {
-        await brandsListTest(
-            page,
-            !!isMobile,
-            browserName as PlaywrightBrowserName,
-            locale,
-            1,
-            testInfo
-        );
-    });
-
-    test('renders the brands list section part 2', async ({
-        page,
-        isMobile,
-        browserName,
-    }, testInfo) => {
-        await brandsListTest(
-            page,
-            !!isMobile,
-            browserName as PlaywrightBrowserName,
-            locale,
-            2,
-            testInfo
-        );
-    });
-
-    test('renders the brands list section part 3', async ({
-        page,
-        isMobile,
-        browserName,
-    }, testInfo) => {
-        await brandsListTest(
-            page,
-            !!isMobile,
-            browserName as PlaywrightBrowserName,
-            locale,
-            3,
-            testInfo
-        );
+    test('renders the brands list section', async ({ page, isMobile, browserName }) => {
+        await brandsListTest(page, !!isMobile, browserName as PlaywrightBrowserName, locale);
     });
 
     test("renders the let's work section", async ({ page }) => {
         await letsWorkSectionTest(page, locale);
     });
 
-    test('renders the footer', async ({ page, isMobile }, testInfo) => {
-        await footerTest(page, !!isMobile, locale, testInfo);
+    test('renders the footer', async ({ page }) => {
+        await footerTest(page, locale);
     });
 });

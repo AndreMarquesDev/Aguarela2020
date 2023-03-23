@@ -28,12 +28,13 @@ test.describe('PT | Contact page', () => {
         await expect(page).toHaveURL(url);
     });
 
-    test('renders the header and navigates properly', async ({ page, isMobile }) => {
+    test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
         await headerNavigationTest(
             page,
             'contact',
             contactBlockSectionDataTestId,
             !!isMobile,
+            browserName as PlaywrightBrowserName,
             locale,
             otherLocale
         );
@@ -47,8 +48,8 @@ test.describe('PT | Contact page', () => {
         await contactFormTest(page, locale, browserName as PlaywrightBrowserName);
     });
 
-    test('renders the footer', async ({ page, isMobile }, testInfo) => {
-        await footerTest(page, !!isMobile, locale, testInfo);
+    test('renders the footer', async ({ page }) => {
+        await footerTest(page, locale);
     });
 });
 
@@ -66,12 +67,13 @@ test.describe('EN | Contact page', () => {
         await expect(page).toHaveURL(url);
     });
 
-    test('renders the header and navigates properly', async ({ page, isMobile }) => {
+    test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
         await headerNavigationTest(
             page,
             'contact',
             contactBlockSectionDataTestId,
             !!isMobile,
+            browserName as PlaywrightBrowserName,
             locale,
             otherLocale
         );
@@ -85,7 +87,7 @@ test.describe('EN | Contact page', () => {
         await contactFormTest(page, locale, browserName as PlaywrightBrowserName);
     });
 
-    test('renders the footer', async ({ page, isMobile }, testInfo) => {
-        await footerTest(page, !!isMobile, locale, testInfo);
+    test('renders the footer', async ({ page }) => {
+        await footerTest(page, locale);
     });
 });

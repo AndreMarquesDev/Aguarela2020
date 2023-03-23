@@ -1,7 +1,7 @@
-import { Page, expect, TestInfo } from '@playwright/test';
+import { Page, expect } from '@playwright/test';
 import { Locale } from '../../types/Locale';
 import { footerDataTestId } from '../../utils/dataTestIds';
-import { getInstagramFallbackUrl, getLocalizedTexts, openNewTab } from '../utils/utils';
+import { getLocalizedTexts } from '../utils/utils';
 import {
     andreMarquesDevWebsiteUrl,
     aguarelaDigitalInstagramUrl,
@@ -9,14 +9,7 @@ import {
 } from '../../utils/urls';
 import { urls } from '../utils/selectors';
 
-export const footerTest = async (
-    page: Page,
-    isMobile: boolean,
-    locale: Locale,
-    testInfo: TestInfo
-): Promise<void> => {
-    const isRetry = !!testInfo.retry;
-
+export const footerTest = async (page: Page, locale: Locale): Promise<void> => {
     const { footerInfo } = getLocalizedTexts(locale);
 
     const container = page.getByTestId(footerDataTestId);
@@ -24,28 +17,19 @@ export const footerTest = async (
     const instagramAnchor = container.getByRole('link', { name: 'Aguarela instagram' });
     const facebookAnchor = container.getByRole('link', { name: 'Aguarela facebook' });
     const contactPageAnchor = container.getByRole('link', { name: 'Go to contact page' });
-    const facebookUrl = isMobile
-        ? /.*https:\/\/m.facebook.com\/aguareladigitalpt/
-        : aguarelaDigitalFacebookUrl;
 
     // renders the 'developed by' text
     await expect(container.getByText(`${footerInfo} André Marques`)).toBeVisible();
 
-    // clicking on 'André Marques' links to AndreMarquesDev website
-    await openNewTab(page, andreMarquesDevAnchor, andreMarquesDevWebsiteUrl);
-
     // renders the social links
-    if (isRetry) {
-        const fallbackUrl = getInstagramFallbackUrl(aguarelaDigitalInstagramUrl);
-
-        await openNewTab(page, instagramAnchor, fallbackUrl);
-    } else {
-        await openNewTab(page, instagramAnchor, aguarelaDigitalInstagramUrl);
-    }
-    await openNewTab(page, facebookAnchor, facebookUrl);
+    await expect(instagramAnchor).toBeVisible();
+    await expect(instagramAnchor).toHaveAttribute('href', aguarelaDigitalInstagramUrl);
+    await expect(facebookAnchor).toBeVisible();
+    await expect(facebookAnchor).toHaveAttribute('href', aguarelaDigitalFacebookUrl);
 
     // clicking on 'André Marques' links to AndreMarquesDev website
-    await openNewTab(page, andreMarquesDevAnchor, andreMarquesDevWebsiteUrl);
+    await expect(andreMarquesDevAnchor).toBeVisible();
+    await expect(andreMarquesDevAnchor).toHaveAttribute('href', andreMarquesDevWebsiteUrl);
 
     // clicking on mail icon redirects to contact page
     await expect(contactPageAnchor).toBeVisible();
