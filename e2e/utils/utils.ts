@@ -1,4 +1,4 @@
-import { Locator, Page } from '@playwright/test';
+import { Locator } from '@playwright/test';
 import { Locale } from '../../types/Locale';
 import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
 import { nukaCarouselNextButtonDataTestId } from '../../utils/dataTestIds';
@@ -40,12 +40,6 @@ export const getImageDimension = (
     }
 
     return sizeMobileSafari;
-};
-
-export const openMenuMobile = (page: Page, isMobile: boolean): void => {
-    if (isMobile) {
-        page.getByRole('button', { name: 'toggle menu' }).click();
-    }
 };
 
 export const clickNextArrowButtonIfMobile = async (

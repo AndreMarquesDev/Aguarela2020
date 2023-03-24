@@ -24,13 +24,12 @@ test.describe('PT | Homepage', () => {
         await expect(page).toHaveURL(url);
     });
 
-    test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
+    test('renders the header and navigates properly', async ({ page, isMobile }) => {
         await headerNavigationTest(
             page,
             'homepage',
             skillsBlockSectionDataTestId,
             !!isMobile,
-            browserName as PlaywrightBrowserName,
             locale,
             otherLocale
         );
@@ -80,13 +79,12 @@ test.describe('EN | Homepage', () => {
         await expect(page).toHaveURL(url);
     });
 
-    test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
+    test('renders the header and navigates properly', async ({ page, isMobile }) => {
         await headerNavigationTest(
             page,
             'homepage',
             skillsBlockSectionDataTestId,
             !!isMobile,
-            browserName as PlaywrightBrowserName,
             locale,
             otherLocale
         );
