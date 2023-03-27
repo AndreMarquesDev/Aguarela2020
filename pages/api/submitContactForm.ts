@@ -3,7 +3,6 @@ import nodemailer, { SendMailOptions } from 'nodemailer';
 import DOMPurify from 'isomorphic-dompurify';
 import { CustomNextApiRequest } from '../../types/CustomNextApiRequest';
 import { FormPostRequestBody } from '../../types/FormPostRequestBody';
-import { isDev } from '../../utils/generic';
 
 const buildEmailOptions = (data: FormPostRequestBody): SendMailOptions => {
     const {
@@ -12,7 +11,7 @@ const buildEmailOptions = (data: FormPostRequestBody): SendMailOptions => {
         message: dirtyMessage,
         brand: dirtyBrand,
         subject: dirtySubject,
-        isTest,
+        isPlaywright,
     } = data;
 
     const name = DOMPurify.sanitize(dirtyName);
@@ -24,14 +23,14 @@ const buildEmailOptions = (data: FormPostRequestBody): SendMailOptions => {
     const emailToSendFrom = process.env.NODEMAILER_SEND_EMAIL_FROM;
     const regularSubjectString = `aguareladigital.com - Contacto de ${name}${
         brand && ` da empresa ${brand}`
-        }`;
-    const testSubjectString = `Aguarela Contact Form - E2E | ${name} | ${brand}`;
+    }`;
+    const testSubjectString = `Playwright E2E Test - aguareladigital.com | ${name} | ${brand}`;
     const emailBody = `<p>Assunto: ${subject}</p><br/><p>Email: ${email}</p><br/><p>${message}</p>`;
 
-    const emailToSendTo = isTest
+    const emailToSendTo = isPlaywright
         ? process.env.NODEMAILER_SEND_EMAIL_FROM
         : process.env.NODEMAILER_SEND_EMAIL_TO;
-    const emailSubject = isTest ? testSubjectString : regularSubjectString;
+    const emailSubject = isPlaywright ? testSubjectString : regularSubjectString;
 
     return {
         from: emailToSendFrom,
@@ -46,28 +45,26 @@ const responseSuccess = (response: NextApiResponse): void =>
 const responseError = (response: NextApiResponse): void =>
     response.status(400).send({ messsage: 'Error' });
 
+const mockSuccess = process.env.NEXT_PUBLIC_MOCK_CONTACT_FORM_SUCCESS === 'true';
+const mockError = process.env.NEXT_PUBLIC_MOCK_CONTACT_FORM_ERROR === 'true';
+
 const submitContactForm = (req: CustomNextApiRequest, res: NextApiResponse): void => {
     // only allow POST requests
-    if (req.method !== 'POST') {
+    if (req.method !== 'POST' || mockError) {
         responseError(res);
+
+        return;
+    }
+
+    // return success if is dev
+    if (mockSuccess) {
+        responseSuccess(res);
 
         return;
     }
 
     const data = req.body;
     const emailOptions = buildEmailOptions(data);
-
-    // TODO remove when Playwright tests setup is finished
-    responseSuccess(res);
-
-    return;
-
-    // return success if is dev
-    if (isDev) {
-        responseSuccess(res);
-
-        return;
-    }
 
     const smtpTransport = nodemailer.createTransport({
         host: 'smtp-mail.outlook.com',
