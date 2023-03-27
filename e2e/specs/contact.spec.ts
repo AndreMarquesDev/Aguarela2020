@@ -8,21 +8,12 @@ import { footerTest } from '../testBlocks/footerTest';
 import { headerNavigationTest } from '../testBlocks/headerNavigationTest';
 import { urls } from '../utils/selectors';
 
-declare global {
-    interface Window {
-        isPlaywrightRunning: boolean;
-    }
-}
-
 test.describe('PT | Contact page', () => {
     const url = urls.pt.contact;
     const locale = Locale.Pt;
     const otherLocale = Locale.En;
 
-    test.beforeEach(async ({ page, context }) => {
-        await context.addInitScript(() => {
-            window.isPlaywrightRunning = true;
-        });
+    test.beforeEach(async ({ page }) => {
         await page.goto(url);
 
         await expect(page).toHaveURL(url);
@@ -57,10 +48,7 @@ test.describe('EN | Contact page', () => {
     const locale = Locale.En;
     const otherLocale = Locale.Pt;
 
-    test.beforeEach(async ({ page, context }) => {
-        await context.addInitScript(() => {
-            window.isPlaywrightRunning = true;
-        });
+    test.beforeEach(async ({ page }) => {
         await page.goto(url);
 
         await expect(page).toHaveURL(url);

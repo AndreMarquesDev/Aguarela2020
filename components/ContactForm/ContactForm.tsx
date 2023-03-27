@@ -92,10 +92,9 @@ export const ContactForm = (): JSX.Element => {
             sending: true,
         });
 
-        const isTest = !!window.isPlaywrightRunning;
         const formStateWithHiddenInputs: FormPostRequestBody = {
             ...formState,
-            isTest,
+            isPlaywright: process.env.NEXT_PUBLIC_IS_PLAYWRIGHT === 'true',
         };
 
         axios
