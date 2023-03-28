@@ -24,14 +24,15 @@ test.describe('PT | Homepage', () => {
         await expect(page).toHaveURL(url);
     });
 
-    test('renders the header and navigates properly', async ({ page, isMobile }) => {
+    test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
         await headerNavigationTest(
             page,
             'homepage',
             skillsBlockSectionDataTestId,
             !!isMobile,
             locale,
-            otherLocale
+            otherLocale,
+            browserName as PlaywrightBrowserName
         );
     });
 
@@ -79,14 +80,15 @@ test.describe('EN | Homepage', () => {
         await expect(page).toHaveURL(url);
     });
 
-    test('renders the header and navigates properly', async ({ page, isMobile }) => {
+    test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
         await headerNavigationTest(
             page,
             'homepage',
             skillsBlockSectionDataTestId,
             !!isMobile,
             locale,
-            otherLocale
+            otherLocale,
+            browserName as PlaywrightBrowserName
         );
     });
 

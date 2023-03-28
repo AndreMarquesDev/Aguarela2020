@@ -20,14 +20,15 @@ test.describe('PT | Projects page', () => {
         await expect(page).toHaveURL(url);
     });
 
-    test('renders the header and navigates properly', async ({ page, isMobile }) => {
+    test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
         await headerNavigationTest(
             page,
             'projects',
             projectsListDoubleSectionDataTestId,
             !!isMobile,
             locale,
-            otherLocale
+            otherLocale,
+            browserName as PlaywrightBrowserName
         );
     });
 
@@ -64,14 +65,15 @@ test.describe('EN | Projects page', () => {
         await expect(page).toHaveURL(url);
     });
 
-    test('renders the header and navigates properly', async ({ page, isMobile }) => {
+    test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
         await headerNavigationTest(
             page,
             'projects',
             projectsListDoubleSectionDataTestId,
             !!isMobile,
             locale,
-            otherLocale
+            otherLocale,
+            browserName as PlaywrightBrowserName
         );
     });
 
