@@ -1,4 +1,4 @@
-import { Locator } from '@playwright/test';
+import { Locator, TestInfo } from '@playwright/test';
 import { Locale } from '../../types/Locale';
 import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
 import { nukaCarouselNextButtonDataTestId } from '../../utils/dataTestIds';
@@ -49,6 +49,14 @@ export const clickNextArrowButtonIfMobile = async (
     if (isMobile) {
         await container.getByTestId(nukaCarouselNextButtonDataTestId).click();
     }
+};
+
+export const getScreenshotPath = (
+    screenshotName: string,
+    locale: Locale,
+    isFullPage = false
+): string => {
+    return `${locale.toUpperCase()}${isFullPage ? '-full-page' : ''}-${screenshotName}.png`;
 };
 
 // this technique is recommended by Playwright (https://playwright.dev/docs/pages#handling-popups)

@@ -1,13 +1,18 @@
 import { test, expect } from '@playwright/test';
 import { Locale } from '../../types/Locale';
 import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
-import { servicesBlockSectionDataTestId } from '../../utils/dataTestIds';
+import {
+    brandsListSectionDataTestId,
+    footerDataTestId,
+    servicesBlockSectionDataTestId,
+} from '../../utils/dataTestIds';
 import { servicesSectionTest } from '../testBlocks/servicesSectionTest';
 import { brandsListTest } from '../testBlocks/brandsListTest';
 import { footerTest } from '../testBlocks/footerTest';
 import { letsWorkSectionTest } from '../testBlocks/letsWorkSectionTest';
 import { headerNavigationTest } from '../testBlocks/headerNavigationTest';
 import { urls } from '../utils/selectors';
+import { getScreenshotPath } from '../utils/utils';
 
 test.describe('PT | Services page', () => {
     const url = urls.pt.services;
@@ -46,6 +51,17 @@ test.describe('PT | Services page', () => {
 
     test('renders the footer', async ({ page }) => {
         await footerTest(page, locale);
+    });
+
+    test('takes a full page screenshot', async ({ page }) => {
+        // scroll to bottom of the page to allow brands lists images to load
+        await page.getByTestId(brandsListSectionDataTestId).scrollIntoViewIfNeeded();
+        await page.getByTestId(footerDataTestId).scrollIntoViewIfNeeded();
+        await page.waitForLoadState('networkidle');
+        // take full page screenshot
+        await expect(page).toHaveScreenshot(getScreenshotPath('services', locale, true), {
+            fullPage: true,
+        });
     });
 });
 
@@ -86,5 +102,16 @@ test.describe('EN | Services page', () => {
 
     test('renders the footer', async ({ page }) => {
         await footerTest(page, locale);
+    });
+
+    test('takes a full page screenshot', async ({ page }) => {
+        // scroll to bottom of the page to allow brands lists images to load
+        await page.getByTestId(brandsListSectionDataTestId).scrollIntoViewIfNeeded();
+        await page.getByTestId(footerDataTestId).scrollIntoViewIfNeeded();
+        await page.waitForLoadState('networkidle');
+        // take full page screenshot
+        await expect(page).toHaveScreenshot(getScreenshotPath('services', locale, true), {
+            fullPage: true,
+        });
     });
 });
