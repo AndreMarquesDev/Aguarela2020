@@ -5,7 +5,7 @@ import {
     servicesBlockItemWrapperDataTestId,
     servicesBlockSectionDataTestId,
 } from '../../utils/dataTestIds';
-import { clickNextArrowButtonIfMobile, getLocalizedTexts } from '../utils/utils';
+import { clickNextArrowButtonIfMobile, getLocalizedTexts, getScreenshotPath } from '../utils/utils';
 
 export const servicesSectionTest = async (
     page: Page,
@@ -58,6 +58,9 @@ export const servicesSectionTest = async (
     await expect(container.getByText(socialMediaTemplates)).toBeVisible();
     await expect(container.getByText(menus)).toBeVisible();
 
+    // take screenshot of slide 1's backface
+    await expect(container).toHaveScreenshot(getScreenshotPath('slide1-backface', locale));
+
     // hover away to hide backface again
     await pageTitle.hover();
     await expect(slide1BackfaceFirstText).toBeHidden();
@@ -76,6 +79,9 @@ export const servicesSectionTest = async (
     await expect(container.getByText(paidSocial)).toBeVisible();
     await expect(container.getByText(consulting)).toBeVisible();
 
+    // take screenshot of slide 2's backface
+    await expect(container).toHaveScreenshot(getScreenshotPath('slide2-backface', locale));
+
     // hover away to hide backface again
     await pageTitle.hover();
     await expect(slide2BackfaceFirstText).toBeHidden();
@@ -90,6 +96,9 @@ export const servicesSectionTest = async (
     await slide3.hover();
     await expect(slide3BackfaceFirstText).toBeVisible();
     await expect(container.getByText(opinionPlatformsManagement)).toBeVisible();
+
+    // take screenshot of slide 3's backface
+    await expect(container).toHaveScreenshot(getScreenshotPath('slide3-backface', locale));
 
     // hover away to hide backface again
     await pageTitle.hover();

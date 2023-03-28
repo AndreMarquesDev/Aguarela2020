@@ -109,6 +109,11 @@ const config: PlaywrightTestConfig = {
         command: 'yarn start',
         port: 3000,
     },
+    updateSnapshots: 'missing',
+    // updateSnapshots: 'all',
+    // https://playwright.dev/docs/next/api/class-testproject#test-project-snapshot-dir
+    snapshotPathTemplate:
+        '{testDir}/screenshots/{platform}/{projectName}/{testFileName}/{arg}{ext}',
 };
 
 export default config;
