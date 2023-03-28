@@ -19,7 +19,8 @@ const isErrorMessageVisible = async (element: Locator): Promise<void> => {
 export const contactFormTest = async (
     page: Page,
     locale: Locale,
-    browserName: PlaywrightBrowserName
+    browserName: PlaywrightBrowserName,
+    isMobile: boolean
 ): Promise<void> => {
     const {
         name,
@@ -49,7 +50,7 @@ export const contactFormTest = async (
     const validName = `${invalidName} Surname`;
     const invalidEmail = 'teste@';
     const validEmail = `${invalidEmail}hotmail.com`;
-    const validMessage = `E2E | ${locale} | ${browserName}`;
+    const validMessage = `E2E | ${locale} | ${browserName} | ${isMobile ? 'mobile' : 'desktop'}`;
 
     // error messages are all hidden by default
     await isErrorMessageHidden(nameErrorMessageElement);

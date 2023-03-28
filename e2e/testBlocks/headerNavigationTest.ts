@@ -1,4 +1,4 @@
-import { Page, expect } from '@playwright/test';
+import { Page, expect, test } from '@playwright/test';
 import { Page as PageName } from '../../utils/pages';
 import { Locale } from '../../types/Locale';
 import {
@@ -10,7 +10,8 @@ import {
     aboutMeSectionDataTestId,
 } from '../../utils/dataTestIds';
 import { urls } from '../utils/selectors';
-import { getLocalizedTexts } from '../utils/utils';
+import { getLocalizedTexts, isSafari, oneMinTimeout } from '../utils/utils';
+import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
 
 export const headerNavigationTest = async (
     page: Page,
@@ -18,8 +19,13 @@ export const headerNavigationTest = async (
     pageTitleDataTestId: string,
     isMobile: boolean,
     locale: Locale,
-    otherLocale: Locale
+    otherLocale: Locale,
+    browserName: PlaywrightBrowserName
 ): Promise<void> => {
+    if (isMobile && isSafari(browserName)) {
+        test.setTimeout(oneMinTimeout);
+    }
+
     const isHomepage = pageName === 'homepage';
     const isAboutPage = pageName === 'about';
     const isProjectsPage = pageName === 'projects';

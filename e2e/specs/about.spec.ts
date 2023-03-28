@@ -20,14 +20,15 @@ test.describe('PT | About page', () => {
         await expect(page).toHaveURL(url);
     });
 
-    test('renders the header and navigates properly', async ({ page, isMobile }) => {
+    test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
         await headerNavigationTest(
             page,
             'about',
             aboutMeSectionDataTestId,
             !!isMobile,
             locale,
-            otherLocale
+            otherLocale,
+            browserName as PlaywrightBrowserName
         );
     });
 
@@ -59,14 +60,15 @@ test.describe('EN | About page', () => {
         await expect(page).toHaveURL(url);
     });
 
-    test('renders the header and navigates properly', async ({ page, isMobile }) => {
+    test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
         await headerNavigationTest(
             page,
             'about',
             aboutMeSectionDataTestId,
             !!isMobile,
             locale,
-            otherLocale
+            otherLocale,
+            browserName as PlaywrightBrowserName
         );
     });
 

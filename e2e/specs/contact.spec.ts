@@ -19,14 +19,15 @@ test.describe('PT | Contact page', () => {
         await expect(page).toHaveURL(url);
     });
 
-    test('renders the header and navigates properly', async ({ page, isMobile }) => {
+    test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
         await headerNavigationTest(
             page,
             'contact',
             contactBlockSectionDataTestId,
             !!isMobile,
             locale,
-            otherLocale
+            otherLocale,
+            browserName as PlaywrightBrowserName
         );
     });
 
@@ -34,8 +35,8 @@ test.describe('PT | Contact page', () => {
         await contactBlockTest(page, !!isMobile, locale);
     });
 
-    test('renders and interacts with the contact form', async ({ page, browserName }) => {
-        await contactFormTest(page, locale, browserName as PlaywrightBrowserName);
+    test('renders and interacts with the contact form', async ({ page, browserName, isMobile }) => {
+        await contactFormTest(page, locale, browserName as PlaywrightBrowserName, !!isMobile);
     });
 
     test('renders the footer', async ({ page }) => {
@@ -54,14 +55,15 @@ test.describe('EN | Contact page', () => {
         await expect(page).toHaveURL(url);
     });
 
-    test('renders the header and navigates properly', async ({ page, isMobile }) => {
+    test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
         await headerNavigationTest(
             page,
             'contact',
             contactBlockSectionDataTestId,
             !!isMobile,
             locale,
-            otherLocale
+            otherLocale,
+            browserName as PlaywrightBrowserName
         );
     });
 
@@ -69,8 +71,8 @@ test.describe('EN | Contact page', () => {
         await contactBlockTest(page, !!isMobile, locale);
     });
 
-    test('renders and interacts with the contact form', async ({ page, browserName }) => {
-        await contactFormTest(page, locale, browserName as PlaywrightBrowserName);
+    test('renders and interacts with the contact form', async ({ page, browserName, isMobile }) => {
+        await contactFormTest(page, locale, browserName as PlaywrightBrowserName, !!isMobile);
     });
 
     test('renders the footer', async ({ page }) => {
