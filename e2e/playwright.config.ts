@@ -112,8 +112,7 @@ const config: PlaywrightTestConfig = {
     updateSnapshots: 'missing',
     // updateSnapshots: 'all',
     // https://playwright.dev/docs/next/api/class-testproject#test-project-snapshot-dir
-    snapshotPathTemplate:
-        '{testDir}/screenshots/{platform}/{projectName}/{testFileName}/{arg}{ext}',
+    snapshotPathTemplate: '{testDir}/screenshots/{platform}/{projectName}/{arg}{ext}',
 };
 
 export default config;

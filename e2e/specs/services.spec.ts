@@ -13,9 +13,14 @@ import { letsWorkSectionTest } from '../testBlocks/letsWorkSectionTest';
 import { headerNavigationTest } from '../testBlocks/headerNavigationTest';
 import { urls } from '../utils/selectors';
 import { getScreenshotPath } from '../utils/utils';
+import { Page } from '../../utils/pages';
+import { capitalize } from '../../utils/generic';
 
-test.describe('PT | Services page', () => {
-    const url = urls.pt.services;
+const pageName: Page = 'services';
+const pageNameUpperCased: string = capitalize(pageName);
+
+test.describe(`PT | ${pageNameUpperCased} page`, () => {
+    const url = urls.pt[pageName];
     const locale = Locale.Pt;
     const otherLocale = Locale.En;
 
@@ -28,7 +33,7 @@ test.describe('PT | Services page', () => {
     test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
         await headerNavigationTest(
             page,
-            'services',
+            pageName,
             servicesBlockSectionDataTestId,
             !!isMobile,
             locale,
@@ -59,13 +64,13 @@ test.describe('PT | Services page', () => {
         await page.getByTestId(footerDataTestId).scrollIntoViewIfNeeded();
         await page.waitForLoadState('networkidle');
         // take full page screenshot
-        await expect(page).toHaveScreenshot(getScreenshotPath('services', locale, true), {
+        await expect(page).toHaveScreenshot(getScreenshotPath(pageName, locale), {
             fullPage: true,
         });
     });
 });
 
-test.describe('EN | Services page', () => {
+test.describe(`EN | ${pageNameUpperCased} page`, () => {
     const url = urls.en.services;
     const locale = Locale.En;
     const otherLocale = Locale.Pt;
@@ -79,7 +84,7 @@ test.describe('EN | Services page', () => {
     test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
         await headerNavigationTest(
             page,
-            'services',
+            pageName,
             servicesBlockSectionDataTestId,
             !!isMobile,
             locale,
@@ -110,7 +115,7 @@ test.describe('EN | Services page', () => {
         await page.getByTestId(footerDataTestId).scrollIntoViewIfNeeded();
         await page.waitForLoadState('networkidle');
         // take full page screenshot
-        await expect(page).toHaveScreenshot(getScreenshotPath('services', locale, true), {
+        await expect(page).toHaveScreenshot(getScreenshotPath(pageName, locale), {
             fullPage: true,
         });
     });
