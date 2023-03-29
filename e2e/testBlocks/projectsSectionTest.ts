@@ -4,7 +4,12 @@ import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
 import { projectsListSectionDataTestId } from '../../utils/dataTestIds';
 import { guacamoleInstagramUrl, kaffeehausInstagramUrl, tjelaInstagramUrl } from '../../utils/urls';
 import { urls } from '../utils/selectors';
-import { clickNextArrowButtonIfMobile, getLocalizedTexts, getImageDimension } from '../utils/utils';
+import {
+    clickNextArrowButtonIfMobile,
+    getLocalizedTexts,
+    getImageDimension,
+    getScreenshotPath,
+} from '../utils/utils';
 
 export const projectsSectionTest = async (
     page: Page,
@@ -20,7 +25,9 @@ export const projectsSectionTest = async (
         seeMore,
     } = getLocalizedTexts(locale);
 
+    const componentName = 'projectsSection';
     const container = page.getByTestId(projectsListSectionDataTestId);
+    const pageTitle = container.getByText(projects);
     const seeMoreAnchor = container.getByRole('link', { name: seeMore });
 
     const testSlide = async (
@@ -74,10 +81,15 @@ export const projectsSectionTest = async (
         if (isInPartnership) {
             await expect(slide.getByText(`* ${inPartnershipWith}`)).toBeVisible();
         }
+
+        // take screenshot of slide backface
+        await expect(container).toHaveScreenshot(
+            getScreenshotPath(`slide${number}-backface`, locale, componentName)
+        );
     };
 
     // renders page title
-    await expect(container.getByText(projects)).toBeVisible();
+    await expect(pageTitle).toBeVisible();
 
     // renders slides
     await testSlide(
@@ -102,6 +114,11 @@ export const projectsSectionTest = async (
         `2018 - ${present}`
     );
 
+    // remove focus from slide to hide backface before screenshot
+    await pageTitle.click();
+    // take screenshot of slide 2
+    await expect(container).toHaveScreenshot(getScreenshotPath('slide2', locale, componentName));
+
     await clickNextArrowButtonIfMobile(isMobile, container);
 
     await testSlide(
@@ -113,6 +130,11 @@ export const projectsSectionTest = async (
         true,
         `2019 - ${present}`
     );
+
+    // remove focus from slide to hide backface before screenshot
+    await pageTitle.click();
+    // take screenshot of slide 3
+    await expect(container).toHaveScreenshot(getScreenshotPath('slide3', locale, componentName));
 
     // click on button redirects to projects page
     await expect(seeMoreAnchor).toBeVisible();

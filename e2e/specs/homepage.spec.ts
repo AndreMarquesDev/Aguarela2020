@@ -1,7 +1,12 @@
 import { test, expect } from '@playwright/test';
 import { Locale } from '../../types/Locale';
 import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
-import { skillsBlockSectionDataTestId } from '../../utils/dataTestIds';
+import {
+    brandsListSectionDataTestId,
+    footerDataTestId,
+    homepageBannerContainerDataTestId,
+    skillsBlockSectionDataTestId,
+} from '../../utils/dataTestIds';
 import { brandsListTest } from '../testBlocks/brandsListTest';
 import { footerTest } from '../testBlocks/footerTest';
 import { letsWorkSectionTest } from '../testBlocks/letsWorkSectionTest';
@@ -12,9 +17,15 @@ import { welcomeSectionTest } from '../testBlocks/welcomeSectionTest';
 import { skillsBlockTest } from '../testBlocks/skillsBlockTest';
 import { workflowSectionTest } from '../testBlocks/workflowSectionTest';
 import { projectsSectionTest } from '../testBlocks/projectsSectionTest';
+import { capitalize } from '../../utils/generic';
+import { Page } from '../../utils/pages';
+import { getScreenshotPath } from '../utils/utils';
 
-test.describe('PT | Homepage', () => {
-    const url = urls.pt.homepage;
+const pageName: Page = 'homepage';
+const pageNameCapitalized: string = capitalize(pageName);
+
+test.describe(`PT | ${pageNameCapitalized}`, () => {
+    const url = urls.pt[pageName];
     const locale = Locale.Pt;
     const otherLocale = Locale.En;
 
@@ -27,7 +38,7 @@ test.describe('PT | Homepage', () => {
     test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
         await headerNavigationTest(
             page,
-            'homepage',
+            pageName,
             skillsBlockSectionDataTestId,
             !!isMobile,
             locale,
@@ -67,10 +78,32 @@ test.describe('PT | Homepage', () => {
     test('renders the footer', async ({ page }) => {
         await footerTest(page, locale);
     });
+
+    test('takes a full page screenshot', async ({ page, isMobile }) => {
+        // scroll to bottom of the page to allow banner, skills and brands lists images to load
+        await page.getByTestId(homepageBannerContainerDataTestId).scrollIntoViewIfNeeded();
+        await page.getByTestId(skillsBlockSectionDataTestId).scrollIntoViewIfNeeded();
+        await page.getByTestId(brandsListSectionDataTestId).scrollIntoViewIfNeeded();
+        await page.getByTestId(footerDataTestId).scrollIntoViewIfNeeded();
+        await page.waitForLoadState('networkidle');
+        // take full page screenshot
+        await expect(page).toHaveScreenshot(getScreenshotPath(pageName, locale), {
+            fullPage: true,
+        });
+
+        if (isMobile) {
+            // open menu
+            await page.getByRole('button', { name: 'toggle menu' }).click();
+            // take screenshot of slide backface
+            await expect(page).toHaveScreenshot(getScreenshotPath('menu-mobile', locale), {
+                fullPage: true,
+            });
+        }
+    });
 });
 
-test.describe('EN | Homepage', () => {
-    const url = urls.en.homepage;
+test.describe(`EN | ${pageNameCapitalized}`, () => {
+    const url = urls.en[pageName];
     const locale = Locale.En;
     const otherLocale = Locale.Pt;
 
@@ -83,7 +116,7 @@ test.describe('EN | Homepage', () => {
     test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
         await headerNavigationTest(
             page,
-            'homepage',
+            pageName,
             skillsBlockSectionDataTestId,
             !!isMobile,
             locale,
@@ -122,5 +155,27 @@ test.describe('EN | Homepage', () => {
 
     test('renders the footer', async ({ page }) => {
         await footerTest(page, locale);
+    });
+
+    test('takes a full page screenshot', async ({ page, isMobile }) => {
+        // scroll to bottom of the page to allow banner, skills and brands lists images to load
+        await page.getByTestId(homepageBannerContainerDataTestId).scrollIntoViewIfNeeded();
+        await page.getByTestId(skillsBlockSectionDataTestId).scrollIntoViewIfNeeded();
+        await page.getByTestId(brandsListSectionDataTestId).scrollIntoViewIfNeeded();
+        await page.getByTestId(footerDataTestId).scrollIntoViewIfNeeded();
+        await page.waitForLoadState('networkidle');
+        // take full page screenshot
+        await expect(page).toHaveScreenshot(getScreenshotPath(pageName, locale), {
+            fullPage: true,
+        });
+
+        if (isMobile) {
+            // open menu
+            await page.getByRole('button', { name: 'toggle menu' }).click();
+            // take screenshot of slide backface
+            await expect(page).toHaveScreenshot(getScreenshotPath('menu-mobile', locale), {
+                fullPage: true,
+            });
+        }
     });
 });
