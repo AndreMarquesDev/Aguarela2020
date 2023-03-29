@@ -11,6 +11,12 @@ x-build-config:
       context: .
       dockerfile: Dockerfile
 
+x-volume-config-playwright:
+    &volume-config-playwright
+      - type: bind
+        source: ./e2e/screenshots
+        target: /home/app/e2e/screenshots
+
 x-build-config-playwright:
     &build-config-playwright
       context: .
@@ -90,28 +96,35 @@ services:
     run-playwright-all:
         container_name: playwright_all_container
         build: *build-config-playwright
+        volumes: *volume-config-playwright
         entrypoint: sh -c "yarn run:playwright:all"
     run-playwright-chrome:
         container_name: playwright_chrome_container
         build: *build-config-playwright
+        volumes: *volume-config-playwright
         entrypoint: sh -c "yarn run:playwright:chrome"
     run-playwright-edge:
         container_name: playwright_edge_container
         build: *build-config-playwright
+        volumes: *volume-config-playwright
         entrypoint: sh -c "yarn run:playwright:edge"
     run-playwright-firefox:
         container_name: playwright_firefox_container
         build: *build-config-playwright
+        volumes: *volume-config-playwright
         entrypoint: sh -c "yarn run:playwright:firefox"
     run-playwright-safari:
         container_name: playwright_safari_container
         build: *build-config-playwright
+        volumes: *volume-config-playwright
         entrypoint: sh -c "yarn run:playwright:safari"
     run-playwright-chrome-mobile:
         container_name: playwright_chrome_mobile_container
         build: *build-config-playwright
+        volumes: *volume-config-playwright
         entrypoint: sh -c "yarn run:playwright:chrome:mobile"
     run-playwright-safari-mobile:
         container_name: playwright_safari_mobile_container
         build: *build-config-playwright
+        volumes: *volume-config-playwright
         entrypoint: sh -c "yarn run:playwright:safari:mobile"
