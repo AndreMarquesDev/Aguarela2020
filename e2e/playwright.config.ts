@@ -102,9 +102,9 @@ const config: PlaywrightTestConfig = {
     ],
 
     /* folder for test artifacts such as screenshots, videos, traces, etc. */
-    // outputDir: 'test-results/',
+    outputDir: 'test-results/',
 
-    /* Run your local dev server before starting the tests */
+    /* run your local dev server before starting the tests */
     webServer: {
         command: 'yarn start',
         port: 3000,
