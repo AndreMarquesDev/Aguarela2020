@@ -17,9 +17,9 @@ import { Page } from '../../utils/pages';
 import { capitalize } from '../../utils/generic';
 
 const pageName: Page = 'services';
-const pageNameUpperCased: string = capitalize(pageName);
+const pageNameCapitalized: string = capitalize(pageName);
 
-test.describe(`PT | ${pageNameUpperCased} page`, () => {
+test.describe(`PT | ${pageNameCapitalized} page`, () => {
     const url = urls.pt[pageName];
     const locale = Locale.Pt;
     const otherLocale = Locale.En;
@@ -70,8 +70,8 @@ test.describe(`PT | ${pageNameUpperCased} page`, () => {
     });
 });
 
-test.describe(`EN | ${pageNameUpperCased} page`, () => {
-    const url = urls.en.services;
+test.describe(`EN | ${pageNameCapitalized} page`, () => {
+    const url = urls.en[pageName];
     const locale = Locale.En;
     const otherLocale = Locale.Pt;
 

@@ -1,4 +1,4 @@
-import { Page, expect } from '@playwright/test';
+import { Page, expect, test } from '@playwright/test';
 import { Locale } from '../../types/Locale';
 import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
 import {
@@ -28,7 +28,13 @@ import {
     tasteOfIndiaInstagramUrl,
     tjelaInstagramUrl,
 } from '../../utils/urls';
-import { clickNextArrowButtonIfMobile, getLocalizedTexts, getImageDimension } from '../utils/utils';
+import {
+    clickNextArrowButtonIfMobile,
+    getLocalizedTexts,
+    getImageDimension,
+    getScreenshotPath,
+    oneMinTimeout,
+} from '../utils/utils';
 
 export const projectsListDoubleSectionTest = async (
     page: Page,
@@ -36,6 +42,8 @@ export const projectsListDoubleSectionTest = async (
     browserName: PlaywrightBrowserName,
     locale: Locale
 ): Promise<void> => {
+    test.setTimeout(oneMinTimeout);
+
     const {
         projects,
         socialMediaAndContentCreation,
@@ -47,9 +55,11 @@ export const projectsListDoubleSectionTest = async (
         inPartnershipWith,
     } = getLocalizedTexts(locale);
 
+    const componentName = 'projectsListDoubleSection';
     const numberOfActiveSlides = isMobile ? 1 : 3;
     const numberOfVisibleSlides = isMobile ? 2 : 6;
     const container = page.getByTestId(projectsListDoubleSectionDataTestId);
+    const pageTitle = container.getByText(projects);
     const visibleDoubleSlide = container.locator('.slide-visible');
 
     const clickNextArrowButton = (): Promise<void> =>
@@ -106,7 +116,7 @@ export const projectsListDoubleSectionTest = async (
     };
 
     // renders page title
-    await expect(container.getByText(projects)).toBeVisible();
+    await expect(pageTitle).toBeVisible();
 
     // asserts number of visible slides
     const visibleDoubleSlides = await visibleDoubleSlide.all();
@@ -157,6 +167,11 @@ export const projectsListDoubleSectionTest = async (
         `2020 - ${present}`
     );
 
+    // remove focus from slide to hide backface before screenshot
+    await pageTitle.click();
+    // take screenshot of slides 3 and 4
+    await expect(container).toHaveScreenshot(getScreenshotPath('slide3-4', locale, componentName));
+
     await clickNextArrowButtonIfMobile(isMobile, container);
 
     await testSlide(
@@ -176,6 +191,11 @@ export const projectsListDoubleSectionTest = async (
         false,
         '2019 - 2020'
     );
+
+    // remove focus from slide to hide backface before screenshot
+    await pageTitle.click();
+    // take screenshot of slides 5 and 6
+    await expect(container).toHaveScreenshot(getScreenshotPath('slide5-6', locale, componentName));
 
     await clickNextArrowButton();
 
@@ -197,6 +217,11 @@ export const projectsListDoubleSectionTest = async (
         `2019 - ${present}`
     );
 
+    // remove focus from slide to hide backface before screenshot
+    await pageTitle.click();
+    // take screenshot of slides 7 and 8
+    await expect(container).toHaveScreenshot(getScreenshotPath('slide7-8', locale, componentName));
+
     await clickNextArrowButton();
 
     await testSlide(
@@ -217,6 +242,11 @@ export const projectsListDoubleSectionTest = async (
         '2019'
     );
 
+    // remove focus from slide to hide backface before screenshot
+    await pageTitle.click();
+    // take screenshot of slides 9 and 10
+    await expect(container).toHaveScreenshot(getScreenshotPath('slide9-10', locale, componentName));
+
     await clickNextArrowButton();
 
     await testSlide(
@@ -235,6 +265,13 @@ export const projectsListDoubleSectionTest = async (
         socialMediaAndContentCreation,
         false,
         '2018'
+    );
+
+    // remove focus from slide to hide backface before screenshot
+    await pageTitle.click();
+    // take screenshot of slides 11 and 12
+    await expect(container).toHaveScreenshot(
+        getScreenshotPath('slide11-12', locale, componentName)
     );
 
     await clickNextArrowButton();
@@ -257,6 +294,13 @@ export const projectsListDoubleSectionTest = async (
         '2020'
     );
 
+    // remove focus from slide to hide backface before screenshot
+    await pageTitle.click();
+    // take screenshot of slides 13 and 14
+    await expect(container).toHaveScreenshot(
+        getScreenshotPath('slide13-14', locale, componentName)
+    );
+
     await clickNextArrowButton();
 
     await testSlide(
@@ -274,6 +318,13 @@ export const projectsListDoubleSectionTest = async (
         catarinaSantiagoInstagramUrl,
         contentCreation,
         false
+    );
+
+    // remove focus from slide to hide backface before screenshot
+    await pageTitle.click();
+    // take screenshot of slides 15 and 16
+    await expect(container).toHaveScreenshot(
+        getScreenshotPath('slide15-16', locale, componentName)
     );
 
     await clickNextArrowButton();
@@ -294,6 +345,13 @@ export const projectsListDoubleSectionTest = async (
         socialMediaAndPaidSocial,
         true,
         '2020'
+    );
+
+    // remove focus from slide to hide backface before screenshot
+    await pageTitle.click();
+    // take screenshot of slides 17 and 18
+    await expect(container).toHaveScreenshot(
+        getScreenshotPath('slide17-18', locale, componentName)
     );
 
     await clickNextArrowButton();

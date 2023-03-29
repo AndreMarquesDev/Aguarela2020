@@ -34,6 +34,8 @@ export const contactFormTest = async (
         pleaseEnterAMessage,
         messageSentSuccessfully,
     } = getLocalizedTexts(locale);
+
+    const componentName = 'contactForm';
     const container = page.getByTestId(contactFormContainerDataTestId);
     const nameField = container.getByLabel(name);
     const brandField = container.getByLabel(brandBusiness);
@@ -65,7 +67,7 @@ export const contactFormTest = async (
 
     // take screenshot of the visible error messages
     await expect(container).toHaveScreenshot(
-        getScreenshotPath('error-messages', locale, 'contactForm')
+        getScreenshotPath('error-messages', locale, componentName)
     );
 
     // reset error messages
@@ -118,7 +120,7 @@ export const contactFormTest = async (
 
     // take screenshot of all the fields filled
     await expect(container).toHaveScreenshot(
-        getScreenshotPath('filled-form', locale, 'contactForm')
+        getScreenshotPath('filled-form', locale, componentName)
     );
 
     // submit form
@@ -129,7 +131,7 @@ export const contactFormTest = async (
 
     // take screenshot of the visible success message
     await expect(container).toHaveScreenshot(
-        getScreenshotPath('success-message', locale, 'contactForm')
+        getScreenshotPath('success-message', locale, componentName)
     );
 
     // form resets

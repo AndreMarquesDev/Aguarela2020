@@ -31,6 +31,7 @@ export const servicesSectionTest = async (
         opinionPlatformsManagement,
     } = getLocalizedTexts(locale);
 
+    const componentName = 'servicesSection';
     const container = page.getByTestId(servicesBlockSectionDataTestId);
     const pageTitle = container.getByText(services);
     const slidesDataTestId = isMobile
@@ -60,7 +61,7 @@ export const servicesSectionTest = async (
 
     // take screenshot of slide 1's backface
     await expect(container).toHaveScreenshot(
-        getScreenshotPath('slide1-backface', locale, 'servicesSection')
+        getScreenshotPath('slide1-backface', locale, componentName)
     );
 
     // hover away to hide backface again
@@ -83,7 +84,7 @@ export const servicesSectionTest = async (
 
     // take screenshot of slide 2's backface
     await expect(container).toHaveScreenshot(
-        getScreenshotPath('slide2-backface', locale, 'servicesSection')
+        getScreenshotPath('slide2-backface', locale, componentName)
     );
 
     // hover away to hide backface again
@@ -103,7 +104,7 @@ export const servicesSectionTest = async (
 
     // take screenshot of slide 3's backface
     await expect(container).toHaveScreenshot(
-        getScreenshotPath('slide3-backface', locale, 'servicesSection')
+        getScreenshotPath('slide3-backface', locale, componentName)
     );
 
     // hover away to hide backface again
