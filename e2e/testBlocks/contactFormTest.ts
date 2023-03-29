@@ -5,7 +5,7 @@ import {
     contactFormErrorMessageHiddenDataTestId,
     contactFormErrorMessageVisibleDataTestId,
 } from '../../utils/dataTestIds';
-import { getLocalizedTexts } from '../utils/utils';
+import { getLocalizedTexts, getScreenshotPath } from '../utils/utils';
 import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
 
 const isErrorMessageHidden = async (element: Locator): Promise<void> => {
@@ -63,6 +63,11 @@ export const contactFormTest = async (
     await isErrorMessageVisible(emailErrorMessageElement);
     await isErrorMessageVisible(messageErrorMessageElement);
 
+    // take screenshot of the visible error messages
+    await expect(container).toHaveScreenshot(
+        getScreenshotPath('error-messages', locale, 'contactForm')
+    );
+
     // reset error messages
     await nameField.fill(validName);
     await emailField.fill(validEmail);
@@ -111,11 +116,21 @@ export const contactFormTest = async (
     await brandField.focus();
     await isErrorMessageHidden(messageErrorMessageElement);
 
+    // take screenshot of all the fields filled
+    await expect(container).toHaveScreenshot(
+        getScreenshotPath('filled-form', locale, 'contactForm')
+    );
+
     // submit form
     await submitButton.click();
 
     // success message is displayed
     await successMessage.waitFor({ state: 'visible', timeout: 7500 });
+
+    // take screenshot of the visible success message
+    await expect(container).toHaveScreenshot(
+        getScreenshotPath('success-message', locale, 'contactForm')
+    );
 
     // form resets
     await successMessage.waitFor({ state: 'hidden', timeout: 7500 });

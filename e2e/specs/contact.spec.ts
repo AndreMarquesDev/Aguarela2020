@@ -7,8 +7,14 @@ import { contactFormTest } from '../testBlocks/contactFormTest';
 import { footerTest } from '../testBlocks/footerTest';
 import { headerNavigationTest } from '../testBlocks/headerNavigationTest';
 import { urls } from '../utils/selectors';
+import { capitalize } from '../../utils/generic';
+import { Page } from '../../utils/pages';
+import { getScreenshotPath } from '../utils/utils';
 
-test.describe('PT | Contact page', () => {
+const pageName: Page = 'contact';
+const pageNameUpperCased: string = capitalize(pageName);
+
+test.describe(`PT | ${pageNameUpperCased} page`, () => {
     const url = urls.pt.contact;
     const locale = Locale.Pt;
     const otherLocale = Locale.En;
@@ -22,7 +28,7 @@ test.describe('PT | Contact page', () => {
     test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
         await headerNavigationTest(
             page,
-            'contact',
+            pageName,
             contactBlockSectionDataTestId,
             !!isMobile,
             locale,
@@ -42,9 +48,17 @@ test.describe('PT | Contact page', () => {
     test('renders the footer', async ({ page }) => {
         await footerTest(page, locale);
     });
+
+    test('takes a full page screenshot', async ({ page }) => {
+        await page.waitForLoadState('networkidle');
+        // take full page screenshot
+        await expect(page).toHaveScreenshot(getScreenshotPath(pageName, locale), {
+            fullPage: true,
+        });
+    });
 });
 
-test.describe('EN | Contact page', () => {
+test.describe(`EN | ${pageNameUpperCased} page`, () => {
     const url = urls.en.contact;
     const locale = Locale.En;
     const otherLocale = Locale.Pt;
@@ -58,7 +72,7 @@ test.describe('EN | Contact page', () => {
     test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
         await headerNavigationTest(
             page,
-            'contact',
+            pageName,
             contactBlockSectionDataTestId,
             !!isMobile,
             locale,
@@ -77,5 +91,13 @@ test.describe('EN | Contact page', () => {
 
     test('renders the footer', async ({ page }) => {
         await footerTest(page, locale);
+    });
+
+    test('takes a full page screenshot', async ({ page }) => {
+        await page.waitForLoadState('networkidle');
+        // take full page screenshot
+        await expect(page).toHaveScreenshot(getScreenshotPath(pageName, locale), {
+            fullPage: true,
+        });
     });
 });
