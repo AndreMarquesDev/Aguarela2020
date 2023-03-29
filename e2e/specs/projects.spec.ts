@@ -1,16 +1,26 @@
 import { test, expect } from '@playwright/test';
 import { Locale } from '../../types/Locale';
 import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
-import { projectsListDoubleSectionDataTestId } from '../../utils/dataTestIds';
+import {
+    brandsListSectionDataTestId,
+    footerDataTestId,
+    projectsListDoubleSectionDataTestId,
+} from '../../utils/dataTestIds';
 import { brandsListTest } from '../testBlocks/brandsListTest';
 import { footerTest } from '../testBlocks/footerTest';
 import { letsWorkSectionTest } from '../testBlocks/letsWorkSectionTest';
 import { headerNavigationTest } from '../testBlocks/headerNavigationTest';
 import { urls } from '../utils/selectors';
 import { projectsListDoubleSectionTest } from '../testBlocks/projectsListDoubleSectionTest';
+import { capitalize } from '../../utils/generic';
+import { Page } from '../../utils/pages';
+import { getScreenshotPath } from '../utils/utils';
 
-test.describe('PT | Projects page', () => {
-    const url = urls.pt.projects;
+const pageName: Page = 'projects';
+const pageNameCapitalized: string = capitalize(pageName);
+
+test.describe(`PT | ${pageNameCapitalized} page`, () => {
+    const url = urls.pt[pageName];
     const locale = Locale.Pt;
     const otherLocale = Locale.En;
 
@@ -23,7 +33,7 @@ test.describe('PT | Projects page', () => {
     test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
         await headerNavigationTest(
             page,
-            'projects',
+            pageName,
             projectsListDoubleSectionDataTestId,
             !!isMobile,
             locale,
@@ -52,10 +62,21 @@ test.describe('PT | Projects page', () => {
     test('renders the footer', async ({ page }) => {
         await footerTest(page, locale);
     });
+
+    test('takes a full page screenshot', async ({ page }) => {
+        // scroll to bottom of the page to allow brands lists images to load
+        await page.getByTestId(brandsListSectionDataTestId).scrollIntoViewIfNeeded();
+        await page.getByTestId(footerDataTestId).scrollIntoViewIfNeeded();
+        await page.waitForLoadState('networkidle');
+        // take full page screenshot
+        await expect(page).toHaveScreenshot(getScreenshotPath(pageName, locale), {
+            fullPage: true,
+        });
+    });
 });
 
-test.describe('EN | Projects page', () => {
-    const url = urls.en.projects;
+test.describe(`EN | ${pageNameCapitalized} page`, () => {
+    const url = urls.en[pageName];
     const locale = Locale.En;
     const otherLocale = Locale.Pt;
 
@@ -68,7 +89,7 @@ test.describe('EN | Projects page', () => {
     test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
         await headerNavigationTest(
             page,
-            'projects',
+            pageName,
             projectsListDoubleSectionDataTestId,
             !!isMobile,
             locale,
@@ -96,5 +117,16 @@ test.describe('EN | Projects page', () => {
 
     test('renders the footer', async ({ page }) => {
         await footerTest(page, locale);
+    });
+
+    test('takes a full page screenshot', async ({ page }) => {
+        // scroll to bottom of the page to allow brands lists images to load
+        await page.getByTestId(brandsListSectionDataTestId).scrollIntoViewIfNeeded();
+        await page.getByTestId(footerDataTestId).scrollIntoViewIfNeeded();
+        await page.waitForLoadState('networkidle');
+        // take full page screenshot
+        await expect(page).toHaveScreenshot(getScreenshotPath(pageName, locale), {
+            fullPage: true,
+        });
     });
 });

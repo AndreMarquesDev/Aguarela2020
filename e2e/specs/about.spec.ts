@@ -17,10 +17,10 @@ import { Page } from '../../utils/pages';
 import { getScreenshotPath } from '../utils/utils';
 
 const pageName: Page = 'about';
-const pageNameUpperCased: string = capitalize(pageName);
+const pageNameCapitalized: string = capitalize(pageName);
 
-test.describe(`PT | ${pageNameUpperCased} page`, () => {
-    const url = urls.pt.about;
+test.describe(`PT | ${pageNameCapitalized} page`, () => {
+    const url = urls.pt[pageName];
     const locale = Locale.Pt;
     const otherLocale = Locale.En;
 
@@ -70,8 +70,8 @@ test.describe(`PT | ${pageNameUpperCased} page`, () => {
     });
 });
 
-test.describe(`EN | ${pageNameUpperCased} page`, () => {
-    const url = urls.en.about;
+test.describe(`EN | ${pageNameCapitalized} page`, () => {
+    const url = urls.en[pageName];
     const locale = Locale.En;
     const otherLocale = Locale.Pt;
 
