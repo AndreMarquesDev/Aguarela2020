@@ -59,7 +59,9 @@ export const servicesSectionTest = async (
     await expect(container.getByText(menus)).toBeVisible();
 
     // take screenshot of slide 1's backface
-    await expect(container).toHaveScreenshot(getScreenshotPath('slide1-backface', locale));
+    await expect(container).toHaveScreenshot(
+        getScreenshotPath('slide1-backface', locale, 'servicesSection')
+    );
 
     // hover away to hide backface again
     await pageTitle.hover();
@@ -80,7 +82,9 @@ export const servicesSectionTest = async (
     await expect(container.getByText(consulting)).toBeVisible();
 
     // take screenshot of slide 2's backface
-    await expect(container).toHaveScreenshot(getScreenshotPath('slide2-backface', locale));
+    await expect(container).toHaveScreenshot(
+        getScreenshotPath('slide2-backface', locale, 'servicesSection')
+    );
 
     // hover away to hide backface again
     await pageTitle.hover();
@@ -98,7 +102,9 @@ export const servicesSectionTest = async (
     await expect(container.getByText(opinionPlatformsManagement)).toBeVisible();
 
     // take screenshot of slide 3's backface
-    await expect(container).toHaveScreenshot(getScreenshotPath('slide3-backface', locale));
+    await expect(container).toHaveScreenshot(
+        getScreenshotPath('slide3-backface', locale, 'servicesSection')
+    );
 
     // hover away to hide backface again
     await pageTitle.hover();
