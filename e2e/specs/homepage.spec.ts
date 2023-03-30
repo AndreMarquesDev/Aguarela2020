@@ -91,6 +91,7 @@ test.describe(`PT | ${pageNameCapitalized}`, () => {
             fullPage: true,
         });
 
+        // eslint-disable-next-line playwright/no-conditional-in-test
         if (isMobile) {
             // open menu
             await page.getByRole('button', { name: 'toggle menu' }).click();
@@ -169,6 +170,7 @@ test.describe(`EN | ${pageNameCapitalized}`, () => {
             fullPage: true,
         });
 
+        // eslint-disable-next-line playwright/no-conditional-in-test
         if (isMobile) {
             // open menu
             await page.getByRole('button', { name: 'toggle menu' }).click();
