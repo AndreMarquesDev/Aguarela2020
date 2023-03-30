@@ -33,9 +33,6 @@ module.exports = {
                 'uses-responsive-images': 'warn', // cause: improperly sized images
                 // TODO - upgrade next/image package
                 'image-aspect-ratio': 'warn', // cause: about page image
-                // TODO - review LogRocket usage
-                // 'no-unload-listeners': 'warn', // cause: LogRocket (?)
-                // 'valid-source-maps': 'warn', // cause: LogRocket (?)
             },
         },
     },
