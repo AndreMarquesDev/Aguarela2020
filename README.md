@@ -20,7 +20,7 @@ Aguarela Digital website
 <a href="https://nodejs.org/" target="_blank">![Node Badge](https://img.shields.io/badge/Node_v16-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)</a>
 <a href="https://github.com/vercel/styled-jsx" target="_blank">![Styled JSX Badge](https://img.shields.io/badge/Styled_JSX-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)</a>
 <a href="https://sass-lang.com/" target="_blank">![SASS Badge](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)</a>
-<a href="https://www.cypress.io/" target="_blank">![Cypress Badge](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white)</a>
+<a href="https://playwright.dev/" target="_blank">![Playwright Badge](https://img.shields.io/badge/Playwright-45ba4b?style=for-the-badge&logo=Playwright&logoColor=white)</a>
 <a href="https://vercel.com/" target="_blank">![Vercel Badge](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)</a>
 
 ### Author

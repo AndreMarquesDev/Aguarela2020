@@ -8,7 +8,6 @@
 /coverage/*
 /utils/jest/*
 **/*.test.tsx.snap
-/cypress/snapshots/*
 Makefile
 Dockerfile
 Dockerfile.*

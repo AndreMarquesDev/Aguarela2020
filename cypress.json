@@ -1,8 +1,0 @@
-{
-    "baseUrl": "http://localhost:3000/pt",
-    "experimentalStudio": true,
-    "fixturesFolder": false,
-    "video": false,
-    "screenshotOnRunFailure": false,
-    "retries": 4
-}

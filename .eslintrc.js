@@ -1,8 +1,7 @@
 module.exports = {
-    extends: ['andremarquesdev', 'plugin:cypress/recommended'],
-    plugins: ['cypress'],
+    extends: ['andremarquesdev'],
     parserOptions: {
-        project: ['tsconfig.json', './cypress/tsconfig.json', './e2e/tsconfig.json'],
+        project: ['tsconfig.json', './e2e/tsconfig.json'],
     },
     ignorePatterns: ['!.*'],
     rules: {
@@ -15,10 +14,16 @@ module.exports = {
                     '**/tests/*.js',
                     '**/*.dev.js',
                     '**/*.dev.ts',
-                    '**/cypress/**',
                     '**/e2e/**',
                 ],
             },
         ],
     },
+    overrides: [
+        {
+            // specific rules for playwright tests
+            files: ['**/e2e/**'],
+            extends: ['plugin:playwright/playwright-test'],
+        },
+    ],
 };

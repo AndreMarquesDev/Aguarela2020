@@ -1,4 +1,4 @@
-FROM cypress/browsers:node16.18.0-chrome107-ff106-edge
+FROM mcr.microsoft.com/playwright:v1.29.0-focal
 
 USER root
 

@@ -12,7 +12,6 @@ function MyApp({ Component, pageProps }) {
     const locale = getInitialLocale(defaultLocale, locales);
     const hasDocument = typeof document !== 'undefined';
     // TODO - review LogRocket usage
-    // const isCypress = typeof window !== 'undefined' && window.Cypress;
     // const isProd = process.env.NODE_ENV === 'production';
 
     if (!hasLangCookie) {
@@ -26,7 +25,7 @@ function MyApp({ Component, pageProps }) {
     }
 
     // TODO - review LogRocket usage
-    // if (isProd && !isCypress) {
+    // if (isProd) {
     //     LogRocket.init(process.env.NEXT_PUBLIC_LOGROCKET_APPID);
     //     LogRocket.identify();
     // }

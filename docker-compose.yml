@@ -1,16 +1,5 @@
 version: '3.9'
 
-x-volume-config:
-    &volume-config
-      - type: bind
-        source: ./cypress/snapshots
-        target: /home/app/cypress/snapshots
-
-x-build-config:
-    &build-config
-      context: .
-      dockerfile: Dockerfile
-
 x-volume-config-playwright:
     &volume-config-playwright
       - type: bind
@@ -20,77 +9,9 @@ x-volume-config-playwright:
 x-build-config-playwright:
     &build-config-playwright
       context: .
-      dockerfile: Dockerfile.playwright
+      dockerfile: Dockerfile
 
 services:
-
-    # Run all tests
-    chrome:
-        container_name: chrome_container
-        build: *build-config
-        volumes: *volume-config
-        entrypoint: sh -c "yarn cypress:test:chrome"
-    edge:
-        container_name: edge_container
-        build: *build-config
-        volumes: *volume-config
-        entrypoint: sh -c "yarn cypress:test:edge"
-    firefox:
-        container_name: firefox_container
-        build: *build-config
-        volumes: *volume-config
-        entrypoint: sh -c "yarn cypress:test:firefox"
-
-    # Run tests for desktop
-    chrome-desktop:
-        container_name: chrome_container_desktop
-        build: *build-config
-        volumes: *volume-config
-        entrypoint: sh -c "yarn cypress:test:chrome:desktop"
-    edge-desktop:
-        container_name: edge_container_desktop
-        build: *build-config
-        volumes: *volume-config
-        entrypoint: sh -c "yarn cypress:test:edge:desktop"
-    firefox-desktop:
-        container_name: firefox_container_desktop
-        build: *build-config
-        volumes: *volume-config
-        entrypoint: sh -c "yarn cypress:test:firefox:desktop"
-
-    # Run tests for mobile
-    chrome-mobile:
-        container_name: chrome_container_mobile
-        build: *build-config
-        volumes: *volume-config
-        entrypoint: sh -c "yarn cypress:test:chrome:mobile"
-    edge-mobile:
-        container_name: edge_container_mobile
-        build: *build-config
-        volumes: *volume-config
-        entrypoint: sh -c "yarn cypress:test:edge:mobile"
-    firefox-mobile:
-        container_name: firefox_container_mobile
-        build: *build-config
-        volumes: *volume-config
-        entrypoint: sh -c "yarn cypress:test:firefox:mobile"
-
-    # Update snapshots
-    chrome-update:
-        container_name: chrome_container_update
-        build: *build-config
-        volumes: *volume-config
-        entrypoint: sh -c "yarn cypress:test:chrome:update"
-    edge-update:
-        container_name: edge_container_update
-        build: *build-config
-        volumes: *volume-config
-        entrypoint: sh -c "yarn cypress:test:edge:update"
-    firefox-update:
-        container_name: firefox_container_update
-        build: *build-config
-        volumes: *volume-config
-        entrypoint: sh -c "yarn cypress:test:firefox:update"
 
     # Run Playwright tests
     run-playwright-all:
