@@ -1,0 +1,1201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContactForm /> displays error messages in required fields on submit with empty fields 1`] = `
+<section
+  class="jsx-3940016528 container"
+  data-testid="contactForm_container"
+>
+  <div
+    class="jsx-3940016528 wrapper genericMargins"
+  >
+    <form
+      aria-describedby="contactForm"
+      class="jsx-3940016528"
+      novalidate=""
+    >
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="name"
+        >
+          Nome
+           *
+        </label>
+        <input
+          aria-describedby="nameErrorMessage"
+          class="jsx-1980812632"
+          data-error="true"
+          data-testid="name"
+          id="name"
+          name="name"
+          required=""
+          title="name"
+          type="text"
+          value=""
+        />
+        <span
+          class="jsx-1980812632 errorMessage visible"
+          data-testid="errorMessage_visible"
+          id="nameErrorMessage"
+        >
+          Este campo é obrigatório. Por favor insira o seu primeiro e último nome
+        </span>
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="brand"
+        >
+          Marca/Negócio
+        </label>
+        <input
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="brand"
+          id="brand"
+          name="brand"
+          title="brand"
+          type="text"
+          value=""
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+        />
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="email"
+        >
+          Email
+           *
+        </label>
+        <input
+          aria-describedby="emailErrorMessage"
+          class="jsx-1980812632"
+          data-error="true"
+          data-testid="email"
+          id="email"
+          name="email"
+          required=""
+          title="email"
+          type="email"
+          value=""
+        />
+        <span
+          class="jsx-1980812632 errorMessage visible"
+          data-testid="errorMessage_visible"
+          id="emailErrorMessage"
+        >
+          Este campo é obrigatório. Por favor insira um endereço de email válido
+        </span>
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="subject"
+        >
+          Assunto
+        </label>
+        <input
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="subject"
+          id="subject"
+          name="subject"
+          title="subject"
+          type="text"
+          value=""
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+        />
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper textarea"
+      >
+        <label
+          class="jsx-1980812632"
+          for="message"
+        >
+          Mensagem
+           *
+        </label>
+        <textarea
+          aria-describedby="messageErrorMessage"
+          class="jsx-1980812632"
+          data-error="true"
+          data-testid="message"
+          id="message"
+          name="message"
+          required=""
+          title="message"
+        />
+        <span
+          class="jsx-1980812632 errorMessage visible"
+          data-testid="errorMessage_visible"
+          id="messageErrorMessage"
+        >
+          Este campo é obrigatório. Por favor insira uma mensagem
+        </span>
+      </div>
+      <div
+        class="jsx-2566809609 buttonWrapper"
+      >
+        <div
+          class="jsx-2566809609 buttonBackground alignCenter"
+        >
+          <button
+            class="jsx-2566809609 button"
+            type="submit"
+          >
+            Enviar
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+`;
+
+exports[`<ContactForm /> lets fields be properly filled 1`] = `
+<section
+  class="jsx-3940016528 container"
+  data-testid="contactForm_container"
+>
+  <div
+    class="jsx-3940016528 wrapper genericMargins"
+  >
+    <form
+      aria-describedby="contactForm"
+      class="jsx-3940016528"
+      novalidate=""
+    >
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="name"
+        >
+          Nome
+           *
+        </label>
+        <input
+          aria-describedby="nameErrorMessage"
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="name"
+          id="name"
+          name="name"
+          required=""
+          title="name"
+          type="text"
+          value="André Marques"
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+          id="nameErrorMessage"
+        >
+          Este campo é obrigatório. Por favor insira o seu primeiro e último nome
+        </span>
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="brand"
+        >
+          Marca/Negócio
+        </label>
+        <input
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="brand"
+          id="brand"
+          name="brand"
+          title="brand"
+          type="text"
+          value="Brand"
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+        />
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="email"
+        >
+          Email
+           *
+        </label>
+        <input
+          aria-describedby="emailErrorMessage"
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="email"
+          id="email"
+          name="email"
+          required=""
+          title="email"
+          type="email"
+          value="email@email.com"
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+          id="emailErrorMessage"
+        >
+          Este campo é obrigatório. Por favor insira um endereço de email válido
+        </span>
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="subject"
+        >
+          Assunto
+        </label>
+        <input
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="subject"
+          id="subject"
+          name="subject"
+          title="subject"
+          type="text"
+          value="Subject"
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+        />
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper textarea"
+      >
+        <label
+          class="jsx-1980812632"
+          for="message"
+        >
+          Mensagem
+           *
+        </label>
+        <textarea
+          aria-describedby="messageErrorMessage"
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="message"
+          id="message"
+          name="message"
+          required=""
+          title="message"
+        >
+          Textarea field
+        </textarea>
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+          id="messageErrorMessage"
+        >
+          Este campo é obrigatório. Por favor insira uma mensagem
+        </span>
+      </div>
+      <div
+        class="jsx-2566809609 buttonWrapper"
+      >
+        <div
+          class="jsx-2566809609 buttonBackground alignCenter"
+        >
+          <button
+            class="jsx-2566809609 button"
+            type="submit"
+          >
+            Enviar
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+`;
+
+exports[`<ContactForm /> renders properly 1`] = `
+<section
+  class="jsx-3940016528 container"
+  data-testid="contactForm_container"
+>
+  <div
+    class="jsx-3940016528 wrapper genericMargins"
+  >
+    <form
+      aria-describedby="contactForm"
+      class="jsx-3940016528"
+      novalidate=""
+    >
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="name"
+        >
+          Nome
+           *
+        </label>
+        <input
+          aria-describedby="nameErrorMessage"
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="name"
+          id="name"
+          name="name"
+          required=""
+          title="name"
+          type="text"
+          value=""
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+          id="nameErrorMessage"
+        >
+          Este campo é obrigatório. Por favor insira o seu primeiro e último nome
+        </span>
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="brand"
+        >
+          Marca/Negócio
+        </label>
+        <input
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="brand"
+          id="brand"
+          name="brand"
+          title="brand"
+          type="text"
+          value=""
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+        />
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="email"
+        >
+          Email
+           *
+        </label>
+        <input
+          aria-describedby="emailErrorMessage"
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="email"
+          id="email"
+          name="email"
+          required=""
+          title="email"
+          type="email"
+          value=""
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+          id="emailErrorMessage"
+        >
+          Este campo é obrigatório. Por favor insira um endereço de email válido
+        </span>
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="subject"
+        >
+          Assunto
+        </label>
+        <input
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="subject"
+          id="subject"
+          name="subject"
+          title="subject"
+          type="text"
+          value=""
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+        />
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper textarea"
+      >
+        <label
+          class="jsx-1980812632"
+          for="message"
+        >
+          Mensagem
+           *
+        </label>
+        <textarea
+          aria-describedby="messageErrorMessage"
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="message"
+          id="message"
+          name="message"
+          required=""
+          title="message"
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+          id="messageErrorMessage"
+        >
+          Este campo é obrigatório. Por favor insira uma mensagem
+        </span>
+      </div>
+      <div
+        class="jsx-2566809609 buttonWrapper"
+      >
+        <div
+          class="jsx-2566809609 buttonBackground alignCenter"
+        >
+          <button
+            class="jsx-2566809609 button"
+            type="submit"
+          >
+            Enviar
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+`;
+
+exports[`<ContactForm /> renders properly in English 1`] = `
+<section
+  class="jsx-3940016528 container"
+  data-testid="contactForm_container"
+>
+  <div
+    class="jsx-3940016528 wrapper genericMargins"
+  >
+    <form
+      aria-describedby="contactForm"
+      class="jsx-3940016528"
+      novalidate=""
+    >
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="name"
+        >
+          Name
+           *
+        </label>
+        <input
+          aria-describedby="nameErrorMessage"
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="name"
+          id="name"
+          name="name"
+          required=""
+          title="name"
+          type="text"
+          value=""
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+          id="nameErrorMessage"
+        >
+          This field is required. Please enter your first and last name
+        </span>
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="brand"
+        >
+          Brand/Business
+        </label>
+        <input
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="brand"
+          id="brand"
+          name="brand"
+          title="brand"
+          type="text"
+          value=""
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+        />
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="email"
+        >
+          Email
+           *
+        </label>
+        <input
+          aria-describedby="emailErrorMessage"
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="email"
+          id="email"
+          name="email"
+          required=""
+          title="email"
+          type="email"
+          value=""
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+          id="emailErrorMessage"
+        >
+          This field is required. Please enter a valid email address
+        </span>
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="subject"
+        >
+          Subject
+        </label>
+        <input
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="subject"
+          id="subject"
+          name="subject"
+          title="subject"
+          type="text"
+          value=""
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+        />
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper textarea"
+      >
+        <label
+          class="jsx-1980812632"
+          for="message"
+        >
+          Message
+           *
+        </label>
+        <textarea
+          aria-describedby="messageErrorMessage"
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="message"
+          id="message"
+          name="message"
+          required=""
+          title="message"
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+          id="messageErrorMessage"
+        >
+          This field is required. Please enter a message
+        </span>
+      </div>
+      <div
+        class="jsx-2566809609 buttonWrapper"
+      >
+        <div
+          class="jsx-2566809609 buttonBackground alignCenter"
+        >
+          <button
+            class="jsx-2566809609 button"
+            type="submit"
+          >
+            Send
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+`;
+
+exports[`<ContactForm /> resets the form after it was successfully submitted 1`] = `
+<section
+  class="jsx-3940016528 container"
+  data-testid="contactForm_container"
+>
+  <div
+    class="jsx-3940016528 wrapper genericMargins"
+  >
+    <form
+      aria-describedby="contactForm"
+      class="jsx-3940016528"
+      novalidate=""
+    >
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="name"
+        >
+          Nome
+           *
+        </label>
+        <input
+          aria-describedby="nameErrorMessage"
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="name"
+          id="name"
+          name="name"
+          required=""
+          title="name"
+          type="text"
+          value=""
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+          id="nameErrorMessage"
+        >
+          Este campo é obrigatório. Por favor insira o seu primeiro e último nome
+        </span>
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="brand"
+        >
+          Marca/Negócio
+        </label>
+        <input
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="brand"
+          id="brand"
+          name="brand"
+          title="brand"
+          type="text"
+          value=""
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+        />
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="email"
+        >
+          Email
+           *
+        </label>
+        <input
+          aria-describedby="emailErrorMessage"
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="email"
+          id="email"
+          name="email"
+          required=""
+          title="email"
+          type="email"
+          value=""
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+          id="emailErrorMessage"
+        >
+          Este campo é obrigatório. Por favor insira um endereço de email válido
+        </span>
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="subject"
+        >
+          Assunto
+        </label>
+        <input
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="subject"
+          id="subject"
+          name="subject"
+          title="subject"
+          type="text"
+          value=""
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+        />
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper textarea"
+      >
+        <label
+          class="jsx-1980812632"
+          for="message"
+        >
+          Mensagem
+           *
+        </label>
+        <textarea
+          aria-describedby="messageErrorMessage"
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="message"
+          id="message"
+          name="message"
+          required=""
+          title="message"
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+          id="messageErrorMessage"
+        >
+          Este campo é obrigatório. Por favor insira uma mensagem
+        </span>
+      </div>
+      <div
+        class="jsx-2566809609 buttonWrapper"
+      >
+        <div
+          class="jsx-2566809609 buttonBackground alignCenter"
+        >
+          <button
+            class="jsx-2566809609 button"
+            type="submit"
+          >
+            Enviar
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+`;
+
+exports[`<ContactForm /> shows an error message in case the POST request fails 1`] = `
+<section
+  class="jsx-3940016528 container"
+  data-testid="contactForm_container"
+>
+  <div
+    class="jsx-3940016528 wrapper genericMargins"
+  >
+    <form
+      aria-describedby="contactForm"
+      class="jsx-3940016528"
+      novalidate=""
+    >
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="name"
+        >
+          Nome
+           *
+        </label>
+        <input
+          aria-describedby="nameErrorMessage"
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="name"
+          id="name"
+          name="name"
+          required=""
+          title="name"
+          type="text"
+          value="André Marques"
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+          id="nameErrorMessage"
+        >
+          Este campo é obrigatório. Por favor insira o seu primeiro e último nome
+        </span>
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="brand"
+        >
+          Marca/Negócio
+        </label>
+        <input
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="brand"
+          id="brand"
+          name="brand"
+          title="brand"
+          type="text"
+          value="Brand"
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+        />
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="email"
+        >
+          Email
+           *
+        </label>
+        <input
+          aria-describedby="emailErrorMessage"
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="email"
+          id="email"
+          name="email"
+          required=""
+          title="email"
+          type="email"
+          value="email@email.com"
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+          id="emailErrorMessage"
+        >
+          Este campo é obrigatório. Por favor insira um endereço de email válido
+        </span>
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="subject"
+        >
+          Assunto
+        </label>
+        <input
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="subject"
+          id="subject"
+          name="subject"
+          title="subject"
+          type="text"
+          value="Subject"
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+        />
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper textarea"
+      >
+        <label
+          class="jsx-1980812632"
+          for="message"
+        >
+          Mensagem
+           *
+        </label>
+        <textarea
+          aria-describedby="messageErrorMessage"
+          class="jsx-1980812632"
+          data-error="true"
+          data-testid="message"
+          id="message"
+          name="message"
+          required=""
+          title="message"
+        >
+          Textarea field
+        </textarea>
+        <span
+          class="jsx-1980812632 errorMessage visible"
+          data-testid="errorMessage_visible"
+          id="messageErrorMessage"
+        >
+          Este campo é obrigatório. Por favor insira uma mensagem
+        </span>
+      </div>
+      <div
+        class="jsx-2566809609 buttonWrapper"
+      >
+        <div
+          class="jsx-2566809609 buttonBackground alignCenter disabled"
+        >
+          <button
+            class="jsx-2566809609 button"
+            type="submit"
+          >
+            Enviar
+          </button>
+        </div>
+      </div>
+      <span
+        class="jsx-3940016528 formNotification error"
+        id="contactForm"
+      >
+        Ocorreu um erro no envio da mensagem. Tente outra vez mais tarde ou entre em contacto através do meu email 
+        <a
+          class="link"
+          href="mailto:catarina@aguareladigital.com"
+        >
+          catarina@aguareladigital.com
+        </a>
+      </span>
+    </form>
+  </div>
+</section>
+`;
+
+exports[`<ContactForm /> submits the form successfully 1`] = `
+<section
+  class="jsx-3940016528 container"
+  data-testid="contactForm_container"
+>
+  <div
+    class="jsx-3940016528 wrapper genericMargins"
+  >
+    <form
+      aria-describedby="contactForm"
+      class="jsx-3940016528"
+      novalidate=""
+    >
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="name"
+        >
+          Nome
+           *
+        </label>
+        <input
+          aria-describedby="nameErrorMessage"
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="name"
+          id="name"
+          name="name"
+          required=""
+          title="name"
+          type="text"
+          value="André Marques"
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+          id="nameErrorMessage"
+        >
+          Este campo é obrigatório. Por favor insira o seu primeiro e último nome
+        </span>
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="brand"
+        >
+          Marca/Negócio
+        </label>
+        <input
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="brand"
+          id="brand"
+          name="brand"
+          title="brand"
+          type="text"
+          value="Brand"
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+        />
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="email"
+        >
+          Email
+           *
+        </label>
+        <input
+          aria-describedby="emailErrorMessage"
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="email"
+          id="email"
+          name="email"
+          required=""
+          title="email"
+          type="email"
+          value="email@email.com"
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+          id="emailErrorMessage"
+        >
+          Este campo é obrigatório. Por favor insira um endereço de email válido
+        </span>
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper"
+      >
+        <label
+          class="jsx-1980812632"
+          for="subject"
+        >
+          Assunto
+        </label>
+        <input
+          class="jsx-1980812632"
+          data-error="false"
+          data-testid="subject"
+          id="subject"
+          name="subject"
+          title="subject"
+          type="text"
+          value="Subject"
+        />
+        <span
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
+        />
+      </div>
+      <div
+        class="jsx-1980812632 fieldWrapper textarea"
+      >
+        <label
+          class="jsx-1980812632"
+          for="message"
+        >
+          Mensagem
+           *
+        </label>
+        <textarea
+          aria-describedby="messageErrorMessage"
+          class="jsx-1980812632"
+          data-error="true"
+          data-testid="message"
+          id="message"
+          name="message"
+          required=""
+          title="message"
+        >
+          Textarea field
+        </textarea>
+        <span
+          class="jsx-1980812632 errorMessage visible"
+          data-testid="errorMessage_visible"
+          id="messageErrorMessage"
+        >
+          Este campo é obrigatório. Por favor insira uma mensagem
+        </span>
+      </div>
+      <div
+        class="jsx-2566809609 buttonWrapper"
+      >
+        <div
+          class="jsx-2566809609 buttonBackground alignCenter disabled"
+        >
+          <button
+            class="jsx-2566809609 button"
+            type="submit"
+          >
+            Enviar
+          </button>
+        </div>
+      </div>
+      <span
+        class="jsx-3940016528 formNotification"
+        id="contactForm"
+      >
+        Mensagem enviada com sucesso.
+      </span>
+    </form>
+  </div>
+</section>
+`;

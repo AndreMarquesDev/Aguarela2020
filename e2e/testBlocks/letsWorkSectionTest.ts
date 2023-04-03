@@ -1,6 +1,6 @@
 import { Page, expect } from '@playwright/test';
-import { Locale } from '../../types/Locale';
-import { letsWorkSectionDataTestId } from '../../utils/dataTestIds';
+import { Locale } from '../../src/types/Locale';
+import { letsWorkSectionDataTestId } from '../../src/utils/dataTestIds';
 import { getLocalizedTexts } from '../utils/utils';
 import { urls } from '../utils/selectors';
 

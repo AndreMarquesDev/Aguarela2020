@@ -1,8 +1,8 @@
 import { Page, expect } from '@playwright/test';
-import { Locale } from '../../types/Locale';
-import { contactBlockSectionDataTestId } from '../../utils/dataTestIds';
+import { Locale } from '../../src/types/Locale';
+import { contactBlockSectionDataTestId } from '../../src/utils/dataTestIds';
 import { getLocalizedTexts } from '../utils/utils';
-import { aguarelaDigitalEmail } from '../../utils/urls';
+import { aguarelaDigitalEmail } from '../../src/utils/urls';
 
 export const contactBlockTest = async (
     page: Page,

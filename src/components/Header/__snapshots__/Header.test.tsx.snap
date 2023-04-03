@@ -1,0 +1,213 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> renders properly 1`] = `
+<div>
+  <header
+    class="jsx-305311397"
+    data-testid="header_section"
+  >
+    <nav
+      class="jsx-305311397 wrapper"
+    >
+      <a
+        class="jsx-305311397"
+        data-testid="header_homepageLogoLink"
+        href="/pt/homepage"
+      >
+        <div
+          style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+        >
+          <div
+            style="box-sizing: border-box; display: block; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              role="presentation"
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjM1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
+              style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+            />
+          </div>
+          <img
+            alt="Logo"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+        </div>
+      </a>
+      <ul
+        class="jsx-3774647450 "
+      >
+        <li
+          class="jsx-3774647450"
+        >
+          <a
+            class="jsx-3774647450 "
+            href="/pt/about"
+          >
+            Sobre
+          </a>
+        </li>
+        <li
+          class="jsx-3774647450"
+        >
+          <a
+            class="jsx-3774647450 "
+            href="/pt/projects"
+          >
+            Projetos
+          </a>
+        </li>
+        <li
+          class="jsx-3774647450"
+        >
+          <a
+            class="jsx-3774647450 active"
+            href="/pt/services"
+          >
+            Serviços
+          </a>
+        </li>
+        <li
+          class="jsx-3774647450"
+        >
+          <a
+            class="jsx-3774647450 "
+            href="/pt/contact"
+          >
+            Contacto
+          </a>
+        </li>
+        <li
+          class="jsx-3774647450 languageButton"
+        >
+          <button
+            class="jsx-1287059343"
+            type="button"
+          >
+            pt
+          </button>
+        </li>
+      </ul>
+      <i
+        aria-label="toggle menu"
+        class="jsx-291958763 menuIcon hidden"
+        data-testid="menuIcon_button"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="jsx-291958763"
+        />
+      </i>
+    </nav>
+  </header>
+</div>
+`;
+
+exports[`<Header /> renders properly below phablet 1`] = `
+<div>
+  <header
+    class="jsx-305311397"
+    data-testid="header_section"
+  >
+    <nav
+      class="jsx-305311397 wrapper"
+    >
+      <a
+        class="jsx-305311397"
+        data-testid="header_homepageLogoLink"
+        href="/pt/homepage"
+      >
+        <div
+          style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+        >
+          <div
+            style="box-sizing: border-box; display: block; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              role="presentation"
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjM1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
+              style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+            />
+          </div>
+          <img
+            alt="Logo"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+        </div>
+      </a>
+      <ul
+        class="jsx-3774647450 mobileLayout"
+      >
+        <li
+          class="jsx-3774647450"
+        >
+          <a
+            class="jsx-3774647450 "
+            href="/pt/about"
+          >
+            Sobre
+          </a>
+        </li>
+        <li
+          class="jsx-3774647450"
+        >
+          <a
+            class="jsx-3774647450 "
+            href="/pt/projects"
+          >
+            Projetos
+          </a>
+        </li>
+        <li
+          class="jsx-3774647450"
+        >
+          <a
+            class="jsx-3774647450 active"
+            href="/pt/services"
+          >
+            Serviços
+          </a>
+        </li>
+        <li
+          class="jsx-3774647450"
+        >
+          <a
+            class="jsx-3774647450 "
+            href="/pt/contact"
+          >
+            Contacto
+          </a>
+        </li>
+        <li
+          class="jsx-3774647450 languageButton white"
+        >
+          <button
+            class="jsx-1287059343"
+            type="button"
+          >
+            pt
+          </button>
+        </li>
+      </ul>
+      <i
+        aria-label="toggle menu"
+        class="jsx-291958763 menuIcon"
+        data-testid="menuIcon_button"
+        role="button"
+        tabindex="0"
+      >
+        <span
+          class="jsx-291958763"
+        />
+      </i>
+    </nav>
+  </header>
+</div>
+`;

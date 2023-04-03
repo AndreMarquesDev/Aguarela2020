@@ -1,6 +1,6 @@
 import { Page, expect } from '@playwright/test';
-import { Locale } from '../../types/Locale';
-import { workflowSectionDataTestId } from '../../utils/dataTestIds';
+import { Locale } from '../../src/types/Locale';
+import { workflowSectionDataTestId } from '../../src/utils/dataTestIds';
 import { getLocalizedTexts } from '../utils/utils';
 
 export const workflowSectionTest = async (page: Page, locale: Locale): Promise<void> => {

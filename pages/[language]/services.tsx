@@ -2,13 +2,16 @@ import React, { useMemo, useState } from 'react';
 import Head from 'next/head';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
-import { Layout } from '../../components/Layout/Layout';
-import { NavLinksContext, NavLinksContextProps } from '../../components/context/NavLinksContext';
-import { getCurrentLanguagetexts } from '../../utils/generic';
-import { BrandsList } from '../../components/BrandsList/BrandsList';
-import { LetsWork } from '../../components/LetsWork/LetsWork';
-import { Locale } from '../../types/Locale';
-import { ServicesBlock } from '../../components/ServicesBlock/ServicesBlock';
+import { Layout } from '../../src/components/Layout/Layout';
+import {
+    NavLinksContext,
+    NavLinksContextProps,
+} from '../../src/components/context/NavLinksContext';
+import { getCurrentLanguagetexts } from '../../src/utils/generic';
+import { BrandsList } from '../../src/components/BrandsList/BrandsList';
+import { LetsWork } from '../../src/components/LetsWork/LetsWork';
+import { Locale } from '../../src/types/Locale';
+import { ServicesBlock } from '../../src/components/ServicesBlock/ServicesBlock';
 
 const ServicesPage: NextPage = () => {
     const { query } = useRouter();

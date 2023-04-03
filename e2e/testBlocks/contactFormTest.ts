@@ -1,12 +1,12 @@
 import { Page, expect, Locator } from '@playwright/test';
-import { Locale } from '../../types/Locale';
+import { Locale } from '../../src/types/Locale';
 import {
     contactFormContainerDataTestId,
     contactFormErrorMessageHiddenDataTestId,
     contactFormErrorMessageVisibleDataTestId,
-} from '../../utils/dataTestIds';
+} from '../../src/utils/dataTestIds';
 import { getLocalizedTexts, getScreenshotPath } from '../utils/utils';
-import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
+import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
 
 const isErrorMessageHidden = async (element: Locator): Promise<void> => {
     await expect(element).toHaveAttribute('data-testid', contactFormErrorMessageHiddenDataTestId);

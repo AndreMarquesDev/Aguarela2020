@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LanguageButton /> renders properly 1`] = `
+<div>
+  <button
+    class="jsx-1287059343"
+    type="button"
+  >
+    pt
+  </button>
+</div>
+`;

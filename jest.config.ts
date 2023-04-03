@@ -21,7 +21,7 @@ export default {
     // collectCoverageFrom: undefined,
 
     // the directory where Jest should output its coverage files
-    coverageDirectory: './utils/jest/coverage',
+    coverageDirectory: './src/utils/jest/coverage',
 
     // an array of regexp pattern strings used to skip coverage collection
     // coveragePathIgnorePatterns: [
@@ -118,7 +118,7 @@ export default {
     // runner: "jest-runner",
 
     // the paths to modules that run some code to configure or set up the testing environment before each test
-    setupFiles: ['./utils/jest/jestSetup.ts'],
+    setupFiles: ['./src/utils/jest/jestSetup.ts'],
 
     // a list of paths to modules that run some code to configure or set up the testing framework before each test
     // setupFilesAfterEnv: [],

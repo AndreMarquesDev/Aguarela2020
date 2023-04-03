@@ -3,16 +3,19 @@ import Head from 'next/head';
 import { NextPage } from 'next';
 import Image from 'next/image';
 import classNames from 'classnames';
-import { Layout } from '../../components/Layout/Layout';
-import { NavLinksContext, NavLinksContextProps } from '../../components/context/NavLinksContext';
-import { WelcomeBlock } from '../../components/WelcomeBlock/WelcomeBlock';
-import { SkillsBlock } from '../../components/SkillsBlock/SkillsBlock';
-import { Workflow } from '../../components/Workflow/Workflow';
-import { ProjectsList } from '../../components/ProjectsList/ProjectsList';
-import { LetsWork } from '../../components/LetsWork/LetsWork';
-import { BrandsList } from '../../components/BrandsList/BrandsList';
-import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
-import { homepageBannerContainerDataTestId } from '../../utils/dataTestIds';
+import { Layout } from '../../src/components/Layout/Layout';
+import {
+    NavLinksContext,
+    NavLinksContextProps,
+} from '../../src/components/context/NavLinksContext';
+import { WelcomeBlock } from '../../src/components/WelcomeBlock/WelcomeBlock';
+import { SkillsBlock } from '../../src/components/SkillsBlock/SkillsBlock';
+import { Workflow } from '../../src/components/Workflow/Workflow';
+import { ProjectsList } from '../../src/components/ProjectsList/ProjectsList';
+import { LetsWork } from '../../src/components/LetsWork/LetsWork';
+import { BrandsList } from '../../src/components/BrandsList/BrandsList';
+import { useWindowSize, Breakpoint } from '../../src/utils/useWindowSize';
+import { homepageBannerContainerDataTestId } from '../../src/utils/dataTestIds';
 
 const Homepage: NextPage = () => {
     const [navHeight, setNavHeight] = useState(0);

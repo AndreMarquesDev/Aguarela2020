@@ -1,6 +1,6 @@
 import { Page, expect } from '@playwright/test';
-import { Locale } from '../../types/Locale';
-import { brandsListSectionDataTestId } from '../../utils/dataTestIds';
+import { Locale } from '../../src/types/Locale';
+import { brandsListSectionDataTestId } from '../../src/utils/dataTestIds';
 import {
     aAmigaEsteticistaInstagramUrl,
     avocadoInstagramUrl,
@@ -20,8 +20,8 @@ import {
     tasteOfIndiaInstagramUrl,
     tjelaInstagramUrl,
     trattoriaInstagramUrl,
-} from '../../utils/urls';
-import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
+} from '../../src/utils/urls';
+import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
 import { getLocalizedTexts, getImageDimension } from '../utils/utils';
 
 export const brandsListTest = async (

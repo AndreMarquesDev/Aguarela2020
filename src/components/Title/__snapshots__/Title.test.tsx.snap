@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Title /> renders properly 1`] = `
+<h1
+  class="jsx-3953086084 "
+>
+  dummy text
+</h1>
+`;
+
+exports[`<Title /> renders properly with a custom margin-bottom 1`] = `
+<h1
+  class="jsx-3143642768 "
+>
+  dummy text
+</h1>
+`;
+
+exports[`<Title /> renders properly with the colored class 1`] = `
+<h1
+  class="jsx-3953086084 colored"
+>
+  dummy text
+</h1>
+`;

@@ -1,9 +1,9 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
-import '../styles/main.scss';
+import '../src/styles/main.scss';
 import Cookies from 'js-cookie';
 import { getInitialLocale } from 'multilingual-url/lib';
-import { defaultLocale, locales } from '../constants/locales';
+import { defaultLocale, locales } from '../src/constants/locales';
 
 function MyApp({ Component, pageProps }) {
     const hasLangCookie = Cookies.get('lang');

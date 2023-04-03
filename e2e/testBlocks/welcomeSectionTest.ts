@@ -1,6 +1,6 @@
 import { Page, expect } from '@playwright/test';
-import { Locale } from '../../types/Locale';
-import { welcomeSectionDataTestId } from '../../utils/dataTestIds';
+import { Locale } from '../../src/types/Locale';
+import { welcomeSectionDataTestId } from '../../src/utils/dataTestIds';
 import { getLocalizedTexts } from '../utils/utils';
 
 export const welcomeSectionTest = async (

@@ -1,8 +1,8 @@
 import { Page, expect } from '@playwright/test';
-import { Locale } from '../../types/Locale';
-import { aboutMeSectionDataTestId } from '../../utils/dataTestIds';
-import { catarinaSantiagoInstagramUrl } from '../../utils/urls';
-import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
+import { Locale } from '../../src/types/Locale';
+import { aboutMeSectionDataTestId } from '../../src/utils/dataTestIds';
+import { catarinaSantiagoInstagramUrl } from '../../src/utils/urls';
+import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
 import { getLocalizedTexts, getImageDimension } from '../utils/utils';
 
 export const aboutMeSectionTest = async (

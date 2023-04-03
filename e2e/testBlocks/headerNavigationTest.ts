@@ -1,6 +1,6 @@
 import { Page, expect, test } from '@playwright/test';
-import { Page as PageName } from '../../utils/pages';
-import { Locale } from '../../types/Locale';
+import { Page as PageName } from '../../src/utils/pages';
+import { Locale } from '../../src/types/Locale';
 import {
     headerDataTestId,
     homepageBannerContainerDataTestId,
@@ -8,10 +8,10 @@ import {
     projectsListDoubleSectionDataTestId,
     servicesBlockSectionDataTestId,
     aboutMeSectionDataTestId,
-} from '../../utils/dataTestIds';
+} from '../../src/utils/dataTestIds';
 import { urls } from '../utils/selectors';
 import { getLocalizedTexts, isSafari, oneMinTimeout } from '../utils/utils';
-import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
+import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
 
 export const headerNavigationTest = async (
     page: Page,

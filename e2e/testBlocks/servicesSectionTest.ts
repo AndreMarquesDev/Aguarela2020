@@ -1,10 +1,10 @@
 import { Page, expect } from '@playwright/test';
-import { Locale } from '../../types/Locale';
+import { Locale } from '../../src/types/Locale';
 import {
     servicesBlockItemCarouselDataTestId,
     servicesBlockItemWrapperDataTestId,
     servicesBlockSectionDataTestId,
-} from '../../utils/dataTestIds';
+} from '../../src/utils/dataTestIds';
 import { clickNextArrowButtonIfMobile, getLocalizedTexts, getScreenshotPath } from '../utils/utils';
 
 export const servicesSectionTest = async (

@@ -1,8 +1,8 @@
 import { Locator } from '@playwright/test';
-import { Locale } from '../../types/Locale';
-import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
-import { nukaCarouselNextButtonDataTestId } from '../../utils/dataTestIds';
-import { TextsInterface, textsPt, textsEn } from '../../utils/texts';
+import { Locale } from '../../src/types/Locale';
+import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
+import { nukaCarouselNextButtonDataTestId } from '../../src/utils/dataTestIds';
+import { TextsInterface, textsPt, textsEn } from '../../src/utils/texts';
 
 export const isChromium = (browserName: PlaywrightBrowserName): boolean =>
     browserName === PlaywrightBrowserName.Chromium;

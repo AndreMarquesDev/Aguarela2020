@@ -1,0 +1,237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavLinks /> renders properly 1`] = `
+<div>
+  <ul
+    class="jsx-3774647450 "
+  >
+    <li
+      class="jsx-3774647450"
+    >
+      <a
+        class="jsx-3774647450 "
+        href="/pt/about"
+      >
+        Sobre
+      </a>
+    </li>
+    <li
+      class="jsx-3774647450"
+    >
+      <a
+        class="jsx-3774647450 "
+        href="/pt/projects"
+      >
+        Projetos
+      </a>
+    </li>
+    <li
+      class="jsx-3774647450"
+    >
+      <a
+        class="jsx-3774647450 active"
+        href="/pt/services"
+      >
+        Serviços
+      </a>
+    </li>
+    <li
+      class="jsx-3774647450"
+    >
+      <a
+        class="jsx-3774647450 "
+        href="/pt/contact"
+      >
+        Contacto
+      </a>
+    </li>
+    <li
+      class="jsx-3774647450 languageButton"
+    >
+      <button
+        class="jsx-1287059343"
+        type="button"
+      >
+        pt
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`<NavLinks /> renders properly in mobile 1`] = `
+<div>
+  <ul
+    class="jsx-3774647450 mobileLayout"
+  >
+    <li
+      class="jsx-3774647450"
+    >
+      <a
+        class="jsx-3774647450 "
+        href="/pt/about"
+      >
+        Sobre
+      </a>
+    </li>
+    <li
+      class="jsx-3774647450"
+    >
+      <a
+        class="jsx-3774647450 "
+        href="/pt/projects"
+      >
+        Projetos
+      </a>
+    </li>
+    <li
+      class="jsx-3774647450"
+    >
+      <a
+        class="jsx-3774647450 active"
+        href="/pt/services"
+      >
+        Serviços
+      </a>
+    </li>
+    <li
+      class="jsx-3774647450"
+    >
+      <a
+        class="jsx-3774647450 "
+        href="/pt/contact"
+      >
+        Contacto
+      </a>
+    </li>
+    <li
+      class="jsx-3774647450 languageButton white"
+    >
+      <button
+        class="jsx-1287059343"
+        type="button"
+      >
+        pt
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`<NavLinks /> renders properly when language is en 1`] = `
+<div>
+  <ul
+    class="jsx-3774647450 "
+  >
+    <li
+      class="jsx-3774647450"
+    >
+      <a
+        class="jsx-3774647450 "
+        href="/en/about"
+      >
+        About
+      </a>
+    </li>
+    <li
+      class="jsx-3774647450"
+    >
+      <a
+        class="jsx-3774647450 "
+        href="/en/projects"
+      >
+        Projects
+      </a>
+    </li>
+    <li
+      class="jsx-3774647450"
+    >
+      <a
+        class="jsx-3774647450 active"
+        href="/en/services"
+      >
+        Services
+      </a>
+    </li>
+    <li
+      class="jsx-3774647450"
+    >
+      <a
+        class="jsx-3774647450 "
+        href="/en/contact"
+      >
+        Contact
+      </a>
+    </li>
+    <li
+      class="jsx-3774647450 languageButton"
+    >
+      <button
+        class="jsx-1287059343"
+        type="button"
+      >
+        pt
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`<NavLinks /> renders properly when the menu is open 1`] = `
+<div>
+  <ul
+    class="jsx-3774647450 mobileLayout menuOpen"
+  >
+    <li
+      class="jsx-3774647450"
+    >
+      <a
+        class="jsx-3774647450 "
+        href="/pt/about"
+      >
+        Sobre
+      </a>
+    </li>
+    <li
+      class="jsx-3774647450"
+    >
+      <a
+        class="jsx-3774647450 "
+        href="/pt/projects"
+      >
+        Projetos
+      </a>
+    </li>
+    <li
+      class="jsx-3774647450"
+    >
+      <a
+        class="jsx-3774647450 active"
+        href="/pt/services"
+      >
+        Serviços
+      </a>
+    </li>
+    <li
+      class="jsx-3774647450"
+    >
+      <a
+        class="jsx-3774647450 "
+        href="/pt/contact"
+      >
+        Contacto
+      </a>
+    </li>
+    <li
+      class="jsx-3774647450 languageButton white"
+    >
+      <button
+        class="jsx-1287059343"
+        type="button"
+      >
+        pt
+      </button>
+    </li>
+  </ul>
+</div>
+`;

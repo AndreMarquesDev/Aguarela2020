@@ -1,0 +1,991 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProjectsList /> renders properly 1`] = `
+<div>
+  <section
+    class="jsx-2990028810 container"
+    data-testid="projectsList_section"
+  >
+    <div
+      class="jsx-2990028810 wrapper genericMargins"
+    >
+      <h1
+        class="jsx-3953086084 colored"
+      >
+        Projetos
+      </h1>
+      <ul
+        class="jsx-2990028810"
+        data-testid="projectsList_noCarousel"
+      >
+        <li
+          class="jsx-1650735182"
+        >
+          <div
+            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          >
+            <div
+              style="box-sizing: border-box; display: block; max-width: 100%;"
+            >
+              <img
+                alt=""
+                aria-hidden="true"
+                role="presentation"
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+              />
+            </div>
+            <img
+              alt="tjela logo"
+              decoding="async"
+              src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
+              srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
+              style="visibility: inherit; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </div>
+          <div
+            class="jsx-1650735182 backface"
+          >
+            <a
+              class="jsx-1650735182 brand link"
+              href="https://www.instagram.com/tudonatjela/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              @tudonatjela
+            </a>
+            <p
+              class="jsx-1650735182 description"
+            >
+              Gestão de Redes Sociais e Criação de Conteúdo
+            </p>
+            <p
+              class="jsx-1650735182 date"
+            >
+              2020
+               - Presente
+            </p>
+            <small
+              class="jsx-1650735182"
+            >
+              * 
+              em dupla com Sofia Ferreirinho
+            </small>
+          </div>
+        </li>
+        <li
+          class="jsx-1650735182"
+        >
+          <div
+            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          >
+            <div
+              style="box-sizing: border-box; display: block; max-width: 100%;"
+            >
+              <img
+                alt=""
+                aria-hidden="true"
+                role="presentation"
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+              />
+            </div>
+            <img
+              alt="kaffeehaus logo"
+              decoding="async"
+              src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
+              srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
+              style="visibility: inherit; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </div>
+          <div
+            class="jsx-1650735182 backface"
+          >
+            <a
+              class="jsx-1650735182 brand link"
+              href="https://www.instagram.com/kaffeehaus_lisboa/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              @kaffeehaus_lisboa
+            </a>
+            <p
+              class="jsx-1650735182 description"
+            >
+              Gestão de Redes Sociais e Criação de Conteúdo
+            </p>
+            <p
+              class="jsx-1650735182 date"
+            >
+              2018
+               - Presente
+            </p>
+          </div>
+        </li>
+        <li
+          class="jsx-1650735182"
+        >
+          <div
+            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          >
+            <div
+              style="box-sizing: border-box; display: block; max-width: 100%;"
+            >
+              <img
+                alt=""
+                aria-hidden="true"
+                role="presentation"
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+              />
+            </div>
+            <img
+              alt="guacamole logo"
+              decoding="async"
+              src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
+              srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+              style="visibility: inherit; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </div>
+          <div
+            class="jsx-1650735182 backface"
+          >
+            <a
+              class="jsx-1650735182 brand link"
+              href="https://www.instagram.com/guacamolegmg/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              @guacamolegmg
+            </a>
+            <p
+              class="jsx-1650735182 description"
+            >
+              Gestão de Redes Sociais e Criação de Conteúdo
+            </p>
+            <p
+              class="jsx-1650735182 date"
+            >
+              2019
+               - Presente
+            </p>
+            <small
+              class="jsx-1650735182"
+            >
+              * 
+              em dupla com Sofia Ferreirinho
+            </small>
+          </div>
+        </li>
+      </ul>
+      <div
+        class="jsx-2566809609 buttonWrapper"
+      >
+        <div
+          class="jsx-2566809609 buttonBackground alignCenter"
+        >
+          <a
+            class="jsx-2566809609 button"
+            href="/pt/projects"
+          >
+            Ver mais
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`<ProjectsList /> renders properly in English 1`] = `
+<div>
+  <section
+    class="jsx-2990028810 container"
+    data-testid="projectsList_section"
+  >
+    <div
+      class="jsx-2990028810 wrapper genericMargins"
+    >
+      <h1
+        class="jsx-3953086084 colored"
+      >
+        Projects
+      </h1>
+      <ul
+        class="jsx-2990028810"
+        data-testid="projectsList_noCarousel"
+      >
+        <li
+          class="jsx-1650735182"
+        >
+          <div
+            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          >
+            <div
+              style="box-sizing: border-box; display: block; max-width: 100%;"
+            >
+              <img
+                alt=""
+                aria-hidden="true"
+                role="presentation"
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+              />
+            </div>
+            <img
+              alt="tjela logo"
+              decoding="async"
+              src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
+              srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
+              style="visibility: inherit; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </div>
+          <div
+            class="jsx-1650735182 backface"
+          >
+            <a
+              class="jsx-1650735182 brand link"
+              href="https://www.instagram.com/tudonatjela/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              @tudonatjela
+            </a>
+            <p
+              class="jsx-1650735182 description"
+            >
+              Social Media Management and Content Creation
+            </p>
+            <p
+              class="jsx-1650735182 date"
+            >
+              2020
+               - Present
+            </p>
+            <small
+              class="jsx-1650735182"
+            >
+              * 
+              in partnership with Sofia Ferreirinho
+            </small>
+          </div>
+        </li>
+        <li
+          class="jsx-1650735182"
+        >
+          <div
+            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          >
+            <div
+              style="box-sizing: border-box; display: block; max-width: 100%;"
+            >
+              <img
+                alt=""
+                aria-hidden="true"
+                role="presentation"
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+              />
+            </div>
+            <img
+              alt="kaffeehaus logo"
+              decoding="async"
+              src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
+              srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
+              style="visibility: inherit; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </div>
+          <div
+            class="jsx-1650735182 backface"
+          >
+            <a
+              class="jsx-1650735182 brand link"
+              href="https://www.instagram.com/kaffeehaus_lisboa/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              @kaffeehaus_lisboa
+            </a>
+            <p
+              class="jsx-1650735182 description"
+            >
+              Social Media Management and Content Creation
+            </p>
+            <p
+              class="jsx-1650735182 date"
+            >
+              2018
+               - Present
+            </p>
+          </div>
+        </li>
+        <li
+          class="jsx-1650735182"
+        >
+          <div
+            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          >
+            <div
+              style="box-sizing: border-box; display: block; max-width: 100%;"
+            >
+              <img
+                alt=""
+                aria-hidden="true"
+                role="presentation"
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+              />
+            </div>
+            <img
+              alt="guacamole logo"
+              decoding="async"
+              src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
+              srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+              style="visibility: inherit; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+          </div>
+          <div
+            class="jsx-1650735182 backface"
+          >
+            <a
+              class="jsx-1650735182 brand link"
+              href="https://www.instagram.com/guacamolegmg/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              @guacamolegmg
+            </a>
+            <p
+              class="jsx-1650735182 description"
+            >
+              Social Media Management and Content Creation
+            </p>
+            <p
+              class="jsx-1650735182 date"
+            >
+              2019
+               - Present
+            </p>
+            <small
+              class="jsx-1650735182"
+            >
+              * 
+              in partnership with Sofia Ferreirinho
+            </small>
+          </div>
+        </li>
+      </ul>
+      <div
+        class="jsx-2566809609 buttonWrapper"
+      >
+        <div
+          class="jsx-2566809609 buttonBackground alignCenter"
+        >
+          <a
+            class="jsx-2566809609 button"
+            href="/pt/projects"
+          >
+            See more
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`<ProjectsList /> renders properly on mobile 1`] = `
+<div>
+  <section
+    class="jsx-2990028810 container"
+    data-testid="projectsList_section"
+  >
+    <div
+      class="jsx-2990028810 wrapper genericMargins"
+    >
+      <h1
+        class="jsx-3953086084 colored"
+      >
+        Projetos
+      </h1>
+      <div
+        class="slider"
+        style="box-sizing: border-box; display: block; height: inherit; position: relative; width: 100%;"
+        tabindex="0"
+      >
+        <div
+          aria-atomic="true"
+          aria-live="polite"
+          style="position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden;"
+          tabindex="-1"
+        >
+          Slide 1 of 3
+        </div>
+        <div
+          class="slider-frame"
+          style="box-sizing: border-box; display: block; height: 100%; margin: 0px 30px; overflow: hidden; padding: 0px; position: relative; transform: translate3d(0, 0, 0);"
+        >
+          <ul
+            class="slider-list"
+            style="box-sizing: border-box; cursor: pointer; display: block; height: 0px; margin: 0px 0px; padding: 0px; position: relative; transform: translate3d(0px, 0px, 0); width: auto; transition: 0s;"
+          >
+            <li
+              class="slider-slide slide-visible slide-current"
+              style="box-sizing: border-box; display: inline-block; height: auto; left: 0px; list-style-type: none; margin: auto 0px auto 0px; position: absolute; top: 0px; transform: scale(1); transition: transform .4s linear; vertical-align: top; width: 0px;"
+              tabindex="-1"
+            >
+              <div
+                class="jsx-1650735182 carouselItem"
+                data-testid="projectItem_touch_div_tjela logo"
+                data-times-touched="0"
+              >
+                <div
+                  style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+                >
+                  <div
+                    style="box-sizing: border-box; display: block; max-width: 100%;"
+                  >
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      role="presentation"
+                      src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                      style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                    />
+                  </div>
+                  <img
+                    alt="tjela logo"
+                    decoding="async"
+                    src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
+                    style="visibility: inherit; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                  />
+                </div>
+                <div
+                  class="jsx-1650735182 backface"
+                >
+                  <a
+                    class="jsx-1650735182 brand link"
+                    href="https://www.instagram.com/tudonatjela/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    @tudonatjela
+                  </a>
+                  <p
+                    class="jsx-1650735182 description"
+                  >
+                    Gestão de Redes Sociais e Criação de Conteúdo
+                  </p>
+                  <p
+                    class="jsx-1650735182 date"
+                  >
+                    2020
+                     - Presente
+                  </p>
+                  <small
+                    class="jsx-1650735182"
+                  >
+                    * 
+                    em dupla com Sofia Ferreirinho
+                  </small>
+                </div>
+              </div>
+            </li>
+            <li
+              class="slider-slide"
+              inert="true"
+              style="box-sizing: border-box; display: inline-block; height: auto; left: 0px; list-style-type: none; margin: auto 0px auto 0px; position: absolute; top: 0px; transform: scale(1); transition: transform .4s linear; vertical-align: top; width: 0px;"
+              tabindex="-1"
+            >
+              <div
+                class="jsx-1650735182 carouselItem"
+                data-testid="projectItem_touch_div_kaffeehaus logo"
+                data-times-touched="0"
+              >
+                <div
+                  style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+                >
+                  <div
+                    style="box-sizing: border-box; display: block; max-width: 100%;"
+                  >
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      role="presentation"
+                      src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                      style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                    />
+                  </div>
+                  <img
+                    alt="kaffeehaus logo"
+                    decoding="async"
+                    src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
+                    style="visibility: inherit; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                  />
+                </div>
+                <div
+                  class="jsx-1650735182 backface"
+                >
+                  <a
+                    class="jsx-1650735182 brand link"
+                    href="https://www.instagram.com/kaffeehaus_lisboa/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    @kaffeehaus_lisboa
+                  </a>
+                  <p
+                    class="jsx-1650735182 description"
+                  >
+                    Gestão de Redes Sociais e Criação de Conteúdo
+                  </p>
+                  <p
+                    class="jsx-1650735182 date"
+                  >
+                    2018
+                     - Presente
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li
+              class="slider-slide"
+              inert="true"
+              style="box-sizing: border-box; display: inline-block; height: auto; left: 0px; list-style-type: none; margin: auto 0px auto 0px; position: absolute; top: 0px; transform: scale(1); transition: transform .4s linear; vertical-align: top; width: 0px;"
+              tabindex="-1"
+            >
+              <div
+                class="jsx-1650735182 carouselItem"
+                data-testid="projectItem_touch_div_guacamole logo"
+                data-times-touched="0"
+              >
+                <div
+                  style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+                >
+                  <div
+                    style="box-sizing: border-box; display: block; max-width: 100%;"
+                  >
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      role="presentation"
+                      src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                      style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                    />
+                  </div>
+                  <img
+                    alt="guacamole logo"
+                    decoding="async"
+                    src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+                    style="visibility: inherit; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                  />
+                </div>
+                <div
+                  class="jsx-1650735182 backface"
+                >
+                  <a
+                    class="jsx-1650735182 brand link"
+                    href="https://www.instagram.com/guacamolegmg/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    @guacamolegmg
+                  </a>
+                  <p
+                    class="jsx-1650735182 description"
+                  >
+                    Gestão de Redes Sociais e Criação de Conteúdo
+                  </p>
+                  <p
+                    class="jsx-1650735182 date"
+                  >
+                    2019
+                     - Presente
+                  </p>
+                  <small
+                    class="jsx-1650735182"
+                  >
+                    * 
+                    em dupla com Sofia Ferreirinho
+                  </small>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="slider-control-centerleft"
+          style="position: absolute; top: 50%; left: 0px; transform: translateY(-50%);"
+        >
+          <button
+            aria-label="previous slide"
+            class="jsx-900462622"
+            data-testid="nukaCarousel_previousSlideButton"
+            type="button"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 320 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="slider-control-centerright"
+          style="position: absolute; top: 50%; right: 0px; transform: translateY(-50%);"
+        >
+          <button
+            aria-label="next slide"
+            class="jsx-900462622"
+            data-testid="nukaCarousel_nextSlideButton"
+            type="button"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 320 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+              />
+            </svg>
+          </button>
+        </div>
+        <style
+          type="text/css"
+        >
+          .slider-slide &gt; img { width: 100%; display: block; }
+          .slider-slide &gt; img:focus { margin: auto; }
+        </style>
+      </div>
+      <div
+        class="jsx-2566809609 buttonWrapper"
+      >
+        <div
+          class="jsx-2566809609 buttonBackground alignCenter"
+        >
+          <a
+            class="jsx-2566809609 button"
+            href="/pt/projects"
+          >
+            Ver mais
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`<ProjectsList /> renders properly on tablet 1`] = `
+<div>
+  <section
+    class="jsx-2990028810 container"
+    data-testid="projectsList_section"
+  >
+    <div
+      class="jsx-2990028810 wrapper genericMargins"
+    >
+      <h1
+        class="jsx-3953086084 colored"
+      >
+        Projetos
+      </h1>
+      <div
+        class="slider"
+        style="box-sizing: border-box; display: block; height: inherit; position: relative; width: 90%;"
+        tabindex="0"
+      >
+        <div
+          aria-atomic="true"
+          aria-live="polite"
+          style="position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden;"
+          tabindex="-1"
+        >
+          Slide 1 of 3
+        </div>
+        <div
+          class="slider-frame"
+          style="box-sizing: border-box; display: block; height: 100%; margin: 0px 30px; overflow: hidden; padding: 0px; position: relative; transform: translate3d(0, 0, 0);"
+        >
+          <ul
+            class="slider-list"
+            style="box-sizing: border-box; cursor: pointer; display: block; height: 0px; margin: 0px 0px; padding: 0px; position: relative; transform: translate3d(0px, 0px, 0); width: auto; transition: 0s;"
+          >
+            <li
+              class="slider-slide slide-visible slide-current"
+              style="box-sizing: border-box; display: inline-block; height: auto; left: 0px; list-style-type: none; margin: auto 0px auto 0px; position: absolute; top: 0px; transform: scale(1); transition: transform .4s linear; vertical-align: top; width: 0px;"
+              tabindex="-1"
+            >
+              <div
+                class="jsx-1650735182 carouselItem"
+                data-testid="projectItem_touch_div_tjela logo"
+                data-times-touched="0"
+              >
+                <div
+                  style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+                >
+                  <div
+                    style="box-sizing: border-box; display: block; max-width: 100%;"
+                  >
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      role="presentation"
+                      src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                      style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                    />
+                  </div>
+                  <img
+                    alt="tjela logo"
+                    decoding="async"
+                    src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
+                    style="visibility: inherit; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                  />
+                </div>
+                <div
+                  class="jsx-1650735182 backface"
+                >
+                  <a
+                    class="jsx-1650735182 brand link"
+                    href="https://www.instagram.com/tudonatjela/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    @tudonatjela
+                  </a>
+                  <p
+                    class="jsx-1650735182 description"
+                  >
+                    Gestão de Redes Sociais e Criação de Conteúdo
+                  </p>
+                  <p
+                    class="jsx-1650735182 date"
+                  >
+                    2020
+                     - Presente
+                  </p>
+                  <small
+                    class="jsx-1650735182"
+                  >
+                    * 
+                    em dupla com Sofia Ferreirinho
+                  </small>
+                </div>
+              </div>
+            </li>
+            <li
+              class="slider-slide"
+              inert="true"
+              style="box-sizing: border-box; display: inline-block; height: auto; left: 0px; list-style-type: none; margin: auto 0px auto 0px; position: absolute; top: 0px; transform: scale(1); transition: transform .4s linear; vertical-align: top; width: 0px;"
+              tabindex="-1"
+            >
+              <div
+                class="jsx-1650735182 carouselItem"
+                data-testid="projectItem_touch_div_kaffeehaus logo"
+                data-times-touched="0"
+              >
+                <div
+                  style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+                >
+                  <div
+                    style="box-sizing: border-box; display: block; max-width: 100%;"
+                  >
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      role="presentation"
+                      src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                      style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                    />
+                  </div>
+                  <img
+                    alt="kaffeehaus logo"
+                    decoding="async"
+                    src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
+                    style="visibility: inherit; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                  />
+                </div>
+                <div
+                  class="jsx-1650735182 backface"
+                >
+                  <a
+                    class="jsx-1650735182 brand link"
+                    href="https://www.instagram.com/kaffeehaus_lisboa/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    @kaffeehaus_lisboa
+                  </a>
+                  <p
+                    class="jsx-1650735182 description"
+                  >
+                    Gestão de Redes Sociais e Criação de Conteúdo
+                  </p>
+                  <p
+                    class="jsx-1650735182 date"
+                  >
+                    2018
+                     - Presente
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li
+              class="slider-slide"
+              inert="true"
+              style="box-sizing: border-box; display: inline-block; height: auto; left: 0px; list-style-type: none; margin: auto 0px auto 0px; position: absolute; top: 0px; transform: scale(1); transition: transform .4s linear; vertical-align: top; width: 0px;"
+              tabindex="-1"
+            >
+              <div
+                class="jsx-1650735182 carouselItem"
+                data-testid="projectItem_touch_div_guacamole logo"
+                data-times-touched="0"
+              >
+                <div
+                  style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+                >
+                  <div
+                    style="box-sizing: border-box; display: block; max-width: 100%;"
+                  >
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      role="presentation"
+                      src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                      style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                    />
+                  </div>
+                  <img
+                    alt="guacamole logo"
+                    decoding="async"
+                    src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+                    style="visibility: inherit; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                  />
+                </div>
+                <div
+                  class="jsx-1650735182 backface"
+                >
+                  <a
+                    class="jsx-1650735182 brand link"
+                    href="https://www.instagram.com/guacamolegmg/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    @guacamolegmg
+                  </a>
+                  <p
+                    class="jsx-1650735182 description"
+                  >
+                    Gestão de Redes Sociais e Criação de Conteúdo
+                  </p>
+                  <p
+                    class="jsx-1650735182 date"
+                  >
+                    2019
+                     - Presente
+                  </p>
+                  <small
+                    class="jsx-1650735182"
+                  >
+                    * 
+                    em dupla com Sofia Ferreirinho
+                  </small>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="slider-control-centerleft"
+          style="position: absolute; top: 50%; left: 0px; transform: translateY(-50%);"
+        >
+          <button
+            aria-label="previous slide"
+            class="jsx-900462622"
+            data-testid="nukaCarousel_previousSlideButton"
+            type="button"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 320 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="slider-control-centerright"
+          style="position: absolute; top: 50%; right: 0px; transform: translateY(-50%);"
+        >
+          <button
+            aria-label="next slide"
+            class="jsx-900462622"
+            data-testid="nukaCarousel_nextSlideButton"
+            type="button"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 320 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+              />
+            </svg>
+          </button>
+        </div>
+        <style
+          type="text/css"
+        >
+          .slider-slide &gt; img { width: 100%; display: block; }
+          .slider-slide &gt; img:focus { margin: auto; }
+        </style>
+      </div>
+      <div
+        class="jsx-2566809609 buttonWrapper"
+      >
+        <div
+          class="jsx-2566809609 buttonBackground alignCenter"
+        >
+          <a
+            class="jsx-2566809609 button"
+            href="/pt/projects"
+          >
+            Ver mais
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

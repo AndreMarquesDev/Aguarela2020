@@ -1,8 +1,12 @@
 import { Page, expect } from '@playwright/test';
-import { Locale } from '../../types/Locale';
-import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
-import { projectsListSectionDataTestId } from '../../utils/dataTestIds';
-import { guacamoleInstagramUrl, kaffeehausInstagramUrl, tjelaInstagramUrl } from '../../utils/urls';
+import { Locale } from '../../src/types/Locale';
+import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
+import { projectsListSectionDataTestId } from '../../src/utils/dataTestIds';
+import {
+    guacamoleInstagramUrl,
+    kaffeehausInstagramUrl,
+    tjelaInstagramUrl,
+} from '../../src/utils/urls';
 import { urls } from '../utils/selectors';
 import {
     clickNextArrowButtonIfMobile,

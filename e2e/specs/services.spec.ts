@@ -1,11 +1,11 @@
 import { test, expect } from '@playwright/test';
-import { Locale } from '../../types/Locale';
-import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
+import { Locale } from '../../src/types/Locale';
+import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
 import {
     brandsListSectionDataTestId,
     footerDataTestId,
     servicesBlockSectionDataTestId,
-} from '../../utils/dataTestIds';
+} from '../../src/utils/dataTestIds';
 import { servicesSectionTest } from '../testBlocks/servicesSectionTest';
 import { brandsListTest } from '../testBlocks/brandsListTest';
 import { footerTest } from '../testBlocks/footerTest';
@@ -13,8 +13,8 @@ import { letsWorkSectionTest } from '../testBlocks/letsWorkSectionTest';
 import { headerNavigationTest } from '../testBlocks/headerNavigationTest';
 import { urls } from '../utils/selectors';
 import { getScreenshotPath } from '../utils/utils';
-import { Page } from '../../utils/pages';
-import { capitalize } from '../../utils/generic';
+import { Page } from '../../src/utils/pages';
+import { capitalize } from '../../src/utils/generic';
 
 const pageName: Page = 'services';
 const pageNameCapitalized: string = capitalize(pageName);

@@ -1,12 +1,12 @@
 import { test, expect } from '@playwright/test';
-import { Locale } from '../../types/Locale';
-import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
+import { Locale } from '../../src/types/Locale';
+import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
 import {
     brandsListSectionDataTestId,
     footerDataTestId,
     homepageBannerContainerDataTestId,
     skillsBlockSectionDataTestId,
-} from '../../utils/dataTestIds';
+} from '../../src/utils/dataTestIds';
 import { brandsListTest } from '../testBlocks/brandsListTest';
 import { footerTest } from '../testBlocks/footerTest';
 import { letsWorkSectionTest } from '../testBlocks/letsWorkSectionTest';
@@ -17,8 +17,8 @@ import { welcomeSectionTest } from '../testBlocks/welcomeSectionTest';
 import { skillsBlockTest } from '../testBlocks/skillsBlockTest';
 import { workflowSectionTest } from '../testBlocks/workflowSectionTest';
 import { projectsSectionTest } from '../testBlocks/projectsSectionTest';
-import { capitalize } from '../../utils/generic';
-import { Page } from '../../utils/pages';
+import { capitalize } from '../../src/utils/generic';
+import { Page } from '../../src/utils/pages';
 import { getScreenshotPath } from '../utils/utils';
 
 const pageName: Page = 'homepage';

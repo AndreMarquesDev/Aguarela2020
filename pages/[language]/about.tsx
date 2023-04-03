@@ -2,13 +2,16 @@ import React, { useMemo, useState } from 'react';
 import Head from 'next/head';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
-import { Layout } from '../../components/Layout/Layout';
-import { getCurrentLanguagetexts } from '../../utils/generic';
-import { NavLinksContext, NavLinksContextProps } from '../../components/context/NavLinksContext';
-import { BrandsList } from '../../components/BrandsList/BrandsList';
-import { LetsWork } from '../../components/LetsWork/LetsWork';
-import { AboutMe } from '../../components/AboutMe/AboutMe';
-import { Locale } from '../../types/Locale';
+import { Layout } from '../../src/components/Layout/Layout';
+import { getCurrentLanguagetexts } from '../../src/utils/generic';
+import {
+    NavLinksContext,
+    NavLinksContextProps,
+} from '../../src/components/context/NavLinksContext';
+import { BrandsList } from '../../src/components/BrandsList/BrandsList';
+import { LetsWork } from '../../src/components/LetsWork/LetsWork';
+import { AboutMe } from '../../src/components/AboutMe/AboutMe';
+import { Locale } from '../../src/types/Locale';
 
 const AboutPage: NextPage = () => {
     const { query } = useRouter();

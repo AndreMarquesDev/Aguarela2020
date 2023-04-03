@@ -1,9 +1,9 @@
 import { Page, expect } from '@playwright/test';
-import { Locale } from '../../types/Locale';
+import { Locale } from '../../src/types/Locale';
 import {
     skillsBlockItemWrapperDataTestId,
     skillsBlockSectionDataTestId,
-} from '../../utils/dataTestIds';
+} from '../../src/utils/dataTestIds';
 import { clickNextArrowButtonIfMobile, getLocalizedTexts } from '../utils/utils';
 
 export const skillsBlockTest = async (

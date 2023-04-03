@@ -1,6 +1,6 @@
 import { Page, expect } from '@playwright/test';
-import { homepageBannerContainerDataTestId } from '../../utils/dataTestIds';
-import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
+import { homepageBannerContainerDataTestId } from '../../src/utils/dataTestIds';
+import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
 import { getImageDimension } from '../utils/utils';
 
 export const bannerTest = async (

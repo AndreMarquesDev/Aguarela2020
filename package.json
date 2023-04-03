@@ -10,7 +10,7 @@
         "build": "next build",
         "start": "next start",
         "test": "jest",
-        "test:generate:badge": "jest && jest-coverage-badges input utils/jest/coverage/coverage-summary.json output utils/jest/coverageBadges",
+        "test:generate:badge": "jest && jest-coverage-badges input src/utils/jest/coverage/coverage-summary.json output src/utils/jest/coverageBadges",
         "lint": "tsc --noEmit && eslint . --ext .js,.ts,.tsx && stylelint .",
         "lint:fix": "tsc --noEmit && eslint . --ext .js,.ts,.tsx --fix && stylelint . --fix",
         "run:lighthouse": "lhci autorun --config=./lighthouse/lighthouserc.js",

@@ -1,11 +1,11 @@
 import { Page, expect, test } from '@playwright/test';
-import { Locale } from '../../types/Locale';
-import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
+import { Locale } from '../../src/types/Locale';
+import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
 import {
     nukaCarouselNextButtonDataTestId,
     projectItemTouchDivDataTestId,
     projectsListDoubleSectionDataTestId,
-} from '../../utils/dataTestIds';
+} from '../../src/utils/dataTestIds';
 import {
     aAmigaEsteticistaIndustriaCriativaUrl,
     anaroIndustriaCriativaUrl,
@@ -27,7 +27,7 @@ import {
     riceMeInstagramUrl,
     tasteOfIndiaInstagramUrl,
     tjelaInstagramUrl,
-} from '../../utils/urls';
+} from '../../src/utils/urls';
 import {
     clickNextArrowButtonIfMobile,
     getLocalizedTexts,

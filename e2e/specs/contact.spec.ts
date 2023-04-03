@@ -1,14 +1,14 @@
 import { test, expect } from '@playwright/test';
-import { Locale } from '../../types/Locale';
-import { PlaywrightBrowserName } from '../../types/PlaywrightBrowserName';
-import { contactBlockSectionDataTestId } from '../../utils/dataTestIds';
+import { Locale } from '../../src/types/Locale';
+import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
+import { contactBlockSectionDataTestId } from '../../src/utils/dataTestIds';
 import { contactBlockTest } from '../testBlocks/contactBlockTest';
 import { contactFormTest } from '../testBlocks/contactFormTest';
 import { footerTest } from '../testBlocks/footerTest';
 import { headerNavigationTest } from '../testBlocks/headerNavigationTest';
 import { urls } from '../utils/selectors';
-import { capitalize } from '../../utils/generic';
-import { Page } from '../../utils/pages';
+import { capitalize } from '../../src/utils/generic';
+import { Page } from '../../src/utils/pages';
 import { getScreenshotPath } from '../utils/utils';
 
 const pageName: Page = 'contact';
