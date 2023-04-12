@@ -67,12 +67,9 @@ const submitContactForm = (req: CustomNextApiRequest, res: NextApiResponse): voi
     const emailOptions = buildEmailOptions(data);
 
     const smtpTransport = nodemailer.createTransport({
-        host: 'smtp-mail.outlook.com',
-        port: 587,
-        secure: false,
-        tls: {
-            ciphers: 'SSLv3',
-        },
+        host: 'smtp.zoho.eu',
+        port: 465,
+        secure: true,
         auth: {
             user: process.env.NODEMAILER_SEND_EMAIL_FROM,
             pass: process.env.NODEMAILER_SEND_EMAIL_FROM_PASS,
