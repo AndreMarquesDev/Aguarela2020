@@ -52,11 +52,13 @@ describe('<ContactForm />', () => {
     });
 
     test('displays error messages in required fields on submit with empty fields', async () => {
+        const user = userEvent.setup();
+
         renderComponent();
 
         const submitButton = screen.getByText(textsPt.send);
 
-        userEvent.click(submitButton);
+        await user.click(submitButton);
 
         const errorMessages = await screen.findAllByTestId(
             contactFormErrorMessageVisibleDataTestId
@@ -68,6 +70,8 @@ describe('<ContactForm />', () => {
     });
 
     test('lets fields be properly filled', async () => {
+        const user = userEvent.setup();
+
         renderComponent();
 
         const nameInput = screen.getByTestId(FieldTypes.Name);
@@ -76,11 +80,11 @@ describe('<ContactForm />', () => {
         const subjectInput = screen.getByTestId(FieldTypes.Subject);
         const textareaField = screen.getByTestId(FieldTypes.Textarea);
 
-        userEvent.type(nameInput, 'André{space}Marques');
-        userEvent.type(brandInput, 'Brand');
-        userEvent.type(emailInput, 'email@email.com');
-        userEvent.type(subjectInput, 'Subject');
-        userEvent.type(textareaField, 'Textarea{space}field');
+        await user.type(nameInput, 'André Marques');
+        await user.type(brandInput, 'Brand');
+        await user.type(emailInput, 'email@email.com');
+        await user.type(subjectInput, 'Subject');
+        await user.type(textareaField, 'Textarea field');
 
         await waitFor(() => {
             // eslint-disable-next-line testing-library/no-wait-for-snapshot
@@ -91,6 +95,8 @@ describe('<ContactForm />', () => {
     test('submits the form successfully', async () => {
         initializeAxiosMockAdapter();
 
+        const user = userEvent.setup();
+
         renderComponent();
 
         const nameInput = screen.getByTestId(FieldTypes.Name);
@@ -99,15 +105,15 @@ describe('<ContactForm />', () => {
         const subjectInput = screen.getByTestId(FieldTypes.Subject);
         const textareaField = screen.getByTestId(FieldTypes.Textarea);
 
-        userEvent.type(nameInput, 'André{space}Marques');
-        userEvent.type(brandInput, 'Brand');
-        userEvent.type(emailInput, 'email@email.com');
-        userEvent.type(subjectInput, 'Subject');
-        userEvent.type(textareaField, 'Textarea{space}field');
+        await user.type(nameInput, 'André Marques');
+        await user.type(brandInput, 'Brand');
+        await user.type(emailInput, 'email@email.com');
+        await user.type(subjectInput, 'Subject');
+        await user.type(textareaField, 'Textarea field');
 
         const submitButton = screen.getByText(textsPt.send);
 
-        userEvent.click(submitButton);
+        await user.click(submitButton);
 
         const container = await screen.findByTestId('contactForm_container');
 
@@ -119,6 +125,8 @@ describe('<ContactForm />', () => {
         async () => {
             initializeAxiosMockAdapter();
 
+            const user = userEvent.setup();
+
             renderComponent();
 
             const nameInput = screen.getByTestId(FieldTypes.Name);
@@ -127,29 +135,35 @@ describe('<ContactForm />', () => {
             const subjectInput = screen.getByTestId(FieldTypes.Subject);
             const textareaField = screen.getByTestId(FieldTypes.Textarea);
 
-            userEvent.type(nameInput, 'André{space}Marques');
-            userEvent.type(brandInput, 'Brand');
-            userEvent.type(emailInput, 'email@email.com');
-            userEvent.type(subjectInput, 'Subject');
-            userEvent.type(textareaField, 'Textarea{space}field');
+            await user.type(nameInput, 'André Marques');
+            await user.type(brandInput, 'Brand');
+            await user.type(emailInput, 'email@email.com');
+            await user.type(subjectInput, 'Subject');
+            await user.type(textareaField, 'Textarea field');
 
             const submitButton = screen.getByText(textsPt.send);
 
-            userEvent.click(submitButton);
+            await user.click(submitButton);
 
-            const container = await screen.findByTestId('contactForm_container');
+            const successMessage = await screen.findByText(textsPt.messageSentSuccessfully);
 
-            await waitForElementToBeRemoved(screen.queryByText('Mensagem enviada com sucesso.'), {
+            expect(successMessage).toBeInTheDocument();
+
+            await waitForElementToBeRemoved(successMessage, {
                 timeout: FORM_RESET_TIMEOUT,
             });
 
+            const container = await screen.findByTestId('contactForm_container');
+
             expect(container).toMatchSnapshot();
         },
-        FORM_RESET_TIMEOUT + 1000
+        FORM_RESET_TIMEOUT + 3000
     );
 
     test('shows an error message in case the POST request fails', async () => {
         initializeAxiosMockAdapter(0, false);
+
+        const user = userEvent.setup();
 
         renderComponent();
 
@@ -159,15 +173,15 @@ describe('<ContactForm />', () => {
         const subjectInput = screen.getByTestId(FieldTypes.Subject);
         const textareaField = screen.getByTestId(FieldTypes.Textarea);
 
-        userEvent.type(nameInput, 'André{space}Marques');
-        userEvent.type(brandInput, 'Brand');
-        userEvent.type(emailInput, 'email@email.com');
-        userEvent.type(subjectInput, 'Subject');
-        userEvent.type(textareaField, 'Textarea{space}field');
+        await user.type(nameInput, 'André Marques');
+        await user.type(brandInput, 'Brand');
+        await user.type(emailInput, 'email@email.com');
+        await user.type(subjectInput, 'Subject');
+        await user.type(textareaField, 'Textarea field');
 
         const submitButton = screen.getByText(textsPt.send);
 
-        userEvent.click(submitButton);
+        await user.click(submitButton);
 
         const container = await screen.findByTestId('contactForm_container');
 

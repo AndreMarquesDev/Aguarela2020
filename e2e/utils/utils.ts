@@ -16,6 +16,9 @@ export const oneAndAHalfMinTimeout = oneMinTimeout * 1.5;
 export const twoMinTimeout = oneMinTimeout * 2;
 export const twoAndAHalfMinTimeout = oneMinTimeout * 2.5;
 
+export const nukaCarouselCurrentSlide = '.slide:not(.prev-cloned,.next-cloned)';
+export const nukaCarouselVisibleSlide = '.slide-visible:not(.prev-cloned,.next-cloned)';
+
 export const getLocalizedTexts = (locale: Locale): TextsInterface => {
     if (locale === Locale.Pt) {
         return textsPt;

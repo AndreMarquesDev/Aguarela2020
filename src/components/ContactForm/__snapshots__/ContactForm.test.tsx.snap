@@ -976,7 +976,7 @@ exports[`<ContactForm /> shows an error message in case the POST request fails 1
         <textarea
           aria-describedby="messageErrorMessage"
           class="jsx-1980812632"
-          data-error="true"
+          data-error="false"
           data-testid="message"
           id="message"
           name="message"
@@ -986,8 +986,8 @@ exports[`<ContactForm /> shows an error message in case the POST request fails 1
           Textarea field
         </textarea>
         <span
-          class="jsx-1980812632 errorMessage visible"
-          data-testid="errorMessage_visible"
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
           id="messageErrorMessage"
         >
           Este campo é obrigatório. Por favor insira uma mensagem
@@ -1158,7 +1158,7 @@ exports[`<ContactForm /> submits the form successfully 1`] = `
         <textarea
           aria-describedby="messageErrorMessage"
           class="jsx-1980812632"
-          data-error="true"
+          data-error="false"
           data-testid="message"
           id="message"
           name="message"
@@ -1168,8 +1168,8 @@ exports[`<ContactForm /> submits the form successfully 1`] = `
           Textarea field
         </textarea>
         <span
-          class="jsx-1980812632 errorMessage visible"
-          data-testid="errorMessage_visible"
+          class="jsx-1980812632 errorMessage"
+          data-testid="errorMessage_hidden"
           id="messageErrorMessage"
         >
           Este campo é obrigatório. Por favor insira uma mensagem

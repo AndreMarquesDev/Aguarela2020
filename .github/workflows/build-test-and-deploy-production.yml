@@ -14,7 +14,7 @@ jobs:
     timeout-minutes: 15
     strategy:
       matrix:
-        node-version: [16.18.0]
+        node-version: [18.16.0]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -43,7 +43,7 @@ jobs:
     needs: build
     strategy:
       matrix:
-        node-version: [16.18.0]
+        node-version: [18.16.0]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -68,10 +68,10 @@ jobs:
     timeout-minutes: 20
     needs: build
     container:
-      image: mcr.microsoft.com/playwright:v1.29.0-focal
+      image: mcr.microsoft.com/playwright:v1.33.0-focal
     strategy:
       matrix:
-        node-version: [16.18.0]
+        node-version: [18.16.0]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -111,10 +111,10 @@ jobs:
     timeout-minutes: 20
     needs: build
     container:
-      image: mcr.microsoft.com/playwright:v1.29.0-focal
+      image: mcr.microsoft.com/playwright:v1.33.0-focal
     strategy:
       matrix:
-        node-version: [16.18.0]
+        node-version: [18.16.0]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -154,10 +154,10 @@ jobs:
     timeout-minutes: 20
     needs: build
     container:
-      image: mcr.microsoft.com/playwright:v1.29.0-focal
+      image: mcr.microsoft.com/playwright:v1.33.0-focal
     strategy:
       matrix:
-        node-version: [16.18.0]
+        node-version: [18.16.0]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -197,10 +197,10 @@ jobs:
     timeout-minutes: 20
     needs: build
     container:
-      image: mcr.microsoft.com/playwright:v1.29.0-focal
+      image: mcr.microsoft.com/playwright:v1.33.0-focal
     strategy:
       matrix:
-        node-version: [16.18.0]
+        node-version: [18.16.0]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -240,10 +240,10 @@ jobs:
     timeout-minutes: 20
     needs: build
     container:
-      image: mcr.microsoft.com/playwright:v1.29.0-focal
+      image: mcr.microsoft.com/playwright:v1.33.0-focal
     strategy:
       matrix:
-        node-version: [16.18.0]
+        node-version: [18.16.0]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -283,10 +283,10 @@ jobs:
     timeout-minutes: 20
     needs: build
     container:
-      image: mcr.microsoft.com/playwright:v1.29.0-focal
+      image: mcr.microsoft.com/playwright:v1.33.0-focal
     strategy:
       matrix:
-        node-version: [16.18.0]
+        node-version: [18.16.0]
     steps:
       - name: Checkout
         uses: actions/checkout@v3

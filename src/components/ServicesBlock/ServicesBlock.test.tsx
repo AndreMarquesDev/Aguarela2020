@@ -12,6 +12,9 @@ import {
 import { MockProviders } from '../../utils/jest/MockProviders';
 import { Locale } from '../../types/Locale';
 
+const expectedNumberOfBlocksRendered = 3;
+const expectedNumberOfSlidesRendered = expectedNumberOfBlocksRendered * 3; // nukaCarousel adds two extra slides, a '.prev-cloned' and a '.next-cloned', hence the triplication
+
 const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
     return render(
         <MockProviders language={language}>
@@ -61,7 +64,7 @@ describe('<ServicesBlock />', () => {
         expect(block3Backface1).toBeInTheDocument();
         expect(block3Backface2).toBeInTheDocument();
 
-        expect(numberOfBlocks.length).toBe(3);
+        expect(numberOfBlocks).toHaveLength(expectedNumberOfBlocksRendered);
         expect(carouselItemWrapper).not.toBeInTheDocument();
 
         expect(container).toMatchSnapshot();
@@ -115,7 +118,7 @@ describe('<ServicesBlock />', () => {
         const carouselItemWrapper = screen.getAllByTestId(servicesBlockItemCarouselDataTestId);
         const numberOfBlocks = screen.queryByTestId(servicesBlockItemWrapperDataTestId);
 
-        expect(carouselItemWrapper.length).toBe(3);
+        expect(carouselItemWrapper).toHaveLength(expectedNumberOfSlidesRendered);
         expect(numberOfBlocks).not.toBeInTheDocument();
 
         expect(container).toMatchSnapshot();
@@ -129,7 +132,7 @@ describe('<ServicesBlock />', () => {
         const carouselItemWrapper = screen.getAllByTestId(servicesBlockItemCarouselDataTestId);
         const numberOfBlocks = screen.queryByTestId(servicesBlockItemWrapperDataTestId);
 
-        expect(carouselItemWrapper.length).toBe(3);
+        expect(carouselItemWrapper).toHaveLength(expectedNumberOfSlidesRendered);
         expect(numberOfBlocks).not.toBeInTheDocument();
 
         expect(container).toMatchSnapshot();

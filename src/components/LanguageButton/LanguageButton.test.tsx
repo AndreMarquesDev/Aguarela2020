@@ -2,17 +2,8 @@ import '@testing-library/jest-dom';
 import React from 'react';
 import { render, RenderResult, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import * as nextRouter from 'next/router';
 import { LanguageButton } from './LanguageButton';
 import { MockProviders } from '../../utils/jest/MockProviders';
-
-// @ts-ignore
-nextRouter.useRouter = jest.fn(() => ({
-    query: {
-        language: 'pt',
-    },
-    replace: jest.fn(),
-}));
 
 const mockToggleMenu = jest.fn();
 
@@ -35,12 +26,14 @@ describe('<LanguageButton />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly when clicking on button', () => {
+    test('renders properly when clicking on button', async () => {
         Object.defineProperty(window, 'location', {
             value: {
                 pathname: '/en/about',
             },
         });
+
+        const user = userEvent.setup();
 
         renderComponent();
 
@@ -50,21 +43,23 @@ describe('<LanguageButton />', () => {
 
         expect(mockToggleMenu).toHaveBeenCalledTimes(0);
 
-        userEvent.click(button);
+        await user.click(button);
 
         expect(document.title).toBe('Sobre - Aguarela Digital');
 
         expect(mockToggleMenu).toHaveBeenCalledTimes(1);
     });
 
-    test('does not call the "toggleMenu" function if menu is closed', () => {
+    test('does not call the "toggleMenu" function if menu is closed', async () => {
+        const user = userEvent.setup();
+
         renderComponent(false);
 
         const button = screen.getByText('pt');
 
         expect(mockToggleMenu).toHaveBeenCalledTimes(0);
 
-        userEvent.click(button);
+        await user.click(button);
 
         expect(mockToggleMenu).toHaveBeenCalledTimes(0);
     });

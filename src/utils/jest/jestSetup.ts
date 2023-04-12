@@ -1,3 +1,5 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
+import mockRouter from 'next-router-mock';
 import { Breakpoint } from '../useWindowSize';
 import { setJestWindowWidth } from './setJestWindowWidth';
 
@@ -10,3 +12,10 @@ Object.defineProperty(window, 'matchMedia', {
 });
 
 setJestWindowWidth(Breakpoint.Desktop);
+
+// eslint-disable-next-line import/no-extraneous-dependencies, global-require
+jest.mock('next/router', () => require('next-router-mock'));
+
+mockRouter.query = {
+    language: 'pt',
+};

@@ -47,7 +47,9 @@ describe('<Header />', () => {
         expect(mockSetNavHeight).toHaveBeenCalledTimes(0);
     });
 
-    test('calls the "toggleMenu" function when clicking on <MenuIcon />', () => {
+    test('calls the "toggleMenu" function when clicking on <MenuIcon />', async () => {
+        const user = userEvent.setup();
+
         renderComponent(mockSetNavHeight);
 
         const menuIcon = screen.getByRole('button');
@@ -56,7 +58,7 @@ describe('<Header />', () => {
 
         expect(mockToggleMenu).toHaveBeenCalledTimes(0);
 
-        userEvent.click(menuIcon);
+        await user.click(menuIcon);
 
         expect(mockToggleMenu).toHaveBeenCalledTimes(1);
     });

@@ -5,7 +5,12 @@ import {
     servicesBlockItemWrapperDataTestId,
     servicesBlockSectionDataTestId,
 } from '../../src/utils/dataTestIds';
-import { clickNextArrowButtonIfMobile, getLocalizedTexts, getScreenshotPath } from '../utils/utils';
+import {
+    clickNextArrowButtonIfMobile,
+    getLocalizedTexts,
+    getScreenshotPath,
+    nukaCarouselVisibleSlide,
+} from '../utils/utils';
 
 export const servicesSectionTest = async (
     page: Page,
@@ -37,27 +42,26 @@ export const servicesSectionTest = async (
     const slidesDataTestId = isMobile
         ? servicesBlockItemCarouselDataTestId
         : servicesBlockItemWrapperDataTestId;
-    const slide1 = container.getByTestId(slidesDataTestId).nth(0);
-    const slide2 = container.getByTestId(slidesDataTestId).nth(1);
-    const slide3 = container.getByTestId(slidesDataTestId).nth(2);
-    const slide1BackfaceFirstText = container.getByText(webDesign);
-    const slide2BackfaceFirstText = container.getByText(contentCreation);
-    const slide3BackfaceFirstText = container.getByText(paidSearchCampaigns);
 
     // renders page title
     await expect(pageTitle).toBeVisible();
 
     // renders first slide
-    await expect(container.getByText(design, { exact: true })).toBeVisible();
+    const slide1 = isMobile
+        ? container.locator(`${nukaCarouselVisibleSlide} [data-testid="${slidesDataTestId}"]`)
+        : container.getByTestId(slidesDataTestId).nth(0);
+    const slide1BackfaceFirstText = slide1.getByText(webDesign);
+
+    await expect(slide1.getByText(design, { exact: true })).toBeVisible();
     await expect(slide1BackfaceFirstText).toBeHidden();
 
     // hover over slide to show backface
     await slide1.hover();
     await expect(slide1BackfaceFirstText).toBeVisible();
-    await expect(container.getByText(outdoorsAndFlyers)).toBeVisible();
-    await expect(container.getByText(contactCard)).toBeVisible();
-    await expect(container.getByText(socialMediaTemplates)).toBeVisible();
-    await expect(container.getByText(menus)).toBeVisible();
+    await expect(slide1.getByText(outdoorsAndFlyers)).toBeVisible();
+    await expect(slide1.getByText(contactCard)).toBeVisible();
+    await expect(slide1.getByText(socialMediaTemplates)).toBeVisible();
+    await expect(slide1.getByText(menus)).toBeVisible();
 
     // take screenshot of slide 1's backface
     await expect(container).toHaveScreenshot(
@@ -71,16 +75,21 @@ export const servicesSectionTest = async (
     await clickNextArrowButtonIfMobile(isMobile, container);
 
     // renders second slide
-    await expect(container.getByText(socialMediaEn, { exact: true })).toBeVisible();
+    const slide2 = isMobile
+        ? container.locator(`${nukaCarouselVisibleSlide} [data-testid="${slidesDataTestId}"]`)
+        : container.getByTestId(slidesDataTestId).nth(1);
+    const slide2BackfaceFirstText = slide2.getByText(contentCreation);
+
+    await expect(slide2.getByText(socialMediaEn, { exact: true })).toBeVisible();
     await expect(slide2BackfaceFirstText).toBeHidden();
 
     // hover over slide to show backface
     await slide2.hover();
     await expect(slide2BackfaceFirstText).toBeVisible();
-    await expect(container.getByText(marketAnalysis)).toBeVisible();
-    await expect(container.getByText(socialMediaStrategyAndManagement)).toBeVisible();
-    await expect(container.getByText(paidSocial)).toBeVisible();
-    await expect(container.getByText(consulting)).toBeVisible();
+    await expect(slide2.getByText(marketAnalysis)).toBeVisible();
+    await expect(slide2.getByText(socialMediaStrategyAndManagement)).toBeVisible();
+    await expect(slide2.getByText(paidSocial)).toBeVisible();
+    await expect(slide2.getByText(consulting)).toBeVisible();
 
     // take screenshot of slide 2's backface
     await expect(container).toHaveScreenshot(
@@ -94,13 +103,18 @@ export const servicesSectionTest = async (
     await clickNextArrowButtonIfMobile(isMobile, container);
 
     // renders third slide
-    await expect(container.getByText(digital, { exact: true })).toBeVisible();
-    await expect(slide2BackfaceFirstText).toBeHidden();
+    const slide3 = isMobile
+        ? container.locator(`${nukaCarouselVisibleSlide} [data-testid="${slidesDataTestId}"]`)
+        : container.getByTestId(slidesDataTestId).nth(2);
+    const slide3BackfaceFirstText = slide3.getByText(paidSearchCampaigns);
+
+    await expect(slide3.getByText(digital, { exact: true })).toBeVisible();
+    await expect(slide3BackfaceFirstText).toBeHidden();
 
     // hover over slide to show backface
     await slide3.hover();
     await expect(slide3BackfaceFirstText).toBeVisible();
-    await expect(container.getByText(opinionPlatformsManagement)).toBeVisible();
+    await expect(slide3.getByText(opinionPlatformsManagement)).toBeVisible();
 
     // take screenshot of slide 3's backface
     await expect(container).toHaveScreenshot(

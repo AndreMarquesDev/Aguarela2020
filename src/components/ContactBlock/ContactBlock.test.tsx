@@ -1,20 +1,14 @@
 import '@testing-library/jest-dom';
 import React from 'react';
 import { render, RenderResult, screen } from '@testing-library/react';
-import * as nextRouter from 'next/router';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import mockRouter from 'next-router-mock';
 import { ContactBlock } from './ContactBlock';
 import { textsEn, textsPt } from '../../utils/texts';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { Breakpoint } from '../../utils/useWindowSize';
 import { MockProviders } from '../../utils/jest/MockProviders';
 import { Locale } from '../../types/Locale';
-
-// @ts-ignore
-nextRouter.useRouter = jest.fn(() => ({
-    query: {
-        language: 'pt',
-    },
-}));
 
 const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
     return render(
@@ -72,11 +66,9 @@ describe('<ContactBlock />', () => {
     });
 
     test('renders properly in English and mobile', () => {
-        (nextRouter.useRouter as jest.Mock).mockImplementationOnce(() => ({
-            query: {
-                language: 'en',
-            },
-        }));
+        mockRouter.query = {
+            language: 'en',
+        };
 
         setJestWindowWidth(Breakpoint.Mobile);
 

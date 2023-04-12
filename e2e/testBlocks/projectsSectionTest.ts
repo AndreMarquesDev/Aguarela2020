@@ -13,6 +13,7 @@ import {
     getLocalizedTexts,
     getImageDimension,
     getScreenshotPath,
+    nukaCarouselVisibleSlide,
 } from '../utils/utils';
 
 export const projectsSectionTest = async (
@@ -43,11 +44,12 @@ export const projectsSectionTest = async (
         isInPartnership: boolean,
         year?: string
     ): Promise<void> => {
+        // nukaCarousel adds two extra slides, a '.prev-cloned' and a '.next-cloned'
         const slide = isMobile
-            ? container.locator('.slide-visible')
+            ? container.locator(nukaCarouselVisibleSlide)
             : container.locator('li').nth(number - 1);
         const anchor = slide.getByRole('link', { name: instagramHandle });
-        const image = container.getByAltText(`${brand} logo`, { exact: true });
+        const image = slide.getByAltText(`${brand} logo`, { exact: true });
         const imageBoundingBox = await image.boundingBox();
         const imageSizeDesktop = 384;
         const imageSizeMobileChrome = 293;

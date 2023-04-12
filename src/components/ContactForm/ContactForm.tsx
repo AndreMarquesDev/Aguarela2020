@@ -130,8 +130,7 @@ export const ContactForm = (): JSX.Element => {
 
     const resetForm = (): void => {
         setTimeout(() => {
-            // @ts-ignore
-            handleReset();
+            handleReset(undefined);
             setFormSubmitState({
                 sending: false,
                 submitted: false,

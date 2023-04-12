@@ -1,20 +1,13 @@
 import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen, RenderResult } from '@testing-library/react';
-import * as nextRouter from 'next/router';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import mockRouter from 'next-router-mock';
 import { Layout, LayoutProps } from './Layout';
 import { Breakpoint } from '../../utils/useWindowSize';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { textsEn } from '../../utils/texts';
 import { MockProviders } from '../../utils/jest/MockProviders';
-
-// @ts-ignore
-nextRouter.useRouter = jest.fn(() => ({
-    route: '/',
-    query: {
-        language: 'pt',
-    },
-}));
 
 const baseProps: LayoutProps = {
     children: (
@@ -54,12 +47,9 @@ describe('<Layout />', () => {
     });
 
     test('renders properly in English', () => {
-        (nextRouter.useRouter as jest.Mock).mockImplementation(() => ({
-            route: '/',
-            query: {
-                language: 'en',
-            },
-        }));
+        mockRouter.query = {
+            language: 'en',
+        };
 
         const { container } = renderComponent();
 

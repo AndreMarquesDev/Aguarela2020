@@ -124,10 +124,10 @@ export const ProjectItem = ({
                         }
 
                         &.grid {
-                            margin: 0 4% 25rem;
+                            margin: 0 4% 0;
 
                             @include tablet {
-                                margin: 0 2% 25rem;
+                                margin: 0 2% 0;
                             }
 
                             .backface {

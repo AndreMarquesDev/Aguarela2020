@@ -8,6 +8,9 @@ import { Breakpoint } from '../../utils/useWindowSize';
 import { MockProviders } from '../../utils/jest/MockProviders';
 import { Locale } from '../../types/Locale';
 
+const expectedNumberOfBlocksRendered = 13;
+const expectedNumberOfSlidesRendered = expectedNumberOfBlocksRendered * 3; // nukaCarousel adds two extra slides, a '.prev-cloned' and a '.next-cloned', hence the triplication
+
 const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
     return render(
         <MockProviders language={language}>
@@ -21,26 +24,27 @@ describe('<ProjectsListDouble />', () => {
         const { container } = renderComponent();
 
         const title = screen.getByText(textsPt.projects);
-        const tjela = screen.getByAltText('tjela');
-        const tasteOfIndia = screen.getByAltText('taste of india');
-        const kaffeehaus = screen.getByAltText('kaffeehaus');
-        const avocado = screen.getByAltText('avocado');
-        const guacamole = screen.getByAltText('guacamole');
-        const mariaLimao = screen.getByAltText('marialimao');
-        const jameson = screen.getByAltText('jameson');
-        const beefeater = screen.getByAltText('beefeater');
-        const biergarten = screen.getByAltText('biergarten');
-        const madMary = screen.getByAltText('mad mary');
-        const bovine = screen.getByAltText('bovine');
-        const icecreamRoll = screen.getByAltText('icecream roll');
-        const riceMe = screen.getByAltText('rice me');
-        const riceMeDeli = screen.getByAltText('rice me deli');
-        const harpoon = screen.getByAltText('harpoon');
-        const catarinaSantiago = screen.getByAltText('catarina santiago');
-        const quatroPatasDeCincoEstrelas = screen.getByAltText('4 patas de 5 estrelas');
-        const luminous = screen.getByAltText('luminous');
-        const aAmigaEsteticista = screen.getByAltText('a amiga esteticista');
-        const AnaRo = screen.getByAltText('AnaRo');
+        // nukaCarousel adds two extra slides, a '.prev-cloned' and a '.next-cloned', so each slide is triplicated
+        const tjela = screen.getAllByAltText('tjela')[0];
+        const tasteOfIndia = screen.getAllByAltText('taste of india')[0];
+        const kaffeehaus = screen.getAllByAltText('kaffeehaus')[0];
+        const avocado = screen.getAllByAltText('avocado')[0];
+        const guacamole = screen.getAllByAltText('guacamole')[0];
+        const mariaLimao = screen.getAllByAltText('marialimao')[0];
+        const jameson = screen.getAllByAltText('jameson')[0];
+        const beefeater = screen.getAllByAltText('beefeater')[0];
+        const biergarten = screen.getAllByAltText('biergarten')[0];
+        const madMary = screen.getAllByAltText('mad mary')[0];
+        const bovine = screen.getAllByAltText('bovine')[0];
+        const icecreamRoll = screen.getAllByAltText('icecream roll')[0];
+        const riceMe = screen.getAllByAltText('rice me')[0];
+        const riceMeDeli = screen.getAllByAltText('rice me deli')[0];
+        const harpoon = screen.getAllByAltText('harpoon')[0];
+        const catarinaSantiago = screen.getAllByAltText('catarina santiago')[0];
+        const quatroPatasDeCincoEstrelas = screen.getAllByAltText('4 patas de 5 estrelas')[0];
+        const luminous = screen.getAllByAltText('luminous')[0];
+        const aAmigaEsteticista = screen.getAllByAltText('a amiga esteticista')[0];
+        const AnaRo = screen.getAllByAltText('AnaRo')[0];
 
         const socialMediaAndContentCreationDescription = screen.getAllByText(
             textsPt.socialMediaAndContentCreation
@@ -76,11 +80,13 @@ describe('<ProjectsListDouble />', () => {
         expect(aAmigaEsteticista).toBeInTheDocument();
         expect(AnaRo).toBeInTheDocument();
 
-        expect(socialMediaAndContentCreationDescription.length).toBe(13);
-        expect(socialMediaManagementDescription.length).toBe(3);
-        expect(contentCreationDescription.length).toBe(1);
-        expect(socialMediaAndPaidSocialDescription.length).toBe(1);
-        expect(consultingAndContentCreationDescription.length).toBe(2);
+        expect(socialMediaAndContentCreationDescription).toHaveLength(
+            expectedNumberOfSlidesRendered
+        );
+        expect(socialMediaManagementDescription).toHaveLength(3 * 3);
+        expect(contentCreationDescription).toHaveLength(1 * 3);
+        expect(socialMediaAndPaidSocialDescription).toHaveLength(1 * 3);
+        expect(consultingAndContentCreationDescription).toHaveLength(2 * 3);
 
         expect(container).toMatchSnapshot();
     });

@@ -3,35 +3,35 @@
 exports[`<ProjectItem /> renders properly 1`] = `
 <div>
   <li
-    class="jsx-1650735182"
+    class="jsx-4162855406"
   >
-    <div
-      style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+    <span
+      style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
     >
-      <div
-        style="box-sizing: border-box; display: block; max-width: 100%;"
+      <span
+        style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
       >
         <img
           alt=""
           aria-hidden="true"
-          role="presentation"
-          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-          style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+          src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
+          style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
         />
-      </div>
+      </span>
       <img
         alt="tjela logo"
+        data-nimg="intrinsic"
         decoding="async"
         src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
         srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
-        style="visibility: inherit; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
       />
-    </div>
+    </span>
     <div
-      class="jsx-1650735182 backface"
+      class="jsx-4162855406 backface"
     >
       <a
-        class="jsx-1650735182 brand link"
+        class="jsx-4162855406 brand link"
         href="https://www.instagram.com/tudonatjela/"
         rel="noreferrer"
         target="_blank"
@@ -39,18 +39,18 @@ exports[`<ProjectItem /> renders properly 1`] = `
         @tudonatjela
       </a>
       <p
-        class="jsx-1650735182 description"
+        class="jsx-4162855406 description"
       >
         Gestão de Redes Sociais e Criação de Conteúdo
       </p>
       <p
-        class="jsx-1650735182 date"
+        class="jsx-4162855406 date"
       >
         2020
          - Presente
       </p>
       <small
-        class="jsx-1650735182"
+        class="jsx-4162855406"
       >
         * 
         em dupla com Sofia Ferreirinho
@@ -63,35 +63,35 @@ exports[`<ProjectItem /> renders properly 1`] = `
 exports[`<ProjectItem /> renders properly in English 1`] = `
 <div>
   <li
-    class="jsx-1650735182"
+    class="jsx-4162855406"
   >
-    <div
-      style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+    <span
+      style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
     >
-      <div
-        style="box-sizing: border-box; display: block; max-width: 100%;"
+      <span
+        style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
       >
         <img
           alt=""
           aria-hidden="true"
-          role="presentation"
-          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-          style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+          src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
+          style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
         />
-      </div>
+      </span>
       <img
         alt="tjela logo"
+        data-nimg="intrinsic"
         decoding="async"
         src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
         srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
-        style="visibility: inherit; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
       />
-    </div>
+    </span>
     <div
-      class="jsx-1650735182 backface"
+      class="jsx-4162855406 backface"
     >
       <a
-        class="jsx-1650735182 brand link"
+        class="jsx-4162855406 brand link"
         href="https://www.instagram.com/tudonatjela/"
         rel="noreferrer"
         target="_blank"
@@ -99,18 +99,18 @@ exports[`<ProjectItem /> renders properly in English 1`] = `
         @tudonatjela
       </a>
       <p
-        class="jsx-1650735182 description"
+        class="jsx-4162855406 description"
       >
         Social Media Management and Content Creation
       </p>
       <p
-        class="jsx-1650735182 date"
+        class="jsx-4162855406 date"
       >
         2020
          - Present
       </p>
       <small
-        class="jsx-1650735182"
+        class="jsx-4162855406"
       >
         * 
         in partnership with Sofia Ferreirinho
@@ -123,37 +123,37 @@ exports[`<ProjectItem /> renders properly in English 1`] = `
 exports[`<ProjectItem /> renders properly in mobile 1`] = `
 <div>
   <div
-    class="jsx-1650735182 carouselItem grid"
+    class="jsx-4162855406 carouselItem grid"
     data-testid="projectItem_touch_div_tjela logo"
     data-times-touched="0"
   >
-    <div
-      style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+    <span
+      style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
     >
-      <div
-        style="box-sizing: border-box; display: block; max-width: 100%;"
+      <span
+        style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
       >
         <img
           alt=""
           aria-hidden="true"
-          role="presentation"
-          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-          style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+          src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
+          style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
         />
-      </div>
+      </span>
       <img
         alt="tjela logo"
+        data-nimg="intrinsic"
         decoding="async"
         src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
         srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
-        style="visibility: inherit; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
       />
-    </div>
+    </span>
     <div
-      class="jsx-1650735182 backface"
+      class="jsx-4162855406 backface"
     >
       <a
-        class="jsx-1650735182 brand link"
+        class="jsx-4162855406 brand link"
         href="https://www.instagram.com/tudonatjela/"
         rel="noreferrer"
         target="_blank"
@@ -161,18 +161,18 @@ exports[`<ProjectItem /> renders properly in mobile 1`] = `
         @tudonatjela
       </a>
       <p
-        class="jsx-1650735182 description"
+        class="jsx-4162855406 description"
       >
         Gestão de Redes Sociais e Criação de Conteúdo
       </p>
       <p
-        class="jsx-1650735182 date"
+        class="jsx-4162855406 date"
       >
         2020
          - Presente
       </p>
       <small
-        class="jsx-1650735182"
+        class="jsx-4162855406"
       >
         * 
         em dupla com Sofia Ferreirinho
@@ -185,37 +185,37 @@ exports[`<ProjectItem /> renders properly in mobile 1`] = `
 exports[`<ProjectItem /> renders properly when device is touch 1`] = `
 <div>
   <div
-    class="jsx-1650735182 carouselItem touch grid"
+    class="jsx-4162855406 carouselItem touch grid"
     data-testid="projectItem_touch_div_tjela logo"
     data-times-touched="1"
   >
-    <div
-      style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+    <span
+      style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
     >
-      <div
-        style="box-sizing: border-box; display: block; max-width: 100%;"
+      <span
+        style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
       >
         <img
           alt=""
           aria-hidden="true"
-          role="presentation"
-          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-          style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+          src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
+          style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
         />
-      </div>
+      </span>
       <img
         alt="tjela logo"
+        data-nimg="intrinsic"
         decoding="async"
         src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
         srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
-        style="visibility: inherit; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
       />
-    </div>
+    </span>
     <div
-      class="jsx-1650735182 backface"
+      class="jsx-4162855406 backface"
     >
       <a
-        class="jsx-1650735182 brand link"
+        class="jsx-4162855406 brand link"
         href="https://www.instagram.com/tudonatjela/"
         rel="noreferrer"
         target="_blank"
@@ -223,18 +223,18 @@ exports[`<ProjectItem /> renders properly when device is touch 1`] = `
         @tudonatjela
       </a>
       <p
-        class="jsx-1650735182 description"
+        class="jsx-4162855406 description"
       >
         Gestão de Redes Sociais e Criação de Conteúdo
       </p>
       <p
-        class="jsx-1650735182 date"
+        class="jsx-4162855406 date"
       >
         2020
          - Presente
       </p>
       <small
-        class="jsx-1650735182"
+        class="jsx-4162855406"
       >
         * 
         em dupla com Sofia Ferreirinho
@@ -247,37 +247,37 @@ exports[`<ProjectItem /> renders properly when device is touch 1`] = `
 exports[`<ProjectItem /> renders properly with isGrid being false 1`] = `
 <div>
   <div
-    class="jsx-1650735182 carouselItem"
+    class="jsx-4162855406 carouselItem"
     data-testid="projectItem_touch_div_tjela logo"
     data-times-touched="0"
   >
-    <div
-      style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+    <span
+      style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
     >
-      <div
-        style="box-sizing: border-box; display: block; max-width: 100%;"
+      <span
+        style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
       >
         <img
           alt=""
           aria-hidden="true"
-          role="presentation"
-          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-          style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+          src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
+          style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
         />
-      </div>
+      </span>
       <img
         alt="tjela logo"
+        data-nimg="intrinsic"
         decoding="async"
         src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
         srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
-        style="visibility: inherit; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
       />
-    </div>
+    </span>
     <div
-      class="jsx-1650735182 backface"
+      class="jsx-4162855406 backface"
     >
       <a
-        class="jsx-1650735182 brand link"
+        class="jsx-4162855406 brand link"
         href="https://www.instagram.com/tudonatjela/"
         rel="noreferrer"
         target="_blank"
@@ -285,18 +285,18 @@ exports[`<ProjectItem /> renders properly with isGrid being false 1`] = `
         @tudonatjela
       </a>
       <p
-        class="jsx-1650735182 description"
+        class="jsx-4162855406 description"
       >
         Gestão de Redes Sociais e Criação de Conteúdo
       </p>
       <p
-        class="jsx-1650735182 date"
+        class="jsx-4162855406 date"
       >
         2020
          - Presente
       </p>
       <small
-        class="jsx-1650735182"
+        class="jsx-4162855406"
       >
         * 
         em dupla com Sofia Ferreirinho

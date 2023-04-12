@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import Carousel, { CarouselCellAlignProp } from 'nuka-carousel';
+import Carousel, { CellAlign } from 'nuka-carousel';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { resetTimesTouchedAttribute } from '../../utils/generic';
 import {
@@ -10,18 +10,18 @@ import {
 export interface NukaCarouselProps {
     children: ReactNode;
     width?: string;
-    framePadding?: string;
     slidesToShow?: number;
-    cellAlign?: CarouselCellAlignProp;
+    cellAlign?: CellAlign;
 }
 
 export const NukaCarousel = ({
     children,
     width,
-    framePadding,
     slidesToShow,
     cellAlign,
 }: NukaCarouselProps): JSX.Element => {
+    const carouselContainerMargin = '30rem';
+
     const handleClickPrev = (goToPrevSlide: () => void): void => {
         resetTimesTouchedAttribute();
         goToPrevSlide();
@@ -34,48 +34,66 @@ export const NukaCarousel = ({
 
     return (
         <>
-            <Carousel
-                wrapAround
-                cellAlign={cellAlign || 'left'}
-                framePadding={framePadding || '0px 30px'}
-                renderBottomCenterControls={null}
-                renderCenterLeftControls={({ previousSlide }): ReactNode => (
-                    <button
-                        aria-label="previous slide"
-                        data-testid={nukaCarouselPrevButtonDataTestId}
-                        type="button"
-                        onClick={(): void => handleClickPrev(previousSlide)}
-                    >
-                        <FaChevronLeft />
-                    </button>
-                )}
-                renderCenterRightControls={({ nextSlide }): ReactNode => (
-                    <button
-                        aria-label="next slide"
-                        data-testid={nukaCarouselNextButtonDataTestId}
-                        type="button"
-                        onClick={(): void => handleClickNext(nextSlide)}
-                    >
-                        <FaChevronRight />
-                    </button>
-                )}
-                slidesToShow={slidesToShow || 1}
-                width={width || '100%'}
-            >
-                {children}
-            </Carousel>
+            <div className="nukaCarouselContainer">
+                <Carousel
+                    enableKeyboardControls
+                    wrapAround
+                    cellAlign={cellAlign || 'left'}
+                    renderBottomCenterControls={null}
+                    renderCenterLeftControls={({ previousSlide }): ReactNode => (
+                        <button
+                            aria-label="previous slide"
+                            className="previousButton"
+                            data-testid={nukaCarouselPrevButtonDataTestId}
+                            type="button"
+                            onClick={(): void => handleClickPrev(previousSlide)}
+                        >
+                            <FaChevronLeft />
+                        </button>
+                    )}
+                    renderCenterRightControls={({ nextSlide }): ReactNode => (
+                        <button
+                            aria-label="next slide"
+                            className="nextButton"
+                            data-testid={nukaCarouselNextButtonDataTestId}
+                            type="button"
+                            onClick={(): void => handleClickNext(nextSlide)}
+                        >
+                            <FaChevronRight />
+                        </button>
+                    )}
+                    slidesToShow={slidesToShow || 1}
+                >
+                    {children}
+                </Carousel>
+            </div>
 
             <style jsx>
                 {`
                     @import './src/styles/_vars.scss';
 
-                    button {
+                    .nukaCarouselContainer {
+                        width: ${width || '100%'};
+                        padding: 0px ${carouselContainerMargin};
+                    }
+
+                    .previousButton,
+                    .nextButton {
                         display: flex;
+                        position: relative;
                         transition: transform 0.15s linear;
 
                         &:hover {
                             transform: scale(1.1);
                         }
+                    }
+
+                    .previousButton {
+                        right: ${carouselContainerMargin};
+                    }
+
+                    .nextButton {
+                        left: ${carouselContainerMargin};
                     }
                 `}
             </style>

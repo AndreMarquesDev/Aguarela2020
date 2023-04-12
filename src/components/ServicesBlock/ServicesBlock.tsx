@@ -52,7 +52,7 @@ export const ServicesBlock = (): JSX.Element => {
                             </li>
                         </ul>
                     ) : (
-                        <NukaCarousel framePadding="0px 10px" width={isMobile ? '100%' : '90%'}>
+                        <NukaCarousel width={isMobile ? '100%' : '90%'}>
                             <div
                                 className="carouselItem"
                                 data-testid={servicesBlockItemCarouselDataTestId}

@@ -34,6 +34,8 @@ import {
     getImageDimension,
     getScreenshotPath,
     oneMinTimeout,
+    nukaCarouselCurrentSlide,
+    nukaCarouselVisibleSlide,
 } from '../utils/utils';
 
 export const projectsListDoubleSectionTest = async (
@@ -60,7 +62,7 @@ export const projectsListDoubleSectionTest = async (
     const numberOfVisibleSlides = isMobile ? 2 : 6;
     const container = page.getByTestId(projectsListDoubleSectionDataTestId);
     const pageTitle = container.getByText(projects);
-    const visibleDoubleSlide = container.locator('.slide-visible');
+    const visibleDoubleSlide = container.locator(nukaCarouselVisibleSlide);
 
     const clickNextArrowButton = (): Promise<void> =>
         container.getByTestId(nukaCarouselNextButtonDataTestId).click();
@@ -73,9 +75,12 @@ export const projectsListDoubleSectionTest = async (
         isInPartnership: boolean,
         year?: string
     ): Promise<void> => {
-        const slide = container.getByTestId(`${projectItemTouchDivDataTestId}_${brand}`);
+        // nukaCarousel adds two extra slides, a '.prev-cloned' and a '.next-cloned'
+        const slide = container.locator(
+            `${nukaCarouselCurrentSlide} [data-testid="${projectItemTouchDivDataTestId}_${brand}"]`
+        );
         const anchor = slide.getByRole('link', { name: instagramHandle });
-        const image = container.getByAltText(brand, { exact: true });
+        const image = slide.getByAltText(brand, { exact: true });
         const imageBoundingBox = await image.boundingBox();
         const imageSizeDesktop = 313;
         const imageSizeMobileChrome = 281;

@@ -47,7 +47,7 @@ export const ProjectsListDouble = (): JSX.Element => {
                         slidesToShow={slidesToShow}
                         width={isMobile ? '100%' : '90%'}
                     >
-                        <div>
+                        <div className="projectItemContainer">
                             <ProjectItem
                                 isActive
                                 isGrid
@@ -71,7 +71,7 @@ export const ProjectsListDouble = (): JSX.Element => {
                                 year={2020}
                             />
                         </div>
-                        <div>
+                        <div className="projectItemContainer">
                             <ProjectItem
                                 isActive
                                 isGrid
@@ -94,7 +94,7 @@ export const ProjectsListDouble = (): JSX.Element => {
                                 year={2020}
                             />
                         </div>
-                        <div>
+                        <div className="projectItemContainer">
                             <ProjectItem
                                 isActive
                                 isGrid
@@ -116,7 +116,7 @@ export const ProjectsListDouble = (): JSX.Element => {
                                 year="2019 - 2020"
                             />
                         </div>
-                        <div>
+                        <div className="projectItemContainer">
                             <ProjectItem
                                 isActive
                                 isGrid
@@ -138,7 +138,7 @@ export const ProjectsListDouble = (): JSX.Element => {
                                 year={2019}
                             />
                         </div>
-                        <div>
+                        <div className="projectItemContainer">
                             <ProjectItem
                                 isGrid
                                 brandLink={biergartenInstagramUrl}
@@ -158,7 +158,7 @@ export const ProjectsListDouble = (): JSX.Element => {
                                 year={2019}
                             />
                         </div>
-                        <div>
+                        <div className="projectItemContainer">
                             <ProjectItem
                                 isGrid
                                 brandLink={bovineInstagramUrl}
@@ -178,7 +178,7 @@ export const ProjectsListDouble = (): JSX.Element => {
                                 year={2018}
                             />
                         </div>
-                        <div>
+                        <div className="projectItemContainer">
                             <ProjectItem
                                 isGrid
                                 brandLink={riceMeInstagramUrl}
@@ -198,7 +198,7 @@ export const ProjectsListDouble = (): JSX.Element => {
                                 year={2020}
                             />
                         </div>
-                        <div>
+                        <div className="projectItemContainer">
                             <ProjectItem
                                 isGrid
                                 brandLink={harpoonLinkedInUrl}
@@ -217,7 +217,7 @@ export const ProjectsListDouble = (): JSX.Element => {
                                 imageSrc="/images/content-creator.jpg"
                             />
                         </div>
-                        <div>
+                        <div className="projectItemContainer">
                             <ProjectItem
                                 isActive
                                 isGrid
@@ -239,7 +239,7 @@ export const ProjectsListDouble = (): JSX.Element => {
                                 year={2020}
                             />
                         </div>
-                        <div>
+                        <div className="projectItemContainer">
                             <ProjectItem
                                 isActive
                                 isGrid
@@ -275,6 +275,12 @@ export const ProjectsListDouble = (): JSX.Element => {
                             display: flex;
                             flex-direction: column;
                             align-items: center;
+
+                            .projectItemContainer {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 25rem;
+                            }
                         }
                     }
                 `}

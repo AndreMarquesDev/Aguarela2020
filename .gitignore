@@ -10,3 +10,4 @@ yarn-error.log
 .lighthouseci
 playwright-report
 test-results
+tsconfig.tsbuildinfo
