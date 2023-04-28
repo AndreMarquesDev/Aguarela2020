@@ -11,8 +11,8 @@
         "start": "next start",
         "test": "jest",
         "test:generate:badge": "jest && jest-coverage-badges input src/utils/jest/coverage/coverage-summary.json output src/utils/jest/coverageBadges",
-        "lint": "tsc --noEmit && eslint . --ext .js,.ts,.tsx && stylelint .",
-        "lint:fix": "tsc --noEmit && eslint . --ext .js,.ts,.tsx --fix && stylelint . --fix",
+        "lint": "tsc --noEmit && eslint . --ext .js,.ts,.tsx",
+        "lint:fix": "tsc --noEmit && eslint . --ext .js,.ts,.tsx --fix",
         "run:lighthouse": "lhci autorun --config=./lighthouse/lighthouserc.js",
         "run:lighthouse:ci": "lhci autorun --config=./lighthouse/lighthouserc.ci.js",
         "run:playwright:all": "playwright test --config ./e2e/playwright.config.ts",
@@ -28,7 +28,7 @@
     "keywords": [],
     "author": "André Marques <andregm_7@hotmail.com> (andremarquesdev.com)",
     "engines": {
-        "node": ">=18.16.0 <19",
+        "node": ">=18.13.0 <19",
         "yarn": "1"
     },
     "browserslist": [
@@ -70,7 +70,7 @@
         "@types/styled-jsx": "^3.4.4",
         "axios-mock-adapter": "^1.21.4",
         "dotenv": "^16.0.3",
-        "eslint": "^8.39.0",
+        "eslint": "8.33.0",
         "eslint-config-andremarquesdev": "^1.3.2",
         "eslint-plugin-playwright": "^0.12.0",
         "husky": "^8.0.3",
@@ -81,14 +81,19 @@
         "postcss-flexbugs-fixes": "^5.0.2",
         "postcss-preset-env": "^8.3.2",
         "precss": "^4.0.0",
-        "stylelint": "^13.7.2",
-        "stylelint-config-recommended-scss": "^4.2.0",
-        "stylelint-config-standard": "^20.0.0",
-        "stylelint-scss": "^3.18.0",
         "ts-node": "^10.9.1",
         "typescript": "^5.0.4"
     },
     "resolutions": {
-        "typescript": "^5.0.3"
+        "ansi-regex": "^5.0.1",
+        "browserslist": "^4.21.5",
+        "json5": "^2.2.2",
+        "lodash": "^4.17.21",
+        "minimist": "^1.2.6",
+        "minimatch": "^3.0.5",
+        "path-parse": "^1.0.7",
+        "postcss": "^8.4.14",
+        "typescript": "^5.0.3",
+        "xml2js": "^0.5.0"
       }
 }
