@@ -28,6 +28,7 @@ export const ProjectsList = (): JSX.Element => {
                             <ProjectItem
                                 isActive
                                 isInPartnership
+                                preloadImage
                                 brandLink={tjelaInstagramUrl}
                                 brandTag="@tudonatjela"
                                 description={texts.socialMediaManagementAndContentCreation}
@@ -38,6 +39,7 @@ export const ProjectsList = (): JSX.Element => {
                             />
                             <ProjectItem
                                 isActive
+                                preloadImage
                                 brandLink={kaffeehausInstagramUrl}
                                 brandTag="@kaffeehaus_lisboa"
                                 description={texts.socialMediaManagementAndContentCreation}
@@ -49,6 +51,7 @@ export const ProjectsList = (): JSX.Element => {
                             <ProjectItem
                                 isActive
                                 isInPartnership
+                                preloadImage
                                 brandLink={guacamoleInstagramUrl}
                                 brandTag="@guacamolegmg"
                                 description={texts.socialMediaManagementAndContentCreation}
@@ -63,6 +66,7 @@ export const ProjectsList = (): JSX.Element => {
                             <ProjectItem
                                 isActive
                                 isInPartnership
+                                preloadImage
                                 brandLink={tjelaInstagramUrl}
                                 brandTag="@tudonatjela"
                                 description={texts.socialMediaManagementAndContentCreation}
@@ -73,6 +77,7 @@ export const ProjectsList = (): JSX.Element => {
                             />
                             <ProjectItem
                                 isActive
+                                preloadImage
                                 brandLink={kaffeehausInstagramUrl}
                                 brandTag="@kaffeehaus_lisboa"
                                 description={texts.socialMediaManagementAndContentCreation}

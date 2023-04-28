@@ -22,13 +22,14 @@ module.exports = {
         assert: {
             preset: 'lighthouse:no-pwa',
             assertions: {
-                'csp-xss': 'warn',
                 'color-contrast': 'warn', // cause: contrast between purple background and white text
                 'link-text': 'warn', // cause: 'see more' text in a link
                 'non-composited-animations': 'warn', // cause: menu icon animations, should be 'transforms' and not 'top'/'bottom'
-                'no-vulnerable-libraries': 'off', // cause: Next.js
+                'unused-javascript': 'warn', // cause: contact page
+                'bf-cache': 'warn', // not sure it can be solved since next router is being used
+                'image-size-responsive': 'warn', // cause: projects page images that are not preloaded get rendered with lower resolution
                 // TODO - upgrade next/image package
-                'preload-lcp-image': 'warn', // cause: homepage background image
+                'prioritize-lcp-image': 'warn', // cause: homepage background image
                 // TODO - upgrade next/image package
                 'uses-responsive-images': 'warn', // cause: improperly sized images
                 // TODO - upgrade next/image package

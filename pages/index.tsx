@@ -12,7 +12,7 @@ const Index = (): JSX.Element => {
         const isRoot = router.route === '/';
 
         if (isRoot) {
-            router.replace('/[lang]', `/${locale}`);
+            router.replace('/[language]', `/${locale}`);
         }
     });
 

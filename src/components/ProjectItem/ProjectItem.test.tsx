@@ -19,6 +19,7 @@ const baseProps: ProjectItemProps = {
     isActive: true,
     isGrid: true,
     year: 2020,
+    preloadImage: true,
 };
 
 const renderComponent = (
@@ -118,6 +119,12 @@ describe('<ProjectItem />', () => {
 
     test('renders properly with isGrid being false', () => {
         const { container } = renderComponent({ isGrid: false, isDesktop: false });
+
+        expect(container).toMatchSnapshot();
+    });
+
+    test('renders properly with preloadImage being false', () => {
+        const { container } = renderComponent({ preloadImage: false });
 
         expect(container).toMatchSnapshot();
     });

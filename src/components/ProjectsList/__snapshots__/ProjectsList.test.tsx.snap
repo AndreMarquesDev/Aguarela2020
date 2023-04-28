@@ -642,10 +642,10 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                       data-nimg="intrinsic"
                       decoding="async"
                       draggable="false"
-                      src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
-                      srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                       style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                     />
+                    <noscript />
                   </span>
                   <div
                     class="jsx-4162855406 backface"
@@ -828,10 +828,10 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                       data-nimg="intrinsic"
                       decoding="async"
                       draggable="false"
-                      src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
-                      srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                       style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                     />
+                    <noscript />
                   </span>
                   <div
                     class="jsx-4162855406 backface"
@@ -1014,10 +1014,10 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                       data-nimg="intrinsic"
                       decoding="async"
                       draggable="false"
-                      src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
-                      srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                       style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                     />
+                    <noscript />
                   </span>
                   <div
                     class="jsx-4162855406 backface"
@@ -1321,10 +1321,10 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                       data-nimg="intrinsic"
                       decoding="async"
                       draggable="false"
-                      src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
-                      srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                       style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                     />
+                    <noscript />
                   </span>
                   <div
                     class="jsx-4162855406 backface"
@@ -1507,10 +1507,10 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                       data-nimg="intrinsic"
                       decoding="async"
                       draggable="false"
-                      src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
-                      srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                       style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                     />
+                    <noscript />
                   </span>
                   <div
                     class="jsx-4162855406 backface"
@@ -1693,10 +1693,10 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                       data-nimg="intrinsic"
                       decoding="async"
                       draggable="false"
-                      src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
-                      srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                       style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                     />
+                    <noscript />
                   </span>
                   <div
                     class="jsx-4162855406 backface"

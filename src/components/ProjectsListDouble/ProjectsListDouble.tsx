@@ -33,6 +33,7 @@ export const ProjectsListDouble = (): JSX.Element => {
     const windowSize = useWindowSize();
     const isPhablet = windowSize.width < Breakpoint.Phablet;
     const isMobile = windowSize.width < Breakpoint.Mobile;
+    const isDesktop = windowSize.width > Breakpoint.Desktop;
     // eslint-disable-next-line no-nested-ternary
     const slidesToShow = isMobile ? 1 : isPhablet ? 2 : 3;
 
@@ -52,6 +53,7 @@ export const ProjectsListDouble = (): JSX.Element => {
                                 isActive
                                 isGrid
                                 isInPartnership
+                                preloadImage
                                 brandLink={tjelaInstagramUrl}
                                 brandTag="@tudonatjela"
                                 description={texts.socialMediaAndContentCreation}
@@ -63,6 +65,7 @@ export const ProjectsListDouble = (): JSX.Element => {
                                 isActive
                                 isGrid
                                 isInPartnership
+                                preloadImage
                                 brandLink={tasteOfIndiaInstagramUrl}
                                 brandTag="@tasteofindia"
                                 description={texts.socialMediaAndContentCreation}
@@ -80,6 +83,7 @@ export const ProjectsListDouble = (): JSX.Element => {
                                 description={texts.socialMediaAndContentCreation}
                                 imageAlt="kaffeehaus"
                                 imageSrc="/images/kaffeehaus.jpg"
+                                preloadImage={isPhablet}
                                 year={2018}
                             />
                             <ProjectItem
@@ -91,6 +95,7 @@ export const ProjectsListDouble = (): JSX.Element => {
                                 description={texts.socialMediaAndContentCreation}
                                 imageAlt="avocado"
                                 imageSrc="/images/avocado.jpg"
+                                preloadImage={isPhablet}
                                 year={2020}
                             />
                         </div>
@@ -104,6 +109,7 @@ export const ProjectsListDouble = (): JSX.Element => {
                                 description={texts.socialMediaAndContentCreation}
                                 imageAlt="guacamole"
                                 imageSrc="/images/guacamole.jpg"
+                                preloadImage={isDesktop}
                                 year={2019}
                             />
                             <ProjectItem
@@ -113,6 +119,7 @@ export const ProjectsListDouble = (): JSX.Element => {
                                 description={texts.socialMediaAndContentCreation}
                                 imageAlt="marialimao"
                                 imageSrc="/images/maria-limao.jpg"
+                                preloadImage={isDesktop}
                                 year="2019 - 2020"
                             />
                         </div>
@@ -125,6 +132,7 @@ export const ProjectsListDouble = (): JSX.Element => {
                                 description={texts.socialMediaManagement}
                                 imageAlt="jameson"
                                 imageSrc="/images/jameson.jpg"
+                                preloadImage={isDesktop}
                                 year={2019}
                             />
                             <ProjectItem
@@ -135,6 +143,7 @@ export const ProjectsListDouble = (): JSX.Element => {
                                 description={texts.socialMediaManagement}
                                 imageAlt="beefeater"
                                 imageSrc="/images/beefeater.jpg"
+                                preloadImage={isDesktop}
                                 year={2019}
                             />
                         </div>

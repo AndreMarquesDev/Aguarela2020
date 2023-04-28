@@ -17,6 +17,7 @@ export interface ProjectItemProps {
     isInPartnership?: boolean;
     isActive?: boolean;
     isGrid?: boolean;
+    preloadImage?: boolean;
 }
 
 export const ProjectItem = ({
@@ -30,6 +31,7 @@ export const ProjectItem = ({
     isInPartnership,
     isActive,
     isGrid,
+    preloadImage,
 }: ProjectItemProps): JSX.Element => {
     const { texts } = useContext(TextsContext);
 
@@ -51,7 +53,13 @@ export const ProjectItem = ({
         <>
             {isDesktop ? (
                 <li>
-                    <Image priority alt={imageAlt} height={400} src={imageSrc} width={400} />
+                    <Image
+                        alt={imageAlt}
+                        height={400}
+                        priority={!!preloadImage}
+                        src={imageSrc}
+                        width={400}
+                    />
                     <div className="backface">
                         <a className="brand link" href={brandLink} rel="noreferrer" target="_blank">
                             {brandTag}
@@ -73,7 +81,13 @@ export const ProjectItem = ({
                     data-times-touched={0}
                     onTouchStart={handleTouch}
                 >
-                    <Image priority alt={imageAlt} height={400} src={imageSrc} width={400} />
+                    <Image
+                        alt={imageAlt}
+                        height={400}
+                        priority={!!preloadImage}
+                        src={imageSrc}
+                        width={400}
+                    />
                     <div className="backface">
                         <a className="brand link" href={brandLink} rel="noreferrer" target="_blank">
                             {brandTag}
