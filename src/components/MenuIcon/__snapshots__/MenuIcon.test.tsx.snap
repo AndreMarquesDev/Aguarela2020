@@ -4,13 +4,13 @@ exports[`<MenuIcon /> renders properly 1`] = `
 <div>
   <i
     aria-label="toggle menu"
-    class="jsx-291958763 menuIcon hidden"
+    class="jsx-2079322113 menuIcon hidden"
     data-testid="menuIcon_button"
     role="button"
     tabindex="0"
   >
     <span
-      class="jsx-291958763"
+      class="jsx-2079322113"
     />
   </i>
 </div>
@@ -20,13 +20,13 @@ exports[`<MenuIcon /> renders properly when menu is open 1`] = `
 <div>
   <i
     aria-label="toggle menu"
-    class="jsx-291958763 menuIcon open hidden"
+    class="jsx-2079322113 menuIcon open hidden"
     data-testid="menuIcon_button"
     role="button"
     tabindex="0"
   >
     <span
-      class="jsx-291958763"
+      class="jsx-2079322113"
     />
   </i>
 </div>
@@ -36,13 +36,13 @@ exports[`<MenuIcon /> renders properly when the icon is visible is open 1`] = `
 <div>
   <i
     aria-label="toggle menu"
-    class="jsx-291958763 menuIcon"
+    class="jsx-2079322113 menuIcon"
     data-testid="menuIcon_button"
     role="button"
     tabindex="0"
   >
     <span
-      class="jsx-291958763"
+      class="jsx-2079322113"
     />
   </i>
 </div>

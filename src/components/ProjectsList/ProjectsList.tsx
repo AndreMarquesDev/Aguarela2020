@@ -106,10 +106,8 @@ export const ProjectsList = (): JSX.Element => {
 
             <style jsx>
                 {`
-                    @import './src/styles/_vars.scss';
-
                     .container {
-                        background: $white;
+                        background: var(--white);
 
                         .wrapper {
                             display: flex;

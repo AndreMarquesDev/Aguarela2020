@@ -21,10 +21,8 @@ export const LetsWork = (): JSX.Element => {
 
             <style jsx>
                 {`
-                    @import './src/styles/_vars.scss';
-
                     .container {
-                        background: $purple;
+                        background: var(--purple);
 
                         .wrapper {
                             max-width: 1060rem;

@@ -3,26 +3,26 @@
 exports[`<BrandsList /> renders properly 1`] = `
 <div>
   <section
-    class="jsx-1877950092 container"
+    class="jsx-3152002307 container"
     data-testid="brandsList_section"
   >
     <div
-      class="jsx-1877950092 wrapper genericMargins"
+      class="jsx-3152002307 wrapper genericMargins"
     >
       <h1
-        class="jsx-3953086084 colored"
+        class="jsx-1254015016 fontL colored"
       >
         A minha rede
       </h1>
       <ul
-        class="jsx-1877950092"
+        class="jsx-3152002307"
       >
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="avocado"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/avocadohouselisbon/"
             rel="noreferrer"
             target="_blank"
@@ -52,11 +52,11 @@ exports[`<BrandsList /> renders properly 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="pernod"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.pernod-ricard.com"
             rel="noreferrer"
             target="_blank"
@@ -86,11 +86,11 @@ exports[`<BrandsList /> renders properly 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="tjela"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/tudonatjela/"
             rel="noreferrer"
             target="_blank"
@@ -120,11 +120,11 @@ exports[`<BrandsList /> renders properly 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="guacamole"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/guacamolegmg/"
             rel="noreferrer"
             target="_blank"
@@ -154,11 +154,11 @@ exports[`<BrandsList /> renders properly 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="kaffeehaus"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/kaffeehaus_lisboa/"
             rel="noreferrer"
             target="_blank"
@@ -188,11 +188,11 @@ exports[`<BrandsList /> renders properly 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="taste of india"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/tasteofindiapt/"
             rel="noreferrer"
             target="_blank"
@@ -222,11 +222,11 @@ exports[`<BrandsList /> renders properly 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="icecream roll"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/icecreamroll.pt/"
             rel="noreferrer"
             target="_blank"
@@ -256,11 +256,11 @@ exports[`<BrandsList /> renders properly 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="marialimao"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/bebemarialimao/"
             rel="noreferrer"
             target="_blank"
@@ -290,11 +290,11 @@ exports[`<BrandsList /> renders properly 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="biergarten"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/biergarten.jardimdacerveja/"
             rel="noreferrer"
             target="_blank"
@@ -324,11 +324,11 @@ exports[`<BrandsList /> renders properly 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="trattoria"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/trattoriadipaola/"
             rel="noreferrer"
             target="_blank"
@@ -358,11 +358,11 @@ exports[`<BrandsList /> renders properly 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="a amiga esteticista"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/aamigaesteticista/"
             rel="noreferrer"
             target="_blank"
@@ -392,11 +392,11 @@ exports[`<BrandsList /> renders properly 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="rice me deli"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/ricemedeli/"
             rel="noreferrer"
             target="_blank"
@@ -426,11 +426,11 @@ exports[`<BrandsList /> renders properly 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="4 patas de 5 estrelas"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/4patasde5estrelas/"
             rel="noreferrer"
             target="_blank"
@@ -460,11 +460,11 @@ exports[`<BrandsList /> renders properly 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="rice me"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/ricemerestaurante/"
             rel="noreferrer"
             target="_blank"
@@ -494,11 +494,11 @@ exports[`<BrandsList /> renders properly 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="luminous"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/becomeluminouscoaching/"
             rel="noreferrer"
             target="_blank"
@@ -528,11 +528,11 @@ exports[`<BrandsList /> renders properly 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="mad mary"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/madmarycuisine/"
             rel="noreferrer"
             target="_blank"
@@ -562,11 +562,11 @@ exports[`<BrandsList /> renders properly 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="harpoon"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.linkedin.com/company/harpoon-lda"
             rel="noreferrer"
             target="_blank"
@@ -596,11 +596,11 @@ exports[`<BrandsList /> renders properly 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="bovine"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/bovinelisboa/"
             rel="noreferrer"
             target="_blank"
@@ -638,26 +638,26 @@ exports[`<BrandsList /> renders properly 1`] = `
 exports[`<BrandsList /> renders properly in English 1`] = `
 <div>
   <section
-    class="jsx-1877950092 container"
+    class="jsx-3152002307 container"
     data-testid="brandsList_section"
   >
     <div
-      class="jsx-1877950092 wrapper genericMargins"
+      class="jsx-3152002307 wrapper genericMargins"
     >
       <h1
-        class="jsx-3953086084 colored"
+        class="jsx-1254015016 fontL colored"
       >
         My network
       </h1>
       <ul
-        class="jsx-1877950092"
+        class="jsx-3152002307"
       >
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="avocado"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/avocadohouselisbon/"
             rel="noreferrer"
             target="_blank"
@@ -687,11 +687,11 @@ exports[`<BrandsList /> renders properly in English 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="pernod"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.pernod-ricard.com"
             rel="noreferrer"
             target="_blank"
@@ -721,11 +721,11 @@ exports[`<BrandsList /> renders properly in English 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="tjela"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/tudonatjela/"
             rel="noreferrer"
             target="_blank"
@@ -755,11 +755,11 @@ exports[`<BrandsList /> renders properly in English 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="guacamole"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/guacamolegmg/"
             rel="noreferrer"
             target="_blank"
@@ -789,11 +789,11 @@ exports[`<BrandsList /> renders properly in English 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="kaffeehaus"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/kaffeehaus_lisboa/"
             rel="noreferrer"
             target="_blank"
@@ -823,11 +823,11 @@ exports[`<BrandsList /> renders properly in English 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="taste of india"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/tasteofindiapt/"
             rel="noreferrer"
             target="_blank"
@@ -857,11 +857,11 @@ exports[`<BrandsList /> renders properly in English 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="icecream roll"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/icecreamroll.pt/"
             rel="noreferrer"
             target="_blank"
@@ -891,11 +891,11 @@ exports[`<BrandsList /> renders properly in English 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="marialimao"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/bebemarialimao/"
             rel="noreferrer"
             target="_blank"
@@ -925,11 +925,11 @@ exports[`<BrandsList /> renders properly in English 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="biergarten"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/biergarten.jardimdacerveja/"
             rel="noreferrer"
             target="_blank"
@@ -959,11 +959,11 @@ exports[`<BrandsList /> renders properly in English 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="trattoria"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/trattoriadipaola/"
             rel="noreferrer"
             target="_blank"
@@ -993,11 +993,11 @@ exports[`<BrandsList /> renders properly in English 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="a amiga esteticista"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/aamigaesteticista/"
             rel="noreferrer"
             target="_blank"
@@ -1027,11 +1027,11 @@ exports[`<BrandsList /> renders properly in English 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="rice me deli"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/ricemedeli/"
             rel="noreferrer"
             target="_blank"
@@ -1061,11 +1061,11 @@ exports[`<BrandsList /> renders properly in English 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="4 patas de 5 estrelas"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/4patasde5estrelas/"
             rel="noreferrer"
             target="_blank"
@@ -1095,11 +1095,11 @@ exports[`<BrandsList /> renders properly in English 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="rice me"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/ricemerestaurante/"
             rel="noreferrer"
             target="_blank"
@@ -1129,11 +1129,11 @@ exports[`<BrandsList /> renders properly in English 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="luminous"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/becomeluminouscoaching/"
             rel="noreferrer"
             target="_blank"
@@ -1163,11 +1163,11 @@ exports[`<BrandsList /> renders properly in English 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="mad mary"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/madmarycuisine/"
             rel="noreferrer"
             target="_blank"
@@ -1197,11 +1197,11 @@ exports[`<BrandsList /> renders properly in English 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="harpoon"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.linkedin.com/company/harpoon-lda"
             rel="noreferrer"
             target="_blank"
@@ -1231,11 +1231,11 @@ exports[`<BrandsList /> renders properly in English 1`] = `
           </a>
         </li>
         <li
-          class="jsx-1877950092"
+          class="jsx-3152002307"
         >
           <a
             aria-label="bovine"
-            class="jsx-1877950092"
+            class="jsx-3152002307"
             href="https://www.instagram.com/bovinelisboa/"
             rel="noreferrer"
             target="_blank"

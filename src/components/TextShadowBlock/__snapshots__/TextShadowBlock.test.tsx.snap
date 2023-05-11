@@ -3,36 +3,36 @@
 exports[`<TextShadowBlock /> renders properly with a button 1`] = `
 <div>
   <section
-    class="jsx-590009551 container"
+    class="jsx-1059500243 container"
     data-testid="dataTestId"
   >
     <div
-      class="jsx-590009551 wrapper genericMargins"
+      class="jsx-1059500243 wrapper genericMargins"
     >
       <div
-        class="jsx-590009551 titleBlock"
+        class="jsx-1059500243 titleBlock"
       >
         <strong
-          class="jsx-590009551"
+          class="jsx-1059500243 fontXXL"
         >
           Bem
         </strong>
         <strong
-          class="jsx-590009551"
+          class="jsx-1059500243 fontXXL"
         >
           Vin
         </strong>
         <strong
-          class="jsx-590009551"
+          class="jsx-1059500243 fontXXL"
         >
           Dos
         </strong>
       </div>
       <div
-        class="jsx-590009551 textBlock"
+        class="jsx-1059500243 textBlock"
       >
         <p
-          class="jsx-590009551 bodyText bodyText--white"
+          class="jsx-1059500243 bodyText bodyText--white"
           data-testid="textShadowBlock_textBlock1"
         >
           Gestão de redes sociais está no meu ADN. Sou uma freelancer, baseada em Lisboa, com experiência em gestão de redes sociais e criação de conteúdo. A 
@@ -47,23 +47,23 @@ exports[`<TextShadowBlock /> renders properly with a button 1`] = `
            surgiu com o objetivo de ajudar negócios locais e pequenas empresas a posicionarem-se no digital, gerar awareness, criar uma relação com o target e impulsionar vendas.
         </p>
         <p
-          class="jsx-590009551 bodyText bodyText--white"
+          class="jsx-1059500243 bodyText bodyText--white"
         >
           Do ínicio ao fim, acompanho, monitorizo e otimizo todo o processo e estratégia de gestão de redes sociais.
         </p>
         <p
-          class="jsx-590009551 bodyText bodyText--white"
+          class="jsx-1059500243 bodyText bodyText--white"
         >
           Através do planeamento estratégico, criação de conteúdo e implementação estou disponível para ser o vosso braço direito.
         </p>
         <div
-          class="jsx-2566809609 buttonWrapper"
+          class="jsx-3983101691 buttonWrapper"
         >
           <div
-            class="jsx-2566809609 buttonBackground"
+            class="jsx-3983101691 buttonBackground"
           >
             <a
-              class="jsx-2566809609 button uppercase"
+              class="jsx-3983101691 button fontS lowercase"
               href="mailto:catarina@aguareladigital.com"
               rel="noreferrer"
               target="_blank"

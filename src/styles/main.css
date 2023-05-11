@@ -1,13 +1,14 @@
-@import 'reset';
-@import 'customReset';
-@import 'vars';
+@import './reset.css';
+@import './customReset.css';
+@import './colors.css';
+@import './typography.css';
 
 .wrapper {
     max-width: 1440rem;
     padding: 0 40rem;
     margin: 0 auto;
 
-    @include tablet {
+    @media (max-width: 767px) {
         padding: 0 20rem;
     }
 }
@@ -16,33 +17,35 @@
     padding-top: 100rem;
     padding-bottom: 100rem;
 
-    @include tablet {
+    @media (max-width: 767px) {
         padding-top: 50rem;
         padding-bottom: 50rem;
     }
 }
 
 .bodyText {
-    @include fontS;
-
+    font-size: var(--fontSizeS);
+    color: var(--black);
+    text-transform: none;
+    font-weight: normal;
     margin-bottom: 50rem;
     text-align: center;
 
     &--white {
-        color: $white;
+        color: var(--white);
     }
 
     &:last-of-type {
         margin-bottom: 0;
     }
 
-    @include mobile {
-        @include fontXS;
+    @media (max-width: 511px) {
+        font-size: var(--fontSizeXS);
 
         line-height: 1.4;
 
         &--white {
-            color: $white;
+            color: var(--white);
         }
     }
 }
@@ -54,7 +57,7 @@
     transition: color 0.15s linear;
 
     &:hover {
-        color: $pink;
+        color: var(--pink);
     }
 }
 
@@ -85,7 +88,7 @@
 }
 
 .animatedLinkWhite::before {
-    background: $white;
+    background: var(--white);
 }
 
 .imageOpacity {

@@ -27,7 +27,105 @@ export const MenuIcon = ({ isOpen, isVisible, onClick }: MenuIconProps): JSX.Ele
 
             <style jsx>
                 {`
-                    @import './src/styles/_vars.scss';
+                    @keyframes topToCross {
+                        0% {
+                            top: 0;
+                            transform: rotate(0);
+                        }
+
+                        50% {
+                            top: 12px;
+                            transform: rotate(0);
+                        }
+
+                        100% {
+                            top: 12px;
+                            transform: rotate(45deg);
+                        }
+                    }
+
+                    @keyframes topToBurguer {
+                        0% {
+                            top: 12px;
+                            transform: rotate(45deg);
+                        }
+
+                        50% {
+                            top: 12px;
+                            transform: rotate(0deg);
+                        }
+
+                        100% {
+                            top: 0;
+                            transform: rotate(0deg);
+                        }
+                    }
+
+                    @keyframes bottomToCross {
+                        0% {
+                            bottom: 0;
+                            transform: rotate(0);
+                        }
+
+                        50% {
+                            bottom: 12px;
+                            transform: rotate(0);
+                        }
+
+                        100% {
+                            bottom: 12px;
+                            transform: rotate(135deg);
+                        }
+                    }
+
+                    @keyframes bottomToBurguer {
+                        0% {
+                            bottom: 12px;
+                            transform: rotate(135deg);
+                        }
+
+                        50% {
+                            bottom: 12px;
+                            transform: rotate(0);
+                        }
+
+                        100% {
+                            bottom: 0;
+                            transform: rotate(0);
+                        }
+                    }
+
+                    @keyframes middleToCross {
+                        50%,
+                        100% {
+                            transform: scale(0);
+                        }
+                    }
+
+                    @keyframes middleToBurguer {
+                        0%,
+                        50% {
+                            transform: scale(0);
+                        }
+
+                        100% {
+                            transform: scale(1);
+                        }
+                    }
+
+                    @keyframes menuHover {
+                        0% {
+                            width: 100%;
+                        }
+
+                        50% {
+                            width: 50%;
+                        }
+
+                        100% {
+                            width: 100%;
+                        }
+                    }
 
                     .menuIcon {
                         width: 40rem;
@@ -41,12 +139,12 @@ export const MenuIcon = ({ isOpen, isVisible, onClick }: MenuIconProps): JSX.Ele
 
                         &.open,
                         &.open:hover {
-                            z-index: 1;
+                            z-index: 2;
 
                             &:before,
                             span,
                             &:after {
-                                background: $white;
+                                background: var(--white);
                             }
 
                             &:before {
@@ -87,7 +185,7 @@ export const MenuIcon = ({ isOpen, isVisible, onClick }: MenuIconProps): JSX.Ele
                             height: 2rem;
                             display: block;
                             position: relative;
-                            background: $black;
+                            background: var(--black);
                             border-radius: 3rem;
                         }
 

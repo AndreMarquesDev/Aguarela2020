@@ -6,6 +6,7 @@ import { Title } from '../Title/Title';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 import { aboutMeSectionDataTestId } from '../../utils/dataTestIds';
 import { catarinaSantiagoInstagramUrl } from '../../utils/urls';
+import { desktopMediaQuery, mobileMediaQuery, tabletMediaQuery } from '../../styles/mediaQueries';
 
 export const AboutMe = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
@@ -44,17 +45,15 @@ export const AboutMe = (): JSX.Element => {
 
             <style jsx>
                 {`
-                    @import './src/styles/_vars.scss';
-
                     .container {
-                        background: $white;
+                        background: var(--white);
 
                         .mainContentContainer {
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
 
-                            @include desktop {
+                            @media (${desktopMediaQuery}) {
                                 flex-direction: column;
                                 justify-content: center;
                             }
@@ -71,19 +70,19 @@ export const AboutMe = (): JSX.Element => {
                                 position: absolute;
                                 top: 12rem;
                                 left: 12rem;
-                                background: $pink;
+                                background: var(--pink);
                             }
 
-                            @include desktop {
+                            @media (${desktopMediaQuery}) {
                                 width: 45%;
                                 margin-bottom: 50rem;
                             }
 
-                            @include tablet {
+                            @media (${tabletMediaQuery}) {
                                 width: 75%;
                             }
 
-                            @include mobile {
+                            @media (${mobileMediaQuery}) {
                                 width: 100%;
                             }
                         }
@@ -95,7 +94,7 @@ export const AboutMe = (): JSX.Element => {
                                 text-align: left;
                             }
 
-                            @include desktop {
+                            @media (${desktopMediaQuery}) {
                                 width: 80%;
 
                                 p {
@@ -103,7 +102,7 @@ export const AboutMe = (): JSX.Element => {
                                 }
                             }
 
-                            @include tablet {
+                            @media (${tabletMediaQuery}) {
                                 width: 100%;
                             }
                         }

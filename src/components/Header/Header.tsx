@@ -8,6 +8,7 @@ import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 import { MenuIcon } from '../MenuIcon/MenuIcon';
 import { Locale } from '../../types/Locale';
 import { headerDataTestId, homepageLogoLinkDataTestId } from '../../utils/dataTestIds';
+import { tabletMediaQuery } from '../../styles/mediaQueries';
 
 export interface HeaderProps {
     currentRoute: string;
@@ -55,18 +56,14 @@ export const Header = ({ currentRoute, language }: HeaderProps): JSX.Element => 
 
             <style jsx>
                 {`
-                    @import './src/styles/_vars.scss';
-
                     nav {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
                         padding-top: 60rem;
                         padding-bottom: 60rem;
-                    }
 
-                    @include tablet {
-                        nav {
+                        @media (${tabletMediaQuery}) {
                             padding-top: 30rem;
                             padding-bottom: 30rem;
                         }

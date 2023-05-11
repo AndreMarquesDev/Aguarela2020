@@ -4,13 +4,14 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import classNames from 'classnames';
 import { Page } from '../../utils/pages';
+import { mobileMediaQuery } from '../../styles/mediaQueries';
 
 export interface ButtonProps {
     children: string;
     page?: Page;
     externalLink?: string;
     alignLeft?: boolean;
-    isUppercased?: boolean;
+    isLowercased?: boolean;
     isSubmit?: boolean;
     disabled?: boolean;
     onClick?: () => void;
@@ -21,7 +22,7 @@ export const Button = ({
     page,
     externalLink,
     alignLeft,
-    isUppercased,
+    isLowercased,
     isSubmit,
     disabled,
     onClick,
@@ -34,7 +35,7 @@ export const Button = ({
         !alignLeft && 'alignCenter',
         disabled && 'disabled'
     );
-    const buttonStyles = classNames('button', isUppercased && 'uppercase');
+    const buttonStyles = classNames('button', 'fontS', isLowercased && 'lowercase');
 
     return (
         <>
@@ -63,8 +64,6 @@ export const Button = ({
 
             <style jsx>
                 {`
-                    @import './src/styles/_vars.scss';
-
                     .buttonWrapper {
                         width: 100%;
                         display: block;
@@ -81,11 +80,11 @@ export const Button = ({
 
                         &:hover {
                             &:before {
-                                background-color: $pink;
+                                background-color: var(--pink);
                             }
 
                             &:after {
-                                background-color: $blue;
+                                background-color: var(--blue);
                             }
                         }
 
@@ -101,13 +100,13 @@ export const Button = ({
                         &:before {
                             top: 0;
                             left: 0;
-                            background-color: $blue;
+                            background-color: var(--blue);
                         }
 
                         &:after {
                             top: 8rem;
                             left: 8rem;
-                            background-color: $pink;
+                            background-color: var(--pink);
                             z-index: -1;
                         }
 
@@ -116,17 +115,19 @@ export const Button = ({
                             position: relative;
                             display: block;
                             padding: 10rem;
-                            @include fontS($yellow, uppercase, bold);
+                            color: var(--yellow);
+                            font-weight: bold;
+                            text-transform: uppercase;
                             text-align: center;
                             outline: none;
                             z-index: 1;
                         }
 
-                        .uppercase {
-                            @include fontS($yellow, none, bold);
+                        .lowercase {
+                            text-transform: none;
 
-                            @include mobile {
-                                @include fontXS($yellow, none, bold);
+                            @media (${mobileMediaQuery}) {
+                                font-size: var(--fontSizeXS);
                             }
                         }
                     }

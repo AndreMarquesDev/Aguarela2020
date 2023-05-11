@@ -8,6 +8,7 @@ import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 import { TextsContext } from '../context/TextsContext';
 import { NukaCarousel } from '../NukaCarousel/NukaCarousel';
 import { Title } from '../Title/Title';
+import { mobileMediaQuery } from '../../styles/mediaQueries';
 
 export const ServicesBlock = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
@@ -24,30 +25,30 @@ export const ServicesBlock = (): JSX.Element => {
                     {isDesktop ? (
                         <ul>
                             <li data-testid={servicesBlockItemWrapperDataTestId}>
-                                <p>{texts.design}</p>
+                                <p className="fontL">{texts.design}</p>
                                 <div className="backface">
-                                    <p>{`- ${texts.webDesign}`}</p>
-                                    <p>{`- ${texts.outdoorsAndFlyers}`}</p>
-                                    <p>{`- ${texts.contactCard}`}</p>
-                                    <p>{`- ${texts.socialMediaTemplates}`}</p>
-                                    <p>{`- ${texts.menus}`}</p>
+                                    <p className="fontXS">{`- ${texts.webDesign}`}</p>
+                                    <p className="fontXS">{`- ${texts.outdoorsAndFlyers}`}</p>
+                                    <p className="fontXS">{`- ${texts.contactCard}`}</p>
+                                    <p className="fontXS">{`- ${texts.socialMediaTemplates}`}</p>
+                                    <p className="fontXS">{`- ${texts.menus}`}</p>
                                 </div>
                             </li>
                             <li data-testid={servicesBlockItemWrapperDataTestId}>
-                                <p>{texts.socialMediaEn}</p>
+                                <p className="fontL">{texts.socialMediaEn}</p>
                                 <div className="backface">
-                                    <p>{`- ${texts.contentCreation}`}</p>
-                                    <p>{`- ${texts.marketAnalysis}`}</p>
-                                    <p>{`- ${texts.socialMediaStrategyAndManagement}`}</p>
-                                    <p>{`- ${texts.paidSocial}`}</p>
-                                    <p>{`- ${texts.consulting}`}</p>
+                                    <p className="fontXS">{`- ${texts.contentCreation}`}</p>
+                                    <p className="fontXS">{`- ${texts.marketAnalysis}`}</p>
+                                    <p className="fontXS">{`- ${texts.socialMediaStrategyAndManagement}`}</p>
+                                    <p className="fontXS">{`- ${texts.paidSocial}`}</p>
+                                    <p className="fontXS">{`- ${texts.consulting}`}</p>
                                 </div>
                             </li>
                             <li data-testid={servicesBlockItemWrapperDataTestId}>
-                                <p>{texts.digital}</p>
+                                <p className="fontL">{texts.digital}</p>
                                 <div className="backface">
-                                    <p>{`- ${texts.paidSearchCampaigns}`}</p>
-                                    <p>{`- ${texts.opinionPlatformsManagement}`}</p>
+                                    <p className="fontXS">{`- ${texts.paidSearchCampaigns}`}</p>
+                                    <p className="fontXS">{`- ${texts.opinionPlatformsManagement}`}</p>
                                 </div>
                             </li>
                         </ul>
@@ -57,36 +58,36 @@ export const ServicesBlock = (): JSX.Element => {
                                 className="carouselItem"
                                 data-testid={servicesBlockItemCarouselDataTestId}
                             >
-                                <p>{texts.design}</p>
+                                <p className="fontL">{texts.design}</p>
                                 <div className="backface">
-                                    <p>{`- ${texts.webDesign}`}</p>
-                                    <p>{`- ${texts.outdoorsAndFlyers}`}</p>
-                                    <p>{`- ${texts.contactCard}`}</p>
-                                    <p>{`- ${texts.socialMediaTemplates}`}</p>
-                                    <p>{`- ${texts.menus}`}</p>
+                                    <p className="fontXS">{`- ${texts.webDesign}`}</p>
+                                    <p className="fontXS">{`- ${texts.outdoorsAndFlyers}`}</p>
+                                    <p className="fontXS">{`- ${texts.contactCard}`}</p>
+                                    <p className="fontXS">{`- ${texts.socialMediaTemplates}`}</p>
+                                    <p className="fontXS">{`- ${texts.menus}`}</p>
                                 </div>
                             </div>
                             <div
                                 className="carouselItem"
                                 data-testid={servicesBlockItemCarouselDataTestId}
                             >
-                                <p>{texts.socialMediaEn}</p>
+                                <p className="fontL">{texts.socialMediaEn}</p>
                                 <div className="backface">
-                                    <p>{`- ${texts.contentCreation}`}</p>
-                                    <p>{`- ${texts.marketAnalysis}`}</p>
-                                    <p>{`- ${texts.socialMediaStrategyAndManagement}`}</p>
-                                    <p>{`- ${texts.paidSocial}`}</p>
-                                    <p>{`- ${texts.consulting}`}</p>
+                                    <p className="fontXS">{`- ${texts.contentCreation}`}</p>
+                                    <p className="fontXS">{`- ${texts.marketAnalysis}`}</p>
+                                    <p className="fontXS">{`- ${texts.socialMediaStrategyAndManagement}`}</p>
+                                    <p className="fontXS">{`- ${texts.paidSocial}`}</p>
+                                    <p className="fontXS">{`- ${texts.consulting}`}</p>
                                 </div>
                             </div>
                             <div
                                 className="carouselItem"
                                 data-testid={servicesBlockItemCarouselDataTestId}
                             >
-                                <p>{texts.digital}</p>
+                                <p className="fontL">{texts.digital}</p>
                                 <div className="backface">
-                                    <p>{`- ${texts.paidSearchCampaigns}`}</p>
-                                    <p>{`- ${texts.opinionPlatformsManagement}`}</p>
+                                    <p className="fontXS">{`- ${texts.paidSearchCampaigns}`}</p>
+                                    <p className="fontXS">{`- ${texts.opinionPlatformsManagement}`}</p>
                                 </div>
                             </div>
                         </NukaCarousel>
@@ -96,14 +97,12 @@ export const ServicesBlock = (): JSX.Element => {
 
             <style jsx>
                 {`
-                    @import './src/styles/_vars.scss';
-
-                    $blockSize: 280rem;
-                    $blockSizeMobile: 220rem;
-                    $backfaceOffset: 12rem;
-
                     .container {
-                        background: $white;
+                        --blockSize: 280rem;
+                        --blockSizeMobile: 220rem;
+                        --backfaceOffset: 12rem;
+
+                        background: var(--white);
 
                         .wrapper {
                             display: flex;
@@ -119,8 +118,8 @@ export const ServicesBlock = (): JSX.Element => {
 
                         li,
                         .carouselItem {
-                            width: $blockSize;
-                            height: $blockSize;
+                            width: var(--blockSize);
+                            height: var(--blockSize);
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
@@ -130,34 +129,34 @@ export const ServicesBlock = (): JSX.Element => {
                             padding: 10rem;
                             z-index: 0;
 
-                            @include mobile {
-                                width: $blockSizeMobile;
-                                height: $blockSizeMobile;
+                            @media (${mobileMediaQuery}) {
+                                width: var(--blockSizeMobile);
+                                height: var(--blockSizeMobile);
                             }
 
                             &:before,
                             &:after {
                                 content: '';
-                                width: $blockSize;
-                                height: $blockSize;
+                                width: var(--blockSize);
+                                height: var(--blockSize);
                                 position: absolute;
 
-                                @include mobile {
-                                    width: $blockSizeMobile;
-                                    height: $blockSizeMobile;
+                                @media (${mobileMediaQuery}) {
+                                    width: var(--blockSizeMobile);
+                                    height: var(--blockSizeMobile);
                                 }
                             }
 
                             &:before {
                                 top: 0;
                                 left: 0;
-                                background-color: $blue;
+                                background-color: var(--blue);
                             }
 
                             &:after {
-                                top: $backfaceOffset;
-                                left: $backfaceOffset;
-                                background-color: $pink;
+                                top: var(--backfaceOffset);
+                                left: var(--backfaceOffset);
+                                background-color: var(--pink);
                                 z-index: -1;
                             }
 
@@ -167,15 +166,17 @@ export const ServicesBlock = (): JSX.Element => {
                                 }
 
                                 &:after {
-                                    background-color: $blue;
+                                    background-color: var(--blue);
                                 }
                             }
 
                             p {
-                                @include fontL($yellow, uppercase, bold);
                                 position: relative;
                                 display: block;
                                 z-index: 0;
+                                color: var(--yellow);
+                                text-transform: uppercase;
+                                font-weight: bold;
                             }
 
                             .backface {
@@ -188,11 +189,12 @@ export const ServicesBlock = (): JSX.Element => {
                                 transform: translateX(-50%);
                                 flex-direction: column;
                                 justify-content: center;
-                                background: $pink;
+                                background: var(--pink);
                                 padding: 10rem;
 
                                 p {
-                                    @include fontXS($yellow);
+                                    text-transform: none;
+                                    font-weight: normal;
                                     margin-bottom: 5rem;
                                 }
                             }

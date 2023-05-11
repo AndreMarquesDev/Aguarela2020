@@ -10,6 +10,7 @@ import {
     aguarelaDigitalInstagramUrl,
     andreMarquesDevWebsiteUrl,
 } from '../../utils/urls';
+import { tabletMediaQuery } from '../../styles/mediaQueries';
 
 export interface FooterProps {
     language: Locale;
@@ -22,7 +23,7 @@ export const Footer = ({ language }: FooterProps): JSX.Element => {
         <>
             <footer data-testid={footerDataTestId}>
                 <div className="wrapper">
-                    <p>
+                    <p className="fontXS">
                         {texts.footerInfo}{' '}
                         <a
                             className="animatedLink animatedLinkWhite"
@@ -69,10 +70,8 @@ export const Footer = ({ language }: FooterProps): JSX.Element => {
 
             <style jsx>
                 {`
-                    @import './src/styles/_vars.scss';
-
                     footer {
-                        background: $blue;
+                        background: var(--blue);
                         padding-top: 12.5rem;
                         padding-bottom: 12.5rem;
                     }
@@ -82,15 +81,16 @@ export const Footer = ({ language }: FooterProps): JSX.Element => {
                         justify-content: space-between;
                         align-items: center;
 
-                        @include tablet {
+                        @media (${tabletMediaQuery}) {
                             flex-direction: column-reverse;
                         }
                     }
 
                     p {
-                        @include fontXS($white, uppercase);
+                        color: var(--white);
+                        text-transform: uppercase;
 
-                        @include tablet {
+                        @media (${tabletMediaQuery}) {
                             margin-top: 25rem;
                             text-align: center;
                         }
@@ -107,7 +107,7 @@ export const Footer = ({ language }: FooterProps): JSX.Element => {
                             position: relative;
                             text-align: center;
                             margin: 0 calc(25rem / 2);
-                            color: $blue;
+                            color: var(--blue);
 
                             &:before {
                                 content: '';
@@ -116,7 +116,7 @@ export const Footer = ({ language }: FooterProps): JSX.Element => {
                                 position: absolute;
                                 top: 0;
                                 left: 0;
-                                background: $white;
+                                background: var(--white);
                                 border-radius: 50%;
                             }
 

@@ -9,6 +9,7 @@ import {
     skillsBlockItemCarouselDataTestId,
     skillsBlockSectionDataTestId,
 } from '../../utils/dataTestIds';
+import { tabletMediaQuery } from '../../styles/mediaQueries';
 
 export const SkillsBlock = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
@@ -135,10 +136,8 @@ export const SkillsBlock = (): JSX.Element => {
 
             <style jsx>
                 {`
-                    @import './src/styles/_vars.scss';
-
                     .container {
-                        background: $white;
+                        background: var(--white);
 
                         .wrapper {
                             display: flex;
@@ -151,7 +150,7 @@ export const SkillsBlock = (): JSX.Element => {
                             grid-template-columns: repeat(3, 1fr);
                             gap: 50rem 4%;
 
-                            @include tablet {
+                            @media (${tabletMediaQuery}) {
                                 grid-template-columns: repeat(2, 1fr);
                             }
 

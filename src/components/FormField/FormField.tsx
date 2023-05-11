@@ -6,6 +6,7 @@ import {
 } from '../../utils/dataTestIds';
 import { FieldTypes } from '../../utils/formValidation';
 import { TextsContext } from '../context/TextsContext';
+import { mobileMediaQuery } from '../../styles/mediaQueries';
 
 export interface FormFieldProps {
     id: FieldTypes;
@@ -65,13 +66,14 @@ export const FormField = ({
     return (
         <>
             <div className={classNames('fieldWrapper', !isInput && 'textarea')}>
-                <label htmlFor={id}>
+                <label className="fontS" htmlFor={id}>
                     {getLabel(id)}
                     {isRequired && ' *'}
                 </label>
                 {isInput ? (
                     <input
                         aria-describedby={ariaError}
+                        className="fontS"
                         data-error={hasError && isRequired}
                         data-testid={id}
                         id={id}
@@ -86,6 +88,7 @@ export const FormField = ({
                 ) : (
                     <textarea
                         aria-describedby={ariaError}
+                        className="fontS"
                         data-error={hasError && isRequired}
                         data-testid={id}
                         id={id}
@@ -98,7 +101,7 @@ export const FormField = ({
                     />
                 )}
                 <span
-                    className={classNames('errorMessage', hasError && 'visible')}
+                    className={classNames('errorMessage', 'fontXXS', hasError && 'visible')}
                     data-testid={
                         hasError
                             ? contactFormErrorMessageVisibleDataTestId
@@ -112,8 +115,6 @@ export const FormField = ({
 
             <style jsx>
                 {`
-                    @import './src/styles/_vars.scss';
-
                     .fieldWrapper {
                         width: 47%;
                         margin-bottom: 10rem;
@@ -127,23 +128,23 @@ export const FormField = ({
                     label {
                         display: block;
                         margin-bottom: 5rem;
-                        @include fontS($fontWeight: 600);
+                        font-weight: 600;
 
-                        @include mobile {
-                            @include fontXS($fontWeight: 600);
+                        @media (${mobileMediaQuery}) {
+                            font-size: var(--fontSizeXS);
                         }
                     }
 
                     input,
                     textarea {
                         width: 100%;
-                        background: $purple;
+                        background: var(--purple);
                         border: none;
                         padding: 5rem;
-                        @include fontS($white);
+                        color: var(--white);
 
-                        @include mobile {
-                            @include fontXS($white);
+                        @media (${mobileMediaQuery}) {
+                            font-size: var(--fontSizeXS);
                         }
                     }
 
@@ -157,7 +158,7 @@ export const FormField = ({
 
                     .errorMessage {
                         display: inline-block;
-                        @include fontXXS($pink);
+                        color: var(--pink);
                         line-height: 13rem;
                         margin-top: 5rem;
                         opacity: 0;

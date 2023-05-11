@@ -3,6 +3,7 @@ import { textBlock1DataTestId } from '../../utils/dataTestIds';
 import { aguarelaDigitalEmail } from '../../utils/urls';
 import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
 import { Button } from '../Button/Button';
+import { desktopMediaQuery, tabletMediaQuery } from '../../styles/mediaQueries';
 
 export interface TextShadowBlockProps {
     title1: string;
@@ -37,12 +38,12 @@ export const TextShadowBlock = ({
                 <div className="wrapper genericMargins">
                     <div className="titleBlock">
                         {isMobile ? (
-                            <p>{titleMobile}</p>
+                            <p className="fontL">{titleMobile}</p>
                         ) : (
                             <>
-                                <strong>{title1}</strong>
-                                <strong>{title2}</strong>
-                                <strong>{title3}</strong>
+                                <strong className="fontXXL">{title1}</strong>
+                                <strong className="fontXXL">{title2}</strong>
+                                <strong className="fontXXL">{title3}</strong>
                             </>
                         )}
                     </div>
@@ -58,7 +59,7 @@ export const TextShadowBlock = ({
                         <p className="bodyText bodyText--white">{textBlock3}</p>
                         {hasButton && (
                             <Button
-                                isUppercased
+                                isLowercased
                                 alignLeft={isDesktop}
                                 externalLink={`mailto:${aguarelaDigitalEmail}`}
                             >
@@ -71,10 +72,8 @@ export const TextShadowBlock = ({
 
             <style jsx>
                 {`
-                    @import './src/styles/_vars.scss';
-
                     .container {
-                        background: $purple;
+                        background: var(--purple);
 
                         .wrapper {
                             display: flex;
@@ -82,7 +81,7 @@ export const TextShadowBlock = ({
                             align-items: center;
                             overflow: hidden;
 
-                            @include desktop {
+                            @media (${desktopMediaQuery}) {
                                 flex-direction: column;
                                 justify-content: center;
                             }
@@ -91,30 +90,34 @@ export const TextShadowBlock = ({
                         .titleBlock {
                             width: 35%;
 
-                            @include desktop {
+                            @media (${desktopMediaQuery}) {
                                 width: 100%;
                                 margin-bottom: 50rem;
                             }
 
                             strong {
                                 display: block;
-                                @include fontXXL($blue, uppercase, 900);
+                                color: var(--blue);
+                                text-transform: uppercase;
+                                font-weight: 900;
                                 letter-spacing: 30rem;
                                 text-align: right;
-                                -webkit-filter: drop-shadow(20rem -10rem 0 $pink);
-                                filter: drop-shadow(20rem -10rem 0 $pink);
-                                background: $blue;
+                                -webkit-filter: drop-shadow(20rem -10rem 0 var(--pink));
+                                filter: drop-shadow(20rem -10rem 0 var(--pink));
+                                background: var(--blue);
                                 -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent;
                                 text-align: center;
                             }
 
                             p {
-                                @include fontL($blue, uppercase, 900);
+                                color: var(--blue);
+                                text-transform: uppercase;
+                                font-weight: 900;
                                 letter-spacing: 5rem;
                                 text-align: center;
-                                -webkit-filter: drop-shadow(5rem -2.5rem 0 $pink);
-                                filter: drop-shadow(5rem -2.5rem 0 $pink);
+                                -webkit-filter: drop-shadow(5rem -2.5rem 0 var(--pink));
+                                filter: drop-shadow(5rem -2.5rem 0 var(--pink));
                             }
                         }
 
@@ -125,7 +128,7 @@ export const TextShadowBlock = ({
                                 text-align: left;
                             }
 
-                            @include desktop {
+                            @media (${desktopMediaQuery}) {
                                 width: 80%;
 
                                 p {
@@ -133,7 +136,7 @@ export const TextShadowBlock = ({
                                 }
                             }
 
-                            @include tablet {
+                            @media (${tabletMediaQuery}) {
                                 width: 100%;
                             }
                         }

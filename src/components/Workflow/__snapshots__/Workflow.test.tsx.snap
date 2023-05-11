@@ -3,176 +3,176 @@
 exports[`<Workflow /> renders properly 1`] = `
 <div>
   <section
-    class="jsx-2192258247 container"
+    class="jsx-2804213403 container"
     data-testid="workflow_section"
   >
     <div
-      class="jsx-2192258247 wrapper genericMargins"
+      class="jsx-2804213403 wrapper genericMargins"
     >
       <h1
-        class="jsx-3953086084 "
+        class="jsx-1254015016 fontL"
       >
         Workflow
       </h1>
       <ul
-        class="jsx-2192258247"
+        class="jsx-2804213403"
       >
         <li
-          class="jsx-2192258247"
+          class="jsx-2804213403 fontXS"
         >
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             1.
           </p>
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             Definir target
           </p>
           <div
-            class="jsx-2192258247 backface"
+            class="jsx-2804213403 backface"
           >
             <p
-              class="jsx-2192258247"
+              class="jsx-2804213403"
             >
               Quem é o público-alvo da marca
             </p>
           </div>
         </li>
         <li
-          class="jsx-2192258247"
+          class="jsx-2804213403 fontXS"
         >
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             2.
           </p>
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             Definir objetivos
           </p>
           <div
-            class="jsx-2192258247 backface"
+            class="jsx-2804213403 backface"
           >
             <p
-              class="jsx-2192258247"
+              class="jsx-2804213403"
             >
               Quais são os objetivos de negócio e comunicação
             </p>
           </div>
         </li>
         <li
-          class="jsx-2192258247"
+          class="jsx-2804213403 fontXS"
         >
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             3.
           </p>
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             Estratégia de plataformas
           </p>
           <div
-            class="jsx-2192258247 backface"
+            class="jsx-2804213403 backface"
           >
             <p
-              class="jsx-2192258247"
+              class="jsx-2804213403"
             >
               Quais as plataformas onde a marca deve estar presente
             </p>
           </div>
         </li>
         <li
-          class="jsx-2192258247"
+          class="jsx-2804213403 fontXS"
         >
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             4.
           </p>
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             Criação de Conteúdo
           </p>
           <div
-            class="jsx-2192258247 backface"
+            class="jsx-2804213403 backface"
           >
             <p
-              class="jsx-2192258247"
+              class="jsx-2804213403"
             >
               Criação de conteúdo relevante e de qualidade para o target
             </p>
           </div>
         </li>
         <li
-          class="jsx-2192258247"
+          class="jsx-2804213403 fontXS"
         >
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             5.
           </p>
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             Paid social & influencers
           </p>
           <div
-            class="jsx-2192258247 backface"
+            class="jsx-2804213403 backface"
           >
             <p
-              class="jsx-2192258247"
+              class="jsx-2804213403"
             >
               Promoção de posts e colaborações com influencers
             </p>
           </div>
         </li>
         <li
-          class="jsx-2192258247"
+          class="jsx-2804213403 fontXS"
         >
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             6.
           </p>
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             Insights e reports
           </p>
           <div
-            class="jsx-2192258247 backface"
+            class="jsx-2804213403 backface"
           >
             <p
-              class="jsx-2192258247"
+              class="jsx-2804213403"
             >
               Análises detalhadas e identificação de insights
             </p>
           </div>
         </li>
         <li
-          class="jsx-2192258247"
+          class="jsx-2804213403 fontXS"
         >
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             7.
           </p>
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             Otimização
           </p>
           <div
-            class="jsx-2192258247 backface"
+            class="jsx-2804213403 backface"
           >
             <p
-              class="jsx-2192258247"
+              class="jsx-2804213403"
             >
               Melhorias e updates à estratégia
             </p>
@@ -187,176 +187,176 @@ exports[`<Workflow /> renders properly 1`] = `
 exports[`<Workflow /> renders properly in English 1`] = `
 <div>
   <section
-    class="jsx-2192258247 container"
+    class="jsx-2804213403 container"
     data-testid="workflow_section"
   >
     <div
-      class="jsx-2192258247 wrapper genericMargins"
+      class="jsx-2804213403 wrapper genericMargins"
     >
       <h1
-        class="jsx-3953086084 "
+        class="jsx-1254015016 fontL"
       >
         Workflow
       </h1>
       <ul
-        class="jsx-2192258247"
+        class="jsx-2804213403"
       >
         <li
-          class="jsx-2192258247"
+          class="jsx-2804213403 fontXS"
         >
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             1.
           </p>
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             Set the target
           </p>
           <div
-            class="jsx-2192258247 backface"
+            class="jsx-2804213403 backface"
           >
             <p
-              class="jsx-2192258247"
+              class="jsx-2804213403"
             >
               What's the target
             </p>
           </div>
         </li>
         <li
-          class="jsx-2192258247"
+          class="jsx-2804213403 fontXS"
         >
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             2.
           </p>
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             Set goals
           </p>
           <div
-            class="jsx-2192258247 backface"
+            class="jsx-2804213403 backface"
           >
             <p
-              class="jsx-2192258247"
+              class="jsx-2804213403"
             >
               What are the business and communication goals
             </p>
           </div>
         </li>
         <li
-          class="jsx-2192258247"
+          class="jsx-2804213403 fontXS"
         >
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             3.
           </p>
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             Platforms strategies
           </p>
           <div
-            class="jsx-2192258247 backface"
+            class="jsx-2804213403 backface"
           >
             <p
-              class="jsx-2192258247"
+              class="jsx-2804213403"
             >
               In what platforms should the brand be present
             </p>
           </div>
         </li>
         <li
-          class="jsx-2192258247"
+          class="jsx-2804213403 fontXS"
         >
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             4.
           </p>
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             Content creation
           </p>
           <div
-            class="jsx-2192258247 backface"
+            class="jsx-2804213403 backface"
           >
             <p
-              class="jsx-2192258247"
+              class="jsx-2804213403"
             >
               Relevant and quality content created for the target
             </p>
           </div>
         </li>
         <li
-          class="jsx-2192258247"
+          class="jsx-2804213403 fontXS"
         >
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             5.
           </p>
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             Paid social & influencers
           </p>
           <div
-            class="jsx-2192258247 backface"
+            class="jsx-2804213403 backface"
           >
             <p
-              class="jsx-2192258247"
+              class="jsx-2804213403"
             >
               Promoted posts and collaborations with influencers
             </p>
           </div>
         </li>
         <li
-          class="jsx-2192258247"
+          class="jsx-2804213403 fontXS"
         >
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             6.
           </p>
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             Insights and reports
           </p>
           <div
-            class="jsx-2192258247 backface"
+            class="jsx-2804213403 backface"
           >
             <p
-              class="jsx-2192258247"
+              class="jsx-2804213403"
             >
               Detailed analysis and insights' finding
             </p>
           </div>
         </li>
         <li
-          class="jsx-2192258247"
+          class="jsx-2804213403 fontXS"
         >
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             7.
           </p>
           <p
-            class="jsx-2192258247"
+            class="jsx-2804213403"
           >
             Optimization
           </p>
           <div
-            class="jsx-2192258247 backface"
+            class="jsx-2804213403 backface"
           >
             <p
-              class="jsx-2192258247"
+              class="jsx-2804213403"
             >
               Strategy updates and improvements
             </p>

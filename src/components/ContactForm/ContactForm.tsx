@@ -10,6 +10,7 @@ import { contactFormBackendUrl } from '../../utils/urls';
 import { Button } from '../Button/Button';
 import { TextsContext } from '../context/TextsContext';
 import { FormField } from '../FormField/FormField';
+import { mobileMediaQuery } from '../../styles/mediaQueries';
 
 const formSchema = [
     {
@@ -171,6 +172,7 @@ export const ContactForm = (): JSX.Element => {
                                 }}
                                 className={classNames(
                                     'formNotification',
+                                    'fontS',
                                     formSubmitState.error && 'error'
                                 )}
                                 id="contactForm"
@@ -182,10 +184,8 @@ export const ContactForm = (): JSX.Element => {
 
             <style jsx>
                 {`
-                    @import './src/styles/_vars.scss';
-
                     .container {
-                        background: $white;
+                        background: var(--white);
                     }
 
                     .wrapper {
@@ -202,20 +202,17 @@ export const ContactForm = (): JSX.Element => {
 
                     .formNotification {
                         display: block;
-                        @include fontS($green, none, 500);
+                        color: var(--green);
+                        font-weight: 500;
                         margin-top: 30rem;
 
                         &.error {
-                            @include fontS($pink, none, 500);
+                            color: var(--pink);
                         }
 
-                        @include mobile {
-                            @include fontXS($green, none, 500);
+                        @media (${mobileMediaQuery}) {
+                            font-size: var(--fontSizeXS);
                             margin-top: 30rem;
-
-                            &.error {
-                                @include fontXS($pink, none, 500);
-                            }
                         }
                     }
                 `}

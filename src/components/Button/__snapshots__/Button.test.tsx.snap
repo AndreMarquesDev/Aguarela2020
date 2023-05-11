@@ -3,13 +3,13 @@
 exports[`<Button /> renders properly 1`] = `
 <div>
   <div
-    class="jsx-2566809609 buttonWrapper"
+    class="jsx-3983101691 buttonWrapper"
   >
     <div
-      class="jsx-2566809609 buttonBackground alignCenter"
+      class="jsx-3983101691 buttonBackground alignCenter"
     >
       <a
-        class="jsx-2566809609 button"
+        class="jsx-3983101691 button fontS"
         href="https://www.google.com"
         rel="noreferrer"
         target="_blank"
@@ -24,13 +24,13 @@ exports[`<Button /> renders properly 1`] = `
 exports[`<Button /> renders properly as a submit button 1`] = `
 <div>
   <div
-    class="jsx-2566809609 buttonWrapper"
+    class="jsx-3983101691 buttonWrapper"
   >
     <div
-      class="jsx-2566809609 buttonBackground alignCenter"
+      class="jsx-3983101691 buttonBackground alignCenter"
     >
       <button
-        class="jsx-2566809609 button"
+        class="jsx-3983101691 button fontS"
         type="submit"
       >
         Texto dentro do botão
@@ -43,13 +43,13 @@ exports[`<Button /> renders properly as a submit button 1`] = `
 exports[`<Button /> renders properly when disabled, uppercased and aligned left 1`] = `
 <div>
   <div
-    class="jsx-2566809609 buttonWrapper"
+    class="jsx-3983101691 buttonWrapper"
   >
     <div
-      class="jsx-2566809609 buttonBackground disabled"
+      class="jsx-3983101691 buttonBackground disabled"
     >
       <a
-        class="jsx-2566809609 button uppercase"
+        class="jsx-3983101691 button fontS lowercase"
         href="https://www.google.com"
         rel="noreferrer"
         target="_blank"
@@ -64,13 +64,13 @@ exports[`<Button /> renders properly when disabled, uppercased and aligned left 
 exports[`<Button /> renders properly without an external link 1`] = `
 <div>
   <div
-    class="jsx-2566809609 buttonWrapper"
+    class="jsx-3983101691 buttonWrapper"
   >
     <div
-      class="jsx-2566809609 buttonBackground alignCenter"
+      class="jsx-3983101691 buttonBackground alignCenter"
     >
       <a
-        class="jsx-2566809609 button"
+        class="jsx-3983101691 button fontS"
         href="/pt/projects"
       >
         Texto dentro do botão
