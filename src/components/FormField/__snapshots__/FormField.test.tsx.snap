@@ -3,10 +3,10 @@
 exports[`<FormField /> renders properly 1`] = `
 <div>
   <div
-    class="jsx-1980812632 fieldWrapper"
+    class="jsx-2066762092 fieldWrapper"
   >
     <label
-      class="jsx-1980812632"
+      class="jsx-2066762092 fontS"
       for="name"
     >
       Nome
@@ -14,7 +14,7 @@ exports[`<FormField /> renders properly 1`] = `
     </label>
     <input
       aria-describedby="nameErrorMessage"
-      class="jsx-1980812632"
+      class="jsx-2066762092 fontS"
       data-error="true"
       data-testid="name"
       id="name"
@@ -25,7 +25,7 @@ exports[`<FormField /> renders properly 1`] = `
       value=""
     />
     <span
-      class="jsx-1980812632 errorMessage visible"
+      class="jsx-2066762092 errorMessage fontXXS visible"
       data-testid="errorMessage_visible"
       id="nameErrorMessage"
     >

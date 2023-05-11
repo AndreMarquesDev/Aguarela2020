@@ -3,22 +3,22 @@
 exports[`<AboutMe /> renders properly 1`] = `
 <div>
   <section
-    class="jsx-2193176211 container"
+    class="jsx-2878702874 container"
     data-testid="aboutMe_section"
   >
     <div
-      class="jsx-2193176211 wrapper genericMargins"
+      class="jsx-2878702874 wrapper genericMargins"
     >
       <h1
-        class="jsx-3953086084 colored"
+        class="jsx-1254015016 fontL colored"
       >
         Sobre
       </h1>
       <div
-        class="jsx-2193176211 mainContentContainer"
+        class="jsx-2878702874 mainContentContainer"
       >
         <div
-          class="jsx-2193176211 imageBlock"
+          class="jsx-2878702874 imageBlock"
         >
           <span
             style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
@@ -44,31 +44,31 @@ exports[`<AboutMe /> renders properly 1`] = `
           </span>
         </div>
         <div
-          class="jsx-2193176211 textBlock"
+          class="jsx-2878702874 textBlock"
         >
           <p
-            class="jsx-2193176211 bodyText"
+            class="jsx-2878702874 bodyText"
           >
             Olá! O meu nome é Catarina Santiago e sou gestora de redes sociais e fotógrafa baseada em Lisboa.
           </p>
           <p
-            class="jsx-2193176211 bodyText"
+            class="jsx-2878702874 bodyText"
           >
             Com mais de 4 anos e 18 clientes de experiência, um projeto de freelance transformou-se na Aguarela Digital, uma agência de comunicação com o objetivo de posicionar e fazer brilhar marcas e negócios no digital.
           </p>
           <p
-            class="jsx-2193176211 bodyText"
+            class="jsx-2878702874 bodyText"
           >
             A estratégia de comunicação em redes sociais é sempre desenvolvida com base nos objetivos do cliente. Embora seja importante ser flexível e compreensiva, o meu papel é pensar fora da caixa, criar conteúdo inovador para redes sociais e otimizar a estratégia com base nos resultados e tendências de mercado. Acredito que uma boa estratégia de comunicação aliada a um planeamento visual de conteúdo é o segredo para o aumento da visibilidade e faturação do negócio.
           </p>
           <div
-            class="jsx-2566809609 buttonWrapper"
+            class="jsx-3983101691 buttonWrapper"
           >
             <div
-              class="jsx-2566809609 buttonBackground"
+              class="jsx-3983101691 buttonBackground"
             >
               <a
-                class="jsx-2566809609 button"
+                class="jsx-3983101691 button fontS"
                 href="https://www.instagram.com/catarinasantiago/"
                 rel="noreferrer"
                 target="_blank"
@@ -87,22 +87,22 @@ exports[`<AboutMe /> renders properly 1`] = `
 exports[`<AboutMe /> renders properly in English 1`] = `
 <div>
   <section
-    class="jsx-2193176211 container"
+    class="jsx-2878702874 container"
     data-testid="aboutMe_section"
   >
     <div
-      class="jsx-2193176211 wrapper genericMargins"
+      class="jsx-2878702874 wrapper genericMargins"
     >
       <h1
-        class="jsx-3953086084 colored"
+        class="jsx-1254015016 fontL colored"
       >
         About
       </h1>
       <div
-        class="jsx-2193176211 mainContentContainer"
+        class="jsx-2878702874 mainContentContainer"
       >
         <div
-          class="jsx-2193176211 imageBlock"
+          class="jsx-2878702874 imageBlock"
         >
           <span
             style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
@@ -128,31 +128,31 @@ exports[`<AboutMe /> renders properly in English 1`] = `
           </span>
         </div>
         <div
-          class="jsx-2193176211 textBlock"
+          class="jsx-2878702874 textBlock"
         >
           <p
-            class="jsx-2193176211 bodyText"
+            class="jsx-2878702874 bodyText"
           >
             Hi! My name is Catarina Santiago and I'm a social media manager and photographer based in Lisbon.
           </p>
           <p
-            class="jsx-2193176211 bodyText"
+            class="jsx-2878702874 bodyText"
           >
             With more than 4 years of experience and 18 clients, a freelance project became Aguarela Digital, a communication agency with the goal to position and make brands and businesses shine in the digital world.
           </p>
           <p
-            class="jsx-2193176211 bodyText"
+            class="jsx-2878702874 bodyText"
           >
             The social media strategy is always developed based on the client's goals. While it is important to be flexible, my role is to think outside the box by creating innovative content and optimizing the strategy based on results and market trends. I believe that a good communication strategy combined with a visual planning of the content is the key to increase the visibility and revenue of the business.
           </p>
           <div
-            class="jsx-2566809609 buttonWrapper"
+            class="jsx-3983101691 buttonWrapper"
           >
             <div
-              class="jsx-2566809609 buttonBackground"
+              class="jsx-3983101691 buttonBackground"
             >
               <a
-                class="jsx-2566809609 button"
+                class="jsx-3983101691 button fontS"
                 href="https://www.instagram.com/catarinasantiago/"
                 rel="noreferrer"
                 target="_blank"
@@ -171,22 +171,22 @@ exports[`<AboutMe /> renders properly in English 1`] = `
 exports[`<AboutMe /> renders properly in mobile 1`] = `
 <div>
   <section
-    class="jsx-2193176211 container"
+    class="jsx-2878702874 container"
     data-testid="aboutMe_section"
   >
     <div
-      class="jsx-2193176211 wrapper genericMargins"
+      class="jsx-2878702874 wrapper genericMargins"
     >
       <h1
-        class="jsx-3953086084 colored"
+        class="jsx-1254015016 fontL colored"
       >
         Sobre
       </h1>
       <div
-        class="jsx-2193176211 mainContentContainer"
+        class="jsx-2878702874 mainContentContainer"
       >
         <div
-          class="jsx-2193176211 imageBlock"
+          class="jsx-2878702874 imageBlock"
         >
           <span
             style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
@@ -212,31 +212,31 @@ exports[`<AboutMe /> renders properly in mobile 1`] = `
           </span>
         </div>
         <div
-          class="jsx-2193176211 textBlock"
+          class="jsx-2878702874 textBlock"
         >
           <p
-            class="jsx-2193176211 bodyText"
+            class="jsx-2878702874 bodyText"
           >
             Olá! O meu nome é Catarina Santiago e sou gestora de redes sociais e fotógrafa baseada em Lisboa.
           </p>
           <p
-            class="jsx-2193176211 bodyText"
+            class="jsx-2878702874 bodyText"
           >
             Com mais de 4 anos e 18 clientes de experiência, um projeto de freelance transformou-se na Aguarela Digital, uma agência de comunicação com o objetivo de posicionar e fazer brilhar marcas e negócios no digital.
           </p>
           <p
-            class="jsx-2193176211 bodyText"
+            class="jsx-2878702874 bodyText"
           >
             A estratégia de comunicação em redes sociais é sempre desenvolvida com base nos objetivos do cliente. Embora seja importante ser flexível e compreensiva, o meu papel é pensar fora da caixa, criar conteúdo inovador para redes sociais e otimizar a estratégia com base nos resultados e tendências de mercado. Acredito que uma boa estratégia de comunicação aliada a um planeamento visual de conteúdo é o segredo para o aumento da visibilidade e faturação do negócio.
           </p>
           <div
-            class="jsx-2566809609 buttonWrapper"
+            class="jsx-3983101691 buttonWrapper"
           >
             <div
-              class="jsx-2566809609 buttonBackground alignCenter"
+              class="jsx-3983101691 buttonBackground alignCenter"
             >
               <a
-                class="jsx-2566809609 button"
+                class="jsx-3983101691 button fontS"
                 href="https://www.instagram.com/catarinasantiago/"
                 rel="noreferrer"
                 target="_blank"

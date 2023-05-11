@@ -23,6 +23,7 @@ import {
     harpoonLinkedInUrl,
     bovineInstagramUrl,
 } from '../../utils/urls';
+import { mobileMediaQuery, tabletMediaQuery } from '../../styles/mediaQueries';
 
 export const BrandsList = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
@@ -310,10 +311,8 @@ export const BrandsList = (): JSX.Element => {
 
             <style jsx>
                 {`
-                    @import './src/styles/_vars.scss';
-
                     .container {
-                        background: $white;
+                        background: var(--white);
 
                         ul {
                             display: flex;
@@ -329,11 +328,11 @@ export const BrandsList = (): JSX.Element => {
                                     transform: scale(1.05);
                                 }
 
-                                @include tablet {
+                                @media (${tabletMediaQuery}) {
                                     width: calc(100% / 4);
                                 }
 
-                                @include mobile {
+                                @media (${mobileMediaQuery}) {
                                     width: calc(100% / 3);
                                 }
                             }

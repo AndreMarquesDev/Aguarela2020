@@ -6,6 +6,7 @@ import { TextsContext } from '../context/TextsContext';
 import { LanguageButton } from '../LanguageButton/LanguageButton';
 import { Locale } from '../../types/Locale';
 import { TextsInterface } from '../../utils/texts';
+import { phabletMediaQuery } from '../../styles/mediaQueries';
 
 export interface NavLinksProps {
     currentRoute: string;
@@ -28,7 +29,7 @@ export const NavLinks = ({
         isMenuOpen && isMobile && 'menuOpen'
     );
     const linkStyles = (link: string): string =>
-        classNames(currentRoute.includes(link) && 'active');
+        classNames('fontS', currentRoute.includes(link) && 'active');
 
     return (
         <ul className={linksContainerStyles}>
@@ -41,14 +42,12 @@ export const NavLinks = ({
                 </li>
             ))}
 
-            <li className={classNames('languageButton', isMobile && 'white')}>
+            <li className={classNames('languageButton fontXXS', isMobile && 'white fontXS')}>
                 <LanguageButton />
             </li>
 
             <style jsx>
                 {`
-                    @import './src/styles/_vars.scss';
-
                     ul {
                         display: flex;
 
@@ -57,7 +56,7 @@ export const NavLinks = ({
 
                             li {
                                 a {
-                                    color: $white;
+                                    color: var(--white);
                                     margin-bottom: 25rem;
                                 }
                             }
@@ -73,8 +72,8 @@ export const NavLinks = ({
                             justify-content: center;
                             top: 0;
                             left: 0;
-                            z-index: 1;
-                            background: $purple;
+                            z-index: 2;
+                            background: var(--purple);
                         }
                     }
 
@@ -83,35 +82,35 @@ export const NavLinks = ({
 
                         &:hover a,
                         .active {
-                            color: $purple;
+                            color: var(--purple);
                         }
 
-                        @include phablet {
+                        @media (${phabletMediaQuery}) {
                             margin: 0 calc(12.5rem / 2);
                         }
 
                         a {
                             display: inline-block;
-                            @include fontS($textTransform: uppercase);
+                            text-transform: uppercase;
                             transition: color 0.15s linear;
                         }
 
                         &.languageButton {
-                            @include fontXXS($textTransform: uppercase);
                             align-self: center;
+                            text-transform: uppercase;
                             margin-top: 5rem;
                             margin-left: 0;
 
                             &:hover {
-                                color: $purple;
+                                color: var(--purple);
                             }
 
                             &.white {
-                                @include fontXS($white, uppercase);
+                                color: var(--white);
                                 margin-top: 0;
                             }
 
-                            @include phablet {
+                            @media (${phabletMediaQuery}) {
                                 margin: 5rem calc(12.5rem / 2) 0;
                             }
                         }

@@ -3,23 +3,23 @@
 exports[`<ProjectsList /> renders properly 1`] = `
 <div>
   <section
-    class="jsx-2990028810 container"
+    class="jsx-2739049756 container"
     data-testid="projectsList_section"
   >
     <div
-      class="jsx-2990028810 wrapper genericMargins"
+      class="jsx-2739049756 wrapper genericMargins"
     >
       <h1
-        class="jsx-3953086084 colored"
+        class="jsx-1254015016 fontL colored"
       >
         Projetos
       </h1>
       <ul
-        class="jsx-2990028810"
+        class="jsx-2739049756"
         data-testid="projectsList_noCarousel"
       >
         <li
-          class="jsx-4162855406"
+          class="jsx-235796002"
         >
           <span
             style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
@@ -44,10 +44,10 @@ exports[`<ProjectsList /> renders properly 1`] = `
             />
           </span>
           <div
-            class="jsx-4162855406 backface"
+            class="jsx-235796002 backface"
           >
             <a
-              class="jsx-4162855406 brand link"
+              class="jsx-235796002 brand link fontXS"
               href="https://www.instagram.com/tudonatjela/"
               rel="noreferrer"
               target="_blank"
@@ -55,18 +55,18 @@ exports[`<ProjectsList /> renders properly 1`] = `
               @tudonatjela
             </a>
             <p
-              class="jsx-4162855406 description"
+              class="jsx-235796002 description fontS"
             >
               Gestão de Redes Sociais e Criação de Conteúdo
             </p>
             <p
-              class="jsx-4162855406 date"
+              class="jsx-235796002 date fontXS"
             >
               2020
                - Presente
             </p>
             <small
-              class="jsx-4162855406"
+              class="jsx-235796002 fontXS"
             >
               * 
               em dupla com Sofia Ferreirinho
@@ -74,7 +74,7 @@ exports[`<ProjectsList /> renders properly 1`] = `
           </div>
         </li>
         <li
-          class="jsx-4162855406"
+          class="jsx-235796002"
         >
           <span
             style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
@@ -99,10 +99,10 @@ exports[`<ProjectsList /> renders properly 1`] = `
             />
           </span>
           <div
-            class="jsx-4162855406 backface"
+            class="jsx-235796002 backface"
           >
             <a
-              class="jsx-4162855406 brand link"
+              class="jsx-235796002 brand link fontXS"
               href="https://www.instagram.com/kaffeehaus_lisboa/"
               rel="noreferrer"
               target="_blank"
@@ -110,12 +110,12 @@ exports[`<ProjectsList /> renders properly 1`] = `
               @kaffeehaus_lisboa
             </a>
             <p
-              class="jsx-4162855406 description"
+              class="jsx-235796002 description fontS"
             >
               Gestão de Redes Sociais e Criação de Conteúdo
             </p>
             <p
-              class="jsx-4162855406 date"
+              class="jsx-235796002 date fontXS"
             >
               2018
                - Presente
@@ -123,7 +123,7 @@ exports[`<ProjectsList /> renders properly 1`] = `
           </div>
         </li>
         <li
-          class="jsx-4162855406"
+          class="jsx-235796002"
         >
           <span
             style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
@@ -148,10 +148,10 @@ exports[`<ProjectsList /> renders properly 1`] = `
             />
           </span>
           <div
-            class="jsx-4162855406 backface"
+            class="jsx-235796002 backface"
           >
             <a
-              class="jsx-4162855406 brand link"
+              class="jsx-235796002 brand link fontXS"
               href="https://www.instagram.com/guacamolegmg/"
               rel="noreferrer"
               target="_blank"
@@ -159,18 +159,18 @@ exports[`<ProjectsList /> renders properly 1`] = `
               @guacamolegmg
             </a>
             <p
-              class="jsx-4162855406 description"
+              class="jsx-235796002 description fontS"
             >
               Gestão de Redes Sociais e Criação de Conteúdo
             </p>
             <p
-              class="jsx-4162855406 date"
+              class="jsx-235796002 date fontXS"
             >
               2019
                - Presente
             </p>
             <small
-              class="jsx-4162855406"
+              class="jsx-235796002 fontXS"
             >
               * 
               em dupla com Sofia Ferreirinho
@@ -179,13 +179,13 @@ exports[`<ProjectsList /> renders properly 1`] = `
         </li>
       </ul>
       <div
-        class="jsx-2566809609 buttonWrapper"
+        class="jsx-3983101691 buttonWrapper"
       >
         <div
-          class="jsx-2566809609 buttonBackground alignCenter"
+          class="jsx-3983101691 buttonBackground alignCenter"
         >
           <a
-            class="jsx-2566809609 button"
+            class="jsx-3983101691 button fontS"
             href="/pt/projects"
           >
             Ver mais
@@ -200,23 +200,23 @@ exports[`<ProjectsList /> renders properly 1`] = `
 exports[`<ProjectsList /> renders properly in English 1`] = `
 <div>
   <section
-    class="jsx-2990028810 container"
+    class="jsx-2739049756 container"
     data-testid="projectsList_section"
   >
     <div
-      class="jsx-2990028810 wrapper genericMargins"
+      class="jsx-2739049756 wrapper genericMargins"
     >
       <h1
-        class="jsx-3953086084 colored"
+        class="jsx-1254015016 fontL colored"
       >
         Projects
       </h1>
       <ul
-        class="jsx-2990028810"
+        class="jsx-2739049756"
         data-testid="projectsList_noCarousel"
       >
         <li
-          class="jsx-4162855406"
+          class="jsx-235796002"
         >
           <span
             style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
@@ -241,10 +241,10 @@ exports[`<ProjectsList /> renders properly in English 1`] = `
             />
           </span>
           <div
-            class="jsx-4162855406 backface"
+            class="jsx-235796002 backface"
           >
             <a
-              class="jsx-4162855406 brand link"
+              class="jsx-235796002 brand link fontXS"
               href="https://www.instagram.com/tudonatjela/"
               rel="noreferrer"
               target="_blank"
@@ -252,18 +252,18 @@ exports[`<ProjectsList /> renders properly in English 1`] = `
               @tudonatjela
             </a>
             <p
-              class="jsx-4162855406 description"
+              class="jsx-235796002 description fontS"
             >
               Social Media Management and Content Creation
             </p>
             <p
-              class="jsx-4162855406 date"
+              class="jsx-235796002 date fontXS"
             >
               2020
                - Present
             </p>
             <small
-              class="jsx-4162855406"
+              class="jsx-235796002 fontXS"
             >
               * 
               in partnership with Sofia Ferreirinho
@@ -271,7 +271,7 @@ exports[`<ProjectsList /> renders properly in English 1`] = `
           </div>
         </li>
         <li
-          class="jsx-4162855406"
+          class="jsx-235796002"
         >
           <span
             style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
@@ -296,10 +296,10 @@ exports[`<ProjectsList /> renders properly in English 1`] = `
             />
           </span>
           <div
-            class="jsx-4162855406 backface"
+            class="jsx-235796002 backface"
           >
             <a
-              class="jsx-4162855406 brand link"
+              class="jsx-235796002 brand link fontXS"
               href="https://www.instagram.com/kaffeehaus_lisboa/"
               rel="noreferrer"
               target="_blank"
@@ -307,12 +307,12 @@ exports[`<ProjectsList /> renders properly in English 1`] = `
               @kaffeehaus_lisboa
             </a>
             <p
-              class="jsx-4162855406 description"
+              class="jsx-235796002 description fontS"
             >
               Social Media Management and Content Creation
             </p>
             <p
-              class="jsx-4162855406 date"
+              class="jsx-235796002 date fontXS"
             >
               2018
                - Present
@@ -320,7 +320,7 @@ exports[`<ProjectsList /> renders properly in English 1`] = `
           </div>
         </li>
         <li
-          class="jsx-4162855406"
+          class="jsx-235796002"
         >
           <span
             style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
@@ -345,10 +345,10 @@ exports[`<ProjectsList /> renders properly in English 1`] = `
             />
           </span>
           <div
-            class="jsx-4162855406 backface"
+            class="jsx-235796002 backface"
           >
             <a
-              class="jsx-4162855406 brand link"
+              class="jsx-235796002 brand link fontXS"
               href="https://www.instagram.com/guacamolegmg/"
               rel="noreferrer"
               target="_blank"
@@ -356,18 +356,18 @@ exports[`<ProjectsList /> renders properly in English 1`] = `
               @guacamolegmg
             </a>
             <p
-              class="jsx-4162855406 description"
+              class="jsx-235796002 description fontS"
             >
               Social Media Management and Content Creation
             </p>
             <p
-              class="jsx-4162855406 date"
+              class="jsx-235796002 date fontXS"
             >
               2019
                - Present
             </p>
             <small
-              class="jsx-4162855406"
+              class="jsx-235796002 fontXS"
             >
               * 
               in partnership with Sofia Ferreirinho
@@ -376,13 +376,13 @@ exports[`<ProjectsList /> renders properly in English 1`] = `
         </li>
       </ul>
       <div
-        class="jsx-2566809609 buttonWrapper"
+        class="jsx-3983101691 buttonWrapper"
       >
         <div
-          class="jsx-2566809609 buttonBackground alignCenter"
+          class="jsx-3983101691 buttonBackground alignCenter"
         >
           <a
-            class="jsx-2566809609 button"
+            class="jsx-3983101691 button fontS"
             href="/pt/projects"
           >
             See more
@@ -397,19 +397,19 @@ exports[`<ProjectsList /> renders properly in English 1`] = `
 exports[`<ProjectsList /> renders properly on mobile 1`] = `
 <div>
   <section
-    class="jsx-2990028810 container"
+    class="jsx-2739049756 container"
     data-testid="projectsList_section"
   >
     <div
-      class="jsx-2990028810 wrapper genericMargins"
+      class="jsx-2739049756 wrapper genericMargins"
     >
       <h1
-        class="jsx-3953086084 colored"
+        class="jsx-1254015016 fontL colored"
       >
         Projetos
       </h1>
       <div
-        class="jsx-3113037301 nukaCarouselContainer"
+        class="jsx-443661925 nukaCarouselContainer"
       >
         <div
           class="slider-container"
@@ -432,7 +432,7 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
             >
               <button
                 aria-label="previous slide"
-                class="jsx-3113037301 previousButton"
+                class="jsx-443661925 previousButton"
                 data-testid="nukaCarousel_previousSlideButton"
                 type="button"
               >
@@ -461,7 +461,7 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
             >
               <button
                 aria-label="next slide"
-                class="jsx-3113037301 nextButton"
+                class="jsx-443661925 nextButton"
                 data-testid="nukaCarousel_nextSlideButton"
                 type="button"
               >
@@ -497,7 +497,7 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-4162855406 carouselItem"
+                  class="jsx-235796002 carouselItem"
                   data-testid="projectItem_touch_div_tjela logo"
                   data-times-touched="0"
                 >
@@ -526,10 +526,10 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                     />
                   </span>
                   <div
-                    class="jsx-4162855406 backface"
+                    class="jsx-235796002 backface"
                   >
                     <a
-                      class="jsx-4162855406 brand link"
+                      class="jsx-235796002 brand link fontXS"
                       href="https://www.instagram.com/tudonatjela/"
                       rel="noreferrer"
                       target="_blank"
@@ -537,18 +537,18 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                       @tudonatjela
                     </a>
                     <p
-                      class="jsx-4162855406 description"
+                      class="jsx-235796002 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-4162855406 date"
+                      class="jsx-235796002 date fontXS"
                     >
                       2020
                        - Presente
                     </p>
                     <small
-                      class="jsx-4162855406"
+                      class="jsx-235796002 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -561,7 +561,7 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-4162855406 carouselItem"
+                  class="jsx-235796002 carouselItem"
                   data-testid="projectItem_touch_div_kaffeehaus logo"
                   data-times-touched="0"
                 >
@@ -590,10 +590,10 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                     />
                   </span>
                   <div
-                    class="jsx-4162855406 backface"
+                    class="jsx-235796002 backface"
                   >
                     <a
-                      class="jsx-4162855406 brand link"
+                      class="jsx-235796002 brand link fontXS"
                       href="https://www.instagram.com/kaffeehaus_lisboa/"
                       rel="noreferrer"
                       target="_blank"
@@ -601,12 +601,12 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                       @kaffeehaus_lisboa
                     </a>
                     <p
-                      class="jsx-4162855406 description"
+                      class="jsx-235796002 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-4162855406 date"
+                      class="jsx-235796002 date fontXS"
                     >
                       2018
                        - Presente
@@ -619,7 +619,7 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-4162855406 carouselItem"
+                  class="jsx-235796002 carouselItem"
                   data-testid="projectItem_touch_div_guacamole logo"
                   data-times-touched="0"
                 >
@@ -648,10 +648,10 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                     <noscript />
                   </span>
                   <div
-                    class="jsx-4162855406 backface"
+                    class="jsx-235796002 backface"
                   >
                     <a
-                      class="jsx-4162855406 brand link"
+                      class="jsx-235796002 brand link fontXS"
                       href="https://www.instagram.com/guacamolegmg/"
                       rel="noreferrer"
                       target="_blank"
@@ -659,18 +659,18 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                       @guacamolegmg
                     </a>
                     <p
-                      class="jsx-4162855406 description"
+                      class="jsx-235796002 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-4162855406 date"
+                      class="jsx-235796002 date fontXS"
                     >
                       2019
                        - Presente
                     </p>
                     <small
-                      class="jsx-4162855406"
+                      class="jsx-235796002 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -683,7 +683,7 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-4162855406 carouselItem"
+                  class="jsx-235796002 carouselItem"
                   data-testid="projectItem_touch_div_tjela logo"
                   data-times-touched="0"
                 >
@@ -712,10 +712,10 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                     />
                   </span>
                   <div
-                    class="jsx-4162855406 backface"
+                    class="jsx-235796002 backface"
                   >
                     <a
-                      class="jsx-4162855406 brand link"
+                      class="jsx-235796002 brand link fontXS"
                       href="https://www.instagram.com/tudonatjela/"
                       rel="noreferrer"
                       target="_blank"
@@ -723,18 +723,18 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                       @tudonatjela
                     </a>
                     <p
-                      class="jsx-4162855406 description"
+                      class="jsx-235796002 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-4162855406 date"
+                      class="jsx-235796002 date fontXS"
                     >
                       2020
                        - Presente
                     </p>
                     <small
-                      class="jsx-4162855406"
+                      class="jsx-235796002 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -747,7 +747,7 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-4162855406 carouselItem"
+                  class="jsx-235796002 carouselItem"
                   data-testid="projectItem_touch_div_kaffeehaus logo"
                   data-times-touched="0"
                 >
@@ -776,10 +776,10 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                     />
                   </span>
                   <div
-                    class="jsx-4162855406 backface"
+                    class="jsx-235796002 backface"
                   >
                     <a
-                      class="jsx-4162855406 brand link"
+                      class="jsx-235796002 brand link fontXS"
                       href="https://www.instagram.com/kaffeehaus_lisboa/"
                       rel="noreferrer"
                       target="_blank"
@@ -787,12 +787,12 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                       @kaffeehaus_lisboa
                     </a>
                     <p
-                      class="jsx-4162855406 description"
+                      class="jsx-235796002 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-4162855406 date"
+                      class="jsx-235796002 date fontXS"
                     >
                       2018
                        - Presente
@@ -805,7 +805,7 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-4162855406 carouselItem"
+                  class="jsx-235796002 carouselItem"
                   data-testid="projectItem_touch_div_guacamole logo"
                   data-times-touched="0"
                 >
@@ -834,10 +834,10 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                     <noscript />
                   </span>
                   <div
-                    class="jsx-4162855406 backface"
+                    class="jsx-235796002 backface"
                   >
                     <a
-                      class="jsx-4162855406 brand link"
+                      class="jsx-235796002 brand link fontXS"
                       href="https://www.instagram.com/guacamolegmg/"
                       rel="noreferrer"
                       target="_blank"
@@ -845,18 +845,18 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                       @guacamolegmg
                     </a>
                     <p
-                      class="jsx-4162855406 description"
+                      class="jsx-235796002 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-4162855406 date"
+                      class="jsx-235796002 date fontXS"
                     >
                       2019
                        - Presente
                     </p>
                     <small
-                      class="jsx-4162855406"
+                      class="jsx-235796002 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -869,7 +869,7 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-4162855406 carouselItem"
+                  class="jsx-235796002 carouselItem"
                   data-testid="projectItem_touch_div_tjela logo"
                   data-times-touched="0"
                 >
@@ -898,10 +898,10 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                     />
                   </span>
                   <div
-                    class="jsx-4162855406 backface"
+                    class="jsx-235796002 backface"
                   >
                     <a
-                      class="jsx-4162855406 brand link"
+                      class="jsx-235796002 brand link fontXS"
                       href="https://www.instagram.com/tudonatjela/"
                       rel="noreferrer"
                       target="_blank"
@@ -909,18 +909,18 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                       @tudonatjela
                     </a>
                     <p
-                      class="jsx-4162855406 description"
+                      class="jsx-235796002 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-4162855406 date"
+                      class="jsx-235796002 date fontXS"
                     >
                       2020
                        - Presente
                     </p>
                     <small
-                      class="jsx-4162855406"
+                      class="jsx-235796002 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -933,7 +933,7 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-4162855406 carouselItem"
+                  class="jsx-235796002 carouselItem"
                   data-testid="projectItem_touch_div_kaffeehaus logo"
                   data-times-touched="0"
                 >
@@ -962,10 +962,10 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                     />
                   </span>
                   <div
-                    class="jsx-4162855406 backface"
+                    class="jsx-235796002 backface"
                   >
                     <a
-                      class="jsx-4162855406 brand link"
+                      class="jsx-235796002 brand link fontXS"
                       href="https://www.instagram.com/kaffeehaus_lisboa/"
                       rel="noreferrer"
                       target="_blank"
@@ -973,12 +973,12 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                       @kaffeehaus_lisboa
                     </a>
                     <p
-                      class="jsx-4162855406 description"
+                      class="jsx-235796002 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-4162855406 date"
+                      class="jsx-235796002 date fontXS"
                     >
                       2018
                        - Presente
@@ -991,7 +991,7 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-4162855406 carouselItem"
+                  class="jsx-235796002 carouselItem"
                   data-testid="projectItem_touch_div_guacamole logo"
                   data-times-touched="0"
                 >
@@ -1020,10 +1020,10 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                     <noscript />
                   </span>
                   <div
-                    class="jsx-4162855406 backface"
+                    class="jsx-235796002 backface"
                   >
                     <a
-                      class="jsx-4162855406 brand link"
+                      class="jsx-235796002 brand link fontXS"
                       href="https://www.instagram.com/guacamolegmg/"
                       rel="noreferrer"
                       target="_blank"
@@ -1031,18 +1031,18 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                       @guacamolegmg
                     </a>
                     <p
-                      class="jsx-4162855406 description"
+                      class="jsx-235796002 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-4162855406 date"
+                      class="jsx-235796002 date fontXS"
                     >
                       2019
                        - Presente
                     </p>
                     <small
-                      class="jsx-4162855406"
+                      class="jsx-235796002 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -1055,13 +1055,13 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
         </div>
       </div>
       <div
-        class="jsx-2566809609 buttonWrapper"
+        class="jsx-3983101691 buttonWrapper"
       >
         <div
-          class="jsx-2566809609 buttonBackground alignCenter"
+          class="jsx-3983101691 buttonBackground alignCenter"
         >
           <a
-            class="jsx-2566809609 button"
+            class="jsx-3983101691 button fontS"
             href="/pt/projects"
           >
             Ver mais
@@ -1076,19 +1076,19 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
 exports[`<ProjectsList /> renders properly on tablet 1`] = `
 <div>
   <section
-    class="jsx-2990028810 container"
+    class="jsx-2739049756 container"
     data-testid="projectsList_section"
   >
     <div
-      class="jsx-2990028810 wrapper genericMargins"
+      class="jsx-2739049756 wrapper genericMargins"
     >
       <h1
-        class="jsx-3953086084 colored"
+        class="jsx-1254015016 fontL colored"
       >
         Projetos
       </h1>
       <div
-        class="jsx-2993345325 nukaCarouselContainer"
+        class="jsx-3311130813 nukaCarouselContainer"
       >
         <div
           class="slider-container"
@@ -1111,7 +1111,7 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
             >
               <button
                 aria-label="previous slide"
-                class="jsx-2993345325 previousButton"
+                class="jsx-3311130813 previousButton"
                 data-testid="nukaCarousel_previousSlideButton"
                 type="button"
               >
@@ -1140,7 +1140,7 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
             >
               <button
                 aria-label="next slide"
-                class="jsx-2993345325 nextButton"
+                class="jsx-3311130813 nextButton"
                 data-testid="nukaCarousel_nextSlideButton"
                 type="button"
               >
@@ -1176,7 +1176,7 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-4162855406 carouselItem"
+                  class="jsx-235796002 carouselItem"
                   data-testid="projectItem_touch_div_tjela logo"
                   data-times-touched="0"
                 >
@@ -1205,10 +1205,10 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                     />
                   </span>
                   <div
-                    class="jsx-4162855406 backface"
+                    class="jsx-235796002 backface"
                   >
                     <a
-                      class="jsx-4162855406 brand link"
+                      class="jsx-235796002 brand link fontXS"
                       href="https://www.instagram.com/tudonatjela/"
                       rel="noreferrer"
                       target="_blank"
@@ -1216,18 +1216,18 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                       @tudonatjela
                     </a>
                     <p
-                      class="jsx-4162855406 description"
+                      class="jsx-235796002 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-4162855406 date"
+                      class="jsx-235796002 date fontXS"
                     >
                       2020
                        - Presente
                     </p>
                     <small
-                      class="jsx-4162855406"
+                      class="jsx-235796002 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -1240,7 +1240,7 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-4162855406 carouselItem"
+                  class="jsx-235796002 carouselItem"
                   data-testid="projectItem_touch_div_kaffeehaus logo"
                   data-times-touched="0"
                 >
@@ -1269,10 +1269,10 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                     />
                   </span>
                   <div
-                    class="jsx-4162855406 backface"
+                    class="jsx-235796002 backface"
                   >
                     <a
-                      class="jsx-4162855406 brand link"
+                      class="jsx-235796002 brand link fontXS"
                       href="https://www.instagram.com/kaffeehaus_lisboa/"
                       rel="noreferrer"
                       target="_blank"
@@ -1280,12 +1280,12 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                       @kaffeehaus_lisboa
                     </a>
                     <p
-                      class="jsx-4162855406 description"
+                      class="jsx-235796002 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-4162855406 date"
+                      class="jsx-235796002 date fontXS"
                     >
                       2018
                        - Presente
@@ -1298,7 +1298,7 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-4162855406 carouselItem"
+                  class="jsx-235796002 carouselItem"
                   data-testid="projectItem_touch_div_guacamole logo"
                   data-times-touched="0"
                 >
@@ -1327,10 +1327,10 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                     <noscript />
                   </span>
                   <div
-                    class="jsx-4162855406 backface"
+                    class="jsx-235796002 backface"
                   >
                     <a
-                      class="jsx-4162855406 brand link"
+                      class="jsx-235796002 brand link fontXS"
                       href="https://www.instagram.com/guacamolegmg/"
                       rel="noreferrer"
                       target="_blank"
@@ -1338,18 +1338,18 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                       @guacamolegmg
                     </a>
                     <p
-                      class="jsx-4162855406 description"
+                      class="jsx-235796002 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-4162855406 date"
+                      class="jsx-235796002 date fontXS"
                     >
                       2019
                        - Presente
                     </p>
                     <small
-                      class="jsx-4162855406"
+                      class="jsx-235796002 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -1362,7 +1362,7 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-4162855406 carouselItem"
+                  class="jsx-235796002 carouselItem"
                   data-testid="projectItem_touch_div_tjela logo"
                   data-times-touched="0"
                 >
@@ -1391,10 +1391,10 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                     />
                   </span>
                   <div
-                    class="jsx-4162855406 backface"
+                    class="jsx-235796002 backface"
                   >
                     <a
-                      class="jsx-4162855406 brand link"
+                      class="jsx-235796002 brand link fontXS"
                       href="https://www.instagram.com/tudonatjela/"
                       rel="noreferrer"
                       target="_blank"
@@ -1402,18 +1402,18 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                       @tudonatjela
                     </a>
                     <p
-                      class="jsx-4162855406 description"
+                      class="jsx-235796002 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-4162855406 date"
+                      class="jsx-235796002 date fontXS"
                     >
                       2020
                        - Presente
                     </p>
                     <small
-                      class="jsx-4162855406"
+                      class="jsx-235796002 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -1426,7 +1426,7 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-4162855406 carouselItem"
+                  class="jsx-235796002 carouselItem"
                   data-testid="projectItem_touch_div_kaffeehaus logo"
                   data-times-touched="0"
                 >
@@ -1455,10 +1455,10 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                     />
                   </span>
                   <div
-                    class="jsx-4162855406 backface"
+                    class="jsx-235796002 backface"
                   >
                     <a
-                      class="jsx-4162855406 brand link"
+                      class="jsx-235796002 brand link fontXS"
                       href="https://www.instagram.com/kaffeehaus_lisboa/"
                       rel="noreferrer"
                       target="_blank"
@@ -1466,12 +1466,12 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                       @kaffeehaus_lisboa
                     </a>
                     <p
-                      class="jsx-4162855406 description"
+                      class="jsx-235796002 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-4162855406 date"
+                      class="jsx-235796002 date fontXS"
                     >
                       2018
                        - Presente
@@ -1484,7 +1484,7 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-4162855406 carouselItem"
+                  class="jsx-235796002 carouselItem"
                   data-testid="projectItem_touch_div_guacamole logo"
                   data-times-touched="0"
                 >
@@ -1513,10 +1513,10 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                     <noscript />
                   </span>
                   <div
-                    class="jsx-4162855406 backface"
+                    class="jsx-235796002 backface"
                   >
                     <a
-                      class="jsx-4162855406 brand link"
+                      class="jsx-235796002 brand link fontXS"
                       href="https://www.instagram.com/guacamolegmg/"
                       rel="noreferrer"
                       target="_blank"
@@ -1524,18 +1524,18 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                       @guacamolegmg
                     </a>
                     <p
-                      class="jsx-4162855406 description"
+                      class="jsx-235796002 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-4162855406 date"
+                      class="jsx-235796002 date fontXS"
                     >
                       2019
                        - Presente
                     </p>
                     <small
-                      class="jsx-4162855406"
+                      class="jsx-235796002 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -1548,7 +1548,7 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-4162855406 carouselItem"
+                  class="jsx-235796002 carouselItem"
                   data-testid="projectItem_touch_div_tjela logo"
                   data-times-touched="0"
                 >
@@ -1577,10 +1577,10 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                     />
                   </span>
                   <div
-                    class="jsx-4162855406 backface"
+                    class="jsx-235796002 backface"
                   >
                     <a
-                      class="jsx-4162855406 brand link"
+                      class="jsx-235796002 brand link fontXS"
                       href="https://www.instagram.com/tudonatjela/"
                       rel="noreferrer"
                       target="_blank"
@@ -1588,18 +1588,18 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                       @tudonatjela
                     </a>
                     <p
-                      class="jsx-4162855406 description"
+                      class="jsx-235796002 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-4162855406 date"
+                      class="jsx-235796002 date fontXS"
                     >
                       2020
                        - Presente
                     </p>
                     <small
-                      class="jsx-4162855406"
+                      class="jsx-235796002 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -1612,7 +1612,7 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-4162855406 carouselItem"
+                  class="jsx-235796002 carouselItem"
                   data-testid="projectItem_touch_div_kaffeehaus logo"
                   data-times-touched="0"
                 >
@@ -1641,10 +1641,10 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                     />
                   </span>
                   <div
-                    class="jsx-4162855406 backface"
+                    class="jsx-235796002 backface"
                   >
                     <a
-                      class="jsx-4162855406 brand link"
+                      class="jsx-235796002 brand link fontXS"
                       href="https://www.instagram.com/kaffeehaus_lisboa/"
                       rel="noreferrer"
                       target="_blank"
@@ -1652,12 +1652,12 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                       @kaffeehaus_lisboa
                     </a>
                     <p
-                      class="jsx-4162855406 description"
+                      class="jsx-235796002 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-4162855406 date"
+                      class="jsx-235796002 date fontXS"
                     >
                       2018
                        - Presente
@@ -1670,7 +1670,7 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-4162855406 carouselItem"
+                  class="jsx-235796002 carouselItem"
                   data-testid="projectItem_touch_div_guacamole logo"
                   data-times-touched="0"
                 >
@@ -1699,10 +1699,10 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                     <noscript />
                   </span>
                   <div
-                    class="jsx-4162855406 backface"
+                    class="jsx-235796002 backface"
                   >
                     <a
-                      class="jsx-4162855406 brand link"
+                      class="jsx-235796002 brand link fontXS"
                       href="https://www.instagram.com/guacamolegmg/"
                       rel="noreferrer"
                       target="_blank"
@@ -1710,18 +1710,18 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                       @guacamolegmg
                     </a>
                     <p
-                      class="jsx-4162855406 description"
+                      class="jsx-235796002 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-4162855406 date"
+                      class="jsx-235796002 date fontXS"
                     >
                       2019
                        - Presente
                     </p>
                     <small
-                      class="jsx-4162855406"
+                      class="jsx-235796002 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -1734,13 +1734,13 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
         </div>
       </div>
       <div
-        class="jsx-2566809609 buttonWrapper"
+        class="jsx-3983101691 buttonWrapper"
       >
         <div
-          class="jsx-2566809609 buttonBackground alignCenter"
+          class="jsx-3983101691 buttonBackground alignCenter"
         >
           <a
-            class="jsx-2566809609 button"
+            class="jsx-3983101691 button fontS"
             href="/pt/projects"
           >
             Ver mais

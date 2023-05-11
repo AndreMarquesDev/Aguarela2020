@@ -2,6 +2,12 @@ import React, { useContext } from 'react';
 import { workflowSectionDataTestId } from '../../utils/dataTestIds';
 import { TextsContext } from '../context/TextsContext';
 import { Title } from '../Title/Title';
+import {
+    mobileMediaQuery,
+    phabletMediaQuery,
+    tabletMediaQuery,
+    wrapperMediaQuery,
+} from '../../styles/mediaQueries';
 
 export const Workflow = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
@@ -13,49 +19,49 @@ export const Workflow = (): JSX.Element => {
                     <Title text={texts.workflow} />
 
                     <ul>
-                        <li>
+                        <li className="fontXS">
                             <p>1.</p>
                             <p>{texts.defineTarget}</p>
                             <div className="backface">
                                 <p>{texts.whatIsTheTarget}</p>
                             </div>
                         </li>
-                        <li>
+                        <li className="fontXS">
                             <p>2.</p>
                             <p>{texts.defineGoals}</p>
                             <div className="backface">
                                 <p>{texts.whatAreYourGoals}</p>
                             </div>
                         </li>
-                        <li>
+                        <li className="fontXS">
                             <p>3.</p>
                             <p>{texts.platformStrategy}</p>
                             <div className="backface">
                                 <p>{texts.whatPlatforms}</p>
                             </div>
                         </li>
-                        <li>
+                        <li className="fontXS">
                             <p>4.</p>
                             <p>{texts.contentCreation}</p>
                             <div className="backface">
                                 <p>{texts.relevantContentCreation}</p>
                             </div>
                         </li>
-                        <li>
+                        <li className="fontXS">
                             <p>5.</p>
                             <p>{texts.paidSocialAndInfluencers}</p>
                             <div className="backface">
                                 <p>{texts.promotePostsAndCollaborate}</p>
                             </div>
                         </li>
-                        <li>
+                        <li className="fontXS">
                             <p>6.</p>
                             <p>{texts.insightsAndReports}</p>
                             <div className="backface">
                                 <p>{texts.detailedAnalysis}</p>
                             </div>
                         </li>
-                        <li>
+                        <li className="fontXS">
                             <p>7.</p>
                             <p>{texts.optimization}</p>
                             <div className="backface">
@@ -68,42 +74,40 @@ export const Workflow = (): JSX.Element => {
 
             <style jsx>
                 {`
-                    @import './src/styles/_vars.scss';
-
-                    $blockSize: 160rem;
-                    $blockSizeMobile: 120rem;
-                    $backfaceOffset: 12rem;
-
                     .container {
-                        background: $purple;
+                        --blockSize: 160rem;
+                        --blockSizeMobile: 120rem;
+                        --backfaceOffset: 12rem;
+
+                        background: var(--purple);
 
                         ul {
                             display: flex;
                             justify-content: space-between;
 
-                            @include wrapper {
+                            @media (${wrapperMediaQuery}) {
                                 width: 800rem;
                                 flex-wrap: wrap;
                                 justify-content: center;
                                 margin: 0 auto;
                             }
 
-                            @include phablet {
+                            @media (${phabletMediaQuery}) {
                                 width: 600rem;
                             }
 
-                            @include tablet {
+                            @media (${tabletMediaQuery}) {
                                 width: 400rem;
                             }
 
-                            @include mobile {
+                            @media (${mobileMediaQuery}) {
                                 width: 280rem;
                                 justify-content: space-between;
                             }
 
                             li {
-                                width: $blockSize;
-                                height: $blockSize;
+                                width: var(--blockSize);
+                                height: var(--blockSize);
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: center;
@@ -112,55 +116,55 @@ export const Workflow = (): JSX.Element => {
                                 padding: 10rem;
                                 z-index: 0;
 
-                                @include wrapper {
-                                    margin: 0 calc(7rem + #{$backfaceOffset}) 0 7rem;
+                                @media (${wrapperMediaQuery}) {
+                                    margin: 0 calc(7rem + var(--backfaceOffset)) 0 7rem;
 
                                     &:first-child {
                                         margin-bottom: 50rem;
                                     }
                                 }
 
-                                @include phablet {
+                                @media (${phabletMediaQuery}) {
                                     &:nth-child(4) {
                                         margin-bottom: 50rem;
                                     }
                                 }
 
-                                @include tablet {
+                                @media (${tabletMediaQuery}) {
                                     &:nth-child(5) {
                                         margin-bottom: 50rem;
                                     }
                                 }
 
-                                @include mobile {
-                                    width: $blockSizeMobile;
-                                    height: $blockSizeMobile;
+                                @media (${mobileMediaQuery}) {
+                                    width: var(--blockSizeMobile);
+                                    height: var(--blockSizeMobile);
                                     margin: 0;
                                 }
 
                                 &:before,
                                 &:after {
                                     content: '';
-                                    width: $blockSize;
-                                    height: $blockSize;
+                                    width: var(--blockSize);
+                                    height: var(--blockSize);
                                     position: absolute;
 
-                                    @include mobile {
-                                        width: $blockSizeMobile;
-                                        height: $blockSizeMobile;
+                                    @media (${mobileMediaQuery}) {
+                                        width: var(--blockSizeMobile);
+                                        height: var(--blockSizeMobile);
                                     }
                                 }
 
                                 &:before {
                                     top: 0;
                                     left: 0;
-                                    background-color: $blue;
+                                    background-color: var(--blue);
                                 }
 
                                 &:after {
-                                    top: $backfaceOffset;
-                                    left: $backfaceOffset;
-                                    background-color: $pink;
+                                    top: var(--backfaceOffset);
+                                    left: var(--backfaceOffset);
+                                    background-color: var(--pink);
                                     z-index: -1;
                                 }
 
@@ -170,18 +174,20 @@ export const Workflow = (): JSX.Element => {
                                     }
 
                                     &:after {
-                                        background-color: $blue;
+                                        background-color: var(--blue);
                                     }
                                 }
 
                                 p {
-                                    @include fontXS($yellow, uppercase, bold);
+                                    color: var(--yellow);
+                                    font-weight: bold;
+                                    text-transform: uppercase;
                                     position: relative;
                                     display: block;
                                     z-index: 0;
 
-                                    @include mobile {
-                                        @include fontXXS($yellow, uppercase, bold);
+                                    @media (${mobileMediaQuery}) {
+                                        font-size: var(--fontSizeXXS);
                                     }
                                 }
 
@@ -194,14 +200,16 @@ export const Workflow = (): JSX.Element => {
                                     left: 50%;
                                     transform: translateX(-50%);
                                     align-items: center;
-                                    background: $pink;
+                                    background: var(--pink);
                                     padding: 10rem;
 
                                     p {
-                                        @include fontXS($yellow);
+                                        color: var(--yellow);
+                                        font-weight: normal;
+                                        text-transform: none;
 
-                                        @include mobile {
-                                            @include fontXXS($yellow);
+                                        @media (${mobileMediaQuery}) {
+                                            font-size: var(--fontSizeXXS);
                                         }
                                     }
                                 }

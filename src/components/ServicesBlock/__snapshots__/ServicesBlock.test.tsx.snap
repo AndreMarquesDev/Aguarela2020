@@ -3,117 +3,117 @@
 exports[`<ServicesBlock /> renders properly 1`] = `
 <div>
   <section
-    class="jsx-1320563027 container"
+    class="jsx-1740087617 container"
     data-testid="servicesBlock_section"
   >
     <div
-      class="jsx-1320563027 wrapper genericMargins"
+      class="jsx-1740087617 wrapper genericMargins"
     >
       <h1
-        class="jsx-3953086084 colored"
+        class="jsx-1254015016 fontL colored"
       >
         Serviços
       </h1>
       <ul
-        class="jsx-1320563027"
+        class="jsx-1740087617"
       >
         <li
-          class="jsx-1320563027"
+          class="jsx-1740087617"
           data-testid="servicesBlock_blockWrapper"
         >
           <p
-            class="jsx-1320563027"
+            class="jsx-1740087617 fontL"
           >
             Design
           </p>
           <div
-            class="jsx-1320563027 backface"
+            class="jsx-1740087617 backface"
           >
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Web design
             </p>
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Cartazes & flyers
             </p>
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Cartão de contacto
             </p>
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Templates para Social Media
             </p>
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Menus
             </p>
           </div>
         </li>
         <li
-          class="jsx-1320563027"
+          class="jsx-1740087617"
           data-testid="servicesBlock_blockWrapper"
         >
           <p
-            class="jsx-1320563027"
+            class="jsx-1740087617 fontL"
           >
             Social Media
           </p>
           <div
-            class="jsx-1320563027 backface"
+            class="jsx-1740087617 backface"
           >
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Criação de Conteúdo
             </p>
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Análises de mercado
             </p>
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Estratégia e gestão de redes sociais
             </p>
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Promoção de posts
             </p>
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Consultoria
             </p>
           </div>
         </li>
         <li
-          class="jsx-1320563027"
+          class="jsx-1740087617"
           data-testid="servicesBlock_blockWrapper"
         >
           <p
-            class="jsx-1320563027"
+            class="jsx-1740087617 fontL"
           >
             Digital
           </p>
           <div
-            class="jsx-1320563027 backface"
+            class="jsx-1740087617 backface"
           >
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Campanhas paid search (google ads)
             </p>
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Gestão de plataformas de opinião
             </p>
@@ -128,117 +128,117 @@ exports[`<ServicesBlock /> renders properly 1`] = `
 exports[`<ServicesBlock /> renders properly in English 1`] = `
 <div>
   <section
-    class="jsx-1320563027 container"
+    class="jsx-1740087617 container"
     data-testid="servicesBlock_section"
   >
     <div
-      class="jsx-1320563027 wrapper genericMargins"
+      class="jsx-1740087617 wrapper genericMargins"
     >
       <h1
-        class="jsx-3953086084 colored"
+        class="jsx-1254015016 fontL colored"
       >
         Services
       </h1>
       <ul
-        class="jsx-1320563027"
+        class="jsx-1740087617"
       >
         <li
-          class="jsx-1320563027"
+          class="jsx-1740087617"
           data-testid="servicesBlock_blockWrapper"
         >
           <p
-            class="jsx-1320563027"
+            class="jsx-1740087617 fontL"
           >
             Design
           </p>
           <div
-            class="jsx-1320563027 backface"
+            class="jsx-1740087617 backface"
           >
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Web design
             </p>
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Outdoors & flyers
             </p>
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Contact card
             </p>
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Social Media templates
             </p>
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Menus
             </p>
           </div>
         </li>
         <li
-          class="jsx-1320563027"
+          class="jsx-1740087617"
           data-testid="servicesBlock_blockWrapper"
         >
           <p
-            class="jsx-1320563027"
+            class="jsx-1740087617 fontL"
           >
             Social Media
           </p>
           <div
-            class="jsx-1320563027 backface"
+            class="jsx-1740087617 backface"
           >
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Content creation
             </p>
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Market analysis
             </p>
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Social Media Strategy
             </p>
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Paid social
             </p>
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Consulting
             </p>
           </div>
         </li>
         <li
-          class="jsx-1320563027"
+          class="jsx-1740087617"
           data-testid="servicesBlock_blockWrapper"
         >
           <p
-            class="jsx-1320563027"
+            class="jsx-1740087617 fontL"
           >
             Digital
           </p>
           <div
-            class="jsx-1320563027 backface"
+            class="jsx-1740087617 backface"
           >
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Paid search campaigns (google ads)
             </p>
             <p
-              class="jsx-1320563027"
+              class="jsx-1740087617 fontXS"
             >
               - Opinion platforms management
             </p>
@@ -253,19 +253,19 @@ exports[`<ServicesBlock /> renders properly in English 1`] = `
 exports[`<ServicesBlock /> renders properly on mobile 1`] = `
 <div>
   <section
-    class="jsx-1320563027 container"
+    class="jsx-1740087617 container"
     data-testid="servicesBlock_section"
   >
     <div
-      class="jsx-1320563027 wrapper genericMargins"
+      class="jsx-1740087617 wrapper genericMargins"
     >
       <h1
-        class="jsx-3953086084 colored"
+        class="jsx-1254015016 fontL colored"
       >
         Serviços
       </h1>
       <div
-        class="jsx-3113037301 nukaCarouselContainer"
+        class="jsx-443661925 nukaCarouselContainer"
       >
         <div
           class="slider-container"
@@ -288,7 +288,7 @@ exports[`<ServicesBlock /> renders properly on mobile 1`] = `
             >
               <button
                 aria-label="previous slide"
-                class="jsx-3113037301 previousButton"
+                class="jsx-443661925 previousButton"
                 data-testid="nukaCarousel_previousSlideButton"
                 type="button"
               >
@@ -317,7 +317,7 @@ exports[`<ServicesBlock /> renders properly on mobile 1`] = `
             >
               <button
                 aria-label="next slide"
-                class="jsx-3113037301 nextButton"
+                class="jsx-443661925 nextButton"
                 data-testid="nukaCarousel_nextSlideButton"
                 type="button"
               >
@@ -353,39 +353,39 @@ exports[`<ServicesBlock /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-1320563027 carouselItem"
+                  class="jsx-1740087617 carouselItem"
                   data-testid="servicesBlock_blockCarousel"
                 >
                   <p
-                    class="jsx-1320563027"
+                    class="jsx-1740087617 fontL"
                   >
                     Design
                   </p>
                   <div
-                    class="jsx-1320563027 backface"
+                    class="jsx-1740087617 backface"
                   >
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Web design
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Cartazes & flyers
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Cartão de contacto
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Templates para Social Media
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Menus
                     </p>
@@ -397,39 +397,39 @@ exports[`<ServicesBlock /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-1320563027 carouselItem"
+                  class="jsx-1740087617 carouselItem"
                   data-testid="servicesBlock_blockCarousel"
                 >
                   <p
-                    class="jsx-1320563027"
+                    class="jsx-1740087617 fontL"
                   >
                     Social Media
                   </p>
                   <div
-                    class="jsx-1320563027 backface"
+                    class="jsx-1740087617 backface"
                   >
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Análises de mercado
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Estratégia e gestão de redes sociais
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Promoção de posts
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Consultoria
                     </p>
@@ -441,24 +441,24 @@ exports[`<ServicesBlock /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-1320563027 carouselItem"
+                  class="jsx-1740087617 carouselItem"
                   data-testid="servicesBlock_blockCarousel"
                 >
                   <p
-                    class="jsx-1320563027"
+                    class="jsx-1740087617 fontL"
                   >
                     Digital
                   </p>
                   <div
-                    class="jsx-1320563027 backface"
+                    class="jsx-1740087617 backface"
                   >
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Campanhas paid search (google ads)
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Gestão de plataformas de opinião
                     </p>
@@ -470,39 +470,39 @@ exports[`<ServicesBlock /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-1320563027 carouselItem"
+                  class="jsx-1740087617 carouselItem"
                   data-testid="servicesBlock_blockCarousel"
                 >
                   <p
-                    class="jsx-1320563027"
+                    class="jsx-1740087617 fontL"
                   >
                     Design
                   </p>
                   <div
-                    class="jsx-1320563027 backface"
+                    class="jsx-1740087617 backface"
                   >
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Web design
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Cartazes & flyers
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Cartão de contacto
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Templates para Social Media
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Menus
                     </p>
@@ -514,39 +514,39 @@ exports[`<ServicesBlock /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-1320563027 carouselItem"
+                  class="jsx-1740087617 carouselItem"
                   data-testid="servicesBlock_blockCarousel"
                 >
                   <p
-                    class="jsx-1320563027"
+                    class="jsx-1740087617 fontL"
                   >
                     Social Media
                   </p>
                   <div
-                    class="jsx-1320563027 backface"
+                    class="jsx-1740087617 backface"
                   >
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Análises de mercado
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Estratégia e gestão de redes sociais
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Promoção de posts
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Consultoria
                     </p>
@@ -558,24 +558,24 @@ exports[`<ServicesBlock /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-1320563027 carouselItem"
+                  class="jsx-1740087617 carouselItem"
                   data-testid="servicesBlock_blockCarousel"
                 >
                   <p
-                    class="jsx-1320563027"
+                    class="jsx-1740087617 fontL"
                   >
                     Digital
                   </p>
                   <div
-                    class="jsx-1320563027 backface"
+                    class="jsx-1740087617 backface"
                   >
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Campanhas paid search (google ads)
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Gestão de plataformas de opinião
                     </p>
@@ -587,39 +587,39 @@ exports[`<ServicesBlock /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-1320563027 carouselItem"
+                  class="jsx-1740087617 carouselItem"
                   data-testid="servicesBlock_blockCarousel"
                 >
                   <p
-                    class="jsx-1320563027"
+                    class="jsx-1740087617 fontL"
                   >
                     Design
                   </p>
                   <div
-                    class="jsx-1320563027 backface"
+                    class="jsx-1740087617 backface"
                   >
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Web design
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Cartazes & flyers
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Cartão de contacto
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Templates para Social Media
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Menus
                     </p>
@@ -631,39 +631,39 @@ exports[`<ServicesBlock /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-1320563027 carouselItem"
+                  class="jsx-1740087617 carouselItem"
                   data-testid="servicesBlock_blockCarousel"
                 >
                   <p
-                    class="jsx-1320563027"
+                    class="jsx-1740087617 fontL"
                   >
                     Social Media
                   </p>
                   <div
-                    class="jsx-1320563027 backface"
+                    class="jsx-1740087617 backface"
                   >
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Análises de mercado
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Estratégia e gestão de redes sociais
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Promoção de posts
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Consultoria
                     </p>
@@ -675,24 +675,24 @@ exports[`<ServicesBlock /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-1320563027 carouselItem"
+                  class="jsx-1740087617 carouselItem"
                   data-testid="servicesBlock_blockCarousel"
                 >
                   <p
-                    class="jsx-1320563027"
+                    class="jsx-1740087617 fontL"
                   >
                     Digital
                   </p>
                   <div
-                    class="jsx-1320563027 backface"
+                    class="jsx-1740087617 backface"
                   >
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Campanhas paid search (google ads)
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Gestão de plataformas de opinião
                     </p>
@@ -711,19 +711,19 @@ exports[`<ServicesBlock /> renders properly on mobile 1`] = `
 exports[`<ServicesBlock /> renders properly on tablet 1`] = `
 <div>
   <section
-    class="jsx-1320563027 container"
+    class="jsx-1740087617 container"
     data-testid="servicesBlock_section"
   >
     <div
-      class="jsx-1320563027 wrapper genericMargins"
+      class="jsx-1740087617 wrapper genericMargins"
     >
       <h1
-        class="jsx-3953086084 colored"
+        class="jsx-1254015016 fontL colored"
       >
         Serviços
       </h1>
       <div
-        class="jsx-2993345325 nukaCarouselContainer"
+        class="jsx-3311130813 nukaCarouselContainer"
       >
         <div
           class="slider-container"
@@ -746,7 +746,7 @@ exports[`<ServicesBlock /> renders properly on tablet 1`] = `
             >
               <button
                 aria-label="previous slide"
-                class="jsx-2993345325 previousButton"
+                class="jsx-3311130813 previousButton"
                 data-testid="nukaCarousel_previousSlideButton"
                 type="button"
               >
@@ -775,7 +775,7 @@ exports[`<ServicesBlock /> renders properly on tablet 1`] = `
             >
               <button
                 aria-label="next slide"
-                class="jsx-2993345325 nextButton"
+                class="jsx-3311130813 nextButton"
                 data-testid="nukaCarousel_nextSlideButton"
                 type="button"
               >
@@ -811,39 +811,39 @@ exports[`<ServicesBlock /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-1320563027 carouselItem"
+                  class="jsx-1740087617 carouselItem"
                   data-testid="servicesBlock_blockCarousel"
                 >
                   <p
-                    class="jsx-1320563027"
+                    class="jsx-1740087617 fontL"
                   >
                     Design
                   </p>
                   <div
-                    class="jsx-1320563027 backface"
+                    class="jsx-1740087617 backface"
                   >
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Web design
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Cartazes & flyers
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Cartão de contacto
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Templates para Social Media
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Menus
                     </p>
@@ -855,39 +855,39 @@ exports[`<ServicesBlock /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-1320563027 carouselItem"
+                  class="jsx-1740087617 carouselItem"
                   data-testid="servicesBlock_blockCarousel"
                 >
                   <p
-                    class="jsx-1320563027"
+                    class="jsx-1740087617 fontL"
                   >
                     Social Media
                   </p>
                   <div
-                    class="jsx-1320563027 backface"
+                    class="jsx-1740087617 backface"
                   >
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Análises de mercado
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Estratégia e gestão de redes sociais
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Promoção de posts
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Consultoria
                     </p>
@@ -899,24 +899,24 @@ exports[`<ServicesBlock /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-1320563027 carouselItem"
+                  class="jsx-1740087617 carouselItem"
                   data-testid="servicesBlock_blockCarousel"
                 >
                   <p
-                    class="jsx-1320563027"
+                    class="jsx-1740087617 fontL"
                   >
                     Digital
                   </p>
                   <div
-                    class="jsx-1320563027 backface"
+                    class="jsx-1740087617 backface"
                   >
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Campanhas paid search (google ads)
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Gestão de plataformas de opinião
                     </p>
@@ -928,39 +928,39 @@ exports[`<ServicesBlock /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-1320563027 carouselItem"
+                  class="jsx-1740087617 carouselItem"
                   data-testid="servicesBlock_blockCarousel"
                 >
                   <p
-                    class="jsx-1320563027"
+                    class="jsx-1740087617 fontL"
                   >
                     Design
                   </p>
                   <div
-                    class="jsx-1320563027 backface"
+                    class="jsx-1740087617 backface"
                   >
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Web design
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Cartazes & flyers
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Cartão de contacto
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Templates para Social Media
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Menus
                     </p>
@@ -972,39 +972,39 @@ exports[`<ServicesBlock /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-1320563027 carouselItem"
+                  class="jsx-1740087617 carouselItem"
                   data-testid="servicesBlock_blockCarousel"
                 >
                   <p
-                    class="jsx-1320563027"
+                    class="jsx-1740087617 fontL"
                   >
                     Social Media
                   </p>
                   <div
-                    class="jsx-1320563027 backface"
+                    class="jsx-1740087617 backface"
                   >
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Análises de mercado
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Estratégia e gestão de redes sociais
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Promoção de posts
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Consultoria
                     </p>
@@ -1016,24 +1016,24 @@ exports[`<ServicesBlock /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-1320563027 carouselItem"
+                  class="jsx-1740087617 carouselItem"
                   data-testid="servicesBlock_blockCarousel"
                 >
                   <p
-                    class="jsx-1320563027"
+                    class="jsx-1740087617 fontL"
                   >
                     Digital
                   </p>
                   <div
-                    class="jsx-1320563027 backface"
+                    class="jsx-1740087617 backface"
                   >
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Campanhas paid search (google ads)
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Gestão de plataformas de opinião
                     </p>
@@ -1045,39 +1045,39 @@ exports[`<ServicesBlock /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-1320563027 carouselItem"
+                  class="jsx-1740087617 carouselItem"
                   data-testid="servicesBlock_blockCarousel"
                 >
                   <p
-                    class="jsx-1320563027"
+                    class="jsx-1740087617 fontL"
                   >
                     Design
                   </p>
                   <div
-                    class="jsx-1320563027 backface"
+                    class="jsx-1740087617 backface"
                   >
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Web design
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Cartazes & flyers
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Cartão de contacto
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Templates para Social Media
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Menus
                     </p>
@@ -1089,39 +1089,39 @@ exports[`<ServicesBlock /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-1320563027 carouselItem"
+                  class="jsx-1740087617 carouselItem"
                   data-testid="servicesBlock_blockCarousel"
                 >
                   <p
-                    class="jsx-1320563027"
+                    class="jsx-1740087617 fontL"
                   >
                     Social Media
                   </p>
                   <div
-                    class="jsx-1320563027 backface"
+                    class="jsx-1740087617 backface"
                   >
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Análises de mercado
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Estratégia e gestão de redes sociais
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Promoção de posts
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Consultoria
                     </p>
@@ -1133,24 +1133,24 @@ exports[`<ServicesBlock /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-1320563027 carouselItem"
+                  class="jsx-1740087617 carouselItem"
                   data-testid="servicesBlock_blockCarousel"
                 >
                   <p
-                    class="jsx-1320563027"
+                    class="jsx-1740087617 fontL"
                   >
                     Digital
                   </p>
                   <div
-                    class="jsx-1320563027 backface"
+                    class="jsx-1740087617 backface"
                   >
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Campanhas paid search (google ads)
                     </p>
                     <p
-                      class="jsx-1320563027"
+                      class="jsx-1740087617 fontXS"
                     >
                       - Gestão de plataformas de opinião
                     </p>

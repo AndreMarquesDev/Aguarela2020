@@ -3,47 +3,47 @@
 exports[`<WelcomeBlock /> renders properly 1`] = `
 <div>
   <section
-    class="jsx-590009551 container"
+    class="jsx-1059500243 container"
     data-testid="welcome_section"
   >
     <div
-      class="jsx-590009551 wrapper genericMargins"
+      class="jsx-1059500243 wrapper genericMargins"
     >
       <div
-        class="jsx-590009551 titleBlock"
+        class="jsx-1059500243 titleBlock"
       >
         <strong
-          class="jsx-590009551"
+          class="jsx-1059500243 fontXXL"
         >
           Bem
         </strong>
         <strong
-          class="jsx-590009551"
+          class="jsx-1059500243 fontXXL"
         >
           Vin
         </strong>
         <strong
-          class="jsx-590009551"
+          class="jsx-1059500243 fontXXL"
         >
           Dos
         </strong>
       </div>
       <div
-        class="jsx-590009551 textBlock"
+        class="jsx-1059500243 textBlock"
       >
         <p
-          class="jsx-590009551 bodyText bodyText--white"
+          class="jsx-1059500243 bodyText bodyText--white"
           data-testid="textShadowBlock_textBlock1"
         >
           Juntámos a vontade de comunicar ao gosto por fotografar. A Aguarela Digital é uma agência de comunicação que tem como objetivo posicionar e fazer brilhar negócios locais e pequenas empresas no digital, desenvolvendo estratégias de comunicação adequadas às suas necessidades e objetivos.
         </p>
         <p
-          class="jsx-590009551 bodyText bodyText--white"
+          class="jsx-1059500243 bodyText bodyText--white"
         >
           Através do planeamento estratégico, criação de uma identidade visual, conteúdo de qualidade e implementação de campanhas digitais, a Aguarela dedica-se a todas as marcas como se fossem suas.
         </p>
         <p
-          class="jsx-590009551 bodyText bodyText--white"
+          class="jsx-1059500243 bodyText bodyText--white"
         >
           Do o início ao fim, fazemos o acompanhamento, monitorização e otimização de todo o processo e estratégia de gestão de redes sociais, campanhas paid social (Facebook e Instagram) e paid search (Google Ads), otimização de SEO, criação de conteúdo e consultoria.
         </p>
@@ -56,47 +56,47 @@ exports[`<WelcomeBlock /> renders properly 1`] = `
 exports[`<WelcomeBlock /> renders properly in English 1`] = `
 <div>
   <section
-    class="jsx-590009551 container"
+    class="jsx-1059500243 container"
     data-testid="welcome_section"
   >
     <div
-      class="jsx-590009551 wrapper genericMargins"
+      class="jsx-1059500243 wrapper genericMargins"
     >
       <div
-        class="jsx-590009551 titleBlock"
+        class="jsx-1059500243 titleBlock"
       >
         <strong
-          class="jsx-590009551"
+          class="jsx-1059500243 fontXXL"
         >
           Wel
         </strong>
         <strong
-          class="jsx-590009551"
+          class="jsx-1059500243 fontXXL"
         >
           Co
         </strong>
         <strong
-          class="jsx-590009551"
+          class="jsx-1059500243 fontXXL"
         >
           Me
         </strong>
       </div>
       <div
-        class="jsx-590009551 textBlock"
+        class="jsx-1059500243 textBlock"
       >
         <p
-          class="jsx-590009551 bodyText bodyText--white"
+          class="jsx-1059500243 bodyText bodyText--white"
           data-testid="textShadowBlock_textBlock1"
         >
           We meshed the desire to communicate with the passion for photography. Aguarela Digital is a communication agency that aims to position and make local and small businesses shine in the digital world, developing communication strategies suited to their needs and goals.
         </p>
         <p
-          class="jsx-590009551 bodyText bodyText--white"
+          class="jsx-1059500243 bodyText bodyText--white"
         >
           From start to finish we follow up, monitor and optimize the entire process and strategy of social media management, paid social campaigns (Facebook and Instagram) and paid search (Google Ads), SEO optimization, content creation and consulting.
         </p>
         <p
-          class="jsx-590009551 bodyText bodyText--white"
+          class="jsx-1059500243 bodyText bodyText--white"
         >
           Through strategic planning, creation of a visual identity, quality content and implementation of digital campaigns, Aguarela dedicates itself to all brands as if they were their own.
         </p>

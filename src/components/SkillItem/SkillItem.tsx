@@ -17,21 +17,18 @@ export const SkillItem = ({ icon, title, description }: SkillItemProps): JSX.Ele
             src={`/images/icons/${icon}.svg`}
             width={160}
         />
-        <strong>{title}</strong>
-        <p>{description}</p>
+        <strong className="fontM">{title}</strong>
+        <p className="fontXS">{description}</p>
 
         <style jsx>
             {`
-                @import './src/styles/_vars.scss';
-
                 strong {
-                    @include fontM($fontWeight: 500);
+                    font-weight: 500;
                     letter-spacing: 5rem;
                     margin: 40rem 0 15rem;
                 }
 
                 p {
-                    @include fontXS;
                     letter-spacing: 1rem;
                     line-height: 19rem;
                 }

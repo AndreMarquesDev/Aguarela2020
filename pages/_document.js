@@ -92,7 +92,7 @@ class MyDocument extends Document {
                     />
                     <link href="/images/logo.svg" rel="shortcut icon" type="image/x-icon" />
                 </Head>
-                <body>
+                <body className="fontS">
                     <Main />
                     <NextScript />
                 </body>

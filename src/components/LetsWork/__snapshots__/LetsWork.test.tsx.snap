@@ -3,30 +3,30 @@
 exports[`<LetsWork /> renders properly 1`] = `
 <div>
   <section
-    class="jsx-1811239983 container"
+    class="jsx-1496755344 container"
     data-testid="letsWork_section"
   >
     <div
-      class="jsx-1811239983 wrapper genericMargins"
+      class="jsx-1496755344 wrapper genericMargins"
     >
       <h1
-        class="jsx-3953086084 "
+        class="jsx-1254015016 fontL"
       >
         Vamos trabalhar juntos!
       </h1>
       <p
-        class="jsx-1811239983 bodyText bodyText--white"
+        class="jsx-1496755344 bodyText bodyText--white"
       >
         Precisa de ajuda com as redes sociais e marketing digital da sua marca ou negócio? Envie-me um email e vamos conversar. Estou disponível para ajudar a posicionar a sua marca no mundo digital.
       </p>
       <div
-        class="jsx-2566809609 buttonWrapper"
+        class="jsx-3983101691 buttonWrapper"
       >
         <div
-          class="jsx-2566809609 buttonBackground alignCenter"
+          class="jsx-3983101691 buttonBackground alignCenter"
         >
           <a
-            class="jsx-2566809609 button"
+            class="jsx-3983101691 button fontS"
             href="/pt/contact"
           >
             Contacto
@@ -41,30 +41,30 @@ exports[`<LetsWork /> renders properly 1`] = `
 exports[`<LetsWork /> renders properly in English 1`] = `
 <div>
   <section
-    class="jsx-1811239983 container"
+    class="jsx-1496755344 container"
     data-testid="letsWork_section"
   >
     <div
-      class="jsx-1811239983 wrapper genericMargins"
+      class="jsx-1496755344 wrapper genericMargins"
     >
       <h1
-        class="jsx-3953086084 "
+        class="jsx-1254015016 fontL"
       >
         Let's work together!
       </h1>
       <p
-        class="jsx-1811239983 bodyText bodyText--white"
+        class="jsx-1496755344 bodyText bodyText--white"
       >
         Need help with digital marketing and the social media of your brand or business? Send me an email and let's talk. I'm available to help position your brand in the digital world.
       </p>
       <div
-        class="jsx-2566809609 buttonWrapper"
+        class="jsx-3983101691 buttonWrapper"
       >
         <div
-          class="jsx-2566809609 buttonBackground alignCenter"
+          class="jsx-3983101691 buttonBackground alignCenter"
         >
           <a
-            class="jsx-2566809609 button"
+            class="jsx-3983101691 button fontS"
             href="/pt/contact"
           >
             Contact

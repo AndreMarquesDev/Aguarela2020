@@ -3,22 +3,22 @@
 exports[`<SkillsBlock /> renders properly 1`] = `
 <div>
   <section
-    class="jsx-3396351946 container"
+    class="jsx-2677502451 container"
     data-testid="skillsBlock_section"
   >
     <div
-      class="jsx-3396351946 wrapper genericMargins"
+      class="jsx-2677502451 wrapper genericMargins"
     >
       <h1
-        class="jsx-3953086084 colored"
+        class="jsx-1254015016 fontL colored"
       >
         Skills
       </h1>
       <ul
-        class="jsx-3396351946"
+        class="jsx-2677502451"
       >
         <li
-          class="jsx-3396351946"
+          class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
           <span
@@ -35,18 +35,18 @@ exports[`<SkillsBlock /> renders properly 1`] = `
             <noscript />
           </span>
           <strong
-            class="jsx-390248359"
+            class="jsx-1722958468 fontM"
           >
             Estratégia de Redes Sociais
           </strong>
           <p
-            class="jsx-390248359"
+            class="jsx-1722958468 fontXS"
           >
             Realizar uma auditoria e análise detalhada, com base nos insights e objetivos da marca, definindo em que redes sociais a marca deve estar presente e quais as oportunidades disponíveis.
           </p>
         </li>
         <li
-          class="jsx-3396351946"
+          class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
           <span
@@ -63,18 +63,18 @@ exports[`<SkillsBlock /> renders properly 1`] = `
             <noscript />
           </span>
           <strong
-            class="jsx-390248359"
+            class="jsx-1722958468 fontM"
           >
             Consultoria de Redes Sociais
           </strong>
           <p
-            class="jsx-390248359"
+            class="jsx-1722958468 fontXS"
           >
             Posso ajudar a sua equipa na forma como a marca está presente nas redes sociais, como comunica, como alcançar os objetivos pretendidos e como aproveitar as oportunidades disponíveis no mercado digital do seu negócio.
           </p>
         </li>
         <li
-          class="jsx-3396351946"
+          class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
           <span
@@ -91,18 +91,18 @@ exports[`<SkillsBlock /> renders properly 1`] = `
             <noscript />
           </span>
           <strong
-            class="jsx-390248359"
+            class="jsx-1722958468 fontM"
           >
             Gestão de Comunidade
           </strong>
           <p
-            class="jsx-390248359"
+            class="jsx-1722958468 fontXS"
           >
             Quando enviamos uma mensagem aos nossos amigos e eles demoram dias a responder-nos não é muito agradável e o mesmo acontece com as marcas. Faço gestão de comunidade, respondendo a mensagens e comentários da sua audiência em prazos toleráveis e ideais.
           </p>
         </li>
         <li
-          class="jsx-3396351946"
+          class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
           <span
@@ -119,18 +119,18 @@ exports[`<SkillsBlock /> renders properly 1`] = `
             <noscript />
           </span>
           <strong
-            class="jsx-390248359"
+            class="jsx-1722958468 fontM"
           >
             Paid Social e Search
           </strong>
           <p
-            class="jsx-390248359"
+            class="jsx-1722958468 fontXS"
           >
             Planeio, implemento e acompanho campanhas paid social (redes sociais) e campanhas paid search (anúncios no Google), otimizando os objetivos de marketing da sua marca ou negócio.
           </p>
         </li>
         <li
-          class="jsx-3396351946"
+          class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
           <span
@@ -147,18 +147,18 @@ exports[`<SkillsBlock /> renders properly 1`] = `
             <noscript />
           </span>
           <strong
-            class="jsx-390248359"
+            class="jsx-1722958468 fontM"
           >
             Análise e Otimização
           </strong>
           <p
-            class="jsx-390248359"
+            class="jsx-1722958468 fontXS"
           >
             Medir resultados de forma a otimizar a estratégia é a chave para uma presença de sucesso nas redes sociais. Em todos os meus projetos faço uma análise mensal detalhada de forma a existir uma adaptação contínua ao mercado e às exigências dos consumidores.
           </p>
         </li>
         <li
-          class="jsx-3396351946"
+          class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
           <span
@@ -175,12 +175,12 @@ exports[`<SkillsBlock /> renders properly 1`] = `
             <noscript />
           </span>
           <strong
-            class="jsx-390248359"
+            class="jsx-1722958468 fontM"
           >
             Criação de Conteúdo
           </strong>
           <p
-            class="jsx-390248359"
+            class="jsx-1722958468 fontXS"
           >
             Crio conteúdo (fotográfico, animado, design e vídeo) atrativo e relevante para os consumidores. Ao reunir insights de consumidores e know-how consigo saber o tipo de conteúdo que melhor funciona para cada negócio.
           </p>
@@ -194,22 +194,22 @@ exports[`<SkillsBlock /> renders properly 1`] = `
 exports[`<SkillsBlock /> renders properly in English 1`] = `
 <div>
   <section
-    class="jsx-3396351946 container"
+    class="jsx-2677502451 container"
     data-testid="skillsBlock_section"
   >
     <div
-      class="jsx-3396351946 wrapper genericMargins"
+      class="jsx-2677502451 wrapper genericMargins"
     >
       <h1
-        class="jsx-3953086084 colored"
+        class="jsx-1254015016 fontL colored"
       >
         Skills
       </h1>
       <ul
-        class="jsx-3396351946"
+        class="jsx-2677502451"
       >
         <li
-          class="jsx-3396351946"
+          class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
           <span
@@ -226,18 +226,18 @@ exports[`<SkillsBlock /> renders properly in English 1`] = `
             <noscript />
           </span>
           <strong
-            class="jsx-390248359"
+            class="jsx-1722958468 fontM"
           >
             Social Media strategy
           </strong>
           <p
-            class="jsx-390248359"
+            class="jsx-1722958468 fontXS"
           >
             Making audits and detailed analysis, based on the brand's insights and goals, deciding in what social networks the brand should be present in and what are the available opportunities.
           </p>
         </li>
         <li
-          class="jsx-3396351946"
+          class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
           <span
@@ -254,18 +254,18 @@ exports[`<SkillsBlock /> renders properly in English 1`] = `
             <noscript />
           </span>
           <strong
-            class="jsx-390248359"
+            class="jsx-1722958468 fontM"
           >
             Social Media consulting
           </strong>
           <p
-            class="jsx-390248359"
+            class="jsx-1722958468 fontXS"
           >
             I can help your team in the way your brand is present on social media, how it communicates, how to achieve the intended goals and how to take advantage of the opportunities available in the digital market of your business.
           </p>
         </li>
         <li
-          class="jsx-3396351946"
+          class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
           <span
@@ -282,18 +282,18 @@ exports[`<SkillsBlock /> renders properly in English 1`] = `
             <noscript />
           </span>
           <strong
-            class="jsx-390248359"
+            class="jsx-1722958468 fontM"
           >
             Community Management
           </strong>
           <p
-            class="jsx-390248359"
+            class="jsx-1722958468 fontXS"
           >
             When we send a message to our friends and they take days to answer us it is not very pleasant and the same is true with brands. I do community management, responding to messages and comments from your audience within tolerable and ideal deadlines.
           </p>
         </li>
         <li
-          class="jsx-3396351946"
+          class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
           <span
@@ -310,18 +310,18 @@ exports[`<SkillsBlock /> renders properly in English 1`] = `
             <noscript />
           </span>
           <strong
-            class="jsx-390248359"
+            class="jsx-1722958468 fontM"
           >
             Paid Social and Search
           </strong>
           <p
-            class="jsx-390248359"
+            class="jsx-1722958468 fontXS"
           >
             I plan, implement and monitor paid social campaigns (social media) and paid search campaigns (ads on Google), optimizing the marketing objectives of your brand or business.
           </p>
         </li>
         <li
-          class="jsx-3396351946"
+          class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
           <span
@@ -338,18 +338,18 @@ exports[`<SkillsBlock /> renders properly in English 1`] = `
             <noscript />
           </span>
           <strong
-            class="jsx-390248359"
+            class="jsx-1722958468 fontM"
           >
             Optimization and Analysis
           </strong>
           <p
-            class="jsx-390248359"
+            class="jsx-1722958468 fontXS"
           >
             Measuring results in order to optimize the strategy is the key to a successful presence on social media. In all my projects I do a detailed monthly analysis so that there is a continuous adaptation to the market and to the demands of consumers.
           </p>
         </li>
         <li
-          class="jsx-3396351946"
+          class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
           <span
@@ -366,12 +366,12 @@ exports[`<SkillsBlock /> renders properly in English 1`] = `
             <noscript />
           </span>
           <strong
-            class="jsx-390248359"
+            class="jsx-1722958468 fontM"
           >
             Content creation
           </strong>
           <p
-            class="jsx-390248359"
+            class="jsx-1722958468 fontXS"
           >
             I create attractive and relevant content to consumers (photographic, animated, design and video). By gathering consumer insights and know-how, I know the type of content that works best for each business.
           </p>
@@ -385,19 +385,19 @@ exports[`<SkillsBlock /> renders properly in English 1`] = `
 exports[`<SkillsBlock /> renders properly on mobile 1`] = `
 <div>
   <section
-    class="jsx-3396351946 container"
+    class="jsx-2677502451 container"
     data-testid="skillsBlock_section"
   >
     <div
-      class="jsx-3396351946 wrapper genericMargins"
+      class="jsx-2677502451 wrapper genericMargins"
     >
       <h1
-        class="jsx-3953086084 colored"
+        class="jsx-1254015016 fontL colored"
       >
         Skills
       </h1>
       <div
-        class="jsx-3113037301 nukaCarouselContainer"
+        class="jsx-443661925 nukaCarouselContainer"
       >
         <div
           class="slider-container"
@@ -420,7 +420,7 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
             >
               <button
                 aria-label="previous slide"
-                class="jsx-3113037301 previousButton"
+                class="jsx-443661925 previousButton"
                 data-testid="nukaCarousel_previousSlideButton"
                 type="button"
               >
@@ -449,7 +449,7 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
             >
               <button
                 aria-label="next slide"
-                class="jsx-3113037301 nextButton"
+                class="jsx-443661925 nextButton"
                 data-testid="nukaCarousel_nextSlideButton"
                 type="button"
               >
@@ -485,7 +485,7 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -503,12 +503,12 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Estratégia de Redes Sociais
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Realizar uma auditoria e análise detalhada, com base nos insights e objetivos da marca, definindo em que redes sociais a marca deve estar presente e quais as oportunidades disponíveis.
                   </p>
@@ -519,7 +519,7 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -537,12 +537,12 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Consultoria de Redes Sociais
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Posso ajudar a sua equipa na forma como a marca está presente nas redes sociais, como comunica, como alcançar os objetivos pretendidos e como aproveitar as oportunidades disponíveis no mercado digital do seu negócio.
                   </p>
@@ -553,7 +553,7 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -571,12 +571,12 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Gestão de Comunidade
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Quando enviamos uma mensagem aos nossos amigos e eles demoram dias a responder-nos não é muito agradável e o mesmo acontece com as marcas. Faço gestão de comunidade, respondendo a mensagens e comentários da sua audiência em prazos toleráveis e ideais.
                   </p>
@@ -587,7 +587,7 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -605,12 +605,12 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Paid Social e Search
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Planeio, implemento e acompanho campanhas paid social (redes sociais) e campanhas paid search (anúncios no Google), otimizando os objetivos de marketing da sua marca ou negócio.
                   </p>
@@ -621,7 +621,7 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -639,12 +639,12 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Análise e Otimização
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Medir resultados de forma a otimizar a estratégia é a chave para uma presença de sucesso nas redes sociais. Em todos os meus projetos faço uma análise mensal detalhada de forma a existir uma adaptação contínua ao mercado e às exigências dos consumidores.
                   </p>
@@ -655,7 +655,7 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -673,12 +673,12 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Criação de Conteúdo
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Crio conteúdo (fotográfico, animado, design e vídeo) atrativo e relevante para os consumidores. Ao reunir insights de consumidores e know-how consigo saber o tipo de conteúdo que melhor funciona para cada negócio.
                   </p>
@@ -689,7 +689,7 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -707,12 +707,12 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Estratégia de Redes Sociais
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Realizar uma auditoria e análise detalhada, com base nos insights e objetivos da marca, definindo em que redes sociais a marca deve estar presente e quais as oportunidades disponíveis.
                   </p>
@@ -723,7 +723,7 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -741,12 +741,12 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Consultoria de Redes Sociais
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Posso ajudar a sua equipa na forma como a marca está presente nas redes sociais, como comunica, como alcançar os objetivos pretendidos e como aproveitar as oportunidades disponíveis no mercado digital do seu negócio.
                   </p>
@@ -757,7 +757,7 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -775,12 +775,12 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Gestão de Comunidade
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Quando enviamos uma mensagem aos nossos amigos e eles demoram dias a responder-nos não é muito agradável e o mesmo acontece com as marcas. Faço gestão de comunidade, respondendo a mensagens e comentários da sua audiência em prazos toleráveis e ideais.
                   </p>
@@ -791,7 +791,7 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -809,12 +809,12 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Paid Social e Search
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Planeio, implemento e acompanho campanhas paid social (redes sociais) e campanhas paid search (anúncios no Google), otimizando os objetivos de marketing da sua marca ou negócio.
                   </p>
@@ -825,7 +825,7 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -843,12 +843,12 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Análise e Otimização
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Medir resultados de forma a otimizar a estratégia é a chave para uma presença de sucesso nas redes sociais. Em todos os meus projetos faço uma análise mensal detalhada de forma a existir uma adaptação contínua ao mercado e às exigências dos consumidores.
                   </p>
@@ -859,7 +859,7 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -877,12 +877,12 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Criação de Conteúdo
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Crio conteúdo (fotográfico, animado, design e vídeo) atrativo e relevante para os consumidores. Ao reunir insights de consumidores e know-how consigo saber o tipo de conteúdo que melhor funciona para cada negócio.
                   </p>
@@ -893,7 +893,7 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -911,12 +911,12 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Estratégia de Redes Sociais
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Realizar uma auditoria e análise detalhada, com base nos insights e objetivos da marca, definindo em que redes sociais a marca deve estar presente e quais as oportunidades disponíveis.
                   </p>
@@ -927,7 +927,7 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -945,12 +945,12 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Consultoria de Redes Sociais
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Posso ajudar a sua equipa na forma como a marca está presente nas redes sociais, como comunica, como alcançar os objetivos pretendidos e como aproveitar as oportunidades disponíveis no mercado digital do seu negócio.
                   </p>
@@ -961,7 +961,7 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -979,12 +979,12 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Gestão de Comunidade
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Quando enviamos uma mensagem aos nossos amigos e eles demoram dias a responder-nos não é muito agradável e o mesmo acontece com as marcas. Faço gestão de comunidade, respondendo a mensagens e comentários da sua audiência em prazos toleráveis e ideais.
                   </p>
@@ -995,7 +995,7 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -1013,12 +1013,12 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Paid Social e Search
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Planeio, implemento e acompanho campanhas paid social (redes sociais) e campanhas paid search (anúncios no Google), otimizando os objetivos de marketing da sua marca ou negócio.
                   </p>
@@ -1029,7 +1029,7 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -1047,12 +1047,12 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Análise e Otimização
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Medir resultados de forma a otimizar a estratégia é a chave para uma presença de sucesso nas redes sociais. Em todos os meus projetos faço uma análise mensal detalhada de forma a existir uma adaptação contínua ao mercado e às exigências dos consumidores.
                   </p>
@@ -1063,7 +1063,7 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -1081,12 +1081,12 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Criação de Conteúdo
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Crio conteúdo (fotográfico, animado, design e vídeo) atrativo e relevante para os consumidores. Ao reunir insights de consumidores e know-how consigo saber o tipo de conteúdo que melhor funciona para cada negócio.
                   </p>
@@ -1104,19 +1104,19 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
 exports[`<SkillsBlock /> renders properly on tablet 1`] = `
 <div>
   <section
-    class="jsx-3396351946 container"
+    class="jsx-2677502451 container"
     data-testid="skillsBlock_section"
   >
     <div
-      class="jsx-3396351946 wrapper genericMargins"
+      class="jsx-2677502451 wrapper genericMargins"
     >
       <h1
-        class="jsx-3953086084 colored"
+        class="jsx-1254015016 fontL colored"
       >
         Skills
       </h1>
       <div
-        class="jsx-2993345325 nukaCarouselContainer"
+        class="jsx-3311130813 nukaCarouselContainer"
       >
         <div
           class="slider-container"
@@ -1139,7 +1139,7 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
             >
               <button
                 aria-label="previous slide"
-                class="jsx-2993345325 previousButton"
+                class="jsx-3311130813 previousButton"
                 data-testid="nukaCarousel_previousSlideButton"
                 type="button"
               >
@@ -1168,7 +1168,7 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
             >
               <button
                 aria-label="next slide"
-                class="jsx-2993345325 nextButton"
+                class="jsx-3311130813 nextButton"
                 data-testid="nukaCarousel_nextSlideButton"
                 type="button"
               >
@@ -1204,7 +1204,7 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -1222,12 +1222,12 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Estratégia de Redes Sociais
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Realizar uma auditoria e análise detalhada, com base nos insights e objetivos da marca, definindo em que redes sociais a marca deve estar presente e quais as oportunidades disponíveis.
                   </p>
@@ -1238,7 +1238,7 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -1256,12 +1256,12 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Consultoria de Redes Sociais
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Posso ajudar a sua equipa na forma como a marca está presente nas redes sociais, como comunica, como alcançar os objetivos pretendidos e como aproveitar as oportunidades disponíveis no mercado digital do seu negócio.
                   </p>
@@ -1272,7 +1272,7 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -1290,12 +1290,12 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Gestão de Comunidade
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Quando enviamos uma mensagem aos nossos amigos e eles demoram dias a responder-nos não é muito agradável e o mesmo acontece com as marcas. Faço gestão de comunidade, respondendo a mensagens e comentários da sua audiência em prazos toleráveis e ideais.
                   </p>
@@ -1306,7 +1306,7 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -1324,12 +1324,12 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Paid Social e Search
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Planeio, implemento e acompanho campanhas paid social (redes sociais) e campanhas paid search (anúncios no Google), otimizando os objetivos de marketing da sua marca ou negócio.
                   </p>
@@ -1340,7 +1340,7 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -1358,12 +1358,12 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Análise e Otimização
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Medir resultados de forma a otimizar a estratégia é a chave para uma presença de sucesso nas redes sociais. Em todos os meus projetos faço uma análise mensal detalhada de forma a existir uma adaptação contínua ao mercado e às exigências dos consumidores.
                   </p>
@@ -1374,7 +1374,7 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -1392,12 +1392,12 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Criação de Conteúdo
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Crio conteúdo (fotográfico, animado, design e vídeo) atrativo e relevante para os consumidores. Ao reunir insights de consumidores e know-how consigo saber o tipo de conteúdo que melhor funciona para cada negócio.
                   </p>
@@ -1408,7 +1408,7 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -1426,12 +1426,12 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Estratégia de Redes Sociais
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Realizar uma auditoria e análise detalhada, com base nos insights e objetivos da marca, definindo em que redes sociais a marca deve estar presente e quais as oportunidades disponíveis.
                   </p>
@@ -1442,7 +1442,7 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -1460,12 +1460,12 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Consultoria de Redes Sociais
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Posso ajudar a sua equipa na forma como a marca está presente nas redes sociais, como comunica, como alcançar os objetivos pretendidos e como aproveitar as oportunidades disponíveis no mercado digital do seu negócio.
                   </p>
@@ -1476,7 +1476,7 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -1494,12 +1494,12 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Gestão de Comunidade
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Quando enviamos uma mensagem aos nossos amigos e eles demoram dias a responder-nos não é muito agradável e o mesmo acontece com as marcas. Faço gestão de comunidade, respondendo a mensagens e comentários da sua audiência em prazos toleráveis e ideais.
                   </p>
@@ -1510,7 +1510,7 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -1528,12 +1528,12 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Paid Social e Search
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Planeio, implemento e acompanho campanhas paid social (redes sociais) e campanhas paid search (anúncios no Google), otimizando os objetivos de marketing da sua marca ou negócio.
                   </p>
@@ -1544,7 +1544,7 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -1562,12 +1562,12 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Análise e Otimização
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Medir resultados de forma a otimizar a estratégia é a chave para uma presença de sucesso nas redes sociais. Em todos os meus projetos faço uma análise mensal detalhada de forma a existir uma adaptação contínua ao mercado e às exigências dos consumidores.
                   </p>
@@ -1578,7 +1578,7 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -1596,12 +1596,12 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Criação de Conteúdo
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Crio conteúdo (fotográfico, animado, design e vídeo) atrativo e relevante para os consumidores. Ao reunir insights de consumidores e know-how consigo saber o tipo de conteúdo que melhor funciona para cada negócio.
                   </p>
@@ -1612,7 +1612,7 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -1630,12 +1630,12 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Estratégia de Redes Sociais
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Realizar uma auditoria e análise detalhada, com base nos insights e objetivos da marca, definindo em que redes sociais a marca deve estar presente e quais as oportunidades disponíveis.
                   </p>
@@ -1646,7 +1646,7 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -1664,12 +1664,12 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Consultoria de Redes Sociais
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Posso ajudar a sua equipa na forma como a marca está presente nas redes sociais, como comunica, como alcançar os objetivos pretendidos e como aproveitar as oportunidades disponíveis no mercado digital do seu negócio.
                   </p>
@@ -1680,7 +1680,7 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -1698,12 +1698,12 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Gestão de Comunidade
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Quando enviamos uma mensagem aos nossos amigos e eles demoram dias a responder-nos não é muito agradável e o mesmo acontece com as marcas. Faço gestão de comunidade, respondendo a mensagens e comentários da sua audiência em prazos toleráveis e ideais.
                   </p>
@@ -1714,7 +1714,7 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -1732,12 +1732,12 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Paid Social e Search
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Planeio, implemento e acompanho campanhas paid social (redes sociais) e campanhas paid search (anúncios no Google), otimizando os objetivos de marketing da sua marca ou negócio.
                   </p>
@@ -1748,7 +1748,7 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -1766,12 +1766,12 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Análise e Otimização
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Medir resultados de forma a otimizar a estratégia é a chave para uma presença de sucesso nas redes sociais. Em todos os meus projetos faço uma análise mensal detalhada de forma a existir uma adaptação contínua ao mercado e às exigências dos consumidores.
                   </p>
@@ -1782,7 +1782,7 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                 style="width: 5.555555555555555%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-3396351946 carouselItem"
+                  class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
                   <span
@@ -1800,12 +1800,12 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                     <noscript />
                   </span>
                   <strong
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontM"
                   >
                     Criação de Conteúdo
                   </strong>
                   <p
-                    class="jsx-390248359"
+                    class="jsx-1722958468 fontXS"
                   >
                     Crio conteúdo (fotográfico, animado, design e vídeo) atrativo e relevante para os consumidores. Ao reunir insights de consumidores e know-how consigo saber o tipo de conteúdo que melhor funciona para cada negócio.
                   </p>

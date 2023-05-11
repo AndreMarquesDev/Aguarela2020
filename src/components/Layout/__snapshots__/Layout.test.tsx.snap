@@ -3,17 +3,17 @@
 exports[`<Layout /> renders properly 1`] = `
 <div>
   <main
-    class="jsx-2984514796 layout"
+    class="jsx-1819645925 layout"
   >
     <header
-      class="jsx-305311397"
+      class="jsx-2405765474"
       data-testid="header_section"
     >
       <nav
-        class="jsx-305311397 wrapper"
+        class="jsx-2405765474 wrapper"
       >
         <a
-          class="jsx-305311397"
+          class="jsx-2405765474"
           data-testid="header_homepageLogoLink"
           href="/pt/homepage"
         >
@@ -41,53 +41,53 @@ exports[`<Layout /> renders properly 1`] = `
           </span>
         </a>
         <ul
-          class="jsx-3774647450 "
+          class="jsx-2853090894 "
         >
           <li
-            class="jsx-3774647450"
+            class="jsx-2853090894"
           >
             <a
-              class="jsx-3774647450 "
+              class="jsx-2853090894 fontS"
               href="/pt/about"
             >
               Sobre
             </a>
           </li>
           <li
-            class="jsx-3774647450"
+            class="jsx-2853090894"
           >
             <a
-              class="jsx-3774647450 "
+              class="jsx-2853090894 fontS"
               href="/pt/projects"
             >
               Projetos
             </a>
           </li>
           <li
-            class="jsx-3774647450"
+            class="jsx-2853090894"
           >
             <a
-              class="jsx-3774647450 "
+              class="jsx-2853090894 fontS"
               href="/pt/services"
             >
               Serviços
             </a>
           </li>
           <li
-            class="jsx-3774647450"
+            class="jsx-2853090894"
           >
             <a
-              class="jsx-3774647450 "
+              class="jsx-2853090894 fontS"
               href="/pt/contact"
             >
               Contacto
             </a>
           </li>
           <li
-            class="jsx-3774647450 languageButton"
+            class="jsx-2853090894 languageButton fontXXS"
           >
             <button
-              class="jsx-1287059343"
+              class="jsx-2866958827"
               type="button"
             >
               pt
@@ -96,13 +96,13 @@ exports[`<Layout /> renders properly 1`] = `
         </ul>
         <i
           aria-label="toggle menu"
-          class="jsx-291958763 menuIcon hidden"
+          class="jsx-2079322113 menuIcon hidden"
           data-testid="menuIcon_button"
           role="button"
           tabindex="0"
         >
           <span
-            class="jsx-291958763"
+            class="jsx-2079322113"
           />
         </i>
       </nav>
@@ -113,19 +113,19 @@ exports[`<Layout /> renders properly 1`] = `
       </p>
     </div>
     <footer
-      class="jsx-3759189073"
+      class="jsx-3092902157"
       data-testid="footer_section"
     >
       <div
-        class="jsx-3759189073 wrapper"
+        class="jsx-3092902157 wrapper"
       >
         <p
-          class="jsx-3759189073"
+          class="jsx-3092902157 fontXS"
         >
           Aguarela Digital - Developed by
            
           <a
-            class="jsx-3759189073 animatedLink animatedLinkWhite"
+            class="jsx-3092902157 animatedLink animatedLinkWhite"
             href="https://www.andremarquesdev.com"
             rel="noreferrer"
             target="_blank"
@@ -134,14 +134,14 @@ exports[`<Layout /> renders properly 1`] = `
           </a>
         </p>
         <ul
-          class="jsx-3759189073"
+          class="jsx-3092902157"
         >
           <li
-            class="jsx-3759189073"
+            class="jsx-3092902157"
           >
             <a
               aria-label="Aguarela instagram"
-              class="jsx-3759189073"
+              class="jsx-3092902157"
               href="https://www.instagram.com/aguareladigital/"
               rel="noreferrer"
               target="_blank"
@@ -162,11 +162,11 @@ exports[`<Layout /> renders properly 1`] = `
             </a>
           </li>
           <li
-            class="jsx-3759189073"
+            class="jsx-3092902157"
           >
             <a
               aria-label="Aguarela facebook"
-              class="jsx-3759189073"
+              class="jsx-3092902157"
               href="https://www.facebook.com/aguareladigitalpt"
               rel="noreferrer"
               target="_blank"
@@ -187,11 +187,11 @@ exports[`<Layout /> renders properly 1`] = `
             </a>
           </li>
           <li
-            class="jsx-3759189073"
+            class="jsx-3092902157"
           >
             <a
               aria-label="Go to contact page"
-              class="jsx-3759189073"
+              class="jsx-3092902157"
               href="/pt/contact"
             >
               <svg
@@ -219,17 +219,17 @@ exports[`<Layout /> renders properly 1`] = `
 exports[`<Layout /> renders properly in English 1`] = `
 <div>
   <main
-    class="jsx-2984514796 layout"
+    class="jsx-1819645925 layout"
   >
     <header
-      class="jsx-305311397"
+      class="jsx-2405765474"
       data-testid="header_section"
     >
       <nav
-        class="jsx-305311397 wrapper"
+        class="jsx-2405765474 wrapper"
       >
         <a
-          class="jsx-305311397"
+          class="jsx-2405765474"
           data-testid="header_homepageLogoLink"
           href="/en/homepage"
         >
@@ -257,53 +257,53 @@ exports[`<Layout /> renders properly in English 1`] = `
           </span>
         </a>
         <ul
-          class="jsx-3774647450 mobileLayout"
+          class="jsx-2853090894 mobileLayout"
         >
           <li
-            class="jsx-3774647450"
+            class="jsx-2853090894"
           >
             <a
-              class="jsx-3774647450 "
+              class="jsx-2853090894 fontS"
               href="/en/about"
             >
               About
             </a>
           </li>
           <li
-            class="jsx-3774647450"
+            class="jsx-2853090894"
           >
             <a
-              class="jsx-3774647450 "
+              class="jsx-2853090894 fontS"
               href="/en/projects"
             >
               Projects
             </a>
           </li>
           <li
-            class="jsx-3774647450"
+            class="jsx-2853090894"
           >
             <a
-              class="jsx-3774647450 "
+              class="jsx-2853090894 fontS"
               href="/en/services"
             >
               Services
             </a>
           </li>
           <li
-            class="jsx-3774647450"
+            class="jsx-2853090894"
           >
             <a
-              class="jsx-3774647450 "
+              class="jsx-2853090894 fontS"
               href="/en/contact"
             >
               Contact
             </a>
           </li>
           <li
-            class="jsx-3774647450 languageButton white"
+            class="jsx-2853090894 languageButton fontXXS white fontXS"
           >
             <button
-              class="jsx-1287059343"
+              class="jsx-2866958827"
               type="button"
             >
               pt
@@ -312,13 +312,13 @@ exports[`<Layout /> renders properly in English 1`] = `
         </ul>
         <i
           aria-label="toggle menu"
-          class="jsx-291958763 menuIcon"
+          class="jsx-2079322113 menuIcon"
           data-testid="menuIcon_button"
           role="button"
           tabindex="0"
         >
           <span
-            class="jsx-291958763"
+            class="jsx-2079322113"
           />
         </i>
       </nav>
@@ -329,19 +329,19 @@ exports[`<Layout /> renders properly in English 1`] = `
       </p>
     </div>
     <footer
-      class="jsx-3759189073"
+      class="jsx-3092902157"
       data-testid="footer_section"
     >
       <div
-        class="jsx-3759189073 wrapper"
+        class="jsx-3092902157 wrapper"
       >
         <p
-          class="jsx-3759189073"
+          class="jsx-3092902157 fontXS"
         >
           Aguarela Digital - Developed by
            
           <a
-            class="jsx-3759189073 animatedLink animatedLinkWhite"
+            class="jsx-3092902157 animatedLink animatedLinkWhite"
             href="https://www.andremarquesdev.com"
             rel="noreferrer"
             target="_blank"
@@ -350,14 +350,14 @@ exports[`<Layout /> renders properly in English 1`] = `
           </a>
         </p>
         <ul
-          class="jsx-3759189073"
+          class="jsx-3092902157"
         >
           <li
-            class="jsx-3759189073"
+            class="jsx-3092902157"
           >
             <a
               aria-label="Aguarela instagram"
-              class="jsx-3759189073"
+              class="jsx-3092902157"
               href="https://www.instagram.com/aguareladigital/"
               rel="noreferrer"
               target="_blank"
@@ -378,11 +378,11 @@ exports[`<Layout /> renders properly in English 1`] = `
             </a>
           </li>
           <li
-            class="jsx-3759189073"
+            class="jsx-3092902157"
           >
             <a
               aria-label="Aguarela facebook"
-              class="jsx-3759189073"
+              class="jsx-3092902157"
               href="https://www.facebook.com/aguareladigitalpt"
               rel="noreferrer"
               target="_blank"
@@ -403,11 +403,11 @@ exports[`<Layout /> renders properly in English 1`] = `
             </a>
           </li>
           <li
-            class="jsx-3759189073"
+            class="jsx-3092902157"
           >
             <a
               aria-label="Go to contact page"
-              class="jsx-3759189073"
+              class="jsx-3092902157"
               href="/en/contact"
             >
               <svg
@@ -435,17 +435,17 @@ exports[`<Layout /> renders properly in English 1`] = `
 exports[`<Layout /> renders properly when the menu is open and the resolution is lower than desktop 1`] = `
 <div>
   <main
-    class="jsx-2984514796 layout menuOpen"
+    class="jsx-1819645925 layout menuOpen"
   >
     <header
-      class="jsx-305311397"
+      class="jsx-2405765474"
       data-testid="header_section"
     >
       <nav
-        class="jsx-305311397 wrapper"
+        class="jsx-2405765474 wrapper"
       >
         <a
-          class="jsx-305311397"
+          class="jsx-2405765474"
           data-testid="header_homepageLogoLink"
           href="/pt/homepage"
         >
@@ -473,53 +473,53 @@ exports[`<Layout /> renders properly when the menu is open and the resolution is
           </span>
         </a>
         <ul
-          class="jsx-3774647450 mobileLayout menuOpen"
+          class="jsx-2853090894 mobileLayout menuOpen"
         >
           <li
-            class="jsx-3774647450"
+            class="jsx-2853090894"
           >
             <a
-              class="jsx-3774647450 "
+              class="jsx-2853090894 fontS"
               href="/pt/about"
             >
               Sobre
             </a>
           </li>
           <li
-            class="jsx-3774647450"
+            class="jsx-2853090894"
           >
             <a
-              class="jsx-3774647450 "
+              class="jsx-2853090894 fontS"
               href="/pt/projects"
             >
               Projetos
             </a>
           </li>
           <li
-            class="jsx-3774647450"
+            class="jsx-2853090894"
           >
             <a
-              class="jsx-3774647450 "
+              class="jsx-2853090894 fontS"
               href="/pt/services"
             >
               Serviços
             </a>
           </li>
           <li
-            class="jsx-3774647450"
+            class="jsx-2853090894"
           >
             <a
-              class="jsx-3774647450 "
+              class="jsx-2853090894 fontS"
               href="/pt/contact"
             >
               Contacto
             </a>
           </li>
           <li
-            class="jsx-3774647450 languageButton white"
+            class="jsx-2853090894 languageButton fontXXS white fontXS"
           >
             <button
-              class="jsx-1287059343"
+              class="jsx-2866958827"
               type="button"
             >
               pt
@@ -528,13 +528,13 @@ exports[`<Layout /> renders properly when the menu is open and the resolution is
         </ul>
         <i
           aria-label="toggle menu"
-          class="jsx-291958763 menuIcon open"
+          class="jsx-2079322113 menuIcon open"
           data-testid="menuIcon_button"
           role="button"
           tabindex="0"
         >
           <span
-            class="jsx-291958763"
+            class="jsx-2079322113"
           />
         </i>
       </nav>
@@ -545,19 +545,19 @@ exports[`<Layout /> renders properly when the menu is open and the resolution is
       </p>
     </div>
     <footer
-      class="jsx-3759189073"
+      class="jsx-3092902157"
       data-testid="footer_section"
     >
       <div
-        class="jsx-3759189073 wrapper"
+        class="jsx-3092902157 wrapper"
       >
         <p
-          class="jsx-3759189073"
+          class="jsx-3092902157 fontXS"
         >
           Aguarela Digital - Developed by
            
           <a
-            class="jsx-3759189073 animatedLink animatedLinkWhite"
+            class="jsx-3092902157 animatedLink animatedLinkWhite"
             href="https://www.andremarquesdev.com"
             rel="noreferrer"
             target="_blank"
@@ -566,14 +566,14 @@ exports[`<Layout /> renders properly when the menu is open and the resolution is
           </a>
         </p>
         <ul
-          class="jsx-3759189073"
+          class="jsx-3092902157"
         >
           <li
-            class="jsx-3759189073"
+            class="jsx-3092902157"
           >
             <a
               aria-label="Aguarela instagram"
-              class="jsx-3759189073"
+              class="jsx-3092902157"
               href="https://www.instagram.com/aguareladigital/"
               rel="noreferrer"
               target="_blank"
@@ -594,11 +594,11 @@ exports[`<Layout /> renders properly when the menu is open and the resolution is
             </a>
           </li>
           <li
-            class="jsx-3759189073"
+            class="jsx-3092902157"
           >
             <a
               aria-label="Aguarela facebook"
-              class="jsx-3759189073"
+              class="jsx-3092902157"
               href="https://www.facebook.com/aguareladigitalpt"
               rel="noreferrer"
               target="_blank"
@@ -619,11 +619,11 @@ exports[`<Layout /> renders properly when the menu is open and the resolution is
             </a>
           </li>
           <li
-            class="jsx-3759189073"
+            class="jsx-3092902157"
           >
             <a
               aria-label="Go to contact page"
-              class="jsx-3759189073"
+              class="jsx-3092902157"
               href="/pt/contact"
             >
               <svg

@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React from 'react';
 
 export interface TitleProps {
@@ -8,20 +9,20 @@ export interface TitleProps {
 
 export const Title = ({ text, colored, marginBottom }: TitleProps): JSX.Element => (
     <>
-        <h1 className={colored ? 'colored' : ''}>{text}</h1>
+        <h1 className={classNames('fontL', colored ? 'colored' : '')}>{text}</h1>
 
         <style jsx>
             {`
-                @import './src/styles/_vars.scss';
-
                 h1 {
-                    @include fontL($white, uppercase, bold);
+                    color: var(--white);
+                    text-transform: uppercase;
+                    font-weight: bold;
                     text-align: center;
                     margin-bottom: ${marginBottom || 50}rem;
                 }
 
                 .colored {
-                    color: $pink;
+                    color: var(--pink);
                 }
             `}
         </style>

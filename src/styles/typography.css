@@ -1,0 +1,61 @@
+
+:root {
+    --fontSizeXXL: 150rem;
+    --fontSizeXL: 80rem;
+    --fontSizeL: 40rem;
+    --fontSizeM: 24rem;
+    --fontSizeS: 20rem;
+    --fontSizeXS: 14rem;
+    --fontSizeXXS: 10rem;
+
+    --lineHeightXXL: 140rem;
+    --lineHeightXL: 70rem;
+}
+
+html {
+    font-family: 'Montserrat', 'system-ui', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+    letter-spacing: 2px;
+}
+
+%font {
+    color: var(--black);
+    text-transform: none;
+    font-weight: normal;
+}
+
+.fontXXL {
+    font-size: var(--fontSizeXXL);
+    line-height: var(--lineHeightXXL);
+    @extend %font;
+}
+
+.fontXL {
+    font-size: var(--fontSizeXL);
+    line-height: var(--lineHeightXL);
+    @extend %font;
+}
+
+.fontL {
+    font-size: var(--fontSizeL);
+    @extend %font;
+}
+
+.fontM {
+    font-size: var(--fontSizeM);
+    @extend %font;
+}
+
+.fontS {
+    font-size: var(--fontSizeS);
+    @extend %font;
+}
+
+.fontXS {
+    font-size: var(--fontSizeXS);
+    @extend %font;
+}
+
+.fontXXS {
+    font-size: var(--fontSizeXXS);
+    @extend %font;
+}

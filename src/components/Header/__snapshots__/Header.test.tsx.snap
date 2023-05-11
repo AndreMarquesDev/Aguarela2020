@@ -3,14 +3,14 @@
 exports[`<Header /> renders properly 1`] = `
 <div>
   <header
-    class="jsx-305311397"
+    class="jsx-2405765474"
     data-testid="header_section"
   >
     <nav
-      class="jsx-305311397 wrapper"
+      class="jsx-2405765474 wrapper"
     >
       <a
-        class="jsx-305311397"
+        class="jsx-2405765474"
         data-testid="header_homepageLogoLink"
         href="/pt/homepage"
       >
@@ -38,53 +38,53 @@ exports[`<Header /> renders properly 1`] = `
         </span>
       </a>
       <ul
-        class="jsx-3774647450 "
+        class="jsx-2853090894 "
       >
         <li
-          class="jsx-3774647450"
+          class="jsx-2853090894"
         >
           <a
-            class="jsx-3774647450 "
+            class="jsx-2853090894 fontS"
             href="/pt/about"
           >
             Sobre
           </a>
         </li>
         <li
-          class="jsx-3774647450"
+          class="jsx-2853090894"
         >
           <a
-            class="jsx-3774647450 "
+            class="jsx-2853090894 fontS"
             href="/pt/projects"
           >
             Projetos
           </a>
         </li>
         <li
-          class="jsx-3774647450"
+          class="jsx-2853090894"
         >
           <a
-            class="jsx-3774647450 active"
+            class="jsx-2853090894 fontS active"
             href="/pt/services"
           >
             Serviços
           </a>
         </li>
         <li
-          class="jsx-3774647450"
+          class="jsx-2853090894"
         >
           <a
-            class="jsx-3774647450 "
+            class="jsx-2853090894 fontS"
             href="/pt/contact"
           >
             Contacto
           </a>
         </li>
         <li
-          class="jsx-3774647450 languageButton"
+          class="jsx-2853090894 languageButton fontXXS"
         >
           <button
-            class="jsx-1287059343"
+            class="jsx-2866958827"
             type="button"
           >
             pt
@@ -93,13 +93,13 @@ exports[`<Header /> renders properly 1`] = `
       </ul>
       <i
         aria-label="toggle menu"
-        class="jsx-291958763 menuIcon hidden"
+        class="jsx-2079322113 menuIcon hidden"
         data-testid="menuIcon_button"
         role="button"
         tabindex="0"
       >
         <span
-          class="jsx-291958763"
+          class="jsx-2079322113"
         />
       </i>
     </nav>
@@ -110,14 +110,14 @@ exports[`<Header /> renders properly 1`] = `
 exports[`<Header /> renders properly below phablet 1`] = `
 <div>
   <header
-    class="jsx-305311397"
+    class="jsx-2405765474"
     data-testid="header_section"
   >
     <nav
-      class="jsx-305311397 wrapper"
+      class="jsx-2405765474 wrapper"
     >
       <a
-        class="jsx-305311397"
+        class="jsx-2405765474"
         data-testid="header_homepageLogoLink"
         href="/pt/homepage"
       >
@@ -145,53 +145,53 @@ exports[`<Header /> renders properly below phablet 1`] = `
         </span>
       </a>
       <ul
-        class="jsx-3774647450 mobileLayout"
+        class="jsx-2853090894 mobileLayout"
       >
         <li
-          class="jsx-3774647450"
+          class="jsx-2853090894"
         >
           <a
-            class="jsx-3774647450 "
+            class="jsx-2853090894 fontS"
             href="/pt/about"
           >
             Sobre
           </a>
         </li>
         <li
-          class="jsx-3774647450"
+          class="jsx-2853090894"
         >
           <a
-            class="jsx-3774647450 "
+            class="jsx-2853090894 fontS"
             href="/pt/projects"
           >
             Projetos
           </a>
         </li>
         <li
-          class="jsx-3774647450"
+          class="jsx-2853090894"
         >
           <a
-            class="jsx-3774647450 active"
+            class="jsx-2853090894 fontS active"
             href="/pt/services"
           >
             Serviços
           </a>
         </li>
         <li
-          class="jsx-3774647450"
+          class="jsx-2853090894"
         >
           <a
-            class="jsx-3774647450 "
+            class="jsx-2853090894 fontS"
             href="/pt/contact"
           >
             Contacto
           </a>
         </li>
         <li
-          class="jsx-3774647450 languageButton white"
+          class="jsx-2853090894 languageButton fontXXS white fontXS"
         >
           <button
-            class="jsx-1287059343"
+            class="jsx-2866958827"
             type="button"
           >
             pt
@@ -200,13 +200,13 @@ exports[`<Header /> renders properly below phablet 1`] = `
       </ul>
       <i
         aria-label="toggle menu"
-        class="jsx-291958763 menuIcon"
+        class="jsx-2079322113 menuIcon"
         data-testid="menuIcon_button"
         role="button"
         tabindex="0"
       >
         <span
-          class="jsx-291958763"
+          class="jsx-2079322113"
         />
       </i>
     </nav>

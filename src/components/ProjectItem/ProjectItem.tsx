@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import { TextsContext } from '../context/TextsContext';
 import { resetTimesTouchedAttribute } from '../../utils/generic';
 import { projectItemTouchDivDataTestId } from '../../utils/dataTestIds';
+import { desktopMediaQuery, phabletMediaQuery, tabletMediaQuery } from '../../styles/mediaQueries';
 
 export interface ProjectItemProps {
     imageSrc: string;
@@ -61,17 +62,24 @@ export const ProjectItem = ({
                         width={400}
                     />
                     <div className="backface">
-                        <a className="brand link" href={brandLink} rel="noreferrer" target="_blank">
+                        <a
+                            className="brand link fontXS"
+                            href={brandLink}
+                            rel="noreferrer"
+                            target="_blank"
+                        >
                             {brandTag}
                         </a>
-                        <p className="description">{description}</p>
+                        <p className="description fontS">{description}</p>
                         {year && (
-                            <p className="date">
+                            <p className="date fontXS">
                                 {year}
                                 {isActive && ` - ${texts.present}`}
                             </p>
                         )}
-                        {isInPartnership && <small>* {texts.inPartnershipWith}</small>}
+                        {isInPartnership && (
+                            <small className="fontXS">* {texts.inPartnershipWith}</small>
+                        )}
                     </div>
                 </li>
             ) : (
@@ -89,25 +97,30 @@ export const ProjectItem = ({
                         width={400}
                     />
                     <div className="backface">
-                        <a className="brand link" href={brandLink} rel="noreferrer" target="_blank">
+                        <a
+                            className="brand link fontXS"
+                            href={brandLink}
+                            rel="noreferrer"
+                            target="_blank"
+                        >
                             {brandTag}
                         </a>
-                        <p className="description">{description}</p>
+                        <p className="description fontS">{description}</p>
                         {year && (
-                            <p className="date">
+                            <p className="date fontXS">
                                 {year}
                                 {isActive && ` - ${texts.present}`}
                             </p>
                         )}
-                        {isInPartnership && <small>* {texts.inPartnershipWith}</small>}
+                        {isInPartnership && (
+                            <small className="fontXS">* {texts.inPartnershipWith}</small>
+                        )}
                     </div>
                 </div>
             )}
 
             <style jsx>
                 {`
-                    @import './src/styles/_vars.scss';
-
                     li {
                         max-height: 400rem;
                         position: relative;
@@ -140,42 +153,45 @@ export const ProjectItem = ({
                         &.grid {
                             margin: 0 4% 0;
 
-                            @include tablet {
+                            @media (${tabletMediaQuery}) {
                                 margin: 0 2% 0;
                             }
 
                             .backface {
                                 .brand {
-                                    @include fontXS($yellow, uppercase);
+                                    color: var(--yellow);
+                                    text-transform: uppercase;
 
-                                    @include tablet {
-                                        @include fontXXS($yellow, uppercase);
+                                    @media (${tabletMediaQuery}) {
+                                        font-size: var(--fontSizeXXS);
                                     }
                                 }
 
                                 .date {
-                                    @include fontXS($yellow);
+                                    color: var(--yellow);
 
-                                    @include tablet {
-                                        @include fontXXS($yellow);
+                                    @media (${tabletMediaQuery}) {
+                                        font-size: var(--fontSizeXXS);
                                     }
                                 }
 
                                 .description {
-                                    @include fontS($yellow);
+                                    color: var(--yellow);
 
-                                    @include desktop {
-                                        @include fontXS($yellow);
+                                    @media (${desktopMediaQuery}) {
+                                        font-size: var(--fontSizeXS);
                                     }
 
-                                    @include tablet {
-                                        @include fontXXS($yellow);
+                                    @media (${tabletMediaQuery}) {
+                                        font-size: var(--fontSizeXXS);
                                     }
                                 }
 
                                 small {
-                                    @include tablet {
-                                        @include fontXXS($yellow);
+                                    color: var(--yellow);
+
+                                    @media (${tabletMediaQuery}) {
+                                        font-size: var(--fontSizeXXS);
                                     }
                                 }
                             }
@@ -196,30 +212,31 @@ export const ProjectItem = ({
                         justify-content: center;
                         align-items: center;
                         text-align: center;
-                        background: $blue;
+                        background: var(--blue);
                         padding: 10rem;
 
                         .brand {
-                            @include fontXS($yellow, uppercase);
+                            color: var(--yellow);
+                            text-transform: uppercase;
                             margin-bottom: 20rem;
                         }
 
                         .date {
-                            @include fontXS($yellow);
+                            color: var(--yellow);
                             margin-bottom: 20rem;
                         }
 
                         .description {
-                            @include fontS($yellow);
+                            color: var(--yellow);
                             margin-bottom: 20rem;
 
-                            @include phablet {
-                                @include fontXS($yellow);
+                            @media (${phabletMediaQuery}) {
+                                font-size: var(--fontSizeXS);
                             }
                         }
 
                         small {
-                            @include fontXS($yellow);
+                            color: var(--yellow);
                         }
                     }
                 `}

@@ -34,8 +34,6 @@ export const LanguageButton = (): JSX.Element => {
 
             <style jsx>
                 {`
-                    @import './src/styles/_vars.scss';
-
                     button {
                         color: inherit;
                         text-transform: inherit;

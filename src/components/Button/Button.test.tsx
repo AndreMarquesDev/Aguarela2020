@@ -10,7 +10,7 @@ const baseProps: ButtonProps = {
     page: 'projects',
     externalLink: 'https://www.google.com',
     alignLeft: false,
-    isUppercased: false,
+    isLowercased: false,
     isSubmit: false,
     disabled: false,
     onClick: jest.fn(),
@@ -60,7 +60,7 @@ describe('<Button />', () => {
         const { container } = renderComponent({
             alignLeft: true,
             disabled: true,
-            isUppercased: true,
+            isLowercased: true,
         });
 
         expect(container).toMatchSnapshot();

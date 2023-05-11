@@ -16,12 +16,12 @@ exports[`<SkillItem /> renders properly 1`] = `
     <noscript />
   </span>
   <strong
-    class="jsx-390248359"
+    class="jsx-1722958468 fontM"
   >
     Título
   </strong>
   <p
-    class="jsx-390248359"
+    class="jsx-1722958468 fontXS"
   >
     Descrição
   </p>

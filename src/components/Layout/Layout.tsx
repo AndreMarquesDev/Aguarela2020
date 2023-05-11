@@ -51,6 +51,7 @@ export const Layout = ({ children }: LayoutProps): JSX.Element => {
                     .menuOpen {
                         position: fixed;
                         overflow: hidden;
+                        width: 100%;
                     }
                 `}
             </style>

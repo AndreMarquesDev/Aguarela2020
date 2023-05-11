@@ -3,7 +3,7 @@
 exports[`<NukaCarousel /> renders properly 1`] = `
 <div>
   <div
-    class="jsx-2993345325 nukaCarouselContainer"
+    class="jsx-3311130813 nukaCarouselContainer"
   >
     <div
       class="slider-container"
@@ -26,7 +26,7 @@ exports[`<NukaCarousel /> renders properly 1`] = `
         >
           <button
             aria-label="previous slide"
-            class="jsx-2993345325 previousButton"
+            class="jsx-3311130813 previousButton"
             data-testid="nukaCarousel_previousSlideButton"
             type="button"
           >
@@ -55,7 +55,7 @@ exports[`<NukaCarousel /> renders properly 1`] = `
         >
           <button
             aria-label="next slide"
-            class="jsx-2993345325 nextButton"
+            class="jsx-3311130813 nextButton"
             data-testid="nukaCarousel_nextSlideButton"
             type="button"
           >
@@ -231,7 +231,7 @@ exports[`<NukaCarousel /> renders properly 1`] = `
 exports[`<NukaCarousel /> renders properly when cellAlign prop is not provided 1`] = `
 <div>
   <div
-    class="jsx-2993345325 nukaCarouselContainer"
+    class="jsx-3311130813 nukaCarouselContainer"
   >
     <div
       class="slider-container"
@@ -254,7 +254,7 @@ exports[`<NukaCarousel /> renders properly when cellAlign prop is not provided 1
         >
           <button
             aria-label="previous slide"
-            class="jsx-2993345325 previousButton"
+            class="jsx-3311130813 previousButton"
             data-testid="nukaCarousel_previousSlideButton"
             type="button"
           >
@@ -283,7 +283,7 @@ exports[`<NukaCarousel /> renders properly when cellAlign prop is not provided 1
         >
           <button
             aria-label="next slide"
-            class="jsx-2993345325 nextButton"
+            class="jsx-3311130813 nextButton"
             data-testid="nukaCarousel_nextSlideButton"
             type="button"
           >
@@ -459,7 +459,7 @@ exports[`<NukaCarousel /> renders properly when cellAlign prop is not provided 1
 exports[`<NukaCarousel /> renders properly when slidesToShow prop is not provided 1`] = `
 <div>
   <div
-    class="jsx-2993345325 nukaCarouselContainer"
+    class="jsx-3311130813 nukaCarouselContainer"
   >
     <div
       class="slider-container"
@@ -482,7 +482,7 @@ exports[`<NukaCarousel /> renders properly when slidesToShow prop is not provide
         >
           <button
             aria-label="previous slide"
-            class="jsx-2993345325 previousButton"
+            class="jsx-3311130813 previousButton"
             data-testid="nukaCarousel_previousSlideButton"
             type="button"
           >
@@ -511,7 +511,7 @@ exports[`<NukaCarousel /> renders properly when slidesToShow prop is not provide
         >
           <button
             aria-label="next slide"
-            class="jsx-2993345325 nextButton"
+            class="jsx-3311130813 nextButton"
             data-testid="nukaCarousel_nextSlideButton"
             type="button"
           >
@@ -687,7 +687,7 @@ exports[`<NukaCarousel /> renders properly when slidesToShow prop is not provide
 exports[`<NukaCarousel /> renders properly when width prop is not provided 1`] = `
 <div>
   <div
-    class="jsx-3113037301 nukaCarouselContainer"
+    class="jsx-443661925 nukaCarouselContainer"
   >
     <div
       class="slider-container"
@@ -710,7 +710,7 @@ exports[`<NukaCarousel /> renders properly when width prop is not provided 1`] =
         >
           <button
             aria-label="previous slide"
-            class="jsx-3113037301 previousButton"
+            class="jsx-443661925 previousButton"
             data-testid="nukaCarousel_previousSlideButton"
             type="button"
           >
@@ -739,7 +739,7 @@ exports[`<NukaCarousel /> renders properly when width prop is not provided 1`] =
         >
           <button
             aria-label="next slide"
-            class="jsx-3113037301 nextButton"
+            class="jsx-443661925 nextButton"
             data-testid="nukaCarousel_nextSlideButton"
             type="button"
           >
@@ -915,7 +915,7 @@ exports[`<NukaCarousel /> renders properly when width prop is not provided 1`] =
 exports[`<NukaCarousel /> switches to the next slide when clicking the next arrow button 1`] = `
 <div>
   <div
-    class="jsx-2993345325 nukaCarouselContainer"
+    class="jsx-3311130813 nukaCarouselContainer"
   >
     <div
       class="slider-container"
@@ -938,7 +938,7 @@ exports[`<NukaCarousel /> switches to the next slide when clicking the next arro
         >
           <button
             aria-label="previous slide"
-            class="jsx-2993345325 previousButton"
+            class="jsx-3311130813 previousButton"
             data-testid="nukaCarousel_previousSlideButton"
             type="button"
           >
@@ -967,7 +967,7 @@ exports[`<NukaCarousel /> switches to the next slide when clicking the next arro
         >
           <button
             aria-label="next slide"
-            class="jsx-2993345325 nextButton"
+            class="jsx-3311130813 nextButton"
             data-testid="nukaCarousel_nextSlideButton"
             type="button"
           >
@@ -1143,7 +1143,7 @@ exports[`<NukaCarousel /> switches to the next slide when clicking the next arro
 exports[`<NukaCarousel /> switches to the previous slide when clicking the previous arrow button 1`] = `
 <div>
   <div
-    class="jsx-2993345325 nukaCarouselContainer"
+    class="jsx-3311130813 nukaCarouselContainer"
   >
     <div
       class="slider-container"
@@ -1166,7 +1166,7 @@ exports[`<NukaCarousel /> switches to the previous slide when clicking the previ
         >
           <button
             aria-label="previous slide"
-            class="jsx-2993345325 previousButton"
+            class="jsx-3311130813 previousButton"
             data-testid="nukaCarousel_previousSlideButton"
             type="button"
           >
@@ -1195,7 +1195,7 @@ exports[`<NukaCarousel /> switches to the previous slide when clicking the previ
         >
           <button
             aria-label="next slide"
-            class="jsx-2993345325 nextButton"
+            class="jsx-3311130813 nextButton"
             data-testid="nukaCarousel_nextSlideButton"
             type="button"
           >

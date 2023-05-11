@@ -70,8 +70,6 @@ export const NukaCarousel = ({
 
             <style jsx>
                 {`
-                    @import './src/styles/_vars.scss';
-
                     .nukaCarouselContainer {
                         width: ${width || '100%'};
                         padding: 0px ${carouselContainerMargin};

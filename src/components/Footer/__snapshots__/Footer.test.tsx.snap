@@ -3,19 +3,19 @@
 exports[`<Footer /> renders properly 1`] = `
 <div>
   <footer
-    class="jsx-3759189073"
+    class="jsx-3092902157"
     data-testid="footer_section"
   >
     <div
-      class="jsx-3759189073 wrapper"
+      class="jsx-3092902157 wrapper"
     >
       <p
-        class="jsx-3759189073"
+        class="jsx-3092902157 fontXS"
       >
         Aguarela Digital - Developed by
          
         <a
-          class="jsx-3759189073 animatedLink animatedLinkWhite"
+          class="jsx-3092902157 animatedLink animatedLinkWhite"
           href="https://www.andremarquesdev.com"
           rel="noreferrer"
           target="_blank"
@@ -24,14 +24,14 @@ exports[`<Footer /> renders properly 1`] = `
         </a>
       </p>
       <ul
-        class="jsx-3759189073"
+        class="jsx-3092902157"
       >
         <li
-          class="jsx-3759189073"
+          class="jsx-3092902157"
         >
           <a
             aria-label="Aguarela instagram"
-            class="jsx-3759189073"
+            class="jsx-3092902157"
             href="https://www.instagram.com/aguareladigital/"
             rel="noreferrer"
             target="_blank"
@@ -52,11 +52,11 @@ exports[`<Footer /> renders properly 1`] = `
           </a>
         </li>
         <li
-          class="jsx-3759189073"
+          class="jsx-3092902157"
         >
           <a
             aria-label="Aguarela facebook"
-            class="jsx-3759189073"
+            class="jsx-3092902157"
             href="https://www.facebook.com/aguareladigitalpt"
             rel="noreferrer"
             target="_blank"
@@ -77,11 +77,11 @@ exports[`<Footer /> renders properly 1`] = `
           </a>
         </li>
         <li
-          class="jsx-3759189073"
+          class="jsx-3092902157"
         >
           <a
             aria-label="Go to contact page"
-            class="jsx-3759189073"
+            class="jsx-3092902157"
             href="/pt/contact"
           >
             <svg
@@ -108,19 +108,19 @@ exports[`<Footer /> renders properly 1`] = `
 exports[`<Footer /> renders properly in English 1`] = `
 <div>
   <footer
-    class="jsx-3759189073"
+    class="jsx-3092902157"
     data-testid="footer_section"
   >
     <div
-      class="jsx-3759189073 wrapper"
+      class="jsx-3092902157 wrapper"
     >
       <p
-        class="jsx-3759189073"
+        class="jsx-3092902157 fontXS"
       >
         Aguarela Digital - Developed by
          
         <a
-          class="jsx-3759189073 animatedLink animatedLinkWhite"
+          class="jsx-3092902157 animatedLink animatedLinkWhite"
           href="https://www.andremarquesdev.com"
           rel="noreferrer"
           target="_blank"
@@ -129,14 +129,14 @@ exports[`<Footer /> renders properly in English 1`] = `
         </a>
       </p>
       <ul
-        class="jsx-3759189073"
+        class="jsx-3092902157"
       >
         <li
-          class="jsx-3759189073"
+          class="jsx-3092902157"
         >
           <a
             aria-label="Aguarela instagram"
-            class="jsx-3759189073"
+            class="jsx-3092902157"
             href="https://www.instagram.com/aguareladigital/"
             rel="noreferrer"
             target="_blank"
@@ -157,11 +157,11 @@ exports[`<Footer /> renders properly in English 1`] = `
           </a>
         </li>
         <li
-          class="jsx-3759189073"
+          class="jsx-3092902157"
         >
           <a
             aria-label="Aguarela facebook"
-            class="jsx-3759189073"
+            class="jsx-3092902157"
             href="https://www.facebook.com/aguareladigitalpt"
             rel="noreferrer"
             target="_blank"
@@ -182,11 +182,11 @@ exports[`<Footer /> renders properly in English 1`] = `
           </a>
         </li>
         <li
-          class="jsx-3759189073"
+          class="jsx-3092902157"
         >
           <a
             aria-label="Go to contact page"
-            class="jsx-3759189073"
+            class="jsx-3092902157"
             href="/en/contact"
           >
             <svg

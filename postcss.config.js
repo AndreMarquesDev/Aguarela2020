@@ -11,6 +11,7 @@ module.exports = {
                 'custom-properties': true,
             },
         },
-        precss: {},
+        'postcss-nested': {},
+        'postcss-extend': {},
     },
 };

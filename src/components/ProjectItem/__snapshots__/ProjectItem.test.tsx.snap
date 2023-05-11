@@ -3,7 +3,7 @@
 exports[`<ProjectItem /> renders properly 1`] = `
 <div>
   <li
-    class="jsx-4162855406"
+    class="jsx-235796002"
   >
     <span
       style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
@@ -28,10 +28,10 @@ exports[`<ProjectItem /> renders properly 1`] = `
       />
     </span>
     <div
-      class="jsx-4162855406 backface"
+      class="jsx-235796002 backface"
     >
       <a
-        class="jsx-4162855406 brand link"
+        class="jsx-235796002 brand link fontXS"
         href="https://www.instagram.com/tudonatjela/"
         rel="noreferrer"
         target="_blank"
@@ -39,18 +39,18 @@ exports[`<ProjectItem /> renders properly 1`] = `
         @tudonatjela
       </a>
       <p
-        class="jsx-4162855406 description"
+        class="jsx-235796002 description fontS"
       >
         Gestão de Redes Sociais e Criação de Conteúdo
       </p>
       <p
-        class="jsx-4162855406 date"
+        class="jsx-235796002 date fontXS"
       >
         2020
          - Presente
       </p>
       <small
-        class="jsx-4162855406"
+        class="jsx-235796002 fontXS"
       >
         * 
         em dupla com Sofia Ferreirinho
@@ -63,7 +63,7 @@ exports[`<ProjectItem /> renders properly 1`] = `
 exports[`<ProjectItem /> renders properly in English 1`] = `
 <div>
   <li
-    class="jsx-4162855406"
+    class="jsx-235796002"
   >
     <span
       style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
@@ -88,10 +88,10 @@ exports[`<ProjectItem /> renders properly in English 1`] = `
       />
     </span>
     <div
-      class="jsx-4162855406 backface"
+      class="jsx-235796002 backface"
     >
       <a
-        class="jsx-4162855406 brand link"
+        class="jsx-235796002 brand link fontXS"
         href="https://www.instagram.com/tudonatjela/"
         rel="noreferrer"
         target="_blank"
@@ -99,18 +99,18 @@ exports[`<ProjectItem /> renders properly in English 1`] = `
         @tudonatjela
       </a>
       <p
-        class="jsx-4162855406 description"
+        class="jsx-235796002 description fontS"
       >
         Social Media Management and Content Creation
       </p>
       <p
-        class="jsx-4162855406 date"
+        class="jsx-235796002 date fontXS"
       >
         2020
          - Present
       </p>
       <small
-        class="jsx-4162855406"
+        class="jsx-235796002 fontXS"
       >
         * 
         in partnership with Sofia Ferreirinho
@@ -123,7 +123,7 @@ exports[`<ProjectItem /> renders properly in English 1`] = `
 exports[`<ProjectItem /> renders properly in mobile 1`] = `
 <div>
   <div
-    class="jsx-4162855406 carouselItem grid"
+    class="jsx-235796002 carouselItem grid"
     data-testid="projectItem_touch_div_tjela logo"
     data-times-touched="0"
   >
@@ -150,10 +150,10 @@ exports[`<ProjectItem /> renders properly in mobile 1`] = `
       />
     </span>
     <div
-      class="jsx-4162855406 backface"
+      class="jsx-235796002 backface"
     >
       <a
-        class="jsx-4162855406 brand link"
+        class="jsx-235796002 brand link fontXS"
         href="https://www.instagram.com/tudonatjela/"
         rel="noreferrer"
         target="_blank"
@@ -161,18 +161,18 @@ exports[`<ProjectItem /> renders properly in mobile 1`] = `
         @tudonatjela
       </a>
       <p
-        class="jsx-4162855406 description"
+        class="jsx-235796002 description fontS"
       >
         Gestão de Redes Sociais e Criação de Conteúdo
       </p>
       <p
-        class="jsx-4162855406 date"
+        class="jsx-235796002 date fontXS"
       >
         2020
          - Presente
       </p>
       <small
-        class="jsx-4162855406"
+        class="jsx-235796002 fontXS"
       >
         * 
         em dupla com Sofia Ferreirinho
@@ -185,7 +185,7 @@ exports[`<ProjectItem /> renders properly in mobile 1`] = `
 exports[`<ProjectItem /> renders properly when device is touch 1`] = `
 <div>
   <div
-    class="jsx-4162855406 carouselItem touch grid"
+    class="jsx-235796002 carouselItem touch grid"
     data-testid="projectItem_touch_div_tjela logo"
     data-times-touched="1"
   >
@@ -212,10 +212,10 @@ exports[`<ProjectItem /> renders properly when device is touch 1`] = `
       />
     </span>
     <div
-      class="jsx-4162855406 backface"
+      class="jsx-235796002 backface"
     >
       <a
-        class="jsx-4162855406 brand link"
+        class="jsx-235796002 brand link fontXS"
         href="https://www.instagram.com/tudonatjela/"
         rel="noreferrer"
         target="_blank"
@@ -223,18 +223,18 @@ exports[`<ProjectItem /> renders properly when device is touch 1`] = `
         @tudonatjela
       </a>
       <p
-        class="jsx-4162855406 description"
+        class="jsx-235796002 description fontS"
       >
         Gestão de Redes Sociais e Criação de Conteúdo
       </p>
       <p
-        class="jsx-4162855406 date"
+        class="jsx-235796002 date fontXS"
       >
         2020
          - Presente
       </p>
       <small
-        class="jsx-4162855406"
+        class="jsx-235796002 fontXS"
       >
         * 
         em dupla com Sofia Ferreirinho
@@ -247,7 +247,7 @@ exports[`<ProjectItem /> renders properly when device is touch 1`] = `
 exports[`<ProjectItem /> renders properly with isGrid being false 1`] = `
 <div>
   <div
-    class="jsx-4162855406 carouselItem"
+    class="jsx-235796002 carouselItem"
     data-testid="projectItem_touch_div_tjela logo"
     data-times-touched="0"
   >
@@ -274,10 +274,10 @@ exports[`<ProjectItem /> renders properly with isGrid being false 1`] = `
       />
     </span>
     <div
-      class="jsx-4162855406 backface"
+      class="jsx-235796002 backface"
     >
       <a
-        class="jsx-4162855406 brand link"
+        class="jsx-235796002 brand link fontXS"
         href="https://www.instagram.com/tudonatjela/"
         rel="noreferrer"
         target="_blank"
@@ -285,18 +285,18 @@ exports[`<ProjectItem /> renders properly with isGrid being false 1`] = `
         @tudonatjela
       </a>
       <p
-        class="jsx-4162855406 description"
+        class="jsx-235796002 description fontS"
       >
         Gestão de Redes Sociais e Criação de Conteúdo
       </p>
       <p
-        class="jsx-4162855406 date"
+        class="jsx-235796002 date fontXS"
       >
         2020
          - Presente
       </p>
       <small
-        class="jsx-4162855406"
+        class="jsx-235796002 fontXS"
       >
         * 
         em dupla com Sofia Ferreirinho
@@ -309,7 +309,7 @@ exports[`<ProjectItem /> renders properly with isGrid being false 1`] = `
 exports[`<ProjectItem /> renders properly with preloadImage being false 1`] = `
 <div>
   <li
-    class="jsx-4162855406"
+    class="jsx-235796002"
   >
     <span
       style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
@@ -334,10 +334,10 @@ exports[`<ProjectItem /> renders properly with preloadImage being false 1`] = `
       <noscript />
     </span>
     <div
-      class="jsx-4162855406 backface"
+      class="jsx-235796002 backface"
     >
       <a
-        class="jsx-4162855406 brand link"
+        class="jsx-235796002 brand link fontXS"
         href="https://www.instagram.com/tudonatjela/"
         rel="noreferrer"
         target="_blank"
@@ -345,18 +345,18 @@ exports[`<ProjectItem /> renders properly with preloadImage being false 1`] = `
         @tudonatjela
       </a>
       <p
-        class="jsx-4162855406 description"
+        class="jsx-235796002 description fontS"
       >
         Gestão de Redes Sociais e Criação de Conteúdo
       </p>
       <p
-        class="jsx-4162855406 date"
+        class="jsx-235796002 date fontXS"
       >
         2020
          - Presente
       </p>
       <small
-        class="jsx-4162855406"
+        class="jsx-235796002 fontXS"
       >
         * 
         em dupla com Sofia Ferreirinho
