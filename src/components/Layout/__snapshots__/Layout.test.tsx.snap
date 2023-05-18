@@ -13,78 +13,65 @@ exports[`<Layout /> renders properly 1`] = `
         class="jsx-2405765474 wrapper"
       >
         <a
-          class="jsx-2405765474"
           data-testid="header_homepageLogoLink"
           href="/pt/homepage"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-          >
-            <span
-              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-            >
-              <img
-                alt=""
-                aria-hidden="true"
-                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27250%27%20height=%2735%27/%3e"
-                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-              />
-            </span>
-            <img
-              alt="Logo"
-              data-nimg="intrinsic"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-            <noscript />
-          </span>
+          <img
+            alt="Logo"
+            data-nimg="1"
+            decoding="async"
+            height="35"
+            loading="lazy"
+            src="/images/logo.svg"
+            style="color: transparent;"
+            width="250"
+          />
         </a>
         <ul
-          class="jsx-2853090894 "
+          class="jsx-2513558763 "
         >
           <li
-            class="jsx-2853090894"
+            class="jsx-2513558763"
           >
             <a
-              class="jsx-2853090894 fontS"
+              class="fontS navLinksLink"
               href="/pt/about"
             >
               Sobre
             </a>
           </li>
           <li
-            class="jsx-2853090894"
+            class="jsx-2513558763"
           >
             <a
-              class="jsx-2853090894 fontS"
+              class="fontS navLinksLink"
               href="/pt/projects"
             >
               Projetos
             </a>
           </li>
           <li
-            class="jsx-2853090894"
+            class="jsx-2513558763"
           >
             <a
-              class="jsx-2853090894 fontS"
+              class="fontS navLinksLink"
               href="/pt/services"
             >
               Serviços
             </a>
           </li>
           <li
-            class="jsx-2853090894"
+            class="jsx-2513558763"
           >
             <a
-              class="jsx-2853090894 fontS"
+              class="fontS navLinksLink"
               href="/pt/contact"
             >
               Contacto
             </a>
           </li>
           <li
-            class="jsx-2853090894 languageButton fontXXS"
+            class="jsx-2513558763 languageButton fontXXS"
           >
             <button
               class="jsx-2866958827"
@@ -113,19 +100,19 @@ exports[`<Layout /> renders properly 1`] = `
       </p>
     </div>
     <footer
-      class="jsx-3092902157"
+      class="jsx-2748243618"
       data-testid="footer_section"
     >
       <div
-        class="jsx-3092902157 wrapper"
+        class="jsx-2748243618 wrapper"
       >
         <p
-          class="jsx-3092902157 fontXS"
+          class="jsx-2748243618 fontXS"
         >
           Aguarela Digital - Developed by
            
           <a
-            class="jsx-3092902157 animatedLink animatedLinkWhite"
+            class="jsx-2748243618 animatedLink animatedLinkWhite"
             href="https://www.andremarquesdev.com"
             rel="noreferrer"
             target="_blank"
@@ -134,14 +121,14 @@ exports[`<Layout /> renders properly 1`] = `
           </a>
         </p>
         <ul
-          class="jsx-3092902157"
+          class="jsx-2748243618"
         >
           <li
-            class="jsx-3092902157"
+            class="jsx-2748243618"
           >
             <a
               aria-label="Aguarela instagram"
-              class="jsx-3092902157"
+              class="jsx-2748243618 iconLink"
               href="https://www.instagram.com/aguareladigital/"
               rel="noreferrer"
               target="_blank"
@@ -162,11 +149,11 @@ exports[`<Layout /> renders properly 1`] = `
             </a>
           </li>
           <li
-            class="jsx-3092902157"
+            class="jsx-2748243618"
           >
             <a
               aria-label="Aguarela facebook"
-              class="jsx-3092902157"
+              class="jsx-2748243618 iconLink"
               href="https://www.facebook.com/aguareladigitalpt"
               rel="noreferrer"
               target="_blank"
@@ -187,11 +174,11 @@ exports[`<Layout /> renders properly 1`] = `
             </a>
           </li>
           <li
-            class="jsx-3092902157"
+            class="jsx-2748243618"
           >
             <a
               aria-label="Go to contact page"
-              class="jsx-3092902157"
+              class="iconLink"
               href="/pt/contact"
             >
               <svg
@@ -229,78 +216,65 @@ exports[`<Layout /> renders properly in English 1`] = `
         class="jsx-2405765474 wrapper"
       >
         <a
-          class="jsx-2405765474"
           data-testid="header_homepageLogoLink"
           href="/en/homepage"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-          >
-            <span
-              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-            >
-              <img
-                alt=""
-                aria-hidden="true"
-                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%2735%27/%3e"
-                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-              />
-            </span>
-            <img
-              alt="Logo"
-              data-nimg="intrinsic"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-            <noscript />
-          </span>
+          <img
+            alt="Logo"
+            data-nimg="1"
+            decoding="async"
+            height="35"
+            loading="lazy"
+            src="/images/logo.svg"
+            style="color: transparent;"
+            width="150"
+          />
         </a>
         <ul
-          class="jsx-2853090894 mobileLayout"
+          class="jsx-2513558763 mobileLayout"
         >
           <li
-            class="jsx-2853090894"
+            class="jsx-2513558763"
           >
             <a
-              class="jsx-2853090894 fontS"
+              class="fontS navLinksLink"
               href="/en/about"
             >
               About
             </a>
           </li>
           <li
-            class="jsx-2853090894"
+            class="jsx-2513558763"
           >
             <a
-              class="jsx-2853090894 fontS"
+              class="fontS navLinksLink"
               href="/en/projects"
             >
               Projects
             </a>
           </li>
           <li
-            class="jsx-2853090894"
+            class="jsx-2513558763"
           >
             <a
-              class="jsx-2853090894 fontS"
+              class="fontS navLinksLink"
               href="/en/services"
             >
               Services
             </a>
           </li>
           <li
-            class="jsx-2853090894"
+            class="jsx-2513558763"
           >
             <a
-              class="jsx-2853090894 fontS"
+              class="fontS navLinksLink"
               href="/en/contact"
             >
               Contact
             </a>
           </li>
           <li
-            class="jsx-2853090894 languageButton fontXXS white fontXS"
+            class="jsx-2513558763 languageButton fontXXS white fontXS"
           >
             <button
               class="jsx-2866958827"
@@ -329,19 +303,19 @@ exports[`<Layout /> renders properly in English 1`] = `
       </p>
     </div>
     <footer
-      class="jsx-3092902157"
+      class="jsx-2748243618"
       data-testid="footer_section"
     >
       <div
-        class="jsx-3092902157 wrapper"
+        class="jsx-2748243618 wrapper"
       >
         <p
-          class="jsx-3092902157 fontXS"
+          class="jsx-2748243618 fontXS"
         >
           Aguarela Digital - Developed by
            
           <a
-            class="jsx-3092902157 animatedLink animatedLinkWhite"
+            class="jsx-2748243618 animatedLink animatedLinkWhite"
             href="https://www.andremarquesdev.com"
             rel="noreferrer"
             target="_blank"
@@ -350,14 +324,14 @@ exports[`<Layout /> renders properly in English 1`] = `
           </a>
         </p>
         <ul
-          class="jsx-3092902157"
+          class="jsx-2748243618"
         >
           <li
-            class="jsx-3092902157"
+            class="jsx-2748243618"
           >
             <a
               aria-label="Aguarela instagram"
-              class="jsx-3092902157"
+              class="jsx-2748243618 iconLink"
               href="https://www.instagram.com/aguareladigital/"
               rel="noreferrer"
               target="_blank"
@@ -378,11 +352,11 @@ exports[`<Layout /> renders properly in English 1`] = `
             </a>
           </li>
           <li
-            class="jsx-3092902157"
+            class="jsx-2748243618"
           >
             <a
               aria-label="Aguarela facebook"
-              class="jsx-3092902157"
+              class="jsx-2748243618 iconLink"
               href="https://www.facebook.com/aguareladigitalpt"
               rel="noreferrer"
               target="_blank"
@@ -403,11 +377,11 @@ exports[`<Layout /> renders properly in English 1`] = `
             </a>
           </li>
           <li
-            class="jsx-3092902157"
+            class="jsx-2748243618"
           >
             <a
               aria-label="Go to contact page"
-              class="jsx-3092902157"
+              class="iconLink"
               href="/en/contact"
             >
               <svg
@@ -445,78 +419,65 @@ exports[`<Layout /> renders properly when the menu is open and the resolution is
         class="jsx-2405765474 wrapper"
       >
         <a
-          class="jsx-2405765474"
           data-testid="header_homepageLogoLink"
           href="/pt/homepage"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-          >
-            <span
-              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-            >
-              <img
-                alt=""
-                aria-hidden="true"
-                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%2735%27/%3e"
-                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-              />
-            </span>
-            <img
-              alt="Logo"
-              data-nimg="intrinsic"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-            <noscript />
-          </span>
+          <img
+            alt="Logo"
+            data-nimg="1"
+            decoding="async"
+            height="35"
+            loading="lazy"
+            src="/images/logo.svg"
+            style="color: transparent;"
+            width="150"
+          />
         </a>
         <ul
-          class="jsx-2853090894 mobileLayout menuOpen"
+          class="jsx-2513558763 mobileLayout menuOpen"
         >
           <li
-            class="jsx-2853090894"
+            class="jsx-2513558763"
           >
             <a
-              class="jsx-2853090894 fontS"
+              class="fontS navLinksLink"
               href="/pt/about"
             >
               Sobre
             </a>
           </li>
           <li
-            class="jsx-2853090894"
+            class="jsx-2513558763"
           >
             <a
-              class="jsx-2853090894 fontS"
+              class="fontS navLinksLink"
               href="/pt/projects"
             >
               Projetos
             </a>
           </li>
           <li
-            class="jsx-2853090894"
+            class="jsx-2513558763"
           >
             <a
-              class="jsx-2853090894 fontS"
+              class="fontS navLinksLink"
               href="/pt/services"
             >
               Serviços
             </a>
           </li>
           <li
-            class="jsx-2853090894"
+            class="jsx-2513558763"
           >
             <a
-              class="jsx-2853090894 fontS"
+              class="fontS navLinksLink"
               href="/pt/contact"
             >
               Contacto
             </a>
           </li>
           <li
-            class="jsx-2853090894 languageButton fontXXS white fontXS"
+            class="jsx-2513558763 languageButton fontXXS white fontXS"
           >
             <button
               class="jsx-2866958827"
@@ -545,19 +506,19 @@ exports[`<Layout /> renders properly when the menu is open and the resolution is
       </p>
     </div>
     <footer
-      class="jsx-3092902157"
+      class="jsx-2748243618"
       data-testid="footer_section"
     >
       <div
-        class="jsx-3092902157 wrapper"
+        class="jsx-2748243618 wrapper"
       >
         <p
-          class="jsx-3092902157 fontXS"
+          class="jsx-2748243618 fontXS"
         >
           Aguarela Digital - Developed by
            
           <a
-            class="jsx-3092902157 animatedLink animatedLinkWhite"
+            class="jsx-2748243618 animatedLink animatedLinkWhite"
             href="https://www.andremarquesdev.com"
             rel="noreferrer"
             target="_blank"
@@ -566,14 +527,14 @@ exports[`<Layout /> renders properly when the menu is open and the resolution is
           </a>
         </p>
         <ul
-          class="jsx-3092902157"
+          class="jsx-2748243618"
         >
           <li
-            class="jsx-3092902157"
+            class="jsx-2748243618"
           >
             <a
               aria-label="Aguarela instagram"
-              class="jsx-3092902157"
+              class="jsx-2748243618 iconLink"
               href="https://www.instagram.com/aguareladigital/"
               rel="noreferrer"
               target="_blank"
@@ -594,11 +555,11 @@ exports[`<Layout /> renders properly when the menu is open and the resolution is
             </a>
           </li>
           <li
-            class="jsx-3092902157"
+            class="jsx-2748243618"
           >
             <a
               aria-label="Aguarela facebook"
-              class="jsx-3092902157"
+              class="jsx-2748243618 iconLink"
               href="https://www.facebook.com/aguareladigitalpt"
               rel="noreferrer"
               target="_blank"
@@ -619,11 +580,11 @@ exports[`<Layout /> renders properly when the menu is open and the resolution is
             </a>
           </li>
           <li
-            class="jsx-3092902157"
+            class="jsx-2748243618"
           >
             <a
               aria-label="Go to contact page"
-              class="jsx-3092902157"
+              class="iconLink"
               href="/pt/contact"
             >
               <svg

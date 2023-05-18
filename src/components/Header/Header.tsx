@@ -38,11 +38,12 @@ export const Header = ({ currentRoute, language }: HeaderProps): JSX.Element => 
     return (
         <header data-testid={headerDataTestId}>
             <nav ref={navRef} className="wrapper">
-                <Link href={`/${language}/${'homepage' as Page}`} prefetch={false}>
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a data-testid={homepageLogoLinkDataTestId}>
-                        <Image alt="Logo" height={35} src="/images/logo.svg" width={logoWidth} />
-                    </a>
+                <Link
+                    data-testid={homepageLogoLinkDataTestId}
+                    href={`/${language}/${'homepage' as Page}`}
+                    prefetch={false}
+                >
+                    <Image alt="Logo" height={35} src="/images/logo.svg" width={logoWidth} />
                 </Link>
 
                 <NavLinks

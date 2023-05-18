@@ -15,7 +15,7 @@ Aguarela Digital website
 ### Technologies
 
 <a href="https://reactjs.org" target="_blank">![React Badge](https://img.shields.io/badge/React_v18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)</a>
-<a href="https://nextjs.org/" target="_blank">![Next.js Badge](https://img.shields.io/badge/Next.js_v12-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)</a>
+<a href="https://nextjs.org/" target="_blank">![Next.js Badge](https://img.shields.io/badge/Next.js_v13-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)</a>
 <a href="https://www.typescriptlang.org/" target="_blank">![Typescript Badge](https://img.shields.io/badge/TypeScript_v5-007ACC?style=for-the-badge&logo=typescript&logoColor=white)</a>
 <a href="https://nodejs.org/" target="_blank">![Node Badge](https://img.shields.io/badge/Node_v18-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)</a>
 <a href="https://github.com/vercel/styled-jsx" target="_blank">![Styled JSX Badge](https://img.shields.io/badge/Styled_JSX-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)</a>

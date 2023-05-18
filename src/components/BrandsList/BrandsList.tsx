@@ -27,6 +27,7 @@ import { mobileMediaQuery, tabletMediaQuery } from '../../styles/mediaQueries';
 
 export const BrandsList = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
+    const imageSize = 150;
 
     return (
         <>
@@ -44,9 +45,15 @@ export const BrandsList = (): JSX.Element => {
                             >
                                 <Image
                                     alt="avocado logo"
-                                    height={150}
+                                    height={imageSize}
                                     src="/images/brandLogos/avocado.jpg"
-                                    width={150}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        position: 'relative',
+                                        maxWidth: `${imageSize}px`,
+                                    }}
+                                    width={imageSize}
                                 />
                             </a>
                         </li>
@@ -59,9 +66,15 @@ export const BrandsList = (): JSX.Element => {
                             >
                                 <Image
                                     alt="pernod logo"
-                                    height={150}
+                                    height={imageSize}
                                     src="/images/brandLogos/pernod.jpg"
-                                    width={150}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        position: 'relative',
+                                        maxWidth: `${imageSize}px`,
+                                    }}
+                                    width={imageSize}
                                 />
                             </a>
                         </li>
@@ -74,9 +87,15 @@ export const BrandsList = (): JSX.Element => {
                             >
                                 <Image
                                     alt="tjela logo"
-                                    height={150}
+                                    height={imageSize}
                                     src="/images/brandLogos/tjela.jpg"
-                                    width={150}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        position: 'relative',
+                                        maxWidth: `${imageSize}px`,
+                                    }}
+                                    width={imageSize}
                                 />
                             </a>
                         </li>
@@ -89,9 +108,15 @@ export const BrandsList = (): JSX.Element => {
                             >
                                 <Image
                                     alt="guacamole logo"
-                                    height={150}
+                                    height={imageSize}
                                     src="/images/brandLogos/guacamole.jpg"
-                                    width={150}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        position: 'relative',
+                                        maxWidth: `${imageSize}px`,
+                                    }}
+                                    width={imageSize}
                                 />
                             </a>
                         </li>
@@ -104,9 +129,15 @@ export const BrandsList = (): JSX.Element => {
                             >
                                 <Image
                                     alt="kaffeehaus logo"
-                                    height={150}
+                                    height={imageSize}
                                     src="/images/brandLogos/kaffeehaus.jpg"
-                                    width={150}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        position: 'relative',
+                                        maxWidth: `${imageSize}px`,
+                                    }}
+                                    width={imageSize}
                                 />
                             </a>
                         </li>
@@ -119,9 +150,15 @@ export const BrandsList = (): JSX.Element => {
                             >
                                 <Image
                                     alt="taste of india logo"
-                                    height={150}
+                                    height={imageSize}
                                     src="/images/brandLogos/tasteofindia.jpg"
-                                    width={150}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        position: 'relative',
+                                        maxWidth: `${imageSize}px`,
+                                    }}
+                                    width={imageSize}
                                 />
                             </a>
                         </li>
@@ -134,9 +171,15 @@ export const BrandsList = (): JSX.Element => {
                             >
                                 <Image
                                     alt="icecream roll logo"
-                                    height={150}
+                                    height={imageSize}
                                     src="/images/brandLogos/icecreamroll.jpg"
-                                    width={150}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        position: 'relative',
+                                        maxWidth: `${imageSize}px`,
+                                    }}
+                                    width={imageSize}
                                 />
                             </a>
                         </li>
@@ -149,9 +192,15 @@ export const BrandsList = (): JSX.Element => {
                             >
                                 <Image
                                     alt="marialimao logo"
-                                    height={150}
+                                    height={imageSize}
                                     src="/images/brandLogos/marialimao.jpg"
-                                    width={150}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        position: 'relative',
+                                        maxWidth: `${imageSize}px`,
+                                    }}
+                                    width={imageSize}
                                 />
                             </a>
                         </li>
@@ -164,9 +213,15 @@ export const BrandsList = (): JSX.Element => {
                             >
                                 <Image
                                     alt="biergarten logo"
-                                    height={150}
+                                    height={imageSize}
                                     src="/images/brandLogos/biergarten.jpg"
-                                    width={150}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        position: 'relative',
+                                        maxWidth: `${imageSize}px`,
+                                    }}
+                                    width={imageSize}
                                 />
                             </a>
                         </li>
@@ -179,9 +234,15 @@ export const BrandsList = (): JSX.Element => {
                             >
                                 <Image
                                     alt="trattoria logo"
-                                    height={150}
+                                    height={imageSize}
                                     src="/images/brandLogos/trattoria.jpg"
-                                    width={150}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        position: 'relative',
+                                        maxWidth: `${imageSize}px`,
+                                    }}
+                                    width={imageSize}
                                 />
                             </a>
                         </li>
@@ -194,9 +255,15 @@ export const BrandsList = (): JSX.Element => {
                             >
                                 <Image
                                     alt="a amiga esteticista logo"
-                                    height={150}
+                                    height={imageSize}
                                     src="/images/brandLogos/amiga-esteticista.jpg"
-                                    width={150}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        position: 'relative',
+                                        maxWidth: `${imageSize}px`,
+                                    }}
+                                    width={imageSize}
                                 />
                             </a>
                         </li>
@@ -209,9 +276,15 @@ export const BrandsList = (): JSX.Element => {
                             >
                                 <Image
                                     alt="rice me deli logo"
-                                    height={150}
+                                    height={imageSize}
                                     src="/images/brandLogos/ricemedeli.jpg"
-                                    width={150}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        position: 'relative',
+                                        maxWidth: `${imageSize}px`,
+                                    }}
+                                    width={imageSize}
                                 />
                             </a>
                         </li>
@@ -224,9 +297,15 @@ export const BrandsList = (): JSX.Element => {
                             >
                                 <Image
                                     alt="4 patas de 5 estrelas logo"
-                                    height={150}
+                                    height={imageSize}
                                     src="/images/brandLogos/4patas.jpg"
-                                    width={150}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        position: 'relative',
+                                        maxWidth: `${imageSize}px`,
+                                    }}
+                                    width={imageSize}
                                 />
                             </a>
                         </li>
@@ -239,9 +318,15 @@ export const BrandsList = (): JSX.Element => {
                             >
                                 <Image
                                     alt="rice me logo"
-                                    height={150}
+                                    height={imageSize}
                                     src="/images/brandLogos/riceme.jpg"
-                                    width={150}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        position: 'relative',
+                                        maxWidth: `${imageSize}px`,
+                                    }}
+                                    width={imageSize}
                                 />
                             </a>
                         </li>
@@ -254,9 +339,15 @@ export const BrandsList = (): JSX.Element => {
                             >
                                 <Image
                                     alt="luminous logo"
-                                    height={150}
+                                    height={imageSize}
                                     src="/images/brandLogos/luminous.jpg"
-                                    width={150}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        position: 'relative',
+                                        maxWidth: `${imageSize}px`,
+                                    }}
+                                    width={imageSize}
                                 />
                             </a>
                         </li>
@@ -269,9 +360,15 @@ export const BrandsList = (): JSX.Element => {
                             >
                                 <Image
                                     alt="mad mary logo"
-                                    height={150}
+                                    height={imageSize}
                                     src="/images/brandLogos/madmary.jpg"
-                                    width={150}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        position: 'relative',
+                                        maxWidth: `${imageSize}px`,
+                                    }}
+                                    width={imageSize}
                                 />
                             </a>
                         </li>
@@ -284,9 +381,15 @@ export const BrandsList = (): JSX.Element => {
                             >
                                 <Image
                                     alt="harpoon logo"
-                                    height={150}
+                                    height={imageSize}
                                     src="/images/brandLogos/harpoon.jpg"
-                                    width={150}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        position: 'relative',
+                                        maxWidth: `${imageSize}px`,
+                                    }}
+                                    width={imageSize}
                                 />
                             </a>
                         </li>
@@ -299,9 +402,15 @@ export const BrandsList = (): JSX.Element => {
                             >
                                 <Image
                                     alt="bovine logo"
-                                    height={150}
+                                    height={imageSize}
                                     src="/images/brandLogos/bovine.jpg"
-                                    width={150}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        position: 'relative',
+                                        maxWidth: `${imageSize}px`,
+                                    }}
+                                    width={imageSize}
                                 />
                             </a>
                         </li>

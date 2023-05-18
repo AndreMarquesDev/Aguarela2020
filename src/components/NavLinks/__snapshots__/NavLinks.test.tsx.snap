@@ -3,50 +3,50 @@
 exports[`<NavLinks /> renders properly 1`] = `
 <div>
   <ul
-    class="jsx-2853090894 "
+    class="jsx-2513558763 "
   >
     <li
-      class="jsx-2853090894"
+      class="jsx-2513558763"
     >
       <a
-        class="jsx-2853090894 fontS"
+        class="fontS navLinksLink"
         href="/pt/about"
       >
         Sobre
       </a>
     </li>
     <li
-      class="jsx-2853090894"
+      class="jsx-2513558763"
     >
       <a
-        class="jsx-2853090894 fontS"
+        class="fontS navLinksLink"
         href="/pt/projects"
       >
         Projetos
       </a>
     </li>
     <li
-      class="jsx-2853090894"
+      class="jsx-2513558763"
     >
       <a
-        class="jsx-2853090894 fontS active"
+        class="fontS active navLinksLink"
         href="/pt/services"
       >
         Serviços
       </a>
     </li>
     <li
-      class="jsx-2853090894"
+      class="jsx-2513558763"
     >
       <a
-        class="jsx-2853090894 fontS"
+        class="fontS navLinksLink"
         href="/pt/contact"
       >
         Contacto
       </a>
     </li>
     <li
-      class="jsx-2853090894 languageButton fontXXS"
+      class="jsx-2513558763 languageButton fontXXS"
     >
       <button
         class="jsx-2866958827"
@@ -62,50 +62,50 @@ exports[`<NavLinks /> renders properly 1`] = `
 exports[`<NavLinks /> renders properly in mobile 1`] = `
 <div>
   <ul
-    class="jsx-2853090894 mobileLayout"
+    class="jsx-2513558763 mobileLayout"
   >
     <li
-      class="jsx-2853090894"
+      class="jsx-2513558763"
     >
       <a
-        class="jsx-2853090894 fontS"
+        class="fontS navLinksLink"
         href="/pt/about"
       >
         Sobre
       </a>
     </li>
     <li
-      class="jsx-2853090894"
+      class="jsx-2513558763"
     >
       <a
-        class="jsx-2853090894 fontS"
+        class="fontS navLinksLink"
         href="/pt/projects"
       >
         Projetos
       </a>
     </li>
     <li
-      class="jsx-2853090894"
+      class="jsx-2513558763"
     >
       <a
-        class="jsx-2853090894 fontS active"
+        class="fontS active navLinksLink"
         href="/pt/services"
       >
         Serviços
       </a>
     </li>
     <li
-      class="jsx-2853090894"
+      class="jsx-2513558763"
     >
       <a
-        class="jsx-2853090894 fontS"
+        class="fontS navLinksLink"
         href="/pt/contact"
       >
         Contacto
       </a>
     </li>
     <li
-      class="jsx-2853090894 languageButton fontXXS white fontXS"
+      class="jsx-2513558763 languageButton fontXXS white fontXS"
     >
       <button
         class="jsx-2866958827"
@@ -121,50 +121,50 @@ exports[`<NavLinks /> renders properly in mobile 1`] = `
 exports[`<NavLinks /> renders properly when language is en 1`] = `
 <div>
   <ul
-    class="jsx-2853090894 "
+    class="jsx-2513558763 "
   >
     <li
-      class="jsx-2853090894"
+      class="jsx-2513558763"
     >
       <a
-        class="jsx-2853090894 fontS"
+        class="fontS navLinksLink"
         href="/en/about"
       >
         About
       </a>
     </li>
     <li
-      class="jsx-2853090894"
+      class="jsx-2513558763"
     >
       <a
-        class="jsx-2853090894 fontS"
+        class="fontS navLinksLink"
         href="/en/projects"
       >
         Projects
       </a>
     </li>
     <li
-      class="jsx-2853090894"
+      class="jsx-2513558763"
     >
       <a
-        class="jsx-2853090894 fontS active"
+        class="fontS active navLinksLink"
         href="/en/services"
       >
         Services
       </a>
     </li>
     <li
-      class="jsx-2853090894"
+      class="jsx-2513558763"
     >
       <a
-        class="jsx-2853090894 fontS"
+        class="fontS navLinksLink"
         href="/en/contact"
       >
         Contact
       </a>
     </li>
     <li
-      class="jsx-2853090894 languageButton fontXXS"
+      class="jsx-2513558763 languageButton fontXXS"
     >
       <button
         class="jsx-2866958827"
@@ -180,50 +180,50 @@ exports[`<NavLinks /> renders properly when language is en 1`] = `
 exports[`<NavLinks /> renders properly when the menu is open 1`] = `
 <div>
   <ul
-    class="jsx-2853090894 mobileLayout menuOpen"
+    class="jsx-2513558763 mobileLayout menuOpen"
   >
     <li
-      class="jsx-2853090894"
+      class="jsx-2513558763"
     >
       <a
-        class="jsx-2853090894 fontS"
+        class="fontS navLinksLink"
         href="/pt/about"
       >
         Sobre
       </a>
     </li>
     <li
-      class="jsx-2853090894"
+      class="jsx-2513558763"
     >
       <a
-        class="jsx-2853090894 fontS"
+        class="fontS navLinksLink"
         href="/pt/projects"
       >
         Projetos
       </a>
     </li>
     <li
-      class="jsx-2853090894"
+      class="jsx-2513558763"
     >
       <a
-        class="jsx-2853090894 fontS active"
+        class="fontS active navLinksLink"
         href="/pt/services"
       >
         Serviços
       </a>
     </li>
     <li
-      class="jsx-2853090894"
+      class="jsx-2513558763"
     >
       <a
-        class="jsx-2853090894 fontS"
+        class="fontS navLinksLink"
         href="/pt/contact"
       >
         Contacto
       </a>
     </li>
     <li
-      class="jsx-2853090894 languageButton fontXXS white fontXS"
+      class="jsx-2513558763 languageButton fontXXS white fontXS"
     >
       <button
         class="jsx-2866958827"

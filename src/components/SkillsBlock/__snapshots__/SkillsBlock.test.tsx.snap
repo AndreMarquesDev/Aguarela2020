@@ -21,19 +21,17 @@ exports[`<SkillsBlock /> renders properly 1`] = `
           class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-          >
-            <img
-              alt="Estratégia de Redes Sociais"
-              class="imageOpacity"
-              data-nimg="fixed"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-            <noscript />
-          </span>
+          <img
+            alt="Estratégia de Redes Sociais"
+            class="imageOpacity"
+            data-nimg="1"
+            decoding="async"
+            height="130"
+            loading="lazy"
+            src="/images/icons/strategy.svg"
+            style="color: transparent;"
+            width="160"
+          />
           <strong
             class="jsx-1722958468 fontM"
           >
@@ -49,19 +47,17 @@ exports[`<SkillsBlock /> renders properly 1`] = `
           class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-          >
-            <img
-              alt="Consultoria de Redes Sociais"
-              class="imageOpacity"
-              data-nimg="fixed"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-            <noscript />
-          </span>
+          <img
+            alt="Consultoria de Redes Sociais"
+            class="imageOpacity"
+            data-nimg="1"
+            decoding="async"
+            height="130"
+            loading="lazy"
+            src="/images/icons/phone.svg"
+            style="color: transparent;"
+            width="160"
+          />
           <strong
             class="jsx-1722958468 fontM"
           >
@@ -77,19 +73,17 @@ exports[`<SkillsBlock /> renders properly 1`] = `
           class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-          >
-            <img
-              alt="Gestão de Comunidade"
-              class="imageOpacity"
-              data-nimg="fixed"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-            <noscript />
-          </span>
+          <img
+            alt="Gestão de Comunidade"
+            class="imageOpacity"
+            data-nimg="1"
+            decoding="async"
+            height="130"
+            loading="lazy"
+            src="/images/icons/chat.svg"
+            style="color: transparent;"
+            width="160"
+          />
           <strong
             class="jsx-1722958468 fontM"
           >
@@ -105,19 +99,17 @@ exports[`<SkillsBlock /> renders properly 1`] = `
           class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-          >
-            <img
-              alt="Paid Social e Search"
-              class="imageOpacity"
-              data-nimg="fixed"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-            <noscript />
-          </span>
+          <img
+            alt="Paid Social e Search"
+            class="imageOpacity"
+            data-nimg="1"
+            decoding="async"
+            height="130"
+            loading="lazy"
+            src="/images/icons/money.svg"
+            style="color: transparent;"
+            width="160"
+          />
           <strong
             class="jsx-1722958468 fontM"
           >
@@ -133,19 +125,17 @@ exports[`<SkillsBlock /> renders properly 1`] = `
           class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-          >
-            <img
-              alt="Análise e Otimização"
-              class="imageOpacity"
-              data-nimg="fixed"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-            <noscript />
-          </span>
+          <img
+            alt="Análise e Otimização"
+            class="imageOpacity"
+            data-nimg="1"
+            decoding="async"
+            height="130"
+            loading="lazy"
+            src="/images/icons/graph.svg"
+            style="color: transparent;"
+            width="160"
+          />
           <strong
             class="jsx-1722958468 fontM"
           >
@@ -161,19 +151,17 @@ exports[`<SkillsBlock /> renders properly 1`] = `
           class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-          >
-            <img
-              alt="Criação de Conteúdo"
-              class="imageOpacity"
-              data-nimg="fixed"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-            <noscript />
-          </span>
+          <img
+            alt="Criação de Conteúdo"
+            class="imageOpacity"
+            data-nimg="1"
+            decoding="async"
+            height="130"
+            loading="lazy"
+            src="/images/icons/camera.svg"
+            style="color: transparent;"
+            width="160"
+          />
           <strong
             class="jsx-1722958468 fontM"
           >
@@ -212,19 +200,17 @@ exports[`<SkillsBlock /> renders properly in English 1`] = `
           class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-          >
-            <img
-              alt="Social Media strategy"
-              class="imageOpacity"
-              data-nimg="fixed"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-            <noscript />
-          </span>
+          <img
+            alt="Social Media strategy"
+            class="imageOpacity"
+            data-nimg="1"
+            decoding="async"
+            height="130"
+            loading="lazy"
+            src="/images/icons/strategy.svg"
+            style="color: transparent;"
+            width="160"
+          />
           <strong
             class="jsx-1722958468 fontM"
           >
@@ -240,19 +226,17 @@ exports[`<SkillsBlock /> renders properly in English 1`] = `
           class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-          >
-            <img
-              alt="Social Media consulting"
-              class="imageOpacity"
-              data-nimg="fixed"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-            <noscript />
-          </span>
+          <img
+            alt="Social Media consulting"
+            class="imageOpacity"
+            data-nimg="1"
+            decoding="async"
+            height="130"
+            loading="lazy"
+            src="/images/icons/phone.svg"
+            style="color: transparent;"
+            width="160"
+          />
           <strong
             class="jsx-1722958468 fontM"
           >
@@ -268,19 +252,17 @@ exports[`<SkillsBlock /> renders properly in English 1`] = `
           class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-          >
-            <img
-              alt="Community Management"
-              class="imageOpacity"
-              data-nimg="fixed"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-            <noscript />
-          </span>
+          <img
+            alt="Community Management"
+            class="imageOpacity"
+            data-nimg="1"
+            decoding="async"
+            height="130"
+            loading="lazy"
+            src="/images/icons/chat.svg"
+            style="color: transparent;"
+            width="160"
+          />
           <strong
             class="jsx-1722958468 fontM"
           >
@@ -296,19 +278,17 @@ exports[`<SkillsBlock /> renders properly in English 1`] = `
           class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-          >
-            <img
-              alt="Paid Social and Search"
-              class="imageOpacity"
-              data-nimg="fixed"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-            <noscript />
-          </span>
+          <img
+            alt="Paid Social and Search"
+            class="imageOpacity"
+            data-nimg="1"
+            decoding="async"
+            height="130"
+            loading="lazy"
+            src="/images/icons/money.svg"
+            style="color: transparent;"
+            width="160"
+          />
           <strong
             class="jsx-1722958468 fontM"
           >
@@ -324,19 +304,17 @@ exports[`<SkillsBlock /> renders properly in English 1`] = `
           class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-          >
-            <img
-              alt="Optimization and Analysis"
-              class="imageOpacity"
-              data-nimg="fixed"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-            <noscript />
-          </span>
+          <img
+            alt="Optimization and Analysis"
+            class="imageOpacity"
+            data-nimg="1"
+            decoding="async"
+            height="130"
+            loading="lazy"
+            src="/images/icons/graph.svg"
+            style="color: transparent;"
+            width="160"
+          />
           <strong
             class="jsx-1722958468 fontM"
           >
@@ -352,19 +330,17 @@ exports[`<SkillsBlock /> renders properly in English 1`] = `
           class="jsx-2677502451"
           data-testid="skillsBlock_skillItemWrapper"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-          >
-            <img
-              alt="Content creation"
-              class="imageOpacity"
-              data-nimg="fixed"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-            <noscript />
-          </span>
+          <img
+            alt="Content creation"
+            class="imageOpacity"
+            data-nimg="1"
+            decoding="async"
+            height="130"
+            loading="lazy"
+            src="/images/icons/camera.svg"
+            style="color: transparent;"
+            width="160"
+          />
           <strong
             class="jsx-1722958468 fontM"
           >
@@ -488,20 +464,18 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Estratégia de Redes Sociais"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Estratégia de Redes Sociais"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/strategy.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -522,20 +496,18 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Consultoria de Redes Sociais"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Consultoria de Redes Sociais"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/phone.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -556,20 +528,18 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Gestão de Comunidade"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Gestão de Comunidade"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/chat.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -590,20 +560,18 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Paid Social e Search"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Paid Social e Search"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/money.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -624,20 +592,18 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Análise e Otimização"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Análise e Otimização"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/graph.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -658,20 +624,18 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Criação de Conteúdo"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Criação de Conteúdo"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/camera.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -692,20 +656,18 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Estratégia de Redes Sociais"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Estratégia de Redes Sociais"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/strategy.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -726,20 +688,18 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Consultoria de Redes Sociais"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Consultoria de Redes Sociais"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/phone.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -760,20 +720,18 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Gestão de Comunidade"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Gestão de Comunidade"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/chat.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -794,20 +752,18 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Paid Social e Search"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Paid Social e Search"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/money.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -828,20 +784,18 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Análise e Otimização"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Análise e Otimização"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/graph.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -862,20 +816,18 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Criação de Conteúdo"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Criação de Conteúdo"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/camera.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -896,20 +848,18 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Estratégia de Redes Sociais"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Estratégia de Redes Sociais"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/strategy.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -930,20 +880,18 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Consultoria de Redes Sociais"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Consultoria de Redes Sociais"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/phone.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -964,20 +912,18 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Gestão de Comunidade"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Gestão de Comunidade"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/chat.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -998,20 +944,18 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Paid Social e Search"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Paid Social e Search"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/money.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -1032,20 +976,18 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Análise e Otimização"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Análise e Otimização"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/graph.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -1066,20 +1008,18 @@ exports[`<SkillsBlock /> renders properly on mobile 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Criação de Conteúdo"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Criação de Conteúdo"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/camera.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -1207,20 +1147,18 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Estratégia de Redes Sociais"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Estratégia de Redes Sociais"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/strategy.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -1241,20 +1179,18 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Consultoria de Redes Sociais"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Consultoria de Redes Sociais"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/phone.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -1275,20 +1211,18 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Gestão de Comunidade"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Gestão de Comunidade"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/chat.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -1309,20 +1243,18 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Paid Social e Search"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Paid Social e Search"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/money.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -1343,20 +1275,18 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Análise e Otimização"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Análise e Otimização"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/graph.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -1377,20 +1307,18 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Criação de Conteúdo"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Criação de Conteúdo"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/camera.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -1411,20 +1339,18 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Estratégia de Redes Sociais"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Estratégia de Redes Sociais"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/strategy.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -1445,20 +1371,18 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Consultoria de Redes Sociais"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Consultoria de Redes Sociais"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/phone.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -1479,20 +1403,18 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Gestão de Comunidade"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Gestão de Comunidade"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/chat.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -1513,20 +1435,18 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Paid Social e Search"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Paid Social e Search"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/money.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -1547,20 +1467,18 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Análise e Otimização"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Análise e Otimização"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/graph.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -1581,20 +1499,18 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Criação de Conteúdo"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Criação de Conteúdo"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/camera.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -1615,20 +1531,18 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Estratégia de Redes Sociais"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Estratégia de Redes Sociais"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/strategy.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -1649,20 +1563,18 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Consultoria de Redes Sociais"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Consultoria de Redes Sociais"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/phone.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -1683,20 +1595,18 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Gestão de Comunidade"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Gestão de Comunidade"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/chat.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -1717,20 +1627,18 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Paid Social e Search"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Paid Social e Search"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/money.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -1751,20 +1659,18 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Análise e Otimização"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Análise e Otimização"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/graph.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >
@@ -1785,20 +1691,18 @@ exports[`<SkillsBlock /> renders properly on tablet 1`] = `
                   class="jsx-2677502451 carouselItem"
                   data-testid="skillsBlock_skillItemCarousel"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 160px; height: 130px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
-                  >
-                    <img
-                      alt="Criação de Conteúdo"
-                      class="imageOpacity"
-                      data-nimg="fixed"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="Criação de Conteúdo"
+                    class="imageOpacity"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="130"
+                    loading="lazy"
+                    src="/images/icons/camera.svg"
+                    style="color: transparent;"
+                    width="160"
+                  />
                   <strong
                     class="jsx-1722958468 fontM"
                   >

@@ -57,13 +57,13 @@ exports[`<TextShadowBlock /> renders properly with a button 1`] = `
           Através do planeamento estratégico, criação de conteúdo e implementação estou disponível para ser o vosso braço direito.
         </p>
         <div
-          class="jsx-3983101691 buttonWrapper"
+          class="jsx-477676945 buttonWrapper"
         >
           <div
-            class="jsx-3983101691 buttonBackground"
+            class="jsx-477676945 buttonBackground"
           >
             <a
-              class="jsx-3983101691 button fontS lowercase"
+              class="jsx-477676945 buttonComponent fontS buttonComponentLowercase"
               href="mailto:catarina@aguareladigital.com"
               rel="noreferrer"
               target="_blank"

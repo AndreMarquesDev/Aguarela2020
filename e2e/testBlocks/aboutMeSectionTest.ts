@@ -23,12 +23,12 @@ export const aboutMeSectionTest = async (
     const anchor = container.getByRole('link', { name: getToKnowMeBetter });
     const image = container.getByAltText('a picture of me, Catarina');
     const imageBoundingBox = await image.boundingBox();
-    const imageWidthDesktop = 530;
+    const imageWidthDesktop = 540;
     const imageWidthMobileChrome = 353;
     const imageWidthMobileSafari = 350;
-    const imageHeightDesktop = 650;
-    const imageHeightMobileChrome = 433;
-    const imageHeightMobileSafari = 429;
+    const imageHeightDesktop = 675;
+    const imageHeightMobileChrome = 441;
+    const imageHeightMobileSafari = 438;
     const imageWidth = getImageDimension(
         isMobile,
         browserName,

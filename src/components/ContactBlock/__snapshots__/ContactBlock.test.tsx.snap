@@ -48,13 +48,13 @@ exports[`<ContactBlock /> renders properly 1`] = `
           Estou ainda disponível para dar consultoria em social media e partilhar todos os passos e dicas de que precisa para cumprir os seus objetivos.
         </p>
         <div
-          class="jsx-3983101691 buttonWrapper"
+          class="jsx-477676945 buttonWrapper"
         >
           <div
-            class="jsx-3983101691 buttonBackground"
+            class="jsx-477676945 buttonBackground"
           >
             <a
-              class="jsx-3983101691 button fontS lowercase"
+              class="jsx-477676945 buttonComponent fontS buttonComponentLowercase"
               href="mailto:catarina@aguareladigital.com"
               rel="noreferrer"
               target="_blank"
@@ -117,13 +117,13 @@ exports[`<ContactBlock /> renders properly in English 1`] = `
           I am also available to provide social media consulting and share all the tips you need to fulfill your goals.
         </p>
         <div
-          class="jsx-3983101691 buttonWrapper"
+          class="jsx-477676945 buttonWrapper"
         >
           <div
-            class="jsx-3983101691 buttonBackground"
+            class="jsx-477676945 buttonBackground"
           >
             <a
-              class="jsx-3983101691 button fontS lowercase"
+              class="jsx-477676945 buttonComponent fontS buttonComponentLowercase"
               href="mailto:catarina@aguareladigital.com"
               rel="noreferrer"
               target="_blank"
@@ -176,13 +176,13 @@ exports[`<ContactBlock /> renders properly in English and mobile 1`] = `
           I am also available to provide social media consulting and share all the tips you need to fulfill your goals.
         </p>
         <div
-          class="jsx-3983101691 buttonWrapper"
+          class="jsx-477676945 buttonWrapper"
         >
           <div
-            class="jsx-3983101691 buttonBackground alignCenter"
+            class="jsx-477676945 buttonBackground alignCenter"
           >
             <a
-              class="jsx-3983101691 button fontS lowercase"
+              class="jsx-477676945 buttonComponent fontS buttonComponentLowercase"
               href="mailto:catarina@aguareladigital.com"
               rel="noreferrer"
               target="_blank"
@@ -235,13 +235,13 @@ exports[`<ContactBlock /> renders properly on mobile 1`] = `
           Estou ainda disponível para dar consultoria em social media e partilhar todos os passos e dicas de que precisa para cumprir os seus objetivos.
         </p>
         <div
-          class="jsx-3983101691 buttonWrapper"
+          class="jsx-477676945 buttonWrapper"
         >
           <div
-            class="jsx-3983101691 buttonBackground alignCenter"
+            class="jsx-477676945 buttonBackground alignCenter"
           >
             <a
-              class="jsx-3983101691 button fontS lowercase"
+              class="jsx-477676945 buttonComponent fontS buttonComponentLowercase"
               href="mailto:catarina@aguareladigital.com"
               rel="noreferrer"
               target="_blank"
