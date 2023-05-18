@@ -39,6 +39,7 @@ export const Footer = ({ language }: FooterProps): JSX.Element => {
                         <li>
                             <a
                                 aria-label="Aguarela instagram"
+                                className="iconLink"
                                 href={aguarelaDigitalInstagramUrl}
                                 rel="noreferrer"
                                 target="_blank"
@@ -49,6 +50,7 @@ export const Footer = ({ language }: FooterProps): JSX.Element => {
                         <li>
                             <a
                                 aria-label="Aguarela facebook"
+                                className="iconLink"
                                 href={aguarelaDigitalFacebookUrl}
                                 rel="noreferrer"
                                 target="_blank"
@@ -57,11 +59,13 @@ export const Footer = ({ language }: FooterProps): JSX.Element => {
                             </a>
                         </li>
                         <li>
-                            <Link href={`/${language}/${'contact' as Page}`} prefetch={false}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a aria-label="Go to contact page">
-                                    <FaEnvelope />
-                                </a>
+                            <Link
+                                aria-label="Go to contact page"
+                                className="iconLink"
+                                href={`/${language}/${'contact' as Page}`}
+                                prefetch={false}
+                            >
+                                <FaEnvelope />
                             </Link>
                         </li>
                     </ul>
@@ -119,15 +123,15 @@ export const Footer = ({ language }: FooterProps): JSX.Element => {
                                 background: var(--white);
                                 border-radius: 50%;
                             }
-
-                            a {
-                                height: 100%;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                position: relative;
-                            }
                         }
+                    }
+
+                    :global(.iconLink) {
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
                     }
                 `}
             </style>

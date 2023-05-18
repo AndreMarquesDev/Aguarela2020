@@ -29,15 +29,18 @@ export const NavLinks = ({
         isMenuOpen && isMobile && 'menuOpen'
     );
     const linkStyles = (link: string): string =>
-        classNames('fontS', currentRoute.includes(link) && 'active');
+        classNames('fontS', currentRoute.includes(link) && 'active', 'navLinksLink');
 
     return (
         <ul className={linksContainerStyles}>
             {navLinks.map(link => (
                 <li key={language + link}>
-                    <Link href={`/${language}/${link}`} prefetch={false}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a className={linkStyles(link)}>{texts[link as keyof TextsInterface]}</a>
+                    <Link
+                        className={linkStyles(link)}
+                        href={`/${language}/${link}`}
+                        prefetch={false}
+                    >
+                        {texts[link as keyof TextsInterface]}
                     </Link>
                 </li>
             ))}
@@ -54,11 +57,10 @@ export const NavLinks = ({
                         &.mobileLayout {
                             display: none;
 
-                            li {
-                                a {
-                                    color: var(--white);
-                                    margin-bottom: 25rem;
-                                }
+                            :global(.navLinksLink),
+                            :global(.navLinksLink.active) {
+                                color: var(--white);
+                                margin-bottom: 25rem;
                             }
                         }
 
@@ -80,8 +82,8 @@ export const NavLinks = ({
                     li {
                         margin: 0 25rem;
 
-                        &:hover a,
-                        .active {
+                        &:hover :global(.navLinksLink),
+                        :global(.navLinksLink.active) {
                             color: var(--purple);
                         }
 
@@ -89,7 +91,7 @@ export const NavLinks = ({
                             margin: 0 calc(12.5rem / 2);
                         }
 
-                        a {
+                        :global(.navLinksLink) {
                             display: inline-block;
                             text-transform: uppercase;
                             transition: color 0.15s linear;

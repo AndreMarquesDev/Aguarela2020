@@ -25,6 +25,11 @@ export const AboutMe = (): JSX.Element => {
                                 alt="a picture of me, Catarina"
                                 height={650}
                                 src="/images/about-me.jpg"
+                                style={{
+                                    width: '100%',
+                                    height: 'auto',
+                                    position: 'relative',
+                                }}
                                 width={530}
                             />
                         </div>

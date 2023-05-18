@@ -36,6 +36,7 @@ export const ProjectItem = ({
 }: ProjectItemProps): JSX.Element => {
     const { texts } = useContext(TextsContext);
 
+    const imageSize = 400;
     const isTouch = isClientSide && window?.matchMedia('(hover: none), (pointer: coarse)').matches;
 
     const handleTouch = (event: TouchEvent<HTMLElement>): void => {
@@ -56,10 +57,16 @@ export const ProjectItem = ({
                 <li>
                     <Image
                         alt={imageAlt}
-                        height={400}
+                        height={imageSize}
                         priority={!!preloadImage}
                         src={imageSrc}
-                        width={400}
+                        style={{
+                            width: '100%',
+                            height: 'auto',
+                            position: 'relative',
+                            maxWidth: `${imageSize}px`,
+                        }}
+                        width={imageSize}
                     />
                     <div className="backface">
                         <a
@@ -91,10 +98,16 @@ export const ProjectItem = ({
                 >
                     <Image
                         alt={imageAlt}
-                        height={400}
+                        height={imageSize}
                         priority={!!preloadImage}
                         src={imageSrc}
-                        width={400}
+                        style={{
+                            width: '100%',
+                            height: 'auto',
+                            position: 'relative',
+                            maxWidth: `${imageSize}px`,
+                        }}
+                        width={imageSize}
                     />
                     <div className="backface">
                         <a
@@ -138,11 +151,16 @@ export const ProjectItem = ({
                     }
 
                     .carouselItem {
+                        max-width: 400rem;
+                        max-height: 400rem;
+                        width: auto;
+                        height: auto;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         text-align: center;
                         position: relative;
+                        margin: 0 auto;
 
                         &:hover {
                             .backface {
@@ -200,14 +218,11 @@ export const ProjectItem = ({
 
                     .backface {
                         display: none;
-                        max-width: 400rem;
-                        max-height: 400rem;
                         width: 100%;
                         height: 100%;
                         position: absolute;
                         top: 0;
-                        left: 50%;
-                        transform: translateX(-50%);
+                        left: 0;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;

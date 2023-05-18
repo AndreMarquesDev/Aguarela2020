@@ -1,4 +1,3 @@
-/* eslint-disable no-nested-ternary, jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -35,12 +34,17 @@ export const Button = ({
         !alignLeft && 'alignCenter',
         disabled && 'disabled'
     );
-    const buttonStyles = classNames('button', 'fontS', isLowercased && 'lowercase');
+    const buttonStyles = classNames(
+        'buttonComponent',
+        'fontS',
+        isLowercased && 'buttonComponentLowercase'
+    );
 
     return (
         <>
             <div className="buttonWrapper">
                 <div className={buttonBackgroundContainerStyles}>
+                    {/* eslint-disable-next-line no-nested-ternary */}
                     {isSubmit ? (
                         <button className={buttonStyles} type="submit" onClick={onClick}>
                             {children}
@@ -55,8 +59,12 @@ export const Button = ({
                             {children}
                         </a>
                     ) : (
-                        <Link href={`/${language}/${page}`} prefetch={false}>
-                            <a className={buttonStyles}>{children}</a>
+                        <Link
+                            className={buttonStyles}
+                            href={`/${language}/${page}`}
+                            prefetch={false}
+                        >
+                            {children}
                         </Link>
                     )}
                 </div>
@@ -109,27 +117,6 @@ export const Button = ({
                             background-color: var(--pink);
                             z-index: -1;
                         }
-
-                        .button {
-                            width: 100%;
-                            position: relative;
-                            display: block;
-                            padding: 10rem;
-                            color: var(--yellow);
-                            font-weight: bold;
-                            text-transform: uppercase;
-                            text-align: center;
-                            outline: none;
-                            z-index: 1;
-                        }
-
-                        .lowercase {
-                            text-transform: none;
-
-                            @media (${mobileMediaQuery}) {
-                                font-size: var(--fontSizeXS);
-                            }
-                        }
                     }
 
                     .alignCenter {
@@ -140,6 +127,27 @@ export const Button = ({
                     .disabled {
                         opacity: 0.5;
                         pointer-events: none;
+                    }
+
+                    :global(.buttonComponent) {
+                        width: 100%;
+                        position: relative;
+                        display: block;
+                        padding: 10rem;
+                        color: var(--yellow);
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        text-align: center;
+                        outline: none;
+                        z-index: 1;
+                    }
+
+                    :global(.buttonComponentLowercase) {
+                        text-transform: none;
+
+                        @media (${mobileMediaQuery}) {
+                            font-size: var(--fontSizeXS);
+                        }
                     }
                 `}
             </style>

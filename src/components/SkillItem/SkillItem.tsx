@@ -13,7 +13,6 @@ export const SkillItem = ({ icon, title, description }: SkillItemProps): JSX.Ele
             alt={title}
             className="imageOpacity"
             height={130}
-            layout="fixed"
             src={`/images/icons/${icon}.svg`}
             width={160}
         />

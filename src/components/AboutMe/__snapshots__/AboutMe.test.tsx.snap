@@ -20,28 +20,17 @@ exports[`<AboutMe /> renders properly 1`] = `
         <div
           class="jsx-2878702874 imageBlock"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-          >
-            <span
-              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-            >
-              <img
-                alt=""
-                aria-hidden="true"
-                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27530%27%20height=%27650%27/%3e"
-                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-              />
-            </span>
-            <img
-              alt="a picture of me, Catarina"
-              data-nimg="intrinsic"
-              decoding="async"
-              src="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75"
-              srcset="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75 2x"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </span>
+          <img
+            alt="a picture of me, Catarina"
+            data-nimg="1"
+            decoding="async"
+            fetchpriority="high"
+            height="650"
+            src="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75 2x"
+            style="color: transparent; width: 100%; height: auto; position: relative;"
+            width="530"
+          />
         </div>
         <div
           class="jsx-2878702874 textBlock"
@@ -62,13 +51,13 @@ exports[`<AboutMe /> renders properly 1`] = `
             A estratégia de comunicação em redes sociais é sempre desenvolvida com base nos objetivos do cliente. Embora seja importante ser flexível e compreensiva, o meu papel é pensar fora da caixa, criar conteúdo inovador para redes sociais e otimizar a estratégia com base nos resultados e tendências de mercado. Acredito que uma boa estratégia de comunicação aliada a um planeamento visual de conteúdo é o segredo para o aumento da visibilidade e faturação do negócio.
           </p>
           <div
-            class="jsx-3983101691 buttonWrapper"
+            class="jsx-477676945 buttonWrapper"
           >
             <div
-              class="jsx-3983101691 buttonBackground"
+              class="jsx-477676945 buttonBackground"
             >
               <a
-                class="jsx-3983101691 button fontS"
+                class="jsx-477676945 buttonComponent fontS"
                 href="https://www.instagram.com/catarinasantiago/"
                 rel="noreferrer"
                 target="_blank"
@@ -104,28 +93,17 @@ exports[`<AboutMe /> renders properly in English 1`] = `
         <div
           class="jsx-2878702874 imageBlock"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-          >
-            <span
-              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-            >
-              <img
-                alt=""
-                aria-hidden="true"
-                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27530%27%20height=%27650%27/%3e"
-                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-              />
-            </span>
-            <img
-              alt="a picture of me, Catarina"
-              data-nimg="intrinsic"
-              decoding="async"
-              src="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75"
-              srcset="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75 2x"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </span>
+          <img
+            alt="a picture of me, Catarina"
+            data-nimg="1"
+            decoding="async"
+            fetchpriority="high"
+            height="650"
+            src="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75 2x"
+            style="color: transparent; width: 100%; height: auto; position: relative;"
+            width="530"
+          />
         </div>
         <div
           class="jsx-2878702874 textBlock"
@@ -146,13 +124,13 @@ exports[`<AboutMe /> renders properly in English 1`] = `
             The social media strategy is always developed based on the client's goals. While it is important to be flexible, my role is to think outside the box by creating innovative content and optimizing the strategy based on results and market trends. I believe that a good communication strategy combined with a visual planning of the content is the key to increase the visibility and revenue of the business.
           </p>
           <div
-            class="jsx-3983101691 buttonWrapper"
+            class="jsx-477676945 buttonWrapper"
           >
             <div
-              class="jsx-3983101691 buttonBackground"
+              class="jsx-477676945 buttonBackground"
             >
               <a
-                class="jsx-3983101691 button fontS"
+                class="jsx-477676945 buttonComponent fontS"
                 href="https://www.instagram.com/catarinasantiago/"
                 rel="noreferrer"
                 target="_blank"
@@ -188,28 +166,17 @@ exports[`<AboutMe /> renders properly in mobile 1`] = `
         <div
           class="jsx-2878702874 imageBlock"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-          >
-            <span
-              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-            >
-              <img
-                alt=""
-                aria-hidden="true"
-                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27530%27%20height=%27650%27/%3e"
-                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-              />
-            </span>
-            <img
-              alt="a picture of me, Catarina"
-              data-nimg="intrinsic"
-              decoding="async"
-              src="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75"
-              srcset="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75 2x"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </span>
+          <img
+            alt="a picture of me, Catarina"
+            data-nimg="1"
+            decoding="async"
+            fetchpriority="high"
+            height="650"
+            src="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fabout-me.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fabout-me.jpg&w=1080&q=75 2x"
+            style="color: transparent; width: 100%; height: auto; position: relative;"
+            width="530"
+          />
         </div>
         <div
           class="jsx-2878702874 textBlock"
@@ -230,13 +197,13 @@ exports[`<AboutMe /> renders properly in mobile 1`] = `
             A estratégia de comunicação em redes sociais é sempre desenvolvida com base nos objetivos do cliente. Embora seja importante ser flexível e compreensiva, o meu papel é pensar fora da caixa, criar conteúdo inovador para redes sociais e otimizar a estratégia com base nos resultados e tendências de mercado. Acredito que uma boa estratégia de comunicação aliada a um planeamento visual de conteúdo é o segredo para o aumento da visibilidade e faturação do negócio.
           </p>
           <div
-            class="jsx-3983101691 buttonWrapper"
+            class="jsx-477676945 buttonWrapper"
           >
             <div
-              class="jsx-3983101691 buttonBackground alignCenter"
+              class="jsx-477676945 buttonBackground alignCenter"
             >
               <a
-                class="jsx-3983101691 button fontS"
+                class="jsx-477676945 buttonComponent fontS"
                 href="https://www.instagram.com/catarinasantiago/"
                 rel="noreferrer"
                 target="_blank"

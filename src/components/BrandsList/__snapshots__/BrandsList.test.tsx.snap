@@ -27,28 +27,17 @@ exports[`<BrandsList /> renders properly 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="avocado logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="avocado logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Favocado.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Favocado.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Favocado.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -61,28 +50,17 @@ exports[`<BrandsList /> renders properly 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="pernod logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="pernod logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Fpernod.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Fpernod.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Fpernod.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -95,28 +73,17 @@ exports[`<BrandsList /> renders properly 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="tjela logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="tjela logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Ftjela.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Ftjela.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Ftjela.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -129,28 +96,17 @@ exports[`<BrandsList /> renders properly 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="guacamole logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="guacamole logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Fguacamole.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Fguacamole.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Fguacamole.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -163,28 +119,17 @@ exports[`<BrandsList /> renders properly 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="kaffeehaus logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="kaffeehaus logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Fkaffeehaus.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Fkaffeehaus.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Fkaffeehaus.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -197,28 +142,17 @@ exports[`<BrandsList /> renders properly 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="taste of india logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="taste of india logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Ftasteofindia.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Ftasteofindia.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Ftasteofindia.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -231,28 +165,17 @@ exports[`<BrandsList /> renders properly 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="icecream roll logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="icecream roll logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Ficecreamroll.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Ficecreamroll.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Ficecreamroll.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -265,28 +188,17 @@ exports[`<BrandsList /> renders properly 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="marialimao logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="marialimao logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Fmarialimao.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Fmarialimao.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Fmarialimao.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -299,28 +211,17 @@ exports[`<BrandsList /> renders properly 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="biergarten logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="biergarten logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Fbiergarten.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Fbiergarten.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Fbiergarten.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -333,28 +234,17 @@ exports[`<BrandsList /> renders properly 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="trattoria logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="trattoria logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Ftrattoria.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Ftrattoria.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Ftrattoria.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -367,28 +257,17 @@ exports[`<BrandsList /> renders properly 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="a amiga esteticista logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="a amiga esteticista logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Famiga-esteticista.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Famiga-esteticista.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Famiga-esteticista.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -401,28 +280,17 @@ exports[`<BrandsList /> renders properly 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="rice me deli logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="rice me deli logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Fricemedeli.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Fricemedeli.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Fricemedeli.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -435,28 +303,17 @@ exports[`<BrandsList /> renders properly 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="4 patas de 5 estrelas logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="4 patas de 5 estrelas logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2F4patas.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2F4patas.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2F4patas.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -469,28 +326,17 @@ exports[`<BrandsList /> renders properly 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="rice me logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="rice me logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Friceme.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Friceme.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Friceme.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -503,28 +349,17 @@ exports[`<BrandsList /> renders properly 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="luminous logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="luminous logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Fluminous.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Fluminous.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Fluminous.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -537,28 +372,17 @@ exports[`<BrandsList /> renders properly 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="mad mary logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="mad mary logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Fmadmary.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Fmadmary.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Fmadmary.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -571,28 +395,17 @@ exports[`<BrandsList /> renders properly 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="harpoon logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="harpoon logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Fharpoon.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Fharpoon.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Fharpoon.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -605,28 +418,17 @@ exports[`<BrandsList /> renders properly 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="bovine logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="bovine logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Fbovine.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Fbovine.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Fbovine.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
       </ul>
@@ -662,28 +464,17 @@ exports[`<BrandsList /> renders properly in English 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="avocado logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="avocado logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Favocado.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Favocado.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Favocado.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -696,28 +487,17 @@ exports[`<BrandsList /> renders properly in English 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="pernod logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="pernod logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Fpernod.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Fpernod.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Fpernod.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -730,28 +510,17 @@ exports[`<BrandsList /> renders properly in English 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="tjela logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="tjela logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Ftjela.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Ftjela.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Ftjela.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -764,28 +533,17 @@ exports[`<BrandsList /> renders properly in English 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="guacamole logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="guacamole logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Fguacamole.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Fguacamole.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Fguacamole.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -798,28 +556,17 @@ exports[`<BrandsList /> renders properly in English 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="kaffeehaus logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="kaffeehaus logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Fkaffeehaus.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Fkaffeehaus.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Fkaffeehaus.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -832,28 +579,17 @@ exports[`<BrandsList /> renders properly in English 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="taste of india logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="taste of india logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Ftasteofindia.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Ftasteofindia.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Ftasteofindia.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -866,28 +602,17 @@ exports[`<BrandsList /> renders properly in English 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="icecream roll logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="icecream roll logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Ficecreamroll.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Ficecreamroll.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Ficecreamroll.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -900,28 +625,17 @@ exports[`<BrandsList /> renders properly in English 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="marialimao logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="marialimao logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Fmarialimao.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Fmarialimao.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Fmarialimao.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -934,28 +648,17 @@ exports[`<BrandsList /> renders properly in English 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="biergarten logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="biergarten logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Fbiergarten.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Fbiergarten.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Fbiergarten.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -968,28 +671,17 @@ exports[`<BrandsList /> renders properly in English 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="trattoria logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="trattoria logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Ftrattoria.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Ftrattoria.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Ftrattoria.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -1002,28 +694,17 @@ exports[`<BrandsList /> renders properly in English 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="a amiga esteticista logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="a amiga esteticista logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Famiga-esteticista.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Famiga-esteticista.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Famiga-esteticista.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -1036,28 +717,17 @@ exports[`<BrandsList /> renders properly in English 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="rice me deli logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="rice me deli logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Fricemedeli.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Fricemedeli.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Fricemedeli.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -1070,28 +740,17 @@ exports[`<BrandsList /> renders properly in English 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="4 patas de 5 estrelas logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="4 patas de 5 estrelas logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2F4patas.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2F4patas.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2F4patas.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -1104,28 +763,17 @@ exports[`<BrandsList /> renders properly in English 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="rice me logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="rice me logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Friceme.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Friceme.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Friceme.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -1138,28 +786,17 @@ exports[`<BrandsList /> renders properly in English 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="luminous logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="luminous logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Fluminous.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Fluminous.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Fluminous.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -1172,28 +809,17 @@ exports[`<BrandsList /> renders properly in English 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="mad mary logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="mad mary logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Fmadmary.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Fmadmary.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Fmadmary.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -1206,28 +832,17 @@ exports[`<BrandsList /> renders properly in English 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="harpoon logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="harpoon logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Fharpoon.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Fharpoon.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Fharpoon.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
         <li
@@ -1240,28 +855,17 @@ exports[`<BrandsList /> renders properly in English 1`] = `
             rel="noreferrer"
             target="_blank"
           >
-            <span
-              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-            >
-              <span
-                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-              >
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27150%27/%3e"
-                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                />
-              </span>
-              <img
-                alt="bovine logo"
-                data-nimg="intrinsic"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-              <noscript />
-            </span>
+            <img
+              alt="bovine logo"
+              data-nimg="1"
+              decoding="async"
+              height="150"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FbrandLogos%2Fbovine.jpg&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FbrandLogos%2Fbovine.jpg&w=256&q=75 1x, /_next/image?url=%2Fimages%2FbrandLogos%2Fbovine.jpg&w=384&q=75 2x"
+              style="color: transparent; width: 100%; height: auto; position: relative; max-width: 150px;"
+              width="150"
+            />
           </a>
         </li>
       </ul>

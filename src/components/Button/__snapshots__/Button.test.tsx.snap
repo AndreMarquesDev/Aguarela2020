@@ -3,13 +3,13 @@
 exports[`<Button /> renders properly 1`] = `
 <div>
   <div
-    class="jsx-3983101691 buttonWrapper"
+    class="jsx-477676945 buttonWrapper"
   >
     <div
-      class="jsx-3983101691 buttonBackground alignCenter"
+      class="jsx-477676945 buttonBackground alignCenter"
     >
       <a
-        class="jsx-3983101691 button fontS"
+        class="jsx-477676945 buttonComponent fontS"
         href="https://www.google.com"
         rel="noreferrer"
         target="_blank"
@@ -24,13 +24,13 @@ exports[`<Button /> renders properly 1`] = `
 exports[`<Button /> renders properly as a submit button 1`] = `
 <div>
   <div
-    class="jsx-3983101691 buttonWrapper"
+    class="jsx-477676945 buttonWrapper"
   >
     <div
-      class="jsx-3983101691 buttonBackground alignCenter"
+      class="jsx-477676945 buttonBackground alignCenter"
     >
       <button
-        class="jsx-3983101691 button fontS"
+        class="jsx-477676945 buttonComponent fontS"
         type="submit"
       >
         Texto dentro do botão
@@ -43,13 +43,13 @@ exports[`<Button /> renders properly as a submit button 1`] = `
 exports[`<Button /> renders properly when disabled, uppercased and aligned left 1`] = `
 <div>
   <div
-    class="jsx-3983101691 buttonWrapper"
+    class="jsx-477676945 buttonWrapper"
   >
     <div
-      class="jsx-3983101691 buttonBackground disabled"
+      class="jsx-477676945 buttonBackground disabled"
     >
       <a
-        class="jsx-3983101691 button fontS lowercase"
+        class="jsx-477676945 buttonComponent fontS buttonComponentLowercase"
         href="https://www.google.com"
         rel="noreferrer"
         target="_blank"
@@ -64,13 +64,13 @@ exports[`<Button /> renders properly when disabled, uppercased and aligned left 
 exports[`<Button /> renders properly without an external link 1`] = `
 <div>
   <div
-    class="jsx-3983101691 buttonWrapper"
+    class="jsx-477676945 buttonWrapper"
   >
     <div
-      class="jsx-3983101691 buttonBackground alignCenter"
+      class="jsx-477676945 buttonBackground alignCenter"
     >
       <a
-        class="jsx-3983101691 button fontS"
+        class="buttonComponent fontS"
         href="/pt/projects"
       >
         Texto dentro do botão

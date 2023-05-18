@@ -19,35 +19,24 @@ exports[`<ProjectsList /> renders properly 1`] = `
         data-testid="projectsList_noCarousel"
       >
         <li
-          class="jsx-235796002"
+          class="jsx-2553597104"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-          >
-            <span
-              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-            >
-              <img
-                alt=""
-                aria-hidden="true"
-                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-              />
-            </span>
-            <img
-              alt="tjela logo"
-              data-nimg="intrinsic"
-              decoding="async"
-              src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
-              srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </span>
+          <img
+            alt="tjela logo"
+            data-nimg="1"
+            decoding="async"
+            fetchpriority="high"
+            height="400"
+            src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
+            srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
+            style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+            width="400"
+          />
           <div
-            class="jsx-235796002 backface"
+            class="jsx-2553597104 backface"
           >
             <a
-              class="jsx-235796002 brand link fontXS"
+              class="jsx-2553597104 brand link fontXS"
               href="https://www.instagram.com/tudonatjela/"
               rel="noreferrer"
               target="_blank"
@@ -55,18 +44,18 @@ exports[`<ProjectsList /> renders properly 1`] = `
               @tudonatjela
             </a>
             <p
-              class="jsx-235796002 description fontS"
+              class="jsx-2553597104 description fontS"
             >
               Gestão de Redes Sociais e Criação de Conteúdo
             </p>
             <p
-              class="jsx-235796002 date fontXS"
+              class="jsx-2553597104 date fontXS"
             >
               2020
                - Presente
             </p>
             <small
-              class="jsx-235796002 fontXS"
+              class="jsx-2553597104 fontXS"
             >
               * 
               em dupla com Sofia Ferreirinho
@@ -74,35 +63,24 @@ exports[`<ProjectsList /> renders properly 1`] = `
           </div>
         </li>
         <li
-          class="jsx-235796002"
+          class="jsx-2553597104"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-          >
-            <span
-              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-            >
-              <img
-                alt=""
-                aria-hidden="true"
-                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-              />
-            </span>
-            <img
-              alt="kaffeehaus logo"
-              data-nimg="intrinsic"
-              decoding="async"
-              src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
-              srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </span>
+          <img
+            alt="kaffeehaus logo"
+            data-nimg="1"
+            decoding="async"
+            fetchpriority="high"
+            height="400"
+            src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
+            style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+            width="400"
+          />
           <div
-            class="jsx-235796002 backface"
+            class="jsx-2553597104 backface"
           >
             <a
-              class="jsx-235796002 brand link fontXS"
+              class="jsx-2553597104 brand link fontXS"
               href="https://www.instagram.com/kaffeehaus_lisboa/"
               rel="noreferrer"
               target="_blank"
@@ -110,12 +88,12 @@ exports[`<ProjectsList /> renders properly 1`] = `
               @kaffeehaus_lisboa
             </a>
             <p
-              class="jsx-235796002 description fontS"
+              class="jsx-2553597104 description fontS"
             >
               Gestão de Redes Sociais e Criação de Conteúdo
             </p>
             <p
-              class="jsx-235796002 date fontXS"
+              class="jsx-2553597104 date fontXS"
             >
               2018
                - Presente
@@ -123,35 +101,24 @@ exports[`<ProjectsList /> renders properly 1`] = `
           </div>
         </li>
         <li
-          class="jsx-235796002"
+          class="jsx-2553597104"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-          >
-            <span
-              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-            >
-              <img
-                alt=""
-                aria-hidden="true"
-                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-              />
-            </span>
-            <img
-              alt="guacamole logo"
-              data-nimg="intrinsic"
-              decoding="async"
-              src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
-              srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </span>
+          <img
+            alt="guacamole logo"
+            data-nimg="1"
+            decoding="async"
+            fetchpriority="high"
+            height="400"
+            src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+            style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+            width="400"
+          />
           <div
-            class="jsx-235796002 backface"
+            class="jsx-2553597104 backface"
           >
             <a
-              class="jsx-235796002 brand link fontXS"
+              class="jsx-2553597104 brand link fontXS"
               href="https://www.instagram.com/guacamolegmg/"
               rel="noreferrer"
               target="_blank"
@@ -159,18 +126,18 @@ exports[`<ProjectsList /> renders properly 1`] = `
               @guacamolegmg
             </a>
             <p
-              class="jsx-235796002 description fontS"
+              class="jsx-2553597104 description fontS"
             >
               Gestão de Redes Sociais e Criação de Conteúdo
             </p>
             <p
-              class="jsx-235796002 date fontXS"
+              class="jsx-2553597104 date fontXS"
             >
               2019
                - Presente
             </p>
             <small
-              class="jsx-235796002 fontXS"
+              class="jsx-2553597104 fontXS"
             >
               * 
               em dupla com Sofia Ferreirinho
@@ -179,13 +146,13 @@ exports[`<ProjectsList /> renders properly 1`] = `
         </li>
       </ul>
       <div
-        class="jsx-3983101691 buttonWrapper"
+        class="jsx-477676945 buttonWrapper"
       >
         <div
-          class="jsx-3983101691 buttonBackground alignCenter"
+          class="jsx-477676945 buttonBackground alignCenter"
         >
           <a
-            class="jsx-3983101691 button fontS"
+            class="buttonComponent fontS"
             href="/pt/projects"
           >
             Ver mais
@@ -216,35 +183,24 @@ exports[`<ProjectsList /> renders properly in English 1`] = `
         data-testid="projectsList_noCarousel"
       >
         <li
-          class="jsx-235796002"
+          class="jsx-2553597104"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-          >
-            <span
-              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-            >
-              <img
-                alt=""
-                aria-hidden="true"
-                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-              />
-            </span>
-            <img
-              alt="tjela logo"
-              data-nimg="intrinsic"
-              decoding="async"
-              src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
-              srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </span>
+          <img
+            alt="tjela logo"
+            data-nimg="1"
+            decoding="async"
+            fetchpriority="high"
+            height="400"
+            src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
+            srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
+            style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+            width="400"
+          />
           <div
-            class="jsx-235796002 backface"
+            class="jsx-2553597104 backface"
           >
             <a
-              class="jsx-235796002 brand link fontXS"
+              class="jsx-2553597104 brand link fontXS"
               href="https://www.instagram.com/tudonatjela/"
               rel="noreferrer"
               target="_blank"
@@ -252,18 +208,18 @@ exports[`<ProjectsList /> renders properly in English 1`] = `
               @tudonatjela
             </a>
             <p
-              class="jsx-235796002 description fontS"
+              class="jsx-2553597104 description fontS"
             >
               Social Media Management and Content Creation
             </p>
             <p
-              class="jsx-235796002 date fontXS"
+              class="jsx-2553597104 date fontXS"
             >
               2020
                - Present
             </p>
             <small
-              class="jsx-235796002 fontXS"
+              class="jsx-2553597104 fontXS"
             >
               * 
               in partnership with Sofia Ferreirinho
@@ -271,35 +227,24 @@ exports[`<ProjectsList /> renders properly in English 1`] = `
           </div>
         </li>
         <li
-          class="jsx-235796002"
+          class="jsx-2553597104"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-          >
-            <span
-              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-            >
-              <img
-                alt=""
-                aria-hidden="true"
-                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-              />
-            </span>
-            <img
-              alt="kaffeehaus logo"
-              data-nimg="intrinsic"
-              decoding="async"
-              src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
-              srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </span>
+          <img
+            alt="kaffeehaus logo"
+            data-nimg="1"
+            decoding="async"
+            fetchpriority="high"
+            height="400"
+            src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
+            style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+            width="400"
+          />
           <div
-            class="jsx-235796002 backface"
+            class="jsx-2553597104 backface"
           >
             <a
-              class="jsx-235796002 brand link fontXS"
+              class="jsx-2553597104 brand link fontXS"
               href="https://www.instagram.com/kaffeehaus_lisboa/"
               rel="noreferrer"
               target="_blank"
@@ -307,12 +252,12 @@ exports[`<ProjectsList /> renders properly in English 1`] = `
               @kaffeehaus_lisboa
             </a>
             <p
-              class="jsx-235796002 description fontS"
+              class="jsx-2553597104 description fontS"
             >
               Social Media Management and Content Creation
             </p>
             <p
-              class="jsx-235796002 date fontXS"
+              class="jsx-2553597104 date fontXS"
             >
               2018
                - Present
@@ -320,35 +265,24 @@ exports[`<ProjectsList /> renders properly in English 1`] = `
           </div>
         </li>
         <li
-          class="jsx-235796002"
+          class="jsx-2553597104"
         >
-          <span
-            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-          >
-            <span
-              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-            >
-              <img
-                alt=""
-                aria-hidden="true"
-                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-              />
-            </span>
-            <img
-              alt="guacamole logo"
-              data-nimg="intrinsic"
-              decoding="async"
-              src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
-              srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-            />
-          </span>
+          <img
+            alt="guacamole logo"
+            data-nimg="1"
+            decoding="async"
+            fetchpriority="high"
+            height="400"
+            src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
+            srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+            style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+            width="400"
+          />
           <div
-            class="jsx-235796002 backface"
+            class="jsx-2553597104 backface"
           >
             <a
-              class="jsx-235796002 brand link fontXS"
+              class="jsx-2553597104 brand link fontXS"
               href="https://www.instagram.com/guacamolegmg/"
               rel="noreferrer"
               target="_blank"
@@ -356,18 +290,18 @@ exports[`<ProjectsList /> renders properly in English 1`] = `
               @guacamolegmg
             </a>
             <p
-              class="jsx-235796002 description fontS"
+              class="jsx-2553597104 description fontS"
             >
               Social Media Management and Content Creation
             </p>
             <p
-              class="jsx-235796002 date fontXS"
+              class="jsx-2553597104 date fontXS"
             >
               2019
                - Present
             </p>
             <small
-              class="jsx-235796002 fontXS"
+              class="jsx-2553597104 fontXS"
             >
               * 
               in partnership with Sofia Ferreirinho
@@ -376,13 +310,13 @@ exports[`<ProjectsList /> renders properly in English 1`] = `
         </li>
       </ul>
       <div
-        class="jsx-3983101691 buttonWrapper"
+        class="jsx-477676945 buttonWrapper"
       >
         <div
-          class="jsx-3983101691 buttonBackground alignCenter"
+          class="jsx-477676945 buttonBackground alignCenter"
         >
           <a
-            class="jsx-3983101691 button fontS"
+            class="buttonComponent fontS"
             href="/pt/projects"
           >
             See more
@@ -497,39 +431,27 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-235796002 carouselItem"
+                  class="jsx-2553597104 carouselItem"
                   data-testid="projectItem_touch_div_tjela logo"
                   data-times-touched="0"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        draggable="false"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="tjela logo"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      draggable="false"
-                      src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
-                      srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                  </span>
+                  <img
+                    alt="tjela logo"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    fetchpriority="high"
+                    height="400"
+                    src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
+                    style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+                    width="400"
+                  />
                   <div
-                    class="jsx-235796002 backface"
+                    class="jsx-2553597104 backface"
                   >
                     <a
-                      class="jsx-235796002 brand link fontXS"
+                      class="jsx-2553597104 brand link fontXS"
                       href="https://www.instagram.com/tudonatjela/"
                       rel="noreferrer"
                       target="_blank"
@@ -537,18 +459,18 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                       @tudonatjela
                     </a>
                     <p
-                      class="jsx-235796002 description fontS"
+                      class="jsx-2553597104 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-235796002 date fontXS"
+                      class="jsx-2553597104 date fontXS"
                     >
                       2020
                        - Presente
                     </p>
                     <small
-                      class="jsx-235796002 fontXS"
+                      class="jsx-2553597104 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -561,39 +483,27 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-235796002 carouselItem"
+                  class="jsx-2553597104 carouselItem"
                   data-testid="projectItem_touch_div_kaffeehaus logo"
                   data-times-touched="0"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        draggable="false"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="kaffeehaus logo"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      draggable="false"
-                      src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
-                      srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                  </span>
+                  <img
+                    alt="kaffeehaus logo"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    fetchpriority="high"
+                    height="400"
+                    src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
+                    style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+                    width="400"
+                  />
                   <div
-                    class="jsx-235796002 backface"
+                    class="jsx-2553597104 backface"
                   >
                     <a
-                      class="jsx-235796002 brand link fontXS"
+                      class="jsx-2553597104 brand link fontXS"
                       href="https://www.instagram.com/kaffeehaus_lisboa/"
                       rel="noreferrer"
                       target="_blank"
@@ -601,12 +511,12 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                       @kaffeehaus_lisboa
                     </a>
                     <p
-                      class="jsx-235796002 description fontS"
+                      class="jsx-2553597104 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-235796002 date fontXS"
+                      class="jsx-2553597104 date fontXS"
                     >
                       2018
                        - Presente
@@ -619,39 +529,27 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-235796002 carouselItem"
+                  class="jsx-2553597104 carouselItem"
                   data-testid="projectItem_touch_div_guacamole logo"
                   data-times-touched="0"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        draggable="false"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="guacamole logo"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="guacamole logo"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="400"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+                    style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+                    width="400"
+                  />
                   <div
-                    class="jsx-235796002 backface"
+                    class="jsx-2553597104 backface"
                   >
                     <a
-                      class="jsx-235796002 brand link fontXS"
+                      class="jsx-2553597104 brand link fontXS"
                       href="https://www.instagram.com/guacamolegmg/"
                       rel="noreferrer"
                       target="_blank"
@@ -659,18 +557,18 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                       @guacamolegmg
                     </a>
                     <p
-                      class="jsx-235796002 description fontS"
+                      class="jsx-2553597104 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-235796002 date fontXS"
+                      class="jsx-2553597104 date fontXS"
                     >
                       2019
                        - Presente
                     </p>
                     <small
-                      class="jsx-235796002 fontXS"
+                      class="jsx-2553597104 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -683,39 +581,27 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-235796002 carouselItem"
+                  class="jsx-2553597104 carouselItem"
                   data-testid="projectItem_touch_div_tjela logo"
                   data-times-touched="0"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        draggable="false"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="tjela logo"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      draggable="false"
-                      src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
-                      srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                  </span>
+                  <img
+                    alt="tjela logo"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    fetchpriority="high"
+                    height="400"
+                    src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
+                    style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+                    width="400"
+                  />
                   <div
-                    class="jsx-235796002 backface"
+                    class="jsx-2553597104 backface"
                   >
                     <a
-                      class="jsx-235796002 brand link fontXS"
+                      class="jsx-2553597104 brand link fontXS"
                       href="https://www.instagram.com/tudonatjela/"
                       rel="noreferrer"
                       target="_blank"
@@ -723,18 +609,18 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                       @tudonatjela
                     </a>
                     <p
-                      class="jsx-235796002 description fontS"
+                      class="jsx-2553597104 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-235796002 date fontXS"
+                      class="jsx-2553597104 date fontXS"
                     >
                       2020
                        - Presente
                     </p>
                     <small
-                      class="jsx-235796002 fontXS"
+                      class="jsx-2553597104 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -747,39 +633,27 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-235796002 carouselItem"
+                  class="jsx-2553597104 carouselItem"
                   data-testid="projectItem_touch_div_kaffeehaus logo"
                   data-times-touched="0"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        draggable="false"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="kaffeehaus logo"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      draggable="false"
-                      src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
-                      srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                  </span>
+                  <img
+                    alt="kaffeehaus logo"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    fetchpriority="high"
+                    height="400"
+                    src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
+                    style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+                    width="400"
+                  />
                   <div
-                    class="jsx-235796002 backface"
+                    class="jsx-2553597104 backface"
                   >
                     <a
-                      class="jsx-235796002 brand link fontXS"
+                      class="jsx-2553597104 brand link fontXS"
                       href="https://www.instagram.com/kaffeehaus_lisboa/"
                       rel="noreferrer"
                       target="_blank"
@@ -787,12 +661,12 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                       @kaffeehaus_lisboa
                     </a>
                     <p
-                      class="jsx-235796002 description fontS"
+                      class="jsx-2553597104 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-235796002 date fontXS"
+                      class="jsx-2553597104 date fontXS"
                     >
                       2018
                        - Presente
@@ -805,39 +679,27 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-235796002 carouselItem"
+                  class="jsx-2553597104 carouselItem"
                   data-testid="projectItem_touch_div_guacamole logo"
                   data-times-touched="0"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        draggable="false"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="guacamole logo"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="guacamole logo"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="400"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+                    style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+                    width="400"
+                  />
                   <div
-                    class="jsx-235796002 backface"
+                    class="jsx-2553597104 backface"
                   >
                     <a
-                      class="jsx-235796002 brand link fontXS"
+                      class="jsx-2553597104 brand link fontXS"
                       href="https://www.instagram.com/guacamolegmg/"
                       rel="noreferrer"
                       target="_blank"
@@ -845,18 +707,18 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                       @guacamolegmg
                     </a>
                     <p
-                      class="jsx-235796002 description fontS"
+                      class="jsx-2553597104 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-235796002 date fontXS"
+                      class="jsx-2553597104 date fontXS"
                     >
                       2019
                        - Presente
                     </p>
                     <small
-                      class="jsx-235796002 fontXS"
+                      class="jsx-2553597104 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -869,39 +731,27 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-235796002 carouselItem"
+                  class="jsx-2553597104 carouselItem"
                   data-testid="projectItem_touch_div_tjela logo"
                   data-times-touched="0"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        draggable="false"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="tjela logo"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      draggable="false"
-                      src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
-                      srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                  </span>
+                  <img
+                    alt="tjela logo"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    fetchpriority="high"
+                    height="400"
+                    src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
+                    style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+                    width="400"
+                  />
                   <div
-                    class="jsx-235796002 backface"
+                    class="jsx-2553597104 backface"
                   >
                     <a
-                      class="jsx-235796002 brand link fontXS"
+                      class="jsx-2553597104 brand link fontXS"
                       href="https://www.instagram.com/tudonatjela/"
                       rel="noreferrer"
                       target="_blank"
@@ -909,18 +759,18 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                       @tudonatjela
                     </a>
                     <p
-                      class="jsx-235796002 description fontS"
+                      class="jsx-2553597104 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-235796002 date fontXS"
+                      class="jsx-2553597104 date fontXS"
                     >
                       2020
                        - Presente
                     </p>
                     <small
-                      class="jsx-235796002 fontXS"
+                      class="jsx-2553597104 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -933,39 +783,27 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-235796002 carouselItem"
+                  class="jsx-2553597104 carouselItem"
                   data-testid="projectItem_touch_div_kaffeehaus logo"
                   data-times-touched="0"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        draggable="false"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="kaffeehaus logo"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      draggable="false"
-                      src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
-                      srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                  </span>
+                  <img
+                    alt="kaffeehaus logo"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    fetchpriority="high"
+                    height="400"
+                    src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
+                    style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+                    width="400"
+                  />
                   <div
-                    class="jsx-235796002 backface"
+                    class="jsx-2553597104 backface"
                   >
                     <a
-                      class="jsx-235796002 brand link fontXS"
+                      class="jsx-2553597104 brand link fontXS"
                       href="https://www.instagram.com/kaffeehaus_lisboa/"
                       rel="noreferrer"
                       target="_blank"
@@ -973,12 +811,12 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                       @kaffeehaus_lisboa
                     </a>
                     <p
-                      class="jsx-235796002 description fontS"
+                      class="jsx-2553597104 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-235796002 date fontXS"
+                      class="jsx-2553597104 date fontXS"
                     >
                       2018
                        - Presente
@@ -991,39 +829,27 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-235796002 carouselItem"
+                  class="jsx-2553597104 carouselItem"
                   data-testid="projectItem_touch_div_guacamole logo"
                   data-times-touched="0"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        draggable="false"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="guacamole logo"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="guacamole logo"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="400"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+                    style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+                    width="400"
+                  />
                   <div
-                    class="jsx-235796002 backface"
+                    class="jsx-2553597104 backface"
                   >
                     <a
-                      class="jsx-235796002 brand link fontXS"
+                      class="jsx-2553597104 brand link fontXS"
                       href="https://www.instagram.com/guacamolegmg/"
                       rel="noreferrer"
                       target="_blank"
@@ -1031,18 +857,18 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
                       @guacamolegmg
                     </a>
                     <p
-                      class="jsx-235796002 description fontS"
+                      class="jsx-2553597104 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-235796002 date fontXS"
+                      class="jsx-2553597104 date fontXS"
                     >
                       2019
                        - Presente
                     </p>
                     <small
-                      class="jsx-235796002 fontXS"
+                      class="jsx-2553597104 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -1055,13 +881,13 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
         </div>
       </div>
       <div
-        class="jsx-3983101691 buttonWrapper"
+        class="jsx-477676945 buttonWrapper"
       >
         <div
-          class="jsx-3983101691 buttonBackground alignCenter"
+          class="jsx-477676945 buttonBackground alignCenter"
         >
           <a
-            class="jsx-3983101691 button fontS"
+            class="buttonComponent fontS"
             href="/pt/projects"
           >
             Ver mais
@@ -1176,39 +1002,27 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-235796002 carouselItem"
+                  class="jsx-2553597104 carouselItem"
                   data-testid="projectItem_touch_div_tjela logo"
                   data-times-touched="0"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        draggable="false"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="tjela logo"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      draggable="false"
-                      src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
-                      srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                  </span>
+                  <img
+                    alt="tjela logo"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    fetchpriority="high"
+                    height="400"
+                    src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
+                    style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+                    width="400"
+                  />
                   <div
-                    class="jsx-235796002 backface"
+                    class="jsx-2553597104 backface"
                   >
                     <a
-                      class="jsx-235796002 brand link fontXS"
+                      class="jsx-2553597104 brand link fontXS"
                       href="https://www.instagram.com/tudonatjela/"
                       rel="noreferrer"
                       target="_blank"
@@ -1216,18 +1030,18 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                       @tudonatjela
                     </a>
                     <p
-                      class="jsx-235796002 description fontS"
+                      class="jsx-2553597104 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-235796002 date fontXS"
+                      class="jsx-2553597104 date fontXS"
                     >
                       2020
                        - Presente
                     </p>
                     <small
-                      class="jsx-235796002 fontXS"
+                      class="jsx-2553597104 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -1240,39 +1054,27 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-235796002 carouselItem"
+                  class="jsx-2553597104 carouselItem"
                   data-testid="projectItem_touch_div_kaffeehaus logo"
                   data-times-touched="0"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        draggable="false"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="kaffeehaus logo"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      draggable="false"
-                      src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
-                      srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                  </span>
+                  <img
+                    alt="kaffeehaus logo"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    fetchpriority="high"
+                    height="400"
+                    src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
+                    style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+                    width="400"
+                  />
                   <div
-                    class="jsx-235796002 backface"
+                    class="jsx-2553597104 backface"
                   >
                     <a
-                      class="jsx-235796002 brand link fontXS"
+                      class="jsx-2553597104 brand link fontXS"
                       href="https://www.instagram.com/kaffeehaus_lisboa/"
                       rel="noreferrer"
                       target="_blank"
@@ -1280,12 +1082,12 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                       @kaffeehaus_lisboa
                     </a>
                     <p
-                      class="jsx-235796002 description fontS"
+                      class="jsx-2553597104 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-235796002 date fontXS"
+                      class="jsx-2553597104 date fontXS"
                     >
                       2018
                        - Presente
@@ -1298,39 +1100,27 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-235796002 carouselItem"
+                  class="jsx-2553597104 carouselItem"
                   data-testid="projectItem_touch_div_guacamole logo"
                   data-times-touched="0"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        draggable="false"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="guacamole logo"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="guacamole logo"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="400"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+                    style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+                    width="400"
+                  />
                   <div
-                    class="jsx-235796002 backface"
+                    class="jsx-2553597104 backface"
                   >
                     <a
-                      class="jsx-235796002 brand link fontXS"
+                      class="jsx-2553597104 brand link fontXS"
                       href="https://www.instagram.com/guacamolegmg/"
                       rel="noreferrer"
                       target="_blank"
@@ -1338,18 +1128,18 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                       @guacamolegmg
                     </a>
                     <p
-                      class="jsx-235796002 description fontS"
+                      class="jsx-2553597104 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-235796002 date fontXS"
+                      class="jsx-2553597104 date fontXS"
                     >
                       2019
                        - Presente
                     </p>
                     <small
-                      class="jsx-235796002 fontXS"
+                      class="jsx-2553597104 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -1362,39 +1152,27 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-235796002 carouselItem"
+                  class="jsx-2553597104 carouselItem"
                   data-testid="projectItem_touch_div_tjela logo"
                   data-times-touched="0"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        draggable="false"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="tjela logo"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      draggable="false"
-                      src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
-                      srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                  </span>
+                  <img
+                    alt="tjela logo"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    fetchpriority="high"
+                    height="400"
+                    src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
+                    style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+                    width="400"
+                  />
                   <div
-                    class="jsx-235796002 backface"
+                    class="jsx-2553597104 backface"
                   >
                     <a
-                      class="jsx-235796002 brand link fontXS"
+                      class="jsx-2553597104 brand link fontXS"
                       href="https://www.instagram.com/tudonatjela/"
                       rel="noreferrer"
                       target="_blank"
@@ -1402,18 +1180,18 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                       @tudonatjela
                     </a>
                     <p
-                      class="jsx-235796002 description fontS"
+                      class="jsx-2553597104 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-235796002 date fontXS"
+                      class="jsx-2553597104 date fontXS"
                     >
                       2020
                        - Presente
                     </p>
                     <small
-                      class="jsx-235796002 fontXS"
+                      class="jsx-2553597104 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -1426,39 +1204,27 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-235796002 carouselItem"
+                  class="jsx-2553597104 carouselItem"
                   data-testid="projectItem_touch_div_kaffeehaus logo"
                   data-times-touched="0"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        draggable="false"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="kaffeehaus logo"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      draggable="false"
-                      src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
-                      srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                  </span>
+                  <img
+                    alt="kaffeehaus logo"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    fetchpriority="high"
+                    height="400"
+                    src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
+                    style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+                    width="400"
+                  />
                   <div
-                    class="jsx-235796002 backface"
+                    class="jsx-2553597104 backface"
                   >
                     <a
-                      class="jsx-235796002 brand link fontXS"
+                      class="jsx-2553597104 brand link fontXS"
                       href="https://www.instagram.com/kaffeehaus_lisboa/"
                       rel="noreferrer"
                       target="_blank"
@@ -1466,12 +1232,12 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                       @kaffeehaus_lisboa
                     </a>
                     <p
-                      class="jsx-235796002 description fontS"
+                      class="jsx-2553597104 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-235796002 date fontXS"
+                      class="jsx-2553597104 date fontXS"
                     >
                       2018
                        - Presente
@@ -1484,39 +1250,27 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-235796002 carouselItem"
+                  class="jsx-2553597104 carouselItem"
                   data-testid="projectItem_touch_div_guacamole logo"
                   data-times-touched="0"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        draggable="false"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="guacamole logo"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="guacamole logo"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="400"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+                    style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+                    width="400"
+                  />
                   <div
-                    class="jsx-235796002 backface"
+                    class="jsx-2553597104 backface"
                   >
                     <a
-                      class="jsx-235796002 brand link fontXS"
+                      class="jsx-2553597104 brand link fontXS"
                       href="https://www.instagram.com/guacamolegmg/"
                       rel="noreferrer"
                       target="_blank"
@@ -1524,18 +1278,18 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                       @guacamolegmg
                     </a>
                     <p
-                      class="jsx-235796002 description fontS"
+                      class="jsx-2553597104 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-235796002 date fontXS"
+                      class="jsx-2553597104 date fontXS"
                     >
                       2019
                        - Presente
                     </p>
                     <small
-                      class="jsx-235796002 fontXS"
+                      class="jsx-2553597104 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -1548,39 +1302,27 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-235796002 carouselItem"
+                  class="jsx-2553597104 carouselItem"
                   data-testid="projectItem_touch_div_tjela logo"
                   data-times-touched="0"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        draggable="false"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="tjela logo"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      draggable="false"
-                      src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
-                      srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                  </span>
+                  <img
+                    alt="tjela logo"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    fetchpriority="high"
+                    height="400"
+                    src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
+                    style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+                    width="400"
+                  />
                   <div
-                    class="jsx-235796002 backface"
+                    class="jsx-2553597104 backface"
                   >
                     <a
-                      class="jsx-235796002 brand link fontXS"
+                      class="jsx-2553597104 brand link fontXS"
                       href="https://www.instagram.com/tudonatjela/"
                       rel="noreferrer"
                       target="_blank"
@@ -1588,18 +1330,18 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                       @tudonatjela
                     </a>
                     <p
-                      class="jsx-235796002 description fontS"
+                      class="jsx-2553597104 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-235796002 date fontXS"
+                      class="jsx-2553597104 date fontXS"
                     >
                       2020
                        - Presente
                     </p>
                     <small
-                      class="jsx-235796002 fontXS"
+                      class="jsx-2553597104 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -1612,39 +1354,27 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-235796002 carouselItem"
+                  class="jsx-2553597104 carouselItem"
                   data-testid="projectItem_touch_div_kaffeehaus logo"
                   data-times-touched="0"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        draggable="false"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="kaffeehaus logo"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      draggable="false"
-                      src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
-                      srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                  </span>
+                  <img
+                    alt="kaffeehaus logo"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    fetchpriority="high"
+                    height="400"
+                    src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
+                    style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+                    width="400"
+                  />
                   <div
-                    class="jsx-235796002 backface"
+                    class="jsx-2553597104 backface"
                   >
                     <a
-                      class="jsx-235796002 brand link fontXS"
+                      class="jsx-2553597104 brand link fontXS"
                       href="https://www.instagram.com/kaffeehaus_lisboa/"
                       rel="noreferrer"
                       target="_blank"
@@ -1652,12 +1382,12 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                       @kaffeehaus_lisboa
                     </a>
                     <p
-                      class="jsx-235796002 description fontS"
+                      class="jsx-2553597104 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-235796002 date fontXS"
+                      class="jsx-2553597104 date fontXS"
                     >
                       2018
                        - Presente
@@ -1670,39 +1400,27 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                 style="width: 11.11111111111111%; height: auto; padding: 0px 0px; opacity: 1;"
               >
                 <div
-                  class="jsx-235796002 carouselItem"
+                  class="jsx-2553597104 carouselItem"
                   data-testid="projectItem_touch_div_guacamole logo"
                   data-times-touched="0"
                 >
-                  <span
-                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
-                  >
-                    <span
-                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        draggable="false"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27400%27/%3e"
-                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
-                      />
-                    </span>
-                    <img
-                      alt="guacamole logo"
-                      data-nimg="intrinsic"
-                      decoding="async"
-                      draggable="false"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                    />
-                    <noscript />
-                  </span>
+                  <img
+                    alt="guacamole logo"
+                    data-nimg="1"
+                    decoding="async"
+                    draggable="false"
+                    height="400"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+                    style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
+                    width="400"
+                  />
                   <div
-                    class="jsx-235796002 backface"
+                    class="jsx-2553597104 backface"
                   >
                     <a
-                      class="jsx-235796002 brand link fontXS"
+                      class="jsx-2553597104 brand link fontXS"
                       href="https://www.instagram.com/guacamolegmg/"
                       rel="noreferrer"
                       target="_blank"
@@ -1710,18 +1428,18 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
                       @guacamolegmg
                     </a>
                     <p
-                      class="jsx-235796002 description fontS"
+                      class="jsx-2553597104 description fontS"
                     >
                       Gestão de Redes Sociais e Criação de Conteúdo
                     </p>
                     <p
-                      class="jsx-235796002 date fontXS"
+                      class="jsx-2553597104 date fontXS"
                     >
                       2019
                        - Presente
                     </p>
                     <small
-                      class="jsx-235796002 fontXS"
+                      class="jsx-2553597104 fontXS"
                     >
                       * 
                       em dupla com Sofia Ferreirinho
@@ -1734,13 +1452,13 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
         </div>
       </div>
       <div
-        class="jsx-3983101691 buttonWrapper"
+        class="jsx-477676945 buttonWrapper"
       >
         <div
-          class="jsx-3983101691 buttonBackground alignCenter"
+          class="jsx-477676945 buttonBackground alignCenter"
         >
           <a
-            class="jsx-3983101691 button fontS"
+            class="buttonComponent fontS"
             href="/pt/projects"
           >
             Ver mais

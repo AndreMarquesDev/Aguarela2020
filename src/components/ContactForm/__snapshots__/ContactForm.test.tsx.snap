@@ -150,13 +150,13 @@ exports[`<ContactForm /> displays error messages in required fields on submit wi
         </span>
       </div>
       <div
-        class="jsx-3983101691 buttonWrapper"
+        class="jsx-477676945 buttonWrapper"
       >
         <div
-          class="jsx-3983101691 buttonBackground alignCenter"
+          class="jsx-477676945 buttonBackground alignCenter"
         >
           <button
-            class="jsx-3983101691 button fontS"
+            class="jsx-477676945 buttonComponent fontS"
             type="submit"
           >
             Enviar
@@ -320,13 +320,13 @@ exports[`<ContactForm /> lets fields be properly filled 1`] = `
         </span>
       </div>
       <div
-        class="jsx-3983101691 buttonWrapper"
+        class="jsx-477676945 buttonWrapper"
       >
         <div
-          class="jsx-3983101691 buttonBackground alignCenter"
+          class="jsx-477676945 buttonBackground alignCenter"
         >
           <button
-            class="jsx-3983101691 button fontS"
+            class="jsx-477676945 buttonComponent fontS"
             type="submit"
           >
             Enviar
@@ -488,13 +488,13 @@ exports[`<ContactForm /> renders properly 1`] = `
         </span>
       </div>
       <div
-        class="jsx-3983101691 buttonWrapper"
+        class="jsx-477676945 buttonWrapper"
       >
         <div
-          class="jsx-3983101691 buttonBackground alignCenter"
+          class="jsx-477676945 buttonBackground alignCenter"
         >
           <button
-            class="jsx-3983101691 button fontS"
+            class="jsx-477676945 buttonComponent fontS"
             type="submit"
           >
             Enviar
@@ -656,13 +656,13 @@ exports[`<ContactForm /> renders properly in English 1`] = `
         </span>
       </div>
       <div
-        class="jsx-3983101691 buttonWrapper"
+        class="jsx-477676945 buttonWrapper"
       >
         <div
-          class="jsx-3983101691 buttonBackground alignCenter"
+          class="jsx-477676945 buttonBackground alignCenter"
         >
           <button
-            class="jsx-3983101691 button fontS"
+            class="jsx-477676945 buttonComponent fontS"
             type="submit"
           >
             Send
@@ -824,13 +824,13 @@ exports[`<ContactForm /> resets the form after it was successfully submitted 1`]
         </span>
       </div>
       <div
-        class="jsx-3983101691 buttonWrapper"
+        class="jsx-477676945 buttonWrapper"
       >
         <div
-          class="jsx-3983101691 buttonBackground alignCenter"
+          class="jsx-477676945 buttonBackground alignCenter"
         >
           <button
-            class="jsx-3983101691 button fontS"
+            class="jsx-477676945 buttonComponent fontS"
             type="submit"
           >
             Enviar
@@ -994,13 +994,13 @@ exports[`<ContactForm /> shows an error message in case the POST request fails 1
         </span>
       </div>
       <div
-        class="jsx-3983101691 buttonWrapper"
+        class="jsx-477676945 buttonWrapper"
       >
         <div
-          class="jsx-3983101691 buttonBackground alignCenter disabled"
+          class="jsx-477676945 buttonBackground alignCenter disabled"
         >
           <button
-            class="jsx-3983101691 button fontS"
+            class="jsx-477676945 buttonComponent fontS"
             type="submit"
           >
             Enviar
@@ -1176,13 +1176,13 @@ exports[`<ContactForm /> submits the form successfully 1`] = `
         </span>
       </div>
       <div
-        class="jsx-3983101691 buttonWrapper"
+        class="jsx-477676945 buttonWrapper"
       >
         <div
-          class="jsx-3983101691 buttonBackground alignCenter disabled"
+          class="jsx-477676945 buttonBackground alignCenter disabled"
         >
           <button
-            class="jsx-3983101691 button fontS"
+            class="jsx-477676945 buttonComponent fontS"
             type="submit"
           >
             Enviar
