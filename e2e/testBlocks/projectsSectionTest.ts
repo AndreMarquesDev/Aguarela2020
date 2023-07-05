@@ -37,7 +37,7 @@ export const projectsSectionTest = async (
 
     const testSlide = async (
         number: number,
-        brand: string,
+        altText: string,
         instagramHandle: string,
         url: string,
         title: string,
@@ -49,7 +49,7 @@ export const projectsSectionTest = async (
             ? container.locator(nukaCarouselVisibleSlide)
             : container.locator('li').nth(number - 1);
         const anchor = slide.getByRole('link', { name: instagramHandle });
-        const image = slide.getByAltText(`${brand} logo`, { exact: true });
+        const image = slide.getByAltText(altText, { exact: true });
         const imageBoundingBox = await image.boundingBox();
         const imageSizeDesktop = 384;
         const imageSizeMobileChrome = 293;
@@ -100,7 +100,7 @@ export const projectsSectionTest = async (
     // renders slides
     await testSlide(
         1,
-        'tjela',
+        'a poke bowl',
         '@tudonatjela',
         tjelaInstagramUrl,
         socialMediaManagementAndContentCreation,
@@ -112,7 +112,7 @@ export const projectsSectionTest = async (
 
     await testSlide(
         2,
-        'kaffeehaus',
+        'coffee being poured into a mug',
         '@kaffeehaus_lisboa',
         kaffeehausInstagramUrl,
         socialMediaManagementAndContentCreation,
@@ -129,7 +129,7 @@ export const projectsSectionTest = async (
 
     await testSlide(
         3,
-        'guacamole',
+        'a burrito split in half',
         '@guacamolegmg',
         guacamoleInstagramUrl,
         socialMediaManagementAndContentCreation,

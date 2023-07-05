@@ -22,7 +22,7 @@ exports[`<ProjectsList /> renders properly 1`] = `
           class="jsx-2553597104"
         >
           <img
-            alt="tjela logo"
+            alt="a poke bowl"
             data-nimg="1"
             decoding="async"
             fetchpriority="high"
@@ -66,7 +66,7 @@ exports[`<ProjectsList /> renders properly 1`] = `
           class="jsx-2553597104"
         >
           <img
-            alt="kaffeehaus logo"
+            alt="coffee being poured into a mug"
             data-nimg="1"
             decoding="async"
             fetchpriority="high"
@@ -104,7 +104,7 @@ exports[`<ProjectsList /> renders properly 1`] = `
           class="jsx-2553597104"
         >
           <img
-            alt="guacamole logo"
+            alt="a burrito split in half"
             data-nimg="1"
             decoding="async"
             fetchpriority="high"
@@ -186,7 +186,7 @@ exports[`<ProjectsList /> renders properly in English 1`] = `
           class="jsx-2553597104"
         >
           <img
-            alt="tjela logo"
+            alt="a poke bowl"
             data-nimg="1"
             decoding="async"
             fetchpriority="high"
@@ -230,7 +230,7 @@ exports[`<ProjectsList /> renders properly in English 1`] = `
           class="jsx-2553597104"
         >
           <img
-            alt="kaffeehaus logo"
+            alt="coffee being poured into a mug"
             data-nimg="1"
             decoding="async"
             fetchpriority="high"
@@ -268,7 +268,7 @@ exports[`<ProjectsList /> renders properly in English 1`] = `
           class="jsx-2553597104"
         >
           <img
-            alt="guacamole logo"
+            alt="a burrito split in half"
             data-nimg="1"
             decoding="async"
             fetchpriority="high"
@@ -432,18 +432,19 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
               >
                 <div
                   class="jsx-2553597104 carouselItem"
-                  data-testid="projectItem_touch_div_tjela logo"
+                  data-testid="projectItem_touch_div_a poke bowl"
                   data-times-touched="0"
                 >
                   <img
-                    alt="tjela logo"
+                    alt="a poke bowl"
                     data-nimg="1"
                     decoding="async"
                     draggable="false"
                     fetchpriority="high"
                     height="400"
-                    src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
-                    srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
+                    sizes="(max-width: 1023px) 50vw, (max-width: 767px) 75vw, 30vw"
+                    src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=256&q=75 256w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=384&q=75 384w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=3840&q=75 3840w"
                     style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
                     width="400"
                   />
@@ -484,18 +485,19 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
               >
                 <div
                   class="jsx-2553597104 carouselItem"
-                  data-testid="projectItem_touch_div_kaffeehaus logo"
+                  data-testid="projectItem_touch_div_coffee being poured into a mug"
                   data-times-touched="0"
                 >
                   <img
-                    alt="kaffeehaus logo"
+                    alt="coffee being poured into a mug"
                     data-nimg="1"
                     decoding="async"
                     draggable="false"
                     fetchpriority="high"
                     height="400"
-                    src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
-                    srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
+                    sizes="(max-width: 1023px) 50vw, (max-width: 767px) 75vw, 30vw"
+                    src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=256&q=75 256w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=384&q=75 384w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=3840&q=75 3840w"
                     style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
                     width="400"
                   />
@@ -530,18 +532,19 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
               >
                 <div
                   class="jsx-2553597104 carouselItem"
-                  data-testid="projectItem_touch_div_guacamole logo"
+                  data-testid="projectItem_touch_div_a burrito split in half"
                   data-times-touched="0"
                 >
                   <img
-                    alt="guacamole logo"
+                    alt="a burrito split in half"
                     data-nimg="1"
                     decoding="async"
                     draggable="false"
                     height="400"
                     loading="lazy"
-                    src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
-                    srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+                    sizes="(max-width: 1023px) 50vw, (max-width: 767px) 75vw, 30vw"
+                    src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=256&q=75 256w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=384&q=75 384w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=3840&q=75 3840w"
                     style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
                     width="400"
                   />
@@ -582,18 +585,19 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
               >
                 <div
                   class="jsx-2553597104 carouselItem"
-                  data-testid="projectItem_touch_div_tjela logo"
+                  data-testid="projectItem_touch_div_a poke bowl"
                   data-times-touched="0"
                 >
                   <img
-                    alt="tjela logo"
+                    alt="a poke bowl"
                     data-nimg="1"
                     decoding="async"
                     draggable="false"
                     fetchpriority="high"
                     height="400"
-                    src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
-                    srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
+                    sizes="(max-width: 1023px) 50vw, (max-width: 767px) 75vw, 30vw"
+                    src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=256&q=75 256w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=384&q=75 384w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=3840&q=75 3840w"
                     style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
                     width="400"
                   />
@@ -634,18 +638,19 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
               >
                 <div
                   class="jsx-2553597104 carouselItem"
-                  data-testid="projectItem_touch_div_kaffeehaus logo"
+                  data-testid="projectItem_touch_div_coffee being poured into a mug"
                   data-times-touched="0"
                 >
                   <img
-                    alt="kaffeehaus logo"
+                    alt="coffee being poured into a mug"
                     data-nimg="1"
                     decoding="async"
                     draggable="false"
                     fetchpriority="high"
                     height="400"
-                    src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
-                    srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
+                    sizes="(max-width: 1023px) 50vw, (max-width: 767px) 75vw, 30vw"
+                    src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=256&q=75 256w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=384&q=75 384w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=3840&q=75 3840w"
                     style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
                     width="400"
                   />
@@ -680,18 +685,19 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
               >
                 <div
                   class="jsx-2553597104 carouselItem"
-                  data-testid="projectItem_touch_div_guacamole logo"
+                  data-testid="projectItem_touch_div_a burrito split in half"
                   data-times-touched="0"
                 >
                   <img
-                    alt="guacamole logo"
+                    alt="a burrito split in half"
                     data-nimg="1"
                     decoding="async"
                     draggable="false"
                     height="400"
                     loading="lazy"
-                    src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
-                    srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+                    sizes="(max-width: 1023px) 50vw, (max-width: 767px) 75vw, 30vw"
+                    src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=256&q=75 256w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=384&q=75 384w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=3840&q=75 3840w"
                     style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
                     width="400"
                   />
@@ -732,18 +738,19 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
               >
                 <div
                   class="jsx-2553597104 carouselItem"
-                  data-testid="projectItem_touch_div_tjela logo"
+                  data-testid="projectItem_touch_div_a poke bowl"
                   data-times-touched="0"
                 >
                   <img
-                    alt="tjela logo"
+                    alt="a poke bowl"
                     data-nimg="1"
                     decoding="async"
                     draggable="false"
                     fetchpriority="high"
                     height="400"
-                    src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
-                    srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
+                    sizes="(max-width: 1023px) 50vw, (max-width: 767px) 75vw, 30vw"
+                    src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=256&q=75 256w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=384&q=75 384w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=3840&q=75 3840w"
                     style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
                     width="400"
                   />
@@ -784,18 +791,19 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
               >
                 <div
                   class="jsx-2553597104 carouselItem"
-                  data-testid="projectItem_touch_div_kaffeehaus logo"
+                  data-testid="projectItem_touch_div_coffee being poured into a mug"
                   data-times-touched="0"
                 >
                   <img
-                    alt="kaffeehaus logo"
+                    alt="coffee being poured into a mug"
                     data-nimg="1"
                     decoding="async"
                     draggable="false"
                     fetchpriority="high"
                     height="400"
-                    src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
-                    srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
+                    sizes="(max-width: 1023px) 50vw, (max-width: 767px) 75vw, 30vw"
+                    src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=256&q=75 256w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=384&q=75 384w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=3840&q=75 3840w"
                     style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
                     width="400"
                   />
@@ -830,18 +838,19 @@ exports[`<ProjectsList /> renders properly on mobile 1`] = `
               >
                 <div
                   class="jsx-2553597104 carouselItem"
-                  data-testid="projectItem_touch_div_guacamole logo"
+                  data-testid="projectItem_touch_div_a burrito split in half"
                   data-times-touched="0"
                 >
                   <img
-                    alt="guacamole logo"
+                    alt="a burrito split in half"
                     data-nimg="1"
                     decoding="async"
                     draggable="false"
                     height="400"
                     loading="lazy"
-                    src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
-                    srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+                    sizes="(max-width: 1023px) 50vw, (max-width: 767px) 75vw, 30vw"
+                    src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=256&q=75 256w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=384&q=75 384w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=3840&q=75 3840w"
                     style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
                     width="400"
                   />
@@ -1003,18 +1012,19 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
               >
                 <div
                   class="jsx-2553597104 carouselItem"
-                  data-testid="projectItem_touch_div_tjela logo"
+                  data-testid="projectItem_touch_div_a poke bowl"
                   data-times-touched="0"
                 >
                   <img
-                    alt="tjela logo"
+                    alt="a poke bowl"
                     data-nimg="1"
                     decoding="async"
                     draggable="false"
                     fetchpriority="high"
                     height="400"
-                    src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
-                    srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
+                    sizes="(max-width: 1023px) 50vw, (max-width: 767px) 75vw, 30vw"
+                    src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=256&q=75 256w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=384&q=75 384w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=3840&q=75 3840w"
                     style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
                     width="400"
                   />
@@ -1055,18 +1065,19 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
               >
                 <div
                   class="jsx-2553597104 carouselItem"
-                  data-testid="projectItem_touch_div_kaffeehaus logo"
+                  data-testid="projectItem_touch_div_coffee being poured into a mug"
                   data-times-touched="0"
                 >
                   <img
-                    alt="kaffeehaus logo"
+                    alt="coffee being poured into a mug"
                     data-nimg="1"
                     decoding="async"
                     draggable="false"
                     fetchpriority="high"
                     height="400"
-                    src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
-                    srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
+                    sizes="(max-width: 1023px) 50vw, (max-width: 767px) 75vw, 30vw"
+                    src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=256&q=75 256w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=384&q=75 384w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=3840&q=75 3840w"
                     style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
                     width="400"
                   />
@@ -1101,18 +1112,19 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
               >
                 <div
                   class="jsx-2553597104 carouselItem"
-                  data-testid="projectItem_touch_div_guacamole logo"
+                  data-testid="projectItem_touch_div_a burrito split in half"
                   data-times-touched="0"
                 >
                   <img
-                    alt="guacamole logo"
+                    alt="a burrito split in half"
                     data-nimg="1"
                     decoding="async"
                     draggable="false"
                     height="400"
                     loading="lazy"
-                    src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
-                    srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+                    sizes="(max-width: 1023px) 50vw, (max-width: 767px) 75vw, 30vw"
+                    src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=256&q=75 256w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=384&q=75 384w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=3840&q=75 3840w"
                     style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
                     width="400"
                   />
@@ -1153,18 +1165,19 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
               >
                 <div
                   class="jsx-2553597104 carouselItem"
-                  data-testid="projectItem_touch_div_tjela logo"
+                  data-testid="projectItem_touch_div_a poke bowl"
                   data-times-touched="0"
                 >
                   <img
-                    alt="tjela logo"
+                    alt="a poke bowl"
                     data-nimg="1"
                     decoding="async"
                     draggable="false"
                     fetchpriority="high"
                     height="400"
-                    src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
-                    srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
+                    sizes="(max-width: 1023px) 50vw, (max-width: 767px) 75vw, 30vw"
+                    src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=256&q=75 256w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=384&q=75 384w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=3840&q=75 3840w"
                     style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
                     width="400"
                   />
@@ -1205,18 +1218,19 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
               >
                 <div
                   class="jsx-2553597104 carouselItem"
-                  data-testid="projectItem_touch_div_kaffeehaus logo"
+                  data-testid="projectItem_touch_div_coffee being poured into a mug"
                   data-times-touched="0"
                 >
                   <img
-                    alt="kaffeehaus logo"
+                    alt="coffee being poured into a mug"
                     data-nimg="1"
                     decoding="async"
                     draggable="false"
                     fetchpriority="high"
                     height="400"
-                    src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
-                    srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
+                    sizes="(max-width: 1023px) 50vw, (max-width: 767px) 75vw, 30vw"
+                    src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=256&q=75 256w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=384&q=75 384w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=3840&q=75 3840w"
                     style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
                     width="400"
                   />
@@ -1251,18 +1265,19 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
               >
                 <div
                   class="jsx-2553597104 carouselItem"
-                  data-testid="projectItem_touch_div_guacamole logo"
+                  data-testid="projectItem_touch_div_a burrito split in half"
                   data-times-touched="0"
                 >
                   <img
-                    alt="guacamole logo"
+                    alt="a burrito split in half"
                     data-nimg="1"
                     decoding="async"
                     draggable="false"
                     height="400"
                     loading="lazy"
-                    src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
-                    srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+                    sizes="(max-width: 1023px) 50vw, (max-width: 767px) 75vw, 30vw"
+                    src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=256&q=75 256w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=384&q=75 384w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=3840&q=75 3840w"
                     style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
                     width="400"
                   />
@@ -1303,18 +1318,19 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
               >
                 <div
                   class="jsx-2553597104 carouselItem"
-                  data-testid="projectItem_touch_div_tjela logo"
+                  data-testid="projectItem_touch_div_a poke bowl"
                   data-times-touched="0"
                 >
                   <img
-                    alt="tjela logo"
+                    alt="a poke bowl"
                     data-nimg="1"
                     decoding="async"
                     draggable="false"
                     fetchpriority="high"
                     height="400"
-                    src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75"
-                    srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 2x"
+                    sizes="(max-width: 1023px) 50vw, (max-width: 767px) 75vw, 30vw"
+                    src="/_next/image?url=%2Fimages%2Ftjela.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Ftjela.jpg&w=256&q=75 256w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=384&q=75 384w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Ftjela.jpg&w=3840&q=75 3840w"
                     style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
                     width="400"
                   />
@@ -1355,18 +1371,19 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
               >
                 <div
                   class="jsx-2553597104 carouselItem"
-                  data-testid="projectItem_touch_div_kaffeehaus logo"
+                  data-testid="projectItem_touch_div_coffee being poured into a mug"
                   data-times-touched="0"
                 >
                   <img
-                    alt="kaffeehaus logo"
+                    alt="coffee being poured into a mug"
                     data-nimg="1"
                     decoding="async"
                     draggable="false"
                     fetchpriority="high"
                     height="400"
-                    src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75"
-                    srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 2x"
+                    sizes="(max-width: 1023px) 50vw, (max-width: 767px) 75vw, 30vw"
+                    src="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=256&q=75 256w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=384&q=75 384w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fkaffeehaus.jpg&w=3840&q=75 3840w"
                     style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
                     width="400"
                   />
@@ -1401,18 +1418,19 @@ exports[`<ProjectsList /> renders properly on tablet 1`] = `
               >
                 <div
                   class="jsx-2553597104 carouselItem"
-                  data-testid="projectItem_touch_div_guacamole logo"
+                  data-testid="projectItem_touch_div_a burrito split in half"
                   data-times-touched="0"
                 >
                   <img
-                    alt="guacamole logo"
+                    alt="a burrito split in half"
                     data-nimg="1"
                     decoding="async"
                     draggable="false"
                     height="400"
                     loading="lazy"
-                    src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75"
-                    srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 2x"
+                    sizes="(max-width: 1023px) 50vw, (max-width: 767px) 75vw, 30vw"
+                    src="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fguacamole.jpg&w=256&q=75 256w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=384&q=75 384w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fguacamole.jpg&w=3840&q=75 3840w"
                     style="color: transparent; width: 100%; height: auto; position: relative; max-width: 400px;"
                     width="400"
                   />

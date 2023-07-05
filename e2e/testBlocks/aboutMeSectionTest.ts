@@ -28,7 +28,7 @@ export const aboutMeSectionTest = async (
     const imageWidthMobileSafari = 350;
     const imageHeightDesktop = 675;
     const imageHeightMobileChrome = 441;
-    const imageHeightMobileSafari = 438;
+    const imageHeightMobileSafari = 437;
     const imageWidth = getImageDimension(
         isMobile,
         browserName,

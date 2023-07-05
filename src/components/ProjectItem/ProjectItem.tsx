@@ -100,6 +100,7 @@ export const ProjectItem = ({
                         alt={imageAlt}
                         height={imageSize}
                         priority={!!preloadImage}
+                        sizes={`(${phabletMediaQuery}) 50vw, (${tabletMediaQuery}) 75vw, 30vw`}
                         src={imageSrc}
                         style={{
                             width: '100%',

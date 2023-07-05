@@ -32,7 +32,7 @@ export const ProjectsList = (): JSX.Element => {
                                 brandLink={tjelaInstagramUrl}
                                 brandTag="@tudonatjela"
                                 description={texts.socialMediaManagementAndContentCreation}
-                                imageAlt="tjela logo"
+                                imageAlt="a poke bowl"
                                 imageSrc="/images/tjela.jpg"
                                 isDesktop={isDesktop}
                                 year={2020}
@@ -43,7 +43,7 @@ export const ProjectsList = (): JSX.Element => {
                                 brandLink={kaffeehausInstagramUrl}
                                 brandTag="@kaffeehaus_lisboa"
                                 description={texts.socialMediaManagementAndContentCreation}
-                                imageAlt="kaffeehaus logo"
+                                imageAlt="coffee being poured into a mug"
                                 imageSrc="/images/kaffeehaus.jpg"
                                 isDesktop={isDesktop}
                                 year={2018}
@@ -55,7 +55,7 @@ export const ProjectsList = (): JSX.Element => {
                                 brandLink={guacamoleInstagramUrl}
                                 brandTag="@guacamolegmg"
                                 description={texts.socialMediaManagementAndContentCreation}
-                                imageAlt="guacamole logo"
+                                imageAlt="a burrito split in half"
                                 imageSrc="/images/guacamole.jpg"
                                 isDesktop={isDesktop}
                                 year={2019}
@@ -70,7 +70,7 @@ export const ProjectsList = (): JSX.Element => {
                                 brandLink={tjelaInstagramUrl}
                                 brandTag="@tudonatjela"
                                 description={texts.socialMediaManagementAndContentCreation}
-                                imageAlt="tjela logo"
+                                imageAlt="a poke bowl"
                                 imageSrc="/images/tjela.jpg"
                                 isDesktop={isDesktop}
                                 year={2020}
@@ -81,7 +81,7 @@ export const ProjectsList = (): JSX.Element => {
                                 brandLink={kaffeehausInstagramUrl}
                                 brandTag="@kaffeehaus_lisboa"
                                 description={texts.socialMediaManagementAndContentCreation}
-                                imageAlt="kaffeehaus logo"
+                                imageAlt="coffee being poured into a mug"
                                 imageSrc="/images/kaffeehaus.jpg"
                                 isDesktop={isDesktop}
                                 year={2018}
@@ -92,7 +92,7 @@ export const ProjectsList = (): JSX.Element => {
                                 brandLink={guacamoleInstagramUrl}
                                 brandTag="@guacamolegmg"
                                 description={texts.socialMediaManagementAndContentCreation}
-                                imageAlt="guacamole logo"
+                                imageAlt="a burrito split in half"
                                 imageSrc="/images/guacamole.jpg"
                                 isDesktop={isDesktop}
                                 year={2019}

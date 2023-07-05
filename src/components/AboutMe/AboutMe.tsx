@@ -24,6 +24,7 @@ export const AboutMe = (): JSX.Element => {
                                 priority
                                 alt="a picture of me, Catarina"
                                 height={650}
+                                sizes={`(${desktopMediaQuery}) 45vw, (${tabletMediaQuery}) 75vw, (${mobileMediaQuery}) 100vw, 35vw`}
                                 src="/images/about-me.jpg"
                                 style={{
                                     width: '100%',

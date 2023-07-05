@@ -61,7 +61,7 @@ jobs:
         run: yarn build
 
       - name: Run Lighthouse CI
-        run: yarn run:lighthouse:ci
+        run: yarn run:lighthouse:all
 
   playwright-chrome:
     runs-on: ubuntu-latest
