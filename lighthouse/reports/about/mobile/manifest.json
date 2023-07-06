@@ -1,0 +1,41 @@
+[
+  {
+    "url": "http://localhost:3000/pt/about",
+    "isRepresentativeRun": false,
+    "htmlPath": "D:\\Documents\\Code\\GitHub\\Aguarela2020\\lighthouse\\reports\\about\\mobile\\localhost-_pt_about.report.html",
+    "jsonPath": "D:\\Documents\\Code\\GitHub\\Aguarela2020\\lighthouse\\reports\\about\\mobile\\localhost-_pt_about.report.json",
+    "summary": {
+      "performance": 0.97,
+      "accessibility": 0.97,
+      "best-practices": 0.92,
+      "seo": 1,
+      "pwa": 0.33
+    }
+  },
+  {
+    "url": "http://localhost:3000/pt/about",
+    "isRepresentativeRun": false,
+    "htmlPath": "D:\\Documents\\Code\\GitHub\\Aguarela2020\\lighthouse\\reports\\about\\mobile\\localhost-_pt_about.report.html",
+    "jsonPath": "D:\\Documents\\Code\\GitHub\\Aguarela2020\\lighthouse\\reports\\about\\mobile\\localhost-_pt_about.report.json",
+    "summary": {
+      "performance": 1,
+      "accessibility": 0.97,
+      "best-practices": 0.92,
+      "seo": 1,
+      "pwa": 0.33
+    }
+  },
+  {
+    "url": "http://localhost:3000/pt/about",
+    "isRepresentativeRun": true,
+    "htmlPath": "D:\\Documents\\Code\\GitHub\\Aguarela2020\\lighthouse\\reports\\about\\mobile\\localhost-_pt_about.report.html",
+    "jsonPath": "D:\\Documents\\Code\\GitHub\\Aguarela2020\\lighthouse\\reports\\about\\mobile\\localhost-_pt_about.report.json",
+    "summary": {
+      "performance": 1,
+      "accessibility": 0.97,
+      "best-practices": 0.92,
+      "seo": 1,
+      "pwa": 0.33
+    }
+  }
+]

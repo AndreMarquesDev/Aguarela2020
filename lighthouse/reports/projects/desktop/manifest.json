@@ -1,0 +1,41 @@
+[
+  {
+    "url": "http://localhost:3000/pt/projects",
+    "isRepresentativeRun": false,
+    "htmlPath": "D:\\Documents\\Code\\GitHub\\Aguarela2020\\lighthouse\\reports\\projects\\desktop\\localhost-_pt_projects.report.html",
+    "jsonPath": "D:\\Documents\\Code\\GitHub\\Aguarela2020\\lighthouse\\reports\\projects\\desktop\\localhost-_pt_projects.report.json",
+    "summary": {
+      "performance": 0.77,
+      "accessibility": 0.97,
+      "best-practices": 1,
+      "seo": 1,
+      "pwa": 0.25
+    }
+  },
+  {
+    "url": "http://localhost:3000/pt/projects",
+    "isRepresentativeRun": false,
+    "htmlPath": "D:\\Documents\\Code\\GitHub\\Aguarela2020\\lighthouse\\reports\\projects\\desktop\\localhost-_pt_projects.report.html",
+    "jsonPath": "D:\\Documents\\Code\\GitHub\\Aguarela2020\\lighthouse\\reports\\projects\\desktop\\localhost-_pt_projects.report.json",
+    "summary": {
+      "performance": 0.77,
+      "accessibility": 0.97,
+      "best-practices": 1,
+      "seo": 1,
+      "pwa": 0.25
+    }
+  },
+  {
+    "url": "http://localhost:3000/pt/projects",
+    "isRepresentativeRun": true,
+    "htmlPath": "D:\\Documents\\Code\\GitHub\\Aguarela2020\\lighthouse\\reports\\projects\\desktop\\localhost-_pt_projects.report.html",
+    "jsonPath": "D:\\Documents\\Code\\GitHub\\Aguarela2020\\lighthouse\\reports\\projects\\desktop\\localhost-_pt_projects.report.json",
+    "summary": {
+      "performance": 0.77,
+      "accessibility": 0.97,
+      "best-practices": 1,
+      "seo": 1,
+      "pwa": 0.25
+    }
+  }
+]

@@ -11,7 +11,7 @@ module.exports = {
         },
         upload: {
             ...baseLighthouseConfig.upload,
-            outputDir: `./lighthouse/reports/${page}`,
+            outputDir: `./lighthouse/reports/${page}/mobile`,
         },
         assert: {
             ...baseLighthouseConfig.assert,

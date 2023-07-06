@@ -1,6 +1,6 @@
 const baseLighthouseConfig = require('./lighthouserc').ci;
 
-const page = 'about';
+const page = 'projects';
 
 module.exports = {
     ci: {
@@ -11,14 +11,7 @@ module.exports = {
         },
         upload: {
             ...baseLighthouseConfig.upload,
-            outputDir: `./lighthouse/reports/${page}`,
-        },
-        assert: {
-            ...baseLighthouseConfig.assert,
-            assertions: {
-                ...baseLighthouseConfig.assert.assertions,
-                'image-size-responsive': 'warn',
-            },
+            outputDir: `./lighthouse/reports/${page}/mobile`,
         },
     },
 };

@@ -1,6 +1,6 @@
 const baseLighthouseConfig = require('./lighthouserc').ci;
 
-const page = 'contact';
+const page = 'services';
 
 module.exports = {
     ci: {
@@ -11,14 +11,7 @@ module.exports = {
         },
         upload: {
             ...baseLighthouseConfig.upload,
-            outputDir: `./lighthouse/reports/${page}`,
-        },
-        assert: {
-            ...baseLighthouseConfig.assert,
-            assertions: {
-                ...baseLighthouseConfig.assert.assertions,
-                'unused-javascript': 'warn',
-            },
+            outputDir: `./lighthouse/reports/${page}/mobile`,
         },
     },
 };

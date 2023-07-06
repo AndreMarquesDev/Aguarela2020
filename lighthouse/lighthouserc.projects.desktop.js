@@ -8,10 +8,20 @@ module.exports = {
         collect: {
             ...baseLighthouseConfig.collect,
             url: `http://localhost:3000/pt/${page}`,
+            settings: {
+                preset: 'desktop',
+            },
         },
         upload: {
             ...baseLighthouseConfig.upload,
-            outputDir: `./lighthouse/reports/${page}`,
+            outputDir: `./lighthouse/reports/${page}/desktop`,
+        },
+        assert: {
+            ...baseLighthouseConfig.assert,
+            assertions: {
+                ...baseLighthouseConfig.assert.assertions,
+                'uses-responsive-images': 'warn',
+            },
         },
     },
 };
