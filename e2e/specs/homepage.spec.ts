@@ -35,6 +35,7 @@ test.describe(`PT | ${pageNameCapitalized}`, () => {
         await expect(page).toHaveURL(url);
     });
 
+    /* eslint-disable playwright/expect-expect */
     test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
         await headerNavigationTest(
             page,
@@ -78,6 +79,7 @@ test.describe(`PT | ${pageNameCapitalized}`, () => {
     test('renders the footer', async ({ page }) => {
         await footerTest(page, locale);
     });
+    /* eslint-enable playwright/expect-expect */
 
     test('takes a full page screenshot', async ({ page, isMobile }) => {
         // scroll to bottom of the page to allow banner, skills and brands lists images to load
@@ -85,6 +87,7 @@ test.describe(`PT | ${pageNameCapitalized}`, () => {
         await page.getByTestId(skillsBlockSectionDataTestId).scrollIntoViewIfNeeded();
         await page.getByTestId(brandsListSectionDataTestId).scrollIntoViewIfNeeded();
         await page.getByTestId(footerDataTestId).scrollIntoViewIfNeeded();
+        // eslint-disable-next-line playwright/no-networkidle
         await page.waitForLoadState('networkidle');
         // take full page screenshot
         await expect(page).toHaveScreenshot(getScreenshotPath(pageName, locale), {
@@ -114,6 +117,7 @@ test.describe(`EN | ${pageNameCapitalized}`, () => {
         await expect(page).toHaveURL(url);
     });
 
+    /* eslint-disable playwright/expect-expect */
     test('renders the header and navigates properly', async ({ page, isMobile, browserName }) => {
         await headerNavigationTest(
             page,
@@ -157,6 +161,7 @@ test.describe(`EN | ${pageNameCapitalized}`, () => {
     test('renders the footer', async ({ page }) => {
         await footerTest(page, locale);
     });
+    /* eslint-enable playwright/expect-expect */
 
     test('takes a full page screenshot', async ({ page, isMobile }) => {
         // scroll to bottom of the page to allow banner, skills and brands lists images to load
@@ -164,6 +169,7 @@ test.describe(`EN | ${pageNameCapitalized}`, () => {
         await page.getByTestId(skillsBlockSectionDataTestId).scrollIntoViewIfNeeded();
         await page.getByTestId(brandsListSectionDataTestId).scrollIntoViewIfNeeded();
         await page.getByTestId(footerDataTestId).scrollIntoViewIfNeeded();
+        // eslint-disable-next-line playwright/no-networkidle
         await page.waitForLoadState('networkidle');
         // take full page screenshot
         await expect(page).toHaveScreenshot(getScreenshotPath(pageName, locale), {
