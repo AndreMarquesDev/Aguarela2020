@@ -80,13 +80,13 @@ exports[`<Header /> renders properly 1`] = `
       </ul>
       <i
         aria-label="toggle menu"
-        class="jsx-2079322113 menuIcon hidden"
+        class="jsx-2279021353 menuIcon hidden"
         data-testid="menuIcon_button"
         role="button"
         tabindex="0"
       >
         <span
-          class="jsx-2079322113"
+          class="jsx-2279021353"
         />
       </i>
     </nav>
@@ -174,13 +174,13 @@ exports[`<Header /> renders properly below phablet 1`] = `
       </ul>
       <i
         aria-label="toggle menu"
-        class="jsx-2079322113 menuIcon"
+        class="jsx-2279021353 menuIcon"
         data-testid="menuIcon_button"
         role="button"
         tabindex="0"
       >
         <span
-          class="jsx-2079322113"
+          class="jsx-2279021353"
         />
       </i>
     </nav>

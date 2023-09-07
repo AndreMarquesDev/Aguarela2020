@@ -83,13 +83,13 @@ exports[`<Layout /> renders properly 1`] = `
         </ul>
         <i
           aria-label="toggle menu"
-          class="jsx-2079322113 menuIcon hidden"
+          class="jsx-2279021353 menuIcon hidden"
           data-testid="menuIcon_button"
           role="button"
           tabindex="0"
         >
           <span
-            class="jsx-2079322113"
+            class="jsx-2279021353"
           />
         </i>
       </nav>
@@ -286,13 +286,13 @@ exports[`<Layout /> renders properly in English 1`] = `
         </ul>
         <i
           aria-label="toggle menu"
-          class="jsx-2079322113 menuIcon"
+          class="jsx-2279021353 menuIcon"
           data-testid="menuIcon_button"
           role="button"
           tabindex="0"
         >
           <span
-            class="jsx-2079322113"
+            class="jsx-2279021353"
           />
         </i>
       </nav>
@@ -489,13 +489,13 @@ exports[`<Layout /> renders properly when the menu is open and the resolution is
         </ul>
         <i
           aria-label="toggle menu"
-          class="jsx-2079322113 menuIcon open"
+          class="jsx-2279021353 menuIcon open"
           data-testid="menuIcon_button"
           role="button"
           tabindex="0"
         >
           <span
-            class="jsx-2079322113"
+            class="jsx-2279021353"
           />
         </i>
       </nav>

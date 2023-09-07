@@ -162,17 +162,20 @@ export const MenuIcon = ({ isOpen, isVisible, onClick }: MenuIconProps): JSX.Ele
 
                         &:hover {
                             &:before {
-                                animation: topToBurguer 0.7s ease forwards,
+                                animation:
+                                    topToBurguer 0.7s ease forwards,
                                     menuHover 1s infinite ease-in-out alternate;
                             }
 
                             span {
-                                animation: middleToBurguer 0.7s ease forwards,
+                                animation:
+                                    middleToBurguer 0.7s ease forwards,
                                     menuHover 1s infinite ease-in-out alternate forwards 200ms;
                             }
 
                             &:after {
-                                animation: bottomToBurguer 0.7s ease forwards,
+                                animation:
+                                    bottomToBurguer 0.7s ease forwards,
                                     menuHover 1s infinite ease-in-out alternate forwards 400ms;
                             }
                         }
