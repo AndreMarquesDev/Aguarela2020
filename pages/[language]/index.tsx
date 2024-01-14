@@ -29,7 +29,7 @@ const IndexPage = (): JSX.Element => {
 
     return (
         <Head>
-            <meta content="noindex, nofollow" name="robots" />
+            <meta content="all" name="robots" />
         </Head>
     );
 };

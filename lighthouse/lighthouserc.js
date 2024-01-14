@@ -17,6 +17,8 @@ module.exports = {
                 'color-contrast': 'warn', // cause: contrast between purple background and white text
                 'non-composited-animations': 'warn', // cause: menu icon animations, should be 'transforms' and not 'top'/'bottom'
                 'bf-cache': 'warn', // not sure it can be solved since next router is being used
+                'csp-xss': 'warn', // because of Vercel Analytics and Speed Insights packages
+                'errors-in-console': 'warn', // because of Vercel Analytics and Speed Insights packages
             },
         },
     },

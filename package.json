@@ -48,6 +48,8 @@
         "not op_mini all"
     ],
     "dependencies": {
+        "@vercel/analytics": "^1.1.1",
+        "@vercel/speed-insights": "^1.0.3",
         "axios": "^1.6.3",
         "classnames": "^2.3.2",
         "formik": "^2.4.4",
@@ -70,12 +72,11 @@
         "@testing-library/jest-dom": "^6.1.5",
         "@testing-library/react": "^14.0.0",
         "@testing-library/user-event": "^14.4.3",
-        "@types/classnames": "^2.3.1",
         "@types/jest": "^29.5.11",
+        "@types/js-cookie": "^3.0.6",
         "@types/node": "^18.16.2",
         "@types/nodemailer-smtp-transport": "^2.7.5",
         "@types/react": "^18.2.21",
-        "@types/styled-jsx": "^3.4.4",
         "axios-mock-adapter": "^1.22.0",
         "dotenv": "^16.3.1",
         "eslint": "8.48.0",

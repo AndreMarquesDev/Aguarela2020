@@ -1,5 +1,5 @@
 const contentSecurityPolicyDev = `
-    script-src 'self' 'unsafe-eval';
+    script-src 'self' 'unsafe-eval' https://vercel.live/_next-live;
     img-src 'self' data:;
     style-src 'self' fonts.googleapis.com 'unsafe-inline';
     font-src 'self' fonts.gstatic.com;
@@ -8,7 +8,7 @@ const contentSecurityPolicyDev = `
 `;
 
 const contentSecurityPolicyProd = `
-    script-src 'self';
+    script-src 'self' https://vercel.live/_next-live;
     img-src 'self' data:;
     style-src 'self' fonts.googleapis.com 'unsafe-inline';
     font-src 'self' fonts.gstatic.com;
