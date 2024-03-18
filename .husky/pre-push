@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npx yarn
+npx yarn --immutable
 npx yarn build
 npx yarn test
 npx yarn lint

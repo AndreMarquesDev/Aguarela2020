@@ -6,7 +6,7 @@ WORKDIR /home/app
 
 # copy app to VM
 COPY . /home/app
-# install node modules
-RUN yarn
-# build app
-RUN yarn build
+
+# install dependencies and build the app
+RUN yarn --immutable && \
+    yarn build

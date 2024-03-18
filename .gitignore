@@ -11,3 +11,10 @@ yarn-error.log
 playwright-report
 test-results
 tsconfig.tsbuildinfo
+
+# yarn v4
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*

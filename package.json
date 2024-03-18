@@ -39,7 +39,7 @@
     "author": "André Marques <andregm_7@hotmail.com> (andremarquesdev.com)",
     "engines": {
         "node": ">=20.11.0 <21",
-        "yarn": "1"
+        "yarn": "4.1.1"
     },
     "browserslist": [
         ">0.3%",
@@ -110,5 +110,6 @@
         "typescript": "^5.2.2",
         "word-wrap": "^1.2.4",
         "xml2js": "^0.5.0"
-    }
+    },
+    "packageManager": "yarn@4.1.1"
 }
