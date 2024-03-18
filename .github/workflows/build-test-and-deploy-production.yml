@@ -14,13 +14,13 @@ jobs:
     timeout-minutes: 15
     strategy:
       matrix:
-        node-version: [18.16.0]
+        node-version: [20.11.1]
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Use node ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: "yarn"
@@ -43,13 +43,13 @@ jobs:
     needs: build
     strategy:
       matrix:
-        node-version: [18.16.0]
+        node-version: [20.11.1]
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Use node ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: "yarn"
@@ -69,13 +69,13 @@ jobs:
     needs: build
     strategy:
       matrix:
-        node-version: [18.16.0]
+        node-version: [20.11.1]
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Use node ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: "yarn"
@@ -97,13 +97,13 @@ jobs:
       image: mcr.microsoft.com/playwright:v1.36.1-focal
     strategy:
       matrix:
-        node-version: [18.16.0]
+        node-version: [20.11.1]
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Use node ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: "yarn"
@@ -140,13 +140,13 @@ jobs:
       image: mcr.microsoft.com/playwright:v1.36.1-focal
     strategy:
       matrix:
-        node-version: [18.16.0]
+        node-version: [20.11.1]
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Use node ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: "yarn"
@@ -183,13 +183,13 @@ jobs:
       image: mcr.microsoft.com/playwright:v1.36.1-focal
     strategy:
       matrix:
-        node-version: [18.16.0]
+        node-version: [20.11.1]
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Use node ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: "yarn"
@@ -226,13 +226,13 @@ jobs:
       image: mcr.microsoft.com/playwright:v1.36.1-focal
     strategy:
       matrix:
-        node-version: [18.16.0]
+        node-version: [20.11.1]
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Use node ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: "yarn"
@@ -269,13 +269,13 @@ jobs:
       image: mcr.microsoft.com/playwright:v1.36.1-focal
     strategy:
       matrix:
-        node-version: [18.16.0]
+        node-version: [20.11.1]
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Use node ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: "yarn"
@@ -312,13 +312,13 @@ jobs:
       image: mcr.microsoft.com/playwright:v1.36.1-focal
     strategy:
       matrix:
-        node-version: [18.16.0]
+        node-version: [20.11.1]
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Use node ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: "yarn"
@@ -363,7 +363,7 @@ jobs:
       ]
     if: github.ref == 'refs/heads/master' && github.event.schedule != '0 14 * * 3' && !contains(github.event.head_commit.message, 'chore') && !contains(github.event.head_commit.message, 'test') && !contains(github.event.head_commit.message, 'docs') && !contains(github.event.head_commit.message, 'ci')
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Deploy to Vercel
         run: npx vercel --token ${VERCEL_TOKEN} --prod
         env:

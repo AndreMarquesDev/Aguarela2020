@@ -38,7 +38,7 @@
     "keywords": [],
     "author": "André Marques <andregm_7@hotmail.com> (andremarquesdev.com)",
     "engines": {
-        "node": ">=18.13.0 <19",
+        "node": ">=20.11.0 <21",
         "yarn": "1"
     },
     "browserslist": [
