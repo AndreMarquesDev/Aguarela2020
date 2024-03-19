@@ -2082,10 +2082,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.16.2":
-  version: 18.16.2
-  resolution: "@types/node@npm:18.16.2"
-  checksum: 10c0/ddcaecb88ffd85c9d6780d19839c40f00719d8159390225daed84a1c30cdbee50fe6ecef2f9c69010d07b7af3358bb800801f2f312fc985e8f183289eb32c6ad
+"@types/node@npm:^20.11.29":
+  version: 20.11.29
+  resolution: "@types/node@npm:20.11.29"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: 10c0/b839bad64b2d0e2b4a2d09a53c019ac06c732ac66ea88f3a86a9d2f28a789caf8fd56b888f577183459733abfa1b77e4bf6986cde18b2ec63e1939427aa0d387
   languageName: node
   linkType: hard
 
@@ -2108,13 +2110,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/nodemailer-smtp-transport@npm:*, @types/nodemailer-smtp-transport@npm:^2.7.5":
-  version: 2.7.5
-  resolution: "@types/nodemailer-smtp-transport@npm:2.7.5"
+"@types/nodemailer-smtp-transport@npm:^2.7.8":
+  version: 2.7.8
+  resolution: "@types/nodemailer-smtp-transport@npm:2.7.8"
   dependencies:
     "@types/node": "npm:*"
     "@types/nodemailer": "npm:^3"
-  checksum: 10c0/759597f685bc4603ad6f3c45c80ccd764df6b4f98fe45dd5b3be6707c822d520f775b4b5ef5acdd812f3d95147b5cb6fc1e858ec1cdb9fdb85ccd74c3eaebf68
+  checksum: 10c0/99bcc61f02e078aee6c23c82d6ce3a40425343b83a5bc7e6e71a6a32878c0aff232080f2923378f60f6d5c68ff3784acfa1440efa168d8999f3d9528f7ee8708
   languageName: node
   linkType: hard
 
@@ -2625,12 +2627,12 @@ __metadata:
     "@testing-library/user-event": "npm:^14.4.3"
     "@types/jest": "npm:^29.5.11"
     "@types/js-cookie": "npm:^3.0.6"
-    "@types/node": "npm:^18.16.2"
-    "@types/nodemailer-smtp-transport": "npm:^2.7.5"
+    "@types/node": "npm:^20.11.29"
+    "@types/nodemailer-smtp-transport": "npm:^2.7.8"
     "@types/react": "npm:^18.2.21"
     "@vercel/analytics": "npm:^1.1.1"
     "@vercel/speed-insights": "npm:^1.0.3"
-    axios: "npm:^1.6.5"
+    axios: "npm:^1.6.8"
     axios-mock-adapter: "npm:^1.22.0"
     classnames: "npm:^2.3.2"
     dotenv: "npm:^16.3.1"
@@ -2647,7 +2649,7 @@ __metadata:
     multilingual-url: AndreMarquesDev/multilingual-url
     next: "npm:^13.5.6"
     next-router-mock: "npm:^0.9.11"
-    nodemailer: "npm:^6.9.5"
+    nodemailer: "npm:^6.9.12"
     nuka-carousel: "npm:^6.0.3"
     postcss-extend: "npm:^1.0.5"
     postcss-flexbugs-fixes: "npm:^5.0.2"
@@ -2990,14 +2992,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.6.5":
-  version: 1.6.5
-  resolution: "axios@npm:1.6.5"
+"axios@npm:^1.6.8":
+  version: 1.6.8
+  resolution: "axios@npm:1.6.8"
   dependencies:
-    follow-redirects: "npm:^1.15.4"
+    follow-redirects: "npm:^1.15.6"
     form-data: "npm:^4.0.0"
     proxy-from-env: "npm:^1.1.0"
-  checksum: 10c0/aeb9acf87590d8aa67946072ced38e01ca71f5dfe043782c0ccea667e5dd5c45830c08afac9be3d7c894f09684b8ab2a458f497d197b73621233bcf202d9d468
+  checksum: 10c0/0f22da6f490335479a89878bc7d5a1419484fbb437b564a80c34888fc36759ae4f56ea28d55a191695e5ed327f0bad56e7ff60fb6770c14d1be6501505d47ab9
   languageName: node
   linkType: hard
 
@@ -5263,13 +5265,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.15.4":
-  version: 1.15.5
-  resolution: "follow-redirects@npm:1.15.5"
+"follow-redirects@npm:^1.15.6":
+  version: 1.15.6
+  resolution: "follow-redirects@npm:1.15.6"
   peerDependenciesMeta:
     debug:
       optional: true
-  checksum: 10c0/418d71688ceaf109dfd6f85f747a0c75de30afe43a294caa211def77f02ef19865b547dfb73fde82b751e1cc507c06c754120b848fe5a7400b0a669766df7615
+  checksum: 10c0/9ff767f0d7be6aa6870c82ac79cf0368cd73e01bbc00e9eb1c2a16fbb198ec105e3c9b6628bb98e9f3ac66fe29a957b9645bcb9a490bb7aa0d35f908b6b85071
   languageName: node
   linkType: hard
 
@@ -8084,10 +8086,10 @@ multilingual-url@AndreMarquesDev/multilingual-url:
   languageName: node
   linkType: hard
 
-"nodemailer@npm:^6.9.5":
-  version: 6.9.5
-  resolution: "nodemailer@npm:6.9.5"
-  checksum: 10c0/690602304f98e2de08db613c29715f3bb0e44236a9bfa8766ab5edb43350060c0269c03d6ac90f700871bbe4832e8158eac6b1e9fbe0d83e49acea7d06b4a1f8
+"nodemailer@npm:^6.9.12":
+  version: 6.9.12
+  resolution: "nodemailer@npm:6.9.12"
+  checksum: 10c0/2c5ff1f064a264e008ca27f66db0dbf25c44bc38178e5ddb9a05bd7b5517bfa3c0e018845b87256df56b554ed6c3720380f3735e9029cf9f7c830e9fdab4189a
   languageName: node
   linkType: hard
 
@@ -10718,6 +10720,13 @@ multilingual-url@AndreMarquesDev/multilingual-url:
     buffer: "npm:^5.2.1"
     through: "npm:^2.3.8"
   checksum: 10c0/2ea2048f3c9db3499316ccc1d95ff757017ccb6f46c812d7c42466247e3b863fb178864267482f7f178254214247779daf68e85f50bd7736c3c97ba2d58b910a
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~5.26.4":
+  version: 5.26.5
+  resolution: "undici-types@npm:5.26.5"
+  checksum: 10c0/bb673d7876c2d411b6eb6c560e0c571eef4a01c1c19925175d16e3a30c4c428181fb8d7ae802a261f283e4166a0ac435e2f505743aa9e45d893f9a3df017b501
   languageName: node
   linkType: hard
 
