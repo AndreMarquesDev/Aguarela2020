@@ -16,7 +16,7 @@ exports[`<Footer /> renders properly 1`] = `
          
         <a
           class="jsx-2748243618 animatedLink animatedLinkWhite"
-          href="https://www.andremarquesdev.com"
+          href="https://www.andremarquesdev.eu"
           rel="noreferrer"
           target="_blank"
         >
@@ -121,7 +121,7 @@ exports[`<Footer /> renders properly in English 1`] = `
          
         <a
           class="jsx-2748243618 animatedLink animatedLinkWhite"
-          href="https://www.andremarquesdev.com"
+          href="https://www.andremarquesdev.eu"
           rel="noreferrer"
           target="_blank"
         >

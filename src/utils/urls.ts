@@ -4,7 +4,7 @@ export const aguarelaDigitalInstagramUrl = 'https://www.instagram.com/aguareladi
 export const aguarelaDigitalFacebookUrl = 'https://www.facebook.com/aguareladigitalpt';
 export const aguarelaDigitalEmail = 'catarina@aguareladigital.com';
 export const catarinaSantiagoInstagramUrl = 'https://www.instagram.com/catarinasantiago/';
-export const andreMarquesDevWebsiteUrl = 'https://www.andremarquesdev.com';
+export const andreMarquesDevWebsiteUrl = 'https://www.andremarquesdev.eu';
 
 export const avocadoInstagramUrl = 'https://www.instagram.com/avocadohouselisbon/';
 export const tjelaInstagramUrl = 'https://www.instagram.com/tudonatjela/';

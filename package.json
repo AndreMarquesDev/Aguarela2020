@@ -38,7 +38,7 @@
         "run:ci-quality-checks": "yarn type-check && yarn lint:fix && yarn test && yarn build"
     },
     "keywords": [],
-    "author": "André Marques <andregm_7@hotmail.com> (andremarquesdev.com)",
+    "author": "André Marques <andregm_7@hotmail.com> (andremarquesdev.eu)",
     "engines": {
         "node": ">=20.11.0 <21",
         "yarn": "4.2.2"

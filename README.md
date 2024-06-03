@@ -25,7 +25,7 @@ Aguarela Digital website
 ### Author
 
 André Marques  
-[Website](https://andremarquesdev.com)  
+[Website](https://andremarquesdev.eu)  
 [GitHub](https://github.com/AndreMarquesDev)  
 [CodePen](https://codepen.io/AndreMarquesDev)  
 [Twitter](https://twitter.com/axxyJS)  
