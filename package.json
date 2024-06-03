@@ -11,8 +11,9 @@
         "start": "next start",
         "test": "jest",
         "test:generate:badge": "jest && jest-coverage-badges input src/utils/jest/coverage/coverage-summary.json output src/utils/jest/coverageBadges",
-        "lint": "tsc --noEmit && eslint . --ext .js,.ts,.tsx",
-        "lint:fix": "tsc --noEmit && eslint . --ext .js,.ts,.tsx --fix",
+        "lint": "eslint . --ext .js,.ts,.tsx",
+        "lint:fix": "yarn lint --fix",
+        "type-check": "tsc --noEmit",
         "run:lighthouse:about:mobile": "lhci autorun --config=./lighthouse/lighthouserc.about.mobile.js",
         "run:lighthouse:about:desktop": "lhci autorun --config=./lighthouse/lighthouserc.about.desktop.js",
         "run:lighthouse:contact:mobile": "lhci autorun --config=./lighthouse/lighthouserc.contact.mobile.js",
@@ -33,13 +34,14 @@
         "run:playwright:chrome:mobile": "playwright test --config ./e2e/playwright.config.ts --project=chrome-mobile",
         "run:playwright:safari:mobile": "playwright test --config ./e2e/playwright.config.ts --project=safari-mobile",
         "run:playwright:debug": "playwright test --config ./e2e/playwright.config.ts --debug --project=chrome",
-        "run:playwright:debug:mobile": "playwright test --config ./e2e/playwright.config.ts --debug --project=chrome-mobile"
+        "run:playwright:debug:mobile": "playwright test --config ./e2e/playwright.config.ts --debug --project=chrome-mobile",
+        "run:ci-quality-checks": "yarn type-check && yarn lint:fix && yarn test && yarn build"
     },
     "keywords": [],
     "author": "André Marques <andregm_7@hotmail.com> (andremarquesdev.com)",
     "engines": {
         "node": ">=20.11.0 <21",
-        "yarn": "4.1.1"
+        "yarn": "4.2.2"
     },
     "browserslist": [
         ">0.3%",
@@ -112,5 +114,5 @@
         "word-wrap": "^1.2.4",
         "xml2js": "^0.5.0"
     },
-    "packageManager": "yarn@4.1.1"
+    "packageManager": "yarn@4.2.2"
 }

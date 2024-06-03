@@ -2,6 +2,4 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 npx yarn --immutable
-npx yarn build
-npx yarn test
-npx yarn lint
+npx yarn run-ci-quality-checks
