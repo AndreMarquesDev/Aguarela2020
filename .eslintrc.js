@@ -23,7 +23,7 @@ module.exports = {
         {
             // specific rules for playwright tests
             files: ['**/e2e/**'],
-            extends: ['plugin:playwright/playwright-test'],
+            extends: 'plugin:playwright/recommended',
         },
     ],
 };
