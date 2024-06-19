@@ -99,6 +99,7 @@ test.describe(`PT | ${pageNameCapitalized}`, () => {
             // open menu
             await page.getByRole('button', { name: 'toggle menu' }).click();
             // take screenshot of slide backface
+            // eslint-disable-next-line playwright/no-conditional-expect
             await expect(page).toHaveScreenshot(getScreenshotPath('menu-mobile', locale), {
                 fullPage: true,
             });
