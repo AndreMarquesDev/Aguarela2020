@@ -1,7 +1,10 @@
 module.exports = {
     extends: ['andremarquesdev'],
     parserOptions: {
+        sourceType: 'module',
+        tsconfigRootDir: __dirname,
         project: ['tsconfig.json', './e2e/tsconfig.json'],
+        extraFileExtensions: ['.json'],
     },
     ignorePatterns: ['!.*'],
     rules: {
