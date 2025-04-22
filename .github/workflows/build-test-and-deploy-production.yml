@@ -129,7 +129,7 @@ jobs:
           NEXT_PUBLIC_MOCK_CONTACT_FORM_ERROR: ${{ secrets.NEXT_PUBLIC_MOCK_CONTACT_FORM_ERROR }}
 
       - name: Upload snapshots
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: failure()
         with:
           name: playwright-chrome-test-results
@@ -172,7 +172,7 @@ jobs:
           NEXT_PUBLIC_MOCK_CONTACT_FORM_ERROR: ${{ secrets.NEXT_PUBLIC_MOCK_CONTACT_FORM_ERROR }}
 
       - name: Upload snapshots
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: failure()
         with:
           name: playwright-edge-test-results
@@ -215,7 +215,7 @@ jobs:
           NEXT_PUBLIC_MOCK_CONTACT_FORM_ERROR: ${{ secrets.NEXT_PUBLIC_MOCK_CONTACT_FORM_ERROR }}
 
       - name: Upload snapshots
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: failure()
         with:
           name: playwright-firefox-test-results
@@ -258,7 +258,7 @@ jobs:
           NEXT_PUBLIC_MOCK_CONTACT_FORM_ERROR: ${{ secrets.NEXT_PUBLIC_MOCK_CONTACT_FORM_ERROR }}
 
       - name: Upload snapshots
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: failure()
         with:
           name: playwright-safari-test-results
@@ -301,7 +301,7 @@ jobs:
           NEXT_PUBLIC_MOCK_CONTACT_FORM_ERROR: ${{ secrets.NEXT_PUBLIC_MOCK_CONTACT_FORM_ERROR }}
 
       - name: Upload snapshots
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: failure()
         with:
           name: playwright-chrome-mobile-test-results
@@ -344,7 +344,7 @@ jobs:
           NEXT_PUBLIC_MOCK_CONTACT_FORM_ERROR: ${{ secrets.NEXT_PUBLIC_MOCK_CONTACT_FORM_ERROR }}
 
       - name: Upload snapshots
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: failure()
         with:
           name: playwright-safari-mobile-test-results
