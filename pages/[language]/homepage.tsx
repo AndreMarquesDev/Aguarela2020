@@ -24,7 +24,7 @@ const Homepage: NextPage = () => {
     const navLinksContextValue = useMemo<NavLinksContextProps>(
         () => ({
             isMenuOpen,
-            toggleMenu: () => setIsMenuOpen(!isMenuOpen),
+            toggleMenu: (): void => setIsMenuOpen(!isMenuOpen),
             setNavHeight,
         }),
         [isMenuOpen]
