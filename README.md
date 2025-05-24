@@ -1,4 +1,4 @@
-# Aguarela2020  
+# Aguarela2020
 
 Aguarela Digital website
 
@@ -24,14 +24,14 @@ Aguarela Digital website
 
 ### Author
 
-André Marques  
-[Website](https://andremarquesdev.eu)  
-[GitHub](https://github.com/AndreMarquesDev)  
-[CodePen](https://codepen.io/AndreMarquesDev)  
-[Twitter](https://twitter.com/axxyJS)  
+André Marques
+[Website](https://andremarquesdev.eu)
+[GitHub](https://github.com/AndreMarquesDev)
+[CodePen](https://codepen.io/AndreMarquesDev)
+[Twitter](https://twitter.com/axxyJS)
 
-Aguarela Digital  
-[Instagram](https://www.instagram.com/aguareladigital)  
+Aguarela Digital
+[Instagram](https://www.instagram.com/aguareladigital)
 
 ### License
 

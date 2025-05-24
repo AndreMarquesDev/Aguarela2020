@@ -1,17 +1,19 @@
-import React, { ReactNode, useContext, useMemo } from 'react';
-import { useRouter } from 'next/router';
+import type { ReactNode } from 'react';
+import type { TextsContextProps } from '../context/TextsContext';
 import classNames from 'classnames';
-import { Header } from '../Header/Header';
-import { TextsContext, TextsContextProps } from '../context/TextsContext';
-import { textsEn, textsPt } from '../../utils/texts';
-import { Footer } from '../Footer/Footer';
+import { useRouter } from 'next/router';
+import React, { useContext, useMemo } from 'react';
 import { Locale } from '../../types/Locale';
+import { textsEn, textsPt } from '../../utils/texts';
+import { Breakpoint, useWindowSize } from '../../utils/useWindowSize';
 import { NavLinksContext } from '../context/NavLinksContext';
-import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
+import { TextsContext } from '../context/TextsContext';
+import { Footer } from '../Footer/Footer';
+import { Header } from '../Header/Header';
 
-export interface LayoutProps {
+export type LayoutProps = {
     children: ReactNode;
-}
+};
 
 export const Layout = ({ children }: LayoutProps): JSX.Element => {
     const { route, query } = useRouter();
@@ -27,7 +29,7 @@ export const Layout = ({ children }: LayoutProps): JSX.Element => {
         () => ({
             texts,
         }),
-        [texts]
+        [texts],
     );
 
     return (
