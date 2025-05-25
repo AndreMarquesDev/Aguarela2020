@@ -16,8 +16,9 @@ const contentSecurityPolicyProd = `
     base-uri 'none';
 `;
 
-const csp =
-    process.env.NODE_ENV === 'development' ? contentSecurityPolicyDev : contentSecurityPolicyProd;
+const csp
+    // eslint-disable-next-line node/no-process-env
+    = process.env.NODE_ENV === 'development' ? contentSecurityPolicyDev : contentSecurityPolicyProd;
 
 module.exports = {
     async headers() {
