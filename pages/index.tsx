@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import { getInitialLocale } from 'multilingual-url/lib';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { getInitialLocale } from 'multilingual-url/lib';
+import React, { useEffect } from 'react';
 import { defaultLocale, locales } from '../src/constants/locales';
 
 const Index = (): JSX.Element => {

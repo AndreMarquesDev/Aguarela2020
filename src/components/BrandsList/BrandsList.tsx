@@ -1,29 +1,29 @@
-import React, { useContext } from 'react';
 import Image from 'next/image';
-import { TextsContext } from '../context/TextsContext';
-import { Title } from '../Title/Title';
+import React, { useContext } from 'react';
+import { mobileMediaQuery, tabletMediaQuery } from '../../styles/mediaQueries';
 import { brandsListSectionDataTestId } from '../../utils/dataTestIds';
 import {
-    avocadoInstagramUrl,
-    pernodWebsiteUrl,
-    tjelaInstagramUrl,
-    guacamoleInstagramUrl,
-    kaffeehausInstagramUrl,
-    tasteOfIndiaInstagramUrl,
-    icecreamRollInstagramUrl,
-    mariaLimaoInstagramUrl,
-    biergartenInstagramUrl,
-    trattoriaInstagramUrl,
     aAmigaEsteticistaInstagramUrl,
-    riceMeDeliInstagramUrl,
-    quatroPatasDe5EstrelasInstagramUrl,
-    riceMeInstagramUrl,
+    avocadoInstagramUrl,
+    biergartenInstagramUrl,
+    bovineInstagramUrl,
+    guacamoleInstagramUrl,
+    harpoonLinkedInUrl,
+    icecreamRollInstagramUrl,
+    kaffeehausInstagramUrl,
     luminousInstagramUrl,
     madMaryInstagramUrl,
-    harpoonLinkedInUrl,
-    bovineInstagramUrl,
+    mariaLimaoInstagramUrl,
+    pernodWebsiteUrl,
+    quatroPatasDe5EstrelasInstagramUrl,
+    riceMeDeliInstagramUrl,
+    riceMeInstagramUrl,
+    tasteOfIndiaInstagramUrl,
+    tjelaInstagramUrl,
+    trattoriaInstagramUrl,
 } from '../../utils/urls';
-import { mobileMediaQuery, tabletMediaQuery } from '../../styles/mediaQueries';
+import { TextsContext } from '../context/TextsContext';
+import { Title } from '../Title/Title';
 
 export const BrandsList = (): JSX.Element => {
     const { texts } = useContext(TextsContext);

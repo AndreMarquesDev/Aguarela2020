@@ -1,9 +1,11 @@
-import { createContext, Context } from 'react';
-import { TextsInterface, textsPt } from '../../utils/texts';
+import type { Context } from 'react';
+import type { TextsInterface } from '../../utils/texts';
+import { createContext } from 'react';
+import { textsPt } from '../../utils/texts';
 
-export interface TextsContextProps {
+export type TextsContextProps = {
     texts: TextsInterface;
-}
+};
 
 export const TextsContext: Context<TextsContextProps> = createContext({
     texts: textsPt,

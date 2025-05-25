@@ -1,14 +1,14 @@
 import React, { useContext } from 'react';
+import { mobileMediaQuery } from '../../styles/mediaQueries';
 import {
-    servicesBlockItemWrapperDataTestId,
     servicesBlockItemCarouselDataTestId,
+    servicesBlockItemWrapperDataTestId,
     servicesBlockSectionDataTestId,
 } from '../../utils/dataTestIds';
-import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
+import { Breakpoint, useWindowSize } from '../../utils/useWindowSize';
 import { TextsContext } from '../context/TextsContext';
 import { NukaCarousel } from '../NukaCarousel/NukaCarousel';
 import { Title } from '../Title/Title';
-import { mobileMediaQuery } from '../../styles/mediaQueries';
 
 export const ServicesBlock = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
@@ -22,76 +22,78 @@ export const ServicesBlock = (): JSX.Element => {
                 <div className="wrapper genericMargins">
                     <Title colored text={texts.services} />
 
-                    {isDesktop ? (
-                        <ul>
-                            <li data-testid={servicesBlockItemWrapperDataTestId}>
-                                <p className="fontL">{texts.design}</p>
-                                <div className="backface">
-                                    <p className="fontXS">{`- ${texts.webDesign}`}</p>
-                                    <p className="fontXS">{`- ${texts.outdoorsAndFlyers}`}</p>
-                                    <p className="fontXS">{`- ${texts.contactCard}`}</p>
-                                    <p className="fontXS">{`- ${texts.socialMediaTemplates}`}</p>
-                                    <p className="fontXS">{`- ${texts.menus}`}</p>
-                                </div>
-                            </li>
-                            <li data-testid={servicesBlockItemWrapperDataTestId}>
-                                <p className="fontL">{texts.socialMediaEn}</p>
-                                <div className="backface">
-                                    <p className="fontXS">{`- ${texts.contentCreation}`}</p>
-                                    <p className="fontXS">{`- ${texts.marketAnalysis}`}</p>
-                                    <p className="fontXS">{`- ${texts.socialMediaStrategyAndManagement}`}</p>
-                                    <p className="fontXS">{`- ${texts.paidSocial}`}</p>
-                                    <p className="fontXS">{`- ${texts.consulting}`}</p>
-                                </div>
-                            </li>
-                            <li data-testid={servicesBlockItemWrapperDataTestId}>
-                                <p className="fontL">{texts.digital}</p>
-                                <div className="backface">
-                                    <p className="fontXS">{`- ${texts.paidSearchCampaigns}`}</p>
-                                    <p className="fontXS">{`- ${texts.opinionPlatformsManagement}`}</p>
-                                </div>
-                            </li>
-                        </ul>
-                    ) : (
-                        <NukaCarousel width={isMobile ? '100%' : '90%'}>
-                            <div
-                                className="carouselItem"
-                                data-testid={servicesBlockItemCarouselDataTestId}
-                            >
-                                <p className="fontL">{texts.design}</p>
-                                <div className="backface">
-                                    <p className="fontXS">{`- ${texts.webDesign}`}</p>
-                                    <p className="fontXS">{`- ${texts.outdoorsAndFlyers}`}</p>
-                                    <p className="fontXS">{`- ${texts.contactCard}`}</p>
-                                    <p className="fontXS">{`- ${texts.socialMediaTemplates}`}</p>
-                                    <p className="fontXS">{`- ${texts.menus}`}</p>
-                                </div>
-                            </div>
-                            <div
-                                className="carouselItem"
-                                data-testid={servicesBlockItemCarouselDataTestId}
-                            >
-                                <p className="fontL">{texts.socialMediaEn}</p>
-                                <div className="backface">
-                                    <p className="fontXS">{`- ${texts.contentCreation}`}</p>
-                                    <p className="fontXS">{`- ${texts.marketAnalysis}`}</p>
-                                    <p className="fontXS">{`- ${texts.socialMediaStrategyAndManagement}`}</p>
-                                    <p className="fontXS">{`- ${texts.paidSocial}`}</p>
-                                    <p className="fontXS">{`- ${texts.consulting}`}</p>
-                                </div>
-                            </div>
-                            <div
-                                className="carouselItem"
-                                data-testid={servicesBlockItemCarouselDataTestId}
-                            >
-                                <p className="fontL">{texts.digital}</p>
-                                <div className="backface">
-                                    <p className="fontXS">{`- ${texts.paidSearchCampaigns}`}</p>
-                                    <p className="fontXS">{`- ${texts.opinionPlatformsManagement}`}</p>
-                                </div>
-                            </div>
-                        </NukaCarousel>
-                    )}
+                    {isDesktop
+                        ? (
+                                <ul>
+                                    <li data-testid={servicesBlockItemWrapperDataTestId}>
+                                        <p className="fontL">{texts.design}</p>
+                                        <div className="backface">
+                                            <p className="fontXS">{`- ${texts.webDesign}`}</p>
+                                            <p className="fontXS">{`- ${texts.outdoorsAndFlyers}`}</p>
+                                            <p className="fontXS">{`- ${texts.contactCard}`}</p>
+                                            <p className="fontXS">{`- ${texts.socialMediaTemplates}`}</p>
+                                            <p className="fontXS">{`- ${texts.menus}`}</p>
+                                        </div>
+                                    </li>
+                                    <li data-testid={servicesBlockItemWrapperDataTestId}>
+                                        <p className="fontL">{texts.socialMediaEn}</p>
+                                        <div className="backface">
+                                            <p className="fontXS">{`- ${texts.contentCreation}`}</p>
+                                            <p className="fontXS">{`- ${texts.marketAnalysis}`}</p>
+                                            <p className="fontXS">{`- ${texts.socialMediaStrategyAndManagement}`}</p>
+                                            <p className="fontXS">{`- ${texts.paidSocial}`}</p>
+                                            <p className="fontXS">{`- ${texts.consulting}`}</p>
+                                        </div>
+                                    </li>
+                                    <li data-testid={servicesBlockItemWrapperDataTestId}>
+                                        <p className="fontL">{texts.digital}</p>
+                                        <div className="backface">
+                                            <p className="fontXS">{`- ${texts.paidSearchCampaigns}`}</p>
+                                            <p className="fontXS">{`- ${texts.opinionPlatformsManagement}`}</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            )
+                        : (
+                                <NukaCarousel width={isMobile ? '100%' : '90%'}>
+                                    <div
+                                        className="carouselItem"
+                                        data-testid={servicesBlockItemCarouselDataTestId}
+                                    >
+                                        <p className="fontL">{texts.design}</p>
+                                        <div className="backface">
+                                            <p className="fontXS">{`- ${texts.webDesign}`}</p>
+                                            <p className="fontXS">{`- ${texts.outdoorsAndFlyers}`}</p>
+                                            <p className="fontXS">{`- ${texts.contactCard}`}</p>
+                                            <p className="fontXS">{`- ${texts.socialMediaTemplates}`}</p>
+                                            <p className="fontXS">{`- ${texts.menus}`}</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        className="carouselItem"
+                                        data-testid={servicesBlockItemCarouselDataTestId}
+                                    >
+                                        <p className="fontL">{texts.socialMediaEn}</p>
+                                        <div className="backface">
+                                            <p className="fontXS">{`- ${texts.contentCreation}`}</p>
+                                            <p className="fontXS">{`- ${texts.marketAnalysis}`}</p>
+                                            <p className="fontXS">{`- ${texts.socialMediaStrategyAndManagement}`}</p>
+                                            <p className="fontXS">{`- ${texts.paidSocial}`}</p>
+                                            <p className="fontXS">{`- ${texts.consulting}`}</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        className="carouselItem"
+                                        data-testid={servicesBlockItemCarouselDataTestId}
+                                    >
+                                        <p className="fontL">{texts.digital}</p>
+                                        <div className="backface">
+                                            <p className="fontXS">{`- ${texts.paidSearchCampaigns}`}</p>
+                                            <p className="fontXS">{`- ${texts.opinionPlatformsManagement}`}</p>
+                                        </div>
+                                    </div>
+                                </NukaCarousel>
+                            )}
                 </div>
             </section>
 

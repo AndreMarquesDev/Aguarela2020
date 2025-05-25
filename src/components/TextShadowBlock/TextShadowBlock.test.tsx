@@ -1,11 +1,13 @@
-import '@testing-library/jest-dom';
+import type { RenderResult } from '@testing-library/react';
+import type { TextShadowBlockProps } from './TextShadowBlock';
+import { render, screen } from '@testing-library/react';
 import React from 'react';
-import { render, screen, RenderResult } from '@testing-library/react';
-import { TextShadowBlock, TextShadowBlockProps } from './TextShadowBlock';
-import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
-import { Breakpoint } from '../../utils/useWindowSize';
 import { textBlock1DataTestId } from '../../utils/dataTestIds';
+import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { aguarelaDigitalEmail, aguarelaDigitalInstagramUrl } from '../../utils/urls';
+import { Breakpoint } from '../../utils/useWindowSize';
+import { TextShadowBlock } from './TextShadowBlock';
+import '@testing-library/jest-dom';
 
 const baseProps: TextShadowBlockProps = {
     title1: 'Bem',
@@ -26,7 +28,7 @@ const renderComponent = (newProps?: Partial<TextShadowBlockProps>): RenderResult
 };
 
 describe('<TextShadowBlock />', () => {
-    test('renders properly', () => {
+    it('renders properly', () => {
         renderComponent();
 
         const title1 = screen.getByText(baseProps.title1);
@@ -36,8 +38,8 @@ describe('<TextShadowBlock />', () => {
         const textBlock3 = screen.getByText(baseProps.textBlock3);
 
         const textBlock1 = screen.getByTestId(textBlock1DataTestId);
-        const actualTextBlock1Text =
-            'Gestão de redes sociais está no meu ADN. Sou uma freelancer, baseada em Lisboa, com experiência em gestão de redes sociais e criação de conteúdo. A @Aguarela surgiu com o objetivo de ajudar negócios locais e pequenas empresas a posicionarem-se no digital, gerar awareness, criar uma relação com o target e impulsionar vendas';
+        const actualTextBlock1Text
+            = 'Gestão de redes sociais está no meu ADN. Sou uma freelancer, baseada em Lisboa, com experiência em gestão de redes sociais e criação de conteúdo. A @Aguarela surgiu com o objetivo de ajudar negócios locais e pequenas empresas a posicionarem-se no digital, gerar awareness, criar uma relação com o target e impulsionar vendas';
 
         const titleMobile = screen.queryByText(baseProps.titleMobile);
 
@@ -52,7 +54,7 @@ describe('<TextShadowBlock />', () => {
         expect(titleMobile).not.toBeInTheDocument();
     });
 
-    test('renders properly on mobile', () => {
+    it('renders properly on mobile', () => {
         setJestWindowWidth(Breakpoint.Mobile);
 
         renderComponent();
@@ -70,7 +72,7 @@ describe('<TextShadowBlock />', () => {
         expect(title3).not.toBeInTheDocument();
     });
 
-    test('renders properly with a button', () => {
+    it('renders properly with a button', () => {
         setJestWindowWidth(Breakpoint.Desktop);
 
         const { container } = renderComponent({

@@ -1,21 +1,22 @@
-import '@testing-library/jest-dom';
+import type { RenderResult } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import React from 'react';
-import { render, RenderResult, screen } from '@testing-library/react';
-import { Workflow } from './Workflow';
-import { textsEn, textsPt } from '../../utils/texts';
-import { MockProviders } from '../../utils/jest/MockProviders';
 import { Locale } from '../../types/Locale';
+import { MockProviders } from '../../utils/jest/MockProviders';
+import { textsEn, textsPt } from '../../utils/texts';
+import { Workflow } from './Workflow';
+import '@testing-library/jest-dom';
 
 const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
     return render(
         <MockProviders language={language}>
             <Workflow />
-        </MockProviders>
+        </MockProviders>,
     );
 };
 
 describe('<Workflow />', () => {
-    test('renders properly', () => {
+    it('renders properly', () => {
         const { container } = renderComponent();
 
         expect(screen.getByText(textsPt.workflow)).toBeInTheDocument();
@@ -37,7 +38,7 @@ describe('<Workflow />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly in English', () => {
+    it('renders properly in English', () => {
         const { container } = renderComponent(Locale.En);
 
         expect(screen.getByText(textsEn.workflow)).toBeInTheDocument();

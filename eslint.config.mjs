@@ -27,6 +27,13 @@ export default antfu({
         'style/brace-style': ['error', '1tbs', { allowSingleLine: false }],
         'jsonc/indent': ['error', 4, {}],
         'yml/indent': ['error', 2],
+        'id-length': [
+            'error',
+            {
+                min: 3,
+                exceptions: ['id', 'Id', 'of', 'Of'],
+            },
+        ],
         'unicorn/filename-case': ['error', {
             case: 'camelCase',
             ignore: ['README.md'],

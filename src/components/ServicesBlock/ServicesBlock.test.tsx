@@ -1,16 +1,17 @@
-import '@testing-library/jest-dom';
+import type { RenderResult } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import React from 'react';
-import { render, RenderResult, screen } from '@testing-library/react';
-import { textsPt, textsEn } from '../../utils/texts';
-import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
-import { ServicesBlock } from './ServicesBlock';
-import { Breakpoint } from '../../utils/useWindowSize';
+import { Locale } from '../../types/Locale';
 import {
-    servicesBlockItemWrapperDataTestId,
     servicesBlockItemCarouselDataTestId,
+    servicesBlockItemWrapperDataTestId,
 } from '../../utils/dataTestIds';
 import { MockProviders } from '../../utils/jest/MockProviders';
-import { Locale } from '../../types/Locale';
+import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
+import { textsEn, textsPt } from '../../utils/texts';
+import { Breakpoint } from '../../utils/useWindowSize';
+import { ServicesBlock } from './ServicesBlock';
+import '@testing-library/jest-dom';
 
 const expectedNumberOfBlocksRendered = 3;
 const expectedNumberOfSlidesRendered = expectedNumberOfBlocksRendered * 3; // nukaCarousel adds two extra slides, a '.prev-cloned' and a '.next-cloned', hence the triplication
@@ -19,12 +20,12 @@ const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
     return render(
         <MockProviders language={language}>
             <ServicesBlock />
-        </MockProviders>
+        </MockProviders>,
     );
 };
 
 describe('<ServicesBlock />', () => {
-    test('renders properly', () => {
+    it('renders properly', () => {
         const { container } = renderComponent();
 
         const title = screen.getByText(textsPt.services);
@@ -70,7 +71,7 @@ describe('<ServicesBlock />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly in English', () => {
+    it('renders properly in English', () => {
         const { container } = renderComponent(Locale.En);
 
         const title = screen.getByText(textsEn.services);
@@ -110,7 +111,7 @@ describe('<ServicesBlock />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly on tablet', () => {
+    it('renders properly on tablet', () => {
         setJestWindowWidth(Breakpoint.Tablet);
 
         const { container } = renderComponent();
@@ -124,7 +125,7 @@ describe('<ServicesBlock />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly on mobile', () => {
+    it('renders properly on mobile', () => {
         setJestWindowWidth(Breakpoint.Mobile);
 
         const { container } = renderComponent();

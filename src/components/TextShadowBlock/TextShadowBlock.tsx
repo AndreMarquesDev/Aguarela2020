@@ -1,11 +1,11 @@
 import React from 'react';
+import { desktopMediaQuery, tabletMediaQuery } from '../../styles/mediaQueries';
 import { textBlock1DataTestId } from '../../utils/dataTestIds';
 import { aguarelaDigitalEmail } from '../../utils/urls';
-import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
+import { Breakpoint, useWindowSize } from '../../utils/useWindowSize';
 import { Button } from '../Button/Button';
-import { desktopMediaQuery, tabletMediaQuery } from '../../styles/mediaQueries';
 
-export interface TextShadowBlockProps {
+export type TextShadowBlockProps = {
     title1: string;
     title2: string;
     title3: string;
@@ -15,7 +15,7 @@ export interface TextShadowBlockProps {
     textBlock3: string;
     dataTestId: string;
     hasButton?: boolean;
-}
+};
 
 export const TextShadowBlock = ({
     title1,
@@ -37,15 +37,17 @@ export const TextShadowBlock = ({
             <section className="container" data-testid={dataTestId}>
                 <div className="wrapper genericMargins">
                     <div className="titleBlock">
-                        {isMobile ? (
-                            <p className="fontL">{titleMobile}</p>
-                        ) : (
-                            <>
-                                <strong className="fontXXL">{title1}</strong>
-                                <strong className="fontXXL">{title2}</strong>
-                                <strong className="fontXXL">{title3}</strong>
-                            </>
-                        )}
+                        {isMobile
+                            ? (
+                                    <p className="fontL">{titleMobile}</p>
+                                )
+                            : (
+                                    <>
+                                        <strong className="fontXXL">{title1}</strong>
+                                        <strong className="fontXXL">{title2}</strong>
+                                        <strong className="fontXXL">{title3}</strong>
+                                    </>
+                                )}
                     </div>
                     <div className="textBlock">
                         <p

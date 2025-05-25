@@ -1,13 +1,14 @@
-import '@testing-library/jest-dom';
-import React from 'react';
-import { render, RenderResult, screen } from '@testing-library/react';
+import type { RenderResult } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import * as nextRouter from 'next/router';
-import { WelcomeBlock } from './WelcomeBlock';
-import { textsPt, textsEn } from '../../utils/texts';
-import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
-import { Breakpoint } from '../../utils/useWindowSize';
-import { MockProviders } from '../../utils/jest/MockProviders';
+import React from 'react';
 import { Locale } from '../../types/Locale';
+import { MockProviders } from '../../utils/jest/MockProviders';
+import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
+import { textsEn, textsPt } from '../../utils/texts';
+import { Breakpoint } from '../../utils/useWindowSize';
+import { WelcomeBlock } from './WelcomeBlock';
+import '@testing-library/jest-dom';
 
 // @ts-ignore
 nextRouter.useRouter = jest.fn(() => ({
@@ -20,12 +21,12 @@ const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
     return render(
         <MockProviders language={language}>
             <WelcomeBlock />
-        </MockProviders>
+        </MockProviders>,
     );
 };
 
 describe('<WelcomeBlock />', () => {
-    test('renders properly', () => {
+    it('renders properly', () => {
         const { container } = renderComponent();
 
         const title1 = screen.getByText(textsPt.welcome1);
@@ -45,7 +46,7 @@ describe('<WelcomeBlock />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly in English', () => {
+    it('renders properly in English', () => {
         const { container } = renderComponent(Locale.En);
 
         const title1 = screen.getByText(textsEn.welcome1);
@@ -65,19 +66,19 @@ describe('<WelcomeBlock />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly on mobile', () => {
+    it('renders properly on mobile', () => {
         setJestWindowWidth(Breakpoint.Mobile);
 
         renderComponent();
 
         const titleMobile = screen.getByText(
-            `${textsPt.welcome1}-${textsPt.welcome2}${textsPt.welcome3}`
+            `${textsPt.welcome1}-${textsPt.welcome2}${textsPt.welcome3}`,
         );
 
         expect(titleMobile).toBeInTheDocument();
     });
 
-    test('renders properly on mobile in English', () => {
+    it('renders properly on mobile in English', () => {
         (nextRouter.useRouter as jest.Mock).mockImplementationOnce(() => ({
             query: {
                 language: 'en',
@@ -89,7 +90,7 @@ describe('<WelcomeBlock />', () => {
         renderComponent(Locale.En);
 
         const titleMobile = screen.getByText(
-            `${textsEn.welcome1}${textsEn.welcome2}${textsEn.welcome3}`
+            `${textsEn.welcome1}${textsEn.welcome2}${textsEn.welcome3}`,
         );
 
         expect(titleMobile).toBeInTheDocument();

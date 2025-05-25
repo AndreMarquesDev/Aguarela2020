@@ -1,13 +1,14 @@
-import React, { useContext, TouchEvent } from 'react';
-import Image from 'next/image';
-import { isClientSide } from 'multilingual-url/lib';
+import type { TouchEvent } from 'react';
 import classNames from 'classnames';
-import { TextsContext } from '../context/TextsContext';
-import { resetTimesTouchedAttribute } from '../../utils/generic';
-import { projectItemTouchDivDataTestId } from '../../utils/dataTestIds';
+import { isClientSide } from 'multilingual-url/lib';
+import Image from 'next/image';
+import React, { useContext } from 'react';
 import { desktopMediaQuery, phabletMediaQuery, tabletMediaQuery } from '../../styles/mediaQueries';
+import { projectItemTouchDivDataTestId } from '../../utils/dataTestIds';
+import { resetTimesTouchedAttribute } from '../../utils/generic';
+import { TextsContext } from '../context/TextsContext';
 
-export interface ProjectItemProps {
+export type ProjectItemProps = {
     imageSrc: string;
     imageAlt: string;
     brandLink: string;
@@ -19,7 +20,7 @@ export interface ProjectItemProps {
     isActive?: boolean;
     isGrid?: boolean;
     preloadImage?: boolean;
-}
+};
 
 export const ProjectItem = ({
     imageSrc,
@@ -41,7 +42,7 @@ export const ProjectItem = ({
 
     const handleTouch = (event: TouchEvent<HTMLElement>): void => {
         const target = event.currentTarget;
-        const timesTouched = parseInt(target.dataset.timesTouched as string);
+        const timesTouched = Number.parseInt(target.dataset.timesTouched as string);
 
         if (timesTouched === 0) {
             resetTimesTouchedAttribute();
@@ -53,85 +54,93 @@ export const ProjectItem = ({
 
     return (
         <>
-            {isDesktop ? (
-                <li>
-                    <Image
-                        alt={imageAlt}
-                        height={imageSize}
-                        priority={!!preloadImage}
-                        src={imageSrc}
-                        style={{
-                            width: '100%',
-                            height: 'auto',
-                            position: 'relative',
-                            maxWidth: `${imageSize}px`,
-                        }}
-                        width={imageSize}
-                    />
-                    <div className="backface">
-                        <a
-                            className="brand link fontXS"
-                            href={brandLink}
-                            rel="noreferrer"
-                            target="_blank"
+            {isDesktop
+                ? (
+                        <li>
+                            <Image
+                                alt={imageAlt}
+                                height={imageSize}
+                                priority={!!preloadImage}
+                                src={imageSrc}
+                                style={{
+                                    width: '100%',
+                                    height: 'auto',
+                                    position: 'relative',
+                                    maxWidth: `${imageSize}px`,
+                                }}
+                                width={imageSize}
+                            />
+                            <div className="backface">
+                                <a
+                                    className="brand link fontXS"
+                                    href={brandLink}
+                                    rel="noreferrer"
+                                    target="_blank"
+                                >
+                                    {brandTag}
+                                </a>
+                                <p className="description fontS">{description}</p>
+                                {year && (
+                                    <p className="date fontXS">
+                                        {year}
+                                        {isActive && ` - ${texts.present}`}
+                                    </p>
+                                )}
+                                {isInPartnership && (
+                                    <small className="fontXS">
+                                        *
+                                        {texts.inPartnershipWith}
+                                    </small>
+                                )}
+                            </div>
+                        </li>
+                    )
+                : (
+                        <div
+                            className={classNames('carouselItem', isTouch && 'touch', isGrid && 'grid')}
+                            data-testid={`${projectItemTouchDivDataTestId}_${imageAlt}`}
+                            data-times-touched={0}
+                            onTouchStart={handleTouch}
                         >
-                            {brandTag}
-                        </a>
-                        <p className="description fontS">{description}</p>
-                        {year && (
-                            <p className="date fontXS">
-                                {year}
-                                {isActive && ` - ${texts.present}`}
-                            </p>
-                        )}
-                        {isInPartnership && (
-                            <small className="fontXS">* {texts.inPartnershipWith}</small>
-                        )}
-                    </div>
-                </li>
-            ) : (
-                <div
-                    className={classNames('carouselItem', isTouch && 'touch', isGrid && 'grid')}
-                    data-testid={`${projectItemTouchDivDataTestId}_${imageAlt}`}
-                    data-times-touched={0}
-                    onTouchStart={handleTouch}
-                >
-                    <Image
-                        alt={imageAlt}
-                        height={imageSize}
-                        priority={!!preloadImage}
-                        sizes={`(${phabletMediaQuery}) 50vw, (${tabletMediaQuery}) 75vw, 30vw`}
-                        src={imageSrc}
-                        style={{
-                            width: '100%',
-                            height: 'auto',
-                            position: 'relative',
-                            maxWidth: `${imageSize}px`,
-                        }}
-                        width={imageSize}
-                    />
-                    <div className="backface">
-                        <a
-                            className="brand link fontXS"
-                            href={brandLink}
-                            rel="noreferrer"
-                            target="_blank"
-                        >
-                            {brandTag}
-                        </a>
-                        <p className="description fontS">{description}</p>
-                        {year && (
-                            <p className="date fontXS">
-                                {year}
-                                {isActive && ` - ${texts.present}`}
-                            </p>
-                        )}
-                        {isInPartnership && (
-                            <small className="fontXS">* {texts.inPartnershipWith}</small>
-                        )}
-                    </div>
-                </div>
-            )}
+                            <Image
+                                alt={imageAlt}
+                                height={imageSize}
+                                priority={!!preloadImage}
+                                sizes={`(${phabletMediaQuery}) 50vw, (${tabletMediaQuery}) 75vw, 30vw`}
+                                src={imageSrc}
+                                style={{
+                                    width: '100%',
+                                    height: 'auto',
+                                    position: 'relative',
+                                    maxWidth: `${imageSize}px`,
+                                }}
+                                width={imageSize}
+                            />
+                            <div className="backface">
+                                <a
+                                    className="brand link fontXS"
+                                    href={brandLink}
+                                    rel="noreferrer"
+                                    target="_blank"
+                                >
+                                    {brandTag}
+                                </a>
+                                <p className="description fontS">{description}</p>
+                                {year && (
+                                    <p className="date fontXS">
+                                        {year}
+                                        {isActive && ` - ${texts.present}`}
+                                    </p>
+                                )}
+                                {isInPartnership && (
+                                    <small className="fontXS">
+                                        *
+                                        {texts.inPartnershipWith}
+                                    </small>
+                                )}
+                            </div>
+                        </div>
+                    )}
 
             <style jsx>
                 {`

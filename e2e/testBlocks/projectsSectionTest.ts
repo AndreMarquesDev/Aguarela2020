@@ -1,6 +1,7 @@
-import { Page, expect } from '@playwright/test';
-import { Locale } from '../../src/types/Locale';
-import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
+import type { Page } from '@playwright/test';
+import type { Locale } from '../../src/types/Locale';
+import type { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
+import { expect } from '@playwright/test';
 import { projectsListSectionDataTestId } from '../../src/utils/dataTestIds';
 import {
     guacamoleInstagramUrl,
@@ -10,8 +11,8 @@ import {
 import { urls } from '../utils/selectors';
 import {
     clickNextArrowButtonIfMobile,
-    getLocalizedTexts,
     getImageDimension,
+    getLocalizedTexts,
     getScreenshotPath,
     nukaCarouselVisibleSlide,
 } from '../utils/utils';
@@ -20,7 +21,7 @@ export const projectsSectionTest = async (
     page: Page,
     isMobile: boolean,
     browserName: PlaywrightBrowserName,
-    locale: Locale
+    locale: Locale,
 ): Promise<void> => {
     const {
         socialMediaManagementAndContentCreation,
@@ -42,7 +43,7 @@ export const projectsSectionTest = async (
         url: string,
         title: string,
         isInPartnership: boolean,
-        year?: string
+        year?: string,
     ): Promise<void> => {
         // nukaCarousel adds two extra slides, a '.prev-cloned' and a '.next-cloned'
         const slide = isMobile
@@ -59,7 +60,7 @@ export const projectsSectionTest = async (
             browserName,
             imageSizeDesktop,
             imageSizeMobileChrome,
-            imageSizeMobileSafari
+            imageSizeMobileSafari,
         );
 
         // renders the image
@@ -90,7 +91,7 @@ export const projectsSectionTest = async (
 
         // take screenshot of slide backface
         await expect(container).toHaveScreenshot(
-            getScreenshotPath(`slide${number}-backface`, locale, componentName)
+            getScreenshotPath(`slide${number}-backface`, locale, componentName),
         );
     };
 
@@ -105,7 +106,7 @@ export const projectsSectionTest = async (
         tjelaInstagramUrl,
         socialMediaManagementAndContentCreation,
         true,
-        `2020 - ${present}`
+        `2020 - ${present}`,
     );
 
     await clickNextArrowButtonIfMobile(isMobile, container);
@@ -117,7 +118,7 @@ export const projectsSectionTest = async (
         kaffeehausInstagramUrl,
         socialMediaManagementAndContentCreation,
         false,
-        `2018 - ${present}`
+        `2018 - ${present}`,
     );
 
     // remove focus from slide to hide backface before screenshot
@@ -134,7 +135,7 @@ export const projectsSectionTest = async (
         guacamoleInstagramUrl,
         socialMediaManagementAndContentCreation,
         true,
-        `2019 - ${present}`
+        `2019 - ${present}`,
     );
 
     // remove focus from slide to hide backface before screenshot

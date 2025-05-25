@@ -1,12 +1,14 @@
-import '@testing-library/jest-dom';
-import React from 'react';
-import { render, RenderResult, screen } from '@testing-library/react';
+import type { RenderResult } from '@testing-library/react';
+import type { HeaderProps } from './Header';
+import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { Header, HeaderProps } from './Header';
-import { Breakpoint } from '../../utils/useWindowSize';
-import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
-import { MockProviders } from '../../utils/jest/MockProviders';
+import React from 'react';
 import { Locale } from '../../types/Locale';
+import { MockProviders } from '../../utils/jest/MockProviders';
+import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
+import { Breakpoint } from '../../utils/useWindowSize';
+import { Header } from './Header';
+import '@testing-library/jest-dom';
 
 const baseProps: HeaderProps = {
     currentRoute: 'services',
@@ -20,12 +22,12 @@ const renderComponent = (setNavHeight: jest.Mock | undefined): RenderResult => {
     return render(
         <MockProviders setNavHeight={setNavHeight} toggleMenu={mockToggleMenu}>
             <Header {...baseProps} />
-        </MockProviders>
+        </MockProviders>,
     );
 };
 
 describe('<Header />', () => {
-    test('renders properly', () => {
+    it('renders properly', () => {
         const { container } = renderComponent(mockSetNavHeight);
 
         expect(mockSetNavHeight).toHaveBeenCalledTimes(2);
@@ -33,7 +35,7 @@ describe('<Header />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly below phablet', () => {
+    it('renders properly below phablet', () => {
         setJestWindowWidth(Breakpoint.Mobile);
 
         const { container } = renderComponent(mockSetNavHeight);
@@ -41,13 +43,13 @@ describe('<Header />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('does not call the "setNavHeight" function if it is undefined', () => {
+    it('does not call the "setNavHeight" function if it is undefined', () => {
         renderComponent(undefined);
 
         expect(mockSetNavHeight).toHaveBeenCalledTimes(0);
     });
 
-    test('calls the "toggleMenu" function when clicking on <MenuIcon />', async () => {
+    it('calls the "toggleMenu" function when clicking on <MenuIcon />', async () => {
         const user = userEvent.setup();
 
         renderComponent(mockSetNavHeight);

@@ -1,19 +1,19 @@
-import React, { useContext } from 'react';
-import { useRouter } from 'next/router';
+import type { Locale } from '../../types/Locale';
+import type { TextsInterface } from '../../utils/texts';
 import { getRemainingLang } from 'multilingual-url/lib';
-import { getPageFromUrl } from '../../utils/pages';
-import { getCurrentLanguagetexts } from '../../utils/generic';
-import { NavLinksContext } from '../context/NavLinksContext';
+import { useRouter } from 'next/router';
+import React, { useContext } from 'react';
 import { locales } from '../../constants/locales';
-import { Locale } from '../../types/Locale';
-import { TextsInterface } from '../../utils/texts';
+import { getCurrentLanguagetexts } from '../../utils/generic';
+import { getPageFromUrl } from '../../utils/pages';
+import { NavLinksContext } from '../context/NavLinksContext';
 
 export const LanguageButton = (): JSX.Element => {
     const router = useRouter();
     const currentPage = getPageFromUrl()[0];
     const languageToSwitchTo = getRemainingLang(locales)[0] as Locale;
-    const translatedPageTitle: string =
-        getCurrentLanguagetexts(languageToSwitchTo)[currentPage as keyof TextsInterface];
+    const translatedPageTitle: string
+        = getCurrentLanguagetexts(languageToSwitchTo)[currentPage as keyof TextsInterface];
 
     const { isMenuOpen, toggleMenu } = useContext(NavLinksContext);
 

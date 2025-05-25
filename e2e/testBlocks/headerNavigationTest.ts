@@ -1,17 +1,18 @@
-import { Page, expect, test } from '@playwright/test';
-import { Page as PageName } from '../../src/utils/pages';
-import { Locale } from '../../src/types/Locale';
+import type { Page } from '@playwright/test';
+import type { Locale } from '../../src/types/Locale';
+import type { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
+import type { Page as PageName } from '../../src/utils/pages';
+import { expect, test } from '@playwright/test';
 import {
+    aboutMeSectionDataTestId,
+    contactBlockSectionDataTestId,
     headerDataTestId,
     homepageBannerContainerDataTestId,
-    contactBlockSectionDataTestId,
     projectsListDoubleSectionDataTestId,
     servicesBlockSectionDataTestId,
-    aboutMeSectionDataTestId,
 } from '../../src/utils/dataTestIds';
 import { urls } from '../utils/selectors';
 import { getLocalizedTexts, isSafari, oneMinTimeout } from '../utils/utils';
-import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
 
 export const headerNavigationTest = async (
     page: Page,
@@ -20,7 +21,7 @@ export const headerNavigationTest = async (
     isMobile: boolean,
     locale: Locale,
     otherLocale: Locale,
-    browserName: PlaywrightBrowserName
+    browserName: PlaywrightBrowserName,
 ): Promise<void> => {
     if (isMobile && isSafari(browserName)) {
         test.setTimeout(oneMinTimeout);

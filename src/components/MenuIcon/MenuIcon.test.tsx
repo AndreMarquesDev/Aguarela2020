@@ -1,6 +1,8 @@
+import type { RenderResult } from '@testing-library/react';
+import type { MenuIconProps } from './MenuIcon';
+import { render } from '@testing-library/react';
 import React from 'react';
-import { render, RenderResult } from '@testing-library/react';
-import { MenuIcon, MenuIconProps } from './MenuIcon';
+import { MenuIcon } from './MenuIcon';
 
 const baseProps: MenuIconProps = {
     isOpen: false,
@@ -13,19 +15,19 @@ const renderComponent = (newProps?: Partial<MenuIconProps>): RenderResult => {
 };
 
 describe('<MenuIcon />', () => {
-    test('renders properly', () => {
+    it('renders properly', () => {
         const { container } = renderComponent();
 
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly when menu is open', () => {
+    it('renders properly when menu is open', () => {
         const { container } = renderComponent({ isOpen: true });
 
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly when the icon is visible is open', () => {
+    it('renders properly when the icon is visible is open', () => {
         const { container } = renderComponent({ isVisible: true });
 
         expect(container).toMatchSnapshot();

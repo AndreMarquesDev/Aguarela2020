@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import Head from 'next/head';
-import { useRouter, NextRouter } from 'next/router';
+import type { NextRouter } from 'next/router';
+import type { Page } from '../../src/utils/pages';
 import { getInitialLocale, getLangFromUrl } from 'multilingual-url/lib';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+import React, { useEffect, useState } from 'react';
 import { defaultLocale, locales } from '../../src/constants/locales';
-import { Page } from '../../src/utils/pages';
 
 const IndexPage = (): JSX.Element => {
     const [hasRunRouterReplace, setHasRunRouterReplace] = useState(false);

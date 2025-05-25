@@ -1,18 +1,20 @@
-import React, { ReactNode } from 'react';
-import Carousel, { CellAlign } from 'nuka-carousel';
+import type { CellAlign } from 'nuka-carousel';
+import type { ReactNode } from 'react';
+import Carousel from 'nuka-carousel';
+import React from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import { resetTimesTouchedAttribute } from '../../utils/generic';
 import {
-    nukaCarouselPrevButtonDataTestId,
     nukaCarouselNextButtonDataTestId,
+    nukaCarouselPrevButtonDataTestId,
 } from '../../utils/dataTestIds';
+import { resetTimesTouchedAttribute } from '../../utils/generic';
 
-export interface NukaCarouselProps {
+export type NukaCarouselProps = {
     children: ReactNode;
     width?: string;
     slidesToShow?: number;
     cellAlign?: CellAlign;
-}
+};
 
 export const NukaCarousel = ({
     children,

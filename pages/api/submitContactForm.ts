@@ -1,8 +1,9 @@
-import { NextApiResponse } from 'next';
-import nodemailer, { SendMailOptions } from 'nodemailer';
+import type { NextApiResponse } from 'next';
+import type { SendMailOptions } from 'nodemailer';
+import type { CustomNextApiRequest } from '../../src/types/CustomNextApiRequest';
+import type { FormPostRequestBody } from '../../src/types/FormPostRequestBody';
 import DOMPurify from 'isomorphic-dompurify';
-import { CustomNextApiRequest } from '../../src/types/CustomNextApiRequest';
-import { FormPostRequestBody } from '../../src/types/FormPostRequestBody';
+import nodemailer from 'nodemailer';
 
 const buildEmailOptions = (data: FormPostRequestBody): SendMailOptions => {
     const {

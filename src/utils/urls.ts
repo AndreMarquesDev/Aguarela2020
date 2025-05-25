@@ -28,9 +28,9 @@ export const harpoonLinkedInUrl = 'https://www.linkedin.com/company/harpoon-lda'
 
 export const pernodWebsiteUrl = 'https://www.pernod-ricard.com';
 export const beefeaterWebsiteUrl = 'https://www.beefeatergin.com/en/';
-export const mariaLimaoIndustriaCriativaUrl =
-    'https://industriacriativa.pt/projeto/45759/maria-limao-gestao-de-redes-sociais';
-export const aAmigaEsteticistaIndustriaCriativaUrl =
-    'https://industriacriativa.pt/projeto/14473/a-amiga-esteticista';
-export const anaroIndustriaCriativaUrl =
-    'https://industriacriativa.pt/projeto/45758/anaro-artist-content-creation';
+export const mariaLimaoIndustriaCriativaUrl
+    = 'https://industriacriativa.pt/projeto/45759/maria-limao-gestao-de-redes-sociais';
+export const aAmigaEsteticistaIndustriaCriativaUrl
+    = 'https://industriacriativa.pt/projeto/14473/a-amiga-esteticista';
+export const anaroIndustriaCriativaUrl
+    = 'https://industriacriativa.pt/projeto/45758/anaro-artist-content-creation';

@@ -1,4 +1,5 @@
-import { Page, expect } from '@playwright/test';
+import type { Page } from '@playwright/test';
+import { expect } from '@playwright/test';
 import { Locale } from '../../src/types/Locale';
 import { welcomeSectionDataTestId } from '../../src/utils/dataTestIds';
 import { getLocalizedTexts } from '../utils/utils';
@@ -6,7 +7,7 @@ import { getLocalizedTexts } from '../utils/utils';
 export const welcomeSectionTest = async (
     page: Page,
     isMobile: boolean,
-    locale: Locale
+    locale: Locale,
 ): Promise<void> => {
     const {
         welcome1,
@@ -24,11 +25,11 @@ export const welcomeSectionTest = async (
     if (isMobile) {
         if (isEnglishVersion) {
             await expect(
-                container.getByText(`${welcome1}${welcome2}${welcome3}`, { exact: true })
+                container.getByText(`${welcome1}${welcome2}${welcome3}`, { exact: true }),
             ).toBeVisible();
         } else {
             await expect(
-                container.getByText(`${welcome1}-${welcome2}${welcome3}`, { exact: true })
+                container.getByText(`${welcome1}-${welcome2}${welcome3}`, { exact: true }),
             ).toBeVisible();
         }
     } else {

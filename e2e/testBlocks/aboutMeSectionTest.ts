@@ -1,15 +1,16 @@
-import { Page, expect } from '@playwright/test';
-import { Locale } from '../../src/types/Locale';
+import type { Page } from '@playwright/test';
+import type { Locale } from '../../src/types/Locale';
+import type { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
+import { expect } from '@playwright/test';
 import { aboutMeSectionDataTestId } from '../../src/utils/dataTestIds';
 import { catarinaSantiagoInstagramUrl } from '../../src/utils/urls';
-import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
-import { getLocalizedTexts, getImageDimension } from '../utils/utils';
+import { getImageDimension, getLocalizedTexts } from '../utils/utils';
 
 export const aboutMeSectionTest = async (
     page: Page,
     isMobile: boolean,
     browserName: PlaywrightBrowserName,
-    locale: Locale
+    locale: Locale,
 ): Promise<void> => {
     const {
         about,
@@ -34,14 +35,14 @@ export const aboutMeSectionTest = async (
         browserName,
         imageWidthDesktop,
         imageWidthMobileChrome,
-        imageWidthMobileSafari
+        imageWidthMobileSafari,
     );
     const imageHeight = getImageDimension(
         isMobile,
         browserName,
         imageHeightDesktop,
         imageHeightMobileChrome,
-        imageHeightMobileSafari
+        imageHeightMobileSafari,
     );
 
     // renders page title

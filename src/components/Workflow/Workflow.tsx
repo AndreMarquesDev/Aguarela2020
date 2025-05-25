@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
-import { workflowSectionDataTestId } from '../../utils/dataTestIds';
-import { TextsContext } from '../context/TextsContext';
-import { Title } from '../Title/Title';
 import {
     mobileMediaQuery,
     phabletMediaQuery,
     tabletMediaQuery,
     wrapperMediaQuery,
 } from '../../styles/mediaQueries';
+import { workflowSectionDataTestId } from '../../utils/dataTestIds';
+import { TextsContext } from '../context/TextsContext';
+import { Title } from '../Title/Title';
 
 export const Workflow = (): JSX.Element => {
     const { texts } = useContext(TextsContext);

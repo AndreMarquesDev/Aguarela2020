@@ -1,7 +1,9 @@
-import '@testing-library/jest-dom';
+import type { RenderResult } from '@testing-library/react';
+import type { SkillItemProps } from './SkillItem';
+import { render, screen } from '@testing-library/react';
 import React from 'react';
-import { render, RenderResult, screen } from '@testing-library/react';
-import { SkillItem, SkillItemProps } from './SkillItem';
+import { SkillItem } from './SkillItem';
+import '@testing-library/jest-dom';
 
 const baseProps: SkillItemProps = {
     icon: 'strategy',
@@ -14,7 +16,7 @@ const renderComponent = (newProps?: Partial<SkillItemProps>): RenderResult => {
 };
 
 describe('<SkillItem />', () => {
-    test('renders properly', () => {
+    it('renders properly', () => {
         const { container } = renderComponent();
 
         expect(screen.getByText(baseProps.title)).toBeInTheDocument();

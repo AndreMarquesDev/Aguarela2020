@@ -1,9 +1,10 @@
-import '@testing-library/jest-dom';
-import React from 'react';
-import { render, RenderResult, screen } from '@testing-library/react';
+import type { RenderResult } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { LanguageButton } from './LanguageButton';
+import React from 'react';
 import { MockProviders } from '../../utils/jest/MockProviders';
+import { LanguageButton } from './LanguageButton';
+import '@testing-library/jest-dom';
 
 const mockToggleMenu = jest.fn();
 
@@ -11,12 +12,12 @@ const renderComponent = (isMenuOpen = true): RenderResult => {
     return render(
         <MockProviders isMenuOpen={isMenuOpen} toggleMenu={mockToggleMenu}>
             <LanguageButton />
-        </MockProviders>
+        </MockProviders>,
     );
 };
 
 describe('<LanguageButton />', () => {
-    test('renders properly', () => {
+    it('renders properly', () => {
         const { container } = renderComponent();
 
         const button = screen.getByRole('button');
@@ -26,7 +27,7 @@ describe('<LanguageButton />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly when clicking on button', async () => {
+    it('renders properly when clicking on button', async () => {
         Object.defineProperty(window, 'location', {
             value: {
                 pathname: '/en/about',
@@ -50,7 +51,7 @@ describe('<LanguageButton />', () => {
         expect(mockToggleMenu).toHaveBeenCalledTimes(1);
     });
 
-    test('does not call the "toggleMenu" function if menu is closed', async () => {
+    it('does not call the "toggleMenu" function if menu is closed', async () => {
         const user = userEvent.setup();
 
         renderComponent(false);

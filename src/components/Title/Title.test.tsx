@@ -1,7 +1,9 @@
-import '@testing-library/jest-dom';
+import type { RenderResult } from '@testing-library/react';
+import type { TitleProps } from './Title';
+import { render, screen } from '@testing-library/react';
 import React from 'react';
-import { render, RenderResult, screen } from '@testing-library/react';
-import { Title, TitleProps } from './Title';
+import { Title } from './Title';
+import '@testing-library/jest-dom';
 
 const baseProps: TitleProps = {
     text: 'dummy text',
@@ -14,7 +16,7 @@ const renderComponent = (newProps?: Partial<TitleProps>): RenderResult => {
 };
 
 describe('<Title />', () => {
-    test('renders properly', () => {
+    it('renders properly', () => {
         renderComponent();
 
         const h1Element = screen.getByText(baseProps.text);
@@ -23,7 +25,7 @@ describe('<Title />', () => {
         expect(h1Element).toMatchSnapshot();
     });
 
-    test('renders properly with the colored class', () => {
+    it('renders properly with the colored class', () => {
         renderComponent({ colored: true });
 
         const h1Element = screen.getByText(baseProps.text);
@@ -33,7 +35,7 @@ describe('<Title />', () => {
         expect(h1Element).toMatchSnapshot();
     });
 
-    test('renders properly with a custom margin-bottom', () => {
+    it('renders properly with a custom margin-bottom', () => {
         renderComponent({ marginBottom: 100 });
 
         const h1Element = screen.getByText(baseProps.text);

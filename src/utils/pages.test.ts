@@ -3,7 +3,7 @@ import { getPageFromUrl } from './pages';
 
 describe('pages', () => {
     describe('getPageFromUrl', () => {
-        test('returns an empty array if is not client side', () => {
+        it('returns an empty array if is not client side', () => {
             Object.defineProperty(multilingualUrl, 'isClientSide', { value: false });
 
             const pageFromUrl = getPageFromUrl();
@@ -11,7 +11,7 @@ describe('pages', () => {
             expect(pageFromUrl.length).toBeFalsy();
         });
 
-        test('properly retrieves the page name from a url', () => {
+        it('properly retrieves the page name from a url', () => {
             Object.defineProperty(multilingualUrl, 'isClientSide', { value: true });
 
             const page = 'services';

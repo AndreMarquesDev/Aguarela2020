@@ -1,9 +1,11 @@
-import '@testing-library/jest-dom';
+import type { RenderResult } from '@testing-library/react';
+import type { FormFieldProps } from './FormField';
+import { render, screen } from '@testing-library/react';
 import React from 'react';
-import { render, screen, RenderResult } from '@testing-library/react';
-import { FormField, FormFieldProps } from './FormField';
 import { FieldTypes } from '../../utils/formValidation';
 import { textsPt } from '../../utils/texts';
+import { FormField } from './FormField';
+import '@testing-library/jest-dom';
 
 const baseProps: FormFieldProps = {
     id: FieldTypes.Name,
@@ -22,7 +24,7 @@ const renderComponent = (newProps?: Partial<FormFieldProps>): RenderResult => {
 };
 
 describe('<FormField />', () => {
-    test('renders properly', () => {
+    it('renders properly', () => {
         const { container } = renderComponent({ isRequired: true });
 
         const label = screen.getByText(`${textsPt.name} *`);
@@ -36,7 +38,7 @@ describe('<FormField />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly when it is the brand field', () => {
+    it('renders properly when it is the brand field', () => {
         renderComponent({ id: FieldTypes.Brand });
 
         const label = screen.getByText(textsPt.brandBusiness);
@@ -46,7 +48,7 @@ describe('<FormField />', () => {
         expect(field).toBeInTheDocument();
     });
 
-    test('renders properly when it is the email field', () => {
+    it('renders properly when it is the email field', () => {
         renderComponent({ id: FieldTypes.Email });
 
         const label = screen.getByText(textsPt.email);
@@ -58,7 +60,7 @@ describe('<FormField />', () => {
         expect(errorMessage).toBeInTheDocument();
     });
 
-    test('renders properly when it is the subject field', () => {
+    it('renders properly when it is the subject field', () => {
         renderComponent({ id: FieldTypes.Subject });
 
         const label = screen.getByText(textsPt.subject);
@@ -68,7 +70,7 @@ describe('<FormField />', () => {
         expect(field).toBeInTheDocument();
     });
 
-    test('renders properly when it is the message field', () => {
+    it('renders properly when it is the message field', () => {
         renderComponent({ id: FieldTypes.Textarea });
 
         const label = screen.getByText(textsPt.message);
@@ -80,7 +82,7 @@ describe('<FormField />', () => {
         expect(errorMessage).toBeInTheDocument();
     });
 
-    test('renders properly when the field is not required', () => {
+    it('renders properly when the field is not required', () => {
         renderComponent({ isRequired: false });
 
         const label = screen.getByText(textsPt.name);
@@ -88,7 +90,7 @@ describe('<FormField />', () => {
         expect(label).toBeInTheDocument();
     });
 
-    test('renders properly with no error message', () => {
+    it('renders properly with no error message', () => {
         renderComponent({ hasError: false });
 
         const errorMessage = screen.getByTestId('errorMessage_hidden');
@@ -96,7 +98,7 @@ describe('<FormField />', () => {
         expect(errorMessage).toBeInTheDocument();
     });
 
-    test('renders without a label if an invalid id is provided', () => {
+    it('renders without a label if an invalid id is provided', () => {
         // @ts-ignore
         renderComponent({ id: 'invalidId', isRequired: true });
 

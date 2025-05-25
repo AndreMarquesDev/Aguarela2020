@@ -1,13 +1,14 @@
-import { Page, expect } from '@playwright/test';
-import { Locale } from '../../src/types/Locale';
+import type { Page } from '@playwright/test';
+import type { Locale } from '../../src/types/Locale';
+import { expect } from '@playwright/test';
 import { footerDataTestId } from '../../src/utils/dataTestIds';
-import { getLocalizedTexts } from '../utils/utils';
 import {
-    andreMarquesDevWebsiteUrl,
-    aguarelaDigitalInstagramUrl,
     aguarelaDigitalFacebookUrl,
+    aguarelaDigitalInstagramUrl,
+    andreMarquesDevWebsiteUrl,
 } from '../../src/utils/urls';
 import { urls } from '../utils/selectors';
+import { getLocalizedTexts } from '../utils/utils';
 
 export const footerTest = async (page: Page, locale: Locale): Promise<void> => {
     const { footerInfo } = getLocalizedTexts(locale);

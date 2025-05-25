@@ -1,16 +1,17 @@
+import type { FormPostRequestBody } from '../../types/FormPostRequestBody';
+import type { FormValues } from '../../types/FormValues';
+import type { FormState } from '../../utils/formValidation';
 import axios from 'axios';
 import classNames from 'classnames';
 import { useFormik } from 'formik';
 import React, { useContext, useState } from 'react';
-import { FormPostRequestBody } from '../../types/FormPostRequestBody';
-import { FormValues } from '../../types/FormValues';
+import { mobileMediaQuery } from '../../styles/mediaQueries';
 import { contactFormContainerDataTestId } from '../../utils/dataTestIds';
-import { FieldTypes, FormState, validateName, validateEmail } from '../../utils/formValidation';
+import { FieldTypes, validateEmail, validateName } from '../../utils/formValidation';
 import { contactFormBackendUrl } from '../../utils/urls';
 import { Button } from '../Button/Button';
 import { TextsContext } from '../context/TextsContext';
 import { FormField } from '../FormField/FormField';
-import { mobileMediaQuery } from '../../styles/mediaQueries';
 
 const formSchema = [
     {
@@ -126,8 +127,8 @@ export const ContactForm = (): JSX.Element => {
         onSubmit,
     };
 
-    const { handleSubmit, handleChange, handleBlur, handleReset, touched, values, errors } =
-        useFormik(formikConfig);
+    const { handleSubmit, handleChange, handleBlur, handleReset, touched, values, errors }
+        = useFormik(formikConfig);
 
     const resetForm = (): void => {
         setTimeout(() => {
@@ -173,7 +174,7 @@ export const ContactForm = (): JSX.Element => {
                                 className={classNames(
                                     'formNotification',
                                     'fontS',
-                                    formSubmitState.error && 'error'
+                                    formSubmitState.error && 'error',
                                 )}
                                 id="contactForm"
                             />

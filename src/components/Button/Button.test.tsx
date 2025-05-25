@@ -1,7 +1,9 @@
-import '@testing-library/jest-dom';
+import type { RenderResult } from '@testing-library/react';
+import type { ButtonProps } from './Button';
+import { render, screen } from '@testing-library/react';
 import React from 'react';
-import { render, RenderResult, screen } from '@testing-library/react';
-import { Button, ButtonProps } from './Button';
+import { Button } from './Button';
+import '@testing-library/jest-dom';
 
 const children = 'Texto dentro do botão';
 
@@ -20,12 +22,12 @@ const renderComponent = (newProps?: Partial<ButtonProps>): RenderResult => {
     return render(
         <Button {...baseProps} {...newProps}>
             {children}
-        </Button>
+        </Button>,
     );
 };
 
 describe('<Button />', () => {
-    test('renders properly', () => {
+    it('renders properly', () => {
         const { container } = renderComponent();
 
         const anchorElement = screen.getByText(children);
@@ -37,7 +39,7 @@ describe('<Button />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly without an external link', () => {
+    it('renders properly without an external link', () => {
         const { container } = renderComponent({ externalLink: undefined });
 
         const anchorElement = screen.getByText(children);
@@ -47,7 +49,7 @@ describe('<Button />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly as a submit button', () => {
+    it('renders properly as a submit button', () => {
         const { container } = renderComponent({ isSubmit: true });
 
         const buttonElement = screen.getByText(children);
@@ -56,7 +58,7 @@ describe('<Button />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly when disabled, uppercased and aligned left', () => {
+    it('renders properly when disabled, uppercased and aligned left', () => {
         const { container } = renderComponent({
             alignLeft: true,
             disabled: true,

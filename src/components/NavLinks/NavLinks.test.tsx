@@ -1,10 +1,12 @@
-import '@testing-library/jest-dom';
+import type { RenderResult } from '@testing-library/react';
+import type { NavLinksProps } from './NavLinks';
+import { render, screen } from '@testing-library/react';
 import React from 'react';
-import { render, screen, RenderResult } from '@testing-library/react';
-import { NavLinks, NavLinksProps } from './NavLinks';
-import { textsEn, textsPt } from '../../utils/texts';
-import { MockProviders } from '../../utils/jest/MockProviders';
 import { Locale } from '../../types/Locale';
+import { MockProviders } from '../../utils/jest/MockProviders';
+import { textsEn, textsPt } from '../../utils/texts';
+import { NavLinks } from './NavLinks';
+import '@testing-library/jest-dom';
 
 const baseProps: NavLinksProps = {
     currentRoute: 'services',
@@ -16,17 +18,17 @@ const baseProps: NavLinksProps = {
 const renderComponent = (
     newProps?: Partial<NavLinksProps>,
     isMenuOpen = baseProps.isMenuOpen,
-    language: Locale = Locale.Pt
+    language: Locale = Locale.Pt,
 ): RenderResult => {
     return render(
         <MockProviders isMenuOpen={isMenuOpen} language={language}>
             <NavLinks {...baseProps} {...newProps} />
-        </MockProviders>
+        </MockProviders>,
     );
 };
 
 describe('<NavLinks />', () => {
-    test('renders properly', () => {
+    it('renders properly', () => {
         const { container } = renderComponent();
 
         const aboutLink = screen.getByText(textsPt.about);
@@ -49,7 +51,7 @@ describe('<NavLinks />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly when language is en', () => {
+    it('renders properly when language is en', () => {
         const { container } = renderComponent({ language: Locale.En }, false, Locale.En);
 
         const aboutLink = screen.getByText(textsEn.about);
@@ -62,21 +64,21 @@ describe('<NavLinks />', () => {
         expect(servicesLink).toBeInTheDocument();
         expect(contactLink).toBeInTheDocument();
 
-        expect(aboutLink).toHaveAttribute('href', `/en/about`);
-        expect(projectsLink).toHaveAttribute('href', `/en/projects`);
-        expect(servicesLink).toHaveAttribute('href', `/en/services`);
-        expect(contactLink).toHaveAttribute('href', `/en/contact`);
+        expect(aboutLink).toHaveAttribute('href', '/en/about');
+        expect(projectsLink).toHaveAttribute('href', '/en/projects');
+        expect(servicesLink).toHaveAttribute('href', '/en/services');
+        expect(contactLink).toHaveAttribute('href', '/en/contact');
 
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly in mobile', () => {
+    it('renders properly in mobile', () => {
         const { container } = renderComponent({ isMobile: true });
 
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly when the menu is open', () => {
+    it('renders properly when the menu is open', () => {
         const { container } = renderComponent({ isMenuOpen: true, isMobile: true }, true);
 
         expect(container).toMatchSnapshot();

@@ -1,19 +1,19 @@
-import React, { useContext } from 'react';
-import Link from 'next/link';
+import type { Locale } from '../../types/Locale';
+import type { TextsInterface } from '../../utils/texts';
 import classNames from 'classnames';
+import Link from 'next/link';
+import React, { useContext } from 'react';
+import { phabletMediaQuery } from '../../styles/mediaQueries';
 import { pagesMap } from '../../utils/pages';
 import { TextsContext } from '../context/TextsContext';
 import { LanguageButton } from '../LanguageButton/LanguageButton';
-import { Locale } from '../../types/Locale';
-import { TextsInterface } from '../../utils/texts';
-import { phabletMediaQuery } from '../../styles/mediaQueries';
 
-export interface NavLinksProps {
+export type NavLinksProps = {
     currentRoute: string;
     language: Locale;
     isMobile: boolean;
     isMenuOpen: boolean;
-}
+};
 
 export const NavLinks = ({
     currentRoute,
@@ -26,7 +26,7 @@ export const NavLinks = ({
 
     const linksContainerStyles = classNames(
         isMobile && 'mobileLayout',
-        isMenuOpen && isMobile && 'menuOpen'
+        isMenuOpen && isMobile && 'menuOpen',
     );
     const linkStyles = (link: string): string =>
         classNames('fontS', currentRoute.includes(link) && 'active', 'navLinksLink');

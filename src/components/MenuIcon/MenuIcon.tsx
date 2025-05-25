@@ -2,11 +2,11 @@ import classNames from 'classnames';
 import React from 'react';
 import { menuIconButtonDataTestId } from '../../utils/dataTestIds';
 
-export interface MenuIconProps {
+export type MenuIconProps = {
     isOpen: boolean;
     isVisible: boolean;
     onClick: () => void;
-}
+};
 
 export const MenuIcon = ({ isOpen, isVisible, onClick }: MenuIconProps): JSX.Element => {
     const openMenuStyles = classNames('menuIcon', isOpen && 'open', !isVisible && 'hidden');

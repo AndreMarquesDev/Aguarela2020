@@ -1,19 +1,19 @@
-import { test, expect } from '@playwright/test';
+import type { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
+import type { Page } from '../../src/utils/pages';
+import { expect, test } from '@playwright/test';
 import { Locale } from '../../src/types/Locale';
-import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
 import {
     brandsListSectionDataTestId,
     footerDataTestId,
     projectsListDoubleSectionDataTestId,
 } from '../../src/utils/dataTestIds';
+import { capitalize } from '../../src/utils/generic';
 import { brandsListTest } from '../testBlocks/brandsListTest';
 import { footerTest } from '../testBlocks/footerTest';
-import { letsWorkSectionTest } from '../testBlocks/letsWorkSectionTest';
 import { headerNavigationTest } from '../testBlocks/headerNavigationTest';
-import { urls } from '../utils/selectors';
+import { letsWorkSectionTest } from '../testBlocks/letsWorkSectionTest';
 import { projectsListDoubleSectionTest } from '../testBlocks/projectsListDoubleSectionTest';
-import { capitalize } from '../../src/utils/generic';
-import { Page } from '../../src/utils/pages';
+import { urls } from '../utils/selectors';
 import { getScreenshotPath } from '../utils/utils';
 
 const pageName: Page = 'projects';
@@ -39,7 +39,7 @@ test.describe(`PT | ${pageNameCapitalized} page`, () => {
             !!isMobile,
             locale,
             otherLocale,
-            browserName as PlaywrightBrowserName
+            browserName as PlaywrightBrowserName,
         );
     });
 
@@ -48,7 +48,7 @@ test.describe(`PT | ${pageNameCapitalized} page`, () => {
             page,
             !!isMobile,
             browserName as PlaywrightBrowserName,
-            locale
+            locale,
         );
     });
 
@@ -98,7 +98,7 @@ test.describe(`EN | ${pageNameCapitalized} page`, () => {
             !!isMobile,
             locale,
             otherLocale,
-            browserName as PlaywrightBrowserName
+            browserName as PlaywrightBrowserName,
         );
     });
 
@@ -107,7 +107,7 @@ test.describe(`EN | ${pageNameCapitalized} page`, () => {
             page,
             !!isMobile,
             browserName as PlaywrightBrowserName,
-            locale
+            locale,
         );
     });
 

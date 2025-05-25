@@ -1,12 +1,12 @@
-import React, { useContext } from 'react';
 import Image from 'next/image';
+import React, { useContext } from 'react';
+import { desktopMediaQuery, mobileMediaQuery, tabletMediaQuery } from '../../styles/mediaQueries';
+import { aboutMeSectionDataTestId } from '../../utils/dataTestIds';
+import { catarinaSantiagoInstagramUrl } from '../../utils/urls';
+import { Breakpoint, useWindowSize } from '../../utils/useWindowSize';
 import { Button } from '../Button/Button';
 import { TextsContext } from '../context/TextsContext';
 import { Title } from '../Title/Title';
-import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
-import { aboutMeSectionDataTestId } from '../../utils/dataTestIds';
-import { catarinaSantiagoInstagramUrl } from '../../utils/urls';
-import { desktopMediaQuery, mobileMediaQuery, tabletMediaQuery } from '../../styles/mediaQueries';
 
 export const AboutMe = (): JSX.Element => {
     const { texts } = useContext(TextsContext);

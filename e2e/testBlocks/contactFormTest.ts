@@ -1,12 +1,13 @@
-import { Page, expect, Locator } from '@playwright/test';
-import { Locale } from '../../src/types/Locale';
+import type { Locator, Page } from '@playwright/test';
+import type { Locale } from '../../src/types/Locale';
+import type { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
+import { expect } from '@playwright/test';
 import {
     contactFormContainerDataTestId,
     contactFormErrorMessageHiddenDataTestId,
     contactFormErrorMessageVisibleDataTestId,
 } from '../../src/utils/dataTestIds';
 import { getLocalizedTexts, getScreenshotPath } from '../utils/utils';
-import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
 
 const isErrorMessageHidden = async (element: Locator): Promise<void> => {
     await expect(element).toHaveAttribute('data-testid', contactFormErrorMessageHiddenDataTestId);
@@ -20,7 +21,7 @@ export const contactFormTest = async (
     page: Page,
     locale: Locale,
     browserName: PlaywrightBrowserName,
-    isMobile: boolean
+    isMobile: boolean,
 ): Promise<void> => {
     const {
         name,
@@ -67,7 +68,7 @@ export const contactFormTest = async (
 
     // take screenshot of the visible error messages
     await expect(container).toHaveScreenshot(
-        getScreenshotPath('error-messages', locale, componentName)
+        getScreenshotPath('error-messages', locale, componentName),
     );
 
     // reset error messages
@@ -120,7 +121,7 @@ export const contactFormTest = async (
 
     // take screenshot of all the fields filled
     await expect(container).toHaveScreenshot(
-        getScreenshotPath('filled-form', locale, componentName)
+        getScreenshotPath('filled-form', locale, componentName),
     );
 
     // submit form
@@ -131,7 +132,7 @@ export const contactFormTest = async (
 
     // take screenshot of the visible success message
     await expect(container).toHaveScreenshot(
-        getScreenshotPath('success-message', locale, componentName)
+        getScreenshotPath('success-message', locale, componentName),
     );
 
     // form resets

@@ -1,6 +1,6 @@
-import { NextApiRequest } from 'next';
-import { FormPostRequestBody } from './FormPostRequestBody';
+import type { NextApiRequest } from 'next';
+import type { FormPostRequestBody } from './FormPostRequestBody';
 
-export interface CustomNextApiRequest extends NextApiRequest {
+export type CustomNextApiRequest = {
     body: FormPostRequestBody;
-}
+} & NextApiRequest;

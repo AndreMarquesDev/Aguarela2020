@@ -1,5 +1,5 @@
-import { FormValues } from './FormValues';
+import type { FormValues } from './FormValues';
 
-export interface FormPostRequestBody extends FormValues {
+export type FormPostRequestBody = {
     isPlaywright: boolean;
-}
+} & FormValues;

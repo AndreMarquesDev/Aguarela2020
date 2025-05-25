@@ -1,12 +1,13 @@
-import { Page, expect } from '@playwright/test';
+import type { Page } from '@playwright/test';
+import type { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
+import { expect } from '@playwright/test';
 import { homepageBannerContainerDataTestId } from '../../src/utils/dataTestIds';
-import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
 import { getImageDimension } from '../utils/utils';
 
 export const bannerTest = async (
     page: Page,
     isMobile: boolean,
-    browserName: PlaywrightBrowserName
+    browserName: PlaywrightBrowserName,
 ): Promise<void> => {
     const container = page.getByTestId(homepageBannerContainerDataTestId);
     const banner = container.getByAltText('homepage banner');
@@ -22,14 +23,14 @@ export const bannerTest = async (
         browserName,
         imageWidthDesktop,
         imageWidthMobileChrome,
-        imageWidthMobileSafari
+        imageWidthMobileSafari,
     );
     const imageHeight = getImageDimension(
         isMobile,
         browserName,
         imageHeightDesktop,
         imageHeightMobileChrome,
-        imageHeightMobileSafari
+        imageHeightMobileSafari,
     );
 
     // renders the banner image

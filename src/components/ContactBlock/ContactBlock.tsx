@@ -1,7 +1,7 @@
+import type { Locale } from '../../types/Locale';
 import { useRouter } from 'next/router';
 import React, { useContext } from 'react';
 import { contactBlockSectionDataTestId } from '../../utils/dataTestIds';
-import { Locale } from '../../types/Locale';
 import { TextsContext } from '../context/TextsContext';
 import { TextShadowBlock } from '../TextShadowBlock/TextShadowBlock';
 
@@ -10,8 +10,8 @@ export const ContactBlock = (): JSX.Element => {
 
     const { query } = useRouter();
     const currentLanguage = query.language?.toString() as Locale;
-    const titleMobile =
-        currentLanguage === 'en'
+    const titleMobile
+        = currentLanguage === 'en'
             ? `${texts.contactMe1}${texts.contactMe2}t`
             : `${texts.contactMe1}${texts.contactMe2}${texts.contactMe3}`;
 

@@ -1,10 +1,18 @@
-import '@testing-library/jest-dom';
-import React, { ReactNode } from 'react';
-import { render, screen, RenderResult } from '@testing-library/react';
+import type { RenderResult } from '@testing-library/react';
+import type { ReactNode } from 'react';
+import type { NukaCarouselProps } from './NukaCarousel';
+import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { NukaCarousel, NukaCarouselProps } from './NukaCarousel';
+import React from 'react';
+import { NukaCarousel } from './NukaCarousel';
+import '@testing-library/jest-dom';
 
-const children: ReactNode = ['1', '2', '3', '4', '5'].map(child => <div>Slide {child}</div>);
+const children: ReactNode = ['1', '2', '3', '4', '5'].map(child => (
+    <div>
+        Slide
+        {child}
+    </div>
+));
 
 const baseProps: NukaCarouselProps = {
     children,
@@ -18,7 +26,7 @@ const renderComponent = (newProps?: Partial<NukaCarouselProps>): RenderResult =>
 };
 
 describe('<NukaCarousel />', () => {
-    test('renders properly', () => {
+    it('renders properly', () => {
         const { container } = renderComponent();
 
         // nukaCarousel adds two extra slides, a '.prev-cloned' and a '.next-cloned', so each slide is triplicated
@@ -42,25 +50,25 @@ describe('<NukaCarousel />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly when width prop is not provided', () => {
+    it('renders properly when width prop is not provided', () => {
         const { container } = renderComponent({ width: undefined });
 
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly when slidesToShow prop is not provided', () => {
+    it('renders properly when slidesToShow prop is not provided', () => {
         const { container } = renderComponent({ slidesToShow: undefined });
 
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly when cellAlign prop is not provided', () => {
+    it('renders properly when cellAlign prop is not provided', () => {
         const { container } = renderComponent({ cellAlign: undefined });
 
         expect(container).toMatchSnapshot();
     });
 
-    test('switches to the previous slide when clicking the previous arrow button', async () => {
+    it('switches to the previous slide when clicking the previous arrow button', async () => {
         const user = userEvent.setup();
 
         const { container } = renderComponent();
@@ -80,7 +88,7 @@ describe('<NukaCarousel />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('switches to the next slide when clicking the next arrow button', async () => {
+    it('switches to the next slide when clicking the next arrow button', async () => {
         const user = userEvent.setup();
 
         const { container } = renderComponent();
@@ -100,9 +108,12 @@ describe('<NukaCarousel />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('resets the "data-times-touched" attribute when switching to the previous slide', async () => {
+    it('resets the "data-times-touched" attribute when switching to the previous slide', async () => {
         const newChildren: ReactNode = ['1', '2', '3', '4', '5'].map(child => (
-            <div data-times-touched="1">Slide {child}</div>
+            <div data-times-touched="1">
+                Slide
+                {child}
+            </div>
         ));
         const user = userEvent.setup();
 
@@ -118,9 +129,12 @@ describe('<NukaCarousel />', () => {
         expect(slide1).toHaveAttribute('data-times-touched', '0');
     });
 
-    test('resets the "data-times-touched" attribute when switching to the next slide', async () => {
+    it('resets the "data-times-touched" attribute when switching to the next slide', async () => {
         const newChildren: ReactNode = ['1', '2', '3', '4', '5'].map(child => (
-            <div data-times-touched="1">Slide {child}</div>
+            <div data-times-touched="1">
+                Slide
+                {child}
+            </div>
         ));
 
         const user = userEvent.setup();

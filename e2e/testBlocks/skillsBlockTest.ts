@@ -1,5 +1,6 @@
-import { Page, expect } from '@playwright/test';
-import { Locale } from '../../src/types/Locale';
+import type { Page } from '@playwright/test';
+import type { Locale } from '../../src/types/Locale';
+import { expect } from '@playwright/test';
 import {
     skillsBlockItemWrapperDataTestId,
     skillsBlockSectionDataTestId,
@@ -9,7 +10,7 @@ import { clickNextArrowButtonIfMobile, getLocalizedTexts } from '../utils/utils'
 export const skillsBlockTest = async (
     page: Page,
     isMobile: boolean,
-    locale: Locale
+    locale: Locale,
 ): Promise<void> => {
     const {
         skills,
