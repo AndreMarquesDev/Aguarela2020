@@ -13,7 +13,7 @@ Object.defineProperty(window, 'matchMedia', {
 
 setJestWindowWidth(Breakpoint.Desktop);
 
-// eslint-disable-next-line import/no-extraneous-dependencies, global-require
+// eslint-disable-next-line import/no-extraneous-dependencies, ts/no-require-imports
 jest.mock('next/router', () => require('next-router-mock'));
 
 mockRouter.query = {

@@ -1,9 +1,4 @@
 import React, { useContext } from 'react';
-import { TextsContext } from '../context/TextsContext';
-import { Title } from '../Title/Title';
-import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
-import { NukaCarousel } from '../NukaCarousel/NukaCarousel';
-import { ProjectItem } from '../ProjectItem/ProjectItem';
 import { projectsListDoubleSectionDataTestId } from '../../utils/dataTestIds';
 import {
     aAmigaEsteticistaIndustriaCriativaUrl,
@@ -27,6 +22,11 @@ import {
     tasteOfIndiaInstagramUrl,
     tjelaInstagramUrl,
 } from '../../utils/urls';
+import { Breakpoint, useWindowSize } from '../../utils/useWindowSize';
+import { TextsContext } from '../context/TextsContext';
+import { NukaCarousel } from '../NukaCarousel/NukaCarousel';
+import { ProjectItem } from '../ProjectItem/ProjectItem';
+import { Title } from '../Title/Title';
 
 export const ProjectsListDouble = (): JSX.Element => {
     const { texts } = useContext(TextsContext);
@@ -34,6 +34,7 @@ export const ProjectsListDouble = (): JSX.Element => {
     const isPhablet = windowSize.width < Breakpoint.Phablet;
     const isMobile = windowSize.width < Breakpoint.Mobile;
     const isDesktop = windowSize.width > Breakpoint.Desktop;
+
     // eslint-disable-next-line no-nested-ternary
     const slidesToShow = isMobile ? 1 : isPhablet ? 2 : 3;
 
