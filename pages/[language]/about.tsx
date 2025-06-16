@@ -1,17 +1,19 @@
-import React, { useMemo, useState } from 'react';
-import Head from 'next/head';
-import { NextPage } from 'next';
-import { useRouter } from 'next/router';
-import { Layout } from '../../src/components/Layout/Layout';
-import { getCurrentLanguagetexts } from '../../src/utils/generic';
-import {
-    NavLinksContext,
+import type { NextPage } from 'next';
+import type {
     NavLinksContextProps,
 } from '../../src/components/context/NavLinksContext';
-import { BrandsList } from '../../src/components/BrandsList/BrandsList';
-import { LetsWork } from '../../src/components/LetsWork/LetsWork';
+import type { Locale } from '../../src/types/Locale';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+import React, { useMemo, useState } from 'react';
 import { AboutMe } from '../../src/components/AboutMe/AboutMe';
-import { Locale } from '../../src/types/Locale';
+import { BrandsList } from '../../src/components/BrandsList/BrandsList';
+import {
+    NavLinksContext,
+} from '../../src/components/context/NavLinksContext';
+import { Layout } from '../../src/components/Layout/Layout';
+import { LetsWork } from '../../src/components/LetsWork/LetsWork';
+import { getCurrentLanguagetexts } from '../../src/utils/generic';
 
 const AboutPage: NextPage = () => {
     const { query } = useRouter();
@@ -26,14 +28,18 @@ const AboutPage: NextPage = () => {
             isMenuOpen,
             toggleMenu: (): void => setIsMenuOpen(!isMenuOpen),
         }),
-        [isMenuOpen]
+        [isMenuOpen],
     );
 
     return (
         <NavLinksContext.Provider value={navLinksContextValue}>
             <Layout>
                 <Head>
-                    <title>{translatedPageTitle} - Aguarela Digital</title>
+                    <title>
+                        {translatedPageTitle}
+                        {' '}
+                        - Aguarela Digital
+                    </title>
                 </Head>
 
                 <AboutMe />

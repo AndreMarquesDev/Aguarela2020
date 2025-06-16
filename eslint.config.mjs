@@ -31,7 +31,7 @@ export default antfu({
             'error',
             {
                 min: 3,
-                exceptions: ['id', 'Id', 'of', 'Of'],
+                exceptions: ['id', 'of', 'en', 'pt'],
             },
         ],
         'unicorn/filename-case': ['error', {
@@ -55,8 +55,21 @@ export default antfu({
             order: 'asc',
             tsconfigRootDir: '.',
             type: 'alphabetical',
-            //   type: 'natural',
         }],
+        'import/no-extraneous-dependencies': [
+            'error',
+            {
+                devDependencies: [
+                    '**/*.test.ts',
+                    '**/*.test.tsx',
+                    '**/tests/*.js',
+                    '**/*.dev.js',
+                    '**/*.dev.ts',
+                    '**/cypress/**',
+                    '**/e2e/**',
+                ],
+            },
+        ],
     },
 }, {
     files: ['**/types/**', '**/components/**'],

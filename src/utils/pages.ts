@@ -4,7 +4,7 @@ export type Page = 'homepage' | 'about' | 'contact' | 'projects' | 'services';
 
 export const pagesMap: Page[] = ['homepage', 'about', 'projects', 'services', 'contact'];
 
-export const pagePathRegex = (page: Page): RegExp => RegExp(`${page}$`);
+export const pagePathRegex = (page: Page): RegExp => new RegExp(`${page}$`);
 
 export const getPageFromUrl = (): Page[] => {
     if (!isClientSide) {

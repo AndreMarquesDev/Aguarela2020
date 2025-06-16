@@ -1,23 +1,24 @@
-import '@testing-library/jest-dom';
+import type { RenderResult } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import React from 'react';
-import { render, RenderResult, screen } from '@testing-library/react';
-import { AboutMe } from './AboutMe';
-import { textsEn, textsPt } from '../../utils/texts';
-import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
-import { Breakpoint } from '../../utils/useWindowSize';
-import { MockProviders } from '../../utils/jest/MockProviders';
 import { Locale } from '../../types/Locale';
+import { MockProviders } from '../../utils/jest/MockProviders';
+import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
+import { textsEn, textsPt } from '../../utils/texts';
+import { Breakpoint } from '../../utils/useWindowSize';
+import { AboutMe } from './AboutMe';
+import '@testing-library/jest-dom';
 
 const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
     return render(
         <MockProviders language={language}>
             <AboutMe />
-        </MockProviders>
+        </MockProviders>,
     );
 };
 
 describe('<AboutMe />', () => {
-    test('renders properly', () => {
+    it('renders properly', () => {
         const { container } = renderComponent();
 
         expect(screen.getByText(textsPt.about)).toBeInTheDocument();
@@ -31,7 +32,7 @@ describe('<AboutMe />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly in English', () => {
+    it('renders properly in English', () => {
         const { container } = renderComponent(Locale.En);
 
         expect(screen.getByText(textsEn.about)).toBeInTheDocument();
@@ -45,7 +46,7 @@ describe('<AboutMe />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test('renders properly in mobile', () => {
+    it('renders properly in mobile', () => {
         setJestWindowWidth(Breakpoint.Mobile);
 
         const { container } = renderComponent();

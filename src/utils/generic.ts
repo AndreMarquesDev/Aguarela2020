@@ -1,5 +1,6 @@
+import type { TextsInterface } from './texts';
 import { Locale } from '../types/Locale';
-import { textsPt, textsEn, TextsInterface } from './texts';
+import { textsEn, textsPt } from './texts';
 
 export const isDev = process.env.NODE_ENV === 'development';
 export const capitalize = (string: string): string =>
@@ -9,5 +10,5 @@ export const getCurrentLanguagetexts = (language: Locale): TextsInterface =>
 
 export const resetTimesTouchedAttribute = (): void =>
     document.querySelectorAll('[data-times-touched]').forEach(
-        element => ((element as HTMLLIElement).dataset.timesTouched = '0') // eslint-disable-line no-return-assign, no-param-reassign
+        element => ((element as HTMLLIElement).dataset.timesTouched = '0'),
     );

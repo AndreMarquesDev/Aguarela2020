@@ -3,7 +3,6 @@ const baseUrlPt = `${baseUrl}pt/`;
 const baseUrlEn = `${baseUrl}en/`;
 
 export const urls = {
-    // eslint-disable-next-line id-length
     pt: {
         homepage: `${baseUrlPt}homepage`,
         about: `${baseUrlPt}about`,
@@ -11,7 +10,6 @@ export const urls = {
         services: `${baseUrlPt}services`,
         contact: `${baseUrlPt}contact`,
     },
-    // eslint-disable-next-line id-length
     en: {
         homepage: `${baseUrlEn}homepage`,
         about: `${baseUrlEn}about`,
