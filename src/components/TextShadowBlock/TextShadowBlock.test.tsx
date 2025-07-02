@@ -28,7 +28,7 @@ const renderComponent = (newProps?: Partial<TextShadowBlockProps>): RenderResult
 };
 
 describe('<TextShadowBlock />', () => {
-    it('renders properly', () => {
+    test('renders properly', () => {
         renderComponent();
 
         const title1 = screen.getByText(baseProps.title1);
@@ -54,7 +54,7 @@ describe('<TextShadowBlock />', () => {
         expect(titleMobile).not.toBeInTheDocument();
     });
 
-    it('renders properly on mobile', () => {
+    test('renders properly on mobile', () => {
         setJestWindowWidth(Breakpoint.Mobile);
 
         renderComponent();
@@ -72,7 +72,7 @@ describe('<TextShadowBlock />', () => {
         expect(title3).not.toBeInTheDocument();
     });
 
-    it('renders properly with a button', () => {
+    test('renders properly with a button', () => {
         setJestWindowWidth(Breakpoint.Desktop);
 
         const { container } = renderComponent({

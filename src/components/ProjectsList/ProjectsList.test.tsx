@@ -19,7 +19,7 @@ const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
 };
 
 describe('<ProjectsList />', () => {
-    it('renders properly', () => {
+    test('renders properly', () => {
         const { container } = renderComponent();
 
         const title = screen.getByText(textsPt.projects);
@@ -37,7 +37,7 @@ describe('<ProjectsList />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly in English', () => {
+    test('renders properly in English', () => {
         const { container } = renderComponent(Locale.En);
 
         const title = screen.getByText(textsEn.projects);
@@ -49,7 +49,7 @@ describe('<ProjectsList />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly on tablet', () => {
+    test('renders properly on tablet', () => {
         setJestWindowWidth(Breakpoint.Tablet);
 
         const { container } = renderComponent();
@@ -61,7 +61,7 @@ describe('<ProjectsList />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly on mobile', () => {
+    test('renders properly on mobile', () => {
         setJestWindowWidth(Breakpoint.Mobile);
 
         const { container } = renderComponent();

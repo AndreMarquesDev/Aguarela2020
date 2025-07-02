@@ -26,7 +26,7 @@ const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
 };
 
 describe('<WelcomeBlock />', () => {
-    it('renders properly', () => {
+    test('renders properly', () => {
         const { container } = renderComponent();
 
         const title1 = screen.getByText(textsPt.welcome1);
@@ -46,7 +46,7 @@ describe('<WelcomeBlock />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly in English', () => {
+    test('renders properly in English', () => {
         const { container } = renderComponent(Locale.En);
 
         const title1 = screen.getByText(textsEn.welcome1);
@@ -66,7 +66,7 @@ describe('<WelcomeBlock />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly on mobile', () => {
+    test('renders properly on mobile', () => {
         setJestWindowWidth(Breakpoint.Mobile);
 
         renderComponent();
@@ -78,7 +78,7 @@ describe('<WelcomeBlock />', () => {
         expect(titleMobile).toBeInTheDocument();
     });
 
-    it('renders properly on mobile in English', () => {
+    test('renders properly on mobile in English', () => {
         (nextRouter.useRouter as jest.Mock).mockImplementationOnce(() => ({
             query: {
                 language: 'en',

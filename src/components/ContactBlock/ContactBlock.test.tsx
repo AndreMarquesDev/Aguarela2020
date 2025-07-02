@@ -19,7 +19,7 @@ const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
 };
 
 describe('<ContactBlock />', () => {
-    it('renders properly', () => {
+    test('renders properly', () => {
         const { container } = renderComponent();
 
         expect(screen.getByText(textsPt.contactMe1)).toBeInTheDocument();
@@ -32,7 +32,7 @@ describe('<ContactBlock />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly on mobile', () => {
+    test('renders properly on mobile', () => {
         setJestWindowWidth(Breakpoint.Mobile);
 
         const { container } = renderComponent();
@@ -50,7 +50,7 @@ describe('<ContactBlock />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly in English', () => {
+    test('renders properly in English', () => {
         setJestWindowWidth(Breakpoint.Desktop);
 
         const { container } = renderComponent(Locale.En);
@@ -65,7 +65,7 @@ describe('<ContactBlock />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly in English and mobile', () => {
+    test('renders properly in English and mobile', () => {
         mockRouter.query = {
             language: 'en',
         };

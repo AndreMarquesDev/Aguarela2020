@@ -24,7 +24,7 @@ const renderComponent = (
 };
 
 describe('<Footer />', () => {
-    it('renders properly', () => {
+    test('renders properly', () => {
         const { container } = renderComponent();
 
         expect(screen.getByText(textsPt.footerInfo)).toBeInTheDocument();
@@ -32,7 +32,7 @@ describe('<Footer />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly in English', () => {
+    test('renders properly in English', () => {
         const { container } = renderComponent({ language: Locale.En }, Locale.En);
 
         expect(screen.getByText(textsEn.footerInfo)).toBeInTheDocument();

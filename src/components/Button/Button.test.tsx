@@ -27,7 +27,7 @@ const renderComponent = (newProps?: Partial<ButtonProps>): RenderResult => {
 };
 
 describe('<Button />', () => {
-    it('renders properly', () => {
+    test('renders properly', () => {
         const { container } = renderComponent();
 
         const anchorElement = screen.getByText(children);
@@ -39,7 +39,7 @@ describe('<Button />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly without an external link', () => {
+    test('renders properly without an external link', () => {
         const { container } = renderComponent({ externalLink: undefined });
 
         const anchorElement = screen.getByText(children);
@@ -49,7 +49,7 @@ describe('<Button />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly as a submit button', () => {
+    test('renders properly as a submit button', () => {
         const { container } = renderComponent({ isSubmit: true });
 
         const buttonElement = screen.getByText(children);
@@ -58,7 +58,7 @@ describe('<Button />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly when disabled, uppercased and aligned left', () => {
+    test('renders properly when disabled, uppercased and aligned left', () => {
         const { container } = renderComponent({
             alignLeft: true,
             disabled: true,

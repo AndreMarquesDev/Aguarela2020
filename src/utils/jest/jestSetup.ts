@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import mockRouter from 'next-router-mock';
 import { Breakpoint } from '../useWindowSize';
 import { setJestWindowWidth } from './setJestWindowWidth';
@@ -13,7 +12,7 @@ Object.defineProperty(window, 'matchMedia', {
 
 setJestWindowWidth(Breakpoint.Desktop);
 
-// eslint-disable-next-line import/no-extraneous-dependencies, ts/no-require-imports
+// eslint-disable-next-line ts/no-require-imports
 jest.mock('next/router', () => require('next-router-mock'));
 
 mockRouter.query = {

@@ -16,7 +16,7 @@ const renderComponent = (newProps?: Partial<SkillItemProps>): RenderResult => {
 };
 
 describe('<SkillItem />', () => {
-    it('renders properly', () => {
+    test('renders properly', () => {
         const { container } = renderComponent();
 
         expect(screen.getByText(baseProps.title)).toBeInTheDocument();

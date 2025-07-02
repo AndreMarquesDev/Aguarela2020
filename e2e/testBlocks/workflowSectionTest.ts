@@ -1,5 +1,6 @@
-import { Page, expect } from '@playwright/test';
-import { Locale } from '../../src/types/Locale';
+import type { Page } from '@playwright/test';
+import type { Locale } from '../../src/types/Locale';
+import { expect } from '@playwright/test';
 import { workflowSectionDataTestId } from '../../src/utils/dataTestIds';
 import { getLocalizedTexts } from '../utils/utils';
 
@@ -28,7 +29,7 @@ export const workflowSectionTest = async (page: Page, locale: Locale): Promise<v
     const testBlock = async (
         number: number,
         title: string,
-        backfaceText: string
+        backfaceText: string,
     ): Promise<void> => {
         const block = container.locator('li').nth(number - 1);
         const backface = container.getByText(backfaceText);

@@ -27,7 +27,7 @@ const renderComponent = (setNavHeight: jest.Mock | undefined): RenderResult => {
 };
 
 describe('<Header />', () => {
-    it('renders properly', () => {
+    test('renders properly', () => {
         const { container } = renderComponent(mockSetNavHeight);
 
         expect(mockSetNavHeight).toHaveBeenCalledTimes(2);
@@ -35,7 +35,7 @@ describe('<Header />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly below phablet', () => {
+    test('renders properly below phablet', () => {
         setJestWindowWidth(Breakpoint.Mobile);
 
         const { container } = renderComponent(mockSetNavHeight);
@@ -43,13 +43,13 @@ describe('<Header />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('does not call the "setNavHeight" function if it is undefined', () => {
+    test('does not call the "setNavHeight" function if it is undefined', () => {
         renderComponent(undefined);
 
         expect(mockSetNavHeight).toHaveBeenCalledTimes(0);
     });
 
-    it('calls the "toggleMenu" function when clicking on <MenuIcon />', async () => {
+    test('calls the "toggleMenu" function when clicking on <MenuIcon />', async () => {
         const user = userEvent.setup();
 
         renderComponent(mockSetNavHeight);

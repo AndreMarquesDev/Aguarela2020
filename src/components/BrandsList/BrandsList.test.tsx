@@ -16,7 +16,7 @@ const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
 };
 
 describe('<BrandsList />', () => {
-    it('renders properly', () => {
+    test('renders properly', () => {
         const { container } = renderComponent();
 
         expect(screen.getByText(textsPt.myNetwork)).toBeInTheDocument();
@@ -24,7 +24,7 @@ describe('<BrandsList />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly in English', () => {
+    test('renders properly in English', () => {
         const { container } = renderComponent(Locale.En);
 
         expect(screen.getByText(textsEn.myNetwork)).toBeInTheDocument();

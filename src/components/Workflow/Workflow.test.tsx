@@ -16,7 +16,7 @@ const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
 };
 
 describe('<Workflow />', () => {
-    it('renders properly', () => {
+    test('renders properly', () => {
         const { container } = renderComponent();
 
         expect(screen.getByText(textsPt.workflow)).toBeInTheDocument();
@@ -38,7 +38,7 @@ describe('<Workflow />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly in English', () => {
+    test('renders properly in English', () => {
         const { container } = renderComponent(Locale.En);
 
         expect(screen.getByText(textsEn.workflow)).toBeInTheDocument();

@@ -17,7 +17,7 @@ const contentSecurityPolicyProd = `
 `;
 
 const csp
-    // eslint-disable-next-line node/no-process-env
+
     = process.env.NODE_ENV === 'development' ? contentSecurityPolicyDev : contentSecurityPolicyProd;
 
 module.exports = {

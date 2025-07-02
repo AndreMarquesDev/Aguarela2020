@@ -28,7 +28,7 @@ const renderComponent = (
 };
 
 describe('<NavLinks />', () => {
-    it('renders properly', () => {
+    test('renders properly', () => {
         const { container } = renderComponent();
 
         const aboutLink = screen.getByText(textsPt.about);
@@ -51,7 +51,7 @@ describe('<NavLinks />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly when language is en', () => {
+    test('renders properly when language is en', () => {
         const { container } = renderComponent({ language: Locale.En }, false, Locale.En);
 
         const aboutLink = screen.getByText(textsEn.about);
@@ -72,13 +72,13 @@ describe('<NavLinks />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly in mobile', () => {
+    test('renders properly in mobile', () => {
         const { container } = renderComponent({ isMobile: true });
 
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly when the menu is open', () => {
+    test('renders properly when the menu is open', () => {
         const { container } = renderComponent({ isMenuOpen: true, isMobile: true }, true);
 
         expect(container).toMatchSnapshot();

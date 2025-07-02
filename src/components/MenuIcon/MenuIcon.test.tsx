@@ -15,19 +15,19 @@ const renderComponent = (newProps?: Partial<MenuIconProps>): RenderResult => {
 };
 
 describe('<MenuIcon />', () => {
-    it('renders properly', () => {
+    test('renders properly', () => {
         const { container } = renderComponent();
 
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly when menu is open', () => {
+    test('renders properly when menu is open', () => {
         const { container } = renderComponent({ isOpen: true });
 
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly when the icon is visible is open', () => {
+    test('renders properly when the icon is visible is open', () => {
         const { container } = renderComponent({ isVisible: true });
 
         expect(container).toMatchSnapshot();

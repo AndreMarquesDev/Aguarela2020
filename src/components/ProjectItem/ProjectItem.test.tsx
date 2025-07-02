@@ -36,7 +36,7 @@ const renderComponent = (
 };
 
 describe('<ProjectItem />', () => {
-    it('renders properly', () => {
+    test('renders properly', () => {
         const { container } = renderComponent();
 
         const image = screen.getByAltText(baseProps.imageAlt);
@@ -56,7 +56,7 @@ describe('<ProjectItem />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly in English', () => {
+    test('renders properly in English', () => {
         const { container } = renderComponent(
             { description: textsEn.socialMediaManagementAndContentCreation },
             Locale.En,
@@ -71,7 +71,7 @@ describe('<ProjectItem />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly in mobile', () => {
+    test('renders properly in mobile', () => {
         const { container } = renderComponent({ isDesktop: false });
 
         const image = screen.getByAltText(baseProps.imageAlt);
@@ -91,7 +91,7 @@ describe('<ProjectItem />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly with the year as a string', () => {
+    test('renders properly with the year as a string', () => {
         renderComponent({ year: '2019 - 2020' });
 
         const year = screen.getByText(`2019 - 2020 - ${textsPt.present}`);
@@ -99,7 +99,7 @@ describe('<ProjectItem />', () => {
         expect(year).toBeInTheDocument();
     });
 
-    it('renders properly with isActive being false', () => {
+    test('renders properly with isActive being false', () => {
         renderComponent({ isActive: false });
 
         const year = screen.getByText(baseProps.year as number);
@@ -111,7 +111,7 @@ describe('<ProjectItem />', () => {
         expect(presentText).not.toBeInTheDocument();
     });
 
-    it('renders properly with isInPartnership being false', () => {
+    test('renders properly with isInPartnership being false', () => {
         renderComponent({ isInPartnership: false });
 
         const isInPartership = screen.queryByText(`* ${textsPt.inPartnershipWith}`);
@@ -119,19 +119,19 @@ describe('<ProjectItem />', () => {
         expect(isInPartership).not.toBeInTheDocument();
     });
 
-    it('renders properly with isGrid being false', () => {
+    test('renders properly with isGrid being false', () => {
         const { container } = renderComponent({ isGrid: false, isDesktop: false });
 
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly with preloadImage being false', () => {
+    test('renders properly with preloadImage being false', () => {
         const { container } = renderComponent({ preloadImage: false });
 
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly when device is touch', () => {
+    test('renders properly when device is touch', () => {
         window.matchMedia = jest.fn().mockImplementation(() => ({
             matches: true,
         }));

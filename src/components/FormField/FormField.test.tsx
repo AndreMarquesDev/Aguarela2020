@@ -24,7 +24,7 @@ const renderComponent = (newProps?: Partial<FormFieldProps>): RenderResult => {
 };
 
 describe('<FormField />', () => {
-    it('renders properly', () => {
+    test('renders properly', () => {
         const { container } = renderComponent({ isRequired: true });
 
         const label = screen.getByText(`${textsPt.name} *`);
@@ -38,7 +38,7 @@ describe('<FormField />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly when it is the brand field', () => {
+    test('renders properly when it is the brand field', () => {
         renderComponent({ id: FieldTypes.Brand });
 
         const label = screen.getByText(textsPt.brandBusiness);
@@ -48,7 +48,7 @@ describe('<FormField />', () => {
         expect(field).toBeInTheDocument();
     });
 
-    it('renders properly when it is the email field', () => {
+    test('renders properly when it is the email field', () => {
         renderComponent({ id: FieldTypes.Email });
 
         const label = screen.getByText(textsPt.email);
@@ -60,7 +60,7 @@ describe('<FormField />', () => {
         expect(errorMessage).toBeInTheDocument();
     });
 
-    it('renders properly when it is the subject field', () => {
+    test('renders properly when it is the subject field', () => {
         renderComponent({ id: FieldTypes.Subject });
 
         const label = screen.getByText(textsPt.subject);
@@ -70,7 +70,7 @@ describe('<FormField />', () => {
         expect(field).toBeInTheDocument();
     });
 
-    it('renders properly when it is the message field', () => {
+    test('renders properly when it is the message field', () => {
         renderComponent({ id: FieldTypes.Textarea });
 
         const label = screen.getByText(textsPt.message);
@@ -82,7 +82,7 @@ describe('<FormField />', () => {
         expect(errorMessage).toBeInTheDocument();
     });
 
-    it('renders properly when the field is not required', () => {
+    test('renders properly when the field is not required', () => {
         renderComponent({ isRequired: false });
 
         const label = screen.getByText(textsPt.name);
@@ -90,7 +90,7 @@ describe('<FormField />', () => {
         expect(label).toBeInTheDocument();
     });
 
-    it('renders properly with no error message', () => {
+    test('renders properly with no error message', () => {
         renderComponent({ hasError: false });
 
         const errorMessage = screen.getByTestId('errorMessage_hidden');
@@ -98,7 +98,7 @@ describe('<FormField />', () => {
         expect(errorMessage).toBeInTheDocument();
     });
 
-    it('renders without a label if an invalid id is provided', () => {
+    test('renders without a label if an invalid id is provided', () => {
         // @ts-ignore
         renderComponent({ id: 'invalidId', isRequired: true });
 

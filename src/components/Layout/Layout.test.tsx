@@ -27,7 +27,7 @@ const renderComponent = (isMenuOpen = false): RenderResult => {
 };
 
 describe('<Layout />', () => {
-    it('renders properly', () => {
+    test('renders properly', () => {
         const { container } = renderComponent();
 
         const childElement = screen.getByText('Child');
@@ -39,7 +39,7 @@ describe('<Layout />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly when the menu is open and the resolution is lower than desktop', () => {
+    test('renders properly when the menu is open and the resolution is lower than desktop', () => {
         setJestWindowWidth(Breakpoint.Mobile);
 
         const { container } = renderComponent(true);
@@ -47,7 +47,7 @@ describe('<Layout />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly in English', () => {
+    test('renders properly in English', () => {
         mockRouter.query = {
             language: 'en',
         };

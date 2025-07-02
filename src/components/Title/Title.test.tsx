@@ -16,7 +16,7 @@ const renderComponent = (newProps?: Partial<TitleProps>): RenderResult => {
 };
 
 describe('<Title />', () => {
-    it('renders properly', () => {
+    test('renders properly', () => {
         renderComponent();
 
         const h1Element = screen.getByText(baseProps.text);
@@ -25,7 +25,7 @@ describe('<Title />', () => {
         expect(h1Element).toMatchSnapshot();
     });
 
-    it('renders properly with the colored class', () => {
+    test('renders properly with the colored class', () => {
         renderComponent({ colored: true });
 
         const h1Element = screen.getByText(baseProps.text);
@@ -35,7 +35,7 @@ describe('<Title />', () => {
         expect(h1Element).toMatchSnapshot();
     });
 
-    it('renders properly with a custom margin-bottom', () => {
+    test('renders properly with a custom margin-bottom', () => {
         renderComponent({ marginBottom: 100 });
 
         const h1Element = screen.getByText(baseProps.text);

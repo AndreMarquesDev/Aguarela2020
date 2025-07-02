@@ -17,7 +17,7 @@ const renderComponent = (isMenuOpen = true): RenderResult => {
 };
 
 describe('<LanguageButton />', () => {
-    it('renders properly', () => {
+    test('renders properly', () => {
         const { container } = renderComponent();
 
         const button = screen.getByRole('button');
@@ -27,7 +27,7 @@ describe('<LanguageButton />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly when clicking on button', async () => {
+    test('renders properly when clicking on button', async () => {
         Object.defineProperty(window, 'location', {
             value: {
                 pathname: '/en/about',
@@ -51,7 +51,7 @@ describe('<LanguageButton />', () => {
         expect(mockToggleMenu).toHaveBeenCalledTimes(1);
     });
 
-    it('does not call the "toggleMenu" function if menu is closed', async () => {
+    test('does not call the "toggleMenu" function if menu is closed', async () => {
         const user = userEvent.setup();
 
         renderComponent(false);

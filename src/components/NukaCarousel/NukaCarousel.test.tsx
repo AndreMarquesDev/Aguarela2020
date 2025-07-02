@@ -26,7 +26,7 @@ const renderComponent = (newProps?: Partial<NukaCarouselProps>): RenderResult =>
 };
 
 describe('<NukaCarousel />', () => {
-    it('renders properly', () => {
+    test('renders properly', () => {
         const { container } = renderComponent();
 
         // nukaCarousel adds two extra slides, a '.prev-cloned' and a '.next-cloned', so each slide is triplicated
@@ -50,25 +50,25 @@ describe('<NukaCarousel />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly when width prop is not provided', () => {
+    test('renders properly when width prop is not provided', () => {
         const { container } = renderComponent({ width: undefined });
 
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly when slidesToShow prop is not provided', () => {
+    test('renders properly when slidesToShow prop is not provided', () => {
         const { container } = renderComponent({ slidesToShow: undefined });
 
         expect(container).toMatchSnapshot();
     });
 
-    it('renders properly when cellAlign prop is not provided', () => {
+    test('renders properly when cellAlign prop is not provided', () => {
         const { container } = renderComponent({ cellAlign: undefined });
 
         expect(container).toMatchSnapshot();
     });
 
-    it('switches to the previous slide when clicking the previous arrow button', async () => {
+    test('switches to the previous slide when clicking the previous arrow button', async () => {
         const user = userEvent.setup();
 
         const { container } = renderComponent();
@@ -88,7 +88,7 @@ describe('<NukaCarousel />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('switches to the next slide when clicking the next arrow button', async () => {
+    test('switches to the next slide when clicking the next arrow button', async () => {
         const user = userEvent.setup();
 
         const { container } = renderComponent();
@@ -108,7 +108,7 @@ describe('<NukaCarousel />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('resets the "data-times-touched" attribute when switching to the previous slide', async () => {
+    test('resets the "data-times-touched" attribute when switching to the previous slide', async () => {
         const newChildren: ReactNode = ['1', '2', '3', '4', '5'].map(child => (
             <div data-times-touched="1">
                 Slide
@@ -129,7 +129,7 @@ describe('<NukaCarousel />', () => {
         expect(slide1).toHaveAttribute('data-times-touched', '0');
     });
 
-    it('resets the "data-times-touched" attribute when switching to the next slide', async () => {
+    test('resets the "data-times-touched" attribute when switching to the next slide', async () => {
         const newChildren: ReactNode = ['1', '2', '3', '4', '5'].map(child => (
             <div data-times-touched="1">
                 Slide

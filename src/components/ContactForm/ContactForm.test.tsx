@@ -31,7 +31,7 @@ const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
 };
 
 describe('<ContactForm />', () => {
-    it('renders properly', () => {
+    test('renders properly', () => {
         renderComponent();
 
         const hiddenErrorMessages = screen.getAllByTestId(contactFormErrorMessageHiddenDataTestId);
@@ -42,7 +42,7 @@ describe('<ContactForm />', () => {
         expect(screen.getByTestId(contactFormContainerDataTestId)).toMatchSnapshot();
     });
 
-    it('renders properly in English', () => {
+    test('renders properly in English', () => {
         renderComponent(Locale.En);
 
         const hiddenErrorMessages = screen.getAllByTestId(contactFormErrorMessageHiddenDataTestId);
@@ -53,7 +53,7 @@ describe('<ContactForm />', () => {
         expect(screen.getByTestId(contactFormContainerDataTestId)).toMatchSnapshot();
     });
 
-    it('displays error messages in required fields on submit with empty fields', async () => {
+    test('displays error messages in required fields on submit with empty fields', async () => {
         const user = userEvent.setup();
 
         renderComponent();
@@ -71,7 +71,7 @@ describe('<ContactForm />', () => {
         expect(screen.getByTestId(contactFormContainerDataTestId)).toMatchSnapshot();
     });
 
-    it('lets fields be properly filled', async () => {
+    test('lets fields be properly filled', async () => {
         const user = userEvent.setup();
 
         renderComponent();
@@ -94,7 +94,7 @@ describe('<ContactForm />', () => {
         });
     });
 
-    it('submits the form successfully', async () => {
+    test('submits the form successfully', async () => {
         initializeAxiosMockAdapter();
 
         const user = userEvent.setup();
@@ -122,7 +122,7 @@ describe('<ContactForm />', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it(
+    test(
         'resets the form after it was successfully submitted',
         async () => {
             initializeAxiosMockAdapter();
@@ -162,7 +162,7 @@ describe('<ContactForm />', () => {
         FORM_RESET_TIMEOUT + 3000,
     );
 
-    it('shows an error message in case the POST request fails', async () => {
+    test('shows an error message in case the POST request fails', async () => {
         initializeAxiosMockAdapter(0, false);
 
         const user = userEvent.setup();
