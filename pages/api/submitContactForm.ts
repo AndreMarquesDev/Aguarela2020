@@ -1,3 +1,4 @@
+/* eslint-disable node/no-process-env */
 import type { NextApiResponse } from 'next';
 import type { SendMailOptions } from 'nodemailer';
 import type { CustomNextApiRequest } from '../../src/types/CustomNextApiRequest';

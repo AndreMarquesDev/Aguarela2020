@@ -51,6 +51,7 @@ const formSchema = [
     },
 ];
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const FORM_RESET_TIMEOUT = 5000;
 
 export const ContactForm = (): JSX.Element => {
@@ -96,6 +97,7 @@ export const ContactForm = (): JSX.Element => {
 
         const formStateWithHiddenInputs: FormPostRequestBody = {
             ...formState,
+            // eslint-disable-next-line node/no-process-env
             isPlaywright: process.env.NEXT_PUBLIC_IS_PLAYWRIGHT === 'true',
         };
 
@@ -116,7 +118,7 @@ export const ContactForm = (): JSX.Element => {
                 });
             })
             .finally(() => {
-                // eslint-disable-next-line @typescript-eslint/no-use-before-define
+                // eslint-disable-next-line ts/no-use-before-define
                 resetForm();
             });
     };
@@ -166,6 +168,7 @@ export const ContactForm = (): JSX.Element => {
                         </Button>
                         {formSubmitState.submitted && (
                             <span
+                                // eslint-disable-next-line react-dom/no-dangerously-set-innerhtml
                                 dangerouslySetInnerHTML={{
                                     __html: formSubmitState.error
                                         ? texts.thereWasAnErrorSendingTheMessage

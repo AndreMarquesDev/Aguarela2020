@@ -7,5 +7,5 @@ export type NavLinksContextProps = {
     setNavHeight?: React.Dispatch<React.SetStateAction<number>>;
 };
 
-// @ts-ignore
+// @ts-expect-error ignore for now
 export const NavLinksContext: Context<NavLinksContextProps> = createContext(null);

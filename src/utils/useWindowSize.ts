@@ -13,6 +13,7 @@ export const useWindowSize = (): WindowSize => {
 
     useEffect(() => {
         const handleResize = (): void => {
+            // eslint-disable-next-line react-hooks-extra/no-direct-set-state-in-use-effect
             setWindowSize({
                 width: window.innerWidth,
                 height: window.innerHeight,

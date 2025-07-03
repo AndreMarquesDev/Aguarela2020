@@ -34,12 +34,12 @@ export default antfu({
             'error',
             {
                 min: 3,
-                exceptions: ['id', 'of', 'en', 'pt'],
+                exceptions: ['id', 'of', 'en', 'pt', 'to', 'ci'],
             },
         ],
         'unicorn/filename-case': ['error', {
             case: 'camelCase',
-            ignore: ['README.md'],
+            ignore: ['README.md', 'next-env.d.ts', 'docker-compose.yml'],
         }],
         // https://github.com/antfu/eslint-config/blob/56262ef7962ce310d29348060d8941d420f410fc/src/configs/perfectionist.ts#L19
         'perfectionist/sort-imports': ['error', {
@@ -94,6 +94,10 @@ export default antfu({
         '**/*.test.tsx',
     ],
     ...testingLibrary.configs['flat/react'],
+    rules: {
+        ...testingLibrary.configs['flat/react'].rules,
+        'react/no-missing-key': 'off',
+    },
 }, {
     files: ['**/e2e/**'],
     ...playwright.configs['flat/recommended'],

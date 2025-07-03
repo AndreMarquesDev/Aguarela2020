@@ -99,7 +99,7 @@ describe('<FormField />', () => {
     });
 
     test('renders without a label if an invalid id is provided', () => {
-        // @ts-ignore
+        // @ts-expect-error ignore for now
         renderComponent({ id: 'invalidId', isRequired: true });
 
         const label = screen.getByText('*');

@@ -7,6 +7,7 @@ module.exports = {
             numberOfRuns: 3,
         },
         upload: {
+            // eslint-disable-next-line node/no-process-env
             target: process.env.CI === 'true' ? 'temporary-public-storage' : 'filesystem',
             // reportFilenamePattern: '%%HOSTNAME%%-%%PATHNAME%%-%%DATETIME%%.report.%%EXTENSION%%',
             reportFilenamePattern: '%%HOSTNAME%%-%%PATHNAME%%.report.%%EXTENSION%%',

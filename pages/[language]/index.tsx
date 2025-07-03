@@ -24,6 +24,7 @@ const IndexPage = (): JSX.Element => {
         // https://stackoverflow.com/a/73344411/7643841
         if (!hasRunRouterReplace) {
             redirectToHomepage(router, locale);
+            // eslint-disable-next-line react-hooks-extra/no-direct-set-state-in-use-effect
             setHasRunRouterReplace(true);
         }
     }, [urlHasLocale, locale, router, hasRunRouterReplace]);

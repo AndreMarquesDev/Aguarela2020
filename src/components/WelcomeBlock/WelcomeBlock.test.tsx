@@ -10,7 +10,7 @@ import { Breakpoint } from '../../utils/useWindowSize';
 import { WelcomeBlock } from './WelcomeBlock';
 import '@testing-library/jest-dom';
 
-// @ts-ignore
+// @ts-expect-error ignore for now
 nextRouter.useRouter = jest.fn(() => ({
     query: {
         language: 'pt',
