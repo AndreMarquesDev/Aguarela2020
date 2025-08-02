@@ -38,8 +38,8 @@ describe('<TextShadowBlock />', () => {
         const textBlock3 = screen.getByText(baseProps.textBlock3);
 
         const textBlock1 = screen.getByTestId(textBlock1DataTestId);
-        const actualTextBlock1Text
-            = 'Gestão de redes sociais está no meu ADN. Sou uma freelancer, baseada em Lisboa, com experiência em gestão de redes sociais e criação de conteúdo. A @Aguarela surgiu com o objetivo de ajudar negócios locais e pequenas empresas a posicionarem-se no digital, gerar awareness, criar uma relação com o target e impulsionar vendas';
+        const actualTextBlock1Text =
+            'Gestão de redes sociais está no meu ADN. Sou uma freelancer, baseada em Lisboa, com experiência em gestão de redes sociais e criação de conteúdo. A @Aguarela surgiu com o objetivo de ajudar negócios locais e pequenas empresas a posicionarem-se no digital, gerar awareness, criar uma relação com o target e impulsionar vendas';
 
         const titleMobile = screen.queryByText(baseProps.titleMobile);
 

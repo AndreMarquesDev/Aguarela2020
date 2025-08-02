@@ -129,8 +129,8 @@ export const ContactForm = (): JSX.Element => {
         onSubmit,
     };
 
-    const { handleSubmit, handleChange, handleBlur, handleReset, touched, values, errors }
-        = useFormik(formikConfig);
+    const { handleSubmit, handleChange, handleBlur, handleReset, touched, values, errors } =
+        useFormik(formikConfig);
 
     const resetForm = (): void => {
         setTimeout(() => {

@@ -16,9 +16,9 @@ const contentSecurityPolicyProd = `
     base-uri 'none';
 `;
 
-const csp
+const csp =
 
-    = process.env.NODE_ENV === 'development' ? contentSecurityPolicyDev : contentSecurityPolicyProd;
+    process.env.NODE_ENV === 'development' ? contentSecurityPolicyDev : contentSecurityPolicyProd;
 
 module.exports = {
     async headers() {

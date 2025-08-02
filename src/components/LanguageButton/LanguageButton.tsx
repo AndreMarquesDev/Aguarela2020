@@ -12,8 +12,8 @@ export const LanguageButton = (): JSX.Element => {
     const router = useRouter();
     const currentPage = getPageFromUrl()[0];
     const languageToSwitchTo = getRemainingLang(locales)[0] as Locale;
-    const translatedPageTitle: string
-        = getCurrentLanguagetexts(languageToSwitchTo)[currentPage as keyof TextsInterface];
+    const translatedPageTitle: string =
+        getCurrentLanguagetexts(languageToSwitchTo)[currentPage as keyof TextsInterface];
 
     const { isMenuOpen, toggleMenu } = useContext(NavLinksContext);
 

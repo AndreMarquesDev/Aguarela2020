@@ -28,6 +28,7 @@ export default antfu({
         'antfu/top-level-function': 'off',
         'style/quotes': ['error', 'single', { avoidEscape: true }],
         'style/brace-style': ['error', '1tbs', { allowSingleLine: false }],
+        'style/operator-linebreak': ['error', 'after', { overrides: { '?': 'before', ':': 'before' } }],
         'jsonc/indent': ['error', 4, {}],
         'yml/indent': ['error', 2],
         'id-length': [

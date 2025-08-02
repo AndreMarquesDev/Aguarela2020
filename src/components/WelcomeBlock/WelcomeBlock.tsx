@@ -10,8 +10,8 @@ export const WelcomeBlock = (): JSX.Element => {
 
     const { query } = useRouter();
     const currentLanguage = query.language?.toString() as Locale;
-    const titleMobile
-        = currentLanguage === Locale.Pt
+    const titleMobile =
+        currentLanguage === Locale.Pt
             ? `${texts.welcome1}-${texts.welcome2}${texts.welcome3}`
             : `${texts.welcome1}${texts.welcome2}${texts.welcome3}`;
 
