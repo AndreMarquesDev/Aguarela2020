@@ -91,7 +91,8 @@ exports[`<NukaCarousel /> renders properly 1`] = `
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               1
             </div>
           </div>
@@ -100,7 +101,8 @@ exports[`<NukaCarousel /> renders properly 1`] = `
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               2
             </div>
           </div>
@@ -109,7 +111,8 @@ exports[`<NukaCarousel /> renders properly 1`] = `
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               3
             </div>
           </div>
@@ -118,7 +121,8 @@ exports[`<NukaCarousel /> renders properly 1`] = `
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               4
             </div>
           </div>
@@ -127,7 +131,8 @@ exports[`<NukaCarousel /> renders properly 1`] = `
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               5
             </div>
           </div>
@@ -136,7 +141,8 @@ exports[`<NukaCarousel /> renders properly 1`] = `
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               1
             </div>
           </div>
@@ -145,7 +151,8 @@ exports[`<NukaCarousel /> renders properly 1`] = `
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               2
             </div>
           </div>
@@ -154,7 +161,8 @@ exports[`<NukaCarousel /> renders properly 1`] = `
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               3
             </div>
           </div>
@@ -163,7 +171,8 @@ exports[`<NukaCarousel /> renders properly 1`] = `
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               4
             </div>
           </div>
@@ -172,7 +181,8 @@ exports[`<NukaCarousel /> renders properly 1`] = `
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               5
             </div>
           </div>
@@ -181,7 +191,8 @@ exports[`<NukaCarousel /> renders properly 1`] = `
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               1
             </div>
           </div>
@@ -190,7 +201,8 @@ exports[`<NukaCarousel /> renders properly 1`] = `
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               2
             </div>
           </div>
@@ -199,7 +211,8 @@ exports[`<NukaCarousel /> renders properly 1`] = `
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               3
             </div>
           </div>
@@ -208,7 +221,8 @@ exports[`<NukaCarousel /> renders properly 1`] = `
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               4
             </div>
           </div>
@@ -217,7 +231,8 @@ exports[`<NukaCarousel /> renders properly 1`] = `
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               5
             </div>
           </div>
@@ -319,7 +334,8 @@ exports[`<NukaCarousel /> renders properly when cellAlign prop is not provided 1
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               1
             </div>
           </div>
@@ -328,7 +344,8 @@ exports[`<NukaCarousel /> renders properly when cellAlign prop is not provided 1
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               2
             </div>
           </div>
@@ -337,7 +354,8 @@ exports[`<NukaCarousel /> renders properly when cellAlign prop is not provided 1
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               3
             </div>
           </div>
@@ -346,7 +364,8 @@ exports[`<NukaCarousel /> renders properly when cellAlign prop is not provided 1
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               4
             </div>
           </div>
@@ -355,7 +374,8 @@ exports[`<NukaCarousel /> renders properly when cellAlign prop is not provided 1
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               5
             </div>
           </div>
@@ -364,7 +384,8 @@ exports[`<NukaCarousel /> renders properly when cellAlign prop is not provided 1
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               1
             </div>
           </div>
@@ -373,7 +394,8 @@ exports[`<NukaCarousel /> renders properly when cellAlign prop is not provided 1
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               2
             </div>
           </div>
@@ -382,7 +404,8 @@ exports[`<NukaCarousel /> renders properly when cellAlign prop is not provided 1
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               3
             </div>
           </div>
@@ -391,7 +414,8 @@ exports[`<NukaCarousel /> renders properly when cellAlign prop is not provided 1
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               4
             </div>
           </div>
@@ -400,7 +424,8 @@ exports[`<NukaCarousel /> renders properly when cellAlign prop is not provided 1
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               5
             </div>
           </div>
@@ -409,7 +434,8 @@ exports[`<NukaCarousel /> renders properly when cellAlign prop is not provided 1
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               1
             </div>
           </div>
@@ -418,7 +444,8 @@ exports[`<NukaCarousel /> renders properly when cellAlign prop is not provided 1
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               2
             </div>
           </div>
@@ -427,7 +454,8 @@ exports[`<NukaCarousel /> renders properly when cellAlign prop is not provided 1
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               3
             </div>
           </div>
@@ -436,7 +464,8 @@ exports[`<NukaCarousel /> renders properly when cellAlign prop is not provided 1
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               4
             </div>
           </div>
@@ -445,7 +474,8 @@ exports[`<NukaCarousel /> renders properly when cellAlign prop is not provided 1
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               5
             </div>
           </div>
@@ -547,7 +577,8 @@ exports[`<NukaCarousel /> renders properly when slidesToShow prop is not provide
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               1
             </div>
           </div>
@@ -556,7 +587,8 @@ exports[`<NukaCarousel /> renders properly when slidesToShow prop is not provide
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               2
             </div>
           </div>
@@ -565,7 +597,8 @@ exports[`<NukaCarousel /> renders properly when slidesToShow prop is not provide
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               3
             </div>
           </div>
@@ -574,7 +607,8 @@ exports[`<NukaCarousel /> renders properly when slidesToShow prop is not provide
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               4
             </div>
           </div>
@@ -583,7 +617,8 @@ exports[`<NukaCarousel /> renders properly when slidesToShow prop is not provide
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               5
             </div>
           </div>
@@ -592,7 +627,8 @@ exports[`<NukaCarousel /> renders properly when slidesToShow prop is not provide
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               1
             </div>
           </div>
@@ -601,7 +637,8 @@ exports[`<NukaCarousel /> renders properly when slidesToShow prop is not provide
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               2
             </div>
           </div>
@@ -610,7 +647,8 @@ exports[`<NukaCarousel /> renders properly when slidesToShow prop is not provide
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               3
             </div>
           </div>
@@ -619,7 +657,8 @@ exports[`<NukaCarousel /> renders properly when slidesToShow prop is not provide
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               4
             </div>
           </div>
@@ -628,7 +667,8 @@ exports[`<NukaCarousel /> renders properly when slidesToShow prop is not provide
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               5
             </div>
           </div>
@@ -637,7 +677,8 @@ exports[`<NukaCarousel /> renders properly when slidesToShow prop is not provide
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               1
             </div>
           </div>
@@ -646,7 +687,8 @@ exports[`<NukaCarousel /> renders properly when slidesToShow prop is not provide
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               2
             </div>
           </div>
@@ -655,7 +697,8 @@ exports[`<NukaCarousel /> renders properly when slidesToShow prop is not provide
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               3
             </div>
           </div>
@@ -664,7 +707,8 @@ exports[`<NukaCarousel /> renders properly when slidesToShow prop is not provide
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               4
             </div>
           </div>
@@ -673,7 +717,8 @@ exports[`<NukaCarousel /> renders properly when slidesToShow prop is not provide
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               5
             </div>
           </div>
@@ -775,7 +820,8 @@ exports[`<NukaCarousel /> renders properly when width prop is not provided 1`] =
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               1
             </div>
           </div>
@@ -784,7 +830,8 @@ exports[`<NukaCarousel /> renders properly when width prop is not provided 1`] =
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               2
             </div>
           </div>
@@ -793,7 +840,8 @@ exports[`<NukaCarousel /> renders properly when width prop is not provided 1`] =
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               3
             </div>
           </div>
@@ -802,7 +850,8 @@ exports[`<NukaCarousel /> renders properly when width prop is not provided 1`] =
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               4
             </div>
           </div>
@@ -811,7 +860,8 @@ exports[`<NukaCarousel /> renders properly when width prop is not provided 1`] =
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               5
             </div>
           </div>
@@ -820,7 +870,8 @@ exports[`<NukaCarousel /> renders properly when width prop is not provided 1`] =
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               1
             </div>
           </div>
@@ -829,7 +880,8 @@ exports[`<NukaCarousel /> renders properly when width prop is not provided 1`] =
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               2
             </div>
           </div>
@@ -838,7 +890,8 @@ exports[`<NukaCarousel /> renders properly when width prop is not provided 1`] =
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               3
             </div>
           </div>
@@ -847,7 +900,8 @@ exports[`<NukaCarousel /> renders properly when width prop is not provided 1`] =
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               4
             </div>
           </div>
@@ -856,7 +910,8 @@ exports[`<NukaCarousel /> renders properly when width prop is not provided 1`] =
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               5
             </div>
           </div>
@@ -865,7 +920,8 @@ exports[`<NukaCarousel /> renders properly when width prop is not provided 1`] =
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               1
             </div>
           </div>
@@ -874,7 +930,8 @@ exports[`<NukaCarousel /> renders properly when width prop is not provided 1`] =
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               2
             </div>
           </div>
@@ -883,7 +940,8 @@ exports[`<NukaCarousel /> renders properly when width prop is not provided 1`] =
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               3
             </div>
           </div>
@@ -892,7 +950,8 @@ exports[`<NukaCarousel /> renders properly when width prop is not provided 1`] =
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               4
             </div>
           </div>
@@ -901,7 +960,8 @@ exports[`<NukaCarousel /> renders properly when width prop is not provided 1`] =
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               5
             </div>
           </div>
@@ -1003,7 +1063,8 @@ exports[`<NukaCarousel /> switches to the next slide when clicking the next arro
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               1
             </div>
           </div>
@@ -1012,7 +1073,8 @@ exports[`<NukaCarousel /> switches to the next slide when clicking the next arro
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               2
             </div>
           </div>
@@ -1021,7 +1083,8 @@ exports[`<NukaCarousel /> switches to the next slide when clicking the next arro
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               3
             </div>
           </div>
@@ -1030,7 +1093,8 @@ exports[`<NukaCarousel /> switches to the next slide when clicking the next arro
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               4
             </div>
           </div>
@@ -1039,7 +1103,8 @@ exports[`<NukaCarousel /> switches to the next slide when clicking the next arro
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               5
             </div>
           </div>
@@ -1048,7 +1113,8 @@ exports[`<NukaCarousel /> switches to the next slide when clicking the next arro
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               1
             </div>
           </div>
@@ -1057,7 +1123,8 @@ exports[`<NukaCarousel /> switches to the next slide when clicking the next arro
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               2
             </div>
           </div>
@@ -1066,7 +1133,8 @@ exports[`<NukaCarousel /> switches to the next slide when clicking the next arro
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               3
             </div>
           </div>
@@ -1075,7 +1143,8 @@ exports[`<NukaCarousel /> switches to the next slide when clicking the next arro
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               4
             </div>
           </div>
@@ -1084,7 +1153,8 @@ exports[`<NukaCarousel /> switches to the next slide when clicking the next arro
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               5
             </div>
           </div>
@@ -1093,7 +1163,8 @@ exports[`<NukaCarousel /> switches to the next slide when clicking the next arro
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               1
             </div>
           </div>
@@ -1102,7 +1173,8 @@ exports[`<NukaCarousel /> switches to the next slide when clicking the next arro
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               2
             </div>
           </div>
@@ -1111,7 +1183,8 @@ exports[`<NukaCarousel /> switches to the next slide when clicking the next arro
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               3
             </div>
           </div>
@@ -1120,7 +1193,8 @@ exports[`<NukaCarousel /> switches to the next slide when clicking the next arro
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               4
             </div>
           </div>
@@ -1129,7 +1203,8 @@ exports[`<NukaCarousel /> switches to the next slide when clicking the next arro
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               5
             </div>
           </div>
@@ -1231,7 +1306,8 @@ exports[`<NukaCarousel /> switches to the previous slide when clicking the previ
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               1
             </div>
           </div>
@@ -1240,7 +1316,8 @@ exports[`<NukaCarousel /> switches to the previous slide when clicking the previ
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               2
             </div>
           </div>
@@ -1249,7 +1326,8 @@ exports[`<NukaCarousel /> switches to the previous slide when clicking the previ
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               3
             </div>
           </div>
@@ -1258,7 +1336,8 @@ exports[`<NukaCarousel /> switches to the previous slide when clicking the previ
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               4
             </div>
           </div>
@@ -1267,7 +1346,8 @@ exports[`<NukaCarousel /> switches to the previous slide when clicking the previ
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               5
             </div>
           </div>
@@ -1276,7 +1356,8 @@ exports[`<NukaCarousel /> switches to the previous slide when clicking the previ
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               1
             </div>
           </div>
@@ -1285,7 +1366,8 @@ exports[`<NukaCarousel /> switches to the previous slide when clicking the previ
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               2
             </div>
           </div>
@@ -1294,7 +1376,8 @@ exports[`<NukaCarousel /> switches to the previous slide when clicking the previ
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               3
             </div>
           </div>
@@ -1303,7 +1386,8 @@ exports[`<NukaCarousel /> switches to the previous slide when clicking the previ
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               4
             </div>
           </div>
@@ -1312,7 +1396,8 @@ exports[`<NukaCarousel /> switches to the previous slide when clicking the previ
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               5
             </div>
           </div>
@@ -1321,7 +1406,8 @@ exports[`<NukaCarousel /> switches to the previous slide when clicking the previ
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               1
             </div>
           </div>
@@ -1330,7 +1416,8 @@ exports[`<NukaCarousel /> switches to the previous slide when clicking the previ
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               2
             </div>
           </div>
@@ -1339,7 +1426,8 @@ exports[`<NukaCarousel /> switches to the previous slide when clicking the previ
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               3
             </div>
           </div>
@@ -1348,7 +1436,8 @@ exports[`<NukaCarousel /> switches to the previous slide when clicking the previ
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               4
             </div>
           </div>
@@ -1357,7 +1446,8 @@ exports[`<NukaCarousel /> switches to the previous slide when clicking the previ
             style="width: 6.666666666666667%; height: auto; padding: 0px 0px; opacity: 1;"
           >
             <div>
-              Slide 
+              Slide
+               
               5
             </div>
           </div>

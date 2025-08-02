@@ -41,7 +41,8 @@ exports[`<ProjectItem /> renders properly 1`] = `
       <small
         class="jsx-2553597104 fontXS"
       >
-        * 
+        *
+         
         em dupla com Sofia Ferreirinho
       </small>
     </div>
@@ -90,7 +91,8 @@ exports[`<ProjectItem /> renders properly in English 1`] = `
       <small
         class="jsx-2553597104 fontXS"
       >
-        * 
+        *
+         
         in partnership with Sofia Ferreirinho
       </small>
     </div>
@@ -142,7 +144,8 @@ exports[`<ProjectItem /> renders properly in mobile 1`] = `
       <small
         class="jsx-2553597104 fontXS"
       >
-        * 
+        *
+         
         em dupla com Sofia Ferreirinho
       </small>
     </div>
@@ -194,7 +197,8 @@ exports[`<ProjectItem /> renders properly when device is touch 1`] = `
       <small
         class="jsx-2553597104 fontXS"
       >
-        * 
+        *
+         
         em dupla com Sofia Ferreirinho
       </small>
     </div>
@@ -246,7 +250,8 @@ exports[`<ProjectItem /> renders properly with isGrid being false 1`] = `
       <small
         class="jsx-2553597104 fontXS"
       >
-        * 
+        *
+         
         em dupla com Sofia Ferreirinho
       </small>
     </div>
@@ -295,7 +300,8 @@ exports[`<ProjectItem /> renders properly with preloadImage being false 1`] = `
       <small
         class="jsx-2553597104 fontXS"
       >
-        * 
+        *
+         
         em dupla com Sofia Ferreirinho
       </small>
     </div>

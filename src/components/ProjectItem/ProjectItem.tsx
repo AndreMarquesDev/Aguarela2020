@@ -89,6 +89,7 @@ export const ProjectItem = ({
                                 {isInPartnership && (
                                     <small className="fontXS">
                                         *
+                                        {' '}
                                         {texts.inPartnershipWith}
                                     </small>
                                 )}
@@ -135,6 +136,7 @@ export const ProjectItem = ({
                                 {isInPartnership && (
                                     <small className="fontXS">
                                         *
+                                        {' '}
                                         {texts.inPartnershipWith}
                                     </small>
                                 )}

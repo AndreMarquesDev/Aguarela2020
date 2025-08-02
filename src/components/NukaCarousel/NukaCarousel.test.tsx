@@ -10,6 +10,7 @@ import '@testing-library/jest-dom';
 const children: ReactNode = ['1', '2', '3', '4', '5'].map(child => (
     <div>
         Slide
+        {' '}
         {child}
     </div>
 ));
@@ -112,6 +113,7 @@ describe('<NukaCarousel />', () => {
         const newChildren: ReactNode = ['1', '2', '3', '4', '5'].map(child => (
             <div data-times-touched="1">
                 Slide
+                {' '}
                 {child}
             </div>
         ));
@@ -133,6 +135,7 @@ describe('<NukaCarousel />', () => {
         const newChildren: ReactNode = ['1', '2', '3', '4', '5'].map(child => (
             <div data-times-touched="1">
                 Slide
+                {' '}
                 {child}
             </div>
         ));
