@@ -1,12 +1,14 @@
-import '@testing-library/jest-dom';
+import type { RenderResult } from '@testing-library/react';
+import type { ProjectItemProps } from './ProjectItem';
+import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
-import { render, screen, RenderResult, fireEvent } from '@testing-library/react';
-import { ProjectItem, ProjectItemProps } from './ProjectItem';
-import { textsEn, textsPt } from '../../utils/texts';
-import { projectItemTouchDivDataTestId } from '../../utils/dataTestIds';
-import { tjelaInstagramUrl } from '../../utils/urls';
-import { MockProviders } from '../../utils/jest/MockProviders';
 import { Locale } from '../../types/Locale';
+import { projectItemTouchDivDataTestId } from '../../utils/dataTestIds';
+import { MockProviders } from '../../utils/jest/MockProviders';
+import { textsEn, textsPt } from '../../utils/texts';
+import { tjelaInstagramUrl } from '../../utils/urls';
+import { ProjectItem } from './ProjectItem';
+import '@testing-library/jest-dom';
 
 const baseProps: ProjectItemProps = {
     brandLink: tjelaInstagramUrl,
@@ -24,12 +26,12 @@ const baseProps: ProjectItemProps = {
 
 const renderComponent = (
     newProps?: Partial<ProjectItemProps>,
-    language: Locale = Locale.Pt
+    language: Locale = Locale.Pt,
 ): RenderResult => {
     return render(
         <MockProviders language={language}>
             <ProjectItem {...baseProps} {...newProps} />
-        </MockProviders>
+        </MockProviders>,
     );
 };
 
@@ -57,7 +59,7 @@ describe('<ProjectItem />', () => {
     test('renders properly in English', () => {
         const { container } = renderComponent(
             { description: textsEn.socialMediaManagementAndContentCreation },
-            Locale.En
+            Locale.En,
         );
 
         const year = screen.getByText(`${baseProps.year} - ${textsEn.present}`);
@@ -137,7 +139,7 @@ describe('<ProjectItem />', () => {
         const { container } = renderComponent({ isDesktop: false });
 
         const wrapper = screen.getByTestId(
-            `${projectItemTouchDivDataTestId}_${baseProps.imageAlt}`
+            `${projectItemTouchDivDataTestId}_${baseProps.imageAlt}`,
         );
 
         expect(wrapper).toHaveAttribute('data-times-touched', '0');

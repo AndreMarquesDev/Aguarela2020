@@ -1,13 +1,14 @@
-import '@testing-library/jest-dom';
-import React from 'react';
-import { render, screen, RenderResult } from '@testing-library/react';
-// eslint-disable-next-line import/no-extraneous-dependencies
+import type { RenderResult } from '@testing-library/react';
+import type { LayoutProps } from './Layout';
+import { render, screen } from '@testing-library/react';
 import mockRouter from 'next-router-mock';
-import { Layout, LayoutProps } from './Layout';
-import { Breakpoint } from '../../utils/useWindowSize';
+import React from 'react';
+import { MockProviders } from '../../utils/jest/MockProviders';
 import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { textsEn } from '../../utils/texts';
-import { MockProviders } from '../../utils/jest/MockProviders';
+import { Breakpoint } from '../../utils/useWindowSize';
+import { Layout } from './Layout';
+import '@testing-library/jest-dom';
 
 const baseProps: LayoutProps = {
     children: (
@@ -21,7 +22,7 @@ const renderComponent = (isMenuOpen = false): RenderResult => {
     return render(
         <MockProviders isMenuOpen={isMenuOpen}>
             <Layout {...baseProps} />
-        </MockProviders>
+        </MockProviders>,
     );
 };
 

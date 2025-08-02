@@ -1,9 +1,11 @@
-import '@testing-library/jest-dom';
+import type { RenderResult } from '@testing-library/react';
+import type { FormFieldProps } from './FormField';
+import { render, screen } from '@testing-library/react';
 import React from 'react';
-import { render, screen, RenderResult } from '@testing-library/react';
-import { FormField, FormFieldProps } from './FormField';
 import { FieldTypes } from '../../utils/formValidation';
 import { textsPt } from '../../utils/texts';
+import { FormField } from './FormField';
+import '@testing-library/jest-dom';
 
 const baseProps: FormFieldProps = {
     id: FieldTypes.Name,
@@ -97,7 +99,7 @@ describe('<FormField />', () => {
     });
 
     test('renders without a label if an invalid id is provided', () => {
-        // @ts-ignore
+        // @ts-expect-error ignore for now
         renderComponent({ id: 'invalidId', isRequired: true });
 
         const label = screen.getByText('*');

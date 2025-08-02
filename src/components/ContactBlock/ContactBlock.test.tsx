@@ -1,20 +1,20 @@
-import '@testing-library/jest-dom';
-import React from 'react';
-import { render, RenderResult, screen } from '@testing-library/react';
-// eslint-disable-next-line import/no-extraneous-dependencies
+import type { RenderResult } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import mockRouter from 'next-router-mock';
-import { ContactBlock } from './ContactBlock';
-import { textsEn, textsPt } from '../../utils/texts';
-import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
-import { Breakpoint } from '../../utils/useWindowSize';
-import { MockProviders } from '../../utils/jest/MockProviders';
+import React from 'react';
 import { Locale } from '../../types/Locale';
+import { MockProviders } from '../../utils/jest/MockProviders';
+import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
+import { textsEn, textsPt } from '../../utils/texts';
+import { Breakpoint } from '../../utils/useWindowSize';
+import { ContactBlock } from './ContactBlock';
+import '@testing-library/jest-dom';
 
 const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
     return render(
         <MockProviders language={language}>
             <ContactBlock />
-        </MockProviders>
+        </MockProviders>,
     );
 };
 
@@ -41,7 +41,7 @@ describe('<ContactBlock />', () => {
         expect(screen.queryByText(textsPt.contactMe2)).not.toBeInTheDocument();
         expect(screen.queryByText(textsPt.contactMe3)).not.toBeInTheDocument();
         expect(
-            screen.getByText(`${textsPt.contactMe1}${textsPt.contactMe2}${textsPt.contactMe3}`)
+            screen.getByText(`${textsPt.contactMe1}${textsPt.contactMe2}${textsPt.contactMe3}`),
         ).toBeInTheDocument();
         expect(screen.getByText(textsPt.needHelpWithYourBusiness)).toBeInTheDocument();
         expect(screen.getByText(textsPt.sendMeAnEmail)).toBeInTheDocument();

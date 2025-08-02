@@ -1,11 +1,13 @@
-import '@testing-library/jest-dom';
+import type { RenderResult } from '@testing-library/react';
+import type { TextShadowBlockProps } from './TextShadowBlock';
+import { render, screen } from '@testing-library/react';
 import React from 'react';
-import { render, screen, RenderResult } from '@testing-library/react';
-import { TextShadowBlock, TextShadowBlockProps } from './TextShadowBlock';
-import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
-import { Breakpoint } from '../../utils/useWindowSize';
 import { textBlock1DataTestId } from '../../utils/dataTestIds';
+import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
 import { aguarelaDigitalEmail, aguarelaDigitalInstagramUrl } from '../../utils/urls';
+import { Breakpoint } from '../../utils/useWindowSize';
+import { TextShadowBlock } from './TextShadowBlock';
+import '@testing-library/jest-dom';
 
 const baseProps: TextShadowBlockProps = {
     title1: 'Bem',

@@ -1,19 +1,19 @@
-import { test, expect } from '@playwright/test';
+import type { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
+import type { Page } from '../../src/utils/pages';
+import { expect, test } from '@playwright/test';
 import { Locale } from '../../src/types/Locale';
-import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
 import {
     aboutMeSectionDataTestId,
     brandsListSectionDataTestId,
     footerDataTestId,
 } from '../../src/utils/dataTestIds';
+import { capitalize } from '../../src/utils/generic';
 import { aboutMeSectionTest } from '../testBlocks/aboutMeSectionTest';
 import { brandsListTest } from '../testBlocks/brandsListTest';
 import { footerTest } from '../testBlocks/footerTest';
-import { letsWorkSectionTest } from '../testBlocks/letsWorkSectionTest';
 import { headerNavigationTest } from '../testBlocks/headerNavigationTest';
+import { letsWorkSectionTest } from '../testBlocks/letsWorkSectionTest';
 import { urls } from '../utils/selectors';
-import { capitalize } from '../../src/utils/generic';
-import { Page } from '../../src/utils/pages';
 import { getScreenshotPath } from '../utils/utils';
 
 const pageName: Page = 'about';
@@ -39,7 +39,7 @@ test.describe(`PT | ${pageNameCapitalized} page`, () => {
             !!isMobile,
             locale,
             otherLocale,
-            browserName as PlaywrightBrowserName
+            browserName as PlaywrightBrowserName,
         );
     });
 
@@ -93,7 +93,7 @@ test.describe(`EN | ${pageNameCapitalized} page`, () => {
             !!isMobile,
             locale,
             otherLocale,
-            browserName as PlaywrightBrowserName
+            browserName as PlaywrightBrowserName,
         );
     });
 

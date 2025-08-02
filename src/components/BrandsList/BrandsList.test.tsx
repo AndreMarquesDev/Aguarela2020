@@ -1,16 +1,17 @@
-import '@testing-library/jest-dom';
+import type { RenderResult } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import React from 'react';
-import { render, RenderResult, screen } from '@testing-library/react';
-import { BrandsList } from './BrandsList';
-import { textsEn, textsPt } from '../../utils/texts';
-import { MockProviders } from '../../utils/jest/MockProviders';
 import { Locale } from '../../types/Locale';
+import { MockProviders } from '../../utils/jest/MockProviders';
+import { textsEn, textsPt } from '../../utils/texts';
+import { BrandsList } from './BrandsList';
+import '@testing-library/jest-dom';
 
 const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
     return render(
         <MockProviders language={language}>
             <BrandsList />
-        </MockProviders>
+        </MockProviders>,
     );
 };
 

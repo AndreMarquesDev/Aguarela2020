@@ -1,20 +1,20 @@
-import { test, expect } from '@playwright/test';
+import type { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
+import type { Page } from '../../src/utils/pages';
+import { expect, test } from '@playwright/test';
 import { Locale } from '../../src/types/Locale';
-import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
 import {
     brandsListSectionDataTestId,
     footerDataTestId,
     servicesBlockSectionDataTestId,
 } from '../../src/utils/dataTestIds';
-import { servicesSectionTest } from '../testBlocks/servicesSectionTest';
+import { capitalize } from '../../src/utils/generic';
 import { brandsListTest } from '../testBlocks/brandsListTest';
 import { footerTest } from '../testBlocks/footerTest';
-import { letsWorkSectionTest } from '../testBlocks/letsWorkSectionTest';
 import { headerNavigationTest } from '../testBlocks/headerNavigationTest';
+import { letsWorkSectionTest } from '../testBlocks/letsWorkSectionTest';
+import { servicesSectionTest } from '../testBlocks/servicesSectionTest';
 import { urls } from '../utils/selectors';
 import { getScreenshotPath } from '../utils/utils';
-import { Page } from '../../src/utils/pages';
-import { capitalize } from '../../src/utils/generic';
 
 const pageName: Page = 'services';
 const pageNameCapitalized: string = capitalize(pageName);
@@ -39,7 +39,7 @@ test.describe(`PT | ${pageNameCapitalized} page`, () => {
             !!isMobile,
             locale,
             otherLocale,
-            browserName as PlaywrightBrowserName
+            browserName as PlaywrightBrowserName,
         );
     });
 
@@ -93,7 +93,7 @@ test.describe(`EN | ${pageNameCapitalized} page`, () => {
             !!isMobile,
             locale,
             otherLocale,
-            browserName as PlaywrightBrowserName
+            browserName as PlaywrightBrowserName,
         );
     });
 

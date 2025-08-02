@@ -17,6 +17,7 @@ const contentSecurityPolicyProd = `
 `;
 
 const csp =
+
     process.env.NODE_ENV === 'development' ? contentSecurityPolicyDev : contentSecurityPolicyProd;
 
 module.exports = {

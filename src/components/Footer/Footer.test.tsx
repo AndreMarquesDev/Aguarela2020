@@ -1,10 +1,12 @@
-import '@testing-library/jest-dom';
+import type { RenderResult } from '@testing-library/react';
+import type { FooterProps } from './Footer';
+import { render, screen } from '@testing-library/react';
 import React from 'react';
-import { render, RenderResult, screen } from '@testing-library/react';
-import { Footer, FooterProps } from './Footer';
-import { textsEn, textsPt } from '../../utils/texts';
-import { MockProviders } from '../../utils/jest/MockProviders';
 import { Locale } from '../../types/Locale';
+import { MockProviders } from '../../utils/jest/MockProviders';
+import { textsEn, textsPt } from '../../utils/texts';
+import { Footer } from './Footer';
+import '@testing-library/jest-dom';
 
 const baseProps: FooterProps = {
     language: Locale.Pt,
@@ -12,12 +14,12 @@ const baseProps: FooterProps = {
 
 const renderComponent = (
     newProps?: Partial<FooterProps>,
-    language: Locale = Locale.Pt
+    language: Locale = Locale.Pt,
 ): RenderResult => {
     return render(
         <MockProviders language={language}>
             <Footer {...baseProps} {...newProps} />
-        </MockProviders>
+        </MockProviders>,
     );
 };
 

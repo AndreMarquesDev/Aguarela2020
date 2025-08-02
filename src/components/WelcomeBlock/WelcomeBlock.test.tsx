@@ -1,15 +1,16 @@
-import '@testing-library/jest-dom';
-import React from 'react';
-import { render, RenderResult, screen } from '@testing-library/react';
+import type { RenderResult } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import * as nextRouter from 'next/router';
-import { WelcomeBlock } from './WelcomeBlock';
-import { textsPt, textsEn } from '../../utils/texts';
-import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
-import { Breakpoint } from '../../utils/useWindowSize';
-import { MockProviders } from '../../utils/jest/MockProviders';
+import React from 'react';
 import { Locale } from '../../types/Locale';
+import { MockProviders } from '../../utils/jest/MockProviders';
+import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
+import { textsEn, textsPt } from '../../utils/texts';
+import { Breakpoint } from '../../utils/useWindowSize';
+import { WelcomeBlock } from './WelcomeBlock';
+import '@testing-library/jest-dom';
 
-// @ts-ignore
+// @ts-expect-error ignore for now
 nextRouter.useRouter = jest.fn(() => ({
     query: {
         language: 'pt',
@@ -20,7 +21,7 @@ const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
     return render(
         <MockProviders language={language}>
             <WelcomeBlock />
-        </MockProviders>
+        </MockProviders>,
     );
 };
 
@@ -71,7 +72,7 @@ describe('<WelcomeBlock />', () => {
         renderComponent();
 
         const titleMobile = screen.getByText(
-            `${textsPt.welcome1}-${textsPt.welcome2}${textsPt.welcome3}`
+            `${textsPt.welcome1}-${textsPt.welcome2}${textsPt.welcome3}`,
         );
 
         expect(titleMobile).toBeInTheDocument();
@@ -89,7 +90,7 @@ describe('<WelcomeBlock />', () => {
         renderComponent(Locale.En);
 
         const titleMobile = screen.getByText(
-            `${textsEn.welcome1}${textsEn.welcome2}${textsEn.welcome3}`
+            `${textsEn.welcome1}${textsEn.welcome2}${textsEn.welcome3}`,
         );
 
         expect(titleMobile).toBeInTheDocument();

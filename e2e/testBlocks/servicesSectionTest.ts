@@ -1,5 +1,6 @@
-import { Page, expect } from '@playwright/test';
-import { Locale } from '../../src/types/Locale';
+import type { Page } from '@playwright/test';
+import type { Locale } from '../../src/types/Locale';
+import { expect } from '@playwright/test';
 import {
     servicesBlockItemCarouselDataTestId,
     servicesBlockItemWrapperDataTestId,
@@ -15,7 +16,7 @@ import {
 export const servicesSectionTest = async (
     page: Page,
     isMobile: boolean,
-    locale: Locale
+    locale: Locale,
 ): Promise<void> => {
     const {
         services,
@@ -65,7 +66,7 @@ export const servicesSectionTest = async (
 
     // take screenshot of slide 1's backface
     await expect(container).toHaveScreenshot(
-        getScreenshotPath('slide1-backface', locale, componentName)
+        getScreenshotPath('slide1-backface', locale, componentName),
     );
 
     // hover away to hide backface again
@@ -93,7 +94,7 @@ export const servicesSectionTest = async (
 
     // take screenshot of slide 2's backface
     await expect(container).toHaveScreenshot(
-        getScreenshotPath('slide2-backface', locale, componentName)
+        getScreenshotPath('slide2-backface', locale, componentName),
     );
 
     // hover away to hide backface again
@@ -118,7 +119,7 @@ export const servicesSectionTest = async (
 
     // take screenshot of slide 3's backface
     await expect(container).toHaveScreenshot(
-        getScreenshotPath('slide3-backface', locale, componentName)
+        getScreenshotPath('slide3-backface', locale, componentName),
     );
 
     // hover away to hide backface again

@@ -1,6 +1,6 @@
 import { aguarelaDigitalEmail } from './urls';
 
-export interface TextsInterface {
+export type TextsInterface = {
     about: string;
     projects: string;
     services: string;
@@ -89,7 +89,7 @@ export interface TextsInterface {
     pleaseEnterFirstAndLastName: string;
     pleaseEnterValidEmailAddress: string;
     pleaseEnterAMessage: string;
-}
+};
 
 export const textsPt: TextsInterface = {
     about: 'Sobre',

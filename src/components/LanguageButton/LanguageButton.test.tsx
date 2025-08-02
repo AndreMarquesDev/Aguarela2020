@@ -1,9 +1,10 @@
-import '@testing-library/jest-dom';
-import React from 'react';
-import { render, RenderResult, screen } from '@testing-library/react';
+import type { RenderResult } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { LanguageButton } from './LanguageButton';
+import React from 'react';
 import { MockProviders } from '../../utils/jest/MockProviders';
+import { LanguageButton } from './LanguageButton';
+import '@testing-library/jest-dom';
 
 const mockToggleMenu = jest.fn();
 
@@ -11,7 +12,7 @@ const renderComponent = (isMenuOpen = true): RenderResult => {
     return render(
         <MockProviders isMenuOpen={isMenuOpen} toggleMenu={mockToggleMenu}>
             <LanguageButton />
-        </MockProviders>
+        </MockProviders>,
     );
 };
 

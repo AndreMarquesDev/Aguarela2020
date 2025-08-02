@@ -1,20 +1,20 @@
-import React, { useContext } from 'react';
+import type { Locale } from '../../types/Locale';
+import type { Page } from '../../utils/pages';
 import Link from 'next/link';
-import { FaInstagram, FaFacebookF, FaEnvelope } from 'react-icons/fa';
-import { TextsContext } from '../context/TextsContext';
-import { Page } from '../../utils/pages';
-import { Locale } from '../../types/Locale';
+import React, { useContext } from 'react';
+import { FaEnvelope, FaFacebookF, FaInstagram } from 'react-icons/fa';
+import { tabletMediaQuery } from '../../styles/mediaQueries';
 import { footerDataTestId } from '../../utils/dataTestIds';
 import {
     aguarelaDigitalFacebookUrl,
     aguarelaDigitalInstagramUrl,
     andreMarquesDevWebsiteUrl,
 } from '../../utils/urls';
-import { tabletMediaQuery } from '../../styles/mediaQueries';
+import { TextsContext } from '../context/TextsContext';
 
-export interface FooterProps {
+export type FooterProps = {
     language: Locale;
-}
+};
 
 export const Footer = ({ language }: FooterProps): JSX.Element => {
     const { texts } = useContext(TextsContext);
@@ -24,7 +24,8 @@ export const Footer = ({ language }: FooterProps): JSX.Element => {
             <footer data-testid={footerDataTestId}>
                 <div className="wrapper">
                     <p className="fontXS">
-                        {texts.footerInfo}{' '}
+                        {texts.footerInfo}
+                        {' '}
                         <a
                             className="animatedLink animatedLinkWhite"
                             href={andreMarquesDevWebsiteUrl}

@@ -1,14 +1,15 @@
+import type { ChangeEvent, FocusEvent } from 'react';
 import classNames from 'classnames';
-import React, { useContext, FocusEvent, ChangeEvent } from 'react';
+import React, { useContext } from 'react';
+import { mobileMediaQuery } from '../../styles/mediaQueries';
 import {
-    contactFormErrorMessageVisibleDataTestId,
     contactFormErrorMessageHiddenDataTestId,
+    contactFormErrorMessageVisibleDataTestId,
 } from '../../utils/dataTestIds';
 import { FieldTypes } from '../../utils/formValidation';
 import { TextsContext } from '../context/TextsContext';
-import { mobileMediaQuery } from '../../styles/mediaQueries';
 
-export interface FormFieldProps {
+export type FormFieldProps = {
     id: FieldTypes;
     type: string;
     value: string;
@@ -18,7 +19,7 @@ export interface FormFieldProps {
     onChange: (event: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>) => void;
     onBlur: (event: FocusEvent<HTMLInputElement> | FocusEvent<HTMLTextAreaElement>) => void;
     ariaError?: string;
-}
+};
 
 export const FormField = ({
     id,
@@ -70,36 +71,38 @@ export const FormField = ({
                     {getLabel(id)}
                     {isRequired && ' *'}
                 </label>
-                {isInput ? (
-                    <input
-                        aria-describedby={ariaError}
-                        className="fontS"
-                        data-error={hasError && isRequired}
-                        data-testid={id}
-                        id={id}
-                        name={id}
-                        required={isRequired}
-                        title={id}
-                        type={type}
-                        value={value}
-                        onBlur={onBlur}
-                        onChange={onChange}
-                    />
-                ) : (
-                    <textarea
-                        aria-describedby={ariaError}
-                        className="fontS"
-                        data-error={hasError && isRequired}
-                        data-testid={id}
-                        id={id}
-                        name={id}
-                        required={isRequired}
-                        title={id}
-                        value={value}
-                        onBlur={onBlur}
-                        onChange={onChange}
-                    />
-                )}
+                {isInput
+                    ? (
+                            <input
+                                aria-describedby={ariaError}
+                                className="fontS"
+                                data-error={hasError && isRequired}
+                                data-testid={id}
+                                id={id}
+                                name={id}
+                                required={isRequired}
+                                title={id}
+                                type={type}
+                                value={value}
+                                onBlur={onBlur}
+                                onChange={onChange}
+                            />
+                        )
+                    : (
+                            <textarea
+                                aria-describedby={ariaError}
+                                className="fontS"
+                                data-error={hasError && isRequired}
+                                data-testid={id}
+                                id={id}
+                                name={id}
+                                required={isRequired}
+                                title={id}
+                                value={value}
+                                onBlur={onBlur}
+                                onChange={onChange}
+                            />
+                        )}
                 <span
                     className={classNames('errorMessage', 'fontXXS', hasError && 'visible')}
                     data-testid={

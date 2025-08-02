@@ -1,7 +1,9 @@
-import '@testing-library/jest-dom';
+import type { RenderResult } from '@testing-library/react';
+import type { ButtonProps } from './Button';
+import { render, screen } from '@testing-library/react';
 import React from 'react';
-import { render, RenderResult, screen } from '@testing-library/react';
-import { Button, ButtonProps } from './Button';
+import { Button } from './Button';
+import '@testing-library/jest-dom';
 
 const children = 'Texto dentro do botão';
 
@@ -20,7 +22,7 @@ const renderComponent = (newProps?: Partial<ButtonProps>): RenderResult => {
     return render(
         <Button {...baseProps} {...newProps}>
             {children}
-        </Button>
+        </Button>,
     );
 };
 

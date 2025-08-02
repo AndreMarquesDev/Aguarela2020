@@ -1,13 +1,14 @@
-import { Page, expect } from '@playwright/test';
+import type { Page } from '@playwright/test';
+import { expect } from '@playwright/test';
 import { Locale } from '../../src/types/Locale';
 import { contactBlockSectionDataTestId } from '../../src/utils/dataTestIds';
-import { getLocalizedTexts } from '../utils/utils';
 import { aguarelaDigitalEmail } from '../../src/utils/urls';
+import { getLocalizedTexts } from '../utils/utils';
 
 export const contactBlockTest = async (
     page: Page,
     isMobile: boolean,
-    locale: Locale
+    locale: Locale,
 ): Promise<void> => {
     const {
         contactMe1,
@@ -26,11 +27,11 @@ export const contactBlockTest = async (
     if (isMobile) {
         if (isEnglishVersion) {
             await expect(
-                container.getByText(`${contactMe1}${contactMe2}t`, { exact: true })
+                container.getByText(`${contactMe1}${contactMe2}t`, { exact: true }),
             ).toBeVisible();
         } else {
             await expect(
-                container.getByText(`${contactMe1}${contactMe2}${contactMe3}`, { exact: true })
+                container.getByText(`${contactMe1}${contactMe2}${contactMe3}`, { exact: true }),
             ).toBeVisible();
         }
     } else {

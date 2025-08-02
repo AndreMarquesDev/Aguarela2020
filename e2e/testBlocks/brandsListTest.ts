@@ -1,5 +1,7 @@
-import { Page, expect } from '@playwright/test';
-import { Locale } from '../../src/types/Locale';
+import type { Page } from '@playwright/test';
+import type { Locale } from '../../src/types/Locale';
+import type { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
+import { expect } from '@playwright/test';
 import { brandsListSectionDataTestId } from '../../src/utils/dataTestIds';
 import {
     aAmigaEsteticistaInstagramUrl,
@@ -21,14 +23,13 @@ import {
     tjelaInstagramUrl,
     trattoriaInstagramUrl,
 } from '../../src/utils/urls';
-import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
-import { getLocalizedTexts, getImageDimension } from '../utils/utils';
+import { getImageDimension, getLocalizedTexts } from '../utils/utils';
 
 export const brandsListTest = async (
     page: Page,
     isMobile: boolean,
     browserName: PlaywrightBrowserName,
-    locale: Locale
+    locale: Locale,
 ): Promise<void> => {
     const container = page.getByTestId(brandsListSectionDataTestId);
     const { myNetwork } = getLocalizedTexts(locale);
@@ -45,7 +46,7 @@ export const brandsListTest = async (
             browserName,
             imageSizeDesktop,
             imageSizeMobileChrome,
-            imageSizeMobileSafari
+            imageSizeMobileSafari,
         );
 
         // renders the image

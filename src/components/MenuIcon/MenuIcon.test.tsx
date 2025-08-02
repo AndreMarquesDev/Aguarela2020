@@ -1,6 +1,8 @@
+import type { RenderResult } from '@testing-library/react';
+import type { MenuIconProps } from './MenuIcon';
+import { render } from '@testing-library/react';
 import React from 'react';
-import { render, RenderResult } from '@testing-library/react';
-import { MenuIcon, MenuIconProps } from './MenuIcon';
+import { MenuIcon } from './MenuIcon';
 
 const baseProps: MenuIconProps = {
     isOpen: false,

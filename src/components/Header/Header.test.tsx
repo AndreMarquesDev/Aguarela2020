@@ -1,12 +1,14 @@
-import '@testing-library/jest-dom';
-import React from 'react';
-import { render, RenderResult, screen } from '@testing-library/react';
+import type { RenderResult } from '@testing-library/react';
+import type { HeaderProps } from './Header';
+import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { Header, HeaderProps } from './Header';
-import { Breakpoint } from '../../utils/useWindowSize';
-import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
-import { MockProviders } from '../../utils/jest/MockProviders';
+import React from 'react';
 import { Locale } from '../../types/Locale';
+import { MockProviders } from '../../utils/jest/MockProviders';
+import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
+import { Breakpoint } from '../../utils/useWindowSize';
+import { Header } from './Header';
+import '@testing-library/jest-dom';
 
 const baseProps: HeaderProps = {
     currentRoute: 'services',
@@ -20,7 +22,7 @@ const renderComponent = (setNavHeight: jest.Mock | undefined): RenderResult => {
     return render(
         <MockProviders setNavHeight={setNavHeight} toggleMenu={mockToggleMenu}>
             <Header {...baseProps} />
-        </MockProviders>
+        </MockProviders>,
     );
 };
 

@@ -1,8 +1,9 @@
-import { Locator } from '@playwright/test';
+import type { Locator } from '@playwright/test';
+import type { TextsInterface } from '../../src/utils/texts';
 import { Locale } from '../../src/types/Locale';
 import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
 import { nukaCarouselNextButtonDataTestId } from '../../src/utils/dataTestIds';
-import { TextsInterface, textsPt, textsEn } from '../../src/utils/texts';
+import { textsEn, textsPt } from '../../src/utils/texts';
 
 export const isChromium = (browserName: PlaywrightBrowserName): boolean =>
     browserName === PlaywrightBrowserName.Chromium;
@@ -32,7 +33,7 @@ export const getImageDimension = (
     browserName: PlaywrightBrowserName,
     sizeDesktop: number,
     sizeMobileChrome: number,
-    sizeMobileSafari: number
+    sizeMobileSafari: number,
 ): number => {
     if (!isMobile) {
         return sizeDesktop;
@@ -47,7 +48,7 @@ export const getImageDimension = (
 
 export const clickNextArrowButtonIfMobile = async (
     isMobile: boolean,
-    container: Locator
+    container: Locator,
 ): Promise<void> => {
     if (isMobile) {
         await container.getByTestId(nukaCarouselNextButtonDataTestId).click();
@@ -57,7 +58,7 @@ export const clickNextArrowButtonIfMobile = async (
 export const getScreenshotPath = (
     screenshotName: string,
     locale: Locale,
-    componentName?: string
+    componentName?: string,
 ): string[] => {
     if (componentName) {
         return [componentName, `${locale}-${screenshotName}.png`];

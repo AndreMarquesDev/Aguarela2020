@@ -1,19 +1,19 @@
-import React, { useContext, useRef, useEffect } from 'react';
-import Link from 'next/link';
+import type { Locale } from '../../types/Locale';
+import type { Page } from '../../utils/pages';
 import Image from 'next/image';
-import { NavLinksContext } from '../context/NavLinksContext';
-import { NavLinks } from '../NavLinks/NavLinks';
-import { Page } from '../../utils/pages';
-import { useWindowSize, Breakpoint } from '../../utils/useWindowSize';
-import { MenuIcon } from '../MenuIcon/MenuIcon';
-import { Locale } from '../../types/Locale';
-import { headerDataTestId, homepageLogoLinkDataTestId } from '../../utils/dataTestIds';
+import Link from 'next/link';
+import React, { useContext, useEffect, useRef } from 'react';
 import { tabletMediaQuery } from '../../styles/mediaQueries';
+import { headerDataTestId, homepageLogoLinkDataTestId } from '../../utils/dataTestIds';
+import { Breakpoint, useWindowSize } from '../../utils/useWindowSize';
+import { NavLinksContext } from '../context/NavLinksContext';
+import { MenuIcon } from '../MenuIcon/MenuIcon';
+import { NavLinks } from '../NavLinks/NavLinks';
 
-export interface HeaderProps {
+export type HeaderProps = {
     currentRoute: string;
     language: Locale;
-}
+};
 
 export const Header = ({ currentRoute, language }: HeaderProps): JSX.Element => {
     const { setNavHeight } = useContext(NavLinksContext);

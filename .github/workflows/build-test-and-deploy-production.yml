@@ -1,3 +1,4 @@
+# eslint-disable unicorn/filename-case
 name: Build, test and deploy to production
 
 on:
@@ -7,7 +8,7 @@ on:
     branches: [master]
   schedule:
     # runs "every wednesday at 15h GMT" (https://crontab.guru)
-    - cron: "0 14 * * 3"
+    - cron: '0 14 * * 3'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,7 +24,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "yarn"
+          cache: yarn
 
       - name: Install dependencies
         run: yarn install --immutable
@@ -55,7 +56,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "yarn"
+          cache: yarn
 
       - name: Install dependencies
         run: yarn install --immutable
@@ -81,7 +82,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "yarn"
+          cache: yarn
 
       - name: Install dependencies
         run: yarn install --immutable
@@ -109,7 +110,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "yarn"
+          cache: yarn
 
       - name: Install dependencies
         run: yarn install --immutable
@@ -133,7 +134,7 @@ jobs:
         if: failure()
         with:
           name: playwright-chrome-test-results
-          path: "e2e/test-results"
+          path: e2e/test-results
 
   playwright-edge:
     runs-on: ubuntu-latest
@@ -152,7 +153,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "yarn"
+          cache: yarn
 
       - name: Install dependencies
         run: yarn install --immutable
@@ -176,7 +177,7 @@ jobs:
         if: failure()
         with:
           name: playwright-edge-test-results
-          path: "e2e/test-results"
+          path: e2e/test-results
 
   playwright-firefox:
     runs-on: ubuntu-latest
@@ -195,7 +196,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "yarn"
+          cache: yarn
 
       - name: Install dependencies
         run: yarn install --immutable
@@ -219,7 +220,7 @@ jobs:
         if: failure()
         with:
           name: playwright-firefox-test-results
-          path: "e2e/test-results"
+          path: e2e/test-results
 
   playwright-safari:
     runs-on: ubuntu-latest
@@ -238,7 +239,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "yarn"
+          cache: yarn
 
       - name: Install dependencies
         run: yarn install --immutable
@@ -262,7 +263,7 @@ jobs:
         if: failure()
         with:
           name: playwright-safari-test-results
-          path: "e2e/test-results"
+          path: e2e/test-results
 
   playwright-chrome-mobile:
     runs-on: ubuntu-latest
@@ -281,7 +282,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "yarn"
+          cache: yarn
 
       - name: Install dependencies
         run: yarn install --immutable
@@ -305,7 +306,7 @@ jobs:
         if: failure()
         with:
           name: playwright-chrome-mobile-test-results
-          path: "e2e/test-results"
+          path: e2e/test-results
 
   playwright-safari-mobile:
     runs-on: ubuntu-latest
@@ -324,7 +325,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "yarn"
+          cache: yarn
 
       - name: Install dependencies
         run: yarn install --immutable
@@ -348,22 +349,21 @@ jobs:
         if: failure()
         with:
           name: playwright-safari-mobile-test-results
-          path: "e2e/test-results"
+          path: e2e/test-results
 
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     needs:
-      [
-        lighthouse-desktop,
-        lighthouse-mobile,
-        playwright-chrome,
-        playwright-edge,
-        playwright-firefox,
-        playwright-safari,
-        playwright-chrome-mobile,
-        playwright-safari-mobile,
-      ]
+      - lighthouse-desktop
+      - lighthouse-mobile
+      - playwright-chrome
+      - playwright-edge
+      - playwright-firefox
+      - playwright-safari
+      - playwright-chrome-mobile
+      - playwright-safari-mobile
+
     if: github.ref == 'refs/heads/master' && github.event.schedule != '0 14 * * 3' && !contains(github.event.head_commit.message, 'chore') && !contains(github.event.head_commit.message, 'test') && !contains(github.event.head_commit.message, 'docs') && !contains(github.event.head_commit.message, 'ci')
     steps:
       - uses: actions/checkout@v4

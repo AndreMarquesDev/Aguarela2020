@@ -1,19 +1,20 @@
-import '@testing-library/jest-dom';
+import type { RenderResult } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import React from 'react';
-import { render, RenderResult, screen } from '@testing-library/react';
-import { textsPt, textsEn } from '../../utils/texts';
-import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
-import { ProjectsList } from './ProjectsList';
-import { Breakpoint } from '../../utils/useWindowSize';
+import { Locale } from '../../types/Locale';
 import { projectsListNoCarouselDataTestId } from '../../utils/dataTestIds';
 import { MockProviders } from '../../utils/jest/MockProviders';
-import { Locale } from '../../types/Locale';
+import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
+import { textsEn, textsPt } from '../../utils/texts';
+import { Breakpoint } from '../../utils/useWindowSize';
+import { ProjectsList } from './ProjectsList';
+import '@testing-library/jest-dom';
 
 const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
     return render(
         <MockProviders language={language}>
             <ProjectsList />
-        </MockProviders>
+        </MockProviders>,
     );
 };
 

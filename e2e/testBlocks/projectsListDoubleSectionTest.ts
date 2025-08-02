@@ -1,6 +1,7 @@
-import { Page, expect, test } from '@playwright/test';
-import { Locale } from '../../src/types/Locale';
-import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
+import type { Page } from '@playwright/test';
+import type { Locale } from '../../src/types/Locale';
+import type { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
+import { expect, test } from '@playwright/test';
 import {
     nukaCarouselNextButtonDataTestId,
     projectItemTouchDivDataTestId,
@@ -30,19 +31,19 @@ import {
 } from '../../src/utils/urls';
 import {
     clickNextArrowButtonIfMobile,
-    getLocalizedTexts,
     getImageDimension,
+    getLocalizedTexts,
     getScreenshotPath,
-    oneMinTimeout,
     nukaCarouselCurrentSlide,
     nukaCarouselVisibleSlide,
+    oneMinTimeout,
 } from '../utils/utils';
 
 export const projectsListDoubleSectionTest = async (
     page: Page,
     isMobile: boolean,
     browserName: PlaywrightBrowserName,
-    locale: Locale
+    locale: Locale,
 ): Promise<void> => {
     test.setTimeout(oneMinTimeout);
 
@@ -73,11 +74,11 @@ export const projectsListDoubleSectionTest = async (
         url: string,
         title: string,
         isInPartnership: boolean,
-        year?: string
+        year?: string,
     ): Promise<void> => {
         // nukaCarousel adds two extra slides, a '.prev-cloned' and a '.next-cloned'
         const slide = container.locator(
-            `${nukaCarouselCurrentSlide} [data-testid="${projectItemTouchDivDataTestId}_${brand}"]`
+            `${nukaCarouselCurrentSlide} [data-testid="${projectItemTouchDivDataTestId}_${brand}"]`,
         );
         const anchor = slide.getByRole('link', { name: instagramHandle });
         const image = slide.getByAltText(brand, { exact: true });
@@ -90,7 +91,7 @@ export const projectsListDoubleSectionTest = async (
             browserName,
             imageSizeDesktop,
             imageSizeMobileChrome,
-            imageSizeMobileSafari
+            imageSizeMobileSafari,
         );
 
         // renders the image
@@ -140,7 +141,7 @@ export const projectsListDoubleSectionTest = async (
         tjelaInstagramUrl,
         socialMediaAndContentCreation,
         true,
-        `2020 - ${present}`
+        `2020 - ${present}`,
     );
 
     await testSlide(
@@ -149,7 +150,7 @@ export const projectsListDoubleSectionTest = async (
         tasteOfIndiaInstagramUrl,
         socialMediaAndContentCreation,
         true,
-        `2020 - ${present}`
+        `2020 - ${present}`,
     );
 
     await clickNextArrowButtonIfMobile(isMobile, container);
@@ -160,7 +161,7 @@ export const projectsListDoubleSectionTest = async (
         kaffeehausInstagramUrl,
         socialMediaAndContentCreation,
         false,
-        `2018 - ${present}`
+        `2018 - ${present}`,
     );
 
     await testSlide(
@@ -169,7 +170,7 @@ export const projectsListDoubleSectionTest = async (
         avocadoInstagramUrl,
         socialMediaAndContentCreation,
         true,
-        `2020 - ${present}`
+        `2020 - ${present}`,
     );
 
     // remove focus from slide to hide backface before screenshot
@@ -185,7 +186,7 @@ export const projectsListDoubleSectionTest = async (
         guacamoleInstagramUrl,
         socialMediaAndContentCreation,
         true,
-        `2019 - ${present}`
+        `2019 - ${present}`,
     );
 
     await testSlide(
@@ -194,7 +195,7 @@ export const projectsListDoubleSectionTest = async (
         mariaLimaoIndustriaCriativaUrl,
         socialMediaAndContentCreation,
         false,
-        '2019 - 2020'
+        '2019 - 2020',
     );
 
     // remove focus from slide to hide backface before screenshot
@@ -210,7 +211,7 @@ export const projectsListDoubleSectionTest = async (
         jamesonInstagramUrl,
         socialMediaManagement,
         false,
-        `2019 - ${present}`
+        `2019 - ${present}`,
     );
 
     await testSlide(
@@ -219,7 +220,7 @@ export const projectsListDoubleSectionTest = async (
         beefeaterWebsiteUrl,
         socialMediaManagement,
         false,
-        `2019 - ${present}`
+        `2019 - ${present}`,
     );
 
     // remove focus from slide to hide backface before screenshot
@@ -235,7 +236,7 @@ export const projectsListDoubleSectionTest = async (
         biergartenInstagramUrl,
         socialMediaAndContentCreation,
         false,
-        '2019'
+        '2019',
     );
 
     await testSlide(
@@ -244,7 +245,7 @@ export const projectsListDoubleSectionTest = async (
         madMaryInstagramUrl,
         socialMediaAndContentCreation,
         false,
-        '2019'
+        '2019',
     );
 
     // remove focus from slide to hide backface before screenshot
@@ -260,7 +261,7 @@ export const projectsListDoubleSectionTest = async (
         bovineInstagramUrl,
         socialMediaAndContentCreation,
         false,
-        '2020'
+        '2020',
     );
 
     await testSlide(
@@ -269,14 +270,14 @@ export const projectsListDoubleSectionTest = async (
         icecreamRollInstagramUrl,
         socialMediaAndContentCreation,
         false,
-        '2018'
+        '2018',
     );
 
     // remove focus from slide to hide backface before screenshot
     await pageTitle.click();
     // take screenshot of slides 11 and 12
     await expect(container).toHaveScreenshot(
-        getScreenshotPath('slide11-12', locale, componentName)
+        getScreenshotPath('slide11-12', locale, componentName),
     );
 
     await clickNextArrowButton();
@@ -287,7 +288,7 @@ export const projectsListDoubleSectionTest = async (
         riceMeInstagramUrl,
         socialMediaAndContentCreation,
         false,
-        '2020'
+        '2020',
     );
 
     await testSlide(
@@ -296,14 +297,14 @@ export const projectsListDoubleSectionTest = async (
         riceMeDeliInstagramUrl,
         socialMediaAndContentCreation,
         false,
-        '2020'
+        '2020',
     );
 
     // remove focus from slide to hide backface before screenshot
     await pageTitle.click();
     // take screenshot of slides 13 and 14
     await expect(container).toHaveScreenshot(
-        getScreenshotPath('slide13-14', locale, componentName)
+        getScreenshotPath('slide13-14', locale, componentName),
     );
 
     await clickNextArrowButton();
@@ -314,7 +315,7 @@ export const projectsListDoubleSectionTest = async (
         harpoonLinkedInUrl,
         socialMediaAndContentCreation,
         false,
-        '2020 - 2021'
+        '2020 - 2021',
     );
 
     await testSlide(
@@ -322,14 +323,14 @@ export const projectsListDoubleSectionTest = async (
         '@catarinasantiago',
         catarinaSantiagoInstagramUrl,
         contentCreation,
-        false
+        false,
     );
 
     // remove focus from slide to hide backface before screenshot
     await pageTitle.click();
     // take screenshot of slides 15 and 16
     await expect(container).toHaveScreenshot(
-        getScreenshotPath('slide15-16', locale, componentName)
+        getScreenshotPath('slide15-16', locale, componentName),
     );
 
     await clickNextArrowButton();
@@ -340,7 +341,7 @@ export const projectsListDoubleSectionTest = async (
         quatroPatasDe5EstrelasInstagramUrl,
         socialMediaManagement,
         false,
-        `2020 - ${present}`
+        `2020 - ${present}`,
     );
 
     await testSlide(
@@ -349,14 +350,14 @@ export const projectsListDoubleSectionTest = async (
         luminousInstagramUrl,
         socialMediaAndPaidSocial,
         true,
-        '2020'
+        '2020',
     );
 
     // remove focus from slide to hide backface before screenshot
     await pageTitle.click();
     // take screenshot of slides 17 and 18
     await expect(container).toHaveScreenshot(
-        getScreenshotPath('slide17-18', locale, componentName)
+        getScreenshotPath('slide17-18', locale, componentName),
     );
 
     await clickNextArrowButton();
@@ -367,7 +368,7 @@ export const projectsListDoubleSectionTest = async (
         aAmigaEsteticistaIndustriaCriativaUrl,
         consultingAndContentCreation,
         false,
-        `2017 - ${present}`
+        `2017 - ${present}`,
     );
 
     await testSlide(
@@ -376,6 +377,6 @@ export const projectsListDoubleSectionTest = async (
         anaroIndustriaCriativaUrl,
         consultingAndContentCreation,
         false,
-        '2019'
+        '2019',
     );
 };

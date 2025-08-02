@@ -1,11 +1,11 @@
 import classNames from 'classnames';
 import React from 'react';
 
-export interface TitleProps {
+export type TitleProps = {
     text: string;
     colored?: boolean;
     marginBottom?: number;
-}
+};
 
 export const Title = ({ text, colored, marginBottom }: TitleProps): JSX.Element => (
     <>

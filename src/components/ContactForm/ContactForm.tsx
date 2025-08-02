@@ -1,16 +1,17 @@
+import type { FormPostRequestBody } from '../../types/FormPostRequestBody';
+import type { FormValues } from '../../types/FormValues';
+import type { FormState } from '../../utils/formValidation';
 import axios from 'axios';
 import classNames from 'classnames';
 import { useFormik } from 'formik';
 import React, { useContext, useState } from 'react';
-import { FormPostRequestBody } from '../../types/FormPostRequestBody';
-import { FormValues } from '../../types/FormValues';
+import { mobileMediaQuery } from '../../styles/mediaQueries';
 import { contactFormContainerDataTestId } from '../../utils/dataTestIds';
-import { FieldTypes, FormState, validateName, validateEmail } from '../../utils/formValidation';
+import { FieldTypes, validateEmail, validateName } from '../../utils/formValidation';
 import { contactFormBackendUrl } from '../../utils/urls';
 import { Button } from '../Button/Button';
 import { TextsContext } from '../context/TextsContext';
 import { FormField } from '../FormField/FormField';
-import { mobileMediaQuery } from '../../styles/mediaQueries';
 
 const formSchema = [
     {
@@ -50,6 +51,7 @@ const formSchema = [
     },
 ];
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const FORM_RESET_TIMEOUT = 5000;
 
 export const ContactForm = (): JSX.Element => {
@@ -95,6 +97,7 @@ export const ContactForm = (): JSX.Element => {
 
         const formStateWithHiddenInputs: FormPostRequestBody = {
             ...formState,
+            // eslint-disable-next-line node/no-process-env
             isPlaywright: process.env.NEXT_PUBLIC_IS_PLAYWRIGHT === 'true',
         };
 
@@ -115,7 +118,7 @@ export const ContactForm = (): JSX.Element => {
                 });
             })
             .finally(() => {
-                // eslint-disable-next-line @typescript-eslint/no-use-before-define
+                // eslint-disable-next-line ts/no-use-before-define
                 resetForm();
             });
     };
@@ -165,6 +168,7 @@ export const ContactForm = (): JSX.Element => {
                         </Button>
                         {formSubmitState.submitted && (
                             <span
+                                // eslint-disable-next-line react-dom/no-dangerously-set-innerhtml
                                 dangerouslySetInnerHTML={{
                                     __html: formSubmitState.error
                                         ? texts.thereWasAnErrorSendingTheMessage
@@ -173,7 +177,7 @@ export const ContactForm = (): JSX.Element => {
                                 className={classNames(
                                     'formNotification',
                                     'fontS',
-                                    formSubmitState.error && 'error'
+                                    formSubmitState.error && 'error',
                                 )}
                                 id="contactForm"
                             />

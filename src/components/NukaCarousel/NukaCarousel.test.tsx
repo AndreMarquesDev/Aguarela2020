@@ -1,10 +1,19 @@
-import '@testing-library/jest-dom';
-import React, { ReactNode } from 'react';
-import { render, screen, RenderResult } from '@testing-library/react';
+import type { RenderResult } from '@testing-library/react';
+import type { ReactNode } from 'react';
+import type { NukaCarouselProps } from './NukaCarousel';
+import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { NukaCarousel, NukaCarouselProps } from './NukaCarousel';
+import React from 'react';
+import { NukaCarousel } from './NukaCarousel';
+import '@testing-library/jest-dom';
 
-const children: ReactNode = ['1', '2', '3', '4', '5'].map(child => <div>Slide {child}</div>);
+const children: ReactNode = ['1', '2', '3', '4', '5'].map(child => (
+    <div>
+        Slide
+        {' '}
+        {child}
+    </div>
+));
 
 const baseProps: NukaCarouselProps = {
     children,
@@ -102,7 +111,11 @@ describe('<NukaCarousel />', () => {
 
     test('resets the "data-times-touched" attribute when switching to the previous slide', async () => {
         const newChildren: ReactNode = ['1', '2', '3', '4', '5'].map(child => (
-            <div data-times-touched="1">Slide {child}</div>
+            <div data-times-touched="1">
+                Slide
+                {' '}
+                {child}
+            </div>
         ));
         const user = userEvent.setup();
 
@@ -120,7 +133,11 @@ describe('<NukaCarousel />', () => {
 
     test('resets the "data-times-touched" attribute when switching to the next slide', async () => {
         const newChildren: ReactNode = ['1', '2', '3', '4', '5'].map(child => (
-            <div data-times-touched="1">Slide {child}</div>
+            <div data-times-touched="1">
+                Slide
+                {' '}
+                {child}
+            </div>
         ));
 
         const user = userEvent.setup();

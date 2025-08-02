@@ -1,21 +1,23 @@
-import React, { useMemo, useState } from 'react';
-import Head from 'next/head';
-import { NextPage } from 'next';
-import Image from 'next/image';
-import classNames from 'classnames';
-import { Layout } from '../../src/components/Layout/Layout';
-import {
-    NavLinksContext,
+import type { NextPage } from 'next';
+import type {
     NavLinksContextProps,
 } from '../../src/components/context/NavLinksContext';
-import { WelcomeBlock } from '../../src/components/WelcomeBlock/WelcomeBlock';
-import { SkillsBlock } from '../../src/components/SkillsBlock/SkillsBlock';
-import { Workflow } from '../../src/components/Workflow/Workflow';
-import { ProjectsList } from '../../src/components/ProjectsList/ProjectsList';
-import { LetsWork } from '../../src/components/LetsWork/LetsWork';
+import classNames from 'classnames';
+import Head from 'next/head';
+import Image from 'next/image';
+import React, { useMemo, useState } from 'react';
 import { BrandsList } from '../../src/components/BrandsList/BrandsList';
-import { useWindowSize, Breakpoint } from '../../src/utils/useWindowSize';
+import {
+    NavLinksContext,
+} from '../../src/components/context/NavLinksContext';
+import { Layout } from '../../src/components/Layout/Layout';
+import { LetsWork } from '../../src/components/LetsWork/LetsWork';
+import { ProjectsList } from '../../src/components/ProjectsList/ProjectsList';
+import { SkillsBlock } from '../../src/components/SkillsBlock/SkillsBlock';
+import { WelcomeBlock } from '../../src/components/WelcomeBlock/WelcomeBlock';
+import { Workflow } from '../../src/components/Workflow/Workflow';
 import { homepageBannerContainerDataTestId } from '../../src/utils/dataTestIds';
+import { Breakpoint, useWindowSize } from '../../src/utils/useWindowSize';
 
 const Homepage: NextPage = () => {
     const [navHeight, setNavHeight] = useState(0);
@@ -27,7 +29,7 @@ const Homepage: NextPage = () => {
             toggleMenu: (): void => setIsMenuOpen(!isMenuOpen),
             setNavHeight,
         }),
-        [isMenuOpen]
+        [isMenuOpen],
     );
 
     const windowSize = useWindowSize();

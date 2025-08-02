@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
-interface WindowSize {
+type WindowSize = {
     width: number;
     height: number;
-}
+};
 
 export const useWindowSize = (): WindowSize => {
     const [windowSize, setWindowSize] = useState<WindowSize>({
@@ -13,6 +13,7 @@ export const useWindowSize = (): WindowSize => {
 
     useEffect(() => {
         const handleResize = (): void => {
+            // eslint-disable-next-line react-hooks-extra/no-direct-set-state-in-use-effect
             setWindowSize({
                 width: window.innerWidth,
                 height: window.innerHeight,

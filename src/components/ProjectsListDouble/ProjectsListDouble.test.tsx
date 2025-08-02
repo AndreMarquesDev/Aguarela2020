@@ -1,12 +1,13 @@
-import '@testing-library/jest-dom';
+import type { RenderResult } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import React from 'react';
-import { render, RenderResult, screen } from '@testing-library/react';
-import { textsPt, textsEn } from '../../utils/texts';
-import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
-import { ProjectsListDouble } from './ProjectsListDouble';
-import { Breakpoint } from '../../utils/useWindowSize';
-import { MockProviders } from '../../utils/jest/MockProviders';
 import { Locale } from '../../types/Locale';
+import { MockProviders } from '../../utils/jest/MockProviders';
+import { setJestWindowWidth } from '../../utils/jest/setJestWindowWidth';
+import { textsEn, textsPt } from '../../utils/texts';
+import { Breakpoint } from '../../utils/useWindowSize';
+import { ProjectsListDouble } from './ProjectsListDouble';
+import '@testing-library/jest-dom';
 
 const expectedNumberOfBlocksRendered = 13;
 const expectedNumberOfSlidesRendered = expectedNumberOfBlocksRendered * 3; // nukaCarousel adds two extra slides, a '.prev-cloned' and a '.next-cloned', hence the triplication
@@ -15,7 +16,7 @@ const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
     return render(
         <MockProviders language={language}>
             <ProjectsListDouble />
-        </MockProviders>
+        </MockProviders>,
     );
 };
 
@@ -47,15 +48,15 @@ describe('<ProjectsListDouble />', () => {
         const AnaRo = screen.getAllByAltText('AnaRo')[0];
 
         const socialMediaAndContentCreationDescription = screen.getAllByText(
-            textsPt.socialMediaAndContentCreation
+            textsPt.socialMediaAndContentCreation,
         );
         const socialMediaManagementDescription = screen.getAllByText(textsPt.socialMediaManagement);
         const contentCreationDescription = screen.getAllByText(textsPt.contentCreation);
         const socialMediaAndPaidSocialDescription = screen.getAllByText(
-            textsPt.socialMediaAndPaidSocial
+            textsPt.socialMediaAndPaidSocial,
         );
         const consultingAndContentCreationDescription = screen.getAllByText(
-            textsPt.consultingAndContentCreation
+            textsPt.consultingAndContentCreation,
         );
 
         expect(title).toBeInTheDocument();
@@ -81,7 +82,7 @@ describe('<ProjectsListDouble />', () => {
         expect(AnaRo).toBeInTheDocument();
 
         expect(socialMediaAndContentCreationDescription).toHaveLength(
-            expectedNumberOfSlidesRendered
+            expectedNumberOfSlidesRendered,
         );
         expect(socialMediaManagementDescription).toHaveLength(3 * 3);
         expect(contentCreationDescription).toHaveLength(1 * 3);

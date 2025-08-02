@@ -1,24 +1,24 @@
-import { test, expect } from '@playwright/test';
+import type { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
+import type { Page } from '../../src/utils/pages';
+import { expect, test } from '@playwright/test';
 import { Locale } from '../../src/types/Locale';
-import { PlaywrightBrowserName } from '../../src/types/PlaywrightBrowserName';
 import {
     brandsListSectionDataTestId,
     footerDataTestId,
     homepageBannerContainerDataTestId,
     skillsBlockSectionDataTestId,
 } from '../../src/utils/dataTestIds';
+import { capitalize } from '../../src/utils/generic';
+import { bannerTest } from '../testBlocks/bannerTest';
 import { brandsListTest } from '../testBlocks/brandsListTest';
 import { footerTest } from '../testBlocks/footerTest';
-import { letsWorkSectionTest } from '../testBlocks/letsWorkSectionTest';
 import { headerNavigationTest } from '../testBlocks/headerNavigationTest';
-import { urls } from '../utils/selectors';
-import { bannerTest } from '../testBlocks/bannerTest';
-import { welcomeSectionTest } from '../testBlocks/welcomeSectionTest';
-import { skillsBlockTest } from '../testBlocks/skillsBlockTest';
-import { workflowSectionTest } from '../testBlocks/workflowSectionTest';
+import { letsWorkSectionTest } from '../testBlocks/letsWorkSectionTest';
 import { projectsSectionTest } from '../testBlocks/projectsSectionTest';
-import { capitalize } from '../../src/utils/generic';
-import { Page } from '../../src/utils/pages';
+import { skillsBlockTest } from '../testBlocks/skillsBlockTest';
+import { welcomeSectionTest } from '../testBlocks/welcomeSectionTest';
+import { workflowSectionTest } from '../testBlocks/workflowSectionTest';
+import { urls } from '../utils/selectors';
 import { getScreenshotPath } from '../utils/utils';
 
 const pageName: Page = 'homepage';
@@ -44,7 +44,7 @@ test.describe(`PT | ${pageNameCapitalized}`, () => {
             !!isMobile,
             locale,
             otherLocale,
-            browserName as PlaywrightBrowserName
+            browserName as PlaywrightBrowserName,
         );
     });
 
@@ -127,7 +127,7 @@ test.describe(`EN | ${pageNameCapitalized}`, () => {
             !!isMobile,
             locale,
             otherLocale,
-            browserName as PlaywrightBrowserName
+            browserName as PlaywrightBrowserName,
         );
     });
 

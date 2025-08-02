@@ -1,30 +1,32 @@
-import '@testing-library/jest-dom';
-import React from 'react';
+import type {
+    RenderResult,
+} from '@testing-library/react';
 import {
     render,
-    RenderResult,
     screen,
     waitFor,
     waitForElementToBeRemoved,
 } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { ContactForm, FORM_RESET_TIMEOUT } from './ContactForm';
-import { textsEn, textsPt } from '../../utils/texts';
-import { FieldTypes } from '../../utils/formValidation';
-import { initializeAxiosMockAdapter } from '../../utils/jest/axiosMockAdapter';
+import React from 'react';
+import { Locale } from '../../types/Locale';
 import {
     contactFormContainerDataTestId,
     contactFormErrorMessageHiddenDataTestId,
     contactFormErrorMessageVisibleDataTestId,
 } from '../../utils/dataTestIds';
+import { FieldTypes } from '../../utils/formValidation';
+import { initializeAxiosMockAdapter } from '../../utils/jest/axiosMockAdapter';
 import { MockProviders } from '../../utils/jest/MockProviders';
-import { Locale } from '../../types/Locale';
+import { textsEn, textsPt } from '../../utils/texts';
+import { ContactForm, FORM_RESET_TIMEOUT } from './ContactForm';
+import '@testing-library/jest-dom';
 
 const renderComponent = (language: Locale = Locale.Pt): RenderResult => {
     return render(
         <MockProviders language={language}>
             <ContactForm />
-        </MockProviders>
+        </MockProviders>,
     );
 };
 
@@ -61,7 +63,7 @@ describe('<ContactForm />', () => {
         await user.click(submitButton);
 
         const errorMessages = await screen.findAllByTestId(
-            contactFormErrorMessageVisibleDataTestId
+            contactFormErrorMessageVisibleDataTestId,
         );
 
         expect(errorMessages.length).toBe(3);
@@ -157,7 +159,7 @@ describe('<ContactForm />', () => {
 
             expect(container).toMatchSnapshot();
         },
-        FORM_RESET_TIMEOUT + 3000
+        FORM_RESET_TIMEOUT + 3000,
     );
 
     test('shows an error message in case the POST request fails', async () => {

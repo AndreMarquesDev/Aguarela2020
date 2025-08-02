@@ -1,11 +1,11 @@
-import React from 'react';
+import type { Page } from '../../utils/pages';
+import classNames from 'classnames';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import classNames from 'classnames';
-import { Page } from '../../utils/pages';
+import React from 'react';
 import { mobileMediaQuery } from '../../styles/mediaQueries';
 
-export interface ButtonProps {
+export type ButtonProps = {
     children: string;
     page?: Page;
     externalLink?: string;
@@ -14,7 +14,7 @@ export interface ButtonProps {
     isSubmit?: boolean;
     disabled?: boolean;
     onClick?: () => void;
-}
+};
 
 export const Button = ({
     children,
@@ -32,12 +32,12 @@ export const Button = ({
     const buttonBackgroundContainerStyles = classNames(
         'buttonBackground',
         !alignLeft && 'alignCenter',
-        disabled && 'disabled'
+        disabled && 'disabled',
     );
     const buttonStyles = classNames(
         'buttonComponent',
         'fontS',
-        isLowercased && 'buttonComponentLowercase'
+        isLowercased && 'buttonComponentLowercase',
     );
 
     return (
@@ -45,28 +45,32 @@ export const Button = ({
             <div className="buttonWrapper">
                 <div className={buttonBackgroundContainerStyles}>
                     {/* eslint-disable-next-line no-nested-ternary */}
-                    {isSubmit ? (
-                        <button className={buttonStyles} type="submit" onClick={onClick}>
-                            {children}
-                        </button>
-                    ) : externalLink ? (
-                        <a
-                            className={buttonStyles}
-                            href={externalLink}
-                            rel="noreferrer"
-                            target="_blank"
-                        >
-                            {children}
-                        </a>
-                    ) : (
-                        <Link
-                            className={buttonStyles}
-                            href={`/${language}/${page}`}
-                            prefetch={false}
-                        >
-                            {children}
-                        </Link>
-                    )}
+                    {isSubmit
+                        ? (
+                                <button className={buttonStyles} type="submit" onClick={onClick}>
+                                    {children}
+                                </button>
+                            )
+                        : externalLink
+                            ? (
+                                    <a
+                                        className={buttonStyles}
+                                        href={externalLink}
+                                        rel="noreferrer"
+                                        target="_blank"
+                                    >
+                                        {children}
+                                    </a>
+                                )
+                            : (
+                                    <Link
+                                        className={buttonStyles}
+                                        href={`/${language}/${page}`}
+                                        prefetch={false}
+                                    >
+                                        {children}
+                                    </Link>
+                                )}
                 </div>
             </div>
 

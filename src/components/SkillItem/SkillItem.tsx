@@ -1,11 +1,11 @@
-import React from 'react';
 import Image from 'next/image';
+import React from 'react';
 
-export interface SkillItemProps {
+export type SkillItemProps = {
     icon: string;
     title: string;
     description: string;
-}
+};
 
 export const SkillItem = ({ icon, title, description }: SkillItemProps): JSX.Element => (
     <>

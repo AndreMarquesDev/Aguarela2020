@@ -1,6 +1,6 @@
-import { textsPt, textsEn } from './texts';
-import { capitalize, getCurrentLanguagetexts } from './generic';
 import { Locale } from '../types/Locale';
+import { capitalize, getCurrentLanguagetexts } from './generic';
+import { textsEn, textsPt } from './texts';
 
 describe('generic utils', () => {
     describe('capitalize function', () => {
