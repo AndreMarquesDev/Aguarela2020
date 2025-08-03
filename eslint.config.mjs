@@ -60,21 +60,6 @@ export default antfu({
             tsconfigRootDir: '.',
             type: 'alphabetical',
         }],
-        'import/no-extraneous-dependencies': [
-            'error',
-            {
-                devDependencies: [
-                    '**/*.test.js',
-                    '**/*.test.ts',
-                    '**/*.test.tsx',
-                    '**/cypress/**',
-                    '**/jest/**',
-                    '**/vitest/**',
-                    '**/e2e/**',
-                    '**/eslint**',
-                ],
-            },
-        ],
         // eslint-disable-next-line id-length
         'vitest/consistent-test-it': ['error', { fn: 'test' }],
         'no-nested-ternary': 'error',
