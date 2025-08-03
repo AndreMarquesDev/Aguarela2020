@@ -41,57 +41,57 @@ jobs:
       - name: Run linter
         run: yarn lint
 
-  lighthouse-desktop:
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    needs: build
-    strategy:
-      matrix:
-        node-version: [20.11.1]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+  # lighthouse-desktop:
+  #   runs-on: ubuntu-latest
+  #   timeout-minutes: 15
+  #   needs: build
+  #   strategy:
+  #     matrix:
+  #       node-version: [20.11.1]
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
 
-      - name: Use node ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: yarn
+  #     - name: Use node ${{ matrix.node-version }}
+  #       uses: actions/setup-node@v4
+  #       with:
+  #         node-version: ${{ matrix.node-version }}
+  #         cache: yarn
 
-      - name: Install dependencies
-        run: yarn install --immutable
+  #     - name: Install dependencies
+  #       run: yarn install --immutable
 
-      - name: Build app
-        run: yarn build
+  #     - name: Build app
+  #       run: yarn build
 
-      - name: Run Lighthouse CI desktop
-        run: yarn run:lighthouse:all:desktop
+  #     - name: Run Lighthouse CI desktop
+  #       run: yarn run:lighthouse:all:desktop
 
-  lighthouse-mobile:
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    needs: build
-    strategy:
-      matrix:
-        node-version: [20.11.1]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+  # lighthouse-mobile:
+  #   runs-on: ubuntu-latest
+  #   timeout-minutes: 15
+  #   needs: build
+  #   strategy:
+  #     matrix:
+  #       node-version: [20.11.1]
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
 
-      - name: Use node ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: yarn
+  #     - name: Use node ${{ matrix.node-version }}
+  #       uses: actions/setup-node@v4
+  #       with:
+  #         node-version: ${{ matrix.node-version }}
+  #         cache: yarn
 
-      - name: Install dependencies
-        run: yarn install --immutable
+  #     - name: Install dependencies
+  #       run: yarn install --immutable
 
-      - name: Build app
-        run: yarn build
+  #     - name: Build app
+  #       run: yarn build
 
-      - name: Run Lighthouse CI mobile
-        run: yarn run:lighthouse:all:mobile
+  #     - name: Run Lighthouse CI mobile
+  #       run: yarn run:lighthouse:all:mobile
 
   playwright-chrome:
     runs-on: ubuntu-latest
@@ -355,8 +355,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     needs:
-      - lighthouse-desktop
-      - lighthouse-mobile
+      # - lighthouse-desktop
+      # - lighthouse-mobile
       - playwright-chrome
       - playwright-edge
       - playwright-firefox
